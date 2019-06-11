@@ -1,0 +1,190 @@
+/* BLOG PAGE
+-------------------------------------------------- */
+.page-blog .section-blog {
+  padding: 75px 0 50px;
+}
+
+.page-blog .section-blog .card {
+  padding: 0 0 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.page-blog .section-blog .card.last-card {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.page-blog .section-blog .card-body {
+  padding: 0;
+}
+
+/* BLOG POST PAGE
+-------------------------------------------------- */
+.page-blog-post a {
+  color: #f84525;
+}
+
+.page-blog-post img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.page-blog-post .blog-data {
+  color: #787878;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.page-blog-post .blog-data a {
+  color: #787878;
+}
+
+.page-blog-post .blog-data a:hover {
+  color: #555;
+  transition: color 500ms;
+}
+
+.page-blog-post .blog-data a.blog-tag {
+  margin-left: 20px;
+  position: relative;
+}
+
+.page-blog-post .blog-data a.blog-tag::before {
+  content: "|";
+  position: absolute;
+  top: -3px;
+  left: -12px;
+}
+
+.page-blog-post .blog-data a.blog-tag.first-tag {
+  margin-left: 5px;
+}
+
+.page-blog-post .blog-data a.blog-tag.first-tag::before {
+  content: "";
+}
+
+.page-blog-post h2 {
+  font-size: 24px;
+  line-height: 26px;
+  padding: 20px 0;
+}
+
+.page-blog-post h3 {
+  padding: 20px 0 10px;
+}
+
+.page-blog-post h4 {
+  padding: 0 0 5px;
+}
+
+.page-blog-post p  {
+  padding-bottom: 30px;
+}
+
+.page-categories .section-categories {
+  padding-bottom: 30px;
+}
+
+.section-categories a .feature-list {
+  margin-bottom: 50px;
+}
+
+.section-categories a .feature-list .feature-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.section-categories a .feature-list .feature-icon img {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.section-categories a .feature-list .feature-icon i {
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.section-categories a .feature-list h3 {
+  color: #212529;
+  margin-bottom: 0;
+}
+
+.subscribe-box {
+  padding: 80px 30px;
+}
+
+.subscribe-box h3 {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.subscribe-box input {
+  border-radius: 4px;
+}
+
+.subscribe-box input[type=text] {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+
+.input-group input::placeholder {
+  color: #fff;
+}
+
+
+@media (max-width: 767.98px) {
+  .page-blog-post .blog-data,
+  .page-blog-post .content-block {
+    margin-bottom: 30px;
+  }
+
+  .page-blog-post .blog-data a {
+    display: inline-block;
+  }
+
+  .page-blog-post .content-block h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .page-blog-post .content-block h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .page-blog section {
+    padding-top: 30px;
+  }
+
+  .page-blog .card .card-body {
+    padding: 15px 0;
+  }
+
+  .page-blog .card-title h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .subscribe-box input[type=text] {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-box .input-group>.custom-select:not(:last-child),
+  .subscribe-box .input-group>.form-control:not(:last-child),
+  .subscribe-box .input-group>.input-group-append>.btn {
+    border-radius: 4px;
+  }
+}
