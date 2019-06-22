@@ -6,9 +6,12 @@ $(document).ready(function(){
     margin: 0,
     dots: true,
     slideBy: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplayTimeout:15000,
+    autoplaySpeed: 15000,
     autoplayHoverPause: true,
-    slideTransition: 'linear',
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
     responsiveClass:true,
     responsive:{
       0:{
@@ -29,14 +32,16 @@ $(document).ready(function(){
     margin: 0,
     dots: true,
     slideBy: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplayTimeout:15000,
     autoplayHoverPause: true,
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
     responsiveClass:true,
     responsive:{
       0:{
         items:1,
-        autoHeight: true,
-        autoplay: false
+        autoHeight: false
       },
       767:{
         items:1,
@@ -46,5 +51,14 @@ $(document).ready(function(){
       }
     }
   });
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+  });
+
+  // $(document).on('click',function(){
+  //   $('.collapse').collapse('hide');
+  // })
 
 });

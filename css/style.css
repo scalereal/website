@@ -36,16 +36,6 @@ section {
   padding: 125px 0;
 }
 
-/*h2 {
-  font-size: 28px;
-  line-height: 36px;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 32px;
-}*/
-
 .f12 {
   font-size: 12px;
   line-height: 20px;
@@ -274,21 +264,76 @@ a.btn-black {
 .flaticon-check:before { content: "\f10e"; }
 .flaticon-devops:before { content: "\f10f"; }
 
+/* ANIMATION for text sliders
+-------------------------------------------------- */
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
 /* HEADER
 -------------------------------------------------- */
 .navbar {
   background-color: #0eccd8;
   padding: 30px 0;
 }
-
-/*.navbar.home-page {
-  background-color: transparent;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}*/
 
 .navbar-brand {
   display: block;
@@ -318,9 +363,134 @@ a.btn-black {
 }
 
 .navbar-toggler {
-  font-size: 22px;
   padding: 0;
   border: 0;
+}
+
+.hamburger {
+  padding: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-box {
+  width: 26px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--spring .hamburger-inner {
+  top: 5px;
+  transition: background-color 0s 0.13s linear;
+}
+
+.hamburger--spring .hamburger-inner::before {
+  top: 8px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring .hamburger-inner::after {
+  top: 16px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring.is-active .hamburger-inner {
+  transition-delay: 0.22s;
+  background-color: transparent !important;
+}
+
+.hamburger--spring.is-active .hamburger-inner::before {
+  top: 0;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger--spring.is-active .hamburger-inner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+}
+
+.hamburger--spring-r .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring-r .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
+}
+
+.hamburger--spring-r .hamburger-inner::before {
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spring-r.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spring-r.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
+}
+
+.hamburger--spring-r.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(90deg);
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 /* FOOTER
@@ -375,7 +545,7 @@ a.btn-black {
 .footer .footer-copyright {
   padding-top: 30px;
   margin-top: 50px;
-  border-top: 1px solid #444f6c;
+  border-top: 1px solid #cccbcb;
 }
 
 .footer .footer-copyright p {
@@ -544,15 +714,373 @@ a.btn-black {
   display: block;
 }
 
-.section-technology .tab-content img {
-  filter: grayscale(1);
-  max-height: 50px;
-  transition: all .5s ease-in-out;
+.section-technology .tab-content ul {
+  margin: 0 auto;
+}
+
+.section-technology .tab-content li {
+  display: inline-block;
   margin: 15px;
 }
 
-.section-technology .tab-content img:hover {
+.section-technology .tab-content i {
+  filter: grayscale(1);
+  transition: all .5s ease-in-out;
+}
+
+.section-technology .tab-content i:hover {
   filter: grayscale(0);
+}
+
+.section-technology .sprite-tech {
+  background: url("../images/sprite1x-technologies.png") no-repeat center center;
+  display: block;
+  height: 52px;
+}
+
+.section-technology i.sprite-tech.python {
+  background-position: 0 0;
+  width: 50px;
+}
+
+.section-technology i.sprite-tech.golang {
+  background-position: -52px 0;
+  width: 104px;
+}
+
+.section-technology i.sprite-tech.rails {
+  background-position: -159px 0;
+  width: 42px;
+}
+
+.section-technology i.sprite-tech.ruby {
+  background-position: -172px -110px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.java {
+  background-position: -203px 0;
+  width: 40px;
+}
+
+.section-technology i.sprite-tech.php {
+  background-position: -245px 0;
+  width: 94px;
+}
+
+.section-technology i.sprite-tech.django {
+  background-position: -43px -50px;
+  width: 102px;
+}
+
+.section-technology i.sprite-tech.django-rest {
+  background-position: -150px -54px;
+  width: 85px;
+}
+
+.section-technology i.sprite-tech.flask {
+  background-position: 0 -54px;
+  width: 40px;
+}
+
+.section-technology i.sprite-tech.celery {
+  background-position: -240px -54px;
+  width: 112px;
+}
+
+.section-technology i.sprite-tech.jupyter {
+  background-position: 0 -110px;
+  width: 44px;
+}
+
+.section-technology i.sprite-tech.express {
+  background-position: -46px -114px;
+  width: 122px;
+}
+
+.section-technology i.sprite-tech.scrapy {
+  background-position: -235px -108px;
+  width: 48px;
+}
+
+.section-technology i.sprite-tech.numpy {
+  background-position: 0 -165px;
+  width: 90px;
+}
+
+.section-technology i.sprite-tech.scipy {
+  background-position: -192px -165px;
+  width: 88px;
+}
+
+.section-technology i.sprite-tech.scikit-learn {
+  background-position: -94px -165px;
+  width: 94px;
+}
+
+.section-technology i.sprite-tech.html {
+  background-position: 0 -219px;
+  width: 38px;
+}
+
+.section-technology i.sprite-tech.css {
+  background-position: -40px -219px;
+  width: 38px;
+}
+
+.section-technology i.sprite-tech.javascript {
+  background-position: -81px -219px;
+  width: 38px;
+}
+
+.section-technology i.sprite-tech.bootstrap {
+  background-position: -121px -219px;
+  width: 53px;
+}
+
+.section-technology i.sprite-tech.jquery {
+  background-position: 0 -270px;
+  width: 120px;
+}
+
+.section-technology i.sprite-tech.react {
+  background-position: -177px -219px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.angular {
+  background-position: -301px -219px;
+  width: 50px;
+}
+
+.section-technology i.sprite-tech.vue {
+  background-position: -237px -219px;
+  width: 60px;
+}
+
+.section-technology i.sprite-tech.node {
+  background-position: -124px -270px;
+  width: 60px;
+}
+
+.section-technology i.sprite-tech.sencha {
+  background-position: -186px -270px;
+  width: 98px;
+}
+
+.section-technology i.sprite-tech.webpack {
+  background-position: -288px -110px;
+  width: 50px;
+}
+
+.section-technology i.sprite-tech.haml {
+  background-position: -70px -330px;
+  width: 86px;
+}
+
+.section-technology i.sprite-tech.sass {
+  background-position: -286px -274px;
+  width: 50px;
+}
+
+.section-technology i.sprite-tech.less {
+  background-position: 0 -330px;
+  width: 68px;
+}
+
+.section-technology i.sprite-tech.gulp {
+  background-position: -285px -164px;
+  width: 24px;
+}
+
+.section-technology i.sprite-tech.ios {
+  background-position: 0 -384px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.android {
+  background-position: -60px -384px;
+  width: 45px;
+}
+
+.section-technology i.sprite-tech.swift {
+  background-position: -107px -384px;
+  width: 53px;
+}
+
+.section-technology i.sprite-tech.objc {
+  background-position: -162px -384px;
+  width: 52px;
+}
+
+.section-technology i.sprite-tech.cpl {
+  background-position: -217px -384px;
+  width: 47px;
+}
+
+.section-technology i.sprite-tech.firebase {
+  background-position: 0 -438px;
+  width: 144px;
+}
+
+.section-technology i.sprite-tech.crashlytics {
+  background-position: 0 -485px;
+  width: 135px;
+}
+
+.section-technology i.sprite-tech.kotlin {
+  background-position: -159px -325px;
+  width: 115px;
+}
+
+.section-technology i.sprite-tech.gradle {
+  background-position: -276px -330px;
+  width: 52px;
+}
+
+.section-technology i.sprite-tech.unity {
+  background-position: -148px -438px;
+  width: 68px;
+}
+
+.section-technology i.sprite-tech.cordova {
+  background-position: -218px -438px;
+  width: 88px;
+}
+
+.section-technology i.sprite-tech.aws {
+  background-position: -138px -484px;
+  width: 95px;
+}
+
+.section-technology i.sprite-tech.gcloud {
+  background-position: -128px -538px;
+  width: 150px;
+}
+
+.section-technology i.sprite-tech.rackspace {
+  background-position: 0 -535px;
+  width: 128px;
+}
+
+.section-technology i.sprite-tech.azure {
+  background-position: 0 -602px;
+  width: 72px;
+}
+
+.section-technology i.sprite-tech.jenkins {
+  background-position: -142px -602px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.chef {
+  background-position: -236px -484px;
+  width: 100px;
+}
+
+.section-technology i.sprite-tech.puppet {
+  background-position: -280px -538px;
+  width: 75px;
+}
+
+.section-technology i.sprite-tech.bamboo {
+  background-position: -160px -651px;
+  width: 136px;
+}
+
+.section-technology i.sprite-tech.gocd {
+  background-position: -260px -602px;
+  width: 72px;
+}
+
+.section-technology i.sprite-tech.gitlab {
+  background-position: 0 -701px;
+  width: 118px;
+}
+
+.section-technology i.sprite-tech.kubernetes {
+  background-position: 0 -650px;
+  width: 158px;
+}
+
+.section-technology i.sprite-tech.nagios {
+  background-position: -120px -701px;
+  width: 132px;
+}
+
+.section-technology i.sprite-tech.datadog {
+  background-position: -298px -651px;
+  width: 50px;
+}
+
+.section-technology i.sprite-tech.newrelic {
+  background-position: -252px -701px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.ansible {
+  background-position: -74px -602px;
+  width: 66px;
+}
+
+.section-technology i.sprite-tech.docker {
+  background-position: -200px -602px;
+  width: 58px;
+}
+
+.section-technology i.sprite-tech.jira {
+  background-position: -114px -867px;
+  width: 96px;
+}
+
+.section-technology i.sprite-tech.slack {
+  background-position: 0 -867px;
+  width: 110px;
+}
+
+.section-technology i.sprite-tech.trello {
+  background-position: -74px -758px;
+  width: 48px;
+}
+
+.section-technology i.sprite-tech.github {
+  background-position: 0 -813px;
+  width: 114px;
+}
+
+.section-technology i.sprite-tech.basecamp {
+  background-position: -116px -813px;
+  width: 152px;
+}
+
+.section-technology i.sprite-tech.ngrok {
+  background-position: -268px -813px;
+  width: 82px;
+}
+
+.section-technology i.sprite-tech.sourcetree {
+  background-position: 0 -922px;
+  width: 168px;
+}
+
+.section-technology i.sprite-tech.postman {
+  background-position: -240px -758px;
+  width: 54px;
+}
+
+.section-technology i.sprite-tech.anydesk {
+  background-position: 0 -758px;
+  width: 74px;
+}
+
+.section-technology i.sprite-tech.workflowy {
+  background-position: -172px -758px;
+  width: 66px;
+}
+
+.section-technology i.sprite-tech.zoom {
+  background-position: -121px -758px;
+  width: 48px;
 }
 
 /* Section about */
@@ -641,12 +1169,6 @@ a.btn-black {
   margin-top: -35px;
 }
 
-/*.section-client .client-info img.client-brand {
-  float: left;
-  height: 40px;
-  margin-top: 15px;
-}*/
-
 .section-client .client-name img.client-brand {
   width: 50px;
   height: 50px;
@@ -702,19 +1224,32 @@ a.btn-black {
   position: relative;
 }
 
-.inner-cta .heading .img-wrap {
+.inner-cta .heading::before,
+.inner-cta .heading::after {
+  content: "";
   position: absolute;
   left: 40px;
   top: 80px;
   width: 130px;
   height: 130px;
-  background: url("../images/service-idea.svg") no-repeat center center;
   background-size: contain;
-  transition: all 500ms;
 }
 
-.page-services .inner-cta:hover .heading .img-wrap {
+.inner-cta .heading::before {
+  background: url("../images/service-idea.svg") no-repeat center center;
+}
+
+.inner-cta .heading::after {
   background: url("../images/service-idea-color.svg") no-repeat center center;
+  visibility: hidden;
+}
+
+.page-services .inner-cta:hover .heading::before {
+  visibility: hidden;
+}
+
+.page-services .inner-cta:hover .heading::after {
+  visibility: visible;
 }
 
 .inner-cta .heading p {
@@ -744,7 +1279,7 @@ a.btn-black {
 }
 
 .page-inner #mobile-developemnt .img-wrap img {
-  width: 300px;
+  width: 350px;
 }
 
 .page-inner #mobile-developemnt .img-wrap {
@@ -757,7 +1292,7 @@ a.btn-black {
   margin-bottom: 18px;
 }
 
-.page-inner .service-offer li:before {
+.page-inner .service-offer li::before {
   content: "\f10e";
   position: absolute;
   top: 0;
@@ -784,7 +1319,8 @@ a.btn-black {
   line-height: 52px;
 }
 
-.page-about .section-service-detail .heading p,
+.page-about .section-service-detail .heading,
+.page-about .section-service-detail p,
 .page-projects .section-service-detail .heading p {
   margin-bottom: 20px;
 }
@@ -797,8 +1333,8 @@ a.btn-black {
   margin-bottom: 0;
 }
 
-.page-about .about-client {
-  padding: 0;
+.page-about .section-service-detail {
+  padding-bottom: 0;
 }
 
 .page-about .about-client img {
@@ -810,6 +1346,15 @@ a.btn-black {
 
 .page-about .about-client img:hover {
   filter: grayscale(0);
+}
+
+.page-about .about-approach {
+  padding-bottom: 0;
+}
+
+.page-about .about-approach img {
+  width: 100%;
+  padding-top: 45px;
 }
 
 /* PAGE CONTACT
@@ -894,6 +1439,16 @@ input[type="submit"]:hover {
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+  .section-technology .sprite-tech {
+    background: url("../images/sprite2x-technologies.png") no-repeat center center;
+    background-size: 355px 1000px;
+  }
 }
 
 /* RESPONSIVE CSS
@@ -995,7 +1550,8 @@ input[type="submit"]:hover {
     font-size: 35px;
   }
 
-  .section-technology .tab-content img {
+  .section-technology .tab-content i,
+  .page-about .about-client img {
     filter: grayscale(0);
   }
 
@@ -1057,12 +1613,16 @@ input[type="submit"]:hover {
     margin-bottom: 0;
   }
 
-  .page-about .section-service-detail {
-    padding-bottom: 70px;
-  }
-
   .page-inner .section-service-detail .img-wrap img {
     width: 100%;
+  }
+
+  .inner-cta .heading::before {
+    display: none;
+  }
+
+  .inner-cta .heading::after {
+    visibility: visible;
   }
 }
 
@@ -1121,6 +1681,7 @@ input[type="submit"]:hover {
 
   .section-project .box .box-content {
     padding: 0 35px;
+    text-align: center;
   }
 
   .section-project .heading.box-content {
@@ -1143,8 +1704,8 @@ input[type="submit"]:hover {
     font-size: 12px;
   }
 
-  .section-technology .tab-content img {
-    margin: 0 15px 30px;
+  .section-technology .tab-content li {
+    margin: 5px 10px;
   }
 
   .section-about {
@@ -1189,7 +1750,11 @@ input[type="submit"]:hover {
   .section-about .text-wrap li {
     float: none;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .section-about .text-wrap li:last-child {
+    margin-bottom: 0;
   }
 
   .section-about .text-wrap li::after {
@@ -1289,13 +1854,11 @@ input[type="submit"]:hover {
     padding: 50px 15px;
   }
 
-  .inner-cta .heading .img-wrap {
+  .inner-cta .heading::after {
     left: 10px;
     top: 45px;
     width: 60px;
     height: 60px;
-    background: url(../images/service-idea-color.svg) no-repeat center center;
-    background-size: contain;
   }
 
   .inner-cta .heading h2 {
@@ -1310,15 +1873,9 @@ input[type="submit"]:hover {
     margin-bottom: 30px;
   }
 
-  .page-about .heading {
-    text-align: center;
-  }
-
+  .page-about .heading,
+  .page-contact .heading,
   .page-about .section-service-detail {
-    padding-bottom: 40px;
-  }
-
-  .page-contact .heading {
     text-align: center;
   }
 
@@ -1342,5 +1899,19 @@ input[type="submit"]:hover {
 
   .owl-one.owl-carousel .owl-dots {
     margin-top: 20px;
+  }
+
+  .page-about .about-client img {
+    margin: 10px;
+  }
+
+  .page-about .about-approach img {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .page-inner .about-number span {
+    font-size: 34px;
+    line-height: 36px;
   }
 }
