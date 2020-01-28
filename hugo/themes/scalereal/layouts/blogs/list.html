@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+    {{ partial "head" . }}
+
+    <body>
+        {{ partial "nav" . }}
+        <div class="page-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <section class="section-articles">
+                            {{ $paginator := .Paginate .Data.Pages }}
+                            {{ range $paginator.Pages }}
+                            {{ .Render "content-list" }}
+                            {{ end }}
+                        </section>
+                        {{ partial "pagination" . }}
+                    </div>
+                    <div class="col">
+                        <section class="section-sidebar">
+                            <div class="sidebar-wrap">
+                                <div class="sidebar-element bg-grey">
+                                    <a href="blog-post" class="text-grey f14 f600">See all articles</a>
+                                </div>
+                                <div class="sidebar-categories sidebar-element bg-grey">
+                                    <p class="f14 f600 text-grey title">Browse by categories</p>
+                                    <ul class="list-unstyled">
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Python (58)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Ruby (27)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Rails (35)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">JavaScript (25)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Quality assurance
+                                                (25)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">UI/UX design (13)</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Android (4)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">iOS (7)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">DevOps (6)</a></li>
+                                        <li><a href="javascript:void(0);" class="f14 text-grey">Project management
+                                                (5)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar-subscribe sidebar-element bg-grey">
+                                    <p class="f14 f600 text-grey title">Subscribe to our newsletter</p>
+                                    <form action="https://formspree.io/info@scalereal.com" method="POST" id=""
+                                        novalidate="">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control f14" id=""
+                                                placeholder="Your email address">
+                                        </div>
+                                        <input type="submit" value="Subscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ partial "footer" . }}
+        {{ partial "js" . }}
+    </body>
+
+</html>

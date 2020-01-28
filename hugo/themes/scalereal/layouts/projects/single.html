@@ -1,0 +1,15 @@
+{{ "<!-- Projects -->" | safeHTML }}
+
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    {{ $.Scratch.Set "projects" true }}
+    {{ partial "head.html" . }}
+
+    <body>
+        {{ partial "nav" . }}
+        projects
+        {{ partial "footer" . }}
+
+    </body>
+
+</html>

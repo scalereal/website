@@ -1,0 +1,439 @@
+{{ "<!-- Services -->" | safeHTML }}
+
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    {{ $.Scratch.Set "services" true }}
+
+    {{ partial "head" . }}
+
+    <body>
+        <div class="page-home">
+            {{ partial "nav" . }}
+            <div class="page-inner page-services">
+                <section class="section-inner-banner">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-8">
+                                <header class="heading content-center">
+                                    <h1 class="f700 text-black">Our range of services</h1>
+                                    <p class="text-grey">We work as your technology partners to support your entire
+                                                                                   software development cycle by providing various services as an extension to
+                                                                                   your current team.</p>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail bg-grey" id="web-development">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-md-2 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-web-development.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 order-md-1 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 align-self-center">
+                                            <h2 class="f700 text-black">Web development</h2>
+                                            <p class="text-grey">Leveraging new approaches, cutting edge technologies
+                                                                                                   and best practices, our experts bring front-end, back-end and
+                                                                                                   architecture ability together to build the backbone of your business.
+                                                                                                   We build applications with maximum accuracy and security which run
+                                                                                                   without any failure.</p>
+                                        </div>
+                                        <div class="col-md-6 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-web-development.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Single page apps</li>
+                                        <li class="col-md-6 text-grey">Progressive web apps</li>
+                                        <li class="col-md-6 text-grey">Enterprise web apps</li>
+                                        <li class="col-md-6 text-grey">Responsive web apps</li>
+                                        <li class="col-md-6 text-grey">Microservices architecture</li>
+                                        <li class="col-md-6 text-grey">Cloud-Native applications</li>
+                                        <li class="col-md-6 text-grey">APIs &amp; Integrations</li>
+                                        <li class="col-md-6 text-grey">Upgradation &amp; Migration</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail even" id="mobile-developemnt">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-lg-block d-md-none d-block text-center">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-mobile-development.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 order-md-2 align-self-center">
+                                            <h2 class="f700 text-black">Mobile development</h2>
+                                            <p class="text-grey">Need a 5 star rated enterprise or consumer mobile
+                                                                                                   application with great user experience, low maintenance and quick
+                                                                                                   upgrades? We can deliver highly optimized android, iOS and
+                                                                                                   cross-platform mobile apps that work seamlessly on all devices.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-mobile-development.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Native + React Native</li>
+                                        <li class="col-md-6 text-grey">Game development</li>
+                                        <li class="col-md-6 text-grey">Wearables</li>
+                                        <li class="col-md-6 text-grey">Mobile-enabled IoT solutions</li>
+                                        <li class="col-md-6 text-grey">Biometric sensors</li>
+                                        <li class="col-md-6 text-grey">Augmented &amp; Virtual reality</li>
+                                        <li class="col-md-6 text-grey">Geo tracking</li>
+                                        <li class="col-md-6 text-grey">Location sensing</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail bg-grey" id="ux-ui-design">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-md-2 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-uxui.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 order-md-1 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 align-self-center">
+                                            <h2 class="f700 text-black">UI/UX design</h2>
+                                            <p class="text-grey">Looking for user-centric new age UI/UX, optimized
+                                                                                                   for all platforms? ScaleReal can elaborate your vision into
+                                                                                                   wireframes and clickable prototypes. We focus on identifying your
+                                                                                                   target audience, simplifying navigation, minimizing user input and
+                                                                                                   creating precise content.</p>
+                                        </div>
+                                        <div class="col-md-6 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-uxui.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">User research</li>
+                                        <li class="col-md-6 text-grey">Wireframing</li>
+                                        <li class="col-md-6 text-grey">Prototyping</li>
+                                        <li class="col-md-6 text-grey">Responsive design</li>
+                                        <li class="col-md-6 text-grey">Apple's Flat Design</li>
+                                        <li class="col-md-6 text-grey">Google's Material Design</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail even" id="devops">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-devops.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 order-md-2 align-self-center">
+                                            <h2 class="f700 text-black">DevOps engineering</h2>
+                                            <p class="text-grey">Our DevOps services will help you with continuous
+                                                                                                   integration, continuous delivery, and continuous deployment which
+                                                                                                   will facilitate shorter development cycles, faster innovation and
+                                                                                                   increased efficiency. We target on reducing deployment failures,
+                                                                                                   rollbacks, and time to recover.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-devops.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">CI/CD</li>
+                                        <li class="col-md-6 text-grey">Budgeting of infra costs</li>
+                                        <li class="col-md-6 text-grey">Infra setup on cloud providers</li>
+                                        <li class="col-md-6 text-grey">Configuration management</li>
+                                        <li class="col-md-6 text-grey">Release management</li>
+                                        <li class="col-md-6 text-grey">Site reliability and monitoring</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail bg-grey" id="quality-assurance">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-md-2 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-quality-assurance.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 order-md-1 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 align-self-center">
+                                            <h2 class="f700 text-black">Quality assurance</h2>
+                                            <p class="text-grey">We make sure your product is bug free, reliable and
+                                                                                                   functional at an early stage by testing, retesting and regression
+                                                                                                   testing on different browsers, multiple operating systems and various
+                                                                                                   devices. Our clients rely on our QA sign off.</p>
+                                        </div>
+                                        <div class="col-md-6 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-quality-assurance.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Automation testing</li>
+                                        <li class="col-md-6 text-grey">UI/UX testing</li>
+                                        <li class="col-md-6 text-grey">Manual testing</li>
+                                        <li class="col-md-6 text-grey">Performance testing</li>
+                                        <li class="col-md-6 text-grey">API testing</li>
+                                        <li class="col-md-6 text-grey">Database testing</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="inner-cta bg-grey">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-8">
+                                <header class="heading">
+                                    <div class="img-wrap"></div>
+                                    <h2 class="f700 text-black">Do you have an idea?</h2>
+                                    <p class="f300 text-grey">We can help you with Estimation, Prototype, Minimum
+                                                                                   Viable Product, Complete Solution for new and existing product.</p>
+                                    <a class="btn-arrow btn-black" href="contact">Let's talk</a>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail bg-grey even" id="strategic-consulting">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-strategic-consulting.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 order-md-2 align-self-center">
+                                            <h2 class="f700 text-black">Strategic consulting</h2>
+                                            <p class="text-grey">Are you worried about the technology, time and cost
+                                                                                                   of your new product? Need help in analysing your legacy system and
+                                                                                                   mitigating the risk associated with the existing code? Our
+                                                                                                   strategists will help you set IT processes in line with your business
+                                                                                                   objectives to hit the bullseye.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-strategic-consulting.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Market segmentation</li>
+                                        <li class="col-md-6 text-grey">Code analysis</li>
+                                        <li class="col-md-6 text-grey">Competitive analysis</li>
+                                        <li class="col-md-6 text-grey">Monitoring</li>
+                                        <li class="col-md-6 text-grey">Architecture consulting</li>
+                                        <li class="col-md-6 text-grey">Server maintenance</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail" id="project-management">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-md-2 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-project-management.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 order-md-1 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 align-self-center">
+                                            <h2 class="f700 text-black">Project management</h2>
+                                            <p class="text-grey">Our perfect blend of scrum methodology, sprint
+                                                                                                   planning, daily client calls help us keep track of our daily
+                                                                                                   progress. We believe few hours of planning can save many weeks of
+                                                                                                   implementation, but we are also skilled enough to take ad-hoc
+                                                                                                   decisions and make changes on the fly.</p>
+                                        </div>
+                                        <div class="col-md-6 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "mages/service-project-management.svg" | absURL }}i" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Requirements documentation</li>
+                                        <li class="col-md-6 text-grey">User story composition</li>
+                                        <li class="col-md-6 text-grey">Feature definition</li>
+                                        <li class="col-md-6 text-grey">Backlog grooming</li>
+                                        <li class="col-md-6 text-grey">Feature prioritization</li>
+                                        <li class="col-md-6 text-grey">Sprint leadership</li>
+                                        <li class="col-md-6 text-grey">Roadmap creation</li>
+                                        <li class="col-md-6 text-grey">Talent management</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail bg-grey even" id="data-solutions">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-data-solutions.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 order-md-2 align-self-center">
+                                            <h2 class="f700 text-black">Data solutions</h2>
+                                            <p class="text-grey">Data scientists at ScaleReal can analyze your
+                                                                                                   complex big data and help you make better business decisions. We not
+                                                                                                   only present your data in a simple, visual and understandable way but
+                                                                                                   also help you predict the future of your business.</p>
+                                        </div>
+                                        <div class="col-md-6 order-md-1 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-data-solutions.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Machine learning</li>
+                                        <li class="col-md-6 text-grey">Data sanitization</li>
+                                        <li class="col-md-6 text-grey">Data scraping</li>
+                                        <li class="col-md-6 text-grey">Data analysis</li>
+                                        <li class="col-md-6 text-grey">Business intelligence</li>
+                                        <li class="col-md-6 text-grey">DataOps</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-service-detail" id="security">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 order-md-2 d-lg-block d-md-none d-block">
+                                <div class="img-wrap">
+                                    <img src="{{ "images/service-security.svg" | absURL }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-md-1 align-self-center">
+                                <header class="heading">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-6 align-self-center">
+                                            <h2 class="f700 text-black">Security</h2>
+                                            <p class="text-grey">By introducing security early in the development
+                                                                                                   lifecycle, our experts will help you secure your network, system
+                                                                                                   software, client side and server side applications. We focus on
+                                                                                                   reducing compliance burden and developing a robust security strategy
+                                                                                                   for your business.</p>
+                                        </div>
+                                        <div class="col-md-6 d-lg-none d-md-block d-none">
+                                            <div class="img-wrap-sm">
+                                                <img src="{{ "images/service-security.svg" | absURL }}" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="service-offer">
+                                    <ul class="list-unstyled row no-gutters">
+                                        <li class="col-md-6 text-grey">Threat modelling</li>
+                                        <li class="col-md-6 text-grey">VAPT web/mobile application</li>
+                                        <li class="col-md-6 text-grey">Network pentesting</li>
+                                        <li class="col-md-6 text-grey">OWASP top 10</li>
+                                        <li class="col-md-6 text-grey">Burpsuite</li>
+                                        <li class="col-md-6 text-grey">Nmap</li>
+                                        <li class="col-md-6 text-grey">Metasploit</li>
+                                        <li class="col-md-6 text-grey">Wireshark</li>
+                                    </ul>
+                                    <a class="btn-arrow btn-black" href="contact">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-cta bg-blue">
+                    <p class="text-white">We'd love to help you scale.
+                        <a class="btn-white f700" href="contact">Let's
+                                                           talk</a>
+                    </p>
+                </section>
+
+            </div>
+            {{ partial "footer" . }}
+        </div>
+    </body>
+
+</html>

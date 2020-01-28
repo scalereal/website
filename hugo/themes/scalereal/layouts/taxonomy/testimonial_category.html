@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head" . }}
+
+  <body id="page-top">
+    {{ partial "nav" . }}
+    <header class="hero small-header"></header>
+    <section id="testimonials" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Testimonials</h2>
+                    <div class="highlight-paragraph" style="max-width: 600px; margin:auto;">What our customers say about us</div>
+                </div>
+            </div>
+            <br/>
+            <div class="case-flex-row row">
+                {{ $paginator := .Paginate .Data.Pages }}
+                    {{ range $paginator.Pages }}
+                        {{ .Render "content-list" }}
+                    {{ end }}
+                {{ partial "pagination" . }}
+            </div>
+        </div>
+    </section>
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+  </body>
+</html>
