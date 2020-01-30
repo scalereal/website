@@ -15,22 +15,22 @@
                                 {{ .Render "feature-img" }}
                                 <p class="text-grey">
                                     Repeat the same summary text about the blog in minimum 26 words, consectetur labore,
-                                                                        officia odit rerum.
+                                    officia odit rerum.
                                 </p>
 
                                 <div class="article-content">
                                     {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
                                 </div>
                                 {{ .Render "footer-category" }}
-                            </section>
-                        </div>
-                        <div class="col">
-                            <section class="section-sidebar">
-                                <div class="sidebar-wrap">
-                                    <div class="sidebar-element bg-grey">
-                                        <a class="text-grey f14 f600" href="blog-post">See all articles</a>
-                                    </div>
-                                    <div class="sidebar-categories sidebar-element bg-grey">
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section class="section-sidebar">
+                            <div class="sidebar-wrap">
+                                <!-- <div class="sidebar-element bg-grey">
+                                    <a class="text-grey f14 f600" href="blog-post">See all articles</a>
+                                </div> -->
+                                <!-- <div class="sidebar-categories sidebar-element bg-grey">
                                         <p class="f14 f600 text-grey title">Browse by categories</p>
                                         <ul class="list-unstyled">
                                             <li>
@@ -66,28 +66,30 @@
                                                                                                     (5)</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                    <div class="sidebar-subscribe sidebar-element bg-grey">
-                                        <p class="f14 f600 text-grey title">Subscribe to our newsletter</p>
-                                        <form action="https://formspree.io/info@scalereal.com" id="" method="POST" novalidate="">
-                                            <div class="form-group">
-                                                <input class="form-control f14" id="" name="email" placeholder="Your email address" type="email">
-                                            </div>
-                                            <input type="submit" value="Subscribe">
-                                        </form>
-                                    </div>
+                                    </div> -->
+                                <div class="sidebar-subscribe sidebar-element bg-grey">
+                                    <p class="f14 f600 text-grey title">Subscribe to our newsletter</p>
+                                    <form action="https://formspree.io/info@scalereal.com" id="" method="POST"
+                                        novalidate="">
+                                        <div class="form-group">
+                                            <input class="form-control f14" id="" name="email"
+                                                placeholder="Your email address" type="email">
+                                        </div>
+                                        <input type="submit" value="Subscribe">
+                                    </form>
                                 </div>
-                            </section>
-                        </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-                {{ partial "js" . }}
             </div>
-            <section class="section-cta bg-blue">
-                <p class="text-white">We'd love to help you scale.
-                    <a class="btn-white f700" href="contact">Let's talk</a>
-                </p>
-            </section>
+            {{ partial "js" . }}
+        </div>
+        <section class="section-cta bg-blue">
+            <p class="text-white">We'd love to help you scale.
+                <a class="btn-white f700" href="contact">Let's talk</a>
+            </p>
+        </section>
         </div>
         {{ partial "footer" . }}
 

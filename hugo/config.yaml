@@ -12,7 +12,12 @@ MetaDataFormat: 'yaml'
 theme: scalereal
 
 googleAnalytics: 'UA-141833521-1'
+#SEO
+enableRobotsTXT: true
+canonifyURLs: true
 
+permalinks: { post: '/blogs/:title/' }
+#Params
 params:
     navigation:
         - name: Home
@@ -29,3 +34,8 @@ params:
           url: /contact
     fonts:
         google: [['Open Sans', '300,400,600,700,800']]
+    tags: [
+      "Web Application"
+    ]
+
+author: ["Ashish Mohite", "Deepak Kabbur", "Atul Shashikumar"]
