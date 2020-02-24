@@ -1,98 +1,58 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{ $.Scratch.Set "post" true }}
-    {{ partial "head.html" . }}
+  {{ $.Scratch.Set "post" true }}
+  {{ partial "head.html" . }}
 
-    <body>
-        {{ partial "nav" . }}
-        <div class="page-blog-post">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <section class="section-articles">
-                            <article class="article">
-                                {{ .Render "header" }}
-                                {{ .Render "feature-img" }}
-                                <p class="text-grey">
-                                    Repeat the same summary text about the blog in minimum 26 words, consectetur labore,
-                                    officia odit rerum.
-                                </p>
+  <body>
+    {{ partial "nav" . }}
+    <div class="page-blog-post">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="section-articles">
+              <article class="article">
+                <header class="heading">
+                  <h1 class="f700 text-black">{{ .Title }}</h1>
+                  <p class="article-category">By
+                    <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
+                    <!-- in 
+                    {{ .Render "category-list" }} -->
+                    on
+                    <span class="d-inline-block">
+                      <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                        {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
+                      </time>
+                    </span>
+                  </p>
+                </header>
+                {{ .Render "feature-img" }}
+                <p class="text-grey">
+                  {{ with .Description }}
+                  {{ . }}
+                  {{ end }}
+                </p>
 
-                                <div class="article-content">
-                                    {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
-                                </div>
-                                {{ .Render "footer-category" }}
-                        </section>
-                    </div>
-                    <div class="col">
-                        <section class="section-sidebar">
-                            <div class="sidebar-wrap">
-                                <!-- <div class="sidebar-element bg-grey">
-                                    <a class="text-grey f14 f600" href="blog-post">See all articles</a>
-                                </div> -->
-                                <!-- <div class="sidebar-categories sidebar-element bg-grey">
-                                        <p class="f14 f600 text-grey title">Browse by categories</p>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Python (58)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Ruby (27)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Rails (35)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">JavaScript (25)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Quality assurance
-                                                                                                    (25)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">UI/UX design (13)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Android (4)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">iOS (7)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">DevOps (6)</a>
-                                            </li>
-                                            <li>
-                                                <a class="f14 text-grey" href="javascript:void(0);">Project management
-                                                                                                    (5)</a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
-                                <div class="sidebar-subscribe sidebar-element bg-grey">
-                                    <p class="f14 f600 text-grey title">Subscribe to our newsletter</p>
-                                    <form action="https://formspree.io/info@scalereal.com" id="" method="POST"
-                                        novalidate="">
-                                        <div class="form-group">
-                                            <input class="form-control f14" id="" name="email"
-                                                placeholder="Your email address" type="email">
-                                        </div>
-                                        <input type="submit" value="Subscribe">
-                                    </form>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                <div class="article-content">
+                  {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
                 </div>
-            </div>
-            {{ partial "js" . }}
+                {{ .Render "footer-category" }}
+            </section>
+          </div>
+          <div class="col">
+            {{ partial "blog-sidebar" . }}
+          </div>
         </div>
-        <section class="section-cta bg-blue">
-            <p class="text-white">We'd love to help you scale.
-                <a class="btn-white f700" href="contact">Let's talk</a>
-            </p>
-        </section>
-        </div>
-        {{ partial "footer" . }}
+      </div>
+      {{ partial "js" . }}
+    </div>
+    <section class="section-cta bg-blue">
+      <p class="text-white">We'd love to help you scale.
+        <a class="btn-white f700" href="contact">Let's talk</a>
+      </p>
+    </section>
+    </div>
+    {{ partial "footer" . }}
 
-    </body>
+  </body>
 
 </html>

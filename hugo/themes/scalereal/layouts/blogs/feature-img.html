@@ -1,3 +1,5 @@
 {{ if and (isset .Params "thumbnail") (.Params.thumbnail) }}
     <a href="{{ .Permalink }}"><img alt="" class="d-block" src="{{ .Params.thumbnail }}"></a>
+    <!-- <a href="blog-post"><img alt="" class="d-block" src="https://picsum.photos/640/360"></a> -->
+
 {{ end }}

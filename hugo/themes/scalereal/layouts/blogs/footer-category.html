@@ -15,8 +15,7 @@
         <!-- Display the categories associated with this post -->
         {{ range .Params.tags }}
         <li class="article-category-item">
-            <!-- <a href='{{ add "/tags/" . | urlize }}'>{{ . }}</a> -->
-            <a class="text-grey" href="javascript:void(0);">{{ . }}</a>
+            <a href='{{ add "/tags/" . | urlize }}'>{{ . }}</a>
         </li>
         {{ end }}
         {{ end }}
