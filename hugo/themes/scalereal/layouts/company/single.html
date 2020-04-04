@@ -2,151 +2,160 @@
 
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{ $.Scratch.Set "company" true }}
+{{ $.Scratch.Set "company" true }}
 
-    {{ partial "head" . }}
+{{ partial "head" . }}
 
-    <body>
-        {{ partial "nav" . }}
-        <div class="page-inner page-about">
-            <section class="section-inner-banner">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-8">
-                            <header class="heading content-center">
-                                <h1 class="f700 text-black">Skilled team of professionals</h1>
-                                <p class="text-grey">We consider our work as our craft. So, like any craftsman we keep
-                                    on improving the quality of our work to meet the client and user satisfaction.</p>
-                            </header>
-                        </div>
+<body>
+    {{ partial "nav" . }}
+    <div class="page-inner page-about">
+        <section class="section-inner-banner">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <header class="heading content-center">
+                            <h1 class="f700 text-black">Skilled team of professionals</h1>
+                            <p class="text-grey">We consider our work as our craft. So, like any craftsman we keep
+                                on improving the quality of our work to meet the client and user satisfaction.</p>
+                        </header>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="about-number bg-grey">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 text-black text-center"><span class="f800">10+</span>
-                            <p>Years of experience</p>
-                        </div>
-                        <div class="col-md-4 text-black text-center"><span class="f800">35+</span>
-                            <p>Projects delivered</p>
-                        </div>
-                        <div class="col-md-4 text-black text-center"><span class="f800">3M+</span>
-                            <p>Happy users</p>
-                        </div>
+        <section class="about-number bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-black text-center"><span class="f800">10+</span>
+                        <p>Years of experience</p>
+                    </div>
+                    <div class="col-md-4 text-black text-center"><span class="f800">35+</span>
+                        <p>Projects delivered</p>
+                    </div>
+                    <div class="col-md-4 text-black text-center"><span class="f800">3M+</span>
+                        <p>Happy users</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail how-we-work">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 order-md-2">
-                            <div class="img-wrap">
-                                <img src="{{ "images/remote-team.svg" | absURL }}" alt="">
+        <section class="section-service-detail how-we-work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <div class="img-wrap">
+                            <img src="{{ "images/remote-team.svg" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1 align-self-center">
+                        <header class="heading">
+                            <h2 class="f700 text-black">How we work?</h2>
+                        </header>
+                        <p class="text-grey">We're a remote first company with a cohesive team, working
+                            asynchronously to help people across the globe to build and scale their dream projects.
+                        </p>
+                        <p class="text-grey">We prefer documentation over talks and over communicating things to
+                            make them clear to everyone. ScaleReal believes in small teams as they are fast and
+                            nimble, which means less management and getting more things done.</p>
+                        <p class="text-grey">We follow agile methodology which involves sprint planning, daily
+                            updates, sprint retrospective, client demo, UAT apart from requirement gathering,
+                            design work, feature implementation, testing, deployment and maintenance.</p>
+                        <p class="text-grey">Instant feedbacks and healthy discussions are a part of ScaleReal’s
+                            culture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-approach">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <header class="heading content-center">
+                            <h2 class="f700 text-black">Our systematic process</h2>
+                            <p class="text-grey">ScaleReal have a clearly established approach to cater your
+                                specific needs of building awesome products. We don't believe in a one size fits
+                                all model, we know what works and what doesn't.</p>
+                        </header>
+                    </div>
+                    <div class="col-lg-10 text-center">
+                        <img src="{{ "images/approach.svg" | absURL }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail even" id="work-with-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-wrap">
+                            <img src="{{ "images/service-strategic-consulting.svg" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <header class="heading">
+                            <h2 class="f700 text-black">What it's like to work with us?</h2>
+                        </header>
+                        <p class="text-grey">Being a remote first organisation gives us access to a wider range of
+                            talent pool and the flexibility to work when we feel most productive in a day.</p>
+                        <p class="text-grey">We devote 20 percent of our time to self improvement, open source
+                            contribution, technical sessions, internal projects, attending various conferences and
+                            for giving talks. Since we are remote we meet every quarter for team bonding and
+                            planning events.</p>
+                        <p class="text-grey">Everybody at ScaleReal takes their craft seriously and that’s why
+                            ownership and best practices like extreme programming, TDD, Clean Code, Refactoring,
+                            CI/CD comes inherently.</p>
+                        <p class="text-grey">We at ScaleReal offers you some amazing leave policies because we
+                            believe that your physical health and mental health is as important as your work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-client" id="clients">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <header class="heading content-center">
+                            <h2 class="f700 text-black">Associated With</h2>
+                            <p class="text-grey">Big or small, startups or grownups, we’ve been devoting our hearts
+                                and minds to our clients, achieving great successes and building lasting
+                                relationships.</p>
+                        </header>
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-12 text-center">
+                                <img src="{{ "images/clients/mindset-logo.png" | absURL }}" alt="" title="Mindset">
+                                <img src="{{ "images/clients/blue-creazione-logo.png" | absURL }}" alt=""
+                                    title="Blue Creazione">
+                                <img src="{{ "images/clients/mercedes-benz-logo.png" | absURL }}" alt=""
+                                    title="Mercedes Benz">
+                                <img src="{{ "images/clients/dbe-cloud-logo.png" | absURL }}" alt="" title="DBE Cloud">
+                                <img src="{{ "images/clients/sustain-online.png" | absURL }}" alt=""
+                                    title="Sustain Online">
+                                <img src="{{ "images/clients/panda-wolf-logo.png" | absURL }}" alt=""
+                                    title="Panda and Wolf">
+                                <img src="{{ "images/clients/smartquest-logo.png" | absURL }}" alt=""
+                                    title="Smartquest">
+                                <img src="{{"images/clients/galactica.png" | absURL }}" alt="" title="Galactica AI">
+                                <img src="{{ "images/clients/tenfold-logo.jpg" | absURL }}" alt="" title="Tenfold">
+                                <img src="{{"images/clients/geo-spoc.png" | absURL }}" alt="" title="GeoSpoc">
+                                <img src="{{"images/clients/helpful-crowd.png" | absURL }}" alt="" title="HelpfulCrowd">
+                                <img src="{{"images/clients/medly-logo.jpg" | absURL }}" alt="" title="Medly">
                             </div>
                         </div>
-                        <div class="col-md-6 order-md-1 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">How we work?</h2>
-                            </header>
-                            <p class="text-grey">We're a remote first company with a cohesive team, working
-                                asynchronously to help people across the globe to build and scale their dream projects.
-                            </p>
-                            <p class="text-grey">We prefer documentation over talks and over communicating things to
-                                make them clear to everyone. ScaleReal believes in small teams as they are fast and
-                                nimble, which means less management and getting more things done.</p>
-                            <p class="text-grey">We follow agile methodology which involves sprint planning, daily
-                                updates, sprint retrospective, client demo, UAT apart from requirement gathering,
-                                design work, feature implementation, testing, deployment and maintenance.</p>
-                            <p class="text-grey">Instant feedbacks and healthy discussions are a part of ScaleReal’s
-                                culture.</p>
-                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="about-approach">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <header class="heading content-center">
-                                <h2 class="f700 text-black">Our systematic process</h2>
-                                <p class="text-grey">ScaleReal have a clearly established approach to cater your
-                                    specific needs of building awesome products. We don't believe in a one size fits
-                                    all model, we know what works and what doesn't.</p>
-                            </header>
-                        </div>
-                        <div class="col-lg-10 text-center">
-                            <img src="{{ "images/approach.svg" | absURL }}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <section class="section-cta bg-blue">
+            <p class="text-white">We'd love to help you scale. <a href="/contact" class="btn-white f700">Let's
+                    talk</a></p>
+        </section>
 
-            <section class="section-service-detail even" id="work-with-us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="img-wrap">
-                                <img src="{{ "images/service-strategic-consulting.svg" | absURL }}" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">What it's like to work with us?</h2>
-                            </header>
-                            <p class="text-grey">Being a remote first organisation gives us access to a wider range of
-                                talent pool and the flexibility to work when we feel most productive in a day.</p>
-                            <p class="text-grey">We devote 20 percent of our time to self improvement, open source
-                                contribution, technical sessions, internal projects, attending various conferences and
-                                for giving talks. Since we are remote we meet every quarter for team bonding and
-                                planning events.</p>
-                            <p class="text-grey">Everybody at ScaleReal takes their craft seriously and that’s why
-                                ownership and best practices like extreme programming, TDD, Clean Code, Refactoring,
-                                CI/CD comes inherently.</p>
-                            <p class="text-grey">We at ScaleReal offers you some amazing leave policies because we
-                                believe that your physical health and mental health is as important as your work.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-client" id="clients">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <header class="heading content-center">
-                                <h2 class="f700 text-black">Our clients</h2>
-                                <p class="text-grey">Big or small, startups or grownups, we’ve been devoting our hearts
-                                    and minds to our clients, achieving great successes and building lasting
-                                    relationships.</p>
-                            </header>
-                            <div class="row justify-content-md-center">
-                                <div class="col-lg-10 text-center">
-                                    <img src="{{ "images/clients/mindset-logo.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/panda-wolf-logo.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/tenfold-logo.jpg" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/blue-creazione-logo.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/mercedes-benz-logo.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/dbe-cloud-logo.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/sustain-online.png" | absURL }}" alt=""><img
-                                        src="{{ "images/clients/smartquest-logo.png" | absURL }}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-cta bg-blue">
-                <p class="text-white">We'd love to help you scale. <a href="/contact" class="btn-white f700">Let's
-                        talk</a></p>
-            </section>
-
-        </div>
-        {{ partial "footer" . }}
-    </body>
+    </div>
+    {{ partial "footer" . }}
+</body>
 
 </html>

@@ -1339,6 +1339,7 @@ h3 {
 .page-about .about-client img {
   filter: grayscale(1);
   max-height: 70px;
+  max-width: 150px;
   transition: all .5s ease-in-out;
   margin: 30px 15px;
 }
