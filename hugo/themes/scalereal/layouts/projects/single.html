@@ -2,162 +2,309 @@
 
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{ $.Scratch.Set "projects" true }}
-    {{ partial "head.html" . }}
+{{ $.Scratch.Set "projects" true }}
+{{ partial "head.html" . }}
 
-    <body>
-        {{ partial "nav" . }}
-        <div class="page-inner page-projects">
-            <section class="section-inner-banner">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-8">
-                            <header class="heading content-center">
-                                <h1 class="f700 text-black">Handcrafted projects</h1>
-                                <p class="text-grey">Explore some of our high quality, cost effective, reliable and
-                                                                        easy-to-use applications that we built for our clients to solve their complex
-                                                                        business problems.</p>
-                            </header>
+<body>
+    {{ partial "nav" . }}
+    <div class="page-inner page-projects">
+        <section class="section-inner-banner">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <header class="heading content-center">
+                            <h1 class="f700 text-black">Handcrafted projects</h1>
+                            <p class="text-grey">Explore some of our high quality, cost effective, reliable and
+                                easy-to-use applications that we built for our clients to solve their complex
+                                business problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/tenfold.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Ten Fold Education</h2>
+                        <p class="text-grey">South Africa’s first Mobile based learning application for High
+                            School learners. It helps them excel in academics while engaging them in a fun and
+                            interactive way.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax, Java, Kotlin,
+                                Retrofit, Dagger, Swift, Objective C</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail project-detail bg-grey">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 order-md-2">
-                            <div class="img-wrap">
-                                <img src="{{ "images/project1.png" | absURL }}" alt="">
-                            </div>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/mercedes-benz.png" | absURL }}" alt="">
                         </div>
-                        <div class="col-md-6 order-md-1 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">Ten Fold Education</h2>
-                                <p class="text-grey">South Africa’s first Mobile based learning application for High
-                                                                        School learners. It helps them excel in academics while engaging them in a fun and
-                                                                        interactive way.</p>
-                                <div class="project-tech">
-                                    <p class="f700 text-grey">Technologies</p>
-                                    <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax, Java, Kotlin,
-                                                                                Retrofit, Dagger, Swift, Objective C</p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Mercedes Benz</h2>
+                        <p class="text-grey">Hybrid mobile application which helps dealers to take superior
+                            pictures of used cars. It’s an easy to use and intuitive mobile app which allows
+                            dealers to standardize the process of taking pictures.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Unity3D</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail even">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="img-wrap">
-                                <img src="{{ "images/project2.png" | absURL }}" alt="">
-                            </div>
+
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/Galactica.png" | absURL }}" alt="">
                         </div>
-                        <div class="col-md-6 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">Mercedes Benz</h2>
-                                <p class="text-grey">Hybrid mobile application which helps dealers to take superior
-                                                                        pictures of used cars. It’s an easy to use and intuitive mobile app which allows
-                                                                        dealers to standardize the process of taking pictures.</p>
-                                <div class="project-tech">
-                                    <p class="f700 text-grey">Technologies</p>
-                                    <p class="text-grey">Python, Django, Postgres , Ansible, Js, Unity3D</p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Galactica</h2>
+                        <p class="text-grey">A platform that offers Cutting-Edge, Powerful AI Algorithms to generate
+                            actionable insights From Satellite and UAV Data. The geospatial analytics helps to identify
+                            various objects like Plane, Large Vehicles, Military Vehicles, etc, from the Satellite
+                            images.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">ReactJS, Redux, SCSS, Flask, Redis, Celery, Netlify, Docker, Webpack,
+                                NPM, Yarn</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail bg-grey">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 order-md-2">
-                            <div class="img-wrap">
-                                <img src="{{ "images/project3.png" | absURL }}" alt="">
-                            </div>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
                         </div>
-                        <div class="col-md-6 order-md-1 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">DBE Cloud</h2>
-                                <p class="text-grey">Integration of learning videos with CLOX device which helps store
-                                                                        all the data without servers for offline video streaming. CLOX can be used with
-                                                                        TV’s, Projectors, Mobile Devices and Desktop Computers.</p>
-                                <div class="project-tech">
-                                    <p class="f700 text-grey">Technologies</p>
-                                    <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">DBE Cloud</h2>
+                        <p class="text-grey">Integration of learning videos with CLOX device which helps store
+                            all the data without servers for offline video streaming. CLOX can be used with
+                            TV’s, Projectors, Mobile Devices and Desktop Computers.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail even">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="img-wrap">
-                                <img src="{{ "images/project4.png" | absURL }}" alt="">
-                            </div>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/Medly-Pharmacy.png" | absURL }}" alt="">
                         </div>
-                        <div class="col-md-6 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">Smart Quest</h2>
-                                <p class="text-grey">SmartQuest reinforces training / learning with the help of
-                                                                        micro-content like Quizzes, Reference Lists, Lessons, News Feed. It helps in staying
-                                                                        up-to-date with the latest news & events in your company and sector. SmartQuest also
-                                                                        facilitates First Line Managers to regularly rate their Sales reps on selling
-                                                                        parameters on a consistent framework using Manager Feedback.</p>
-                                <div class="project-tech">
-                                    <p class="f700 text-grey">Technologies</p>
-                                    <p class="text-grey">Vue.js, JavaScript, Webpack, Material Design, MongoDB, Ruby on
-                                                                                Rails</p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">
+                            Medly Pharmacy
+                        </h2>
+                        <p class="text-grey">With an experience of over 30 years in US Healthcare Industry, Medly
+                            provides SaaS products that cater to Healthcare domain and also provides a free same-day
+                            prescription delivery to their patients, wherever they are, using encrypted internal systems
+                            to track orders, drug storage, and delivery in real-time. </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Kotlin, ReactJS, Redux, Saga, React Testing Library, Styled Components,
+                                NodeJS, Python, Elastic Beanstalk, Aurora Serverless (Postgress), Docker, AWS Lambda,
+                                TravisCI, AWS CodeBuild, AWS CodePipeline, Terraform, Cypress, ROR, Swift </p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-service-detail bg-grey">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 order-md-2">
-                            <div class="img-wrap">
-                                <img src="{{ "images/project5.png" | absURL }}" alt="">
-                            </div>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/smart-quest.png" | absURL }}" alt="">
                         </div>
-                        <div class="col-md-6 order-md-1 align-self-center">
-                            <header class="heading">
-                                <h2 class="f700 text-black">Mindset</h2>
-                                <p class="text-grey">An online learning application for tracking, reporting, and
-                                                                        delivery of educational courses along with a CMS panel for admin to create and
-                                                                        integrate course materials, align content and assessments, articulate learning goals
-                                                                        and track studying progress.</p>
-                                <div class="project-tech">
-                                    <p class="f700 text-grey">Technologies</p>
-                                    <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
-                                </div>
-                            </header>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Smart Quest</h2>
+                        <p class="text-grey">SmartQuest reinforces training / learning with the help of
+                            micro-content like Quizzes, Reference Lists, Lessons, News Feed. It helps in staying
+                            up-to-date with the latest news & events in your company and sector. SmartQuest also
+                            facilitates First Line Managers to regularly rate their Sales reps on selling
+                            parameters on a consistent framework using Manager Feedback.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Vue.js, JavaScript, Webpack, Material Design, MongoDB, Ruby on
+                                Rails</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-cta bg-blue">
-                <p class="text-white">We'd love to help you scale.
-                    <a class="btn-white f700" href="/contact">Let's
-                                                talk</a>
-                </p>
-            </section>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/GeoSpoc-GeoCoder.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
 
-        </div>
-        {{ partial "footer" . }}
+                        <h2 class="f700 text-black">GeoSpoc - GeoCoder</h2>
+                        <p class="text-grey">A highly performant offline geocoding engine to tranform messy addresses
+                            into sub-components like street names, locality names, pin codes etc. for hierarchical
+                            component matching and finding the Latitude - Longitude using GeoSpoc's extensively verified
+                            home-brewed database. This geocoding engine can process 20 million records per hour using
+                            batch mode and has submillisecond latency for REST APIs.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Golang, MemDB, License Manager, Customized Alogorithms, Docker, JMeter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/Mindset-TV-App.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Hisense - Mindset TV App</h2>
+                        <p class="text-grey">A built-in learning application for Hisense TV which offers students of
+                            various grades to access 1000+ courses across 10+ areas/fields. The app has an exclusive
+                            list of educational activities and material that is designed by experts according to the
+                            various stages and levels of your child’s development. </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey"> Python, Django, Postgres, ReactJS, AWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/HelpfulCrowd.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">HelpfulCrowd</h2>
+                        <p class="text-grey">Heroku to AWS migration of a product review application that collects a ton
+                            of product reviews to leverage SEO and boost sales. Setting up CI/CD pipeline using CircleCI
+                            and autoscaling infrastructure to optimize the monthly AWS bills. </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">ROR, Postgress, Sidekiq, Elastic Beanstalk, S3, Elastic Cache (Redis),
+                                AWS SNS, Aurora Serverless (Postgress)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/SustainOnine.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">SustainOnine</h2>
+                        <p class="text-grey">An application having curated content for a smooth learning journey through
+                            hundreds of courses based on 30 years of experience and scientific research. This SaaS
+                            platform with SSO was migrated from Baremetal Servers to AWS cloud and also integrated with
+                            OpenEdx LMS. </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Django REST Framework, MySQL, Redis, Celery, AWS,
+                                Ansible, OpenEdx </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order">
+                        <div class="img-wrap">
+                            <img src="{{ "images/projects/mindset.png" | absURL }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center">
+
+                        <h2 class="f700 text-black">Mindset</h2>
+                        <p class="text-grey">An online learning application for tracking, reporting, and
+                            delivery of educational courses along with a CMS panel for admin to create and
+                            integrate course materials, align content and assessments, articulate learning goals
+                            and track studying progress.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cta bg-blue">
+            <p class="text-white">We'd love to help you scale.
+                <a class="btn-white f700" href="/contact">Let's
+                    talk</a>
+            </p>
+        </section>
+
+    </div>
+    {{ partial "footer" . }}
+
+</body>
 
 </html>
