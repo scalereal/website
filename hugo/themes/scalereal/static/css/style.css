@@ -1137,7 +1137,7 @@ h3 {
 .section-technology .non-sprite-tech {
   display: block;
   height: 52px;
-  width: 90px;
+  width: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1164,7 +1164,25 @@ h3 {
 .section-technology .non-sprite-tech.flutter {
   background-image: url(../images/android/flutter.png);
 }
-
+.section-technology .non-sprite-tech.circleci {
+  background-image: url(../images/devops/circleci.png);
+}
+.section-technology .non-sprite-tech.Terraform {
+  background-image: url(../images/devops/Terraform.png);
+}
+.section-technology .non-sprite-tech.travisCI {
+  background-image: url(../images/devops/travisCI.png);
+}
+.section-technology .non-sprite-tech.kotlin {
+  background-image: url(../images/backend/kotlin.png);
+}
+.section-technology .non-sprite-tech.nodejs-logo {
+  background-image: url(../images/backend/nodejs-logo.jpg);
+}
+.section-technology .non-sprite-tech.typescript {
+  background-image: url(../images/backend/typescript.png);
+  width: 115px;
+}
 /* Section about */
 .section-about .text-wrap p {
   margin-bottom: 30px;
