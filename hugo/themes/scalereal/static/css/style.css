@@ -1134,6 +1134,37 @@ h3 {
   width: 48px;
 }
 
+.section-technology .non-sprite-tech {
+  display: block;
+  height: 52px;
+  width: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-technology .non-sprite-tech.clickUp {
+  background-image: url(../images/tools/ClickUp.png);
+}
+.section-technology .non-sprite-tech.clubhouse {
+  background-image: url(../images/tools/clubhouse.png);
+}
+.section-technology .non-sprite-tech.cypress-bw {
+  background-image: url(../images/tools/cypress-bw.png);
+}
+.section-technology .non-sprite-tech.figma-logo {
+  background-image: url(../images/tools/figma-logo.png);
+}
+.section-technology .non-sprite-tech.marker-io {
+  background-image: url(../images/tools/marker-io.png);
+}
+.section-technology .non-sprite-tech.serverless-com {
+  background-image: url(../images/tools/serverless-com.jpg);
+}
+.section-technology .non-sprite-tech.flutter {
+  background-image: url(../images/android/flutter.png);
+}
+
 /* Section about */
 .section-about .text-wrap p {
   margin-bottom: 30px;
