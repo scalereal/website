@@ -2034,10 +2034,6 @@ h3 {
   background-color: #f5f8fc;
 }
 
-.section-project-detail.section-service-detail:nth-child(odd) img {
-  transform: scaleX(-1);
-}
-
 .section-project-detail.section-service-detail:nth-child(odd) .img-wrap {
   text-align: left;
 }
