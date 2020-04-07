@@ -809,11 +809,6 @@ h3 {
   width: 58px;
 }
 
-.section-technology i.sprite-tech.java {
-  background-position: -203px 0;
-  width: 40px;
-}
-
 .section-technology i.sprite-tech.php {
   background-position: -245px 0;
   width: 94px;
@@ -1159,11 +1154,9 @@ h3 {
   background-image: url(../images/tools/marker-io.png);
 }
 .section-technology .non-sprite-tech.serverless-com {
-  background-image: url(../images/tools/serverless-com.jpg);
+  background-image: url(../images/tools/serverless.png);
 }
-.section-technology .non-sprite-tech.flutter {
-  background-image: url(../images/android/flutter.png);
-}
+
 .section-technology .non-sprite-tech.circleci {
   background-image: url(../images/devops/circleci.png);
 }
@@ -1183,6 +1176,48 @@ h3 {
   background-image: url(../images/backend/typescript.png);
   width: 115px;
 }
+.section-technology .non-sprite-tech.java {
+  background-image: url(../images/backend/Java.png);
+}
+.section-technology .non-sprite-tech.python {
+  background-image: url(../images/backend/python.png);
+}
+
+/* front end */
+.section-technology .non-sprite-tech.bootstrap {
+  background-image: url(../images/frontend/bootstrap.png);
+}
+.section-technology .non-sprite-tech.react {
+  background-image: url(../images/frontend/react.png);
+}
+.section-technology .non-sprite-tech.angular {
+  background-image: url(../images/frontend/angular.png);
+}
+.section-technology .non-sprite-tech.vue {
+  background-image: url(../images/frontend/vue.png);
+}
+.section-technology .non-sprite-tech.gulp {
+  background-image: url(../images/frontend/gulp.png);
+}
+
+.section-technology .non-sprite-tech.ios {
+  background-image: url(../images/mobile/ios.png);
+}.section-technology .non-sprite-tech.android {
+  background-image: url(../images/mobile/android.png);
+}.section-technology .non-sprite-tech.swift {
+  background-image: url(../images/mobile/swift.png);
+}.section-technology .non-sprite-tech.flutter {
+  background-image: url(../images/mobile/flutter.png);
+}.section-technology .non-sprite-tech.testflight {
+  background-image: url(../images/mobile/testflight.png);
+}.section-technology .non-sprite-tech.appcenter {
+  background-image: url(../images/mobile/appcenter.png);
+}
+
+
+
+
+
 /* Section about */
 .section-about .text-wrap p {
   margin-bottom: 30px;
