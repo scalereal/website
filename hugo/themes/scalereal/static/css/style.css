@@ -1182,6 +1182,9 @@ h3 {
 .section-technology .non-sprite-tech.python {
   background-image: url(../images/backend/python.png);
 }
+.section-technology .non-sprite-tech.ruby {
+  background-image: url(../images/backend/ruby-logo-png-6.png);
+}
 
 /* front end */
 .section-technology .non-sprite-tech.bootstrap {
@@ -1305,13 +1308,13 @@ h3 {
 }
 
 .section-client .client-name img.client-brand {
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
   position: absolute;
   top: 50%;
   right: 0;
-  margin-top: -25px;
   margin-right: -75px;
+  transform: translate(0, -50%);
 }
 
 .section-client .client-type li {
