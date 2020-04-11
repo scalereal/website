@@ -2092,3 +2092,13 @@ h3 {
     order: 1;
   }
 }
+
+/* .we-offer-wrap h3{
+  color: #0eccd8;
+} */
+.we-offer-wrap a{
+  filter: grayscale(1);
+}
+.we-offer-wrap a:hover{
+  filter: grayscale(0);
+}
