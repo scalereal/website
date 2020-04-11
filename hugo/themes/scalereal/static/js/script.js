@@ -32,4 +32,13 @@ $(document).ready(function(){
   $hamburger.on('click', function(e) {
     $hamburger.toggleClass('is-active');
   });
+
+  var current = location.pathname;
+  $('.navbar-nav .nav-link').each(function(index){
+      var $this = $(this);
+      // if the current path is like this link, make it active
+      if((current === '/' && index === 0 )||  ( current !== '/' && ($this.attr('href') + '/').indexOf(current) !== -1)) {
+        $this.addClass('active');
+      }
+  })
 });
