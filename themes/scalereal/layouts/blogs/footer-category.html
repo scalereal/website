@@ -1,0 +1,22 @@
+    <ul class="article-category clearfix">
+        {{ if isset .Params "tags" }}
+        {{ $tagsCount := (len .Params.tags) }}
+
+        {{ if ge $tagsCount 1 }}
+        <li class="article-category-item">
+            {{ if gt $tagsCount 1 }}
+            Tags
+            {{ else }}
+            Tag
+            {{ end }}
+        </li>
+        {{ end }}
+
+        <!-- Display the categories associated with this post -->
+        {{ range .Params.tags }}
+        <li class="article-category-item">
+            <a href='{{ add "/tags/" . | urlize }}'>{{ . }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+    {{ partial "head" . }}
+
+    <body id="page-top" class="index">
+        <header class="hero small-header"></header>
+        {{ partial "nav" . }}
+        <div class="container">
+            <h1>Page not found</h1>
+            <h4>You can get back to <a href="/">home page</a> Try reading our blog posts</h4>
+            <ul>
+                {{ range first 10 (where .Site.Pages "Section" "=" "post") }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+
+        {{ partial "footer" . }}
+        {{ partial "js" . }}
+    </body>
+
+</html>
