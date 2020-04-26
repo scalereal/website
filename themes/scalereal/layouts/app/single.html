@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ $.Scratch.Set "post" true }}
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "nav" . }}
+    	<div class="page-blog-post">
+			  <div class="container">
+			    <div class="row">
+			      <div class="col-md-8">
+			        <section class="section-articles">
+			          <article class="article">
+			            <header class="heading">
+			              <h1 class="f700 text-black">{{ .Title }}</h1>
+			              <p class="article-category">By
+			                <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
+			              </p>
+			            </header>
+			            <p class="text-grey">
+			              {{ with .Description }}
+			              {{ . }}
+			              {{ end }}
+			            </p>
+			            <hr />
+    								{{ .Render .Params.name }}
+
+			            <div class="article-content">
+			              {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
+			            </div>
+			          </article>
+			        </section>
+			      </div>
+			      <div class="col">
+			        {{ partial "app-sidebar" . }}
+			      </div>
+			    </div>
+			  </div>
+			</div>
+    {{ partial "footer" . }}
+  </body>
+  {{ partial "js" . }}
+</html>
