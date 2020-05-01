@@ -1,22 +1,33 @@
+<!-- Primary Meta Tags -->
 <!-- title tags -->
 <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="title" content={{ .Title }} | {{ .Site.Title }}>
+<meta name="description" content="{{ .Description }}" />
+<meta itemprop="description" content="{{ .Description }}" />
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
-<!-- description tags -->
-<meta name="description" content="{{ .Description }}" />
-<meta itemprop="description" content="{{ .Description }}" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:description" content="{{ .Description }}" />
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="twitter:description" content="{{ .Description }}" />
+<meta name="twitter:site" content="@Scalereal">
+<meta name="twitter:creator" content="@Scalereal">
 
 <!-- link tags -->
 <base href="{{ .Permalink }}">
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
 <meta name="url" content="{{ .Permalink }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+
 
 <!-- language tags -->
 <meta property="og:locale" content="{{ .Language.Lang }}">
@@ -39,7 +50,7 @@
 {{ end }}
 
 <!-- date tags -->
-<meta property="og:updated_time" content={{ .Lastmod.Format "2020-04-02T15:04:05Z0700" | safeHTML }} />
+<meta property="og:updated_time" content={{ .Lastmod.Format "2020-05-01T15:04:05Z0700" | safeHTML }} />
 <!-- Sitemap & RSS Feed Tags -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
 
