@@ -1,4 +1,4 @@
-baseURL: 'https://scalereal.com/'
+baseURL: '/'
 languageCode: 'en-us'
 title: 'Scalereal'
 defaultContentLanguage: en
@@ -35,6 +35,5 @@ params:
     tags: [
       "Web Application"
     ]
-    description: "We build applications that scale beyond reality."
 
 author: ["Ashish Mohite", "Deepak Kabbur", "Atul Shashikumar"]
