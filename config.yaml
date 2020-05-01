@@ -33,6 +33,6 @@ params:
     fonts:
         google: [['Open Sans', '300,400,600,700,800']]
     tags: ['Web Application']
-    ogimage: /images/logo/scalereal-logo-blue.png
+    ogimage: https://scalereal.com/images/logo/scalereal-logo-blue.png
 
 author: ['Ashish Mohite', 'Deepak Kabbur', 'Atul Shashikumar']
