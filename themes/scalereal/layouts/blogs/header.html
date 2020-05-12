@@ -2,23 +2,22 @@
   <a href="{{ .Permalink }}">
     <h2 class="f700 text-black">{{ .Title }}</h2>
   </a>
-  <!-- <p class="article-category">By
+  <p class="article-category">By
     <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
     <span class="d-inline-block">
       <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-        ,
         {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
       </time>
     </span>
-  </p> -->
+  </p>
 
   <p class="text-grey">
     {{ with .Description }}
-      {{ . }}
+    {{ . }}
     {{ end }}
   </p>
   {{ if .Params.excerpt }}
-    <p class="text-grey">{{ printf "%s" .Params.excerpt | markdownify }}</p>
+  <p class="text-grey">{{ printf "%s" .Params.excerpt | markdownify }}</p>
   {{ end }}
 </header>
 

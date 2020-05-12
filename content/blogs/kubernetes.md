@@ -12,7 +12,7 @@ images: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_log
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1920px-Kubernetes_logo_without_workmark.svg.png
 
 excerpt:
-  Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation
+  Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google...
 url: devops/2020/01/31/whats-this-kubernetes-thing.html
 ---
 
