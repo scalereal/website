@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-{{ $.Scratch.Set "post" true }}
-{{ partial "head.html" . }}
+  {{ $.Scratch.Set "post" true }}
+  {{ partial "head.html" . }}
 
-<body>
-  {{ partial "nav" . }}
-  <div class="page-blog-post">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <section class="section-articles">
-            <article class="article">
-              <header class="heading">
-                <h1 class="f700 text-black">{{ .Title }}</h1>
-                <p class="article-category">By
-                  <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
-                  <!-- in 
+  <body>
+    {{ partial "nav" . }}
+    <div class="page-blog-post">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="section-articles">
+              <article class="article">
+                <header class="heading">
+                  <h1 class="f700 text-black">{{ .Title }}</h1>
+                  <p class="article-category">By
+                    <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
+                    <!-- in 
                     {{ .Render "category-list" }} -->
-                  on
-                  <span class="d-inline-block">
-                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                      {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
-                    </time>
-                  </span>
+                                      on
+                    <span class="d-inline-block">
+                      <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                        {{(.Params.date).Format "January 2, 2006"}}
+                      </time>
+                    </span>
+                  </p>
+                </header>
+                <!-- {{ .Render "feature-img" }} -->
+                <p class="text-grey">
+                  {{ with .Description }}
+                    {{ . }}
+                  {{ end }}
                 </p>
-              </header>
-              <!-- {{ .Render "feature-img" }} -->
-              <p class="text-grey">
-                {{ with .Description }}
-                {{ . }}
-                {{ end }}
-              </p>
 
-              <div class="article-content">
-                {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
-              </div>
-              {{ .Render "footer-category" }}
-          </section>
+                <div class="article-content">
+                  {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
+                </div>
+                {{ .Render "footer-category" }}
+              </section>
+            </div>
+            <div class="col">
+              {{ partial "blog-sidebar" . }}
+            </div>
+          </div>
         </div>
-        <div class="col">
-          {{ partial "blog-sidebar" . }}
-        </div>
+        {{ partial "js" . }}
       </div>
+      <section class="section-cta bg-blue">
+        <p class="text-white">We'd love to help you scale.
+          <a class="btn-white f700" href="contact">Let's talk</a>
+        </p>
+      </section>
     </div>
-    {{ partial "js" . }}
-  </div>
-  <section class="section-cta bg-blue">
-    <p class="text-white">We'd love to help you scale.
-      <a class="btn-white f700" href="contact">Let's talk</a>
-    </p>
-  </section>
-  </div>
-  {{ partial "footer" . }}
+    {{ partial "footer" . }}
 
-</body>
-{{ partial "js" . }}
+  </body>
+  {{ partial "js" . }}
 
 </html>

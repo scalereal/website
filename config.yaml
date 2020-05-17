@@ -38,3 +38,14 @@ params:
     ogimage: https://scalereal.com/images/logo/blue_512X512.png
 
 author: ['Ashish Mohite', 'Deepak Kabbur', 'Atul Shashikumar']
+markup:
+    highlight:
+        codeFences: true
+        guessSyntax: true
+        hl_Lines: ''
+        lineNoStart: 1
+        lineNos: false
+        lineNumbersInTable: true
+        noClasses: true
+        style: dracula
+        tabWidth: 4
