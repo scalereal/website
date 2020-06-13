@@ -1,46 +1,158 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-    {{ partial "head" . }}
+{{ partial "head" . }}
 
-    <body>
-        {{ partial "nav" . }}
-        <div class="page-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <section class="section-articles">
-                            <h2>Popular Single</h2>
-                            {{ range where .Data.Pages "Type" "banner" }}
-                            <img src="{{.Params.image}}">
-                            {{.Title}}
-                            {{.Params.image}}
-                            {{ end }}
-                        </section>
-                        <section class="section-articles">
-                            <h2>Popular List</h2>
-                            {{ range where .Data.Pages "Type" "popular" }}
-                            <img src="{{.Params.thumbnail}}">
-                            {{.Title}}
-                            {{ end }}
-                        </section>
-                        <section class="section-articles">
-                            <h2>All Stories</h2>
-                            {{ $paginator := .Paginate  .Data.Pages }}
-                            {{ range $paginator.Pages }}
-                            {{ .Render "content-list" }}
-                            {{ end }}
-                        </section>
-                        {{ partial "pagination" . }}
-                    </div>
-                    <div class="col">
-                        {{ partial "blog-sidebar" . }}
-                    </div>
-                </div>
+<body>
+  {{ partial "nav" . }}
+  <div class="page-blog">
+    <div class="container">
+      <div class="heading">
+        <h1 class="f700 text-black">Our Blog</h1>
+      </div>
+
+      <section class="popular-reads-section">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
             </div>
+          </div>
+
+          <div class="col-md-6 col-order align-self-center">
+
+            <p class="f700 text-black popular-reads">POPULAR READS</p>
+
+            <h3 class="f700 text-black">DBE Cloud</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </div>
         </div>
-        {{ partial "footer" . }}
-        {{ partial "js" . }}
-    </body>
+      </section>
+
+
+      <section class="popular-list-section">
+        <ul class="js-blog-carousel blog-carousel owl-carousel">
+          <li>
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud1</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud2</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud2</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud2</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud2</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="saprator"></section>
+
+      <section class="all-list-section">
+        <h2 class="f700 text-black">All stories</h2>
+        <ul class="row">
+          <li class="col-md-4">
+            <div class="img-wrap">
+              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
+            </div>
+            <h3 class="f700 text-black">DBE Cloud1</h3>
+            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
+              all the data without servers for offline video streaming.</p>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">BY YOGESH YADAV</h5>
+                <p class="time">May 9 | 5 min read</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+  {{ partial "footer" . }}
+  {{ partial "js" . }}
+</body>
 
 </html>

@@ -1,0 +1,116 @@
+.page-blog {
+  .heading {
+    margin: 30px 0;
+  }
+  .popular-reads {
+    font-size: 18px;
+    line-height: 2.06;
+    letter-spacing: 0.02px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  section {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.popular-reads-section {
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    margin-bottom: 60px;
+  }
+}
+
+.popular-list-section {
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .img-wrap {
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    margin-bottom: 50px;
+  }
+}
+
+.all-list-section {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .img-wrap {
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    margin-bottom: 20px;
+  }
+}
+
+.writer-wrap {
+  .writer-img {
+    width: 50px;
+    height: 50px;
+    background-color: #d8d8d8;
+    border-radius: 100%;
+  }
+  .writer-name {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 0.17px;
+    color: #1c1c1c;
+  }
+  .time {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.16px;
+    color: #737272;
+  }
+}
+
+.blog-carousel.owl-carousel {
+  .owl-nav {
+    button {
+      position: absolute;
+      top: 50%;
+      overflow: hidden;
+      color: #13ccd8;
+      font-size: 50px;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      background-color: #ffffff;
+      border-radius: 100%;
+      display: block;
+      span {
+        display: block;
+        margin-top: -16px;
+      }
+    }
+    .owl-prev {
+      left: -15px;
+    }
+    .owl-next {
+      right: -15px;
+    }
+  }
+}
+
+.saprator {
+  border: 0.5px solid #cccbcb;
+}
