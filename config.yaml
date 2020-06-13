@@ -38,4 +38,4 @@ params:
     ogimage: https://scalereal.com/images/logo/blue_512X512.png
 
 author: ['Ashish Mohite', 'Deepak Kabbur', 'Atul Shashikumar']
-
+postType: true

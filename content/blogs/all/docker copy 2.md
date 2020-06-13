@@ -8,8 +8,8 @@ tags:
   - Docker
   - Cloud
 author: Deepak Kabbur
-image: https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png
-thumbnail: https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png
+image: https://via.placeholder.com/800x400
+thumbnail: https://via.placeholder.com/150
 
 excerpt:
   Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another...

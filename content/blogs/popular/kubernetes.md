@@ -8,12 +8,13 @@ tags:
   - Kubernetes
   - Cloud
 author: Deepak Kabbur
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1920px-Kubernetes_logo_without_workmark.svg.png
-thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1920px-Kubernetes_logo_without_workmark.svg.png
+image: https://via.placeholder.com/800x400
+thumbnail: https://via.placeholder.com/150
 
 excerpt:
   Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google...
 url: devops/2020/01/31/whats-this-kubernetes-thing.html
+type: popular
 ---
 
 ## Building tools for mass innovation

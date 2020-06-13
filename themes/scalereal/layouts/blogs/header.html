@@ -1,3 +1,4 @@
+<img src="{{.Params.thumbnail}}" style="width: 150px;">
 <header class="heading">
   <!-- {{ .Render "feature-img" }} -->
   <a href="{{ .Permalink }}">
@@ -13,10 +14,10 @@
   </p>
   <p class="text-grey">
     {{ with .Description }}
-      {{ . }}
+    {{ . }}
     {{ end }}
   </p>
   {{ if .Params.excerpt }}
-    <p class="text-grey">{{ printf "%s" .Params.excerpt | markdownify }}</p>
+  <p class="text-grey">{{ printf "%s" .Params.excerpt | markdownify }}</p>
   {{ end }}
 </header>
