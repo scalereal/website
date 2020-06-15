@@ -16,6 +16,7 @@
 
   li {
     list-style-type: none;
+    padding: 0 15px;
   }
 
   img {
@@ -39,7 +40,7 @@
     font-size: 30px;
     margin-bottom: 10px;
   }
-  .img-wrap {
+  .img-bg {
     margin-bottom: 10px;
   }
   .sub-text {
@@ -52,7 +53,7 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
-  .img-wrap {
+  .img-bg {
     margin-bottom: 10px;
   }
   .sub-text {
@@ -113,4 +114,13 @@
 
 .saprator {
   border: 0.5px solid #cccbcb;
+}
+
+.img-bg {
+  padding-top: 60%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccbcb;
 }

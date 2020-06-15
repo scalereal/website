@@ -17,6 +17,7 @@
 
 .page-blog li {
   list-style-type: none;
+  padding: 0 15px;
 }
 
 .page-blog img {
@@ -38,7 +39,7 @@
   margin-bottom: 10px;
 }
 
-.popular-list-section .img-wrap {
+.popular-list-section .img-bg {
   margin-bottom: 10px;
 }
 
@@ -51,7 +52,7 @@
   margin-bottom: 10px;
 }
 
-.all-list-section .img-wrap {
+.all-list-section .img-bg {
   margin-bottom: 10px;
 }
 
@@ -112,5 +113,14 @@
 
 .saprator {
   border: 0.5px solid #cccbcb;
+}
+
+.img-bg {
+  padding-top: 60%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccbcb;
 }
 /*# sourceMappingURL=blog.css.map */

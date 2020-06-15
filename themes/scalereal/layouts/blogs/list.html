@@ -12,116 +12,49 @@
       </div>
 
       <section class="popular-reads-section">
+        {{ range where .Data.Pages "Type" "banner" }}
         <div class="row">
           <div class="col-md-6">
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
+            <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
           </div>
 
           <div class="col-md-6 col-order align-self-center">
 
             <p class="f700 text-black popular-reads">POPULAR READS</p>
 
-            <h3 class="f700 text-black">DBE Cloud</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
+            <h3 class="f700 text-black"> {{.Title}} </h3>
+            <p class="text-grey sub-text">{{.Params.description}}</p>
 
             <div class="writer-wrap d-flex">
               <div class="writer-img mr-3"></div>
               <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
+                <h5 class="writer-name">{{.Params.author}}</h5>
+                <p class="time">{{.Params.date}}</p>
               </div>
             </div>
           </div>
         </div>
+        {{ end }}
       </section>
 
 
       <section class="popular-list-section">
         <ul class="js-blog-carousel blog-carousel owl-carousel">
+          {{ range where .Data.Pages "Type" "popular" }}
           <li>
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud1</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
+            <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+            <h3 class="f700 text-black"> {{.Title}} </h3>
+            <p class="text-grey sub-text">{{.Params.description}}</p>
 
             <div class="writer-wrap d-flex">
               <div class="writer-img mr-3"></div>
               <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
+                <h5 class="writer-name">{{.Params.author}}</h5>
+                <p class="time">{{.Params.date}}</p>
               </div>
             </div>
           </li>
-
-          <li>
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud2</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
-
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud2</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
-
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud2</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
-
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud2</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
-
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
-              </div>
-            </div>
-          </li>
+          {{end}}
         </ul>
       </section>
 
@@ -130,22 +63,24 @@
       <section class="all-list-section">
         <h2 class="f700 text-black">All stories</h2>
         <ul class="row">
-          <li class="col-md-4">
-            <div class="img-wrap">
-              <img src="{{ "images/projects/DBE-cloud.png" | absURL }}" alt="">
-            </div>
-            <h3 class="f700 text-black">DBE Cloud1</h3>
-            <p class="text-grey sub-text">Integration of learning videos with CLOX device which helps store
-              all the data without servers for offline video streaming.</p>
+          {{ $paginator := .Paginate  .Data.Pages }}
+          {{ range $paginator.Pages }}
+          <li class="col-md-4 mb-5">
+            <a href="">
+              <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+              <h3 class="f700 text-black"> {{.Title}} </h3>
+              <p class="text-grey sub-text">{{.Params.description}}</p>
 
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">BY YOGESH YADAV</h5>
-                <p class="time">May 9 | 5 min read</p>
+              <div class="writer-wrap d-flex">
+                <div class="writer-img mr-3"></div>
+                <div class="writer-name-wrap">
+                  <h5 class="writer-name">{{.Params.author}}</h5>
+                  <p class="time">{{.Params.date}}</p>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
+          {{end}}
         </ul>
       </section>
 
