@@ -39,7 +39,7 @@
 
 
       <section class="popular-list-section">
-        <ul class="js-blog-carousel blog-carousel owl-carousel">
+        <ul class="js-blog-carousel owl-carousel blog-carousel">
           {{ range where .Data.Pages "Type" "popular" }}
           <li>
             <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>

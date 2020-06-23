@@ -43,19 +43,29 @@ $(document).ready(function () {
   })
 
   $('.js-blog-carousel').owlCarousel({
-    slideBy: 2,
-    autoplay: true,
-    responsiveClass: true,
-    touchDrag: true,
-    dots: false,
     nav: true,
+    loop: false,
+    margin: 0,
+    dots: false,
+    slideBy: 1,
+    autoplay: true,
+    autoplayTimeout: 15000,
+    autoplaySpeed: 15000,
+    autoplayHoverPause: true,
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
+    responsiveClass: true,
+    items: 2,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       767: {
-        items: 2,
+        items: 1,
       },
+      991: {
+        items: 2,
+      }
     }
   });
 });
