@@ -5,7 +5,7 @@
 
 <body>
   {{ partial "nav" . }}
-  <div class="page-blog">
+  <div class="page-blog-list">
     <div class="container">
       <div class="heading">
         <h1 class="f700 text-black">Our Blog</h1>
@@ -19,19 +19,25 @@
           </div>
 
           <div class="col-md-6 col-order align-self-center">
+            <a href="{{ .Permalink }}">
 
-            <p class="f700 text-black popular-reads">POPULAR READS</p>
+              <p class="f700 text-black popular-reads">POPULAR READS</p>
 
-            <h3 class="f700 text-black"> {{.Title}} </h3>
-            <p class="text-grey sub-text">{{.Params.description}}</p>
+              <h3 class="f700 text-black"> {{.Title}} </h3>
+              <p class="text-grey sub-text">{{.Params.description}}</p>
 
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">{{.Params.author}}</h5>
-                <p class="time">{{.Params.date}}</p>
+              <div class="writer-wrap d-flex">
+                <div class="writer-img mr-3"></div>
+                <div class="writer-name-wrap">
+                  <h5 class="writer-name">{{.Params.author}}</h5>
+                  <p class="time">
+                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                      {{(.Params.date).Format "January 2, 2006"}}
+                    </time>
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         {{ end }}
@@ -42,17 +48,24 @@
         <ul class="js-blog-carousel owl-carousel blog-carousel">
           {{ range where .Data.Pages "Type" "popular" }}
           <li>
-            <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-            <h3 class="f700 text-black"> {{.Title}} </h3>
-            <p class="text-grey sub-text">{{.Params.description}}</p>
+            <a href="{{ .Permalink }}">
 
-            <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3"></div>
-              <div class="writer-name-wrap">
-                <h5 class="writer-name">{{.Params.author}}</h5>
-                <p class="time">{{.Params.date}}</p>
+              <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+              <h3 class="f700 text-black"> {{.Title}} </h3>
+              <p class="text-grey sub-text">{{.Params.description}}</p>
+
+              <div class="writer-wrap d-flex">
+                <div class="writer-img mr-3"></div>
+                <div class="writer-name-wrap">
+                  <h5 class="writer-name">{{.Params.author}}</h5>
+                  <p class="time">
+                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                      {{(.Params.date).Format "January 2, 2006"}}
+                    </time>
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           {{end}}
         </ul>
@@ -66,7 +79,7 @@
           {{ $paginator := .Paginate  .Data.Pages }}
           {{ range $paginator.Pages }}
           <li class="col-md-4 mb-5">
-            <a href="">
+            <a href="{{ .Permalink }}">
               <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
               <h3 class="f700 text-black"> {{.Title}} </h3>
               <p class="text-grey sub-text">{{.Params.description}}</p>
@@ -75,7 +88,11 @@
                 <div class="writer-img mr-3"></div>
                 <div class="writer-name-wrap">
                   <h5 class="writer-name">{{.Params.author}}</h5>
-                  <p class="time">{{.Params.date}}</p>
+                  <p class="time">
+                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                      {{(.Params.date).Format "January 2, 2006"}}
+                    </time>
+                  </p>
                 </div>
               </div>
             </a>

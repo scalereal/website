@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  {{ $.Scratch.Set "post" true }}
-  {{ partial "head.html" . }}
+{{ $.Scratch.Set "post" true }}
+{{ partial "head.html" . }}
 
-  <body>
-    {{ partial "nav" . }}
-    <div class="page-blog-post">
+<body>
+  {{ partial "nav" . }}
+  <div class="page-blog-details">
+    <div class="heading">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <section class="section-articles">
-              <article class="article">
-                <header class="heading">
-                  <h1 class="f700 text-black">{{ .Title }}</h1>
-                  <p class="article-category">By
-                    <a class="text-grey" href="javascript:void(0);">{{ .Params.author }}</a>
-                    <!-- in 
-                    {{ .Render "category-list" }} -->
-                                      on
-                    <span class="d-inline-block">
-                      <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                        {{(.Params.date).Format "January 2, 2006"}}
-                      </time>
-                    </span>
-                  </p>
-                </header>
-                <!-- {{ .Render "feature-img" }} -->
-                <p class="text-grey">
-                  {{ with .Description }}
-                    {{ . }}
-                  {{ end }}
-                </p>
+        <h1 class="f700 text-black">Our Blog</h1>
+      </div>
+    </div>
 
-                <div class="article-content">
-                  {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
-                </div>
-                {{ .Render "footer-category" }}
-              </section>
-            </div>
-            <div class="col">
-              {{ partial "blog-sidebar" . }}
-            </div>
+    <div class="container">
+      <section class="back-link-section">
+        <a class="back-link" href="/blogs">
+          <span class="line"></span><span>Back</span>
+        </a>
+      </section>
+
+
+      <h2 class="f700 text-black">{{ .Title }}</h2>
+
+      <div class="writer-wrap d-flex">
+        <div class="writer-img mr-3"></div>
+        <div class="writer-name-wrap">
+          <h5 class="writer-name">{{.Params.author}}</h5>
+          <p class="time">
+            <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+              {{(.Params.date).Format "January 2, 2006"}}
+            </time>
+          </p>
+        </div>
+      </div>
+
+      <section class="banner-section">
+        <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+        <p class="img-source">Image source</p>
+      </section>
+
+
+      <div class="row">
+        <div class="col-md-1">
+          <div class="share-wrap">
+            <p class="share-on">Share on</p>
+            <ul>
+              <li><a href=""></a></li>
+            </ul>
           </div>
         </div>
-        {{ partial "js" . }}
-      </div>
-      <section class="section-cta bg-blue">
-        <p class="text-white">We'd love to help you scale.
-          <a class="btn-white f700" href="contact">Let's talk</a>
-        </p>
-      </section>
-    </div>
-    {{ partial "footer" . }}
+        <div class="col-md-10">
+          <section class="section-articles">
+            <article class="article">
+              <!-- {{ .Render "feature-img" }} -->
+              <p class="text-grey">
+                {{ with .Description }}
+                {{ . }}
+                {{ end }}
+              </p>
 
-  </body>
-  {{ partial "js" . }}
+              <div class="article-content">
+                {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
+              </div>
+              {{/*  {{ .Render "footer-category" }} */}}
+          </section>
+        </div>
+      </div>
+    </div>
+    {{ partial "js" . }}
+  </div>
+  </div>
+  {{ partial "footer" . }}
+
+</body>
+{{ partial "js" . }}
 
 </html>
