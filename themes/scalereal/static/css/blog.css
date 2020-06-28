@@ -27,13 +27,17 @@
 .page-blog-list li,
 .page-blog-details li {
   list-style-type: none;
-  padding: 0 15px;
 }
 
 .page-blog-list img,
 .page-blog-details img {
   max-width: 100%;
   display: block;
+}
+
+.page-blog-list .social-column li,
+.page-blog-details .social-column li {
+  margin-top: 14px;
 }
 
 .popular-reads-section h3 {
@@ -96,6 +100,10 @@
   color: #737272;
 }
 
+.blog-carousel.owl-carousel li {
+  padding: 0 15px;
+}
+
 .blog-carousel.owl-carousel .owl-nav button {
   position: absolute;
   top: 50%;
@@ -138,7 +146,8 @@
 }
 
 .share-wrap {
-  padding-top: 200px;
+  padding-top: 150px;
+  text-align: center;
 }
 
 .share-wrap .share-on {
@@ -157,6 +166,19 @@
   line-height: 1.33;
   letter-spacing: 0.2px;
   color: #222222;
+}
+
+.back-link:hover {
+  color: #222222;
+  opacity: 0.6;
+}
+
+.back-link .line {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.back-link .text {
   text-decoration: underline;
 }
 
@@ -185,5 +207,31 @@
 
 .page-blog-details .banner-section {
   margin-bottom: 40px;
+}
+
+.all-stories-wrap {
+  background: #f2f2f2;
+  padding: 10px;
+  display: none;
+}
+
+.category-list {
+  margin: 0 -15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.category-list li {
+  padding: 10px;
+}
+
+.category-list .text {
+  border-radius: 35px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+  padding: 10px 40px;
+  font-size: 18px;
+  letter-spacing: -0.04px;
+  color: #313131;
 }
 /*# sourceMappingURL=blog.css.map */

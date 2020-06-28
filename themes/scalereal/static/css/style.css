@@ -614,20 +614,23 @@ h3 {
   text-align: right;
 }
 
-.footer .social-column i {
+.footer .social-column a {
+  margin-left: 10px;
+}
+
+.social-column i {
   font-size: 30px;
   line-height: 32px;
 }
 
-.footer .social-column a {
-  margin-left: 10px;
+.social-column a {
   display: inline-block;
   transition: all 0.5s ease-in-out;
 }
 
-.footer .social-column a:hover {
+.social-column a:hover {
   border-bottom: none;
-  color: #333;
+  color: #13ccd8;
 }
 
 /* HOME PAGE
@@ -1205,21 +1208,22 @@ h3 {
 
 .section-technology .non-sprite-tech.ios {
   background-image: url(../images/mobile/ios.png);
-}.section-technology .non-sprite-tech.android {
+}
+.section-technology .non-sprite-tech.android {
   background-image: url(../images/mobile/android.png);
-}.section-technology .non-sprite-tech.swift {
+}
+.section-technology .non-sprite-tech.swift {
   background-image: url(../images/mobile/swift.png);
-}.section-technology .non-sprite-tech.flutter {
+}
+.section-technology .non-sprite-tech.flutter {
   background-image: url(../images/mobile/flutter.png);
-}.section-technology .non-sprite-tech.testflight {
+}
+.section-technology .non-sprite-tech.testflight {
   background-image: url(../images/mobile/testflight.png);
-}.section-technology .non-sprite-tech.appcenter {
+}
+.section-technology .non-sprite-tech.appcenter {
   background-image: url(../images/mobile/appcenter.png);
 }
-
-
-
-
 
 /* Section about */
 .section-about .text-wrap p {
@@ -2096,9 +2100,9 @@ h3 {
 /* .we-offer-wrap h3{
   color: #0eccd8;
 } */
-.we-offer-wrap a{
+.we-offer-wrap a {
   filter: grayscale(1);
 }
-.we-offer-wrap a:hover{
+.we-offer-wrap a:hover {
   filter: grayscale(0);
 }

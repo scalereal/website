@@ -21,12 +21,15 @@
 
   li {
     list-style-type: none;
-    padding: 0 15px;
   }
 
   img {
     max-width: 100%;
     display: block;
+  }
+
+  .social-column li {
+    margin-top: 14px;
   }
 }
 
@@ -92,6 +95,9 @@
 }
 
 .blog-carousel.owl-carousel {
+  li {
+    padding: 0 15px;
+  }
   .owl-nav {
     button {
       position: absolute;
@@ -133,7 +139,8 @@
 }
 
 .share-wrap {
-  padding-top: 200px;
+  padding-top: 150px;
+  text-align: center;
   .share-on {
     font-size: 12px;
     letter-spacing: 0.14px;
@@ -151,7 +158,17 @@
   line-height: 1.33;
   letter-spacing: 0.2px;
   color: #222222;
-  text-decoration: underline;
+  &:hover {
+    color: #222222;
+    opacity: 0.6;
+  }
+  .line {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .text {
+    text-decoration: underline;
+  }
 }
 
 .page-blog-details {
@@ -179,5 +196,28 @@
 
   .banner-section {
     margin-bottom: 40px;
+  }
+}
+
+.all-stories-wrap {
+  background: #f2f2f2;
+  padding: 10px;
+  display: none;
+}
+
+.category-list {
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  li {
+    padding: 10px;
+  }
+  .text {
+    border-radius: 35px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    font-size: 18px;
+    letter-spacing: -0.04px;
+    color: #313131;
   }
 }

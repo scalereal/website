@@ -45,7 +45,7 @@
 
 
       <section class="popular-list-section">
-        <ul class="js-blog-carousel owl-carousel blog-carousel">
+        <ul class="js-blog-carousel owl-carousel blog-carousel row">
           {{ range where .Data.Pages "Type" "popular" }}
           <li>
             <a href="{{ .Permalink }}">
@@ -73,8 +73,52 @@
 
       <section class="saprator"></section>
 
-      <section class="all-list-section">
+    </div>
+
+
+    <section class="all-list-section">
+      <div class="container">
         <h2 class="f700 text-black">All stories</h2>
+      </div>
+      <div class="all-stories-wrap">
+        <div class="container">
+          <ul class="category-list d-flex">
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+            <li>
+              <div class="text">ROR</div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
         <ul class="row">
           {{ $paginator := .Paginate  .Data.Pages }}
           {{ range $paginator.Pages }}
@@ -99,9 +143,10 @@
           </li>
           {{end}}
         </ul>
-      </section>
+      </div>
 
-    </div>
+    </section>
+
   </div>
   {{ partial "footer" . }}
   {{ partial "js" . }}
