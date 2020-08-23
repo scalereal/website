@@ -30,6 +30,8 @@ params:
           url: /company
         - name: Blog
           url: /blogs
+        - name: Carrers
+          url: /carrers
         - name: Contact
           url: /contact
     fonts:
