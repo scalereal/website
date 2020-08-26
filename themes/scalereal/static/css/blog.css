@@ -76,7 +76,6 @@
 .all-list-section .sub-text {
   margin-bottom: 20px;
 }
-
 .writer-wrap .writer-img {
   width: 50px;
   height: 50px;
@@ -233,5 +232,39 @@
   font-size: 18px;
   letter-spacing: -0.04px;
   color: #313131;
+}
+.article-content{
+  line-height: 2.4rem;
+}
+.article-content pre {
+  background-color: #ececec;
+  padding: 1.0rem;
+  margin: 1rem 0rem 1rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+.article-content h2 {
+  font-weight: 700;
+  margin-top: 2.2rem;
+}
+.article-content h3 {
+  font-weight: 700;
+  margin-top: 2.2rem;
+}
+
+.article-content h4 {
+  font-weight: 500;
+  opacity: 1;
+  margin-top: 2.2rem;
+  font-size: 1.3rem;
+}
+
+.article-content img {
+  margin: 1rem 0 1rem;
+}
+.article-content img + em {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 0 1rem;
 }
 /*# sourceMappingURL=blog.css.map */
