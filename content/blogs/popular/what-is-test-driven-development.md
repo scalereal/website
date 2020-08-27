@@ -14,7 +14,7 @@ thumbnail: https://via.placeholder.com/150
 excerpt:
   Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another...
 url: devops/2020/01/30/What-is-test-driven-development-(TDD)?
-type: banner
+type: popular
 ---
 
 ## Why Test?
@@ -49,7 +49,7 @@ You don’t have to know what your code will look like at this point, you have t
 
 **OUTPUT:** [2, 3, 12, 34]
 
-<iframe src="https://medium.com/media/2cb14178e15110b0a48fd39eef8c2cfd" frameborder=0></iframe>
+{{< gist sandeshbodake 2054e08819f52c40bcd937da11677016 >}}
 
 When you run the test you will see an error like this.
 
@@ -61,7 +61,7 @@ When you run the test you will see an error like this.
 
 Now time to resolve the failing tests step by step, read the error message from the failing test and write code that will fix the current error.
 
-<iframe src="https://medium.com/media/a0ed4088b919e171e76b1f0a3fe4584f" frameborder=0></iframe>
+{{< gist sandeshbodake bd68dfcbdffc70d83f1c41c7faf4f726 >}}
 
 After implementing the **sort_array()** function, we should see a passing tests message that looks like following.
 
@@ -70,6 +70,8 @@ After implementing the **sort_array()** function, we should see a passing tests 
 ## Refactor
 
 *Think about how to improve your existing implementation*
+
+{{< gist sandeshbodake 8601b8a400f3c7865c0a68406ac7012d >}}
 
 <iframe src="https://medium.com/media/78bbd4af501f2e8c9ca0213e44ce471c" frameborder=0></iframe>
 
@@ -86,7 +88,7 @@ The expected result does not match the actual result we are getting …
 
 This is because we are returning first sorted array not caring for other examples(not implemented any sorting algorithm). Take a moment to think about how to approach refactoring **sort_array()** function. write code for sort an array in ascending order.
 
-<iframe src="https://medium.com/media/3f2b17ad131dba0697a0b9a58e76ca3f" frameborder=0></iframe>
+{{< gist sandeshbodake 0ba2e820130dbc8521f2e82e88760ecf >}}
 
 Now if you run ***rspec*** again you will see our both test cases are passing
 
@@ -148,7 +150,7 @@ Our First test file will be called ***employee_spec.rb*** and we are going to te
 
 We start adding simple test firstly and watch its failing.
 
-<iframe src="https://medium.com/media/6910ec910a13c89b6a61160a96e37b82" frameborder=0></iframe>
+{{< gist sandeshbodake 25e2df49fa9dfae0b873d957e786bd22 >}}
 
 Next, run ***rspec*** command in my project folder you can see the test we wrote is falling.
 
@@ -160,7 +162,7 @@ The error ***uninitialized constant Employee*** is tell us that Employee class n
 
 Now, start writing some code and try to pass that test.
 
-<iframe src="https://medium.com/media/7560eab862ba898d57f9ad54757364fe" frameborder=0></iframe>
+{{< gist sandeshbodake b6471bcdf6b128b9eb546eb9fb5ff204 >}}
 
 ![](https://cdn-images-1.medium.com/max/2800/1*jVu_i0gtf0CK8UsZ1aqJ_Q.png)
 
@@ -169,9 +171,9 @@ Now, start writing some code and try to pass that test.
 Now It’s time to refactor our code, I created **lib/employee.rb** that keep our classes in segregated. 
 In order to run your test case, you will need to include file in ***spec_helper.rb***
 
-<iframe src="https://medium.com/media/6910ec910a13c89b6a61160a96e37b82" frameborder=0></iframe>
+{{< gist sandeshbodake 25e2df49fa9dfae0b873d957e786bd22 >}}
 
-<iframe src="https://medium.com/media/f88f44da9830f200fab1ff54988fcd4d" frameborder=0></iframe>
+{{< gist sandeshbodake cf244b3a01820bea987b00894241d8a3 >}}
 
 Running ***rspec*** now should give us the same result
 
@@ -181,7 +183,7 @@ Running ***rspec*** now should give us the same result
 
 Next Step to ensure that ***Employee*** responds to method ***check_in().*** Here we test first whether **check_in()** method present or not then we will check whether that method responding expected response.
 
-<iframe src="https://medium.com/media/2655916c2759edbdde58d5213d320251" frameborder=0></iframe>
+{{< gist sandeshbodake 5edc593c7105dca1a1e025e68c11a3be >}}
 
 Next, run ***rspec*** command in my project folder you can see the test we wrote is falling.
 
@@ -189,7 +191,7 @@ Next, run ***rspec*** command in my project folder you can see the test we wrote
 
 Create method ***check_in()*** in the ***Employee*** class to pass the test
 
-<iframe src="https://medium.com/media/1e9dfb2e63e083096119e2e99cabecf2" frameborder=0></iframe>
+{{< gist sandeshbodake bb70e4b7b5cb78448bbe40acbdb15e8d >}}
 
 Running rspec now (you have to be in your project folder in terminal) we can see our test cases passed successfully
 
@@ -197,7 +199,7 @@ Running rspec now (you have to be in your project folder in terminal) we can see
 
 ## Now, Build a working method and Test It
 
-<iframe src="https://medium.com/media/9a5c95a2d95235428c5c84379bdb1315" frameborder=0></iframe>
+{{< gist sandeshbodake ffa71685dab4805348d6cad35aeb8674 >}}
 
 We run the test now and see the following method:
 
@@ -209,6 +211,8 @@ The expected result does not match the actual result we are getting …
          got: nil
 
 Now we refactor ***check_in()*** method,
+
+{{< gist sandeshbodake c1d3e207b3b5d84964b066322503612e >}}
 
 <iframe src="https://medium.com/media/cb7478620b0c936ba16bc2a4e767bd44" frameborder=0></iframe>
 
@@ -238,21 +242,27 @@ Run rspec again we will see our all test cases working fine.
 
 TDD is all about confidence. writing your tests first and only writing a response to failing tests cases, you can trust that all of our production code is covered and the confidence gives you the power to quickly and easily change or refactor your code without fear of it breaking.
 
+
 **Time Savings**
 
 TDD can also lead to time savings over traditional testing. Writing your test upfront gives you useful error messages to follow to a finished feature. You save time thinking of what to do next because your test tells you!
+
 
 **Flow**
 
 Once you write your test, the test failures continuously tell you what to do next and your code becomes more modular and scalable.
 
+
 **Improved Design**
 
 TDD helps you recognize coupling upfront. Object-oriented design principles, like dependency injection, help you write your code in ways that reduce this coupling, making your code easier to test.
 
+
 **Documentation**
 
 Tests are always a good point to start for new joiners in the team to understand what the application is supposed to do.
+
+---
 
 **CONCLUSION**
 

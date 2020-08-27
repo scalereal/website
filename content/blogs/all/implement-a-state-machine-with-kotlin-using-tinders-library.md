@@ -17,7 +17,7 @@ url: devops/2020/01/30/implement-a-state-machine-with-kotlin-using-tinders-libra
 
 A state machine is a behaviour model. It consists of a finite number of states and is therefore also called finite-state machine (FSM). Based on the current state and a given input the machine performs state transitions and produces outputs.
 
-A **finite-state machine** (**FSM**) or simply a **state machine**, is a mathematical [model of computation](https://en.wikipedia.org/wiki/Model_of_computation). It is an [abstract machine](https://en.wikipedia.org/wiki/Abstract_machine) that can be in exactly one of a finite number of [*states](https://en.wikipedia.org/wiki/State_(computer_science))* at any given time. The FSM can change from one state to another in response to some [inputs](https://en.wikipedia.org/wiki/Input_(computer_science)); the change from one state to another is called a *transition*. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition.
+A **finite-state machine** (**FSM**) or simply a **state machine**, is a mathematical [model of computation](https://en.wikipedia.org/wiki/Model_of_computation). It is an [abstract machine](https://en.wikipedia.org/wiki/Abstract_machine) that can be in exactly one of a finite number of [states](https://en.wikipedia.org/wiki/State_(computer_science)) at any given time. The FSM can change from one state to another in response to some [inputs](https://en.wikipedia.org/wiki/Input_(computer_science)); the change from one state to another is called a *transition*. An FSM is defined by a list of its states, its initial state, and the inputs that trigger each transition.
 
 ## Why State machine?
 > So much complexity in software comes from trying to make one thing do two things.
@@ -33,7 +33,7 @@ We’ll be using Kotlin and Intellij IDE to create our project. We’ll select G
 
 We’ll add the dependency by adding this to out ***build.gradle*** file.
 
-<iframe src="https://medium.com/media/76ebd0ac17356ef644c776a0059323e4" frameborder=0></iframe>
+{{< gist sandeshbodake fa98c37c6e0010819235a230a6437daa >}}
 
 In this example, we create a StateMachine from the following state diagram.
 
@@ -43,29 +43,29 @@ This is a basic real-life example of a finite state machine using this example w
 
 Let’s start with the implementation part
 
-<iframe src="https://medium.com/media/df73f6c09d1622acd356d392fa884949" frameborder=0></iframe>
+![Alt text](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
 
 ## Define states, event, and side effects.
 
 ***States*** and ***Event*** that can cause transitions are what we use to encode the rules/logic of our domain. ***SideEffect*** part represents what we want to do with our code once a transition succeeds.
 
-<iframe src="https://medium.com/media/1bdae4d03e4c17ca4b1995427420afda" frameborder=0></iframe>
+{{< gist sandeshbodake 78cfe483dbaa2c4c5a3d406fefc68fdd >}}
 
 ## Define StateMachine
 
-<iframe src="https://medium.com/media/45bc68394d8f01756e4d99c2addece43" frameborder=0></iframe>
+{{< gist sandeshbodake 765a5859dfc4220dcd3ffefd4590a4ac >}}
 
-Here you can see we simply used ***StateMachine ***class and invoked ***create*** method using states, event, and side effects class.
+Here you can see we simply used ***StateMachine*** class and invoked ***create*** method using states, event, and side effects class.
 
 Next, we add the States and how different Actions will make them transition to other states.
 
-<iframe src="https://medium.com/media/69542fffcc99db17d4e7b3b6b5895f32" frameborder=0></iframe>
+{{< gist sandeshbodake 7b6bdccf0ef9ae711fd247bbd1231d67 >}}
 
 Here we added all possible transitions with their side-effects.
 
 Now, Let’s add ***SideEffects*** actions
 
-<iframe src="https://medium.com/media/50649cc35d4829dbd603c31d8514a70c" frameborder=0></iframe>
+{{< gist sandeshbodake 45d020f8529cddfaf431f3cc04341c7c >}}
 
 After Every valid transaction particular ***SideEffect*** will be invoked. In this example for the demo purpose, we are just maintaining ***logs*** of a particular effect.
 
@@ -75,21 +75,25 @@ And we’re done. We added all the necessary things for StateMachine, Now it’s
 
 To **Perform state transitions** we are going to use simple test cases.
 
-<iframe src="https://medium.com/media/0b1475cae964fc1e134972b7c4b7dfb7" frameborder=0></iframe>
+{{< gist sandeshbodake 930f46bcc04beff81a7e7cee57003317 >}}
 
-***Note: For demo purpose, I performed the state transition using test cases.***
+>***Note: For demo purpose, I performed the state transition using test cases.***
 
-Refer [***this](https://github.com/sandeshbodake/tinder-statemachine-example) ***Github Repository for complete implementation of StateMachine.
+Refer [***this***](https://github.com/sandeshbodake/tinder-statemachine-example) Github Repository for complete implementation of StateMachine.
+
+---
 
 ## Benefits of the state machine
 
-* You get rid of hard coding conditions in your code. State machine abstracts all logic regarding states & transitions on behalf of you
+* 1] You get rid of hard coding conditions in your code. State machine abstracts all logic regarding states & transitions on behalf of you
 
-* In reality, state machines usually have a finite number of states & definite transitions are defined in the states, so it’s easy to track which transition/data/ event caused the current condition of a request.
+* 2] In reality, state machines usually have a finite number of states & definite transitions are defined in the states, so it’s easy to track which transition/data/ event caused the current condition of a request.
 
-* Developers can just concentrate on defining actions & preconditions after a state machine is configured. With proper validation & precondition, state machine prevents out of order operations.
+* 3] Developers can just concentrate on defining actions & preconditions after a state machine is configured. With proper validation & precondition, state machine prevents out of order operations.
 
-* State machines can be highly maintainable. Logically action performed during each transition is independent of each other. So the corresponding piece of code can be isolated.
+* 4] State machines can be highly maintainable. Logically action performed during each transition is independent of each other. So the corresponding piece of code can be isolated.
+
+---
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
