@@ -1,19 +1,19 @@
 ---
-title: Accessing device location  using SIM Card 
+title: 🕵️Accessing device location using SIM Card 🗺️
 description: In this article, we’ll see how to access device location using the SIM card in Android without using GPS or location service
-date: 2020-01-30
+date: 2020-07-28
 categories:
-  - backend
+  - android
 tags:
   - android
   - programming
 author: Shreyas Patil
 image: https://miro.medium.com/max/2000/0*pFV2551jGtqv1Hgh
+writerImage: https://miro.medium.com/fit/c/256/256/1*ouviWBl6oDegOCKQCHV1WQ.jpeg
 thumbnail: https://via.placeholder.com/150
-url: devops/2020/01/30/accessing-device-location-using-sim-card
+url: android/2020/07/28/accessing-device-location-using-sim-card.html
 ---
-
-These days, almost many apps use the device location📍. There might be some use case in your app which is strongly dependent on the user’s location. *For example*, if you have developed a *social* app 💬 which shows posts of users and imagine you’ve feature which shows trending posts in *user’s **nearby area***. For such use case, you’ll get user’s device location and after some *processing*, you’ll be able to manage this feature for your *cool* app.
+These days, almost many apps use the device location📍. There might be some use case in your app which is strongly dependent on the user’s location. *For example*, if you have developed a *social* app 💬 which shows posts of users and imagine you’ve feature which shows trending posts in *user’s **nearby area**. For such use case, you’ll get user’s device location and after some *processing*, you’ll be able to manage this feature for your *cool* app.
 
 But wait… 🤔
 
@@ -133,8 +133,6 @@ I hope you liked this article 😃.
 <iframe src="https://medium.com/media/362aa11e604ab52b28bd7c1c829ff6be" frameborder=0></iframe>
 > # Thank you! 😃
 > # *Sharing is caring!*
-
----
 
 ## Resources
 
