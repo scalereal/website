@@ -123,7 +123,6 @@
         <ul class="row">
           {{ $paginator := .Paginate  .Data.Pages }}
           {{ range $paginator.Pages }}
-          {{ if and (not (in .Params.type "popular")) (not (in .Params.type "banner")) }}
             <li class="col-md-4 mb-5">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
@@ -143,7 +142,6 @@
                 </div>
               </a>
             </li>
-          {{end}}
           {{end}}
         </ul>
       </div>
