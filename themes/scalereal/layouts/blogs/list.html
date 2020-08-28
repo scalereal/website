@@ -123,25 +123,27 @@
         <ul class="row">
           {{ $paginator := .Paginate  .Data.Pages }}
           {{ range $paginator.Pages }}
-          <li class="col-md-4 mb-5">
-            <a href="{{ .Permalink }}">
-              <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-              <h3 class="f700 text-black"> {{.Title}} </h3>
-              <p class="text-grey sub-text">{{.Params.description}}</p>
+          {{ if and (not (in .Params.type "popular")) (not (in .Params.type "banner")) }}
+            <li class="col-md-4 mb-5">
+              <a href="{{ .Permalink }}">
+                <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+                <h3 class="f700 text-black"> {{.Title}} </h3>
+                <p class="text-grey sub-text">{{.Params.description}}</p>
 
-              <div class="writer-wrap d-flex">
-                <div class="writer-img mr-3" style="background-image: url({{.Params.writerImage}})"></div>
-                <div class="writer-name-wrap">
-                  <h5 class="writer-name">{{.Params.author}}</h5>
-                  <p class="time">
-                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                      {{(.Params.date).Format "January 2, 2006"}}
-                    </time>
-                  </p>
+                <div class="writer-wrap d-flex">
+                  <div class="writer-img mr-3" style="background-image: url({{.Params.writerImage}})"></div>
+                  <div class="writer-name-wrap">
+                    <h5 class="writer-name">{{.Params.author}}</h5>
+                    <p class="time">
+                      <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                        {{(.Params.date).Format "January 2, 2006"}}
+                      </time>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
+              </a>
+            </li>
+          {{end}}
           {{end}}
         </ul>
       </div>
