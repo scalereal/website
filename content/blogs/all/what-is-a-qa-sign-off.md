@@ -9,7 +9,6 @@ tags:
   - QA
 author: Atul Shashikumar
 image: https://miro.medium.com/max/1400/0*MkfW4yPIXmCw2o1e
-writerImage: https://miro.medium.com/fit/c/256/256/0*PePvxmOmfB8ii4OE
 thumbnail: https://via.placeholder.com/150
 url: testing/2020/07/17/whats-is-qa-sign-off.html
 ---

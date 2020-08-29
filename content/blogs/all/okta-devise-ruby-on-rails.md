@@ -11,7 +11,6 @@ tags:
 author: Sandesh Bodake
 image: https://miro.medium.com/max/2000/0*QfvBm9mXUgS0DaE2
 thumbnail: https://via.placeholder.com/150
-writerImage: https://miro.medium.com/fit/c/256/256/2*c3jD_IjqKt4CPzbMt8pzBw.jpeg
 url: backend/2020/05/28/okta-devise-ruby-on-rails.html
 ---
 

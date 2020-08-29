@@ -24,10 +24,10 @@
               <p class="f700 text-black popular-reads">POPULAR READS</p>
 
               <h3 class="f700 text-black"> {{.Title}} </h3>
-              <p class="text-grey sub-text">{{.Params.description}}</p>
+              <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
               <div class="writer-wrap d-flex">
-                <div class="writer-img mr-3" style="background-image: url({{.Params.writerImage}})">
+                <div class="writer-img {{lower .Params.author}} mr-3">
                 </div>
                 <div class="writer-name-wrap">
                   <h5 class="writer-name">{{.Params.author}}</h5>
@@ -53,10 +53,10 @@
 
               <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
               <h3 class="f700 text-black"> {{.Title}} </h3>
-              <p class="text-grey sub-text">{{.Params.description}}</p>
+              <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
               <div class="writer-wrap d-flex">
-                <div class="writer-img mr-3" style="background-image: url({{.Params.writerImage}})"></div>
+                <div class="writer-img {{lower .Params.author}} mr-3"></div>
                 <div class="writer-name-wrap">
                   <h5 class="writer-name">{{.Params.author}}</h5>
                   <p class="time">
@@ -121,17 +121,16 @@
 
       <div class="container">
         <ul class="row">
-          {{ $paginator := .Paginate  .Data.Pages }}
-          {{ range $paginator.Pages }}
-          {{ if and (not (in .Params.type "popular")) (not (in .Params.type "banner")) }}
+          {{ $paginator := .Paginate (where (where .Data.Pages "Type" "!=" "popular") "Type" "!=" "banner") }}
+          {{ range $paginator.Pages}}
             <li class="col-md-4 mb-5">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
                 <h3 class="f700 text-black"> {{.Title}} </h3>
-                <p class="text-grey sub-text">{{.Params.description}}</p>
+                <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
                 <div class="writer-wrap d-flex">
-                  <div class="writer-img mr-3" style="background-image: url({{.Params.writerImage}})"></div>
+                  <div class="writer-img  {{lower .Params.author}} mr-3"></div>
                   <div class="writer-name-wrap">
                     <h5 class="writer-name">{{.Params.author}}</h5>
                     <p class="time">
@@ -143,7 +142,6 @@
                 </div>
               </a>
             </li>
-            {{end}}
           {{end}}
         </ul>
         {{partial "pagination" .}}
