@@ -1,7 +1,7 @@
 ---
 title: Automate Publishing Android Library to Bintray using GitHub Actions
 description: 🤖Automate Publishing Android Library to Bintray using GitHub Actions 🚀
-date:   2020-05-1
+date:   2020-05-01
 categories:
   - Android
 tags:
