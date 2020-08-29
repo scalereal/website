@@ -14,3 +14,5 @@ brew install hugo
 ```bash
 hugo server
 ```
+
+sass --watch scss:css

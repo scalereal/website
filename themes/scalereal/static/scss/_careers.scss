@@ -17,7 +17,7 @@ li {
         letter-spacing: -0.04px;
         color: #13ccd8;
         border-radius: 35px;
-        line-height: 60px;
+        line-height: 50px;
         border: solid 1px #13ccd8;
         width: 180px;
         display: block;
@@ -44,7 +44,7 @@ li {
     }
 
     .card-header {
-        border-bottom: solid 1px #cccccc;
+        border-bottom: none;
         h4 {
             font-size: 24px;
             font-weight: 700;
@@ -79,7 +79,6 @@ li {
         }
     }
     .card-body {
-        background-color: rgba(0, 0, 0, 0.03);
         strong {
             display: block;
         }
@@ -91,8 +90,10 @@ li {
         line-height: 1.54;
         letter-spacing: 0.27px;
         color: #1e1e1e;
-        border-bottom: 1px solid #1e1e1e;
         display: inline-block;
         margin-top: 24px;
+        span {
+            border-bottom: 1px solid #1e1e1e;
+        }
     }
 }
