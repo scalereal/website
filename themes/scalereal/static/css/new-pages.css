@@ -8,7 +8,6 @@
 .page-blog-list .popular-reads,
 .page-blog-details .popular-reads {
   font-size: 18px;
-  line-height: 2.06;
   letter-spacing: 0.02px;
   margin-bottom: 40px;
   font-weight: bold; }
@@ -181,7 +180,7 @@ li {
   letter-spacing: -0.04px;
   color: #13ccd8;
   border-radius: 35px;
-  line-height: 60px;
+  line-height: 50px;
   border: solid 1px #13ccd8;
   width: 180px;
   display: block;
@@ -202,7 +201,7 @@ li {
   color: #868686;
   margin-left: 15px; }
 .section-open-position .card-header {
-  border-bottom: solid 1px #cccccc; }
+  border-bottom: none; }
   .section-open-position .card-header h4 {
     font-size: 24px;
     font-weight: 700;
@@ -226,18 +225,17 @@ li {
     display: none; }
   .section-open-position .card-header .collapsed .plus {
     display: block; }
-.section-open-position .card-body {
-  background-color: rgba(0, 0, 0, 0.03); }
-  .section-open-position .card-body strong {
-    display: block; }
+.section-open-position .card-body strong {
+  display: block; }
 .section-open-position .send-resume {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.54;
   letter-spacing: 0.27px;
   color: #1e1e1e;
-  border-bottom: 1px solid #1e1e1e;
   display: inline-block;
   margin-top: 24px; }
+  .section-open-position .send-resume span {
+    border-bottom: 1px solid #1e1e1e; }
 
 /*# sourceMappingURL=new-pages.css.map */
