@@ -8,7 +8,6 @@ tags:
   - flutter
 author: Shreyas Patil
 image: https://miro.medium.com/max/1400/0*EHzzCArkD2IFT3lg
-writerImage: https://miro.medium.com/fit/c/256/256/1*ouviWBl6oDegOCKQCHV1WQ.jpeg
 thumbnail: https://via.placeholder.com/150
 url: android/2020/05/22/stateflow-end-of-livedata.html
 ---

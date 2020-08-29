@@ -9,7 +9,6 @@ tags:
   - github
 author: Shreyas Patil
 image: https://miro.medium.com/max/1400/0*WnJ0TZZb_OVo8tjv
-writerImage: https://miro.medium.com/fit/c/256/256/1*ouviWBl6oDegOCKQCHV1WQ.jpeg
 thumbnail: https://via.placeholder.com/150
 url: android/2020/05/01/automate-publishing-android-library-to-bintray-using-github-actions.html
 ---

@@ -8,7 +8,6 @@ tags:
   - flutter
 author: Shreyas Patil
 image: https://miro.medium.com/max/3000/1*jmddVh9AnCp8Z9lltqvfaQ.png
-writerImage: https://miro.medium.com/fit/c/256/256/1*ouviWBl6oDegOCKQCHV1WQ.jpeg
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/04/automate-publishing-android-library-to-bintray-using-github-actions.html
 ---

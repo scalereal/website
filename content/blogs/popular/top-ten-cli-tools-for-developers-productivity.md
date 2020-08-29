@@ -9,7 +9,6 @@ tags:
   - PRACTICES
 author: Ashish Mohite
 image: https://miro.medium.com/max/1400/0*sG6xlImDJAHBwccC
-writerImage: https://miro.medium.com/fit/c/256/256/2*asYf1-fuXbF1Cniaenmw_w.jpeg
 thumbnail: https://via.placeholder.com/150
 url: devops/2020/05/15/10-cli-tools-for-developers-productivity.html
 type: popular
