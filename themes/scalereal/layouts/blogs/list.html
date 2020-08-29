@@ -8,7 +8,7 @@
   <div class="page-blog-list">
     <div class="container">
       <div class="heading">
-        <h1 class="f700 text-black">Our Blog</h1>
+        <h1 class="f700 text-black">Our Blogs</h1>
       </div>
 
       <section class="popular-reads-section">
@@ -123,6 +123,7 @@
         <ul class="row">
           {{ $paginator := .Paginate  .Data.Pages }}
           {{ range $paginator.Pages }}
+          {{ if and (not (in .Params.type "popular")) (not (in .Params.type "banner")) }}
             <li class="col-md-4 mb-5">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
@@ -142,8 +143,10 @@
                 </div>
               </a>
             </li>
+            {{end}}
           {{end}}
         </ul>
+        {{partial "pagination" .}}
       </div>
 
     </section>
