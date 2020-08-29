@@ -7,6 +7,7 @@
 li {
     list-style-type: none;
 }
+
 .section-open-position {
     .position-list li {
         padding: 0 15px;
@@ -43,17 +44,24 @@ li {
         margin-left: 15px;
     }
 
+    .card {
+        border: none;
+        border-bottom: 1px solid #cccccc;
+    }
+
     .card-header {
-        border-bottom: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
         h4 {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 1.54;
             letter-spacing: 0.27px;
             color: #4d4d4d;
         }
         p {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 600;
             line-height: 1.85;
             letter-spacing: 0.23px;
@@ -68,6 +76,12 @@ li {
 
         .plus {
             display: none;
+        }
+        .scollapsed {
+            padding: 20px;
+             &:not(.collapsed) {
+                background-color: #f5f8fc;
+             }
         }
         .collapsed {
             .minus {
@@ -92,8 +106,34 @@ li {
         color: #1e1e1e;
         display: inline-block;
         margin-top: 24px;
+        &:hover {
+            span {
+                margin-right: 20px;
+            }
+        }
         span {
             border-bottom: 1px solid #1e1e1e;
+            transition: all 500ms;
+        }
+        i {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: bold;
+        }
+    }
+
+    .key-list {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        li {
+            margin-bottom: 15px;
+            &::before {
+                content: "\f10e";
+                font-family: "Flaticon";
+                font-size: 22px;
+                line-height: 24px;
+                margin-right: 10px;
+            }
         }
     }
 }
