@@ -10,7 +10,7 @@ author: Shreyas Patil
 image: https://miro.medium.com/max/3000/1*jmddVh9AnCp8Z9lltqvfaQ.png
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/04/automate-publishing-android-library-to-bintray-using-github-actions.html
-type: popular
+blog_place: popular
 ---
 
 Hello everyone, this is Part 2 of this series where we’ll learn to get data from Google Sheets into the Flutter app. If anyhow you missed Part 1 of this article series then here’s the [**link**](https://medium.com/mindorks/storing-data-from-the-flutter-app-google-sheets-e4498e9cda5d)

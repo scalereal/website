@@ -11,7 +11,7 @@ author: Ashish Mohite
 image: https://miro.medium.com/max/1400/0*sG6xlImDJAHBwccC
 thumbnail: https://via.placeholder.com/150
 url: devops/2020/05/15/10-cli-tools-for-developers-productivity.html
-type: popular
+blog_place: popular
 ---
 
 I started using Linux as I always hated windows. To be honest, UI interactions are damn slow and CMD was no match for *nix shells. Also, GUI interactions can’t match the speed of our thoughts.
