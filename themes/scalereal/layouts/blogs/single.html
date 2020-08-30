@@ -14,12 +14,13 @@
 
     <div class="container">
       <section class="back-link-section">
-        <a class="back-link" href="/blogs">
+        <!-- <a class="back-link" href="/blogs">
           <span class="line">
             <img src="{{ "images/blog/Back.svg" | absURL }}" alt="">
           </span>
           <span class="text">Back</span>
-        </a>
+        </a> -->
+        <a href="/blogs" class="btn-arrow btn-black">Back</a>
       </section>
 
 
@@ -52,7 +53,7 @@
                   title="LinkedIn" class="text-grey"><i class="flaticon-linkedin"></i></a></li>
               <li><a href="https://twitter.com/intent/tweet?&amp;url={{ .Permalink }}&amp;text={{ .Title }}" 
                 target="_blank" rel="noopener" aria-label="Share on Twitter" class="text-grey">
-                <i class="flaticon-twitter"></i></a><li>
+                <i class="flaticon-twitter"></i></a></li>
               <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" class="text-grey"><i
                         class="flaticon-facebook"></i></a></li>
               <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"

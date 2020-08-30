@@ -14,7 +14,7 @@
 .page-blog-list section,
 .page-blog-details section {
   padding: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 60px; }
 .page-blog-list li,
 .page-blog-details li {
   list-style-type: none; }
@@ -29,8 +29,6 @@
 .popular-reads-section h3 {
   font-size: 30px;
   margin-bottom: 10px; }
-.popular-reads-section .sub-text {
-  margin-bottom: 60px; }
 
 .popular-list-section h3 {
   font-size: 30px;
@@ -38,13 +36,7 @@
 .popular-list-section .img-bg {
   margin-bottom: 10px; }
 .popular-list-section .sub-text {
-  margin-bottom: 50px; }
-
-.all-list-section h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  height: 70px;
-  overflow: hidden; }
+  margin-bottom: 21px; }
 .all-list-section .img-bg {
   margin-bottom: 10px; }
 .all-list-section .sub-text {
@@ -79,6 +71,7 @@
     height: 50px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
+    background: transparent;
     border-radius: 100%;
     display: block; }
     .blog-carousel.owl-carousel .owl-nav button span {

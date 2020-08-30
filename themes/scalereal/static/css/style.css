@@ -2259,7 +2259,6 @@ h3 {
 .page-blog-list .blog-title-text {
   font-size: 30px;
   margin-bottom: 9px;
-  height: 69px;
   line-height: 34px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2276,19 +2275,40 @@ h3 {
   margin-bottom: 60px;
 }
 .back-link-section {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 95%;
   text-align: end;
 }
 @media only screen and (max-width: 766px) {
   .page-blog-details .share-wrap {
     padding: 0;
-    margin: 20px;
+    margin-bottom: 20px;
   }
   .page-blog-details .share-wrap li {
     display: inline-block;
     margin: 10px;
+  }
+}
+.all-list-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.popular-list-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.popular-reads-section .sub-text {
+  margin-bottom: 60px; 
+}
+
+@media only screen and (min-width: 767px) {
+  .all-list-section h3{
+    height: 70px;
+  }
+
+  .popular-list-section h3{
+    height: 70px;
   }
 }
 
@@ -2303,9 +2323,17 @@ h3 {
   .popular-list-section .js-blog-carousel {
     left: 14px;
   }
-
   .blog-carousel.owl-carousel .owl-nav .owl-prev {
     left: -21px;
+  }
+  .all-list-section h3{
+    max-height: 70px;
+  }
+  .popular-list-section h3{
+    max-height: 70px;
+  }
+  .popular-reads-section .sub-text {
+    margin-bottom: 25px;
   }
 }
 
