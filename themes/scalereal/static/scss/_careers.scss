@@ -99,20 +99,20 @@ li {
     }
 
     .send-resume {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 20px;
+        font-weight: 600;
         line-height: 1.54;
         letter-spacing: 0.27px;
-        color: #1e1e1e;
+        color: #13ccd8;
         display: inline-block;
         margin-top: 24px;
         &:hover {
             span {
-                margin-right: 20px;
+                margin-right: 10px;
             }
         }
         span {
-            border-bottom: 1px solid #1e1e1e;
+            border-bottom: 1px solid #13ccd8;
             transition: all 500ms;
         }
         i {
