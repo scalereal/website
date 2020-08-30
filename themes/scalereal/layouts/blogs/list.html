@@ -123,7 +123,7 @@
         <ul class="row">
           {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
           {{ range $paginator.Pages}}
-            <li class="col-lg-4 col-md-6 mb-5">
+            <li class="col-lg-4 col-md-6 all-blogs-section">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
                 <h3 class="f700 text-black"> {{.Title}} </h3>

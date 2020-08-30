@@ -59,7 +59,6 @@
 .popular-list-section .sub-text {
   margin-bottom: 23px;
 }
-
 .all-list-section h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -150,7 +149,6 @@
   letter-spacing: 0.14px;
   color: #4e4e4e;
 }
-
 .back-link-section {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -196,7 +194,7 @@
   margin-bottom: 10px;
 }
 .page-blog-details .banner-section {
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
 }
 
 .all-stories-wrap {
@@ -317,11 +315,11 @@ li {
   display: block;
 }
 .section-open-position .send-resume {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.54;
   letter-spacing: 0.27px;
-  color: #1e1e1e;
+  color: #13ccd8;
   display: inline-block;
   margin-top: 24px;
 }
@@ -351,8 +349,11 @@ li {
   line-height: 24px;
   margin-right: 10px;
 }
-.popular-reads-section .banner-img{
+.popular-reads-section .banner-img {
   width: 97%;
+}
+.page-blog-list .all-blogs-section{
+  margin-top: 30px; margin-bottom: 60px
 }
 @media only screen and (max-width: 766px) {
   .share-wrap {
@@ -367,13 +368,13 @@ li {
 }
 
 @media only screen and (max-width: 766px) {
-  .popular-reads-section .banner-img{
+  .popular-reads-section .banner-img {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 766px) {
-  .popular-list-section .js-blog-carousel{
+  .popular-list-section .js-blog-carousel {
     left: 14px;
   }
 
@@ -383,7 +384,7 @@ li {
 }
 
 @media only screen and (max-width: 980px) {
-  .popular-reads-section .popular-reads{
+  .popular-reads-section .popular-reads {
     margin-top: 20px;
   }
 }
