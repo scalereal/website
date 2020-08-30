@@ -28,8 +28,6 @@ params:
           url: /projects
         - name: Company
           url: /company
-        - name: Blog
-          url: /blogs
         - name: Careers
           url: /careers
         - name: Contact
