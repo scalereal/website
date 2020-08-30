@@ -6,11 +6,11 @@
 <body>
   {{ partial "nav" . }}
   <div class="page-blog-details">
-    <div class="heading">
+    <!-- <div class="heading">
       <div class="container">
         <h1 class="f700 text-black">Our Blogs</h1>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
       <section class="back-link-section">
@@ -48,17 +48,19 @@
           <div class="share-wrap">
             <p class="share-on">Share on</p>
             <ul class="social-column">
-              <li><a href="https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/about/" target="_blank"
+              <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Description }}&source=" target="_blank"
                   title="LinkedIn" class="text-grey"><i class="flaticon-linkedin"></i></a></li>
-              <li><a href="https://www.facebook.com/ScaleReal/" target="_blank" title="Facebook" class="text-grey"><i
-                    class="flaticon-facebook"></i></a></li>
-              <li><a href="https://twitter.com/ScaleReal" target="_blank" title="Twitter" class="text-grey"><i
-                    class="flaticon-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/scalerealhq/" target="_blank" title="Instagram"
+              <li><a href="https://twitter.com/intent/tweet?&amp;url={{ .Permalink }}&amp;text={{ .Title }}" 
+                target="_blank" rel="noopener" aria-label="Share on Twitter" class="text-grey">
+                <i class="flaticon-twitter"></i></a><li>
+              <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" class="text-grey"><i
+                        class="flaticon-facebook"></i></a></li>
+              <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"
                   class="text-grey"><i class="flaticon-instagram"></i></a></li>
             </ul>
           </div>
         </div>
+
         <div class="col-md-10">
           <section class="section-articles">
             <article class="article">

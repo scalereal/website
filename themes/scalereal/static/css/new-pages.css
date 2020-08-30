@@ -18,7 +18,6 @@
 .page-blog-details section {
   padding: 0;
   margin-bottom: 30px;
-  margin-bottom: 30px;
 }
 .page-blog-list li,
 .page-blog-details li {
@@ -56,7 +55,7 @@
 .all-list-section h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  height: 70px;
+  max-height: 100px;
   overflow: hidden;
 }
 .all-list-section .img-bg {
@@ -150,7 +149,10 @@
 }
 
 .back-link-section {
+  margin-top: 20px;
   margin-bottom: 40px;
+  width: 100%;
+  text-align: end;
 }
 
 .back-link {
