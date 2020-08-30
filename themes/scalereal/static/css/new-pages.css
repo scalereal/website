@@ -206,7 +206,8 @@ li {
 .section-open-position .card-header {
   border: none;
   background-color: transparent;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
   .section-open-position .card-header h4 {
     font-size: 20px;
     font-weight: 700;
@@ -224,12 +225,12 @@ li {
     color: #13ccd8;
     font-weight: bold;
     font-size: 30px; }
+  .section-open-position .card-header .minus {
+    padding: 5px; }
   .section-open-position .card-header .plus {
     display: none; }
   .section-open-position .card-header .scollapsed {
     padding: 20px; }
-    .scollapsed .expand {
-      cursor: pointer;}
     .section-open-position .card-header .scollapsed:not(.collapsed) {
       background-color: #f5f8fc; }
   .section-open-position .card-header .collapsed .minus {

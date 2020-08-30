@@ -53,6 +53,7 @@ li {
         border: none;
         background-color: transparent;
         padding: 0;
+        cursor: pointer;
         h4 {
             font-size: 20px;
             font-weight: 700;
@@ -72,6 +73,9 @@ li {
             color: #13ccd8;
             font-weight: bold;
             font-size: 30px;
+        }
+        .minus {
+            padding: 5px;
         }
 
         .plus {
