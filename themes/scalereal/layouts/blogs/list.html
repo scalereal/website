@@ -12,7 +12,7 @@
       </div>
 
       <section class="popular-reads-section">
-        {{ range where .Data.Pages "Type" "banner" }}
+        {{ range where .Data.Pages ".Params.blog_place" "banner" }}
         <div class="row">
           <div class="col-md-6">
             <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
@@ -47,7 +47,7 @@
 
       <section class="popular-list-section">
         <ul class="js-blog-carousel owl-carousel blog-carousel row">
-          {{ range where .Data.Pages "Type" "popular" }}
+          {{ range where .Data.Pages ".Params.blog_place" "popular" }}
           <li>
             <a href="{{ .Permalink }}">
 
@@ -121,7 +121,7 @@
 
       <div class="container">
         <ul class="row">
-          {{ $paginator := .Paginate (where (where .Data.Pages "Type" "!=" "popular") "Type" "!=" "banner") }}
+          {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
           {{ range $paginator.Pages}}
             <li class="col-md-4 mb-5">
               <a href="{{ .Permalink }}">
