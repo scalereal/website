@@ -1,129 +1,129 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{ partial "head" . }}
-    <body>
-        <div class="page-home">
-            {{ partial "nav" . }}
+{{ partial "head" . }}
 
-            {{ partial "hero" . }}
-            <section class="section-service">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <header class="heading content-center">
-                                <h2 class="f700 text-black">What we offer</h2>
-                                <p class="text-grey">Top-notch technology services by providing hand coded simple
-                                    solutions for your complex business problems.</p>
-                            </header>
-                        </div>
-                    </div>
+<body>
+    <div class="page-home">
+        {{ partial "nav" . }}
 
-                    <div class="row justify-content-md-center">
-                        <div class="col-lg-10 col-md-9">
-                            <div class="row no-gutters we-offer-wrap">
-                                <div class="col-lg-3 col-md-6 text-center">
-                                    <a href="services#web-development">
-                                        <img src="images/service-web-devlopment.svg" alt="">
-                                        <h3 class="f16 f700">Web development</h3>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-6 text-center">
-                                    <a href="services#mobile-developemnt">
-                                        <img src="images/service-mobile-devlpoment.svg" alt="">
-                                        <h3 class="f16 f700">Mobile development</h3>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-6 text-center">
-                                    <a href="services#devops">
-                                        <img src="images/service-devops-home.svg" alt="">
-                                        <h3 class="f16 f700">DevOps engineering</h3>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-6 text-center">
-                                    <a href="services#strategic-consulting">
-                                        <img src="images/service-consulting.svg" alt="">
-                                        <h3 class="f16 f700">Strategic consulting</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <a href="services" class="btn-arrow btn-black">See more of our services</a>
+        {{ partial "hero" . }}
+        <section class="section-service">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <header class="heading content-center">
+                            <h2 class="f700 text-black">What we offer</h2>
+                            <p class="text-grey">Top-notch technology services by providing hand coded simple
+                                solutions for your complex business problems.</p>
+                        </header>
                     </div>
                 </div>
-            </section>
 
-            <section class="section-project">
-                <div class="container">
-                    <div class="box bg-grey">
-                        <div class="row no-gutters">
-                            <div class="col-lg-6">
-                                <header class="heading box-content">
-                                    <h2 class="f700 text-black">We have worked on complex, scalable, distributed and
-                                        mission critical applications</h2>
-                                    <p class="f300 text-grey">We understand your business, analyze your problems,
-                                        improve the ongoing process, implement the best suitable technology and help you
-                                        scale your business.</p>
-                                    <a href="projects" class="btn-arrow btn-black">Know more</a>
-                                </header>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-10 col-md-9">
+                        <div class="row no-gutters we-offer-wrap">
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <a href="services#web-development">
+                                    <img src="images/service-web-devlopment.svg" alt="">
+                                    <h3 class="f16 f700">Web development</h3>
+                                </a>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="box-content">
-                                    <div class="owl-one owl-carousel">
-                                        <div class="project-summary bg-grey">
-                                            <h3 class="f700 text-black">Ten Fold Education</h3>
-                                            <div class="project-solution">
-                                                <p class="text-grey">South Africa’s first Mobile based learning
-                                                    application for High School learners. It helps them excel in
-                                                    academics while engaging them in a fun and interactive way.</p>
-                                            </div>
-                                            <div class="project-tech">
-                                                <h5 class="f700">Technologies</h5>
-                                                <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax,
-                                                    Java, Kotlin, Retrofit, Dagger, Swift, Objective C</p>
-                                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <a href="services#mobile-developemnt">
+                                    <img src="images/service-mobile-devlpoment.svg" alt="">
+                                    <h3 class="f16 f700">Mobile development</h3>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <a href="services#devops">
+                                    <img src="images/service-devops-home.svg" alt="">
+                                    <h3 class="f16 f700">DevOps engineering</h3>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center">
+                                <a href="services#strategic-consulting">
+                                    <img src="images/service-consulting.svg" alt="">
+                                    <h3 class="f16 f700">Strategic consulting</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="services" class="btn-arrow btn-black">See more of our services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-project">
+            <div class="container">
+                <div class="box bg-grey">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <header class="heading box-content">
+                                <h2 class="f700 text-black">We have worked on complex, scalable, distributed and
+                                    mission critical applications</h2>
+                                <p class="f300 text-grey">We understand your business, analyze your problems,
+                                    improve the ongoing process, implement the best suitable technology and help you
+                                    scale your business.</p>
+                                <a href="projects" class="btn-arrow btn-black">Know more</a>
+                            </header>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="box-content">
+                                <div class="owl-one owl-carousel">
+                                    <div class="project-summary bg-grey">
+                                        <h3 class="f700 text-black">Ten Fold Education</h3>
+                                        <div class="project-solution">
+                                            <p class="text-grey">South Africa’s first Mobile based learning
+                                                application for High School learners. It helps them excel in
+                                                academics while engaging them in a fun and interactive way.</p>
                                         </div>
-                                        <div class="project-summary bg-grey">
-                                            <h3 class="f700 text-black">Mercedes Benz</h3>
-                                            <div class="project-solution">
-                                                <p class="text-grey">Hybrid mobile application which helps dealers to
-                                                    take superior pictures of used cars. It’s an easy to use and
-                                                    intuitive mobile app which allows dealers to standardize the process
-                                                    of taking pictures.</p>
-                                            </div>
-                                            <div class="project-tech">
-                                                <h5 class="f700">Technologies</h5>
-                                                <p class="text-grey">Python, Django, Postgres , Ansible, Js, Unity3D</p>
-                                            </div>
+                                        <div class="project-tech">
+                                            <h5 class="f700">Technologies</h5>
+                                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax,
+                                                Java, Kotlin, Retrofit, Dagger, Swift, Objective C</p>
                                         </div>
-                                        <div class="project-summary bg-grey">
-                                            <h3 class="f700 text-black">DBE Cloud</h3>
-                                            <div class="project-solution">
-                                                <p class="text-grey">Integration of learning videos with CLOX device
-                                                    which helps store all the data without servers for offline video
-                                                    streaming. CLOX can be used with TV’s, Projectors, Mobile Devices
-                                                    and Desktop Computers.</p>
-                                            </div>
-                                            <div class="project-tech">
-                                                <h5 class="f700">Technologies</h5>
-                                                <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS
-                                                </p>
-                                            </div>
+                                    </div>
+                                    <div class="project-summary bg-grey">
+                                        <h3 class="f700 text-black">Mercedes Benz</h3>
+                                        <div class="project-solution">
+                                            <p class="text-grey">Hybrid mobile application which helps dealers to
+                                                take superior pictures of used cars. It’s an easy to use and
+                                                intuitive mobile app which allows dealers to standardize the process
+                                                of taking pictures.</p>
                                         </div>
-                                        <div class="project-summary bg-grey">
-                                            <h3 class="f700 text-black">Smart Quest</h3>
-                                            <div class="project-solution">
-                                                <p class="text-grey">SmartQuest reinforces training / learning with the
-                                                    help of micro-content like Quizzes, Reference Lists, Lessons, News
-                                                    Feed. It helps in staying up-to-date with the latest news & events
-                                                    in your company and sector.</p>
-                                            </div>
-                                            <div class="project-tech">
-                                                <h5 class="f700">Technologies</h5>
-                                                <p class="text-grey">Vue.js, JavaScript, Webpack, Material Design,
-                                                    MongoDB, Ruby on Rails</p>
-                                            </div>
+                                        <div class="project-tech">
+                                            <h5 class="f700">Technologies</h5>
+                                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Unity3D</p>
+                                        </div>
+                                    </div>
+                                    <div class="project-summary bg-grey">
+                                        <h3 class="f700 text-black">DBE Cloud</h3>
+                                        <div class="project-solution">
+                                            <p class="text-grey">Integration of learning videos with CLOX device
+                                                which helps store all the data without servers for offline video
+                                                streaming. CLOX can be used with TV’s, Projectors, Mobile Devices
+                                                and Desktop Computers.</p>
+                                        </div>
+                                        <div class="project-tech">
+                                            <h5 class="f700">Technologies</h5>
+                                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="project-summary bg-grey">
+                                        <h3 class="f700 text-black">Smart Quest</h3>
+                                        <div class="project-solution">
+                                            <p class="text-grey">SmartQuest reinforces training / learning with the
+                                                help of micro-content like Quizzes, Reference Lists, Lessons, News
+                                                Feed. It helps in staying up-to-date with the latest news & events
+                                                in your company and sector.</p>
+                                        </div>
+                                        <div class="project-tech">
+                                            <h5 class="f700">Technologies</h5>
+                                            <p class="text-grey">Vue.js, JavaScript, Webpack, Material Design,
+                                                MongoDB, Ruby on Rails</p>
                                         </div>
                                     </div>
                                 </div>
@@ -131,190 +131,187 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-technology">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <header class="heading content-center">
-                                <h2 class="f700 text-black">Our technology stack</h2>
-                                <p class="text-grey">We use our experience, study your project requirements, keep
-                                    scalability in mind and select the latest technology and trending tools to build
-                                    your application.</p>
-                            </header>
-                        </div>
-                        <div class="col-12 text-center">
-                            <div class="row justify-content-md-center">
-                                <div class="col-md-10">
-                                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link text-center active" id="backend-tab" data-toggle="tab"
-                                                href="#backend" role="tab" aria-controls="backend"
-                                                aria-selected="true"><i class="flaticon-backend"></i>Back-End</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-center" id="frontend-tab" data-toggle="tab"
-                                                href="#frontend" role="tab" aria-controls="frontend"
-                                                aria-selected="false"><i class="flaticon-frontend"></i>Front-End</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-center" id="mobile-tab" data-toggle="tab"
-                                                href="#mobile" role="tab" aria-controls="mobile"
-                                                aria-selected="false"><i class="flaticon-mobile"></i>Mobile</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-center" id="devops-tab" data-toggle="tab"
-                                                href="#devops" role="tab" aria-controls="devops"
-                                                aria-selected="false"><i class="flaticon-devops"></i>DevOps</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-center" id="tools-tab" data-toggle="tab"
-                                                href="#tools" role="tab" aria-controls="tools" aria-selected="false"><i
-                                                    class="flaticon-tools"></i>Tools</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="backend" role="tabpanel"
-                                            aria-labelledby="backend-tab">
+        <section class="section-technology">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                        <header class="heading content-center">
+                            <h2 class="f700 text-black">Our technology stack</h2>
+                            <p class="text-grey">We use our experience, study your project requirements, keep
+                                scalability in mind and select the latest technology and trending tools to build
+                                your application.</p>
+                        </header>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-10">
+                                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center active" id="backend-tab" data-toggle="tab"
+                                            href="#backend" role="tab" aria-controls="backend" aria-selected="true"><i
+                                                class="flaticon-backend"></i>Back-End</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="frontend-tab" data-toggle="tab"
+                                            href="#frontend" role="tab" aria-controls="frontend"
+                                            aria-selected="false"><i class="flaticon-frontend"></i>Front-End</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="mobile-tab" data-toggle="tab" href="#mobile"
+                                            role="tab" aria-controls="mobile" aria-selected="false"><i
+                                                class="flaticon-mobile"></i>Mobile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="devops-tab" data-toggle="tab" href="#devops"
+                                            role="tab" aria-controls="devops" aria-selected="false"><i
+                                                class="flaticon-devops"></i>DevOps</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="tools-tab" data-toggle="tab" href="#tools"
+                                            role="tab" aria-controls="tools" aria-selected="false"><i
+                                                class="flaticon-tools"></i>Tools</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="backend" role="tabpanel"
+                                        aria-labelledby="backend-tab">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-lg-12">
+                                                <ul class="list-unstyled clearfix">
+                                                    <li><i class="non-sprite-tech python"></i></li>
+                                                    <li><i class="sprite-tech golang"></i></li>
+                                                    <li><i class="sprite-tech rails"></i></li>
+                                                    <li><i class="non-sprite-tech ruby"></i></li>
+                                                    <li><i class="non-sprite-tech java"></i></li>
+                                                    <li><i class="sprite-tech django"></i></li>
+                                                    <li><i class="sprite-tech django-rest"></i></li>
+                                                    <li><i class="sprite-tech flask"></i></li>
+                                                    <li><i class="sprite-tech php"></i></li>
+                                                    <li><i class="sprite-tech celery"></i></li>
+                                                    <li><i class="sprite-tech jupyter"></i></li>
+                                                    <li><i class="sprite-tech scrapy"></i></li>
+                                                    <li><i class="sprite-tech numpy"></i></li>
+                                                    <li><i class="sprite-tech scipy"></i></li>
+                                                    <li><i class="sprite-tech scikit-learn"></i></li>
+                                                    <li><i class="non-sprite-tech kotlin"></i></li>
+                                                    <li><i class="non-sprite-tech nodejs-logo"></i></li>
+                                                    <li><i class="non-sprite-tech typescript"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="frontend" role="tabpanel"
+                                        aria-labelledby="frontend-tab">
+                                        <div class="registration-steps one-line">
                                             <div class="row justify-content-md-center">
                                                 <div class="col-lg-12">
                                                     <ul class="list-unstyled clearfix">
-                                                        <li><i class="non-sprite-tech python"></i></li>
-                                                        <li><i class="sprite-tech golang"></i></li>
-                                                        <li><i class="sprite-tech rails"></i></li>
-                                                        <li><i class="non-sprite-tech ruby"></i></li>
-                                                        <li><i class="non-sprite-tech java"></i></li>
-                                                        <li><i class="sprite-tech django"></i></li>
-                                                        <li><i class="sprite-tech django-rest"></i></li>
-                                                        <li><i class="sprite-tech flask"></i></li>
-                                                        <li><i class="sprite-tech php"></i></li>
-                                                        <li><i class="sprite-tech celery"></i></li>
-                                                        <li><i class="sprite-tech jupyter"></i></li>
-                                                        <li><i class="sprite-tech scrapy"></i></li>
-                                                        <li><i class="sprite-tech numpy"></i></li>
-                                                        <li><i class="sprite-tech scipy"></i></li>
-                                                        <li><i class="sprite-tech scikit-learn"></i></li>
-                                                        <li><i class="non-sprite-tech kotlin"></i></li>
-                                                        <li><i class="non-sprite-tech nodejs-logo"></i></li>
-                                                        <li><i class="non-sprite-tech typescript"></i></li>
+                                                        <li><i class="sprite-tech html"></i></li>
+                                                        <li><i class="sprite-tech css"></i></li>
+                                                        <li><i class="sprite-tech javascript"></i></li>
+                                                        <li><i class="non-sprite-tech bootstrap"></i></li>
+                                                        <li><i class="sprite-tech sass"></i></li>
+                                                        <li><i class="sprite-tech less"></i></li>
+                                                        <li><i class="sprite-tech haml"></i></li>
+                                                        <li><i class="non-sprite-tech react"></i></li>
+                                                        <li><i class="non-sprite-tech angular"></i></li>
+                                                        <li><i class="non-sprite-tech vue"></i></li>
+                                                        <li><i class="sprite-tech node"></i></li>
+                                                        <li><i class="sprite-tech sencha"></i></li>
+                                                        <li><i class="non-sprite-tech gulp"></i></li>
+                                                        <li><i class="sprite-tech jquery"></i></li>
+                                                        <li><i class="sprite-tech webpack"></i></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="frontend" role="tabpanel"
-                                            aria-labelledby="frontend-tab">
-                                            <div class="registration-steps one-line">
-                                                <div class="row justify-content-md-center">
-                                                    <div class="col-lg-12">
-                                                        <ul class="list-unstyled clearfix">
-                                                            <li><i class="sprite-tech html"></i></li>
-                                                            <li><i class="sprite-tech css"></i></li>
-                                                            <li><i class="sprite-tech javascript"></i></li>
-                                                            <li><i class="non-sprite-tech bootstrap"></i></li>
-                                                            <li><i class="sprite-tech sass"></i></li>
-                                                            <li><i class="sprite-tech less"></i></li>
-                                                            <li><i class="sprite-tech haml"></i></li>
-                                                            <li><i class="non-sprite-tech react"></i></li>
-                                                            <li><i class="non-sprite-tech angular"></i></li>
-                                                            <li><i class="non-sprite-tech vue"></i></li>
-                                                            <li><i class="sprite-tech node"></i></li>
-                                                            <li><i class="sprite-tech sencha"></i></li>
-                                                            <li><i class="non-sprite-tech gulp"></i></li>
-                                                            <li><i class="sprite-tech jquery"></i></li>
-                                                            <li><i class="sprite-tech webpack"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="mobile" role="tabpanel"
-                                            aria-labelledby="mobile-tab">
-                                            <div class="registration-steps one-line">
-                                                <div class="row justify-content-md-center">
-                                                    <div class="col-lg-12">
-                                                        <ul class="list-unstyled clearfix">
-                                                            <li><i class="non-sprite-tech ios"></i></li>
-                                                            <li><i class="non-sprite-tech android"></i></li>
-                                                            <li><i class="non-sprite-tech react"></i></li>
-                                                            <li><i class="non-sprite-tech swift"></i></li>
-                                                            <li><i class="sprite-tech objc"></i></li>
-                                                            <li><i class="sprite-tech cpl"></i></li>
-                                                            <li><i class="sprite-tech kotlin"></i></li>
-                                                            <li><i class="sprite-tech java"></i></li>
-                                                            <li><i class="sprite-tech gradle"></i></li>
-                                                            <li><i class="sprite-tech unity"></i></li>
-                                                            <li><i class="sprite-tech cordova"></i></li>
-                                                            <li><i class="sprite-tech firebase"></i></li>
-                                                            <li><i class="sprite-tech crashlytics"></i></li>
-                                                            <li><i class="non-sprite-tech flutter"></i></li>
-                                                            <li><i class="non-sprite-tech testflight"></i></li>
-                                                            <li><i class="non-sprite-tech appcenter"></i></li>
+                                    </div>
+                                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                                        <div class="registration-steps one-line">
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-lg-12">
+                                                    <ul class="list-unstyled clearfix">
+                                                        <li><i class="non-sprite-tech ios"></i></li>
+                                                        <li><i class="non-sprite-tech android"></i></li>
+                                                        <li><i class="non-sprite-tech react"></i></li>
+                                                        <li><i class="non-sprite-tech swift"></i></li>
+                                                        <li><i class="sprite-tech objc"></i></li>
+                                                        <li><i class="sprite-tech cpl"></i></li>
+                                                        <li><i class="sprite-tech kotlin"></i></li>
+                                                        <li><i class="sprite-tech java"></i></li>
+                                                        <li><i class="sprite-tech gradle"></i></li>
+                                                        <li><i class="sprite-tech unity"></i></li>
+                                                        <li><i class="sprite-tech cordova"></i></li>
+                                                        <li><i class="sprite-tech firebase"></i></li>
+                                                        <li><i class="sprite-tech crashlytics"></i></li>
+                                                        <li><i class="non-sprite-tech flutter"></i></li>
+                                                        <li><i class="non-sprite-tech testflight"></i></li>
+                                                        <li><i class="non-sprite-tech appcenter"></i></li>
 
-                                                        </ul>
-                                                    </div>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="devops" role="tabpanel"
-                                            aria-labelledby="devops-tab">
-                                            <div class="registration-steps one-line">
-                                                <div class="row justify-content-md-center">
-                                                    <div class="col-lg-12">
-                                                        <ul class="list-unstyled clearfix">
-                                                            <li><i class="sprite-tech aws"></i></li>
-                                                            <li><i class="sprite-tech gcloud"></i></li>
-                                                            <li><i class="sprite-tech rackspace"></i></li>
-                                                            <li><i class="sprite-tech azure"></i></li>
-                                                            <li><i class="sprite-tech jenkins"></i></li>
-                                                            <li><i class="sprite-tech ansible"></i></li>
-                                                            <li><i class="sprite-tech chef"></i></li>
-                                                            <li><i class="sprite-tech docker"></i></li>
-                                                            <li><i class="sprite-tech puppet"></i></li>
-                                                            <li><i class="sprite-tech bamboo"></i></li>
-                                                            <li><i class="sprite-tech gocd"></i></li>
-                                                            <li><i class="sprite-tech gitlab"></i></li>
-                                                            <li><i class="sprite-tech kubernetes"></i>
-                                                            <li><i class="sprite-tech datadog"></i></li>
-                                                            </li>
-                                                            <li><i class="sprite-tech nagios"></i></li>
-                                                            <li><i class="sprite-tech newrelic"></i></li>
-                                                            <li><i class="non-sprite-tech circleci"></i></li>
-                                                            <li><i class="non-sprite-tech Terraform"></i></li>
-                                                            <li><i class="non-sprite-tech travisCI"></i></li>
-                                                            
-                                                        </ul>
-                                                    </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="devops" role="tabpanel" aria-labelledby="devops-tab">
+                                        <div class="registration-steps one-line">
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-lg-12">
+                                                    <ul class="list-unstyled clearfix">
+                                                        <li><i class="sprite-tech aws"></i></li>
+                                                        <li><i class="sprite-tech gcloud"></i></li>
+                                                        <li><i class="sprite-tech rackspace"></i></li>
+                                                        <li><i class="sprite-tech azure"></i></li>
+                                                        <li><i class="sprite-tech jenkins"></i></li>
+                                                        <li><i class="sprite-tech ansible"></i></li>
+                                                        <li><i class="sprite-tech chef"></i></li>
+                                                        <li><i class="sprite-tech docker"></i></li>
+                                                        <li><i class="sprite-tech puppet"></i></li>
+                                                        <li><i class="sprite-tech bamboo"></i></li>
+                                                        <li><i class="sprite-tech gocd"></i></li>
+                                                        <li><i class="sprite-tech gitlab"></i></li>
+                                                        <li><i class="sprite-tech kubernetes"></i>
+                                                        <li><i class="sprite-tech datadog"></i></li>
+                                                        </li>
+                                                        <li><i class="sprite-tech nagios"></i></li>
+                                                        <li><i class="sprite-tech newrelic"></i></li>
+                                                        <li><i class="non-sprite-tech circleci"></i></li>
+                                                        <li><i class="non-sprite-tech Terraform"></i></li>
+                                                        <li><i class="non-sprite-tech travisCI"></i></li>
+
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="tools" role="tabpanel"
-                                            aria-labelledby="tools-tab">
-                                            <div class="registration-steps one-line">
-                                                <div class="row justify-content-md-center">
-                                                    <div class="col-lg-12">
-                                                        <ul class="list-unstyled clearfix">
-                                                            <li><i class="sprite-tech jira"></i></li>
-                                                            <li><i class="sprite-tech slack"></i></li>
-                                                            <li><i class="sprite-tech github"></i></li>
-                                                            <li><i class="sprite-tech trello"></i></li>
-                                                            <li><i class="sprite-tech basecamp"></i></li>
-                                                            <li><i class="sprite-tech docker"></i></li>
-                                                            <li><i class="sprite-tech gitlab"></i></li>
-                                                            <li><i class="sprite-tech ngrok"></i></li>
-                                                            <li><i class="sprite-tech postman"></i></li>
-                                                            <li><i class="sprite-tech anydesk"></i></li>
-                                                            <li><i class="sprite-tech workflowy"></i></li>
-                                                            <li><i class="sprite-tech zoom"></i></li>
-                                                            <li><i class="non-sprite-tech clickUp"></i></li>
-                                                            <li><i class="non-sprite-tech clubhouse"></i></li>
-                                                            <li><i class="non-sprite-tech cypress-bw"></i></li>
-                                                            <li><i class="non-sprite-tech figma-logo"></i></li>
-                                                            <li><i class="non-sprite-tech marker-io"></i></li>
-                                                            <li><i class="non-sprite-tech serverless-com"></i></li>
-                                                        
-                                                        </ul>
-                                                    </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+                                        <div class="registration-steps one-line">
+                                            <div class="row justify-content-md-center">
+                                                <div class="col-lg-12">
+                                                    <ul class="list-unstyled clearfix">
+                                                        <li><i class="sprite-tech jira"></i></li>
+                                                        <li><i class="sprite-tech slack"></i></li>
+                                                        <li><i class="sprite-tech github"></i></li>
+                                                        <li><i class="sprite-tech trello"></i></li>
+                                                        <li><i class="sprite-tech basecamp"></i></li>
+                                                        <li><i class="sprite-tech docker"></i></li>
+                                                        <li><i class="sprite-tech gitlab"></i></li>
+                                                        <li><i class="sprite-tech ngrok"></i></li>
+                                                        <li><i class="sprite-tech postman"></i></li>
+                                                        <li><i class="sprite-tech anydesk"></i></li>
+                                                        <li><i class="sprite-tech workflowy"></i></li>
+                                                        <li><i class="sprite-tech zoom"></i></li>
+                                                        <li><i class="non-sprite-tech clickUp"></i></li>
+                                                        <li><i class="non-sprite-tech clubhouse"></i></li>
+                                                        <li><i class="non-sprite-tech cypress-bw"></i></li>
+                                                        <li><i class="non-sprite-tech figma-logo"></i></li>
+                                                        <li><i class="non-sprite-tech marker-io"></i></li>
+                                                        <li><i class="non-sprite-tech serverless-com"></i></li>
+
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,161 +321,178 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-about bg-blue">
+        <section class="section-about bg-blue">
+            <div class="container">
+                <header class="heading">
+                    <h2 class="f700 text-white">Who we are</h2>
+                </header>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="text-wrap">
+                            <p class="text-white">A team of like minded people translating requirements into code
+                                and delivering it as a high quality product. We believe in Open, Remote and Agile
+                                work culture apart from Technology, People, Process and Strategy.</p>
+                            <p class="text-white">Our mission is to establish ourselves as the best choice in
+                                Computing and Information Technology by offering the full spectrum of services. We
+                                are growing and would always like to remain on the growing streak.</p>
+                            <ul class="list-unstyled clearfix">
+                                <li><a href="company" class="btn-white">Company overview</a></li>
+                                <li><a href="company#clients" class="btn-white">Clients</a></li>
+                                <li><a href="company#work-with-us" class="btn-white">Work with us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-unstyled about-number clearfix">
+                            <li class="text-white"><span class="f800">10+</span>
+                                <p>Years of experience</p>
+                            </li>
+                            <li class="text-white"><span class="f800">35+</span>
+                                <p>Projects delivered</p>
+                            </li>
+                            <li class="text-white"><span class="f800">3,000,000+</span>
+                                <p>Happy users</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="section-blog bg-grey">
                 <div class="container">
-                    <header class="heading">
-                        <h2 class="f700 text-white">Who we are</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-lg-8">
+                  <div class="row justify-content-md-center">
+                    <div class="col-md-10">
+                      <header class="heading content-center">
+                        <h2 class="f700 text-black">Read our blogs</h2>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum incididunt ut labore et dolore magna aliqua. Quis ipsum incididunt ut labore et dolore magna aliqua. Quis ipsum. Quis ipsum incididunt ut labore et dolore magna aliqua. Quis ipsum.</p>
+                      </header>
+                      <div class="text-center">
+                        <a href="/blogs" class="btn-arrow btn-black">See all articles</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section> -->
+
+        <section class="section-client">
+            <div class="container">
+                <header class="heading">
+                    <h2 class="f700 text-black">Our clients say</h2>
+                </header>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="owl-two owl-carousel">
                             <div class="text-wrap">
-                                <p class="text-white">A team of like minded people translating requirements into code
-                                    and delivering it as a high quality product. We believe in Open, Remote and Agile
-                                    work culture apart from Technology, People, Process and Strategy.</p>
-                                <p class="text-white">Our mission is to establish ourselves as the best choice in
-                                    Computing and Information Technology by offering the full spectrum of services. We
-                                    are growing and would always like to remain on the growing streak.</p>
-                                <ul class="list-unstyled clearfix">
-                                    <li><a href="company" class="btn-white">Company overview</a></li>
-                                    <li><a href="company#clients" class="btn-white">Clients</a></li>
-                                    <li><a href="company#work-with-us" class="btn-white">Work with us</a></li>
-                                </ul>
+                                <i class="flaticon-quotes"></i>
+                                <p class="text-grey client-text">Fantastic experience working with them on multiple
+                                    projects. They are really talented and motivated team of individuals who are
+                                    always ready to run the extra mile when needed."</p>
+                                <div class="client-info clearfix">
+                                    <div class="client-name">
+                                        <img src="{{ "images/clients/mindset-logo-grant-watt.jpg" | absURL }}" alt=""
+                                            class="client-profile">
+                                        <p class="f800">Grant Watt</p>
+                                        <p class="f14">COO, Mindset Network</p>
+                                        <img src="{{ "images/clients/mindset-say.png" | absURL }}" alt=""
+                                            class="client-brand">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-wrap">
+                                <i class="flaticon-quotes"></i>
+                                <p class="text-grey client-text">Working with ScaleReal has been an enriching and
+                                    beneficial experience. The team is highly professional and respect the
+                                    guidelines, provide quality assurance and have credible tech skill sets that
+                                    help and support all kinds of businesses. We recommend ScaleReal as the premiere
+                                    choice for all innovative and advanced technological solutions."</p>
+                                <div class="client-info clearfix">
+                                    <div class="client-name">
+                                        <img src="{{ "images/clients/panda-wolf-veda-dean.jpg" | absURL }}" alt=""
+                                            class="client-profile">
+                                        <p class="f800">Veda Dean</p>
+                                        <p class="f14">Founder, Panda & Wolf</p>
+                                        <img src="{{ "images/clients/panda-wolf-logo.png" | absURL }}" alt=""
+                                            class="client-brand">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-wrap">
+                                <i class="flaticon-quotes"></i>
+                                <p class="text-grey client-text">Highly skilled team who are equally engaged and
+                                    enthusiastic about building your product. They have proved to overcome any
+                                    technically challenging situation time and again."</p>
+                                <div class="client-info clearfix">
+                                    <div class="client-name">
+                                        <img src="{{ "images/clients/tenfold-varun.jpg" | absURL }}" alt=""
+                                            class="client-profile">
+                                        <p class="f800">Varun Sood</p>
+                                        <p class="f14">Head of Product Development, <br>Tenfold Education</p>
+                                        <img src="{{ "images/clients/tenfold-say.png" | absURL }}" alt=""
+                                            class="client-brand">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-wrap">
+                                <i class="flaticon-quotes"></i>
+                                <p class="text-grey client-text">We are proud to have worked with such a Dynamic and
+                                    Disciplined team. We worked on a challenging Unity AR project and ScaleReal kept
+                                    us on track with their Backend, Quality and Project Management services. We will
+                                    definitely work together again and also strongly recommend ScaleReal for every
+                                    IT service they offer."</p>
+                                <div class="client-info clearfix">
+                                    <div class="client-name">
+                                        <img src="{{ "images/clients/blue-creazione-virgil.jpg" | absURL }}" alt=""
+                                            class="client-profile">
+                                        <p class="f800">Virgil Wylie</p>
+                                        <p class="f14">CTO, Blue Creazione</p>
+                                        <img src="{{ "images/clients/blue-creazione-say.png" | absURL }}" alt=""
+                                            class="client-brand">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-wrap">
+                                <i class="flaticon-quotes"></i>
+                                <p class="text-grey client-text">We have worked with ScaleReal on multiple product
+                                    development initiatives and can vouch for their technical prowess and
+                                    professionalism. Their engineers have been instrumental in setting up the
+                                    infrastructure for our products. They are very competent in various disciplines of
+                                    IT services."</p>
+                                <div class="client-info clearfix">
+                                    <div class="client-name">
+                                        <img src="{{ "images/clients/KunalDabir.jpg" | absURL }}" alt=""
+                                            class="client-profile">
+                                        <p class="f800">Kunal Dabir</p>
+                                        <p class="f14">VP of Engineering, Medly</p>
+                                        <img src="{{ "images/clients/medly-logo.jpg" | absURL }}" alt=""
+                                            class="client-brand">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <ul class="list-unstyled about-number clearfix">
-                                <li class="text-white"><span class="f800">10+</span>
-                                    <p>Years of experience</p>
-                                </li>
-                                <li class="text-white"><span class="f800">35+</span>
-                                    <p>Projects delivered</p>
-                                </li>
-                                <li class="text-white"><span class="f800">3,000,000+</span>
-                                    <p>Happy users</p>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <ul class="list-unstyled client-type clearfix">
+                            <li><i class="flaticon-startup"></i>
+                                <h3 class="f800">Are you a Startup?</h3><a href="contact"
+                                    class="btn-arrow btn-black">Know more</a>
+                            </li>
+                            <li><i class="flaticon-data"></i>
+                                <h3 class="f800">Are you an Enterprise?</h3><a href="contact"
+                                    class="btn-arrow btn-black">Know more</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        {{ partial "footer" . }}
+    </div>
+</body>
+{{ partial "js" . }}
 
-            <section class="section-client">
-                <div class="container">
-                    <header class="heading">
-                        <h2 class="f700 text-black">Our clients say</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="owl-two owl-carousel">
-                                <div class="text-wrap">
-                                    <i class="flaticon-quotes"></i>
-                                    <p class="text-grey client-text">Fantastic experience working with them on multiple
-                                        projects. They are really talented and motivated team of individuals who are
-                                        always ready to run the extra mile when needed."</p>
-                                    <div class="client-info clearfix">
-                                        <div class="client-name">
-                                            <img src="{{ "images/clients/mindset-logo-grant-watt.jpg" | absURL }}"
-                                                alt=""
-                                                class="client-profile">
-                                            <p class="f800">Grant Watt</p>
-                                            <p class="f14">COO, Mindset Network</p>
-                                            <img src="{{ "images/clients/mindset-say.png" | absURL }}"
-                                                alt="" class="client-brand">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-wrap">
-                                    <i class="flaticon-quotes"></i>
-                                    <p class="text-grey client-text">Working with ScaleReal has been an enriching and
-                                        beneficial experience. The team is highly professional and respect the
-                                        guidelines, provide quality assurance and have credible tech skill sets that
-                                        help and support all kinds of businesses. We recommend ScaleReal as the premiere
-                                        choice for all innovative and advanced technological solutions."</p>
-                                    <div class="client-info clearfix">
-                                        <div class="client-name">
-                                            <img src="{{ "images/clients/panda-wolf-veda-dean.jpg" | absURL }}"
-                                                alt=""
-                                                class="client-profile">
-                                            <p class="f800">Veda Dean</p>
-                                            <p class="f14">Founder, Panda & Wolf</p>
-                                            <img src="{{ "images/clients/panda-wolf-logo.png" | absURL }}"
-                                                alt="" class="client-brand">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-wrap">
-                                    <i class="flaticon-quotes"></i>
-                                    <p class="text-grey client-text">Highly skilled team who are equally engaged and
-                                        enthusiastic about building your product. They have proved to overcome any
-                                        technically challenging situation time and again."</p>
-                                    <div class="client-info clearfix">
-                                        <div class="client-name">
-                                            <img src="{{ "images/clients/tenfold-varun.jpg" | absURL }}"
-                                                alt="" class="client-profile">
-                                            <p class="f800">Varun Sood</p>
-                                            <p class="f14">Head of Product Development, <br>Tenfold Education</p>
-                                            <img src="{{ "images/clients/tenfold-say.png" | absURL }}"
-                                                alt="" class="client-brand">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-wrap">
-                                    <i class="flaticon-quotes"></i>
-                                    <p class="text-grey client-text">We are proud to have worked with such a Dynamic and
-                                        Disciplined team. We worked on a challenging Unity AR project and ScaleReal kept
-                                        us on track with their Backend, Quality and Project Management services. We will
-                                        definitely work together again and also strongly recommend ScaleReal for every
-                                        IT service they offer."</p>
-                                    <div class="client-info clearfix">
-                                        <div class="client-name">
-                                            <img src="{{ "images/clients/blue-creazione-virgil.jpg" | absURL }}"
-                                                alt=""
-                                                class="client-profile">
-                                            <p class="f800">Virgil Wylie</p>
-                                            <p class="f14">CTO, Blue Creazione</p>
-                                            <img src="{{ "images/clients/blue-creazione-say.png" | absURL }}"
-                                                alt=""
-                                                class="client-brand">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-wrap">
-                                    <i class="flaticon-quotes"></i>
-                                    <p class="text-grey client-text">We have worked with ScaleReal on multiple product development initiatives and can vouch for their technical prowess and professionalism. Their engineers have been instrumental in setting up the infrastructure for our products. They are very competent in various disciplines of IT services."</p>
-                                    <div class="client-info clearfix">
-                                        <div class="client-name">
-                                            <img src="{{ "images/clients/KunalDabir.jpg" | absURL }}"
-                                                alt=""
-                                                class="client-profile">
-                                            <p class="f800">Kunal Dabir</p>
-                                            <p class="f14">VP of Engineering, Medly</p>
-                                            <img src="{{ "images/clients/medly-logo.jpg" | absURL }}"
-                                                alt=""
-                                                class="client-brand">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <ul class="list-unstyled client-type clearfix">
-                                <li><i class="flaticon-startup"></i>
-                                    <h3 class="f800">Are you a Startup?</h3><a href="contact"
-                                        class="btn-arrow btn-black">Know more</a>
-                                </li>
-                                <li><i class="flaticon-data"></i>
-                                    <h3 class="f800">Are you an Enterprise?</h3><a href="contact"
-                                        class="btn-arrow btn-black">Know more</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {{ partial "footer" . }}
-        </div>
-    </body>
-    {{ partial "js" . }}
 </html>

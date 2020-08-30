@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+{{ partial "head" . }}
+
+<body>
+  {{ partial "nav" . }}
+  <div class="page-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <section class="section-articles">
+            <h2>Popular Single</h2>
+            {{ range where .Data.Pages "Type" "banner" }}
+            <img src="{{.Params.image}}">
+            {{.Title}}
+            {{.Params.image}}
+            {{ end }}
+          </section>
+          <section class="section-articles">
+            <h2>Popular List</h2>
+            {{ range where .Data.Pages "Type" "popular" }}
+            <img src="{{.Params.thumbnail}}">
+            {{.Title}}
+            {{ end }}
+          </section>
+          <section class="section-articles">
+            <h2>All Stories</h2>
+            {{ $paginator := .Paginate  .Data.Pages }}
+            {{ range $paginator.Pages }}
+            {{ .Render "content-list" }}
+            {{ end }}
+          </section>
+          {{ partial "pagination" . }}
+        </div>
+        <div class="col">
+          {{ partial "blog-sidebar" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ partial "footer" . }}
+  {{ partial "js" . }}
+</body>
+
+</html>
