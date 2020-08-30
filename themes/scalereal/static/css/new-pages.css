@@ -290,6 +290,8 @@ li {
     display: none; }
   .section-open-position .card-header .scollapsed {
     padding: 20px; }
+    .scollapsed .expand {
+      cursor: pointer;}
     .section-open-position .card-header .scollapsed:not(.collapsed) {
       background-color: #f5f8fc; }
   .section-open-position .card-header .collapsed .minus {
