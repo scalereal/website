@@ -1,5 +1,5 @@
 ---
-title: The 10 Best CLI Tools for Software Developer’s Productivity
+title: The 10 Best CLI Tools 🛠️ for Software Developer’s👨‍💻 Productivity
 description: Since my childhood, I have been a productivity buff. I used to read a lot of self-help books and find productivity hacks wherever I can. After I got introduced to coding my obsession for productivity increased even more as coding gave me the powers that I had never imagined.
 date:   2020-05-15
 categories:

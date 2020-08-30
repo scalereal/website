@@ -14,11 +14,11 @@
       <section class="popular-reads-section">
         {{ range where .Data.Pages ".Params.blog_place" "banner" }}
         <div class="row">
-          <div class="col-md-6">
-            <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="img-bg banner-img" style="background-image: url({{.Params.image}});"> </div>
           </div>
 
-          <div class="col-md-6 col-order align-self-center">
+          <div class="col-lg-6 col-md-12 col-order align-self-center">
             <a href="{{ .Permalink }}">
 
               <p class="f700 text-black popular-reads">POPULAR READS</p>
@@ -123,7 +123,7 @@
         <ul class="row">
           {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
           {{ range $paginator.Pages}}
-            <li class="col-md-4 mb-5">
+            <li class="col-lg-4 col-md-6 all-blogs-section">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
                 <h3 class="f700 text-black"> {{.Title}} </h3>
