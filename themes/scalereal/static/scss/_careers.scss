@@ -1,0 +1,143 @@
+.section-why-work i {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    list-style-type: none;
+}
+
+.section-open-position {
+    .position-list li {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .position-btn {
+        font-size: 18px;
+        letter-spacing: -0.04px;
+        color: #13ccd8;
+        border-radius: 35px;
+        line-height: 50px;
+        border: solid 1px #13ccd8;
+        width: 180px;
+        display: block;
+        text-align: center;
+        &.active {
+            background-color: #13ccd8;
+            color: white;
+        }
+    }
+
+    .position-name {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+        color: #151515;
+    }
+    .position-number {
+        font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 0.16px;
+        color: #868686;
+        margin-left: 15px;
+    }
+
+    .card {
+        border: none;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .card-header {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.54;
+            letter-spacing: 0.27px;
+            color: #4d4d4d;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.85;
+            letter-spacing: 0.23px;
+            color: #979696;
+        }
+        .plus,
+        .minus {
+            color: #13ccd8;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .minus {
+            padding: 5px;
+        }
+
+        .plus {
+            display: none;
+        }
+        .scollapsed {
+            padding: 20px;
+             &:not(.collapsed) {
+                background-color: #f5f8fc;
+             }
+        }
+        .collapsed {
+            .minus {
+                display: none;
+            }
+            .plus {
+                display: block;
+            }
+        }
+    }
+    .card-body {
+        strong {
+            display: block;
+        }
+    }
+
+    .send-resume {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.54;
+        letter-spacing: 0.27px;
+        color: #13ccd8;
+        display: inline-block;
+        margin-top: 24px;
+        &:hover {
+            span {
+                margin-right: 10px;
+            }
+        }
+        span {
+            border-bottom: 1px solid #13ccd8;
+            transition: all 500ms;
+        }
+        i {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: bold;
+        }
+    }
+
+    .key-list {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        li {
+            margin-bottom: 15px;
+            &::before {
+                content: "\f10e";
+                font-family: "Flaticon";
+                font-size: 22px;
+                line-height: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
