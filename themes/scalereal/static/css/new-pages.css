@@ -67,9 +67,6 @@
   line-height: 1.71;
   letter-spacing: 0.16px;
   color: #737272; }
-
-.blog-carousel.owl-carousel {
-  left: 20px; }
   .blog-carousel.owl-carousel li {
     padding: 0 15px; }
   .blog-carousel.owl-carousel .owl-nav button {
