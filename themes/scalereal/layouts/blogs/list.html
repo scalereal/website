@@ -13,6 +13,8 @@
 
       <section class="popular-reads-section">
         {{ range where .Data.Pages ".Params.blog_place" "banner" }}
+        {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
+
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="img-bg banner-img" style="background-image: url({{.Params.image}});"> </div>
@@ -27,7 +29,8 @@
               <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
               <div class="writer-wrap d-flex">
-                <div class="writer-img {{lower .Params.author}} mr-3">
+                <div></div>
+                <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')">
                 </div>
                 <div class="writer-name-wrap">
                   <h5 class="writer-name">{{.Params.author}}</h5>
@@ -48,6 +51,8 @@
       <section class="popular-list-section">
         <ul class="js-blog-carousel owl-carousel blog-carousel row">
           {{ range where .Data.Pages ".Params.blog_place" "popular" }}
+          {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
+
           <li>
             <a href="{{ .Permalink }}">
 
@@ -56,7 +61,7 @@
               <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
               <div class="writer-wrap d-flex">
-                <div class="writer-img {{lower .Params.author}} mr-3"></div>
+                <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
                 <div class="writer-name-wrap">
                   <h5 class="writer-name">{{.Params.author}}</h5>
                   <p class="time">
@@ -123,6 +128,7 @@
         <ul class="row">
           {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
           {{ range $paginator.Pages}}
+          {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
             <li class="col-lg-4 col-md-6 all-blogs-section">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
@@ -130,7 +136,7 @@
                 <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
 
                 <div class="writer-wrap d-flex">
-                  <div class="writer-img  {{lower .Params.author}} mr-3"></div>
+                  <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
                   <div class="writer-name-wrap">
                     <h5 class="writer-name">{{.Params.author}}</h5>
                     <p class="time">

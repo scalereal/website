@@ -2196,18 +2196,6 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.writer-img.sandesh {
-  background-image: url("../images/bloggers/sandesh.png");
-}
-.writer-img.shreyas {
-  background-image: url("../images/bloggers/shreyas.png ");
-}
-.writer-img.ashish {
-  background-image: url("../images/bloggers/ashsish.png");
-}
-.writer-img.atul {
-  background-image: url("../images/bloggers/atul.png");
-}
 .pagination {
   display: flex;
   list-style: none;
@@ -2277,8 +2265,8 @@ h3 {
 .back-link-section {
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 95%;
   text-align: end;
+  font-size: 14px;
 }
 @media only screen and (max-width: 766px) {
   .page-blog-details .share-wrap {

@@ -3,6 +3,8 @@
 {{ $.Scratch.Set "post" true }}
 {{ partial "head.html" . }}
 
+{{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
+
 <body>
   {{ partial "nav" . }}
   <div class="page-blog-details">
@@ -14,20 +16,20 @@
 
     <div class="container">
       <section class="back-link-section">
-        <!-- <a class="back-link" href="/blogs">
+        <a class="back-link" href="/blogs">
           <span class="line">
             <img src="{{ "images/blog/Back.svg" | absURL }}" alt="">
           </span>
           <span class="text">Back</span>
-        </a> -->
-        <a href="/blogs" class="btn-arrow btn-black">Back</a>
+        </a>
+        <!-- <a href="/blogs" class="btn-arrow btn-black">Back</a> -->
       </section>
 
 
       <h2 class="f700 text-black">{{ .Title }}</h2>
 
       <div class="writer-wrap d-flex">
-        <div class="writer-img {{lower .Params.author}} mr-3"></div>
+        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
         <div class="writer-name-wrap">
           <h5 class="writer-name">{{.Params.author}}</h5>
           <p class="time">
@@ -56,8 +58,8 @@
                 <i class="flaticon-twitter"></i></a></li>
               <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" class="text-grey"><i
                         class="flaticon-facebook"></i></a></li>
-              <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"
-                  class="text-grey"><i class="flaticon-instagram"></i></a></li>
+              <!-- <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"
+                  class="text-grey"><i class="flaticon-instagram"></i></a></li> -->
             </ul>
           </div>
         </div>
