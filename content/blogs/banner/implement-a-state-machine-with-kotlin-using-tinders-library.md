@@ -8,7 +8,7 @@ tags:
   - kotlin
   - gradle
 author: Sandesh Bodake
-image: https://miro.medium.com/max/2000/1*ox-fDWQrOtTsg5-pMziysQ.jpeg
+image: /images/blog/banner/state-machine.png
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/08/04/implement-a-state-machine-with-kotlin-using-tinders-library.html
 blog_place: banner

@@ -9,7 +9,7 @@ tags:
   - okta
   - authentication
 author: Sandesh Bodake
-image: https://miro.medium.com/max/2000/0*QfvBm9mXUgS0DaE2
+image: /images/blog/banner/okta-devise-integration.png
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/05/28/okta-devise-ruby-on-rails.html
 ---

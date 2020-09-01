@@ -8,7 +8,7 @@ tags:
   - TOOLS
   - PRACTICES
 author: Ashish Mohite
-image: https://miro.medium.com/max/1400/0*sG6xlImDJAHBwccC
+image: /images/blog/banner/the-10-best-cli-tools-for-software-developer’s-productivity.png
 thumbnail: https://via.placeholder.com/150
 url: devops/2020/05/15/10-cli-tools-for-developers-productivity.html
 blog_place: popular
