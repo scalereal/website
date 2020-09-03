@@ -7,6 +7,7 @@ categories:
 tags:
   - Testing
   - QA
+  - Template
 author: Atul Shashikumar
 image: /images/blog/banner/what-is-a-qa-sign-off.png
 thumbnail: https://via.placeholder.com/150

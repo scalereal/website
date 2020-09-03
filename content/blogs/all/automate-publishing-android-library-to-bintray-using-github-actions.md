@@ -6,7 +6,9 @@ categories:
   - Android
 tags:
   - Android
-  - github
+  - Github
+  - Github Actions
+  - Android Libraries
 author: Shreyas Patil
 image: /images/blog/banner/automate-publishing-android-library-to-bintray-using-gitHub-actions.png
 thumbnail: https://via.placeholder.com/150

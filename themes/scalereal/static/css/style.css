@@ -2241,8 +2241,8 @@ h3 {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-  height: 13%;
-  line-height: 25px;
+  height: 60px;
+  line-height: 27px;
 }
 .page-blog-list .blog-title-text {
   font-size: 30px;
@@ -2304,6 +2304,22 @@ h3 {
   .popular-reads-section .banner-img {
     width: 100%;
     margin: 0;
+  }
+  .all-list-section ul li:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 40px;
+    border: 0.5px solid #cccbcb;
+  }
+  .all-list-section ul li:last-child:after {
+    width: 0%;
+    border: none;
+  }
+  .page-blog-list .all-blogs-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
 

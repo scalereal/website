@@ -5,8 +5,11 @@ date: 2020-07-28
 categories:
   - android
 tags:
-  - android
-  - programming
+  - Android
+  - Netwoking
+  - Location
+  - Kotlin
+  - Android Developement
 author: Shreyas Patil
 image: /images/blog/banner/accessing-device-location-using-sim-card.png
 thumbnail: https://via.placeholder.com/150

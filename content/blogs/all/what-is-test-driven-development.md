@@ -5,8 +5,10 @@ date:   2020-07-05
 categories:
   - backend
 tags:
-  - ruby
+  - Ruby
   - TDD
+  - Programming
+  - Practices
 author: Sandesh Bodake
 image: /images/blog/banner/tdd.png
 thumbnail: https://via.placeholder.com/150

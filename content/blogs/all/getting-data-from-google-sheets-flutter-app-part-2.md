@@ -5,7 +5,11 @@ date:   2020-07-04
 categories:
   - android
 tags:
-  - flutter
+  - Flutter
+  - Google App script
+  - Google Sheet
+  - Dart
+  - Mobile Development
 author: Shreyas Patil
 image: /images/blog/banner/getting-data-from-google-sheets-flutter-app-part-2.png
 thumbnail: https://via.placeholder.com/150

@@ -5,8 +5,10 @@ date:   2020-05-15
 categories:
   - PRACTICES
 tags:
-  - TOOLS
-  - PRACTICES
+  - Developer
+  - Productivity
+  - Practices
+  - Software Development
 author: Ashish Mohite
 image: /images/blog/banner/the-10-best-cli-tools-for-software-developer’s-productivity.png
 thumbnail: https://via.placeholder.com/150
