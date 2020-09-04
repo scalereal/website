@@ -59,12 +59,15 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        loop: true
       },
       767: {
         items: 1,
+        loop: true
       },
       991: {
         items: 2,
+        loop: true
       }
     }
   });
