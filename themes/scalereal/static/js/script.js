@@ -52,8 +52,6 @@ $(document).ready(function () {
     autoplayTimeout: 15000,
     autoplaySpeed: 15000,
     autoplayHoverPause: true,
-    animateOut: 'slideOutLeft',
-    animateIn: 'slideInRight',
     responsiveClass: true,
     items: 2,
     responsive: {
