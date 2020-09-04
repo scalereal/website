@@ -38,10 +38,10 @@
 
 <!-- image tags -->
 {{ with .Params.image }}
-<meta itemprop="image" content="{{ . }}" />
-<meta property="og:image" content="{{ . }}" />
-<meta name="twitter:image" content="{{ .  }}" />
-<meta name="twitter:image:src" content="{{ . }}" />
+<meta itemprop="image" content="{{ .  | absURL }}" />
+<meta property="og:image" content="{{ . | absURL}}" />
+<meta name="twitter:image" content="{{ . | absURL }}" />
+<meta name="twitter:image:src" content="{{ . | absURL }}" />
 {{ else }}
 <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />

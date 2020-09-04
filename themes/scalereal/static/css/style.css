@@ -2311,7 +2311,7 @@ h3 {
     height: 2px;
     width: 100%;
     margin-top: 40px;
-    border: 0.5px solid #cccbcb;
+    background: #cccbcb;
   }
   .all-list-section ul li:last-child:after {
     width: 0%;
@@ -2326,9 +2326,6 @@ h3 {
 @media only screen and (max-width: 766px) {
   .popular-list-section .js-blog-carousel {
     left: 14px;
-  }
-  .blog-carousel.owl-carousel .owl-nav .owl-prev {
-    left: -21px;
   }
   .all-list-section h3{
     max-height: 70px;

@@ -77,6 +77,9 @@
     .blog-carousel.owl-carousel .owl-nav button span {
       display: block;
       margin-top: -16px; }
+      @media only screen and (max-width: 766px){
+        .blog-carousel.owl-carousel .owl-nav button{
+          top: 16%;}}
   .blog-carousel.owl-carousel .owl-nav .owl-prev {
     left: -15px; }
   .blog-carousel.owl-carousel .owl-nav .owl-next {
