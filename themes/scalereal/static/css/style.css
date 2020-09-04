@@ -2246,8 +2246,8 @@ h3 {
 }
 .page-blog-list .blog-title-text {
   font-size: 30px;
-  margin-bottom: 9px;
-  line-height: 34px;
+  margin-bottom: 12px;
+  line-height: 35px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -2341,5 +2341,11 @@ h3 {
 @media only screen and (max-width: 980px) {
   .popular-reads-section .popular-reads {
     margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .popular-reads-separator {
+    display: none;
   }
 }

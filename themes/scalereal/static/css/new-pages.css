@@ -71,7 +71,6 @@
     height: 50px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
-    background: transparent;
     border-radius: 100%;
     display: block; }
     .blog-carousel.owl-carousel .owl-nav button span {
@@ -80,6 +79,9 @@
       @media only screen and (max-width: 766px){
         .blog-carousel.owl-carousel .owl-nav button{
           top: 16%;}}
+      @media only screen and (min-width: 766px) and (max-width: 1024px){
+        .blog-carousel.owl-carousel .owl-nav button{
+          top: 30%;}}
   .blog-carousel.owl-carousel .owl-nav .owl-prev {
     left: -15px; }
   .blog-carousel.owl-carousel .owl-nav .owl-next {
