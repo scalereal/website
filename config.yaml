@@ -28,7 +28,7 @@ params:
           url: /projects
         - name: Company
           url: /company
-        - name: Blog
+        - name: Blogs
           url: /blogs
         - name: Careers
           url: /careers
