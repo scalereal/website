@@ -5,9 +5,13 @@ date:   2020-07-04
 categories:
   - android
 tags:
-  - flutter
+  - Flutter
+  - Google App script
+  - Google Sheet
+  - Dart
+  - Mobile Development
 author: Shreyas Patil
-image: https://miro.medium.com/max/3000/1*jmddVh9AnCp8Z9lltqvfaQ.png
+image: /images/blog/banner/getting-data-from-google-sheets-flutter-app-part-2.png
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/04/automate-publishing-android-library-to-bintray-using-github-actions.html
 ---
