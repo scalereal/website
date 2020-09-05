@@ -13,60 +13,67 @@
 
       <section class="popular-reads-section">
         {{ range where .Data.Pages ".Params.blog_place" "banner" }}
+        {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
+
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <div class="img-bg banner-img" style="background-image: url({{.Params.image}});"> </div>
+            <a href="{{ .Permalink }}">
+              <div class="img-bg banner-img" style="background-image: url({{.Params.image}});"> </div>
+            </a>
           </div>
 
           <div class="col-lg-6 col-md-12 col-order align-self-center">
+            <p class="f700 text-black popular-reads">POPULAR READS</p>
+
             <a href="{{ .Permalink }}">
-
-              <p class="f700 text-black popular-reads">POPULAR READS</p>
-
-              <h3 class="f700 text-black"> {{.Title}} </h3>
+              <h3 class="f700 text-black blog-title-text"> {{.Title}} </h3>
               <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
-
-              <div class="writer-wrap d-flex">
-                <div class="writer-img {{lower .Params.author}} mr-3">
-                </div>
-                <div class="writer-name-wrap">
-                  <h5 class="writer-name">{{.Params.author}}</h5>
-                  <p class="time">
-                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                      {{(.Params.date).Format "January 2, 2006"}}
-                    </time>
-                  </p>
-                </div>
-              </div>
             </a>
+
+            <div class="writer-wrap d-flex">
+              <div></div>
+              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')">
+              </div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">{{.Params.author}}</h5>
+                <p class="time">
+                  <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                    {{(.Params.date).Format "January 2, 2006"}}
+                  </time>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         {{ end }}
       </section>
 
+      <section class="popular-reads-separator saprator"></section>
 
       <section class="popular-list-section">
         <ul class="js-blog-carousel owl-carousel blog-carousel row">
           {{ range where .Data.Pages ".Params.blog_place" "popular" }}
+          {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
+
           <li>
             <a href="{{ .Permalink }}">
 
               <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-              <h3 class="f700 text-black"> {{.Title}} </h3>
+              <h3 class="f700 text-black blog-title-text"> {{.Title}} </h3>
               <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
-
-              <div class="writer-wrap d-flex">
-                <div class="writer-img {{lower .Params.author}} mr-3"></div>
-                <div class="writer-name-wrap">
-                  <h5 class="writer-name">{{.Params.author}}</h5>
-                  <p class="time">
-                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                      {{(.Params.date).Format "January 2, 2006"}}
-                    </time>
-                  </p>
-                </div>
-              </div>
             </a>
+
+            <div class="writer-wrap d-flex">
+              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
+              <div class="writer-name-wrap">
+                <h5 class="writer-name">{{.Params.author}}</h5>
+                <p class="time">
+                  <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                    {{(.Params.date).Format "January 2, 2006"}}
+                  </time>
+                </p>
+              </div>
+            </div>
           </li>
           {{end}}
         </ul>
@@ -123,24 +130,24 @@
         <ul class="row">
           {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
           {{ range $paginator.Pages}}
+          {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
             <li class="col-lg-4 col-md-6 all-blogs-section">
               <a href="{{ .Permalink }}">
                 <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-                <h3 class="f700 text-black"> {{.Title}} </h3>
+                <h3 class="f700 text-black blog-title-text"> {{.Title}} </h3>
                 <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
-
-                <div class="writer-wrap d-flex">
-                  <div class="writer-img  {{lower .Params.author}} mr-3"></div>
-                  <div class="writer-name-wrap">
-                    <h5 class="writer-name">{{.Params.author}}</h5>
-                    <p class="time">
-                      <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-                        {{(.Params.date).Format "January 2, 2006"}}
-                      </time>
-                    </p>
-                  </div>
-                </div>
               </a>
+              <div class="writer-wrap d-flex">
+                <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
+                <div class="writer-name-wrap">
+                  <h5 class="writer-name">{{.Params.author}}</h5>
+                  <p class="time">
+                    <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                      {{(.Params.date).Format "January 2, 2006"}}
+                    </time>
+                  </p>
+                </div>
+              </div>
             </li>
           {{end}}
         </ul>

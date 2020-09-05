@@ -94,7 +94,6 @@
 }
 
 .blog-carousel.owl-carousel {
-  left: 20px;
   li {
     padding: 0 15px;
   }
@@ -219,5 +218,16 @@
     font-size: 18px;
     letter-spacing: -0.04px;
     color: #313131;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .popular-reads-section .sub-text {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .blog-carousel.owl-carousel .owl-nav button {
+    top: 16%;
   }
 }

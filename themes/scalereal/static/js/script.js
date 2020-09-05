@@ -52,19 +52,20 @@ $(document).ready(function () {
     autoplayTimeout: 15000,
     autoplaySpeed: 15000,
     autoplayHoverPause: true,
-    animateOut: 'slideOutLeft',
-    animateIn: 'slideInRight',
     responsiveClass: true,
     items: 2,
     responsive: {
       0: {
         items: 1,
+        loop: true
       },
       767: {
         items: 1,
+        loop: true
       },
       991: {
         items: 2,
+        loop: true
       }
     }
   });

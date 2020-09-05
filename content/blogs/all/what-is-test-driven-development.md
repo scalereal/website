@@ -5,10 +5,12 @@ date:   2020-07-05
 categories:
   - backend
 tags:
-  - ruby
+  - Ruby
   - TDD
+  - Programming
+  - Practices
 author: Sandesh Bodake
-image: https://miro.medium.com/max/2000/0*ijzQQ91fDcwy-CTo
+image: /images/blog/banner/tdd.png
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/07/05/What-is-test-driven-development-tdd.html
 ---
