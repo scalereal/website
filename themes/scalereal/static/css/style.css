@@ -2345,3 +2345,10 @@ h3 {
     display: none;
   }
 }
+
+code {
+  font-size: 87.5%;
+  padding: 0.2rem;
+  background-color: #000000;
+  word-break: break-word;
+}
