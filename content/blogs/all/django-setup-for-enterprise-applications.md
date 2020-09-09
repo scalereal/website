@@ -1,37 +1,35 @@
 ---
-title: Django Setup for Enterprise Applications.
-description: In this article, we’ll see how to setup Django application for scalability and maintainable in long run.
-date: 2020-09-10
+title:  Django Setup for Enterprise Applications
+description: In this article, I’m going to show you how to do Setup of Django for Enterprise Applications.
+date: 2020-05-28
 categories:
   - Python
   - Django
 tags:
-  - Pyhton
-  - Django
-  - Clean Code
-  - Project Setup
-  - Django Developement
-author: Atul Kabbur
-image: /images/blog/banner/accessing-device-location-using-sim-card.png
+  - ruby
+  - okta
+  - authentication
+author: Deepak Kabbur
+image: /images/blog/banner/okta-devise-integration.png
 thumbnail: https://via.placeholder.com/150
-url: python/2020/09/10/django-setup-for-enterprise-applications.html
-draft: false
+url: python/2020/09/10/python/django-setup-for-enterprise-applications.html
 ---
 
 ## Table of Contents
 
-1. Introduction
-2. Audience
-3. Prerequisites
-4. Let's Start Project
-5. Setup Directory Structure
-6. Setup Custom User app
-7. FAQ
+- [Introduction](\#1-introduction)
+- [Audience](\#2-audience)
+- [Prerequisites](\#3-prerequisites)
+- [Let's Start Project](\#4-letss-start-project)
+- [Setup Directory Structure](\#5-setup-directory-structure)
+- [Setup Custom User app](\#6-setup-custom-user-app)
+- [FAQ](\#7-faq)
 
-> ### 1. Introduction
->
-> Django is a very popular Python Web framework that encourages rapid development and clean, pragmatic design. Its free and Open Source. Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
-> Today will discuss about Django setup and directory structure which helps to scale and maintain the project in the long run.
+### 1. Introduction
+
+Django is a very popular Python Web framework that encourages rapid development and clean, pragmatic design. Its free and Open Source. Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
+>**Today will discuss about Django setup and directory structure which helps to scale and maintain the project in the long run.**
+
 
 ### 2. Audience
 
@@ -68,7 +66,7 @@ $ mkdir demo
 $ cd demo
 ```
 
-#### 4.1 _Lets create virtual environment using `pipenv`._
+#### **4.1 _Lets create virtual environment using `pipenv`.**
 
 ```bash
 $ pipenv --python 3.8.0
@@ -83,7 +81,7 @@ Virtualenv location: /Users/home/.local/share/virtualenvs/nyasa-api-yFS2yA7M
 Creating a Pipfile for this project…
 ```
 
-#### 4.2 _Install Django package_
+#### **4.2 Install Django package**
 
 Below command install latest version of [Django](https://www.djangoproject.com/).
 
@@ -94,7 +92,7 @@ Adding django to Pipfile's [packages]…
 ✔ Installation Succeeded
 ```
 
-#### 4.3 _Start django project_
+#### **4.3 Start django project**
 
 ```bash
 $ django-admin startproject demo .
@@ -128,19 +126,19 @@ Now we comes to important step of project setup. Before going to change director
 #### **Why Directory structure is important?**
 
 > Directory structure is very important for any project.
-> How we plan for Home before constructing like Living room, Kitchen, Bedroom every space has its own importance and purpose.
-> Same in project directory structure each directory has its own importance and purpose.
+> **How we plan for Home before constructing like Living room, Kitchen, Bedroom etc... every space has its own importance and purpose.
+> Same in project directory structure each directory has its own importance and purpose.**
 
-#### Directory Structure we going to create and its purposes.
+#### **Directory Structure we going to create and its purposes.**
 
 -   `apps` this directory contains all the future apps created using `startapp` command.
 -   `config` contains all the configurations and settings related to project.
 -   `common` all common code, modules or utils.
     These are the important directories. We can add more as per requirement or need.
 
-##### Note : create **init**.py file inside each directory. We use it as Python package.
+###### Note : create `__init__.py` file inside each directory. We use it as Python package.
 
-#### 5.1 Add `apps` package inside demo directory.
+#### **5.1 Add `apps` package inside demo directory.**
 
 ```bash
 $ cd  demo
@@ -158,7 +156,7 @@ import sys
 sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 ```
 
-#### 5.2 Add `config` package. Goto parent directory.
+#### **5.2 Add `config` package. Goto parent directory.**
 
 This directory contains the all the settings, urls and wsgi.py related to project.
 
@@ -190,7 +188,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'demo.config.settings.django')
 
 Run the local server and verify its working correctly.
 
-#### 5.3 Add `common` package same as we added `apps` and `config`. Which contains the common code which is applicable to whole project.
+#### **5.3 Add `common` package same as we added `apps` and `config`. Which contains the common code which is applicable to whole project.**
 
 ### 6. Setup Custom User app
 
@@ -204,7 +202,7 @@ The purpose of custom app
 -   Segregate `User` related features/code in one place.
 -   Add more flexibility while developing `API` related to `User`.
 
-#### 6.1 Create custom user app.
+#### **6.1 Create custom user app.**
 
 ```bash
 $ cd demo/apps
@@ -215,7 +213,7 @@ $ ls demo/apps/users/
 __init__.py admin.py    apps.py     migrations  models.py   tests.py    views.py
 ```
 
-#### 6.2 Create `User` model.
+#### **6.2 Create `User` model.**
 
 Add following lines to `apps/users/model`
 
@@ -263,7 +261,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         ]
 ```
 
-#### 6.3 Configure user app.
+#### **6.3 Configure user app.**
 
 add following line to `config/settings/django.py`
 
@@ -276,7 +274,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-#### 6.4 Make Migrations
+#### **6.4 Make Migrations**
 
 ```bash
 $ python manage.py makemigrations
@@ -287,7 +285,7 @@ Migrations for 'users':
     - Create index users_user_first_n_6d862e_idx on field(s) first_name, last_name of model user
 ```
 
-#### 6.5 Run Migrations
+#### **6.5 Run Migrations**
 
 ```bash
 $ python manage.py migrate
@@ -315,7 +313,7 @@ Running migrations:
   Applying sessions.0001_initial... OK
 ```
 
-#### 6.6 Verify server is running.
+#### **6.6 Verify server is running.**
 
 ```bash
 $ python manage.py runserver
@@ -333,7 +331,7 @@ Quit the server with CONTROL-C.
 
 ### 7. FAQ
 
-#### 7.1 Error `ImportError: Couldn't import Django` ?
+#### **7.1 Error `ImportError: Couldn't import Django` ?**
 
 > activate virtual environment
 >
@@ -341,6 +339,6 @@ Quit the server with CONTROL-C.
 > $ pipenv shell
 > ```
 
-#### 7.2 Error `ModuleNotFoundError: No module named users`
+#### **7.2 Error `ModuleNotFoundError: No module named users`**
 
 > Update `BASE_DIR` as mentioned above. Refer to `5.2` and `6.3`
