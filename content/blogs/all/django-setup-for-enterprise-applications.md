@@ -1,29 +1,31 @@
 ---
 title:  Django Setup for Enterprise Applications
 description: In this article, I’m going to show you how to do Setup of Django for Enterprise Applications.
-date: 2020-05-28
+date: 2020-09-10
 categories:
   - Python
   - Django
 tags:
-  - ruby
-  - okta
-  - authentication
+  - Python
+  - Django
+  - Project Setup
 author: Deepak Kabbur
-image: /images/blog/banner/okta-devise-integration.png
+image: /images/blog/banner/django-setup-for-enterprise-applications.jpg
 thumbnail: https://via.placeholder.com/150
 url: python/2020/09/10/python/django-setup-for-enterprise-applications.html
+keywords: Python, Django, Scalereal, Project Setup, Deepak Kabbur, Clean Code 
 ---
 
 ## Table of Contents
 
-- [Introduction](\#1-introduction)
-- [Audience](\#2-audience)
-- [Prerequisites](\#3-prerequisites)
-- [Let's Start Project](\#4-letss-start-project)
-- [Setup Directory Structure](\#5-setup-directory-structure)
-- [Setup Custom User app](\#6-setup-custom-user-app)
-- [FAQ](\#7-faq)
+1. **[Introduction](\#1-introduction)**
+2. **[Audience](\#2-audience)**
+3. **[Prerequisites](\#3-prerequisites)**
+4. **[Let's Start Project](\#4-letss-start-project)**
+5. **[Setup Directory Structure](\#5-setup-directory-structure)**
+6. **[Setup Custom User app](\#6-setup-custom-user-app)**
+7. **[Setting Environment Variables](\#7-setting-environment-variables)**
+8. **[FAQ](\#7-faq)**
 
 ### 1. Introduction
 
@@ -41,14 +43,13 @@ Django is a very popular Python Web framework that encourages rapid development 
 
 ### 3. Prerequisites
 
-1. Mac/Linux/Windows with [Python](https://www.python.org/) Installed(Preferred Latest Version with [Pyenv](https://github.com/pyenv/pyenv)).
-2. [Pipenv](https://pypi.org/project/pipenv/)/Pip package manager.
-3. [Github](https://github.com/) Repository (Optional) or any other version control tool.
-4. [Postgres](https://www.postgresql.org/) / Mysql or any database engine supported by Django(Preferred Postgres).
+1. **Mac/Linux/Windows with [Python](https://www.python.org/) Installed**(Preferred Latest Version with [Pyenv](https://github.com/pyenv/pyenv)).
+2. **[Pipenv](https://pypi.org/project/pipenv/)/Pip package manager.**
+3. **[Github](https://github.com/) Repository (Optional) or any other version control tool.**
 
 #### Verify setup
 
-```
+```bash
 $ python --version
 Python 3.8.0
 
@@ -66,7 +67,7 @@ $ mkdir demo
 $ cd demo
 ```
 
-#### **4.1 _Lets create virtual environment using `pipenv`.**
+#### **4.1 Lets create virtual environment using `pipenv`.**
 
 ```bash
 $ pipenv --python 3.8.0
@@ -111,9 +112,9 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-#### Congratulations!
+#### **Congratulations!**
 
-You have successfully start project. Check default Django home at `http://127.0.0.1:8000`
+You have successfully created project. Check default Django home page at `http://127.0.0.1:8000`
 
 ### 5. Setup Directory Structure
 
@@ -327,11 +328,63 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-### Hurray!. Initial setup is done.
+### 7. Setting Environment Variables.
 
-### 7. FAQ
+Purpose of environment variables
 
-#### **7.1 Error `ImportError: Couldn't import Django` ?**
+- Hide the confidential data like `credentials`, `secrete keys`, `API tokens/credentials` etc.
+- Never add credentials in code.
+- Flexibility to set credenatials environment `dev/test/production`.
+- Flexibility to developers to setup in local.
+- Never push `credentials` or `confidential` data to versioning tool.
+
+#### **7.1 Install [django-environ](https://pypi.org/project/django-environ/) package.**
+```bash
+$ pipenv install django-environ
+Installing django-environ…
+Adding django-environ to Pipfile's [packages]…
+✔ Installation Succeeded
+Pipfile.lock (91d23f) out of date, updating to (a6086c)…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+✔ Success!
+```
+
+#### **7.2 Create `.env` file in parent directory.**
+```.env
+DEBUG=on
+SECRET_KEY=your-secret-key
+```
+**NOTE: Add `.env` to `.gitignore`. Never push this file to repository.**
+
+#### **7.3 Configure `djnago-environ`. In `demo/settings/django.py` add following.**
+```python
+# Set parent directory for environ
+base = environ.Path(__file__) - 4
+# Rediang file and export env variables
+environ.Env.read_env(env_file=base(".env"))
+env = environ.Env()
+
+# update following
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = env("SECRET_KEY")
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = env("DEBUG")
+```
+#### **7.4 Auto export of `environment variables`.**
+Wheneever we activate pipenv shell `environment variables` are set.
+```bash
+$ pipenv shell
+Loading .env environment variables…
+Launching subshell in virtual environment…
+ . /Users/home/.local/share/virtualenvs/nyasa-api-yFS2yA7M/bin/activate
+```
+### Hurray!. Setup is done.
+
+### 8. FAQ
+
+#### **8.1 Error `ImportError: Couldn't import Django` ?**
 
 > activate virtual environment
 >
@@ -339,6 +392,6 @@ Quit the server with CONTROL-C.
 > $ pipenv shell
 > ```
 
-#### **7.2 Error `ModuleNotFoundError: No module named users`**
+#### **8.2 Error `ModuleNotFoundError: No module named users`**
 
 > Update `BASE_DIR` as mentioned above. Refer to `5.2` and `6.3`
