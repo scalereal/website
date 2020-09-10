@@ -382,6 +382,15 @@ Launching subshell in virtual environment…
 ```
 ### Hurray!. Setup is done.
 
+#### [Django Setup for Enterprise Applications Repository](https://github.com/deepakkabbur/django-setup)
+
+#### Using this repository as template for your new project.
+```bash
+$ mkdir demo
+$ cd demo
+$ django-admin startproject demo . --template https://github.com/deepakkabbur/django-setup/archive/master.zip
+```
+**NOTE: Please read [Documentation](https://github.com/deepakkabbur/django-setup). If your are using it as template**
 ### 8. FAQ
 
 #### **8.1 Error `ImportError: Couldn't import Django` ?**
