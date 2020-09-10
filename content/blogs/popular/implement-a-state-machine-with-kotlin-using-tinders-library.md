@@ -89,13 +89,13 @@ Refer [***this***](https://github.com/sandeshbodake/tinder-statemachine-example)
 
 ## Benefits of the state machine
 
-* 1] You get rid of hard coding conditions in your code. State machine abstracts all logic regarding states & transitions on behalf of you
+* You get rid of hard coding conditions in your code. State machine abstracts all logic regarding states & transitions on behalf of you
 
-* 2] In reality, state machines usually have a finite number of states & definite transitions are defined in the states, so it’s easy to track which transition/data/ event caused the current condition of a request.
+* In reality, state machines usually have a finite number of states & definite transitions are defined in the states, so it’s easy to track which transition/data/ event caused the current condition of a request.
 
-* 3] Developers can just concentrate on defining actions & preconditions after a state machine is configured. With proper validation & precondition, state machine prevents out of order operations.
+* Developers can just concentrate on defining actions & preconditions after a state machine is configured. With proper validation & precondition, state machine prevents out of order operations.
 
-* 4] State machines can be highly maintainable. Logically action performed during each transition is independent of each other. So the corresponding piece of code can be isolated.
+* State machines can be highly maintainable. Logically action performed during each transition is independent of each other. So the corresponding piece of code can be isolated.
 
 ---
 
