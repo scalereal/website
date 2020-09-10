@@ -38,7 +38,7 @@
 
 <!-- image tags -->
 {{ with .Params.image }}
-<meta itemprop="image" content="{{ .  | absURL }}" />
+<meta itemprop="image" content="{{ .  | absLangURL }}" />
 <meta property="og:image" content="{{ . | absURL}}" />
 <meta name="twitter:image" content="{{ . | absURL }}" />
 <meta name="twitter:image:src" content="{{ . | absURL }}" />
