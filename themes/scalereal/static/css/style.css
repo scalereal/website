@@ -1591,6 +1591,94 @@ h3 {
   font-weight: bold;
 }
 
+/* Newsletter subscription
+-------------------------------------------------- */
+.page-subscribe .section-subscribe {
+  border-bottom: 1px solid #cccbcb;
+}
+
+.page-subscribe .section-subscribe p {
+  padding-right: 80px;
+}
+
+.page-subscribe .section-subscribe .add-head {
+  padding-top: 20px;
+}
+
+.page-subscribe .section-subscribe .social-column {
+  padding-top: 35px;
+}
+
+.page-subscribe .section-subscribe .social-column i {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.page-subscribe .section-subscribe .social-column a {
+  margin-right: 10px;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  color: #666;
+}
+
+.page-subscribe .section-subscribe .social-column a:hover {
+  border-bottom: none;
+  color: #333;
+}
+
+.page-subscribe .section-subscribe .box {
+  border: 1px solid #cccbcb;
+  padding-top: 70px;
+  box-shadow: 2px 6px 28px rgba(0, 0, 0, 0.04);
+}
+
+.page-subscribe .form-group {
+  margin-bottom: 30px;
+}
+
+.page-subscribe .form-control {
+  background: transparent;
+  border-color: #cccbcb;
+  padding: 20px 15px;
+}
+
+.page-subscribe .form-control:focus {
+  border-color: #0eccd8;
+  box-shadow: none;
+}
+
+.page-subscribe textarea {
+  resize: none;
+  height: 100%;
+}
+
+.page-subscribe input[type="submit"] {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  margin-right: 10px;
+  transition: all 500ms;
+  margin-top: 20px;
+}
+
+.page-subscribe input[type="submit"]:hover {
+  margin-right: 20px;
+}
+
+.page-subscribe .invalid-feedback {
+  display: block;
+}
+
+.section-subscribe i.flaticon-arrow {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
