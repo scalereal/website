@@ -69,4 +69,19 @@ $(document).ready(function () {
       }
     }
   });
+
+  var closeNewsLetterPopup = false
+
+  $(window).scroll(function(){    
+    if (($(document).height()/2 - 1000) < $(window).scrollTop() && !closeNewsLetterPopup) {
+       $(".newsletter").show()
+    }else{
+      $(".newsletter").hide()
+    }
+  })
+
+  $(document).on("click", '.close-news-letter-popup', function(){
+    $(".newsletter").hide()
+    closeNewsLetterPopup = true
+  })
 });
