@@ -38,7 +38,7 @@ You can simply [clone or refer this repository](https://github.com/PatilShreyas/
 
 What we’ll be implementing? So we’ll be developing a *Food* app 😋 where a list of food items will be displayed and we’ll provide a filter to the user for food preference options. Like Food type as 🟢***VEG*** or 🔴***NON-VEG***and Food taste as ***SWEET*** or ***SPICY***😋. So that user can filter his favourite food according to his choice. You can see a demo here. This is how it’ll be look alike👇.
 
-![An example application using Proto DataStore](/assets/proto-datastore-app-demo.gif "An example application using Proto DataStore")
+![An example application using Proto DataStore](https://miro.medium.com/max/360/1*xJ45-Ix088ID-GNSCciCOg.gif "An example application using Proto DataStore")
 
 Ok great! You might have got the idea of this app. First of all, we’ll need to add some dependencies for proto DataStore 👇
 

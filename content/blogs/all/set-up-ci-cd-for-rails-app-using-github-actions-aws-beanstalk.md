@@ -42,9 +42,11 @@ The ***mail.yml*** where we defined our workflow CI and CD. We name our workflow
 
 Use the ubuntu latest image to install all necessary libraries and PostgreSQL as database
 
-<iframe src="https://medium.com/media/55040cc4bbaaa45aa9254ee5143bc67c" frameborder=0></iframe>
+{{< gist sandeshbodake 56b4aedea275de065f0e0abf113002ef >}}
 
 **services** can be used to create additional containers for a job or steps. In our case, we are using it to spin-off **postgres** and **redis** service.
+
+&nbsp;
 
 **Step 4**
 
@@ -55,7 +57,7 @@ we can directly use this action directly using statement **use.**
 
 Similarly other actions **actions/setup-ruby **and** bolares/actions-yarn** is used to check out the ruby version and yarn package manager that we want to use for our rails app.
 
-<iframe src="https://medium.com/media/88f810d4a7e2704115958425d42eaabf" frameborder=0></iframe>
+{{< gist sandeshbodake 56b4aedea275de065f0e0abf113002ef >}}
 
 In the above snippet 👆, we just added steps for setting up ruby environment and yarn.
 > More about **bolares/actions-yarn** is [here](https://github.com/Borales/actions-yarn)
@@ -66,7 +68,7 @@ Once the code has been checked out and correct ruby version is set up, we instal
 
 Let’s add one more step for setting up our rails application.
 
-<iframe src="https://medium.com/media/8860088aa3f55f552c46d07b697ea028" frameborder=0></iframe>
+{{< gist sandeshbodake f697d5062c3523d08e0dbe62c760e05d >}}
 
 In the above 👆 snippet, we are adding some necessary environment variables and executing the necessary commands.
 
@@ -81,7 +83,10 @@ You can see your actions are executing successfully 🙂.
 
 If you missed something below 👇 is the full snippet for CI workflow.
 
-<iframe src="https://medium.com/media/ff9c75154c1c38ebd7884378a223d483" frameborder=0></iframe>
+{{< gist sandeshbodake 9aa2a0340de93cebd153ac9c2b7a81cb >}}
+
+---
+&nbsp;
 
 ## **CD(**Continuous delivery)****
 
@@ -99,7 +104,7 @@ Go to your project directory and initialize elastic beanstalk using the command
 
 During init, elastic beanstalk shows some CLI questions & it will create config.yml like below 👇
 
-<iframe src="https://medium.com/media/76609621e246af8103281649c82668db" frameborder=0></iframe>
+{{< gist sandeshbodake fa24f967db62d52ded62d53102fca45a >}}
 
 **Step2**
 
@@ -109,7 +114,7 @@ Create a project with Postgres.
 
 Above 👆command will start creating our project ready for deployment.
 
-<iframe src="https://medium.com/media/b3099200c10c371328ded7c04451f0d8" frameborder=0></iframe>
+{{< gist sandeshbodake 63ab2d5cd43f7bdea914c51c0f19af74 >}}
 
 Here is the sample log once we start creating it.
 
@@ -119,7 +124,7 @@ You might get an error here because we haven't set up database.yml correctly.
 
 Add production configure like below 👇 in your **database.yml** file
 
-<iframe src="https://medium.com/media/159b7426abfb317d6b44742b99e094e4" frameborder=0></iframe>
+{{< gist sandeshbodake 7f6977bbdbd3e8009e70a0a7a4b406e5 >}}
 
 Now, the setup environment variable
 
@@ -143,7 +148,7 @@ Beanstalk Deploy is a GitHub action (and command-line script) to deploy apps to 
 
 Now let’s add this to our Github Action workflow
 
-<iframe src="https://medium.com/media/cd00bf195af612a1cfa7601d1b4eee34" frameborder=0></iframe>
+{{< gist sandeshbodake 821ace1d3bc9a1784b6ef48dcbc6d65c >}}
 
 Here you can see we need **AWS_ACCESS_KEY** and **AWS_SECRET_ACCESS_KEY** using GitHub secrets you can add your credentials and those environmental variables accessible in your GitHub workflow.
 
@@ -157,7 +162,7 @@ Hureeeee 🎉, our code builds successfully and deployed to AWS Beanstalk.
 
 Here is a full code snippet 👇
 
-<iframe src="https://medium.com/media/3f1a2daf59dc8a60153d7023d7fbc55c" frameborder=0></iframe>
+{{< gist sandeshbodake 705a6f7576d050176f40a75be4cdc8aa >}}
 
 ## **Conclusion**
 
