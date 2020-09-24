@@ -69,4 +69,21 @@ $(document).ready(function () {
       }
     }
   });
+
+  var s = $('.sender-sub-main').offset().top 
+  var footerOffset = $('footer').offset().top
+
+
+  $(window).scroll(function(){   
+    if($(window).scrollTop() > s){
+      $('.sender-sub-main').addClass('sticky-subscription-box')
+    }else{
+      $('.sender-sub-main').removeClass('sticky-subscription-box')
+    }
+    
+    if(parseInt($(window).scrollTop()) + 400 >= parseInt(footerOffset)){
+      console.log("coming here")
+      $('.sender-sub-main').removeClass('sticky-subscription-box')
+    }
+  })
 });
