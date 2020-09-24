@@ -4,7 +4,6 @@
 {{ partial "head.html" . }}
 
 {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
-{{ $authorLastName := lower (index (split .Params.author " ") 1)}}
 
 <body>
   {{ partial "nav" . }}
@@ -30,7 +29,7 @@
       <h2 class="f700 text-black">{{ .Title }}</h2>
 
       <div class="writer-wrap d-flex">
-        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.png')"></div>
+        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}.png')"></div>
         <div class="writer-name-wrap">
           <h5 class="writer-name">{{.Params.author}}</h5>
           <p class="time">
