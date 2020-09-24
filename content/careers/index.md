@@ -1,5 +1,5 @@
 ---
 title: Careers at ScaleReal
-description: We work as your technology partners to support your entire software development cycle by providing various services as an extension to your current team.
+description: From ideation, to how we plan, to the way we work each day, everyone has ownership and equal opportunity to make an impact.
 type: careers
 ---
