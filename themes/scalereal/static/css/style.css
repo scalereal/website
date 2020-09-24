@@ -2283,26 +2283,8 @@ h3 {
 .popular-reads-section .sub-text {
   margin-bottom: 60px; 
 }
-
-.article-content ol {
-  margin-left: 1.4rem;
-}
-
-.article-content ul {
-  margin-left: 1.4rem;
-}
-
-.article-content p {
-  margin-left: 1.4rem;
-}
-
-
 .article-content ul li{
   list-style-type: disc;
-  margin-left: 1.4rem;
-}
-.article-content ol li {
-  list-style-type: decimal;
   margin-left: 1.4rem;
 }
 
