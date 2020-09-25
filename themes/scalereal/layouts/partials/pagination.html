@@ -1,12 +1,23 @@
 <!-- Pagination -->
 <ul class="actions pagination">
-    {{ if .Paginator.HasPrev }}
-        <li><a href="{{ .Paginator.Prev.URL }}"
-                class="button big previous">Previous Page</a></li>
-    {{ end }}
+  {{ if .Paginator.HasPrev }}
+  <li>
+    <a class="back-link" href="{{ .Paginator.Prev.URL }}">
+      <span class="line">
+        <img src="{{ "images/blog/Back.svg" | absURL }}" alt="">
+      </span>
+      <span class="text">Previous page</span>
+    </a>
+  </li>
+  {{ end }} {{ if .Paginator.HasNext }}
+  <li>
+    <a class="next-link" href="{{ .Paginator.Next.URL }}">
+      <span class="text">Next page</span>
 
-    {{ if .Paginator.HasNext }}
-        <li><a href="{{ .Paginator.Next.URL }}"
-                class="button big next">Next Page</a></li>
-    {{ end }}
+      <span class="line">
+        <i class="flaticon-arrow"></i>
+      </span>
+    </a>
+  </li>
+  {{ end }}
 </ul>

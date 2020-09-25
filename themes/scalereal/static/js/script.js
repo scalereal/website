@@ -70,20 +70,37 @@ $(document).ready(function () {
     }
   });
 
-  var s = $('.sender-sub-main').offset().top 
+  var mainOffset = $('.sender-sub-main').offset().top 
   var footerOffset = $('footer').offset().top
 
 
-  $(window).scroll(function(){   
-    if($(window).scrollTop() > s){
+  $(window).scroll(function(){  
+    if($(window).scrollTop() > mainOffset){
       $('.sender-sub-main').addClass('sticky-subscription-box')
     }else{
       $('.sender-sub-main').removeClass('sticky-subscription-box')
     }
     
     if(parseInt($(window).scrollTop()) + 400 >= parseInt(footerOffset)){
-      console.log("coming here")
       $('.sender-sub-main').removeClass('sticky-subscription-box')
     }
   })
+
+  function submitGR(token) {
+    if (grecaptcha.getResponse().length > 0) {
+      document.getElementById("submit-button").setAttribute("captcha", "false");
+      document
+        .getElementById("recaptcha-failed-message")
+        .setAttribute("hidden", "");
+    } else {
+      document.getElementById("submit-button").setAttribute("captcha", "true");
+      document
+        .getElementById("recaptcha-failed-message")
+        .removeAttribute("hidden");
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("submit-button").setAttribute("captcha", "true");
+  });
 });

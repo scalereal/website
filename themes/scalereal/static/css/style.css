@@ -2281,7 +2281,7 @@ h3 {
   margin-bottom: 10px;
 }
 .popular-reads-section .sub-text {
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
 }
 
 .article-content ol {
@@ -2296,8 +2296,7 @@ h3 {
   margin-left: 1.4rem;
 }
 
-
-.article-content ul li{
+.article-content ul li {
   list-style-type: disc;
   margin-left: 1.4rem;
 }
@@ -2307,11 +2306,11 @@ h3 {
 }
 
 @media only screen and (min-width: 767px) {
-  .all-list-section h3{
+  .all-list-section h3 {
     height: 70px;
   }
 
-  .popular-list-section h3{
+  .popular-list-section h3 {
     height: 70px;
   }
 }
@@ -2343,10 +2342,10 @@ h3 {
   .popular-list-section .js-blog-carousel {
     left: 14px;
   }
-  .all-list-section h3{
+  .all-list-section h3 {
     max-height: 70px;
   }
-  .popular-list-section h3{
+  .popular-list-section h3 {
     max-height: 70px;
   }
   .popular-reads-section .sub-text {
@@ -2366,4 +2365,35 @@ h3 {
   .popular-reads-separator {
     display: none;
   }
+}
+
+.next-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: #222222;
+}
+.next-link:hover {
+  color: #222222;
+  opacity: 0.6;
+}
+.next-link .line {
+  display: inline-block;
+  vertical-align: middle;
+}
+.next-link .text {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  margin-left: 10px;
+  transition: all 500ms;
+  margin-top: 20px;
+  transition: all 500ms;
+}
+.next-link .text:hover {
+  margin-right: 8px;
 }
