@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head" . }}
+
+  <body>
+    <!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
 {{ partial "head" . }}
 
@@ -130,7 +135,7 @@
 
       <div class="container">
         <ul class="row">
-          {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") }}
+          {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9}}
           {{ range $paginator.Pages}}
           {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
           {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
@@ -157,12 +162,10 @@
         </ul>
         {{partial "pagination" .}}
       </div>
-
     </section>
-
   </div>
-  {{ partial "footer" . }}
-  {{ partial "js" . }}
-</body>
+    {{ .Render "newsletter-main"  }}
 
+    {{ partial "footer" . }} {{ partial "js" . }}
+  </body>
 </html>
