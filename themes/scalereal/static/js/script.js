@@ -70,21 +70,24 @@ $(document).ready(function () {
     }
   });
 
-  var mainOffset = $('.sender-sub-main').offset().top 
-  var footerOffset = $('footer').offset().top
+  var senderSubMain = $('.sender-sub-main').offset();
+  var footerOffset = $('footer').offset().top;
 
+  if(senderSubMain){
+    var mainOffset = senderSubMain.top;
 
-  $(window).scroll(function(){  
-    if($(window).scrollTop() > mainOffset){
-      $('.sender-sub-main').addClass('sticky-subscription-box')
-    }else{
-      $('.sender-sub-main').removeClass('sticky-subscription-box')
-    }
+    $(window).scroll(function(){  
+      if($(window).scrollTop() > mainOffset){
+        $('.sender-sub-main').addClass('sticky-subscription-box')
+      }else{
+        $('.sender-sub-main').removeClass('sticky-subscription-box')
+      }
     
-    if(parseInt($(window).scrollTop()) + 400 >= parseInt(footerOffset)){
-      $('.sender-sub-main').removeClass('sticky-subscription-box')
-    }
-  })
+      if(parseInt($(window).scrollTop()) + 400 >= parseInt(footerOffset)){
+        $('.sender-sub-main').removeClass('sticky-subscription-box')
+      }
+    })
+  }
 
   function submitGR(token) {
     if (grecaptcha.getResponse().length > 0) {

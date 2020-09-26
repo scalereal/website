@@ -2,7 +2,7 @@
 <ul class="actions pagination">
   {{ if .Paginator.HasPrev }}
   <li>
-    <a class="back-link" href="{{ .Paginator.Prev.URL }}">
+    <a class="pagination-back-link" href="{{ .Paginator.Prev.URL }}">
       <span class="line">
         <img src="{{ "images/blog/Back.svg" | absURL }}" alt="">
       </span>
@@ -11,7 +11,7 @@
   </li>
   {{ end }} {{ if .Paginator.HasNext }}
   <li>
-    <a class="next-link" href="{{ .Paginator.Next.URL }}">
+    <a class="pagination-next-link" href="{{ .Paginator.Next.URL }}">
       <span class="text">Next page</span>
 
       <span class="line">

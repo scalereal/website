@@ -2367,33 +2367,50 @@ h3 {
   }
 }
 
-.next-link {
+.pagination-next-link, .pagination-back-link {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.2px;
   color: #222222;
 }
-.next-link:hover {
+.pagination-next-link:hover, .pagination-back-link:hover {
   color: #222222;
-  opacity: 0.6;
+  opacity: 0.8;
 }
-.next-link .line {
+.pagination-next-link .line, .pagination-back-link .line {
   display: inline-block;
   vertical-align: middle;
+  opacity: 0.6;
 }
-.next-link .text {
+.pagination-next-link .text {
   background: transparent;
   border: none;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  border-bottom: 1px solid #000;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  border-bottom: 1px solid #565656;
   margin-left: 10px;
   transition: all 500ms;
   margin-top: 20px;
   transition: all 500ms;
+  color: #565656;
 }
-.next-link .text:hover {
+.pagination-next-link .text:hover {
   margin-right: 8px;
+}
+.pagination-back-link .text {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  border-bottom: 1px solid #565656;
+  margin-top: 20px;
+  transition: all 500ms;
+  color: #565656;
+  margin-right: 10px;
+}
+.pagination-back-link .text:hover {
+  margin-left: 8px;
 }
