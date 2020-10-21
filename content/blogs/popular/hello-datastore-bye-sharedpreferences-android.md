@@ -14,7 +14,7 @@ author: Shreyas Patil
 image: /images/blog/banner/hello-datastore-bye-sharedpreferences-android.png
 thumbnail: https://via.placeholder.com/150
 url: android/2020/09/03/hello-datastore-bye-sharedpreferences-android.html
-blog_place: banner
+blog_place: popular
 ---
 
 Welcome Android developers 👋. This article is the first part of a series article based on the new Jetpack library🚀 i.e. ***DataStore***🗄️. Currently, it’s alpha version is released. Let’s see ***what’s*** DataStore and ***why*** DataStore.
