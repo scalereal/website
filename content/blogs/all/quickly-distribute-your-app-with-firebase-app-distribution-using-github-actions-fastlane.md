@@ -14,7 +14,6 @@ author: Shreyas Patil
 image: /images/blog/banner/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane.png
 thumbnail: https://via.placeholder.com/150
 url: android/2020/10/21/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane
-blog_place: banner
 ---
 
 Hi Firebasers, in this article, we’ll explore a way to automate workflows for distributing your Android application with [Firebase App Distribution](https://firebase.google.com/docs/app-distribution) using [GitHub Actions CI](https://docs.github.com/en/free-pro-team@latest/actions) and [Fastlane](https://fastlane.tools/).

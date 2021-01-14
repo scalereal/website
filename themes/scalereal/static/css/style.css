@@ -2156,6 +2156,7 @@ h3 {
 .article-content a {
   text-decoration: underline;
   color: #2d2a2a;
+  font-weight: 600;
 }
 
 .article-content blockquote {
