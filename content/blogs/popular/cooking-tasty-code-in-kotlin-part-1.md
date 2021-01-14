@@ -81,24 +81,25 @@ That’s enough introduction I guess and now I think we should start talking abo
 *   In this scope, you can access the object without its name. Such functions are called _scope functions_. There are five of them: `let`, `run`, `with`, `apply`, and `also`.
 *   These are very helpful utilities which you can also use to chain consecutive code tasks.
 *   Also, we can take advantage of using scope functions for handling nullability. For example, see this code.
-​
-%[https://gist.github.com/PatilShreyas/0cd4d2ed895afa28b1df233ecf04353d]
-​
+​​
+{{< gist PatilShreyas 0cd4d2ed895afa28b1df233ecf04353d>}}
+
 In this code, we used `?` operator on a `person` and used fun `let {}` which provides a lambda parameter `p` (it _remains_ `_it_` _if not provided explicitly_)_._ Then we can safely use that property.
 ​
 `let{}` can be also used to obtain some value after processing. For e.g. here we are getting age from the evaluation performed in the body of a lambda.
 ​
-%[https://gist.github.com/PatilShreyas/07a03f27c0778ec426a43c8274692e0d]
+{{< gist PatilShreyas 07a03f27c0778ec426a43c8274692e0d>}}
 ​
 *   When we want to perform repetitive operations on any specific field which might modify properties of that instance then `apply {}` is best for such scenarios. See below example 👇.
 ​
-%[https://gist.github.com/PatilShreyas/92eb2bc1b79f36701794862368254538]
+{{< gist PatilShreyas 92eb2bc1b79f36701794862368254538>}}
+
 ​
 The body of lambda of function `apply{}` provides `this` scope of instance on which we’re calling it and returns the same instance which we can use for chaining later.
 ​
 *   Thus, here are examples of other scope functions
 ​
-%[https://gist.github.com/PatilShreyas/b6b33bfcf6542a1344ad86baa78c7c17]
+{{< gist PatilShreyas b6b33bfcf6542a1344ad86baa78c7c17>}}
 ​
 There’s a lot more we can do with scope functions. Know more about Scope functions [here](https://kotlinlang.org/docs/reference/scope-functions.html).
 ​
@@ -107,9 +108,9 @@ There’s a lot more we can do with scope functions. Know more about Scope funct
 *   This is one of the best features of Kotlin which allows us to extend the functionality of a class without actually inheriting it.
 *   These functions are resolved statically i.e. they don’t actually modify classes.
 *   By using this, we can get rid of traditional utility classes. For example, see code 👇
-​
-%[https://gist.github.com/PatilShreyas/60581a72f7866da214bb90decc4bc11b]
-​
+​​
+{{< gist PatilShreyas 60581a72f7866da214bb90decc4bc11b>}}
+
 As you can see, we directly called `date.format(“pattern”)`.
 ​
 As extension function exists, extension properties also exist. Let’s see them.
@@ -120,7 +121,8 @@ As extension function exists, extension properties also exist. Let’s see them.
 *   It does not add the actual field in that class. It just creates a _getter function_ under the hood.
 *   See the example below
 ​
-%[https://gist.github.com/PatilShreyas/a5f384b62a5d3b433c3bcf80226ca7a1]
+{{< gist PatilShreyas a5f384b62a5d3b433c3bcf80226ca7a1>}}
+
 ​
 Here we created extension properties on `Int` which returns binary, octal and hexadecimal.
 ​
@@ -130,9 +132,10 @@ Here we created extension properties on `Int` which returns binary, octal and he
 ​
 *   Yes, we can overload operators in Kotlin for custom types i.e. classes 😍 
 *   By using it, we can reduce some boilerplate or can improve the readability of code.
-*   See the code ��
+*   See the code 👇
 ​
-%[https://gist.github.com/PatilShreyas/009c36df4eb7e6d45580500cb453c211]
+{{< gist PatilShreyas 009c36df4eb7e6d45580500cb453c211>}}
+
 ​
 If you look, the first snippet looks bit confusing but the second snippet looks good and we get a clear idea of what’s happening. Know more about operator overloading [here](https://kotlinlang.org/docs/reference/operator-overloading.html).
 ​
@@ -141,9 +144,9 @@ If you look, the first snippet looks bit confusing but the second snippet looks 
 *   Infix function improves the beauty of our code.
 *   It allows us to create our own DSLs.
 *   It can make our code even more readable in the form of simple language. For example, see this 👇
-​
-%[https://gist.github.com/PatilShreyas/58a6c34af78e19c3f103f30fd8a3e871]
-​
+​​
+{{< gist PatilShreyas 58a6c34af78e19c3f103f30fd8a3e871>}}
+
 Did you saw that line? `task assignTo user`. It’s sweet, isn’t it? 😃
 ​
 Just mark a function as `infix` and you can create your own sweetness in your codebase. You can even cook beautiful code by using Extension Function + Infix Function together ♨️.
@@ -153,9 +156,10 @@ Just mark a function as `infix` and you can create your own sweetness in your co
 *   As we saw, Higher-order functions in Kotlin are resolved statically and as they’re stored as an object which might introduce runtime overhead.
 *   We can reduce this runtime overhead using `inline` function.
 *   When a function is marked as `inline` it actually generates the code from where it’s called.
-*   For example, see this ��
+*   For example, see this 👇
 ​
-%[https://gist.github.com/PatilShreyas/1f0abf6e018b60fd1f3328c36de2e6c1]
+{{< gist PatilShreyas 1f0abf6e018b60fd1f3328c36de2e6c1>}}
+
 ​
 Now as you can see, we have marked `processList()` as `inline`. Now see generated bytecode here 👇 and you’ll see that whatever we’ve written in inline function is exactly present in `main()` function.
 ​
@@ -163,21 +167,22 @@ Now as you can see, we have marked `processList()` as `inline`. Now see generate
 ​
 ## ⭐️ Reified type parameters in Inline Function
 ​
-*   How to access the type of parameter in Inline function ��.
+*   How to access the type of parameter in Inline function 🤔.
 *   **_reified_** keyword comes to rescue here.
-*   See code first ��
+*   See code first 👇
 ​
-%[https://gist.github.com/PatilShreyas/75d95253585d5f23ce573f606c5ed100]
-​
-As you can see, now the type of class is accessible inside the function, almost as if it were a normal class. Since the function is inlined, no reflection is needed. Otherwise, without reified we might need to use **_reflections_** to deserialize that JSON**_._**
+{{< gist PatilShreyas 75d95253585d5f23ce573f606c5ed100>}}
+
+As you can see, now the type of class is accessible inside the function, almost as if it were a normal class. Since the function is inlined, no reflection is needed. Otherwise, without reified we might need to use **_reflections_** to deserialize that JSON
 ​
 ## ⭐️ Typealias
 ​
 *   It allows you to specify an alternative name for existing types.
 *   If the type name is too long you can introduce a different shorter name and use the new one instead.
-*   For example, see this ��, here we used type alias `Features` to shorten the long generic type
+*   For example, see this 👇, here we used type alias `Features` to shorten the long generic type
 ​
-%[https://gist.github.com/PatilShreyas/674466cfa912f05a0571d068c9686fd9]
+{{< gist PatilShreyas 674466cfa912f05a0571d068c9686fd9>}}
+
 ​
 ## ⭐️ Import As
 ​
@@ -185,20 +190,24 @@ As you can see, now the type of class is accessible inside the function, almost 
 *   If we try to use both classes in a single file it would be a clash ⚠️.
 *   We can use `as` to import specific class with another name. For example, see this 👇
 ​
-%[https://gist.github.com/PatilShreyas/d18b6487252592bcd8c92dd63ec1877a]
+{{< gist PatilShreyas d18b6487252592bcd8c92dd63ec1877a>}}
+
 ​
 Here, we have imported `java.util.Date` class as `JDate` and we can use it by using that name only in this file.
 ​
----
+&nbsp;
 ​
 Yeah! 😍 That’s how we cooked tasty code with Kotlin in this first part of this article and I hope you liked this article. In this article, we saw some basic important concepts of the Kotlin. In the next article, we’ll see some advanced one. Stay tuned for the next one 🚀.
 ​
 If you liked this article, share it with everyone! 😄
 ​
-> Sharing is caring!
+&nbsp;
+
+Sharing is caring!
 ​
+&nbsp;
+
 Thank you! 😃
-Collapse
 
 
 
