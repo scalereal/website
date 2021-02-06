@@ -197,6 +197,7 @@ h3 {
 
 .heading {
   margin-bottom: 45px;
+  margin-left: 20px;
 }
 
 .box {
@@ -2367,4 +2368,14 @@ h3 {
   .popular-reads-separator {
     display: none;
   }
+}
+
+.badge-active {
+  color: #fff;
+  background-color: #13cdd7;
+}
+
+.badge-inactive {
+  color: #fff;
+  background-color:#d2cdcd;
 }
