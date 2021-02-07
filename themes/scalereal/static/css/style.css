@@ -2373,6 +2373,7 @@ h3 {
 .badge-active {
   color: #fff;
   background-color: #13cdd7;
+  line-height: 1.54;
 }
 
 .badge-inactive {
