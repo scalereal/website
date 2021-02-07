@@ -2368,3 +2368,14 @@ h3 {
     display: none;
   }
 }
+
+.badge-active {
+  color: #fff;
+  background-color: #13cdd7;
+  line-height: 1.54;
+}
+
+.badge-inactive {
+  color: #fff;
+  background-color:#d2cdcd;
+}
