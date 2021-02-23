@@ -2379,3 +2379,7 @@ h3 {
   color: #fff;
   background-color:#d2cdcd;
 }
+
+.line-heigh-2-rem {
+  line-height: 2rem;
+}
