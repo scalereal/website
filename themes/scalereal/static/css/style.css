@@ -2378,6 +2378,7 @@ h3 {
 .badge-inactive {
   color: #fff;
   background-color:#d2cdcd;
+  line-height: 1.54;
 }
 
 .line-heigh-2-rem {
