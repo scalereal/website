@@ -14,6 +14,8 @@ thumbnail: https://via.placeholder.com/150
 url: testing/2020/07/17/whats-is-qa-sign-off.html
 ---
 
+&nbsp;
+
 Once the application is tested thoroughly, QA prepares the Sign Off document to acknowledge that they have reviewed and tested the application and now the application is ready for release.
 
 Sign Off document should be sent to respective stake holders via email or any formal communication channel. Usually, the QA, Project Manager, and Business Analyst takes the responsibilities and agrees to the QA Sign Off.
