@@ -2156,6 +2156,7 @@ h3 {
 .article-content a {
   text-decoration: underline;
   color: #2d2a2a;
+  font-weight: 600;
 }
 
 .article-content blockquote {
@@ -2292,11 +2293,7 @@ h3 {
   margin-left: 1.4rem;
 }
 
-.article-content p {
-  margin-left: 1.4rem;
-}
-
-.article-content ul li {
+.article-content ul li{
   list-style-type: disc;
   margin-left: 1.4rem;
 }
@@ -2367,6 +2364,7 @@ h3 {
   }
 }
 
+/* CURRENT */
 .pagination-next-link, .pagination-back-link {
   font-size: 18px;
   font-weight: 600;
@@ -2413,4 +2411,22 @@ h3 {
 }
 .pagination-back-link .text:hover {
   margin-left: 8px;
+}
+/* CURRENT */
+
+/* INCOMING */
+.badge-active {
+  color: #fff;
+  background-color: #13cdd7;
+  line-height: 1.54;
+}
+
+.badge-inactive {
+  color: #fff;
+  background-color:#d2cdcd;
+  line-height: 1.54;
+}
+
+.line-heigh-2-rem {
+  line-height: 2rem;
 }

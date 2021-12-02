@@ -135,7 +135,7 @@
 
       <div class="container">
         <ul class="row">
-          {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9}}
+          {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }}
           {{ range $paginator.Pages}}
           {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
           {{ $authorLastName := lower (index (split .Params.author " ") 1)}}

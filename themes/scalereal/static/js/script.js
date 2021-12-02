@@ -70,6 +70,7 @@ $(document).ready(function () {
     }
   });
 
+  // CURRENT
   var senderSubMain = $('.sender-sub-main').offset();
   var footerOffset = $('footer').offset().top;
 
@@ -106,4 +107,27 @@ $(document).ready(function () {
   document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("submit-button").setAttribute("captcha", "true");
   });
+});
+// CURRENT
+
+// INCOMING
+if($(".careers-accordion").length > 0){
+  $(document).ready(function(){
+    var url = window.location.href;
+    var start = url.substr(url.indexOf("#"));
+    if(start !== '/')
+      $(start).collapse('show');
+  });
+}
+
+$(".careers-accordion").on("show.bs.collapse",function(a){
+  var curr = $(a.target).attr("id");
+  var url = window.location.href;
+  var start = window.location.hash;
+  if(start.length > 0){
+    window.location.href = url.replace(start, "#" + curr);
+  }
+  else{
+    window.location.href = url + "#" + curr;
+  }
 });
