@@ -20,14 +20,20 @@
   <script>
     $(document).ready(function () {
       const urlParams = new URLSearchParams(window.location.search);
-      const param = urlParams.get("profile");
+      const profile = urlParams.get("profile");
+      const ref = urlParams.get("ref");
+      const refCode = ref === null ? "" : ref;
       const $iframe = $("#jobApplicationForm");
-      const profile = param === null ? "" : param;
 
       if ($iframe.length) {
         const url =
-          "https://notionpack.netlify.app/form-preview/1638368636094/JZzTSvH7DcEtM0oacvnBxZANBycOOF?profile=" +
-          profile;
+          profile === null
+            ? "https://notionpack.netlify.app/form-preview/1638538034470/rDflavTXsljKEcEQsUs4Sz61L7acX9?ref=" +
+              refCode
+            : "https://notionpack.netlify.app/form-preview/1638521537444/rDflavTXsljKEcEQsUs4Sz61L7acX9?profile=" +
+              profile +
+              "&ref=" +
+              refCode;
         $iframe.attr("src", url);
       }
     });
