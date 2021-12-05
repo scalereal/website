@@ -791,7 +791,7 @@ h3 {
 }
 
 .section-technology .sprite-tech {
-  background: url("../images/sprite1x-technologies.png") no-repeat center center;
+  background: url("../images/sprite1x-technologies.webp") no-repeat center center;
   display: block;
   height: 52px;
 }
@@ -1174,23 +1174,23 @@ h3 {
   background-image: url(../images/devops/travisCI.png);
 }
 .section-technology .non-sprite-tech.kotlin {
-  background-image: url(../images/backend/kotlin.png);
+  background-image: url(../images/backend/kotlin.webp);
 }
 .section-technology .non-sprite-tech.nodejs-logo {
-  background-image: url(../images/backend/nodejs-logo.jpg);
+  background-image: url(../images/backend/nodejs-logo.webp);
 }
 .section-technology .non-sprite-tech.typescript {
-  background-image: url(../images/backend/typescript.png);
+  background-image: url(../images/backend/typescript.webp);
   width: 115px;
 }
 .section-technology .non-sprite-tech.java {
-  background-image: url(../images/backend/Java.png);
+  background-image: url(../images/backend/Java.webp);
 }
 .section-technology .non-sprite-tech.python {
-  background-image: url(../images/backend/python.png);
+  background-image: url(../images/backend/python.webp);
 }
 .section-technology .non-sprite-tech.ruby {
-  background-image: url(../images/backend/ruby-logo-png-6.png);
+  background-image: url(../images/backend/ruby-logo-png-6.webp);
 }
 
 /* front end */
@@ -1596,7 +1596,7 @@ h3 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   .section-technology .sprite-tech {
-    background: url("../images/sprite2x-technologies.png") no-repeat center
+    background: url("../images/sprite2x-technologies.web") no-repeat center
       center;
     background-size: 355px 1000px;
   }
