@@ -1,0 +1,40 @@
+{{ "<!-- Job Application -->" | safeHTML }}
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head" . }}
+
+  <body>
+    {{ partial "nav" . }}
+    <div>
+      <iframe
+        id="jobApplicationForm"
+        src=""
+        title="description"
+        style="height: calc(100vh - 96px); width: 100%"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </body>
+  {{ partial "js" . }}
+  <script>
+    $(document).ready(function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const profile = urlParams.get("profile");
+      const ref = urlParams.get("ref");
+      const refCode = ref === null ? "" : ref;
+      const $iframe = $("#jobApplicationForm");
+
+      if ($iframe.length) {
+        const url =
+          profile === null
+            ? "https://app.notionpack.com/form-preview/1638980040225/70834c531790e9051b0ef8889ec0c401?ref=" +
+              refCode
+            : "https://app.notionpack.com/form-preview/1638979545599/a54a9c4c07fc15909a76e26d3e577572?profile=" +
+              profile +
+              "&ref=" +
+              refCode;
+        $iframe.attr("src", url);
+      }
+    });
+  </script>
+</html>
