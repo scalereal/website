@@ -11,7 +11,7 @@ tags:
   - JetPack
   - Datastore
 author: Shreyas Patil
-image: /images/blog/banner/cooking-tasty-code-in-kotlin-part-1.png
+image: /images/blog/banner/cooking-tasty-code-in-kotlin-part-1.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/09/03/cooking-tasty-code-in-kotlin-part-1.html
 blog_place: popular

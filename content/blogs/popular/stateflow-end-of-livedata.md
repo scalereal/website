@@ -11,7 +11,7 @@ tags:
   - Reactive Programming
   - Android
 author: Shreyas Patil
-image: /images/blog/banner/stateflow-end-of-livedata.png
+image: /images/blog/banner/stateflow-end-of-livedata.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/05/22/stateflow-end-of-livedata.html
 blog_place: popular

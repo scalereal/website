@@ -11,7 +11,7 @@ tags:
   - JetPack
   - Datastore
 author: Shreyas Patil
-image: /images/blog/banner/hello-datastore-bye-sharedpreferences-android.png
+image: /images/blog/banner/hello-datastore-bye-sharedpreferences-android.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/09/03/hello-datastore-bye-sharedpreferences-android.html
 ---

@@ -10,7 +10,7 @@ tags:
   - Github Actions
   - Android Libraries
 author: Shreyas Patil
-image: /images/blog/banner/automate-publishing-android-library-to-bintray-using-gitHub-actions.png
+image: /images/blog/banner/automate-publishing-android-library-to-bintray-using-gitHub-actions.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/05/01/automate-publishing-android-library-to-bintray-using-github-actions.html
 ---
