@@ -9,7 +9,7 @@ tags:
   - AWS
   - GitHub Actions
 author: Sandesh Bodake
-image: /images/blog/banner/set-up-ci-cd-for-rails-app-using-github-actions-aws-beanstalk.png
+image: /images/blog/banner/set-up-ci-cd-for-rails-app-using-github-actions-aws-beanstalk.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/07/05/set-up-ci-cd-for-rails-app-using-github-actions-aws-beanstalk.html
 ---

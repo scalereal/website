@@ -11,7 +11,7 @@ tags:
   - Dart
   - Mobile Development
 author: Shreyas Patil
-image: /images/blog/banner/getting-data-from-google-sheets-flutter-app-part-2.png
+image: /images/blog/banner/getting-data-from-google-sheets-flutter-app-part-2.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/04/automate-publishing-android-library-to-bintray-using-github-actions.html
 ---

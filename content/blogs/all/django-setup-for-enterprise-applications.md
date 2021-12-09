@@ -10,7 +10,7 @@ tags:
   - Django
   - Project Setup
 author: Deepak Kabbur
-image: /images/blog/banner/django-setup-for-enterprise-applications.jpg
+image: /images/blog/banner/django-setup-for-enterprise-applications.webp
 thumbnail: https://via.placeholder.com/150
 url: python/2020/09/10/python/django-setup-for-enterprise-applications.html
 keywords: Python, Django, Scalereal, Project Setup, Deepak Kabbur, Clean Code 

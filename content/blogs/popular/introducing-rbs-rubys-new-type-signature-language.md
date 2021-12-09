@@ -11,7 +11,7 @@ tags:
   - Release
   - Programming
 author: Sandesh Bodake
-image: /images/blog/banner/introducing-rbs-rubys-new-type-signature-language.png
+image: /images/blog/banner/introducing-rbs-rubys-new-type-signature-language.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/08/04/introducing-rbs-rubys-new-type-signature-language.html
 blog_place: popular

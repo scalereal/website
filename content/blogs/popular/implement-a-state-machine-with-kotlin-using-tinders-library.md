@@ -11,7 +11,7 @@ tags:
   - Coding
   - Programming
 author: Sandesh Bodake
-image: /images/blog/banner/state-machine.png
+image: /images/blog/banner/state-machine.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/08/04/implement-a-state-machine-with-kotlin-using-tinders-library.html
 blog_place: popular
