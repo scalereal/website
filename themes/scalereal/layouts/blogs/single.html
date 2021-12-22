@@ -5,7 +5,9 @@
 
 {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
 {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
-
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/dracula-prism/css/dracula-prism.css">
+</head>
 <body>
   {{ partial "nav" . }}
   <div class="page-blog-details">
@@ -89,5 +91,5 @@
 
 </body>
 {{ partial "js" . }}
-
+<script src="https://unpkg.com/dracula-prism@1.2.1/js/prism.js"></script>
 </html>
