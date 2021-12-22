@@ -1596,7 +1596,7 @@ h3 {
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   .section-technology .sprite-tech {
-    background: url("../images/sprite2x-technologies.web") no-repeat center
+    background: url("../images/sprite2x-technologies.webp") no-repeat center
       center;
     background-size: 355px 1000px;
   }
