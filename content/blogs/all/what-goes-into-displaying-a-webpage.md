@@ -17,11 +17,11 @@ url: web/2021/10/11/what-goes-into-displaying-a-webpage.html
 
 While working on my first production-level project, I encountered some performance issues. The web application was not as fast and when I checked the Lighthouse ratings, it was quite bad. Before that, I had not taken the importance of a good Lighthouse score seriously. As it was in the production environment, I decided to deep dive into the workings of a browser, and learn how we can leverage its capabilities to improve the performance of our application. Here is a simplified version of a browser’s working.
 
-## How did it start?
+### How did it start?
 
 Whenever you click on a link on the browser or enter an address, it first looks for the IP address of the server in the system cache. If it is not in the cache, then it proceeds to request the DNS(Domain Name Server). Once IP is received, it is stored in cache for future use. Note that, this is a simplified explanation of what happens. In reality, this is even more complex and there are many other facets to it.
 
-## TCP handshake
+### TCP handshake
 
 ![Photo by &nbsp;[Claudio Schwarz](https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)&nbsp;on [Unsplash](https://unsplash.com/s/photos/handshake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/4200/0*85TG8wYBQ9BpIJj1)*Photo by &nbsp;[Claudio Schwarz](https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)&nbsp;on &nbsp;[Unsplash](https://unsplash.com/s/photos/handshake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
@@ -31,7 +31,7 @@ For secure connections over HTTPS, an extra step called [SSL/TLS Handshake](http
 
 ![UML diagram of initial message exchanges between browser(client) and server](https://cdn-images-1.medium.com/max/2000/1*0xSzPB2T6j7_f9We5nX6jw.png)*UML diagram of initial message exchanges between browser(client) and server*
 
-## Finally, The Request
+### Finally, The Request
 
 After all these steps, the browser sends the GET request to the server which is mostly an HTML file. According to that, the server responds with an HTML file. The initial response of the server is of 14kb size and then the size is gradually increased until the network’s maximum bandwidth is determined or congestion is experienced. With every packet received, the client sends the ACK message.
 
@@ -39,7 +39,7 @@ As soon as the browser receives the first response, it starts parsing the data. 
 
 ![Simplified flow diagram of how webpage display steps](https://cdn-images-1.medium.com/max/2000/1*UVzEiTRaWoyVUzyiKMr7uQ.png)*Simplified flow diagram of how webpage display steps*
 
-## The DOM building process:
+### The DOM building process:
 
 The DOM consists of nodes which is a representation of a tag. It starts building as the HTML is being parsed. The node starts with a start-tag and ends with an end-tag. If any tag comes within a tag, it creates nested nodes. The number of the DOM nodes affects the time it takes to render the page. Be cautious of *divitis*(too many nested/unnecessary div elements), because they can lead to performance issues.
 
@@ -51,11 +51,11 @@ How can you optimize the HTML?
 
 * Prioritize the resources, load the critical ones early, and render-blocking at a later stage.
 
-## The Preload Scanner
+### The Preload Scanner
 
 While the DOM tree is being built, the preload scanner quickly goes through the page content and makes requests to the external resources like images, CSS style-sheets, fonts, etc. This is helpful because, by the time the main HTML parser comes to an asset, it is already downloaded or being retrieved. This reduces overall loading time.
 
-## JavaScript Compilation
+### JavaScript Compilation
 
 Whenever parser encounters JavaScript, it is passed to the JavaScript Engine. In the engine, it is first converted into an Abstract syntax tree. The tree is then passed to the interpreter, which generates the non-optimized bytecode which is executed. While execution, the compiler optimizes the part of bytecode that is non-optimized or hot. This is called a Just in Time compilation. V8, SpiderMonkey, JavaScriptCore are some of the famous JavaScript engines.
 
@@ -69,7 +69,7 @@ How to optimize JavaScript Code?
 
 * Lazy load the non-critical code
 
-## The CSSOM building process:
+### The CSSOM building process:
 
 The CSSOM building process is render-blocking, which means the browser blocks the rendering until all the CSS is processed and CSSOM is built. The browser traverses through every CSS rule and generates nodes with children inheriting the styles of the parent. Unlike HTML, the CSS rules are not incremental, because with higher specificity the rules of children can be easily overridden.
 
@@ -83,15 +83,15 @@ How can you optimize CSS?
 
 * Fetching CSS based on viewport size by using media attribute of link tag
 
-## Render Tree
+### Render Tree
 
 When both DOM and CSSOM tree is ready, the render tree is built by combining both. This is done by checking every DOM node and determining which styles are to be applied to it. The render tree does not contain non-visible content, such as the head tag and its descendants, nodes with display property as none. But the nodes with visibility hidden are included.
 
-## Layout
+### Layout
 
 The layout is the process where the size and position of each render tree node. The browser starts with the root node of the render tree and determines the location and size of every node while considering the viewport size of the device. Subsequent calculations of size and dimensions are called reflow.
 
-## Paint
+### Paint
 
 ![](https://cdn-images-1.medium.com/max/2000/1*tGDmnPc2q7vzzJmgZfTY1g.png)
 
