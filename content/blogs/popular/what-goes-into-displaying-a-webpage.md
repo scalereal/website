@@ -13,6 +13,7 @@ author: Abhishek Ghadge
 image: /images/blog/banner/what-goes-into-displaying-a-webpage.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2021/10/11/what-goes-into-displaying-a-webpage.html
+blog_place: popular
 ---
 
 While working on my first production-level project, I encountered some performance issues. The web application was not as fast and when I checked the Lighthouse ratings, it was quite bad. Before that, I had not taken the importance of a good Lighthouse score seriously. As it was in the production environment, I decided to deep dive into the workings of a browser, and learn how we can leverage its capabilities to improve the performance of our application. Here is a simplified version of a browser’s working.
