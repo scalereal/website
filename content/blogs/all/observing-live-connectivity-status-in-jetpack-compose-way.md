@@ -58,7 +58,7 @@ For this, we’ll utilize [produceState()](https://developer.android.com/referen
 
 As you can see, we created a Composable function that returns the Connectivity state. In the `produceState()`, we are subscribing to the previously created core utility `Flow` and setting **_State_**’s value on collecting every connectivity state.
 
-> Note: Under the hood, `**produceState**` makes use of other effects! It holds a `**result**` variable using `**remember { mutableStateOf(initialValue) }**`, and triggers the `**producer**` block in a `**LaunchedEffect**`. Whenever `**value**` is updated in the `**producer**` block, the `**result**` state is updated to the new value. ([reference](https://developer.android.com/jetpack/compose/side-effects#producestate)).
+> Note: Under the hood, `produceState` makes use of other effects! It holds a `result` variable using `remember { mutableStateOf(initialValue) }`, and triggers the `producer` block in a `LaunchedEffect`. Whenever `value` is updated in the `producer` block, the `result` state is updated to the new value. ([reference](https://developer.android.com/jetpack/compose/side-effects#producestate)).
 
 We are done with the development of composable utility
 
