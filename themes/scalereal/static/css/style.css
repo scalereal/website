@@ -2206,6 +2206,10 @@ h3 {
   justify-content: center;
 }
 
+.underlineOnHover:hover {
+  text-decoration: underline !important
+}
+
 .page-link {
   position: relative;
   display: block;

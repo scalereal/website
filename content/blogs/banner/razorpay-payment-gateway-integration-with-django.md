@@ -71,7 +71,7 @@ pip install razorpay
 
 {{< gist Nishant127 b1bfe7ab581ff9149e5d76a09f123db4 >}}
 
-*   We are importing `**PaymentStatus**` from constants.py file.
+*   We are importing `PaymentStatus` from constants.py file.
 
 {{< gist Nishant127 13898538d35a024b4d93a592b1b4a6ea >}}
 
@@ -141,10 +141,10 @@ After payment, users will be **redirected** to this **URL** on successful paymen
 
 {{< gist Nishant127 c9c41e61f682b650ca16f7f5478b07fb >}}
 
-> 💡 **As POST request will be made by Razorpay and it won’t have the csrf token, so we need to** `**csrf_exempt**` **this url.**
+> 💡 **As POST request will be made by Razorpay and it won’t have the csrf token, so we need to** `csrf_exempt` **this url.**
 
 *   **Successful Payment** 😁  
-    1\] In the case of successful payment, Razorpay will make a POST call to the callback URL that we have provided, with the `**razorpay_payment_id**`, `**razorpay_order_id**`, and `**razorpay_signature**` in the response object.
+    1\] In the case of successful payment, Razorpay will make a POST call to the callback URL that we have provided, with the `razorpay_payment_id`, `razorpay_order_id`, and `razorpay_signature` in the response object.
 
 ```
 {
@@ -163,7 +163,7 @@ After payment, users will be **redirected** to this **URL** on successful paymen
 *   2\] For successful payment, the **Payment signature verification** step is mandatory, it allows to confirm the authenticity of the details returned to the checkout for successful payments. If the Payment signature verification is successful, the method will return None.
 *   **Failed Payment** 😥  
     1\] In the case of failed payment, the **Checkout Form** is displayed again to retry the payment when a **callback URL** is not provided at the backend.  
-    2\] But when a callback URL is provided, Razorpay will make a **POST call** to the **callback URL** that we have provided, with the `**error[code], error[description], error[source], error[metadata], error[reason], error[step] in the response object**.`
+    2\] But when a callback URL is provided, Razorpay will make a **POST call** to the **callback URL** that we have provided, with the `error[code], error[description], error[source], error[metadata], error[reason], error[step] in the response object.`
 
 ```
 {  

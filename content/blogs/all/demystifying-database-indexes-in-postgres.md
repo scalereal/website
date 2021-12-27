@@ -54,7 +54,7 @@ See below 👇 query,
 
 For Demonstration, I have created _1 million_ records in the _employees_ table,
 
-<img alt="" class="t u v kb aj" src="https://miro.medium.com/max/1400/1\*XdofPBdieFkWGu-ih0HzXQ.png" width="700" height="215" srcSet="https://miro.medium.com/max/552/1\*XdofPBdieFkWGu-ih0HzXQ.png 276w, https://miro.medium.com/max/1104/1\*XdofPBdieFkWGu-ih0HzXQ.png 552w, https://miro.medium.com/max/1280/1\*XdofPBdieFkWGu-ih0HzXQ.png 640w, https://miro.medium.com/max/1400/1\*XdofPBdieFkWGu-ih0HzXQ.png 700w" sizes="700px" role="presentation"/>
+![code-snippet](https://miro.medium.com/max/1400/1\*XdofPBdieFkWGu-ih0HzXQ.png)
 
 ```
 explain analyze select * from employess where id = 2000;

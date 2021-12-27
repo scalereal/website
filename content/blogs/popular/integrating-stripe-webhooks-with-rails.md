@@ -105,35 +105,13 @@ Thank you ;)
 
 Here I have used Rails credentials to store all credentials related to Stripe. To know more about how to use Rails credentials you can check out this article down below.
 
-[
-
-Managing Encrypted Secrets(Credentials) 🔐 with Rails6
-------------------------------------------------------
-
-### Background:
-
-medium.com
-
-](https://medium.com/scalereal/managing-encrypted-secrets-credentials-with-rails6-7bb31ca65e02)
 
 To know more about Stripe Webhooks and signatures here are the official docs:
 
-[
+[Managing Encrypted Secrets(Credentials) 🔐 with Rails6](https://medium.com/scalereal/managing-encrypted-secrets-credentials-with-rails6-7bb31ca65e02)
 
-Use incoming webhooks to get real-time updates
-----------------------------------------------
+To know more about Stripe Webhooks and signatures here are the official docs:
 
-### Stripe uses webhooks to notify your application when an event happens in your account. Webhooks are particularly useful…
+[Use incoming webhooks to get real-time updates](https://stripe.com/docs/webhooks#signatures)
 
-stripe.com
-
-](https://stripe.com/docs/webhooks#signatures)[
-
-Check the webhook signatures
-----------------------------
-
-### Stripe can optionally sign the webhook events it sends to your endpoints by including a signature in each event's…
-
-stripe.com
-
-](https://stripe.com/docs/webhooks/signatures)
+[Check the webhook signatures](https://stripe.com/docs/webhooks/signatures)
