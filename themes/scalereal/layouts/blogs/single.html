@@ -5,7 +5,9 @@
 
 {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
 {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
-
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/dracula-prism/css/dracula-prism.css">
+</head>
 <body>
   {{ partial "nav" . }}
   <div class="page-blog-details">
@@ -30,7 +32,7 @@
       <h2 class="f700 text-black">{{ .Title }}</h2>
 
       <div class="writer-wrap d-flex">
-        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.png')"></div>
+        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
         <div class="writer-name-wrap">
           <h5 class="writer-name">{{.Params.author}}</h5>
           <p class="time">
@@ -53,11 +55,11 @@
             <p class="share-on">Share on</p>
             <ul class="social-column">
               <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&summary={{ .Description }}&source=" target="_blank"
-                  title="LinkedIn" class="text-grey"><i class="flaticon-linkedin"></i></a></li>
+                  title="LinkedIn" class="text-grey" rel="noreferrer"><i class="flaticon-linkedin"></i></a></li>
               <li><a href="https://twitter.com/intent/tweet?&amp;url={{ .Permalink }}&amp;text={{ .Title }}" 
-                target="_blank" rel="noopener" aria-label="Share on Twitter" class="text-grey">
+                target="_blank" rel="noreferrer" aria-label="Share on Twitter" class="text-grey">
                 <i class="flaticon-twitter"></i></a></li>
-              <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" class="text-grey"><i
+              <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" rel="noreferrer" class="text-grey"><i
                         class="flaticon-facebook"></i></a></li>
               <!-- <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"
                   class="text-grey"><i class="flaticon-instagram"></i></a></li> -->
@@ -89,5 +91,5 @@
 
 </body>
 {{ partial "js" . }}
-
+<script src="https://unpkg.com/dracula-prism@1.2.1/js/prism.js"></script>
 </html>

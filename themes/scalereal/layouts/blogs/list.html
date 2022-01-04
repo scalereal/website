@@ -18,7 +18,7 @@
         
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .Permalink }}" aria-label="Blog Banner">
               <div class="img-bg banner-img" style="background-image: url({{.Params.image}});"> </div>
             </a>
           </div>
@@ -27,16 +27,16 @@
             <p class="f700 text-black popular-reads">POPULAR READS</p>
 
             <a href="{{ .Permalink }}">
-              <h3 class="f700 text-black blog-title-text"> {{.Title}} </h3>
+              <h2 class="f700 text-black blog-title-text"> {{.Title}} </h2>
               <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
             </a>
 
             <div class="writer-wrap d-flex">
               <div></div>
-              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.png')">
+              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')">
               </div>
               <div class="writer-name-wrap">
-                <h5 class="writer-name">{{.Params.author}}</h5>
+                <h3 class="writer-name">{{.Params.author}}</h3>
                 <p class="time">
                   <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
                     {{(.Params.date).Format "January 2, 2006"}}
@@ -58,7 +58,7 @@
           {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
 
           <li>
-            <a href="{{ .Permalink }}">
+            <a href="{{ .Permalink }}" aria-label="Blog Banner">
 
               <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
               <h3 class="f700 text-black blog-title-text"> {{.Title}} </h3>
@@ -66,9 +66,9 @@
             </a>
 
             <div class="writer-wrap d-flex">
-              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.png')"></div>
+              <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
               <div class="writer-name-wrap">
-                <h5 class="writer-name">{{.Params.author}}</h5>
+                <h3 class="writer-name">{{.Params.author}}</h3>
                 <p class="time">
                   <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
                     {{(.Params.date).Format "January 2, 2006"}}
@@ -142,9 +142,9 @@
                 <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
               </a>
               <div class="writer-wrap d-flex">
-                <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.png')"></div>
+                <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
                 <div class="writer-name-wrap">
-                  <h5 class="writer-name">{{.Params.author}}</h5>
+                  <h3 class="writer-name">{{.Params.author}}</h3>
                   <p class="time">
                     <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
                       {{(.Params.date).Format "January 2, 2006"}}

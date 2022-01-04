@@ -1,8 +1,7 @@
-<a class="" href="/post"></a>
+<a class="" aria-label="POST" href="/post"></a>
 <nav class="navbar navbar-expand-md home-page" id="nav">
     <div class="container navbar-content">
-        <a class="navbar-brand" href="/"><img alt="scalreal"
-                src="{{ "images/logo/scalereal-logo-white.svg" | absURL }}"></a>
+        <a class="navbar-brand" href="/"><img alt="scalereal" src="{{ "images/logo/scalereal-logo-white.svg" | absURL}}"></a>
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler hamburger hamburger--spring" data-target="#navbarSupportedContent"
             data-toggle="collapse" type="button">
@@ -15,12 +14,10 @@
             <ul class="navbar-nav ml-auto">
                 {{range .Site.Params.navigation}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{.url}}">
-                        {{.name}}</a>
+                    <a class="nav-link" href="{{.url}}"> {{.name}}</a>
                 </li>
                 {{end}}
             </ul>
         </div>
-
     </div>
 </nav>

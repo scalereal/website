@@ -8,7 +8,7 @@ tags:
   - Custom Model Manager
   - Django
 author: Sagar Chopade
-image: /images/blog/banner/custom-model-managers-in-django.png
+image: /images/blog/banner/custom-model-managers-in-django.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/28/custom-model-managers-in-django.html
 ---

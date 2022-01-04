@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <a class="footer-brand" href="/"><img src="{{ "images/logo/scalereal-logo-black.svg" | absURL }}"
-                        alt="scalreal"></a>
+                        alt="scalereal"></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <p class="footer-heading f700">Services</p>
@@ -74,12 +74,12 @@
                     </div>
                     <div class="social-column">
                         <a href="https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/about/" target="_blank"
-                            title="LinkedIn" class="text-grey"><i class="flaticon-linkedin"></i></a><a
-                            href="https://www.facebook.com/ScaleReal/" target="_blank" title="Facebook"
+                            title="LinkedIn" class="text-grey" rel="noreferrer"><i class="flaticon-linkedin"></i></a><a
+                            href="https://www.facebook.com/ScaleReal/" target="_blank" title="Facebook" rel="noreferrer"
                             class="text-grey"><i class="flaticon-facebook"></i></a><a
-                            href="https://twitter.com/ScaleReal" target="_blank" title="Twitter" class="text-grey"><i
+                            href="https://twitter.com/ScaleReal" target="_blank" title="Twitter" rel="noreferrer" class="text-grey"><i
                                 class="flaticon-twitter"></i></a><a href="https://www.instagram.com/scalerealhq/"
-                            target="_blank" title="Instagram" class="text-grey"><i class="flaticon-instagram"></i></a>
+                            target="_blank" rel="noreferrer" title="Instagram" class="text-grey"><i class="flaticon-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -87,13 +87,13 @@
         <div class="footer-copyright">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="f12">&copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-
-                        </script>&nbsp;ScaleReal Technologies Pvt. Ltd.</p>
+                    <p class="f12">&copy;&nbsp;<span id="footerText"></span></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById('footerText').innerText = `${year} ScaleReal Technologies Pvt. Ltd.`
+</script>
