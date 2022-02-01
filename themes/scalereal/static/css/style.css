@@ -1423,6 +1423,9 @@ h3 {
 .page-inner .section-service-detail .img-wrap img {
   width: 480px;
 }
+.page-inner .section-service-detail .img-wrap img.large {
+  width: 500px;
+}
 
 .page-inner #mobile-developemnt .img-wrap img {
   width: 350px;
@@ -1774,6 +1777,9 @@ h3 {
   .page-inner .section-service-detail .img-wrap img {
     width: 100%;
   }
+  .page-inner .section-service-detail .img-wrap img.large {
+    width: 100%;
+  }
 
   .inner-cta .heading::before {
     display: none;
@@ -1983,6 +1989,7 @@ h3 {
   }
 
   .page-inner .section-service-detail .img-wrap img,
+  .page-inner .section-service-detail .img-wrap img.large,
   .page-inner #mobile-developemnt .img-wrap img {
     width: 80%;
   }
