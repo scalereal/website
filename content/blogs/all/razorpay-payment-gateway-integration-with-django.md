@@ -12,7 +12,6 @@ author: Nishant Handge
 image: /images/blog/banner/razorpay-payment-gateway-integration-with-django.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/12/20/razorpay-payment-gateway-integration-with-django.html
-blog_place: banner
 ---
 
 
