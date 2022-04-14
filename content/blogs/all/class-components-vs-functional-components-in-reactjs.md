@@ -13,23 +13,19 @@ author: Piyush Rajput
 image: /images/blog/banner/class-components-vs-functional-components-in-reactjs.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/03/03/class-components-vs-functional-components-in-reactjs.html
-blog_place: banner
 ---
 
-⚡Introduction
---------------
+## ⚡Introduction
 
 In React, there are two ways of writing a React component. Functional components and Class components. Currently, Functional components are most commonly used.
 
 This article will help you understand the real difference between Class Components and Functional Components in React Js.
 
-What are components in React?
------------------------------
+## What are components in React?
 
 A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. A component is something that either returns a JSX element or a Null.
 
-Class Components
-----------------
+## Class Components
 
 The class component in react is a regular ES6 class that extends the component class of the React library. It is also called as stateful component because it controls how the state changes and the implementation of the component logic. Aside from that, they have access to all the different phases of a React lifecycle method. Before the introduction of React Hooks, the class component was the only option to create a dynamic and reusable component because it gave us access to lifecycle methods and all React functionalities.
 
@@ -57,8 +53,7 @@ This lifecycle method is called right after the component is unmounted. This is 
 
 Now, let’s convert the class component to a functional component to differentiate between them.
 
-Functional components
----------------------
+## Functional components
 
 A Functional Component in react is just like a simple javascript function that returns JSX. Before the release of hooks in React 16.8, they were mostly referred to as stateless components because then they only accepted and returned data to be rendered to the DOM(without handling any state). Check out the following example for creating a simple functional component.
 {{< gist imPiyushrRajput 44febece47f20e7ac45db2ac526dd53a >}}
@@ -111,22 +106,24 @@ The dependency argument lets us control when the side-effect runs. We can specif
 
 3.  Has dependencies
 
-
 #### **Dependencies not provided**
+
 {{< gist imPiyushrRajput edcbaf92c9bbb5704d9a3470d59f0724 >}}
 In this case, the side-effect runs after every rendering.
 
 #### **An empty dependency array**
+
 {{< gist imPiyushrRajput 163a46b3ac94abc79013d43b164dfe09 >}}
 In this case, the side-effect runs once after the initial rendering.
 
 #### **Has dependencies**
+
 {{< gist imPiyushrRajput d123ce16e9ef32d8f16444d068bc2c13 >}}
 In this case, the side-effect runs only when any dependency value changes.
 
 #### **Side-effect cleanup**
 
-If the callback of useEffect returns a function, then useEffect considers this as an effect cleanup_._ The common asynchronous side-effects are: performing fetch requests to load data from a remote server, handling timers like `setTimeout()`, debounce or throttle functions, etc.
+If the callback of useEffect returns a function, then useEffect considers this as an effect cleanup*.* The common asynchronous side-effects are: performing fetch requests to load data from a remote server, handling timers like `setTimeout()`, debounce or throttle functions, etc.
 
 #### **What is a cleanup function?**
 
@@ -141,8 +138,7 @@ The cleanup function prevents memory leaks and removes some unnecessary and unwa
 Let us take a look at an example of a functional component in which we have created a timer using the useEffect hook as follows.
 {{< gist imPiyushrRajput ed3d8fd75005c4098979cd2cb1b1d711 >}}
 
-Conclusion
-----------
+## Conclusion
 
 I would like to conclude that there are pros and cons in both styles. I do not necessarily think one is better than the other. A functional programmer may find it easier to use functional components, while that applies the same to an object-oriented programmer may find it easier to use class components.
 
@@ -150,9 +146,10 @@ I personally like using functional components they are written shorter and simpl
 &nbsp;
 &nbsp;
 
--------
+---
 
 ### &nbsp;&nbsp;
+
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.
