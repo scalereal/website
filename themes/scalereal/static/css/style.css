@@ -780,9 +780,13 @@ h3 {
   display: inline-block;
   margin: 15px;
 }
+.section-technology .tab-content .card:hover{
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
 .section-technology .tab-content i {
-  filter: grayscale(1);
+  filter: grayscale(0);
   transition: all 0.5s ease-in-out;
 }
 
@@ -1183,7 +1187,7 @@ h3 {
   background-image: url(../images/backend/typescript.webp);
   width: 115px;
 }
-.section-technology .non-sprite-tech.java {
+.section-technology ..java {
   background-image: url(../images/backend/Java.webp);
 }
 .section-technology .non-sprite-tech.python {
