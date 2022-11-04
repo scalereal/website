@@ -1,3 +1,4 @@
+AOS.init();
 $(document).ready(function () {
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
