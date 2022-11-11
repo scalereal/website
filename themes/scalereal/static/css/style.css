@@ -791,6 +791,16 @@ h3 {
   filter: grayscale(1);
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .section-technology .tab-content .card {
+    max-width: 270px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section-technology .tab-content .card {
+    max-width: 220px;
+  }
+}
 
 .section-technology .tab-content .card:after {
   content: "";
