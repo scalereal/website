@@ -780,10 +780,59 @@ h3 {
   display: inline-block;
   margin: 15px;
 }
+.section-technology .tab-content .d-flex{
+  gap: 15px;
+}
+.section-technology .tab-content .card{
+  flex-basis: calc(25% - 15px);
+  padding: 20px;
+  position: relative;
+  border: none;
+  filter: grayscale(1);
+  overflow: hidden;
+}
+
+.section-technology .tab-content .card:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.8) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.section-technology .tab-content .card:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.8s, 0.8s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+
+.section-technology .tab-content .card:active:after {
+  opacity: 0;
+}
+
 .section-technology .tab-content .card:hover{
   transition: all 0.2s ease-in-out;
   transform: translateY(-5px);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  filter: grayscale(0);
 }
 
 .section-technology .tab-content i {
@@ -1137,15 +1186,17 @@ h3 {
 }
 
 .section-technology .non-sprite-tech {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 52px;
-  width: 100px;
-  background-size: contain;
+  width: auto;
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
-.section-technology .non-sprite-tech.clickUp {
+/* .section-technology .non-sprite-tech.clickUp {
   background-image: url(../images/tools/ClickUp.png);
 }
 .section-technology .non-sprite-tech.clubhouse {
@@ -1163,6 +1214,9 @@ h3 {
 .section-technology .non-sprite-tech.serverless-com {
   background-image: url(../images/tools/serverless.png);
 }
+.section-technology .non-sprite-tech.aws{
+  background-image: url(../images/devops/aws.webp);
+}
 
 .section-technology .non-sprite-tech.circleci {
   background-image: url(../images/devops/circleci.png);
@@ -1175,6 +1229,9 @@ h3 {
 }
 .section-technology .non-sprite-tech.kotlin {
   background-image: url(../images/backend/kotlin.webp);
+}
+.section-technology .non-sprite-tech.golang {
+  background-image: url(../images/backend/golang.webp);
 }
 .section-technology .non-sprite-tech.nodejs-logo {
   background-image: url(../images/backend/nodejs-logo.webp);
@@ -1190,15 +1247,14 @@ h3 {
   background-image: url(../images/backend/python.webp);
 }
 .section-technology .non-sprite-tech.ruby {
-  background-image: url(../images/backend/ruby-logo-png-6.webp);
+  background-image: url(../images/backend/ruby.png);
 }
 
-/* front end */
 .section-technology .non-sprite-tech.bootstrap {
   background-image: url(../images/frontend/bootstrap.png);
 }
 .section-technology .non-sprite-tech.react {
-  background-image: url(../images/frontend/react.png);
+  background-image: url(../images/frontend/react.webp);
 }
 .section-technology .non-sprite-tech.angular {
   background-image: url(../images/frontend/angular.png);
@@ -1211,10 +1267,10 @@ h3 {
 }
 
 .section-technology .non-sprite-tech.ios {
-  background-image: url(../images/mobile/ios.png);
+  background-image: url(../images/mobile/ios.webp);
 }
 .section-technology .non-sprite-tech.android {
-  background-image: url(../images/mobile/android.png);
+  background-image: url(../images/mobile/android.webp);
 }
 .section-technology .non-sprite-tech.swift {
   background-image: url(../images/mobile/swift.png);
@@ -1227,7 +1283,7 @@ h3 {
 }
 .section-technology .non-sprite-tech.appcenter {
   background-image: url(../images/mobile/appcenter.png);
-}
+} */
 
 /* Section about */
 .section-about .text-wrap p {
@@ -1621,7 +1677,9 @@ h3 {
   .footer .footer-contact p.footer-heading {
     margin-bottom: 10px;
   }
-
+.section-technology .tab-content .card{
+  flex-basis: calc(50% - 15px) !important;
+}
   .section-about,
   .section-client {
     padding: 90px 50px;
@@ -1794,7 +1852,7 @@ h3 {
   section {
     padding: 55px 0 60px;
   }
-
+ 
   .navbar {
     padding: 20px 15px;
   }
@@ -2098,6 +2156,9 @@ h3 {
   .section-project-detail.section-service-detail:nth-child(odd) .img-wrap {
     text-align: center;
   }
+  .section-technology .tab-content .card{
+    flex-basis: 100% !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2279,6 +2340,7 @@ h3 {
     padding: 0;
     margin-bottom: 20px;
   }
+ 
   .page-blog-details .share-wrap li {
     display: inline-block;
     margin: 10px;
@@ -2328,6 +2390,7 @@ h3 {
     width: 100%;
     margin: 0;
   }
+  
   .all-list-section ul li:after {
     content: "";
     display: block;
@@ -2373,6 +2436,7 @@ h3 {
   .popular-reads-separator {
     display: none;
   }
+ 
 }
 
 .badge-active {
