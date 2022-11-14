@@ -1,0 +1,47 @@
+name: CI/CD Build
+
+on:
+  push:
+    branches: 
+      - dev
+
+jobs:
+  build:
+    name: Build static artifacts using Hugo
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 50
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.72.0'
+          extended: true
+      - name: Build
+        run: hugo --gc --minify
+      - name: Upload public directory
+        uses: actions/upload-artifact@v2
+        if: github.ref == 'refs/heads/dev'
+        with:
+          name: public
+          path: public/
+
+  deploy:
+    name: Deploy to Netlify
+    needs: build
+    runs-on:  ubuntu-18.04
+    steps:
+      - name: Download public directory
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+          path: public/
+      - name: Publish
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy -p --alias=dev --dir=public
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
