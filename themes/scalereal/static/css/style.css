@@ -744,6 +744,10 @@ h3 {
 }
 
 /* Section technology */
+.container.increase-speed {
+  max-width: 90vw;
+}
+
 .section-technology .nav-tabs {
   border-bottom: 1px solid #c8c8c8;
   margin-bottom: 50px;
@@ -1205,6 +1209,13 @@ h3 {
   /* background-size: contain;
   background-repeat: no-repeat;
   background-position: center; */
+}
+
+.section-technology .non-sprite-tech.small {
+  height: 40px;
+}
+.section-technology .non-sprite-tech.ruby {
+  height: 45px;
 }
 
 /* .section-technology .non-sprite-tech.clickUp {
