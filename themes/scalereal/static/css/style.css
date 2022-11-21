@@ -1628,6 +1628,7 @@ h3 {
 
 .page-contact .form-group {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .page-contact .form-control {
@@ -2475,4 +2476,11 @@ h3 {
 
 .line-heigh-2-rem {
   line-height: 2rem;
+}
+
+.input-error {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
 }
