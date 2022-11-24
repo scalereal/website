@@ -1492,10 +1492,14 @@ h3 {
 
 .page-inner .section-service-detail .img-wrap {
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .page-inner .section-service-detail.even .img-wrap {
   text-align: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .page-inner .section-service-detail .img-wrap img {
