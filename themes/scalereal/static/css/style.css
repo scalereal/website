@@ -1490,12 +1490,20 @@ h3 {
   transform: scaleX(-1);
 }
 
+.section-service-detail {
+  overflow: hidden;
+}
+
 .page-inner .section-service-detail .img-wrap {
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .page-inner .section-service-detail.even .img-wrap {
   text-align: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .page-inner .section-service-detail .img-wrap img {
@@ -1527,6 +1535,18 @@ h3 {
   font-family: "Flaticon";
   font-size: 22px;
   line-height: 24px;
+}
+
+lottie-player {
+  width: 480px;
+  height: 480px;
+}
+
+@media only screen and (max-width: 991px) { 
+  lottie-player {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 /* PAGE PROJECTS
@@ -1628,6 +1648,7 @@ h3 {
 
 .page-contact .form-group {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .page-contact .form-control {
@@ -1861,6 +1882,10 @@ h3 {
     width: 100%;
   }
 
+  .lottie-small {
+    width: 300px;
+  }
+
   .inner-cta .heading::before {
     display: none;
   }
@@ -2077,6 +2102,22 @@ h3 {
   .page-inner .section-service-detail .img-wrap,
   .page-inner .section-service-detail.even .img-wrap {
     text-align: center;
+    justify-content: center;
+  }
+
+  lottie-player {
+    width: 300px;
+    height: 300px;
+  }
+
+  .lottie-small {
+    width: 250px;
+    height: 250px;
+  }
+
+  .lottie-small-height {
+    width: 300px;
+    height: 200px;
   }
 
   .page-inner img {
@@ -2475,4 +2516,11 @@ h3 {
 
 .line-heigh-2-rem {
   line-height: 2rem;
+}
+
+.input-error {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
 }
