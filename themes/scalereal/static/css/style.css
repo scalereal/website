@@ -388,6 +388,10 @@ h3 {
 .navbar {
   background-color: #0eccd8;
   padding: 30px 0;
+  position:sticky;
+  width:100%;
+  z-index: 1000000;
+  top:0;
 }
 
 .navbar-brand {
