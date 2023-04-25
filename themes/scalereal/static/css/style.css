@@ -414,11 +414,30 @@ h3 {
   font-weight: 400;
   opacity: 0.8;
   transition: all 0.5s linear;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem 0;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:hover,
-.navbar-expand-md .navbar-nav .nav-link.active {
+.navbar-expand-md .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar-expand-md .navbar-nav .nav-link.active{
   opacity: 1;
+}
+.navbar-expand-md .navbar-nav .nav-link.active::after,
+.navbar-expand-md .navbar-nav .nav-link:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-toggler {
