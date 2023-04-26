@@ -416,7 +416,7 @@ h3 {
   transition: all 0.5s linear;
   display: inline-block;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
 }
 
 .navbar-expand-md .navbar-nav .nav-link::after {
@@ -424,7 +424,7 @@ h3 {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: white;
@@ -433,6 +433,9 @@ h3 {
 }
 .navbar-expand-md .navbar-nav .nav-link.active{
   opacity: 1;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover::after{
+  opacity: 0.8;
 }
 .navbar-expand-md .navbar-nav .nav-link.active::after,
 .navbar-expand-md .navbar-nav .nav-link:hover::after{
