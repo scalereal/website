@@ -1947,6 +1947,10 @@ lottie-player {
     color: #0eccd8;
   }
 
+  .navbar-expand-md .navbar-nav .nav-link::after {
+    background-color: #0eccd8;
+  }
+
   .page-home .banner-home {
     background: #0eccd8;
     min-height: auto;
