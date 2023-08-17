@@ -71,12 +71,7 @@
           <section class="section-articles">
             <article class="article">
               <!-- {{ .Render "feature-img" }} -->
-              <p class="text-grey">
-                {{ with .Description }}
-                {{ . }}
-                {{ end }}
-              </p>
-
+             
               <div class="article-content">
                 {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
               </div>
