@@ -16,7 +16,10 @@ thumbnail: https://via.placeholder.com/150
 url: android/2023/08/16/the-transition-of-scalereals-performance-review-process .html
 ---
 
+
 As companies evolve and grow, so do their performance review processes. ScaleReal, a company that started with just 3 people and has now expanded to a team of 30 over the course of four years, has experienced firsthand the various phases of the performance review cycle.
+
+&nbsp;
 
 Let’s discuss the different stages of ScaleReal’s growth journey and the unique challenges associated with our performance review processes during each phase.
 
@@ -80,7 +83,7 @@ Finally, our incredible team made it possible and we launched SkillWatch interna
 * Due to different system roles like Org Admin, HR, Manager, and Employees, it became very easy to manage and share the information as certain access was restricted to only specific roles.
 * It wasn’t a tedious process anymore and even if now our team expands to 100+ we are not really worried about the feedback and performance review process.
 * We didn’t have to spend around INR 25,000 (USD 300) for a 30 people team per month.
-* We build most of the basic features which are needed for a startup:
+* We built most of the basic features which are needed for a startup:
     - 360-Degree Feedback
     - Performance Review Cycle
     - Define KRAs and Goals
