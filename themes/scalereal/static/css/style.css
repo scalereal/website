@@ -666,7 +666,7 @@ h3 {
 /* HOME PAGE
 -------------------------------------------------- */
 .page-home .banner-home {
-  min-height: 600px;
+  height: calc(100vh - 90px);
   position: relative;
   z-index: 1;
   background: url("../images/banner-home.webp") no-repeat center top;
@@ -675,7 +675,7 @@ h3 {
 
 .page-home .banner-home .banner-content {
   position: absolute;
-  top: 150px;
+  top: 180px;
   left: 15px;
 }
 
@@ -1720,6 +1720,66 @@ lottie-player {
   font-weight: bold;
 }
 
+/* Clients marquee */
+
+@keyframes scrollX {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  overflow-x: hidden;
+}
+
+.about-client .marquee {
+  display: flex;
+  width: 2500px;
+  overflow: hidden;
+  margin: auto;
+  user-select: none;
+}
+
+.about-client .marquee-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 100%;
+  animation: scrollX 40s linear infinite;
+}
+
+.about-client .marquee-group-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 100%;
+  animation: scrollX 40s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+.about-client .image-group {
+  display: grid;
+  place-items: center;
+  width: clamp(10rem, 1rem + 40vmin, 30rem);
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+}
+
+.about-client .client-image {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 0.5rem;
+  aspect-ratio: 16/9;
+  padding: 5px 20px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -2237,6 +2297,14 @@ lottie-player {
   .page-inner .about-number span {
     font-size: 34px;
     line-height: 36px;
+  }
+
+  .about-client .image-group {
+    padding: 1rem;
+  }
+
+  .about-client .client-image {
+    padding: 0;
   }
 }
 
