@@ -219,6 +219,8 @@ All implementations of the Singleton have these two steps in common:
 
 In this blog, we covered all creational design patterns with their example in kotlin. For more examples check out our Github Repository [here](https://github.com/scalereal/design-patterns). In the upcoming blogs, we’ll be exploring Structural and Behavioural Patterns.
 
+&nbsp;
+
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.
