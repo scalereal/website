@@ -1611,6 +1611,10 @@ lottie-player {
   padding-bottom: 0;
 }
 
+.page-about .more-bottom-space {
+  padding-bottom: 125px;
+}
+
 .page-about .about-client img {
   filter: grayscale(1);
   max-height: 70px;
@@ -1733,6 +1737,10 @@ lottie-player {
 
 .marquee-container {
   overflow-x: hidden;
+}
+
+.client-list {
+  padding-top: 0;
 }
 
 .about-client .marquee {
