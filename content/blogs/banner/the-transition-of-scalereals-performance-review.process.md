@@ -13,7 +13,7 @@ tags:
 author: Atul Shashikumar
 image: /images/blog/banner/the-transition-of-scalereals-performance-review-process.webp
 thumbnail: https://via.placeholder.com/150
-url: android/2023/08/16/the-transition-of-scalereals-performance-review-process .html
+url: android/2023/08/16/the-transition-of-scalereals-performance-review-process.html
 blog_place: banner
 ---
 
