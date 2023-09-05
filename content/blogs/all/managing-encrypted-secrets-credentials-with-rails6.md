@@ -9,6 +9,9 @@ tags:
   - Rails
 author: Sandesh Bodake
 image: /images/blog/banner/managing-encrypted-secrets-credentials-with-rails6.webp
+sourceTitle: Image Source - 
+source: Immediate Connect
+link: https://immediate.net/
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/04/10/managing-encrypted-secrets-credentials-with-rails6.html
 ---
