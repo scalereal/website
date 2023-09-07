@@ -3,6 +3,10 @@
 <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
 {{ partial "head" . }}
 
+<head>
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
+</head>
+
 <body>
     <div class="page-home">
         {{ partial "nav" . }}
@@ -238,46 +242,54 @@
                                         <div class="row justify-content-md-center">
                                             <div class="col-lg-12">
                                                 <div class="d-flex flex-wrap justify-content-center">
-                                                    <div class="tech_container_card card bg-grey">
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
                                                         <!-- <div class=""> -->
                                                         <img class="non-sprite-tech m-auto"
                                                             src="images/frontend/react.webp" alt="react" />
                                                         <!-- </div> -->
                                                         <span class="tech_name mt-3">React</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech m-auto"
                                                             src="images/backend/python.webp" alt="python" />
                                                         <span class="tech_name mt-3">Python</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech small m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
                                                             src="images/backend/golang.webp" alt="golang" />
                                                         <span class="tech_name mt-3">Golang</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech ruby m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech ruby m-auto"
                                                             src="images/backend/ruby.png" alt="ruby" />
                                                         <span class="tech_name mt-3">Ruby</span>
                                                     </div>
 
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech small m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
                                                             src="images/devops/aws.webp" alt="aws" />
                                                         <span class="tech_name mt-3">AWS</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech m-auto" src="images/mobile/ios.webp"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech m-auto" src="images/mobile/ios.webp"
                                                             alt="ios" />
                                                         <span class="tech_name mt-3">iOS</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech small m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
                                                             src="images/backend/kotlin.webp" alt="kotlin" />
                                                         <span class="tech_name mt-3">Kotlin</span>
                                                     </div>
-                                                    <div class="tech_container_card card bg-grey"><img
-                                                            class="non-sprite-tech m-auto"
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech m-auto"
                                                             src="images/mobile/android.webp" alt="android" />
                                                         <span class="tech_name mt-3">Android</span>
                                                     </div>
@@ -755,6 +767,8 @@
         </section>
         {{ partial "footer" . }}
     </div>
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
     <script type="text/javascript">
         new Vivus('web-dev-svg', { type: 'sync', duration: 200 });
         new Vivus('mob-dev-svg', { type: 'sync', duration: 200 });
