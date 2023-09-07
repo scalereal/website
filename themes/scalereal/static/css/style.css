@@ -706,7 +706,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.section-service img {
+.section-service svg {
   margin-bottom: 10px;
   height: 80px;
 }
@@ -2352,10 +2352,10 @@ lottie-player {
   color: #0eccd8;
 } */
 .we-offer-wrap a {
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 .we-offer-wrap a:hover {
-  filter: grayscale(0);
+  filter: grayscale(1);
 }
 
 .article-content {
