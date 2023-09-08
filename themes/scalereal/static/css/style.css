@@ -692,14 +692,14 @@ h3 {
 }
 
 .page-home .banner-home .banner-content h1 {
-  font-size: 40px;
+  font-size: 46px;
   line-height: 48px;
   margin-bottom: 50px;
 }
 
 .page-home .banner-home .banner-content p {
   margin-bottom: 50px;
-  min-height: 80px;
+  min-height: 100px;
   width: 80%;
 }
 
@@ -1660,6 +1660,65 @@ lottie-player {
   padding-top: 45px;
 }
 
+/* PAGE COMPANY */
+
+@keyframes imageScrollX {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.our-culture .image-slider {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.our-culture .slider {
+  display: flex;
+  width: 6250px;
+  overflow: hidden;
+  margin: auto;
+  user-select: none;
+}
+
+.our-culture .slider-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+  animation: imageScrollX 80s linear infinite;
+}
+
+.our-culture .slider-group-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+  animation: imageScrollX 80s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+.our-culture .team-image-group {
+  display: grid;
+  place-items: center;
+}
+
+.our-culture .team-image {
+  border-radius: 8px;
+  padding: 0 4px;
+}
+
 /* PAGE CONTACT
 -------------------------------------------------- */
 .page-contact .section-contact {
@@ -1759,7 +1818,7 @@ lottie-player {
   }
 }
 
-.marquee-container {
+.about-client .marquee-container {
   overflow-x: hidden;
 }
 
