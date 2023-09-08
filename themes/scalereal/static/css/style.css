@@ -1464,6 +1464,16 @@ h3 {
 }
 
 /* Section blog */
+.section-blog .blog-stats {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.section-blog .blog-stats span {
+  font-size: 36px;
+  line-height: 52px;
+}
+
 .section-cta {
   padding: 50px;
   font-size: 36px;
