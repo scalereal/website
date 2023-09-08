@@ -682,19 +682,25 @@ h3 {
 }
 
 .page-home .banner-home .banner-content {
-  position: absolute;
-  top: 180px;
-  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .page-home .banner-home .banner-content h1 {
   font-size: 40px;
   line-height: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .page-home .banner-home .banner-content p {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  min-height: 80px;
+  width: 80%;
 }
 
 /* Section service */
@@ -2034,22 +2040,23 @@ lottie-player {
   }
 
   .page-home .banner-home {
-    background: #0eccd8;
-    min-height: auto;
-    padding-bottom: 70px;
+    height: 65vh;
   }
 
   .page-home .banner-home .banner-content {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-top: 60px;
+    width: 80%;
   }
 
   .page-home .banner-home .banner-content h1,
   .heading h1 {
     font-size: 28px;
     line-height: 36px;
+  }
+
+  .page-home .banner-home .banner-content p {
+    margin-bottom: 40px;
+    min-height: 120px;
+    width: 100%;
   }
 
   .section-service h3 {

@@ -2,21 +2,15 @@
 
 <body>
     <div class="banner-home">
-        <div class="container">
             <div id="particles"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <header class="banner-content">
-                        <h1 class="f700 text-white">We build applications that scale beyond reality</h1>
-                        <p class="typewrite text-white f18" data-period="2000"
-                            data-type='[ "A product and service based company with an energetic team of passionate, self-driven individuals building Mobile and Web applications.", "Innovation is at the core of everything we do. Its how we solve complex problems and stay at the forefront of technology.", "We celebrate what makes each of us unique and foster an inclusive workplace where everyone feels valued, respected, and empowered.", "Integrity is the foundation of our relationships, both within our teams and with our clients.", "We uphold the highest ethical standards and transparency in all our interactions." ]'>
-                            <span class="wrap"></span>
-                        </p>
-                        <a class="btn-arrow btn-white" href="contact">Let's scale</a>
-                    </header>
-                </div>
-            </div>
-        </div>
+            <header class="banner-content">
+                <h1 class="f700 text-white text-center">We build applications that scale beyond reality</h1>
+                <p class="typewrite text-white text-center f18" data-period="3000"
+                    data-type='[ "A product and service based company with an energetic team of passionate, self-driven individuals building Mobile and Web applications.", "Innovation is at the core of everything we do. Its how we solve complex problems and stay at the forefront of technology.", "We celebrate what makes each of us unique and foster an inclusive workplace where everyone feels valued, respected, and empowered.", "Integrity is the foundation of our relationships, both within our teams and with our clients.", "We uphold the highest ethical standards and transparency in all our interactions." ]'>
+                    <span class="wrap"></span>
+                </p>
+                <a class="btn-arrow btn-white" href="contact">Let's scale</a>
+            </header>
     </div>
 
 
@@ -28,7 +22,7 @@
             this.toRotate = toRotate;
             this.el = el;
             this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
+            this.period = parseInt(period, 10) || 3000;
             this.txt = '';
             this.tick();
             this.isDeleting = false;
@@ -47,7 +41,7 @@
             this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
             const that = this;
-            let delta = 120 - Math.random() * 100;
+            let delta = 100 - Math.random() * 100;
 
             if (this.isDeleting) { delta /= 20; }
 
