@@ -1675,13 +1675,13 @@ lottie-player {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .our-culture .slider {
   display: flex;
-  width: 6250px;
+  width: 6240px;
   overflow: hidden;
   margin: auto;
   user-select: none;
@@ -2306,10 +2306,6 @@ lottie-player {
   .lottie-small-height {
     width: 300px;
     height: 200px;
-  }
-
-  .page-inner img {
-    margin-bottom: 30px;
   }
 
   .page-inner .even img {
