@@ -801,11 +801,12 @@
 
                     const value = +counter.getAttribute('limit');
                     const data = +counter.innerText;
+                    const timeout = value === 40 ? 30 : value === 100 ? 10 : 7;
 
                     const time = value / speed;
                     if (data < value) {
                         counter.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 10);
+                        setTimeout(animate, timeout);
                     } else {
                         counter.innerText = value;
                     }

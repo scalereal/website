@@ -344,10 +344,11 @@
                     const value = +counter.getAttribute('limit');
                     const data = +counter.innerText;
                     const time = value / speed;
+                    const timeout = value === 10 ? 50 : value === 35 ? 10 : 220;
 
                     if (data < value) {
                         counter.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 20);
+                        setTimeout(animate, timeout);
                     } else {
                         counter.innerText = value;
                     }
