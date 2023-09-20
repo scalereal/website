@@ -666,27 +666,45 @@ h3 {
 /* HOME PAGE
 -------------------------------------------------- */
 .page-home .banner-home {
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   position: relative;
   z-index: 1;
-  background: url("../images/banner-home.webp") no-repeat center top;
-  background-size: cover;
+  background-color: #0eccd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.page-home .banner-home #particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .page-home .banner-home .banner-content {
-  position: absolute;
-  top: 180px;
-  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .page-home .banner-home .banner-content h1 {
-  font-size: 40px;
+  font-size: 46px;
   line-height: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .page-home .banner-home .banner-content p {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  min-height: 100px;
+  width: 80%;
 }
 
 /* Section service */
@@ -818,7 +836,7 @@ h3 {
   padding: 20px;
   position: relative;
   border: none;
-  filter: grayscale(1);
+  filter: grayscale(0);
   overflow: hidden;
 }
 
@@ -1450,6 +1468,16 @@ h3 {
 }
 
 /* Section blog */
+.section-blog .blog-stats {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.section-blog .blog-stats span {
+  font-size: 36px;
+  line-height: 52px;
+}
+
 .section-cta {
   padding: 50px;
   font-size: 36px;
@@ -1636,6 +1664,65 @@ lottie-player {
   padding-top: 45px;
 }
 
+/* PAGE COMPANY */
+
+@keyframes imageScrollX {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.our-culture .image-slider {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.our-culture .slider {
+  display: flex;
+  width: 6240px;
+  overflow: hidden;
+  margin: auto;
+  user-select: none;
+}
+
+.our-culture .slider-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+  animation: imageScrollX 80s linear infinite;
+}
+
+.our-culture .slider-group-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  width: 100%;
+  animation: imageScrollX 80s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+.our-culture .team-image-group {
+  display: grid;
+  place-items: center;
+}
+
+.our-culture .team-image {
+  border-radius: 8px;
+  padding: 0 4px;
+}
+
 /* PAGE CONTACT
 -------------------------------------------------- */
 .page-contact .section-contact {
@@ -1735,7 +1822,7 @@ lottie-player {
   }
 }
 
-.marquee-container {
+.about-client .marquee-container {
   overflow-x: hidden;
 }
 
@@ -2026,22 +2113,24 @@ lottie-player {
   }
 
   .page-home .banner-home {
-    background: #0eccd8;
-    min-height: auto;
-    padding-bottom: 70px;
+    min-height: fit-content;
+    padding: 80px 0;
   }
 
   .page-home .banner-home .banner-content {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-top: 60px;
+    width: 80%;
   }
 
   .page-home .banner-home .banner-content h1,
   .heading h1 {
     font-size: 28px;
     line-height: 36px;
+  }
+
+  .page-home .banner-home .banner-content p {
+    margin-bottom: 40px;
+    min-height: 120px;
+    width: 100%;
   }
 
   .section-service h3 {
@@ -2222,10 +2311,6 @@ lottie-player {
   .lottie-small-height {
     width: 300px;
     height: 200px;
-  }
-
-  .page-inner img {
-    margin-bottom: 30px;
   }
 
   .page-inner .even img {

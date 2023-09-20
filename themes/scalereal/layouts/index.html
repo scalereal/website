@@ -462,10 +462,29 @@
                                 feel free to contribute.
                             </p>
                         </header>
-                        <div class="text-center">
-                            <a href="/blogs" class="btn-arrow btn-black">See all articles</a>
+                    </div>
+                </div>
+
+                <section class="blog-stats bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 text-black text-center"><span class="f700 stat-value"
+                                    limit=40>0</span><span class="f700">K+</span>
+                                <p class="text-black">Readers</p>
+                            </div>
+                            <div class="col-md-4 text-black text-center"><span class="f700 stat-value"
+                                    limit=100>0</span><span class="f700">K+</span>
+                                <p class="text-black">Minutes Read</p>
+                            </div>
+                            <div class="col-md-4 text-black text-center"><span class="f700 stat-value"
+                                    limit=150>0</span><span class="f700">K+</span>
+                                <p class="text-black">Views</p>
+                            </div>
                         </div>
                     </div>
+                </section>
+                <div class="text-center">
+                    <a href="/blogs" class="btn-arrow btn-black">See all articles</a>
                 </div>
             </div>
         </section>
@@ -770,6 +789,49 @@
         new Vivus('mob-dev-svg', { type: 'sync', duration: 200 });
         new Vivus('devops-svg', { type: 'sync', duration: 200 });
         new Vivus('consult-svg', { type: 'sync', duration: 250 });
+        
+        const blogElement = document.querySelector('.blog-stats');
+        const counters = document.querySelectorAll('.stat-value');
+        const speed = 200;
+        let startAnimation = false;
+
+        function numberAnimation() {
+            counters.forEach(counter => {
+                const animate = () => {
+
+                    const value = +counter.getAttribute('limit');
+                    const data = +counter.innerText;
+                    const timeout = value === 40 ? 30 : value === 100 ? 10 : 7;
+
+                    const time = value / speed;
+                    if (data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate, timeout);
+                    } else {
+                        counter.innerText = value;
+                    }
+                }
+                animate();
+            });
+
+        }
+
+        function isScrolledIntoView(el) {
+            const rect = el.getBoundingClientRect();
+            const elemTop = rect.top;
+            const elemBottom = rect.bottom;
+            const isVisible = (elemTop >= 0) && (elemBottom - rect.height <= window.innerHeight);
+            if (isVisible && !startAnimation) {
+                numberAnimation();
+                startAnimation = true;
+            }else if(!isVisible) {
+                startAnimation = false;
+                 counters.forEach(counter => {
+                    counter.innerText = 0;
+                 })
+            }
+        }
+        document.addEventListener("scroll", () => { isScrolledIntoView(blogElement) })
     </script>
 </body>
 {{ partial "js" . }}
