@@ -666,10 +666,14 @@ h3 {
 /* HOME PAGE
 -------------------------------------------------- */
 .page-home .banner-home {
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   position: relative;
   z-index: 1;
   background-color: #0eccd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
 }
 
 .page-home .banner-home #particles {
@@ -2109,7 +2113,8 @@ lottie-player {
   }
 
   .page-home .banner-home {
-    height: 65vh;
+    min-height: fit-content;
+    padding: 80px 0;
   }
 
   .page-home .banner-home .banner-content {
