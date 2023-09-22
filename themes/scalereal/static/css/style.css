@@ -1955,7 +1955,9 @@ lottie-player {
   }
 
   .page-home .banner-home .banner-content p {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    min-height: 120px;
+    width: 100%;
   }
 
   .box {
