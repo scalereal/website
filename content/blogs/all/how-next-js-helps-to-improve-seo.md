@@ -12,7 +12,7 @@ tags:
 author: Prathamesh Gunde
 image: /images/blog/banner/how-nextjs-helps-to-improve-seo.webp
 thumbnail: https://via.placeholder.com/150
-url: android/2022/04/12/how-nextjs-helps-to-improve-seo.html
+url: web/2022/04/12/how-nextjs-helps-to-improve-seo.html
 ---
 
 While working on one of our projects at [ScaleReal](https://scalereal.com/), I came across some accessibility issues. Our web application was not easily accessible through the organic search engine results. When I checked the **accessibility** and **SEO** ratings of Lighthouse, it wasn’t really good. So, I decided to deep dive into the SEO section and found interesting features that Next.js provides. In this article, we will see why SEO is important and how Next.js helps to improve it.
