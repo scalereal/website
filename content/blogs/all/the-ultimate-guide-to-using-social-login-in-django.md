@@ -5,10 +5,10 @@ date: 2022-12-22
 categories:
   - backend
 tags:
-  - Celery
+  - Social Login
+  - Google
+  - Facebook
   - Django
-  - Message Queue
-  - Python
 author: Akash Shrivastava
 image: /images/blog/banner/the-ultimate-guide-to-using-social-login-in-django.webp
 thumbnail: https://via.placeholder.com/150
