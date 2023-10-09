@@ -5,11 +5,11 @@ date: 2022-10-20
 categories:
   - web
 tags:
-  - Performance Reviews
-  - 360 Degree Feedback
-  - HR
-  - Feedback Culture
-  - Employee Performance
+  - Okta
+  - AWS S3
+  - React JS
+  - OpenID Connect
+  - File Upload
 author: Pradip Bhusnar
 image: /images/blog/banner/manage-aws-s3-files-in-react-front-end-with-the-help-of-okta-securely.webp
 thumbnail: https://via.placeholder.com/150
