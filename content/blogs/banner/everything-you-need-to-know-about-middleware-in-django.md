@@ -11,7 +11,7 @@ author: Akash Shrivastava
 image: /images/blog/banner/everything-you-need-to-know-about-middleware-in-django.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/07/15/everything-you-need-to-know-about-middleware-in-django.html
-blog_place: popular
+blog_place: banner
 ---
 
 Hey, there fellow Djangomers and Pythonistas,
