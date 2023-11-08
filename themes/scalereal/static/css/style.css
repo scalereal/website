@@ -2920,7 +2920,9 @@ lottie-player {
   padding: 20px;
   display: flex;
   text-align: center;
-  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   transition: all 1s ease;
 }
 
@@ -2940,9 +2942,19 @@ lottie-player {
   .remove-bottom-border {
     border-bottom: 1px solid transparent;
   }
+  .d-card-none {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+
+  .top-border {
+    border-top: 2px solid #cccbcb;
+  }
+  .bottom-border {
+    border-bottom: 2px solid #cccbcb;
+  }
 
   .remove-left_border_mobile {
     border-left: 1px solid transparent;
