@@ -2893,3 +2893,88 @@ lottie-player {
 .section-info {
   margin-bottom: 40px;
 }
+
+.board {
+  display: grid;
+  position: relative;
+  z-index: 99;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-template-columns: 180px 180px;
+
+  height: 800px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  transition: z-index 1s ease, height 1s ease;
+
+  @media only screen and (min-width: 576px) {
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 180px 180px 180px;
+   height: 500px;
+
+  }
+}
+
+.board_tile {
+  border: 1px solid #cccbcb;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+@media only screen and (min-width: 576px) {
+  .remove-left-border {
+    border-left: 1px solid transparent;
+  }
+  
+  .remove-right-border {
+    border-right: 1px solid transparent;
+  }
+  
+  .remove-top-border {
+    border-top: 1px solid transparent;
+  }
+  
+  .remove-bottom-border {
+    border-bottom: 1px solid transparent;
+  }
+  .d-card-none {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .top-border {
+    border-top: 2px solid #cccbcb;
+  }
+  .bottom-border {
+    border-bottom: 2px solid #cccbcb;
+  }
+
+  .remove-left_border_mobile {
+    border-left: 1px solid transparent;
+  }
+  .remove-right_border_mobile {
+    border-right: 1px solid transparent;
+  }
+}
+
+
+
+.paymewnt-image {
+  object-fit: scale-down;
+}
+
+.fit-content {
+  width: fit-content;
+}
+.card-image {
+  width: 275px;
+  height: 252px;
+  margin-top: 35px;
+}
