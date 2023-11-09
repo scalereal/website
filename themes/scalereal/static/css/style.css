@@ -2916,7 +2916,6 @@ lottie-player {
 }
 
 .board_tile {
-  border: 1px solid #cccbcb;
   padding: 20px;
   display: flex;
   text-align: center;
@@ -2924,11 +2923,17 @@ lottie-player {
   justify-content: center;
   align-items: center;
   transition: all 1s ease;
+  border: 1px solid #cccbcb;
+
 }
 
 @media only screen and (min-width: 576px) {
+  
   .remove-left-border {
     border-left: 1px solid transparent;
+  }
+  .remove_border {
+    border: 1px solid transparent;
   }
   
   .remove-right-border {
@@ -2942,22 +2947,28 @@ lottie-player {
   .remove-bottom-border {
     border-bottom: 1px solid transparent;
   }
-  .d-card-none {
-    display: none;
-  }
 }
 
+
+
 @media only screen and (max-width: 576px) {
-
-  .top-border {
-    border-top: 2px solid #cccbcb;
-  }
-  .bottom-border {
-    border-bottom: 2px solid #cccbcb;
+  .last_element {
+    grid-column: span 2;
   }
 
+  .remove_right_bottom {
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
+  .border_tile_small {
+    border: 1px solid #cccbcb;
+  }
+ 
   .remove-left_border_mobile {
     border-left: 1px solid transparent;
+  }
+  .remove-bottom_border_mobile {
+    border-bottom: 1px solid transparent;
   }
   .remove-right_border_mobile {
     border-right: 1px solid transparent;

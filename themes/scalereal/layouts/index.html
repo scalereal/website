@@ -226,43 +226,43 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6 ml-lg-5 order-1 order-lg-0 ">
                         <div class="board">
-                            <div class="board_tile remove-left-border remove-top-border remove-left_border_mobile top-border">
+                            <div class="board_tile remove-left-border remove-top-border remove-left_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/paytm.svg" alt="paytm">
                             </div>
-                            <div class="board_tile remove-top-border remove-right_border_mobile top-border">
+                            <div class="board_tile remove-top-border remove-right-border remove-left-border remove-right_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/razorpay.svg" alt="razorpay">
                             </div>
-                            <div class="board_tile remove-right-border remove-top-border remove-left_border_mobile">
+                            <div class="board_tile remove-right-border remove-top-border remove-left_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/justpay.svg" alt="justpay">
                             </div>
-                            <div class="board_tile remove-left-border remove-right_border_mobile">
+                            <div class="board_tile remove-top-border remove-bottom-border remove-left-border remove-right_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/stripe.svg" alt="stripe">
                             </div>
-                            <div class="board_tile remove-left_border_mobile">
+                            <div class="board_tile remove_border remove-left_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image"  src="images/payment/phonepay.svg" alt="phonepay">
                             </div>
-                            <div class="board_tile remove-right-border remove-right_border_mobile">
+                            <div class="board_tile remove-top-border remove-bottom-border remove-right-border remove-right_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" class=" m-auto" src="images/payment/chargebee.svg" alt="chargebee">
                             </div>
-                            <div class="board_tile remove-left-border remove-bottom-border remove-left_border_mobile">
+                            <div class="board_tile remove-left-border remove-bottom-border remove-left_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/paypal.svg" alt="paypal">
                             </div>
-                            <div class="board_tile remove-bottom-border remove-right_border_mobile bottom-border">
+                            <div class="board_tile remove-right-border remove-left-border remove-bottom-border remove-right_border_mobile remove_right_bottom">
                                 <img class="paymewnt-image" src="images/payment/instamojo.svg" alt="instamojo">
                             </div>
-                            <div class="board_tile remove-right-border remove-bottom-border remove-left_border_mobile bottom-border">
+                            <div class="board_tile remove-right-border remove-bottom-border remove-left_border_mobile remove-right_border_mobile bottom-border last_element">
                                 <img class="paymewnt-image" src="images/payment/braintree.svg" alt="braintree">
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column col mx-lg-5 align-items-center align-items-lg-start box-content" >
+                    <div class="d-flex flex-column col mx-lg-5 mt-lg-3 align-items-center align-items-lg-start box-content" >
                         <div class="ml-md-4 d-flex text-lg-left text-center  flex-column align-items-center  align-items-lg-start">
                             <h2 class="f700 text-black">Seamless Payment Gateway Integration</h2>
                             <p class="f300 text-grey">We ensure that your business can accept payments effortlessly, giving your users a smooth and reliable transaction experience.</p>
-                            <a href="#" class="fit-content btn-arrow btn-black">Know more</a>
+                            <!-- <a href="#" class="fit-content btn-arrow btn-black">Know more</a> -->
                         </div>
                         <div class="">
-                            <lottie-player src="{{ "lottieFiles/payment_card.json" | absURL }}"  background="transparent" class="card-image"  speed="1" loop autoplay></lottie-player>  
+                            <lottie-player src="{{ "lottieFiles/animation_card.json" | absURL }}"  background="transparent" class="card-image"  speed="1" loop autoplay></lottie-player>  
                         </div>
                     </div>
                 </div>
@@ -879,6 +879,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section-cta bg-blue">
+            <p class="text-white">We'd love to help you scale.
+                <a class="btn-white f700" href="/contact">Let's
+                                                   talk</a>
+            </p>
         </section>
         {{ partial "footer" . }}
     </div>
