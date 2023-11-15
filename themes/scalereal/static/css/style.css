@@ -2534,6 +2534,21 @@ lottie-player {
   margin: 20px 0;
   padding: 0;
   justify-content: center;
+  position: relative;
+}
+.pagination >li {
+  position: relative;
+}
+
+.pagination >li >.seperator::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #cccbcb;
 }
 
 .underlineOnHover:hover {
