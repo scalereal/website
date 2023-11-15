@@ -2,11 +2,11 @@
 <ul class="actions pagination">
     {{ if .Paginator.HasPrev }}
         <li><a href="{{ .Paginator.Prev.URL }}"
-                class="button big previous underlineOnHover">Previous Page</a></li>
+                class="button big previous underlineOnHover seperator">Previous</a></li>
     {{ end }}
     &nbsp;&nbsp;&nbsp;
     {{ if .Paginator.HasNext }}
         <li><a href="{{ .Paginator.Next.URL }}"
-                class="button big next underlineOnHover">Next Page</a></li>
+                class="button big next underlineOnHover">Next</a></li>
     {{ end }}
 </ul>
