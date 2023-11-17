@@ -1797,10 +1797,15 @@ lottie-player {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #000;
 }
 
 .page-contact button span {
   border-bottom: 1px solid #000;
+}
+
+.page-contact button i {
+  color: #000;
 }
 
 .page-contact button:hover {
@@ -2542,11 +2547,11 @@ lottie-player {
   justify-content: center;
   position: relative;
 }
-.pagination >li {
+.pagination > li {
   position: relative;
 }
 
-.pagination >li >.seperator::after {
+.pagination > li > .seperator::after {
   content: "";
   display: block;
   position: absolute;
