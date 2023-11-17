@@ -1785,20 +1785,26 @@ lottie-player {
   height: 100%;
 }
 
-.page-contact input[type="submit"] {
+.page-contact button {
   background: transparent;
   border: none;
   font-size: 24px;
   line-height: 26px;
   font-weight: 700;
-  border-bottom: 1px solid #000;
-  margin-right: 10px;
   transition: all 500ms;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.page-contact input[type="submit"]:hover {
-  margin-right: 20px;
+.page-contact button span {
+  border-bottom: 1px solid #000;
+}
+
+.page-contact button:hover {
+  gap: 20px;
 }
 
 .page-contact .invalid-feedback {
@@ -2910,8 +2916,7 @@ lottie-player {
   @media only screen and (min-width: 576px) {
     grid-template-rows: 150px 150px 150px;
     grid-template-columns: 180px 180px 180px;
-   height: 500px;
-
+    height: 500px;
   }
 }
 
@@ -2924,32 +2929,28 @@ lottie-player {
   align-items: center;
   transition: all 1s ease;
   border: 1px solid #cccbcb;
-
 }
 
 @media only screen and (min-width: 576px) {
-  
   .remove-left-border {
     border-left: 1px solid transparent;
   }
   .remove_border {
     border: 1px solid transparent;
   }
-  
+
   .remove-right-border {
     border-right: 1px solid transparent;
   }
-  
+
   .remove-top-border {
     border-top: 1px solid transparent;
   }
-  
+
   .remove-bottom-border {
     border-bottom: 1px solid transparent;
   }
 }
-
-
 
 @media only screen and (max-width: 576px) {
   .last_element {
@@ -2963,7 +2964,7 @@ lottie-player {
   .border_tile_small {
     border: 1px solid #cccbcb;
   }
- 
+
   .remove-left_border_mobile {
     border-left: 1px solid transparent;
   }
@@ -2974,8 +2975,6 @@ lottie-player {
     border-right: 1px solid transparent;
   }
 }
-
-
 
 .paymewnt-image {
   object-fit: scale-down;
