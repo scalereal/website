@@ -3008,3 +3008,26 @@ lottie-player {
   height: 252px;
   margin-top: 35px;
 }
+
+
+.sub-Info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  margin: 0 0 10px;
+
+  @media only screen and (min-width: 600px) {
+    margin: 0 0 12px;
+  }
+
+  @media only screen and (min-width: 900px) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  @media only screen and (min-width: 992px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
