@@ -288,7 +288,7 @@
                                         aria-labelledby="backend-tab">
                                         <div class="row justify-content-md-center">
                                             <div class="col-lg-12">
-                                                <div class="d-flex flex-wrap justify-content-center">
+                                                <div class="d-flex flex-wrap justify-content-center techstack-desktop">
                                                     <div class="tech_container_card card bg-grey"
                                                         data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
                                                         <!-- <div class=""> -->
@@ -349,6 +349,73 @@
                                                 </div>
                                                 <div class="tech_container_card card bg-grey"
                                                     data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                    <img class="non-sprite-tech small nextjs m-auto"
+                                                        src="images/frontend/nextJS.svg" alt="nextjs" />
+                                                    <span class="tech_name mt-3">NextJS</span>
+                                                </div>
+                                                <div class="tech_container_card card bg-grey">
+                                                    <img class="non-sprite-tech vuejs m-auto"
+                                                        src="images/frontend/vueJS.png" alt="vuejs" />
+                                                    <span class="tech_name mt-3">VueJS</span>
+                                                </div>
+                                                </div>
+                                                <div class="d-flex flex-wrap justify-content-center techstack-mobile">
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <!-- <div class=""> -->
+                                                        <img class="non-sprite-tech m-auto"
+                                                            src="images/frontend/react.webp" alt="react" />
+                                                        <!-- </div> -->
+                                                        <span class="tech_name mt-3">React</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey">
+                                                        <img class="non-sprite-tech m-auto"
+                                                            src="images/backend/python.webp" alt="python" />
+                                                        <span class="tech_name mt-3">Python</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey"
+                                                        data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
+                                                            src="images/backend/golang.webp" alt="golang" />
+                                                        <span class="tech_name mt-3">Golang</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey">
+                                                        <img class="non-sprite-tech ruby m-auto"
+                                                            src="images/backend/ruby.png" alt="ruby" />
+                                                        <span class="tech_name mt-3">Ruby</span>
+                                                    </div>
+
+                                                    <div class="tech_container_card card bg-grey" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
+                                                            src="images/devops/aws.webp" alt="aws" />
+                                                        <span class="tech_name mt-3">AWS</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey">
+                                                        <img class="non-sprite-tech m-auto" src="images/mobile/ios.webp"
+                                                            alt="ios" />
+                                                        <span class="tech_name mt-3">iOS</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                        <img class="non-sprite-tech small m-auto"
+                                                            src="images/backend/kotlin.webp" alt="kotlin" />
+                                                        <span class="tech_name mt-3">Kotlin</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey">
+                                                        <img class="non-sprite-tech m-auto"
+                                                            src="images/mobile/android.webp" alt="android" />
+                                                        <span class="tech_name mt-3">Android</span>
+                                                    </div>
+                                                    <div class="tech_container_card card bg-grey" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
+                                                    <img class="non-sprite-tech m-auto"
+                                                        src="images/backend/supabase.svg" alt="supabase" />
+                                                    <span class="tech_name mt-3">Supabase</span>
+                                                </div>
+                                                <div class="tech_container_card card bg-grey">
+                                                    <img class="non-sprite-tech m-auto"
+                                                        src="images/frontend/react-native.webp" alt="react_native" />
+                                                    <span class="tech_name mt-3">React Native</span>
+                                                </div>
+                                                <div class="tech_container_card card bg-grey" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
                                                     <img class="non-sprite-tech small nextjs m-auto"
                                                         src="images/frontend/nextJS.svg" alt="nextjs" />
                                                     <span class="tech_name mt-3">NextJS</span>
@@ -939,6 +1006,7 @@
 
         function numberAnimation() {
             counters.forEach(counter => {
+                
                 const animate = () => {
 
                     const value = +counter.getAttribute('limit');
@@ -974,6 +1042,7 @@
             }
         }
         document.addEventListener("scroll", () => { isScrolledIntoView(blogElement) })
+
     </script>
 </body>
 {{ partial "js" . }}
