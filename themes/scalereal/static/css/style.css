@@ -1907,6 +1907,7 @@ lottie-player {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /*Large devices (desktops, less than 1200px)*/
+
 @media (min-width: 1200px) {
   .section-about .text-wrap {
     margin-right: 100px;
@@ -3034,5 +3035,25 @@ lottie-player {
   @media only screen and (min-width: 992px) {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .techstack-mobile {
+      display: none !important;
+  }
+
+  .techstack-desktop {
+      display: flex !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .techstack-mobile {
+      display: flex !important;
+  }
+
+  .techstack-desktop {
+      display: none !important;
   }
 }
