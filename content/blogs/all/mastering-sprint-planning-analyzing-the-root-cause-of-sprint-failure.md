@@ -37,8 +37,6 @@ What do I mean by that? 🤔
 
 Let me try to explain to you with an example.
 
-&nbsp;
-
 Assuming your software development team is following a 2 weeks sprint ⏳…
 
 Ideally, your team should have a development time of **80 hours ⏰ per sprint,** considering 10 working days and 8 working hours each day.
@@ -97,8 +95,6 @@ Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
 * **Frequent change requirements** added during the sprint can cause spillover and incomplete work.
 * **Inadequate user research** can lead to building the wrong features and poor user experience.
 * **Insufficient attention to process improvement** can lead to significant rework and additional development time and cost.
-
-&nbsp;
 
 ## Thank you for reading!! 🙏
 
