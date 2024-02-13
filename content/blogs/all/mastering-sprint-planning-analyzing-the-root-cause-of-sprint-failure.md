@@ -18,9 +18,15 @@ url: project-management/2024/02/12/mastering-sprint-planning-analyzing-the-root-
 
 We all know that Sprints are essential to agile software development since they help teams break down large projects into manageable chunks.
 
+&nbsp;
+
 Each sprint has a fixed duration, usually between 1— 4 weeks ⏳, and at the end of each sprint, the team holds a review to assess their progress and plan the next sprint.
 
+&nbsp;
+
 But before planning the next sprint it’s crucial to know if your previous sprint has failed or succeeded.
+
+&nbsp;
 
 * Did the team meet the sprint goal?
 * Did the team deliver the expected value?
@@ -29,25 +35,39 @@ But before planning the next sprint it’s crucial to know if your previous spri
 * Was the team able to collaborate effectively?
 * Did the team receive feedback from stakeholders?
 
+&nbsp;
+
 There could be many reasons why a sprint failed, but one of the most common reasons I have seen is 💡…
 
 > **_Lack of understanding of the actual development time available in a particular sprint, by the Project Managers and by the Stakeholders.._**
 
 What do I mean by that? 🤔
 
+&nbsp;
+
 Let me try to explain to you with an example.
+
+&nbsp;
 
 Assuming your software development team is following a 2 weeks sprint ⏳…
 
+&nbsp;
+
 Ideally, your team should have a development time of **80 hours ⏰ per sprint,** considering 10 working days and 8 working hours each day.
 
+&nbsp;
+
 With this assumption, most of the Project Managers or the Stakeholders pick up stories/tasks worth 80 hours of development (per sprint) and assign them to the development team, expecting them to finish their work by the end of the sprint. ❌
+
+&nbsp;
 
 So what’s wrong here? 🤦‍♂️
 
 > **_Project Managers and Stakeholders usually forget about the time taken for additional Agile Ceremonies which occurs during the sprint._**
 
 What are these additional agile ceremonies and how much of your development time does it take?
+
+&nbsp;
 
 * **Daily Standup — 15 mins** (_does it ever finish on time?_ 😞)
 * **Story Kick-Off — 15 mins** (_sometimes needed for clarifying user stories_ 🚀)
@@ -60,21 +80,31 @@ What are these additional agile ceremonies and how much of your development time
 * **Communication — 30mins** (_ad-hoc chat/calls/meetings with team members or stakeholders on the official communication channel_ 💬)
 * **DevBox Testing — 15 mins** (_done by developer and QA on developer’s local machine for early identification and resolution of bugs and issues_ 🐞)
 
+&nbsp;
+
 Based on the above-mentioned agile ceremonies and their respective time, and also considering some of the above ceremonies don’t have to be performed on all the 10 days of the 2-week sprint, here is a **rough calculation:**
 
 ![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ZKnsrHP1jYYz0Fyz4xmq6A.png)
 
 As per the above calculation, a developer spends around **15 hours on agile ceremonies out of 80 hours of development.**
 
+&nbsp;
+
 Note — Not necessary that every company or project might have these above agile ceremonies, so you can consider the above timings based on the processes you follow.
 
+&nbsp;
+
 Assuming most of the developers can’t be 100% productive during those 8 hours of working (maybe because of various distractions, calls, meetings, etc) plus they might need a few hours for bug fixes, etc, **I think it’s safe to say that we can have only around 60 hours of productive development time in a 2 weeks sprint.**
+
+&nbsp;
 
 **So let’s ensure you set your next sprint expectations right to help your agile teams stay focused and deliver high-quality work quickly.**
 
 &nbsp;
 
 Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
+
+&nbsp;
 
 * **Poorly defined user stories** can lead to confusion, assumptions, and incomplete features.
 * **Poor communication** within the team or with stakeholders can lead to misunderstandings and a lack of progress.
@@ -95,6 +125,8 @@ Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
 * **Frequent change requirements** added during the sprint can cause spillover and incomplete work.
 * **Inadequate user research** can lead to building the wrong features and poor user experience.
 * **Insufficient attention to process improvement** can lead to significant rework and additional development time and cost.
+
+&nbsp;
 
 ## Thank you for reading!! 🙏
 

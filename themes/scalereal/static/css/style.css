@@ -118,6 +118,10 @@ section {
   color: #666;
 }
 
+.text-black-blog, li {
+  color: #242424;
+}
+
 a.text-grey:hover {
   border-bottom: 1px solid #666;
   color: #666;
@@ -2464,7 +2468,8 @@ lottie-player {
 }
 
 .article-content {
-  line-height: 2.4rem;
+  line-height: 2rem;
+  font-size: 20px;
 }
 .article-content pre {
   background-color: #ececec;
@@ -2476,6 +2481,7 @@ lottie-player {
 .article-content h2 {
   font-weight: 700;
   margin-top: 2.2rem;
+  margin: 0;
 }
 .article-content h3 {
   font-weight: 700;
@@ -2487,6 +2493,39 @@ lottie-player {
   opacity: 1;
   margin-top: 2.2rem;
   font-size: 1.3rem;
+}
+
+@media (max-width: 767.98px) {
+  .article-content h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .article-content h3 { 
+    margin-top: 2.2rem;
+  }
+
+  .article-content h3 { 
+    margin-top: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-content h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 5rem;
+  }
+
+  .article-content h3 { 
+    margin-top: 0;
+    line-height: 5rem;
+  }
+
+  .article-content h3 { 
+    margin-top: 0;
+    line-height: 5rem;
+  }
 }
 
 .article-content img {
