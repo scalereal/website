@@ -2661,6 +2661,7 @@ lottie-player {
   word-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  height: 72px;
 }
 .popular-reads-section .banner-img {
   width: 97%;
@@ -2711,11 +2712,11 @@ lottie-player {
 
 @media only screen and (min-width: 767px) {
   .all-list-section h3 {
-    height: 70px;
+    height: 72px;
   }
 
   .popular-list-section h3 {
-    height: 70px;
+    height: 72px;
   }
 }
 
@@ -2748,10 +2749,10 @@ lottie-player {
     left: 14px;
   }
   .all-list-section h3 {
-    max-height: 70px;
+    max-height: 72px;
   }
   .popular-list-section h3 {
-    max-height: 70px;
+    max-height: 72px;
   }
   .popular-reads-section .sub-text {
     margin-bottom: 25px;
@@ -3095,4 +3096,12 @@ lottie-player {
   .techstack-desktop {
       display: none !important;
   }
+}
+
+.container.blog-view {
+  max-width: 840px;
+}
+
+.article-row strong {
+  font-weight: 600;
 }
