@@ -17,7 +17,7 @@
       </div>
     </div> -->
 
-    <div class="container">
+    <div class="container blog-view">
       <section class="back-link-section">
         <a class="back-link" href="/blogs">
           <span class="line">
@@ -28,28 +28,32 @@
         <!-- <a href="/blogs" class="btn-arrow btn-black">Back</a> -->
       </section>
 
+      <div class="row article-row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-11">
 
-      <h2 class="f700 text-black">{{ .Title }}</h2>
+          <h2 class="f700 text-black-blog">{{ .Title }}</h2>
 
-      <div class="writer-wrap d-flex">
-        <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
-        <div class="writer-name-wrap">
-          <h5 class="writer-name">{{.Params.author}}</h5>
-          <p class="time">
-            <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
-              {{(.Params.date).Format "January 2, 2006"}}
-            </time>
-          </p>
+          <div class="writer-wrap d-flex">
+            <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
+            <div class="writer-name-wrap">
+              <h5 class="writer-name">{{.Params.author}}</h5>
+              <p class="time">
+                <time datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'>
+                  {{(.Params.date).Format "January 2, 2006"}}
+                </time>
+              </p>
+            </div>
+          </div>
+
+          <section class="banner-section">
+            <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
+            <p class="img-source">{{.Params.sourceTitle}} <a href={{.Params.link}} target="_blank">{{.Params.source}}</a></p>
+          </section>
         </div>
       </div>
-
-      <section class="banner-section">
-        <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-        <p class="img-source">{{.Params.sourceTitle}} <a href={{.Params.link}} target="_blank">{{.Params.source}}</a></p>
-      </section>
-
-
-      <div class="row">
+      <div class="row article-row">
         <div class="col-md-1">
           <div class="share-wrap">
             <p class="share-on">Share on</p>
@@ -62,23 +66,25 @@
               <li><a href="https://www.facebook.com/sharer/sharer.php?href={{ .Permalink }}" target="_blank" rel="noreferrer" class="text-grey"><i
                         class="flaticon-facebook"></i></a></li>
               <!-- <li><a href="https://i.instagram.com?href={{ .Permalink }}" target="_blank" title="Instagram"
-                  class="text-grey"><i class="flaticon-instagram"></i></a></li> -->
+                  class="text-grey"><i class="flaticon-instagram"></i></a></li>  -->
             </ul>
           </div>
         </div>
+      
 
-        <div class="col-md-10">
+        <div class="col-md-11">
           <section class="section-articles">
             <article class="article">
               <!-- {{ .Render "feature-img" }} -->
-             
+            
               <div class="article-content">
-                {{ .Content | replaceRE "<p>" "<p class=\"text-grey\">" | safeHTML}}
+                {{ .Content | replaceRE "<p>" "<p class=\"text-black-blog\">" | safeHTML}}
               </div>
               {{/*  {{ .Render "footer-category" }} */}}
           </section>
         </div>
       </div>
+      
     </div>
   </div>
   </div>
