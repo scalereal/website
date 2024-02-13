@@ -1,7 +1,7 @@
 ---
 title: Mastering Sprint planning Analyzing the root cause of sprint failure
 description: In this article, we understand mastering sprint planning and analyzing the root cause of sprint failure.
-date: 2024-02-12
+date: 2024-02-13
 categories:
   - project management 
 tags:
@@ -13,7 +13,7 @@ tags:
 author: Atul Shashikumar
 image: /images/blog/banner/mastering-sprint-planning-analyzing-the-root-cause-of-sprint-failure.webp
 thumbnail: https://via.placeholder.com/150
-url: project-management/2024/02/12/mastering-sprint-planning-analyzing-the-root-cause-of-sprint-failure.html
+url: project-management/2024/02/13/mastering-sprint-planning-analyzing-the-root-cause-of-sprint-failure.html
 ---
 
 We all know that Sprints are essential to agile software development since they help teams break down large projects into manageable chunks.
