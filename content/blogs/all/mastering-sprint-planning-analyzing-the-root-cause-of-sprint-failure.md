@@ -26,16 +26,12 @@ Each sprint has a fixed duration, usually between 1— 4 weeks ⏳, and at the e
 
 But before planning the next sprint it’s crucial to know if your previous sprint has failed or succeeded.
 
-&nbsp;
-
 * Did the team meet the sprint goal?
 * Did the team deliver the expected value?
 * Was the sprint completed on time?
 * Were there any major issues or obstacles during the sprint?
 * Was the team able to collaborate effectively?
 * Did the team receive feedback from stakeholders?
-
-&nbsp;
 
 There could be many reasons why a sprint failed, but one of the most common reasons I have seen is 💡…
 
@@ -67,8 +63,6 @@ So what’s wrong here? 🤦‍♂️
 
 What are these additional agile ceremonies and how much of your development time does it take?
 
-&nbsp;
-
 * **Daily Standup — 15 mins** (_does it ever finish on time?_ 😞)
 * **Story Kick-Off — 15 mins** (_sometimes needed for clarifying user stories_ 🚀)
 * **Sprint Grooming — 45 mins** (_review and refine the Product Backlog items, prioritize and estimate them_ 📝)
@@ -79,8 +73,6 @@ What are these additional agile ceremonies and how much of your development time
 * **Brainstorming Session — 45 mins** (_if any team member is stuck with complex flows or edge cases or needs some help_ 🧠)
 * **Communication — 30mins** (_ad-hoc chat/calls/meetings with team members or stakeholders on the official communication channel_ 💬)
 * **DevBox Testing — 15 mins** (_done by developer and QA on developer’s local machine for early identification and resolution of bugs and issues_ 🐞)
-
-&nbsp;
 
 Based on the above-mentioned agile ceremonies and their respective time, and also considering some of the above ceremonies don’t have to be performed on all the 10 days of the 2-week sprint, here is a **rough calculation:**
 
@@ -104,8 +96,6 @@ Assuming most of the developers can’t be 100% productive during those 8 hours 
 
 Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
 
-&nbsp;
-
 * **Poorly defined user stories** can lead to confusion, assumptions, and incomplete features.
 * **Poor communication** within the team or with stakeholders can lead to misunderstandings and a lack of progress.
 * **Insufficient planning** can result in inaccurate estimates and missed deadlines.
@@ -125,8 +115,6 @@ Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
 * **Frequent change requirements** added during the sprint can cause spillover and incomplete work.
 * **Inadequate user research** can lead to building the wrong features and poor user experience.
 * **Insufficient attention to process improvement** can lead to significant rework and additional development time and cost.
-
-&nbsp;
 
 ## Thank you for reading!! 🙏
 
