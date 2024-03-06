@@ -3088,3 +3088,123 @@ lottie-player {
 .article-content li:last-child {
   margin-bottom: 2.14rem;
 }
+
+.average-star svg {
+  margin-bottom: 20px;
+}
+
+.main-feedback {
+  max-width: 620px;
+  border-radius: 8px;
+}
+.feedback-container {
+  margin-top: 95px;
+}
+
+.colored-dots {
+  display: block;
+  background: #EEEEEE;
+  text-align: start;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  border: 1px solid #D9D9D9;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.feedback-card {
+  padding: 20px 20px 0 20px;
+  border: 1px solid #D9D9D9;
+  border-top: none;
+}
+
+.feedback-card:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.feedback-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-avatar .avatar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar-first {
+  background-color: #886F65;
+}
+
+.avatar-second {
+  background-color: #594139;
+}
+
+.avatar-third {
+  background-color: #4B33A2;
+}
+
+.avatar-fourth {
+  background-color: #5E6CBA;
+}
+.avatar-fifth {
+  background-color: #1E4C41;
+}
+.avatar-sixth {
+  background-color: #3987CB;
+}
+.avatar-seventh {
+  background-color: #886F65;
+}
+
+.feedback-details {
+  padding: 20px 0px 20px 51px;
+}
+
+.feedback-mobile {
+  overflow: hidden;
+}
+
+.feedback-mobile .owl-dots {
+  text-align: center
+}
+
+.feedback-mobile .feedback-card {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .feedback-mobile {
+      display: none !important;
+  }
+
+  .feedback-desktop {
+      display: flex !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .feedback-container {
+    margin-top: 0;
+  }
+
+  .feedback-subtitle {
+    padding: 0 20px;
+  }
+
+  .feedback-mobile {
+      display: flex !important;
+  }
+
+  .feedback-desktop {
+      display: none !important;
+  }
+}
