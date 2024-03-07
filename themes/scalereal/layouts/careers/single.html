@@ -5,6 +5,10 @@
 {{ $.Scratch.Set "projects" true }}
 {{ partial "head.html" . }}
 
+<head>
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
+</head>
+
 <body>
     {{ partial "nav" . }}
     <div class="page-inner page-projects">
@@ -216,7 +220,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-md-center feedback-container feedback-desktop">
-                    <div class="side-image1">
+                    <div class="side-image1" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
                         <div class="side-image-container1">
                             <p class="f400 text-grey side-review-text">Good company to work with. You will learn a lot. I had a great experience in working with Scalereal.</p>
                         </div>
@@ -228,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="side-image2">
+                    <div class="side-image2" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
                         <div class="side-image-container2">
                             <p class="f400 text-grey side-review-text">Strong commitment to employee growth and development, Collaborative and innovative work environment, Meaningful community engagement initiatives, Excellent work-life balance and flexibility, Heaven for freshers, Management is too supportive.</p>
                         </div>
@@ -240,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="side-image3">
+                    <div class="side-image3" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
                         <div class="side-image-container3">
                             <p class="f400 text-grey side-review-text">I have been working here for more than 2.5 years. Amazing work culture. Both professional and personal growth is exponential here. Great place to work.</p>
                         </div>
@@ -252,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="side-image4">
+                    <div class="side-image4" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
                         <div class="side-image-container4">
                             <p class="f400 text-grey side-review-text">Team is great and helping in every aspect. Good company to kick-start your career with.</p>
                         </div>
@@ -264,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-lg-7">
                         <div class="main-feedback">
                             <i class="colored-dots">
                                 <svg width="43" height="11" viewBox="0 0 43 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +320,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-md-center feedback-container feedback-mobile">
-                    <div class="col-lg-6">
+                    <div class="col-md-9">
                         <div class="owl-one owl-carousel">
                             <div class="feedback-card">
                                 <div class="feedback-avatar">
@@ -2357,6 +2361,9 @@
 
     </div>
     {{ partial "footer" . }}
+
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
 
 </body>
 {{ partial "js" . }}

@@ -3104,13 +3104,15 @@ lottie-player {
   width: 164px;
 }
 
-.full-star {
+.full-star, .owl-carousel .owl-item img.full-star {
   width: 95px;
 }
 
 .main-feedback {
+  position: relative;
   max-width: 620px;
   border-radius: 8px;
+  z-index: -1;
 }
 
 .feedback-container {
@@ -3127,10 +3129,6 @@ lottie-player {
   border: 1px solid #D9D9D9;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-.feedback-name {
-  line-height: 1;
 }
 
 .feedback-card {
@@ -3211,7 +3209,7 @@ lottie-player {
   font-size: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1023.99px) {
   .feedback-mobile {
       display: none !important;
   }
@@ -3221,7 +3219,7 @@ lottie-player {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1023.98px) {
   .feedback-container {
     margin-top: 0;
   }
