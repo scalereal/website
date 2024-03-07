@@ -3124,8 +3124,9 @@ lottie-player {
   display: block;
   background: #EEEEEE;
   text-align: start;
+  height: 30px;
   padding-left: 10px;
-  padding-bottom: 6px;
+  padding-top: 2px;
   border: 1px solid #D9D9D9;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
