@@ -3098,6 +3098,7 @@ lottie-player {
   border-radius: 8px;
 }
 .feedback-container {
+  position: relative;
   margin-top: 95px;
 }
 
@@ -3181,6 +3182,15 @@ lottie-player {
   border: none;
 }
 
+.feedback-desktop .avatar-fourth, .feedback-desktop .avatar-fifth, .feedback-desktop .avatar-sixth, .feedback-desktop .avatar-seventh {
+  width: 50px;
+  height: 48px;
+}
+
+.feedback-desktop .avatar-text.avatar-fourth, .feedback-desktop .avatar-text.avatar-fifth, .feedback-desktop .avatar-text.avatar-sixth, .feedback-desktop .avatar-text.avatar-seventh {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
   .feedback-mobile {
       display: none !important;
@@ -3207,4 +3217,105 @@ lottie-player {
   .feedback-desktop {
       display: none !important;
   }
+}
+
+.side-image-container1 {
+  position: relative;
+  width: 337px;
+  height: 132px;
+  background: url("../images/reviews/message1.png") center/cover no-repeat;;
+  display: flex;
+  justify-content: center;
+  left: -83px;
+  z-index: 1;
+}
+
+.side-image1 {
+  position: absolute;
+  top: 120px;
+  left: 64px;
+}
+
+.side-image1 .side-review-text {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+.side-image-container2 {
+  position: relative;
+  width: 379px;
+  height: 300.5px;
+  background: url("../images/reviews/message2.png") center/contain no-repeat;
+  display: flex;
+  justify-content: center;
+  left: -83px;
+  z-index: 1;
+}
+
+.side-image2 {
+  position: absolute;
+  top: 295px;
+  left: -17px;
+}
+
+.side-image-container2 .side-review-text {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 67px;
+  padding-right: 18px;
+}
+
+.side-image2 .side-feedback-avatar {
+  position: relative;
+  top: -42px;
+  left: 38px;
+}
+
+.side-image-container3 {
+  position: relative;
+  width: 350px;
+  height: 160px;
+  background: url("../images/reviews/message3.png") center/contain no-repeat;;
+  display: flex;
+  justify-content: center;
+  left: -142px;
+  z-index: 1;
+}
+
+.side-image3 {
+  position: absolute;
+  top: -58px;
+  right: -100px;
+}
+
+.side-image3 .side-review-text {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.side-image-container4 {
+  position: relative;
+  width: 324px;
+  height: 150px;
+  background: url("../images/reviews/message4.png") center/contain no-repeat;;
+  display: flex;
+  justify-content: center;
+  top: 8px;
+  left: -107px;
+  z-index: 1;
+}
+
+.side-image4 {
+  position: absolute;
+  top: 381px;
+  right: -121px;
+}
+
+.side-image4 .side-review-text {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 28px;
 }
