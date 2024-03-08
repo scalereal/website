@@ -3095,13 +3095,17 @@ lottie-player {
 
 @media (max-width: 767.98px) {
   .section-our-teams-voice {
-      padding: 55px 0 0 0;
+    padding: 55px 0 0 0;
   }
-}
 
-.average-star {
-  margin-bottom: 20px;
-  width: 150px;
+  .section-open-position {
+    padding-top: 80px;
+  }
+
+  .section-client .owl-carousel .owl-dots {
+    margin-top: 4px;
+  }
+
 }
 
 .full-star, .owl-carousel .owl-item img.full-star {
@@ -3353,12 +3357,10 @@ lottie-player {
   z-index: 1;
 }
 
-@media (max-width: 374.98px) {
-  .feedback-mobile .owl-carousel .owl-stage .owl-item {
-    height: 440px;
-  }
-}
-
 .feedback-mobile .feedback-name {
   margin-bottom: 4px;
+}
+
+.feedback-mobile  .owl-carousel .owl-dots {
+  margin-top: -2px;
 }
