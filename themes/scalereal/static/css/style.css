@@ -3338,3 +3338,18 @@ lottie-player {
   padding-left: 25px;
   padding-top: 28px;
 }
+
+.feedback-mobile .owl-carousel {
+    width: 100%;
+}
+
+.feedback-mobile .owl-carousel .owl-stage .owl-item {
+  position: relative;
+  background: #fff;
+  height: 324px;
+}
+
+.feedback-mobile .owl-carousel .owl-stage .owl-item.active {
+  position: relative;
+  z-index: 1;
+}
