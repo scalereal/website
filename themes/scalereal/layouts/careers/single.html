@@ -5,6 +5,10 @@
 {{ $.Scratch.Set "projects" true }}
 {{ partial "head.html" . }}
 
+<head>
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
+</head>
+
 <body>
     {{ partial "nav" . }}
     <div class="page-inner page-projects">
@@ -199,6 +203,218 @@
                         <p class="text-grey">No daily commute to the office, more time with your loved ones, fewer distractions. Work from where you want and focus on what really matters—PERFORMANCE.</p>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <section class="section-our-teams-voice">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-9">
+                        <header class="heading content-center">
+                            <h1 class="f700 text-black">Our team's voice</h1>
+                            <img src="{{ "images/reviews/average-star.png" | absURL }}" class="mb-3 average-star" />
+                            <p class="text-grey feedback-subtitle">Step into the shoes of our team members and experience our company culture firsthand through their Google reviews. Discover why they choose to build their careers with us.
+                            </p>
+                        </header>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center feedback-container feedback-desktop">
+                    <div class="side-image1" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
+                        <div class="side-image-container1">
+                            <p class="f400 text-grey side-review-text">Good company to work with. You will learn a lot. I had a great experience in working with Scalereal.</p>
+                        </div>
+                        <div class="feedback-avatar feedback-desktop side-feedback-avatar">
+                            <span class="f700 avatar-text avatar-fourth">N</span>
+                            <div>
+                            <p class="f700 text-black feedback-name">Nivedita Singh</p>
+                            <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-image2" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
+                        <div class="side-image-container2">
+                            <p class="f400 text-grey side-review-text">Strong commitment to employee growth and development, Collaborative and innovative work environment, Meaningful community engagement initiatives, Excellent work-life balance and flexibility, Heaven for freshers, Management is too supportive.</p>
+                        </div>
+                        <div class="feedback-avatar feedback-desktop side-feedback-avatar">
+                            <span class="f700 avatar-text avatar-fifth">R</span>
+                            <div>
+                                <p class="f700 text-black feedback-name">Ronak Singh</p>
+                                <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-image3" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
+                        <div class="side-image-container3">
+                            <p class="f400 text-grey side-review-text">I have been working here for more than 2.5 years. Amazing work culture. Both professional and personal growth is exponential here. Great place to work.</p>
+                        </div>
+                        <div class="feedback-avatar feedback-desktop side-feedback-avatar">
+                            <span class="f700 avatar-text avatar-sixth">P</span>
+                            <div>
+                                <p class="f700 text-black feedback-name">Prathamesh Gunde</p>
+                                <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-image4" data-anijs="if: scroll, on: window, do: zoomIn animated, before: $scrollReveal repeat">
+                        <div class="side-image-container4">
+                            <p class="f400 text-grey side-review-text">Team is great and helping in every aspect. Good company to kick-start your career with.</p>
+                        </div>
+                        <div class="feedback-avatar feedback-desktop side-feedback-avatar">
+                            <span class="f700 avatar-text avatar-seventh">S</span>
+                            <div>
+                                <p class="f700 text-black feedback-name">Syed Ubed Ali</p>
+                                <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="main-feedback">
+                            <i class="colored-dots">
+                                <svg width="43" height="11" viewBox="0 0 43 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#E36967"/>
+                                    <path d="M27 5.5C27 8.53757 24.5376 11 21.5 11C18.4624 11 16 8.53757 16 5.5C16 2.46243 18.4624 0 21.5 0C24.5376 0 27 2.46243 27 5.5Z" fill="#FFCC6B"/>
+                                    <circle cx="37.5" cy="5.5" r="5.5" fill="#5DC26C"/>
+                                    </svg>
+                            </i>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-first">Y</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Yogesh Jadhav</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">This place is awesome for learning and leveling up your skills! We work on a bunch of cool technologies all at once, so you get real-world experience. Plus, it's all remote, so you can work whenever you want. The team is super friendly, always ready to help out. Whether you're just starting out or already a pro, this is the place to be for your career!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-second">A</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Akash Shrivastava</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Great place to start your career as a fresher, learn, explore and grow. You get to work with some of the best minds in the industry. You get the freedom to work remotely and as per your flexibility!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-third">G</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Geet</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Scalereal is a great place to learn and grow. The leadership team embodies the qualities of being highly knowledgeable and humble, which greatly contributes to their remarkable business vision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center feedback-container feedback-mobile">
+                    <div class="col-md-9">
+                        <div class="owl-one owl-carousel">
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-first">Y</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Yogesh Jadhav</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">This place is awesome for learning and leveling up your skills! We work on a bunch of cool technologies all at once, so you get real-world experience. Plus, it's all remote, so you can work whenever you want. The team is super friendly, always ready to help out. Whether you're just starting out or already a pro, this is the place to be for your career!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-second">A</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Akash Shrivastava</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Great place to start your career as a fresher, learn, explore and grow. You get to work with some of the best minds in the industry. You get the freedom to work remotely and as per your flexibility!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-third">G</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Geet</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Scalereal is a great place to learn and grow. The leadership team embodies the qualities of being highly knowledgeable and humble, which greatly contributes to their remarkable business vision.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-fourth">N</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Nivedita Singh</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Good company to work with. You will learn a lot. I had a great experience in working with Scalereal.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-fifth">R</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Ronak Singh</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Strong commitment to employee growth and development, Collaborative and innovative work environment, Meaningful community engagement initiatives, Excellent work-life balance and flexibility, Heaven for freshers, Management is too supportive.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-sixth">P</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Prathamesh Gunde</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">I have been working here for more than 2.5 years. Amazing work culture. Both professional and personal growth is exponential here. Great place to work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-avatar">
+                                    <span class="f700 avatar-text avatar-seventh">S</span>
+                                    <div>
+                                        <p class="f700 text-black feedback-name">Syed Ubed Ali</p>
+                                        <img src="{{ "images/reviews/full-star.png" | absURL }}" class="full-star" />
+                                    </div>
+                                </div>
+                                <div class="feedback-details">
+                                    <p class="f400 text-grey">Team is great and helping in every aspect. Good company to kick-start your career with.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -2145,6 +2361,9 @@
 
     </div>
     {{ partial "footer" . }}
+
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
 
 </body>
 {{ partial "js" . }}

@@ -3088,3 +3088,253 @@ lottie-player {
 .article-content li:last-child {
   margin-bottom: 2.14rem;
 }
+
+.section-our-teams-voice {
+  padding: 125px 0 0 0;
+}
+
+@media (max-width: 767.98px) {
+  .section-our-teams-voice {
+      padding: 55px 0 0 0;
+  }
+}
+
+.average-star {
+  margin-bottom: 20px;
+  width: 164px;
+}
+
+.full-star, .owl-carousel .owl-item img.full-star {
+  width: 95px;
+}
+
+.main-feedback {
+  position: relative;
+  max-width: 620px;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.feedback-container {
+  position: relative;
+  margin-top: 95px;
+}
+
+.colored-dots {
+  display: block;
+  background: #EEEEEE;
+  text-align: start;
+  height: 30px;
+  padding-left: 10px;
+  padding-top: 2px;
+  border: 1px solid #D9D9D9;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.feedback-card {
+  padding: 20px 20px 0 20px;
+  border: 1px solid #D9D9D9;
+  border-top: none;
+}
+
+.feedback-card:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.feedback-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-avatar .avatar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar-first {
+  background-color: #886F65;
+}
+
+.avatar-second {
+  background-color: #594139;
+}
+
+.avatar-third {
+  background-color: #4B33A2;
+}
+
+.avatar-fourth {
+  background-color: #5E6CBA;
+}
+.avatar-fifth {
+  background-color: #1E4C41;
+}
+.avatar-sixth {
+  background-color: #3987CB;
+}
+.avatar-seventh {
+  background-color: #886F65;
+}
+
+.feedback-details {
+  padding: 20px 0px 20px 51px;
+}
+
+.feedback-mobile {
+  overflow: hidden;
+}
+
+.feedback-mobile .owl-dots {
+  text-align: center
+}
+
+.feedback-mobile .feedback-card {
+  border: none;
+}
+
+.feedback-desktop .avatar-fourth, .feedback-desktop .avatar-fifth, .feedback-desktop .avatar-sixth, .feedback-desktop .avatar-seventh {
+  width: 50px;
+  height: 48px;
+}
+
+.feedback-desktop .avatar-text.avatar-fourth, .feedback-desktop .avatar-text.avatar-fifth, .feedback-desktop .avatar-text.avatar-sixth, .feedback-desktop .avatar-text.avatar-seventh {
+  font-size: 24px;
+}
+
+@media (min-width: 1023.99px) {
+  .feedback-mobile {
+      display: none !important;
+  }
+
+  .feedback-desktop {
+      display: flex !important;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .feedback-container {
+    margin-top: 0;
+  }
+
+  .feedback-subtitle {
+    padding: 0 20px;
+  }
+
+  .feedback-mobile {
+      display: flex !important;
+  }
+
+  .feedback-desktop {
+      display: none !important;
+  }
+}
+
+.side-image-container1 {
+  position: relative;
+  width: 337px;
+  height: 132px;
+  background: url("../images/reviews/message1.png") center/cover no-repeat;;
+  display: flex;
+  justify-content: center;
+  left: -87px;
+  z-index: 1;
+}
+
+.side-image1 {
+  position: absolute;
+  top: 120px;
+  left: 54px;
+}
+
+.side-image1 .side-review-text {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+
+.side-image-container2 {
+  position: relative;
+  width: 379px;
+  height: 300.5px;
+  background: url("../images/reviews/message2.png") center/contain no-repeat;
+  display: flex;
+  justify-content: center;
+  left: -83px;
+  z-index: 1;
+}
+
+.side-image2 {
+  position: absolute;
+  top: 295px;
+  left: -27px;
+}
+
+.side-image-container2 .side-review-text {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 67px;
+  padding-right: 18px;
+}
+
+.side-image2 .side-feedback-avatar {
+  position: relative;
+  top: -42px;
+  left: 38px;
+}
+
+.side-image-container3 {
+  position: relative;
+  width: 350px;
+  height: 160px;
+  background: url("../images/reviews/message3.png") center/contain no-repeat;;
+  display: flex;
+  justify-content: center;
+  left: -142px;
+  z-index: 1;
+}
+
+.side-image3 {
+  position: absolute;
+  top: -58px;
+  right: -100px;
+}
+
+.side-image3 .side-review-text {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+.side-image-container4 {
+  position: relative;
+  width: 324px;
+  height: 150px;
+  background: url("../images/reviews/message4.png") center/contain no-repeat;;
+  display: flex;
+  justify-content: center;
+  top: 8px;
+  left: -107px;
+  z-index: 1;
+}
+
+.side-image4 {
+  position: absolute;
+  top: 381px;
+  right: -121px;
+}
+
+.side-image4 .side-review-text {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 28px;
+}
