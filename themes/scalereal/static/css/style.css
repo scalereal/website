@@ -3346,10 +3346,15 @@ lottie-player {
 .feedback-mobile .owl-carousel .owl-stage .owl-item {
   position: relative;
   background: #fff;
-  height: 324px;
 }
 
 .feedback-mobile .owl-carousel .owl-stage .owl-item.active {
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 374.98px) {
+  .feedback-mobile .owl-carousel .owl-stage .owl-item {
+    height: 440px;
+  }
 }
