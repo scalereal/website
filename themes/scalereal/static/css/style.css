@@ -3358,3 +3358,7 @@ lottie-player {
     height: 440px;
   }
 }
+
+.feedback-mobile .feedback-name {
+  margin-bottom: 4px;
+}
