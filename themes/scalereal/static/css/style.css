@@ -3368,7 +3368,7 @@ lottie-player {
 
  
 .client-success-stories-section .heading {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .client-success-stories-section .box {
@@ -3391,23 +3391,28 @@ lottie-player {
   
 } 
 .client-success-stories-section .heading h2 {
-  margin-bottom: 16px; 
-  margin-top: 196px;
-
+  margin-top: 100px; 
 }
  
 .client-success-stories-section .heading  p {
   font-size: 22px; 
-  line-height: 28px;  
+  line-height: 28px;   
+
 }
 .client-success-stories-section .client-story-summary:hover{
   cursor: pointer;
 }
 .client-success-stories-section .client-story-summary h3 {
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
   font-size: 26px; 
+  margin-top: 12px; 
+  text-align: left; 
 }
  
+.client-success-stories-section .client-story-solution img{
+  width: 97%;
+}
+
 @media (max-width: 767.98px) {
    
  
@@ -3475,4 +3480,7 @@ lottie-player {
     display: flex;
     flex-direction: column-reverse;
   }
+  .client-success-stories-section .client-story-solution img{
+  width: 98%;
+}
 }
