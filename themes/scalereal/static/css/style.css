@@ -3369,20 +3369,20 @@ lottie-player {
 .client-success-stories-section .container .box {
   padding-left: 98px;
   padding-right: 98px;
-  width: 1190px; 
+  width: 1190px;
+  max-width: 100%;
 }
  
 .client-success-stories-section .box::before {
   content: "";
   position: absolute;
-  left: 546px;
+  left: 48%;
   top: 85px;
   bottom: 85px;
   right: 642;
   width: 2px;
   height: 70%;
-  background-color: #cccbcb;
-  margin-left: -1px;
+  background-color: #cccbcb; 
 }
 .client-success-stories-section .container .box .heading.box-content{
   padding: 0px;  
@@ -3393,9 +3393,11 @@ lottie-player {
 }
 .client-success-stories-section .container .box .box-content{
   margin: 0px;
+  padding-left: 3px;
+  width: auto;
 }
 .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
-  position: absolute;
+  /* position: absolute; */
   margin-top: 24px;
   margin-left: 231px;
   margin-bottom: 87px;
@@ -3407,37 +3409,41 @@ lottie-player {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 423px;}
+  max-width: 423px;
+}
 .client-success-stories-section .container .box .box-content h3{
-  max-width: 431px;
-  padding-top: 0px;
+  padding-top: 0px;  
+  margin-right: 20px; 
+  padding-right: 20px;
   margin-top: 0px;
   padding-bottom: 20px; 
 }
 .client-success-stories-section .container .box .box-content img{
   width: 100%; 
 }
+
 @media (max-width:767.98px) {
   .client-success-stories-section .container .box {
     padding-left: 17px;
     padding-right: 17px;
     width: auto;
-    /* min-width: 100%; */
+    min-width: 0px;
   }
   .client-success-stories-section .box::before {
    display: none;
   }
+  
   .client-success-stories-section .container .box .heading.box-content{
     padding:0px;  
     margin-top: 0px;
     display: flex;
+  min-width: auto; 
     flex-direction: column;
     text-align:  center;
     align-items: center;
   }
   .client-success-stories-section .container .box .heading.box-content h2{
     width: 240px;
-    color: #333;
     text-align: center; 
     font-size: 26px;
     font-style: normal;
@@ -3446,7 +3452,6 @@ lottie-player {
   }
   .client-success-stories-section .container .box .heading.box-content p{
     width: 294px;
-    color: #666;
     text-align: center; 
     font-size: 20px;
     font-style: normal;
@@ -3454,9 +3459,13 @@ lottie-player {
     line-height: 28px; 
   }
   .client-success-stories-section .container .box .box-content {
-    padding:0px;
-    width: 100%; 
+    padding:0px; 
+    min-width: 100%;
   }
+   .client-success-stories-section .container .box .heading.box-content{
+
+    background-color: red;
+   }
   .client-success-stories-section .container .box .box-content .client-story-summary{
     display: flex;
     flex-direction: column-reverse;
@@ -3465,52 +3474,3 @@ lottie-player {
     margin-right: 52px;
   }
 }
-@media (max-width:1023.98px) {
-  .client-success-stories-section .container .box {
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-top: 0px;
-    width: auto; 
-  }
-  .client-success-stories-section .box::before {
-  display: none;
-  }
-  .client-success-stories-section .container .box .box-content {
-    padding:0px;
-    width: 100%;
-    margin-bottom: 32px;
-  }
-   .client-success-stories-section .container .box .heading.box-content{
-    padding:0px;  
-    margin-top: 40px;  
-    padding-top: 0px; 
-  }
-}
-/* @media (min-width:1023.98px) {
-  .client-success-stories-section .container .box {
-    padding-left: 17px;
-    padding-right: 17px;
-    width: auto;
-    min-width: 100%;
-  }
-  .client-success-stories-section .box::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    width: 1px;
-    height: 70%;
-    background-color: #cccbcb;
-    margin-left: -1px;
-  }
-  .client-success-stories-section .container .box .box-content {
-    padding:0px;
-    background-color: pink;  
-    width: 100%; 
-  }
-   .client-success-stories-section .container .box .heading.box-content{ 
-    margin-top: 100px;  
-    padding: 0px;
-    background-color: palegoldenrod;
-  }
-} */
