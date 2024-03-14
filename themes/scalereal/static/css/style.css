@@ -3457,6 +3457,9 @@ lottie-player {
     margin-top: 24px;
     margin-left: 0%;
   }  
+  .client-success-stories-section .container .box .box-content p{
+    max-width: none;
+  }
 }
 @media (max-width:768px) {
   .client-success-stories-section .container .box {
@@ -3497,6 +3500,8 @@ lottie-player {
   .client-success-stories-section .container .box .box-content {
     padding:0px; 
     min-width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .client-success-stories-section .container .box .box-content .client-story-summary{
     display: flex;
@@ -3506,4 +3511,8 @@ lottie-player {
     margin-right: 52px;
     margin-top: 12px;
   }
+  .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
+    margin-top: 0px;
+    margin-left: 45%;
+  }  
 }
