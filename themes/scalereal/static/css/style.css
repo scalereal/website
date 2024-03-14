@@ -3458,3 +3458,21 @@ lottie-player {
   }
  
 }  
+
+@media (max-width:1023.98px) {
+  .client-success-stories-section .box::before {
+   display: none;
+  } 
+  .client-success-stories-section .heading h2 {
+    margin-bottom: 16px; 
+    margin-top: 40px;
+    text-align: center; 
+  }
+  .client-success-stories-section .client-story-summary   {
+  margin-top: 32px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
