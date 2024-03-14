@@ -3364,22 +3364,19 @@ lottie-player {
 .feedback-mobile  .owl-carousel .owl-dots {
   margin-top: -2px;
 }
+
 /* Client Success Stories Section */
 
- 
 .client-success-stories-section .heading {
   margin-bottom: 0px;
 }
-
 .client-success-stories-section .box {
   padding-left: 0px;
   padding-right: 0px;
 }
-
 .client-success-stories-section .box .box-content {
   padding: 0 70px; 
 }
-
 .client-success-stories-section .box::before {
   content: "";
   position: absolute;
@@ -3388,16 +3385,13 @@ lottie-player {
   width: 1px;
   height: 70%;
   background-color: #cccbcb;
-  
 } 
 .client-success-stories-section .heading h2 {
   margin-top: 100px; 
 }
- 
 .client-success-stories-section .heading  p {
   font-size: 22px; 
   line-height: 28px;   
-
 }
 .client-success-stories-section .client-story-summary:hover{
   cursor: pointer;
@@ -3408,20 +3402,14 @@ lottie-player {
   margin-top: 12px; 
   text-align: left; 
 }
- 
 .client-success-stories-section .client-story-solution img{
   width: 97%;
 }
-
 @media (max-width: 767.98px) {
-   
- 
   .client-success-stories-section .box::before {
-   display: none;
+    display: none;
   } 
- 
-  .client-success-stories-section .heading{
-    
+  .client-success-stories-section .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3431,56 +3419,44 @@ lottie-player {
     margin-top: 40px;
     text-align: center; 
   }
-  .client-success-stories-section .container .box{
+  .client-success-stories-section .container .box {
     padding: 0;
     align-items: center;
   }
-  
   .client-success-stories-section .heading  p {
     font-size: 20px; 
     font-weight: 400; 
-  width: 294px; 
-  text-align: center;
-    line-height: 28px;
-        
+    width: 294px; 
+    text-align: center;
+    line-height: 28px;     
   }
-  .client-success-stories-section .owl-carousel{
-    align-self: left;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    margin-bottom: 2rem;
-    
-  }
-
-  
-  .client-success-stories-section .client-story-summary   {
-  margin-top: 32px;
+  .client-success-stories-section .client-story-summary {
+    margin-top: 32px;
     margin-bottom: 35px;
     font-size: 20px;
     display: flex;
     flex-direction: column-reverse;
   }
- 
 }  
 
 @media (max-width:1023.98px) {
   .client-success-stories-section .box::before {
-   display: none;
+    display: none;
   } 
   .client-success-stories-section .heading h2 {
     margin-bottom: 16px; 
     margin-top: 40px;
     text-align: center; 
   }
-  .client-success-stories-section .client-story-summary   {
+  .client-success-stories-section .client-story-summary {
   margin-top: 32px;
     margin-bottom: 35px;
     font-size: 20px;
     display: flex;
     flex-direction: column-reverse;
   }
-  .client-success-stories-section .client-story-solution img{
+  .client-success-stories-section .client-story-solution img {
   width: 98%;
-}
+  margin-left: 2px;
+  }
 }
