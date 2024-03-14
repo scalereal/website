@@ -3407,6 +3407,12 @@ lottie-player {
 .client-success-stories-section .client-story-solution img{
   width: 97%;
 }
+
+.client-success-stories-section .owl-carousel .owl-dots{
+  margin-top:24px;
+  margin-bottom:0px; 
+  padding-left: 45%;
+}
 @media (max-width: 767.98px) {
   .client-success-stories-section .box::before {
     display: none;
@@ -3436,12 +3442,14 @@ lottie-player {
     margin-top: 32px;
     margin-bottom: 35px;
     font-size: 20px;
-    display: flex;
     flex-direction: column-reverse;
   }
   .client-success-stories-section .owl-carousel .owl-dots{
-     
-  }
+  margin-top:-35px;
+  padding-top: 0px;
+  margin-bottom:45px;
+  padding-left: 45%;
+}
 }  
 
 @media (max-width:1023.98px) {
