@@ -3454,31 +3454,36 @@ lottie-player {
     line-height: 28px; 
   }
   .client-success-stories-section .container .box .box-content {
-    padding:0px; 
+    padding:0px;
     width: 100%; 
+  }
+  .client-success-stories-section .container .box .box-content .client-story-summary{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .client-success-stories-section .container .box .box-content .client-story-summary h3{
+    margin-right: 52px;
   }
 }
 @media (max-width:1023.98px) {
   .client-success-stories-section .container .box {
     padding-left: 17px;
     padding-right: 17px;
-    width: auto;
-    /* min-width: 100%; */
+    padding-top: 0px;
+    width: auto; 
   }
   .client-success-stories-section .box::before {
   display: none;
   }
   .client-success-stories-section .container .box .box-content {
     padding:0px;
-    background-color: pink; 
-    
-    width: 100%; 
+    width: 100%;
+    margin-bottom: 32px;
   }
    .client-success-stories-section .container .box .heading.box-content{
     padding:0px;  
     margin-top: 40px;  
-    padding-top: 0px;
-    background-color: red;
+    padding-top: 0px; 
   }
 }
 /* @media (min-width:1023.98px) {
