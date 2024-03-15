@@ -3385,10 +3385,13 @@ lottie-player {
 }
 .client-success-stories-section .container .box .heading.box-content{
   padding: 0px;  
+  margin-right: 25px;
   margin-top: 100px;
-}
-.client-success-stories-section .container .box .heading.box-content {
   padding-left: 0px;
+}
+.client-success-stories-section .container .box .heading.box-content h2{
+  padding-right: 86px;
+   
 }
 .client-success-stories-section .container .box .box-content{
   margin: 0px;
@@ -3416,16 +3419,24 @@ lottie-player {
 .client-success-stories-section .container .box .box-content img{
   width: 100%; 
 }
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:767.23px) and (max-width:991.98px) {
+  .client-success-stories-section .container .box {
+  padding-left: 98px;
+  padding-right: 98px;
+  width: autopx;
+  max-width: 100%;
+}
   .client-success-stories-section .box::before {
-   display: none;
-  }
+  display: none;
+}
   .client-success-stories-section .container .box .heading.box-content  {
     width: auto;
-    margin-top: 0px;
+    margin-right: 25px;
+    margin-top: 0px; 
   }
   .client-success-stories-section .container .box .heading.box-content p{
     width: auto;
+    padding-right: 25px;
     text-align: center; 
     font-size: 20px;
     font-style: normal;
@@ -3436,6 +3447,13 @@ lottie-player {
   .client-success-stories-section .container .box .box-content {
      text-align: center; 
   }
+  .client-success-stories-section .container .box .heading.box-content{
+    margin: 0px;
+  }
+  .client-success-stories-section .container .box .heading.box-content h2{
+  padding-right: 0px;
+   
+}
    .client-success-stories-section .container .box .box-content p{
      width: auto;
     text-align: center; 
@@ -3454,7 +3472,7 @@ lottie-player {
     text-align: center;
   }
   .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
-  margin-top: 24px; 
+  margin-top: 0px; 
   margin-left: 0px; 
 } 
   .client-success-stories-section .container .box .box-content p{
@@ -3474,21 +3492,27 @@ lottie-player {
   .client-success-stories-section .container .box .heading.box-content{
     padding:0px;  
     margin-top: 0px;
-    display: flex;
-    min-width: auto; 
+    display: flex; 
+    min-width: auto;
+    width: 100%; 
     flex-direction: column;
     text-align:  center;
     align-items: center;
   }
   .client-success-stories-section .container .box .heading.box-content h2{
+    /* widteh: auto; */
     width: 240px;
     text-align: center; 
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px;  
+    line-height: 36px;
+    margin-right: 0px;
+    padding: 0px;  
   }
+  
   .client-success-stories-section .container .box .heading.box-content p{
+    /* width: auto; */
     width: 294px;
     text-align: center; 
     font-size: 20px;
