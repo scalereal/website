@@ -3405,7 +3405,7 @@ lottie-player {
 }
 .client-success-stories-section .container .box .box-content h3{
   font-size: 26px;
-  padding-bottom: 20px; 
+  padding: auto 25px 20px auto;
 }
 .client-success-stories-section .container .box .box-content img{
   width: 100%; 
