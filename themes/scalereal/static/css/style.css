@@ -3368,8 +3368,7 @@ lottie-player {
 /* Client Success Stories Section */
 .client-success-stories-section{
   padding: 0;
-  margin-top: 0px;
-  margin-bottom: 91px;
+  margin: -40px 0 125px 0 ;
 }
 .client-success-stories-section .container .box {
   padding:100px  98px 87px; 
@@ -3384,13 +3383,13 @@ lottie-player {
 }
 .client-success-stories-section .container .box .heading.box-content{
   margin-top:100px;
+  margin-left: 0px;
 }
 .client-success-stories-section .container .box .heading.box-content h2{
-  width: 100%;
+  width: 80%;
 }
-.client-success-stories-section .container .box .box-content .client-story-summary{
-  margin: 0px;
-  margin-left: 29px;
+.client-success-stories-section .container .box .box-content {
+  margin-left: 30px;
   width: auto;
 }
 .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
@@ -3399,21 +3398,29 @@ lottie-player {
   flex-direction: row; 
   justify-content: center;
 }
-.client-success-stories-section .container .box .box-content p{
+.client-success-stories-section .container .box .heading.box-content p{
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   max-width: 90%;
 }
+.client-success-stories-section .container .box .box-content .client-story-summary{
+  cursor: pointer;
+}
 .client-success-stories-section .container .box .box-content h3{
   font-size: 26px;
-  padding: 0 25px 20px 0 ;
+   height: 155px; 
+  padding: 0 0 20px 0 ;
+  margin-bottom: 20px;
 }
 .client-success-stories-section .container .box .box-content img{
   width: 100%; 
 }
 @media (min-width:768px) and (max-width:991.98px) {
+  .client-success-stories-section{
+    margin: 0 0 125px;
+  }
   .client-success-stories-section .box::before {
     display: none;
   } 
@@ -3425,7 +3432,8 @@ lottie-player {
     margin-bottom: 32px;
   }
   .client-success-stories-section .container .box .box-content {
-    text-align: center; 
+    text-align: center;
+    margin: 0px; 
   }
   .client-success-stories-section .container .box .heading.box-content{
     margin: 0;
@@ -3443,7 +3451,9 @@ lottie-player {
   }
   .client-success-stories-section .container .box .box-content .client-story-summary h3{
     margin-top: 12px;
+  margin-bottom: 20px;
     text-align: center;
+   height: auto;
   }
   .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
     display: flex;
@@ -3454,6 +3464,9 @@ lottie-player {
   }
 }
 @media (max-width:768px) {
+  .client-success-stories-section{
+    margin: 0 0 100px ;
+  }
   .client-success-stories-section .container .box {
     padding: 40px 17px;
   }
@@ -3488,6 +3501,7 @@ lottie-player {
   }
   .client-success-stories-section .container .box .box-content {
     padding:0px; 
+    margin: 0px;
     width: 100%; 
   }
   .client-success-stories-section .container .box .box-content .client-story-summary{
@@ -3498,6 +3512,7 @@ lottie-player {
   }
   .client-success-stories-section .container .box .box-content .client-story-summary h3{
     margin-top: 12px;
+   height: auto; 
   }
   .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
     margin: 0px;
