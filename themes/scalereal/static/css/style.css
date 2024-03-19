@@ -3450,7 +3450,7 @@ lottie-player {
   .client-success-stories-section .container .box .box-content .client-story-summary{
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 0px;
+    margin: 0px  5px; 
   }
   .client-success-stories-section .container .box .box-content .client-story-summary h3{
     margin-top: 12px;
@@ -3509,9 +3509,8 @@ lottie-player {
   }
   .client-success-stories-section .container .box .box-content .client-story-summary{
     display: flex;
+    margin: 0px  7px; 
     flex-direction: column-reverse;
-    margin-left: 0px;
-  
   }
   .client-success-stories-section .container .box .box-content .client-story-summary h3{
     margin-top: 12px;
