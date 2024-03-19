@@ -1,4 +1,4 @@
 ---
 title: Welcome
-description: We build applications that scale beyond reality
+description: We Build Applications That Scale Beyond Reality
 ---
