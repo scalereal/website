@@ -713,9 +713,6 @@ h3 {
 }
 
 /* Section service */
-.section-service {
-  padding-bottom: 0;
-}
 
 .section-project {
   padding-bottom: 125px;
@@ -1647,7 +1644,7 @@ lottie-player {
   padding-top: 20px;
 }
 
-.page-projects .section-service-detail .project-tech p {
+.page-projects .-service-detail .project-tech p {
   margin-bottom: 0;
 }
 
@@ -1949,7 +1946,9 @@ lottie-player {
   section {
     padding: 90px 0;
   }
-
+  .about-client {
+    padding-top: 0;
+  }
   .footer {
     padding: 100px 0 30px;
   }
@@ -3503,9 +3502,6 @@ lottie-player {
   }
 }
 @media (max-width: 768px) {
-  .client-success-stories-section {
-    margin: 55px 0 0;
-  }
   .section-project {
     padding-bottom: 60px;
   }
