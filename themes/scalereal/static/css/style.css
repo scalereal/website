@@ -3504,10 +3504,10 @@ lottie-player {
 }
 @media (max-width: 768px) {
   .client-success-stories-section {
-    margin: 90px 0 0;
+    margin: 55px 0 0;
   }
   .section-project {
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
   .client-success-stories-section .container .box {
     padding: 40px 17px;
