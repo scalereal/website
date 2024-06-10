@@ -1946,9 +1946,6 @@ lottie-player {
   section {
     padding: 90px 0;
   }
-  .about-client {
-    padding-top: 0;
-  }
   .footer {
     padding: 100px 0 30px;
   }
@@ -3505,9 +3502,7 @@ lottie-player {
   .section-project {
     padding-bottom: 60px;
   }
-  .about-client {
-    padding-top: 55px;
-  }
+
   .client-success-stories-section .container .box {
     padding: 40px 17px;
   }
