@@ -118,7 +118,8 @@ section {
   color: #666;
 }
 
-.text-black-blog, li {
+.text-black-blog,
+li {
   color: #242424;
 }
 
@@ -712,9 +713,12 @@ h3 {
 }
 
 /* Section service */
-.section-service,
-.section-project {
+.section-service {
   padding-bottom: 0;
+}
+
+.section-project {
+  padding-bottom: 125px;
 }
 
 .section-service a {
@@ -771,7 +775,7 @@ h3 {
   line-height: 28px;
   margin-bottom: 40px;
 }
-.section-project .project-summary{
+.section-project .project-summary {
   margin: 0px 10px;
 }
 .section-project .project-summary h3 {
@@ -2640,6 +2644,10 @@ lottie-player {
   margin-bottom: 60px;
 }
 @media only screen and (max-width: 766px) {
+  .section-project {
+    padding: 55px 0;
+  }
+
   .page-blog-details .share-wrap {
     padding: 0;
     margin-bottom: 20px;
@@ -3049,21 +3057,21 @@ lottie-player {
 
 @media (min-width: 768px) {
   .techstack-mobile {
-      display: none !important;
+    display: none !important;
   }
 
   .techstack-desktop {
-      display: flex !important;
+    display: flex !important;
   }
 }
 
 @media (max-width: 767.98px) {
   .techstack-mobile {
-      display: flex !important;
+    display: flex !important;
   }
 
   .techstack-desktop {
-      display: none !important;
+    display: none !important;
   }
 }
 
@@ -3107,10 +3115,10 @@ lottie-player {
   .section-client .owl-carousel .owl-dots {
     margin-top: 4px;
   }
-
 }
 
-.full-star, .owl-carousel .owl-item img.full-star {
+.full-star,
+.owl-carousel .owl-item img.full-star {
   width: 95px;
 }
 
@@ -3128,19 +3136,19 @@ lottie-player {
 
 .colored-dots {
   display: block;
-  background: #EEEEEE;
+  background: #eeeeee;
   text-align: start;
   height: 30px;
   padding-left: 10px;
   padding-top: 2px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .feedback-card {
   padding: 20px 20px 0 20px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-top: none;
 }
 
@@ -3161,13 +3169,13 @@ lottie-player {
   width: 40px;
   height: 40px;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50%;
   margin-right: 10px;
 }
 
 .avatar-first {
-  background-color: #886F65;
+  background-color: #886f65;
 }
 
 .avatar-second {
@@ -3175,20 +3183,20 @@ lottie-player {
 }
 
 .avatar-third {
-  background-color: #4B33A2;
+  background-color: #4b33a2;
 }
 
 .avatar-fourth {
-  background-color: #5E6CBA;
+  background-color: #5e6cba;
 }
 .avatar-fifth {
-  background-color: #1E4C41;
+  background-color: #1e4c41;
 }
 .avatar-sixth {
-  background-color: #3987CB;
+  background-color: #3987cb;
 }
 .avatar-seventh {
-  background-color: #886F65;
+  background-color: #886f65;
 }
 
 .feedback-details {
@@ -3200,29 +3208,35 @@ lottie-player {
 }
 
 .feedback-mobile .owl-dots {
-  text-align: center
+  text-align: center;
 }
 
 .feedback-mobile .feedback-card {
   border: none;
 }
 
-.feedback-desktop .avatar-fourth, .feedback-desktop .avatar-fifth, .feedback-desktop .avatar-sixth, .feedback-desktop .avatar-seventh {
+.feedback-desktop .avatar-fourth,
+.feedback-desktop .avatar-fifth,
+.feedback-desktop .avatar-sixth,
+.feedback-desktop .avatar-seventh {
   width: 50px;
   height: 48px;
 }
 
-.feedback-desktop .avatar-text.avatar-fourth, .feedback-desktop .avatar-text.avatar-fifth, .feedback-desktop .avatar-text.avatar-sixth, .feedback-desktop .avatar-text.avatar-seventh {
+.feedback-desktop .avatar-text.avatar-fourth,
+.feedback-desktop .avatar-text.avatar-fifth,
+.feedback-desktop .avatar-text.avatar-sixth,
+.feedback-desktop .avatar-text.avatar-seventh {
   font-size: 24px;
 }
 
 @media (min-width: 1023.99px) {
   .feedback-mobile {
-      display: none !important;
+    display: none !important;
   }
 
   .feedback-desktop {
-      display: flex !important;
+    display: flex !important;
   }
 }
 
@@ -3236,11 +3250,11 @@ lottie-player {
   }
 
   .feedback-mobile {
-      display: flex !important;
+    display: flex !important;
   }
 
   .feedback-desktop {
-      display: none !important;
+    display: none !important;
   }
 }
 
@@ -3248,7 +3262,7 @@ lottie-player {
   position: relative;
   width: 337px;
   height: 132px;
-  background: url("../images/reviews/message1.png") center/cover no-repeat;;
+  background: url("../images/reviews/message1.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   left: -87px;
@@ -3266,7 +3280,6 @@ lottie-player {
   padding-left: 20px;
   padding-top: 20px;
 }
-
 
 .side-image-container2 {
   position: relative;
@@ -3302,7 +3315,7 @@ lottie-player {
   position: relative;
   width: 350px;
   height: 160px;
-  background: url("../images/reviews/message3.png") center/contain no-repeat;;
+  background: url("../images/reviews/message3.png") center/contain no-repeat;
   display: flex;
   justify-content: center;
   left: -142px;
@@ -3325,7 +3338,7 @@ lottie-player {
   position: relative;
   width: 324px;
   height: 150px;
-  background: url("../images/reviews/message4.png") center/contain no-repeat;;
+  background: url("../images/reviews/message4.png") center/contain no-repeat;
   display: flex;
   justify-content: center;
   top: 8px;
@@ -3346,7 +3359,7 @@ lottie-player {
 }
 
 .feedback-mobile .owl-carousel {
-    width: 100%;
+  width: 100%;
 }
 
 .feedback-mobile .owl-carousel .owl-stage .owl-item {
@@ -3363,17 +3376,17 @@ lottie-player {
   margin-bottom: 4px;
 }
 
-.feedback-mobile  .owl-carousel .owl-dots {
+.feedback-mobile .owl-carousel .owl-dots {
   margin-top: -2px;
 }
 
 /* Client Success Stories Section */
-.client-success-stories-section{
+.client-success-stories-section {
   padding: 0;
-  margin: -40px 0 125px 0 ;
+  margin: 125px 0 0 0;
 }
 .client-success-stories-section .container .box {
-  padding:100px  98px 87px; 
+  padding: 100px 98px 87px;
 }
 .client-success-stories-section .box::before {
   content: "";
@@ -3381,54 +3394,64 @@ lottie-player {
   left: 50%;
   width: 2px;
   height: 70%;
-  background-color: #cccbcb; 
+  background-color: #cccbcb;
 }
-.client-success-stories-section .container .box .heading.box-content{
-  margin-top:150px;
+.client-success-stories-section .container .box .heading.box-content {
+  margin-top: 150px;
   margin-left: 0px;
 }
-.client-success-stories-section .container .box .heading.box-content h2{
-  width: 80%; 
+.client-success-stories-section .container .box .heading.box-content h2 {
+  width: 80%;
 }
 .client-success-stories-section .container .box .box-content {
   margin-left: 30px;
   width: auto;
 }
-.client-success-stories-section .container .box .box-content .owl-one .owl-dots {
+.client-success-stories-section
+  .container
+  .box
+  .box-content
+  .owl-one
+  .owl-dots {
   margin-top: 24px;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
 }
-.client-success-stories-section .container .box .heading.box-content p{
+.client-success-stories-section .container .box .heading.box-content p {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   max-width: 90%;
 }
-.client-success-stories-section .container .box .box-content .client-story-summary{
+.client-success-stories-section
+  .container
+  .box
+  .box-content
+  .client-story-summary {
   cursor: pointer;
   margin: 0 10px;
 }
-.client-success-stories-section .container .box .box-content h3{
+.client-success-stories-section .container .box .box-content h3 {
   font-size: 26px;
-   height: 155px; 
-  padding: 0 0 20px 0 ;
+  height: 155px;
+  padding: 0 0 20px 0;
   margin-bottom: 20px;
 }
-.client-success-stories-section .container .box .box-content img{
-  width: 100%; 
+.client-success-stories-section .container .box .box-content img {
+  width: 100%;
 }
-@media (min-width:768px) and (max-width:991.98px) {
-  .client-success-stories-section{
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .client-success-stories-section {
     margin: 0 0 125px;
   }
   .client-success-stories-section .box::before {
     display: none;
-  } 
-  .client-success-stories-section .container .box .heading.box-content p{
-    text-align: center; 
+  }
+  .client-success-stories-section .container .box .heading.box-content p {
+    text-align: center;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -3436,39 +3459,55 @@ lottie-player {
   }
   .client-success-stories-section .container .box .box-content {
     text-align: center;
-    margin: 0px;  
   }
-  .client-success-stories-section .container .box .heading.box-content{
+  .client-success-stories-section .container .box .heading.box-content {
     margin: 0;
   }
-  .client-success-stories-section .container .box .heading.box-content h2{
+  .client-success-stories-section .container .box .heading.box-content h2 {
     width: 100%;
     font-size: 26px;
     text-align: center;
     font-weight: 700;
   }
-  .client-success-stories-section .container .box .box-content .client-story-summary{
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .client-story-summary {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0px  5px; 
+    margin: 0px 5px;
   }
-  .client-success-stories-section .container .box .box-content .client-story-summary h3{
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .client-story-summary
+    h3 {
     margin-top: 12px;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
     text-align: center;
-   height: auto;
+    height: auto;
   }
-  .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .owl-one
+    .owl-dots {
     display: flex;
-    align-self: center; 
+    align-self: center;
   }
-  .client-success-stories-section .container .box .box-content p{
+  .client-success-stories-section .container .box .box-content p {
     max-width: none;
   }
 }
-@media (max-width:768px) {
-  .client-success-stories-section{
-    margin: 0 0 100px ;
+@media (max-width: 768px) {
+  .client-success-stories-section {
+    margin: 90px 0 0;
+  }
+  .section-project {
+    padding-bottom: 90px;
   }
   .client-success-stories-section .container .box {
     padding: 40px 17px;
@@ -3476,47 +3515,61 @@ lottie-player {
   .client-success-stories-section .box::before {
     display: none;
   }
-  .client-success-stories-section .container .box .heading.box-content{
+  .client-success-stories-section .container .box .heading.box-content {
     margin-top: 0px;
     display: flex;
     flex-direction: column;
-    text-align:  center;
+    text-align: center;
     align-items: center;
   }
-  .client-success-stories-section .container .box .heading.box-content h2{
+  .client-success-stories-section .container .box .heading.box-content h2 {
     width: 65%;
-    text-align: center; 
+    text-align: center;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
     margin-right: 0px;
-    padding: 0px;  
+    padding: 0px;
   }
-  .client-success-stories-section .container .box .heading.box-content p{
+  .client-success-stories-section .container .box .heading.box-content p {
     width: 294px;
-    text-align: center; 
+    text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;  
+    line-height: 28px;
     margin-bottom: 32px;
   }
   .client-success-stories-section .container .box .box-content {
-    padding:0px; 
+    padding: 0px;
     margin: 0px;
-    width: 100%; 
+    width: 100%;
   }
-  .client-success-stories-section .container .box .box-content .client-story-summary{
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .client-story-summary {
     display: flex;
-    margin: 0px  7px; 
+    margin: 0px 7px;
     flex-direction: column-reverse;
   }
-  .client-success-stories-section .container .box .box-content .client-story-summary h3{
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .client-story-summary
+    h3 {
     margin-top: 12px;
-   height: auto; 
+    height: auto;
   }
-  .client-success-stories-section .container .box .box-content .owl-one .owl-dots {
+  .client-success-stories-section
+    .container
+    .box
+    .box-content
+    .owl-one
+    .owl-dots {
     margin: 0px;
-  }  
+  }
 }
