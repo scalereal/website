@@ -1,4 +1,19 @@
 AOS.init();
+
+$(window).on("load", function () {
+  if (window.location.hash) {
+    var hash = window.location.hash.substring(1);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(`#${hash}`).offset().top,
+        },
+        50
+      );
+  }
+});
+
 $(document).ready(function () {
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
