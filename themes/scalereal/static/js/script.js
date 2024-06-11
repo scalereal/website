@@ -2,15 +2,23 @@ AOS.init();
 
 $(window).on("load", function () {
   if (window.location.hash) {
-    var hash = window.location.hash.substring(1);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $(`#${hash}`).offset().top,
-        },
-        50
-      );
+    const hash = window.location.hash.substring(1);
+    const targetSection = $(`#${hash}`);
+    console.log(window.location.hash);
+    if (targetSection.length) {
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            // scrolls to section such that its not hidden under the nav bar and is displayed properly
+            scrollTop:
+              $(`#${hash}`).offset().top +
+              targetSection.outerHeight() -
+              $(window).height(),
+          },
+          50
+        );
+    }
   }
 });
 
