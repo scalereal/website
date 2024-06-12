@@ -1,4 +1,31 @@
 AOS.init();
+
+$(window).on("load", function () {
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    const targetSection = $(`#${hash}`);
+    const navbarHeight = $(".navbar").outerHeight();
+
+    const isInMobileBroswer = () =>
+      window.matchMedia("(max-width: 768px)").matches;
+    if (targetSection.length) {
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            // scrolls to section such that its not hidden under the nav bar and is displayed properly
+            scrollTop: isInMobileBroswer()
+              ? targetSection.offset().top - navbarHeight
+              : targetSection.offset().top +
+                targetSection.outerHeight() -
+                $(window).height(),
+          },
+          50
+        );
+    }
+  }
+});
+
 $(document).ready(function () {
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
