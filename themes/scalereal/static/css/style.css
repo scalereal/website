@@ -3377,10 +3377,6 @@ lottie-player {
 }
 
 /* Client Success Stories Section */
-.client-success-stories-section {
-  padding: 0;
-  margin: 125px 0 0 0;
-}
 .client-success-stories-section .container .box {
   padding: 100px 98px 87px;
 }
@@ -3426,6 +3422,7 @@ lottie-player {
   line-height: normal;
   max-width: 90%;
 }
+
 .client-success-stories-section
   .container
   .box
@@ -3445,9 +3442,6 @@ lottie-player {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .client-success-stories-section {
-    margin: 0 0 125px;
-  }
   .client-success-stories-section .box::before {
     display: none;
   }
