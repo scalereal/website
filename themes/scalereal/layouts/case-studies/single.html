@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{ $.Scratch.Set "post" true }}
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+     {{ partial "nav" . }}
+   
+    <main class="container case-study-page">
+        <div class="back-link-section" >
+            <a class="back-link back-link-section" href="/projects" style="display: flex; align-items: center;">
+                <span class="line" style="transition: transform 0.5s; transform-origin: center;">
+                    <img src="{{ "images/blog/Back.svg" | absURL }}" alt="" style="transition: transform 0.5s;">
+                </span>
+                <span class="back-link-text f700">Back</span>
+            </a>
+        </div> 
+        <h2 class="f700 text-black mb-5">
+                {{ .Params.heading  }}
+        </h2>
+        <img style="width: 100%; margin:0" src="{{ .Params.heroImage | absURL }}" alt="Case Study Image">
+
+        <div class="overview">
+            <h3 class="f700 text-black mb-2">Project Overview</h3>
+            {{ .Params.overview  }}
+             <h3 class="f700 text-black mt-4 mb-2">Project Domain</h3>
+            {{ .Params.domain  }}
+        </div>
+        {{ .Content }}
+    </main>
+    {{ partial "footer.html" . }}
+ 
+</body>
+</html>

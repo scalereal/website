@@ -1641,7 +1641,7 @@ lottie-player {
 }
 
 .page-projects .section-service-detail .project-tech {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .page-projects .section-service-detail .project-tech p {
@@ -3569,3 +3569,82 @@ lottie-player {
     margin: 0px;
   }
 }
+
+/* Case study pages */
+
+
+.case-study-page .back-link-section {
+    display: flex;
+    align-items: center;
+    transition: height 0.5s;
+    height: fit-content;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.case-study-page .back-link-text {
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.case-study-page img{
+  margin: 20px ;
+}
+
+
+.case-study-page .back-link-section:hover .line {
+    transform: translateX(-10px);
+}
+
+.case-study-page .back-link-section:not(:hover) .line {
+    transform: translateX(0);
+}
+
+.case-study-page .overview{
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 24px;
+  margin: 20px 0;
+  background-color: #F6F8FC;
+}
+
+.case-study-page h2{
+  margin: 50px 0 20px;
+}
+
+.case-study-page .grid-layout  {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.case-study-page .grid-layout li  {
+  list-style: inside;
+}
+
+.case-study-page .column-layout {
+  display: flex;
+  width: 100%;
+}
+
+hr{
+  border-top: 1px solid #CCCBCB;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .case-study-page .grid-layout  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+ 
