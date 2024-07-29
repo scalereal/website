@@ -18,7 +18,7 @@ canonifyURLs: true
 
 permalinks:
     post: '/blogs/:title/'
-    case-studies: '/projects/case-studies/:title'
+    case-studies: '/projects/case-study/:title'
 #Params
 params:
     navigation:

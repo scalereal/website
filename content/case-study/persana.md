@@ -4,7 +4,7 @@ title: "Persana Case Study: Lead Generation AI Platform"
 heroImage: images/case-studies/persana.png 
 overview: "Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating personalized messages, and increasing response rates. Key features include lead enrichment, AI-generated messaging, LinkedIn prospecting via a Chrome extension, and automated workflows. Users can access pre-built lead lists, import their own, and utilize various enrichments to gain deeper insights into leads and companies."
 domain: "Artificial Intelligence (AI)"
-url: "/projects/case-studies/persana-case-study"
+url: "/projects/case-study/persana"
 
 ---
 
