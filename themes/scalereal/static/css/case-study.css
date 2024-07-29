@@ -119,7 +119,7 @@
 .case-study-page .img-carousel img{
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width:641px) and (max-width: 768px) {
   .case-study-page .grid-layout  {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -127,7 +127,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
-    align-items:start;
   }
   .case-study-page .technologies img{
     margin: 30px auto 0 20%;
@@ -136,7 +135,6 @@
     max-height: 50px;
     object-fit: contain;
   }
- 
 }
 @media screen and (max-width: 640px) {
   .case-study-page .grid-layout  {
@@ -146,13 +144,13 @@
   .case-study-page .technologies {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    align-items:start;
+    justify-content: center;
+    align-items: center;
   }
   .case-study-page .technologies img{
-    margin: 30px auto 0 30%;
     max-width: 200px;
     width: auto;
+    align-self: center;
     max-height: 50px;
     object-fit: contain;
   }
