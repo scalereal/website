@@ -10,7 +10,7 @@ url: "/projects/case-study/persana"
 
 ## __Technologies and Technical Specifications__
 
-{{< technologies >}}
+{{< case-study/technologies >}}
 
 <img src="/images/case-studies/react.png" alt="React JS"/>
 <img src="/images/case-studies/tailwind.png" alt="Tailwind CSS"/>
@@ -21,11 +21,11 @@ url: "/projects/case-study/persana"
 <img src="/images/case-studies/vue.png" alt="Vue JS"/>
 <img src="/images/case-studies/framer.png" alt="Framer"/>
 
-{{< /technologies >}}
+{{< /case-study/technologies >}}
 
 ## __Integrations with Different Platforms__
 
-{{< grid >}}
+{{< case-study/grid >}}
 
 <li> Apify </li>
 <li> Apollo.io </li>
@@ -51,18 +51,18 @@ url: "/projects/case-study/persana"
 <li> Smartlead </li>
 <li> Sendspark </li>
 
-{{< /grid >}}
+{{< /case-study/grid >}}
 
 ---
 
-{{< caseStudySubtitle >}}
+{{< case-study/caseStudySubtitle >}}
 <img alt="Challenges" src="/images/case-studies/challenge.svg">
 <h2>
     <strong>
         Understanding The Project Challenges
     </strong>
 </h2>
-{{< /caseStudySubtitle >}}
+{{< /case-study/caseStudySubtitle >}}
 
 * __Lack of Good Resource:__ The development process was hindered by an insufficient number of skilled developers and designers. This shortage of qualified personnel resulted in delays, reduced productivity, and ultimately, a subpar final product that did not meet the initial project requirements or expectations.
 * __Lack of Technical Oversight:__ The original development lacked proper technical leadership, resulting in inconsistent outputs and no cohesive direction. This absence of experienced technical oversight meant that best practices were not followed, leading to architectural flaws and inefficient code that were difficult to maintain and scale.
@@ -70,14 +70,14 @@ url: "/projects/case-study/persana"
 * __Low Code Quality and Unorganized Projects:__ The codebase was characterized by low quality, with numerous bugs, poor documentation, and lack of adherence to coding standards. This made the application difficult to maintain and extend, leading to frequent issues during updates and new feature implementations. The low code quality also increased the risk of security vulnerabilities and system failures.
 
 
-{{< caseStudySubtitle >}}
+{{< case-study/caseStudySubtitle >}}
 <img alt="Challenges" src="/images/case-studies/badge.svg">
 <h2>
     <strong>
         How ScaleReal Made It Happen
     </strong>
 </h2>
-{{< /caseStudySubtitle >}}
+{{< /case-study/caseStudySubtitle >}}
 
 * __Code Migration - Front End (FE) and Back End (BE):__ ScaleReal meticulously migrated the front-end and back-end codebases, updating dependencies and refactoring outdated code to ensure a seamless transition and improved performance.
 * __Moved Repositories Under Organization's GitHub Account:__ Repositories were centralized under the organization's GitHub account to enhance collaboration, improve security, and streamline management.
@@ -86,21 +86,21 @@ url: "/projects/case-study/persana"
 * __Queue System on Back End to Handle Large Number of Requests:__ A robust queue system was established on the back end to manage high request volumes, enabling load balancing, asynchronous processing, and scalability.
 * __Reduced Load from Front End and Moved Things to Back End:__ Processing load was shifted from the front end to the back end, optimizing performance and enhancing user experience by leveraging powerful server resources for intensive tasks.
 
-{{< imgCarousel >}}
+{{< case-study/imgCarousel >}}
     <img alt="Challenges" src="/images/case-studies/persana.png">
     <img alt="Challenges" src="/images/case-studies/persana.png">
     <img alt="Challenges" src="/images/case-studies/persana.png">
 
-{{< /imgCarousel >}}
+{{< /case-study/imgCarousel >}}
 
-{{< caseStudySubtitle LeftAlign="true" >}}
+{{< case-study/caseStudySubtitle LeftAlign="true" >}}
 <img alt="Challenges" src="/images/case-studies/keyfeatures.svg">
 <h2>
     <strong>
         Key Features Of The Project
     </strong>
 </h2>
-{{< /caseStudySubtitle >}}
+{{< /case-study/caseStudySubtitle >}}
 
 
 ##### __Lead Generation Enrichment__
@@ -177,14 +177,14 @@ The Persana Chrome extension is a powerful tool for LinkedIn prospecting, offeri
 ![image](/images/case-studies/persana.png) 
 
 
-{{< caseStudySubtitle >}}
+{{< case-study/caseStudySubtitle >}}
 <img alt="Challenges" src="/images/case-studies/star.svg">
 <h2>
     <strong>
         How ScaleReal Made A Difference
     </strong>
 </h2>
-{{< /caseStudySubtitle >}}
+{{< /case-study/caseStudySubtitle >}}
 
 
 
