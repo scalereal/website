@@ -1641,7 +1641,7 @@ lottie-player {
 }
 
 .page-projects .section-service-detail .project-tech {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .page-projects .section-service-detail .project-tech p {
@@ -3390,7 +3390,7 @@ lottie-player {
 }
 .client-success-stories-section .container .box .heading.box-content {
   margin-top: 150px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .client-success-stories-section .container .box .heading.box-content h2 {
   width: 80%;
@@ -3512,7 +3512,7 @@ lottie-player {
     display: none;
   }
   .client-success-stories-section .container .box .heading.box-content {
-    margin-top: 0px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -3525,8 +3525,8 @@ lottie-player {
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
-    margin-right: 0px;
-    padding: 0px;
+    margin-right: 0;
+    padding: 0;
   }
   .client-success-stories-section .container .box .heading.box-content p {
     width: 294px;
@@ -3538,8 +3538,8 @@ lottie-player {
     margin-bottom: 32px;
   }
   .client-success-stories-section .container .box .box-content {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
   .client-success-stories-section
