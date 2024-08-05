@@ -43,7 +43,9 @@
 }
 .case-study-page img{
   width: 100%;
+  padding: 0;
   margin: 0;
+  max-width: 100%;object-fit: contain;
 }
 .case-study-page .overview {
   border-radius: 8px;
@@ -51,7 +53,7 @@
   font-weight: 400;
   line-height: 32px;
   padding: 24px;
-  margin: 50px 0;
+  margin: 40px 0 60px;
 }
 .case-study-page h2 {
   margin: 50px 0 20px;
