@@ -69,6 +69,14 @@
   list-style: inherit;
   margin-left: 40px;
 }
+.case-study-page .li-arrow-container li{
+    list-style: none;
+}
+.case-study-page .li-arrow-container li::before {
+  content: "➔";
+  margin-right: 8px;
+  color: #333;     
+}
 .case-study-page .grid-layout li {
   list-style: inside;
   margin: 0;

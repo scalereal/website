@@ -3,7 +3,7 @@ date: todo
 
 title: "Noobstorm Case Study: Gaming Application for Hosting Tournaments"
 
-heroImage: todo
+heroImage: images/case-study/noobstorm/heroImg.webp
 
 overview: "Our gaming application is designed to host tournaments where participants can compete for prize money while fostering a community of players united by their passion for gaming. The application aims to provide a seamless and engaging experience for gamers of all skill levels."
 domain: "Gaming"
