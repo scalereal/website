@@ -1,7 +1,7 @@
 ---
 date: 2024-07-26T12:00:00Z
 title: "Persana Case Study: Lead Generation AI Platform"
-heroImage: images/case-study/persana/heroImg.webp
+heroImage: "images/case-study/persana/heroImg.webp"
 overview: "Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating personalized messages, and increasing response rates. Key features include lead enrichment, AI-generated messaging, LinkedIn prospecting via a Chrome extension, and automated workflows. Users can access pre-built lead lists, import their own, and utilize various enrichments to gain deeper insights into leads and companies."
 domain: "Artificial Intelligence (AI)"
 url: "/projects/case-study/persana"
@@ -12,14 +12,14 @@ url: "/projects/case-study/persana"
 
 {{< case-study/technologies >}}
 
-<img src="/images/case-study/persana/react.png" alt="React JS"/>
-<img src="/images/case-study/persana/tailwind.png" alt="Tailwind CSS"/>
-<img src="/images/case-study/persana/vite.png" alt="Vite"/>
-<img src="/images/case-study/persana/nest.png" alt="Nest JS"/>
-<img src="/images/case-study/persana/mongodb.png" alt="MongoDB"/>
-<img src="/images/case-study/persana/redis.png" alt="Redis"/>
-<img src="/images/case-study/persana/vue.png" alt="Vue JS"/>
-<img src="/images/case-study/persana/framer.png" alt="Framer"/>
+<img src="/images/case-study/technologies/react.png" alt="React JS"/>
+<img src="/images/case-study/technologies/tailwind.png" alt="Tailwind CSS"/>
+<img src="/images/case-study/technologies/vite.png" alt="Vite"/>
+<img src="/images/case-study/technologies/nest.png" alt="Nest JS"/>
+<img src="/images/case-study/technologies/mongodb.png" alt="MongoDB"/>
+<img src="/images/case-study/technologies/redis.png" alt="Redis"/>
+<img src="/images/case-study/technologies/vue.png" alt="Vue JS"/>
+<img src="/images/case-study/technologies/framer.png" alt="Framer"/>
 
 {{< /case-study/technologies >}}
 
@@ -56,7 +56,7 @@ url: "/projects/case-study/persana"
 ---
 
 {{< case-study/caseStudySubtitle >}}
-<img alt="Challenges" src="/images/case-study/persana/challenge.svg">
+<img alt="Challenges" src="/images/case-study/icons/challenge.svg">
 <h2>
     <strong>
         Understanding The Project Challenges
@@ -71,7 +71,7 @@ url: "/projects/case-study/persana"
 
 
 {{< case-study/caseStudySubtitle >}}
-<img alt="Challenges" src="/images/case-study/persana/badge.svg">
+<img alt="Challenges" src="/images/case-study/icons/badge.svg">
 <h2>
     <strong>
         How ScaleReal Made It Happen
@@ -94,7 +94,7 @@ url: "/projects/case-study/persana"
 {{< /case-study/imgCarousel >}} -->
 
 {{< case-study/caseStudySubtitle LeftAlign="true" >}}
-<img alt="Challenges" src="/images/case-study/persana/keyfeatures.svg">
+<img alt="Challenges" src="/images/case-study/icons/keyfeatures.svg">
 <h2>
     <strong>
         Key Features Of The Project
@@ -175,7 +175,7 @@ The Persana Chrome extension is a powerful tool for LinkedIn prospecting, offeri
 &nbsp;
 
 {{< case-study/caseStudySubtitle >}}
-<img alt="Challenges" src="/images/case-study/persana/star.svg">
+<img alt="Challenges" src="/images/case-study/icons/star.svg">
 <h2>
     <strong>
         How ScaleReal Made A Difference

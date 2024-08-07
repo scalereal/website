@@ -3,7 +3,7 @@ date: todo
 
 title: "GoToBuddy Case Study: AI Calling Application"
 
-heroImage: todo
+heroImage: ""
 
 overview: "GoToBuddy is an innovative software development and AI project designed to revolutionize phone interactions by enabling users to have conversations with specialized AI characters. Users can dial a specific number and choose from six distinct AI personas, each an expert in their respective field. The project also includes a comprehensive website for managing user profiles and subscriptions, ensuring a seamless user experience."
 domain: "Artificial Intelligence (AI)"
@@ -65,7 +65,7 @@ The 6 distinct personas are as below:
 {{< case-study/caseStudySubtitle >}}
 
 
-<img alt="Challenges" src="/images/case-study/persana/challenge.svg">
+<img alt="Challenges" src="/images/case-study/icons/challenge.svg">
 
 <h2>
     <strong>
@@ -107,7 +107,7 @@ When the client approached us, they had a passionate vision for harnessing AI te
     * Function calling: Since the AI lacks real-time knowledge, it retrieves information based on user queries from an online model (Perplexity).
 
 {{< case-study/caseStudySubtitle >}}
-<img alt="Challenges" src="/images/case-study/persana/badge.svg">
+<img alt="Challenges" src="/images/case-study/icons/badge.svg">
 <h2>
     <strong>
         How ScaleReal Made It Happen
@@ -182,7 +182,7 @@ These steps outline the detailed process flow for handling user interactions in 
 
 
 {{< case-study/caseStudySubtitle LeftAlign="true" >}}
-<img alt="Challenges" src="/images/case-study/persana/keyfeatures.svg">
+<img alt="Challenges" src="/images/case-study/icons/keyfeatures.svg">
 <h2>
     <strong>
         Key Features Of The Project
@@ -213,7 +213,7 @@ We offer three types of subscriptions:
 By refining these features, we ensure a personalized, engaging, and up-to-date experience for all users of the AI GoToBuddy system.
 
 {{< case-study/caseStudySubtitle >}}
-<img alt="Challenges" src="/images/case-study/persana/star.svg">
+<img alt="Challenges" src="/images/case-study/icons/star.svg">
 <h2>
     <strong>
         How ScaleReal Made A Difference

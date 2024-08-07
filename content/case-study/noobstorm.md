@@ -10,11 +10,21 @@ domain: "Gaming"
 url: "/projects/case-study/noobstorm"
 
 ---
+## __Technologies and Technical Specifications__
+
+{{< case-study/technologies >}}
+
+<img src="/images/case-study/technologies/react.png" alt="React JS"/>
+<img src="/images/case-study/technologies/next.png" alt="Next JS"/>
+<img src="/images/case-study/technologies/supabase.png" alt="Supabase"/>
+<img src="/images/case-study/technologies/vercel.png" alt="Supabase"/>
+
+{{< /case-study/technologies >}}
 
 {{< case-study/caseStudySubtitle >}}
 
 
-<img alt="Challenges" src="/images/case-study/persana/challenge.svg">
+<img alt="Challenges" src="/images/case-study/icons/challenge.svg">
 
 <h2>
     <strong>
@@ -36,11 +46,7 @@ When Noobstorm approached us, their web application was incomplete and fraught w
 
 
 {{< case-study/caseStudySubtitle >}}
-
-
-<img alt="Challenges" src="/images/case-study/persana/badge.svg">
-
-
+<img alt="Challenges" src="/images/case-study/icons/badge.svg">
 <h2>
     <strong>
         How ScaleReal Made It Happen
@@ -50,17 +56,12 @@ When Noobstorm approached us, their web application was incomplete and fraught w
 
 Our implementation focused on three key areas:
 
-* __Comprehensive Web Application Audit:__ Our team of technical experts conducted an in-depth analysis of the existing web application. This audit helped us understand the extent of the issues and prioritize fixes based on their impact on the overall functionality and user experience.
-* __Strategic Development Plan:__ We created a detailed plan that outlined each phase of the development process, including timelines and resources required. This plan was designed to streamline efforts and eliminate the inefficiencies encountered with the freelance developers.
-* __Technical Expertise and Leadership:__ By introducing a dedicated team of experienced developers and a project manager, we ensured that the project had the leadership and technical expertise required to meet the highest standards of quality and efficiency.
-
-* __Scalability and Real-time Data:__ 
- 
- todo content
-
+1. __Comprehensive Web Application Audit:__ Our team of technical experts conducted an in-depth analysis of the existing web application. This audit helped us understand the extent of the issues and prioritize fixes based on their impact on the overall functionality and user experience.
+2. __Strategic Development Plan:__ We created a detailed plan that outlined each phase of the development process, including timelines and resources required. This plan was designed to streamline efforts and eliminate the inefficiencies encountered with the freelance developers.
+3. __Technical Expertise and Leadership:__ By introducing a dedicated team of experienced developers and a project manager, we ensured that the project had the leadership and technical expertise required to meet the highest standards of quality and efficiency.
 
 {{< case-study/caseStudySubtitle LeftAlign="true" >}}
-<img alt="Challenges" src="/images/case-study/persana/keyfeatures.svg">
+<img alt="Challenges" src="/images/case-study/icons/keyfeatures.svg">
 <h2>
     <strong>
         Key Features Of The Project
@@ -77,7 +78,7 @@ Through our development process, we introduced several key features to enhance u
 
 {{< case-study/caseStudySubtitle >}}
 
-<img alt="Challenges" src="/images/case-study/persana/star.svg">
+<img alt="Challenges" src="/images/case-study/icons/star.svg">
 <h2>
     <strong>
        How ScaleReal Made A Difference
@@ -88,7 +89,7 @@ Through our development process, we introduced several key features to enhance u
 The intervention led to transformative results for Noobstorm:
 * __Launch Readiness:__ Within a set timeframe, we successfully addressed all critical issues, resulting in a stable and fully functional platform ready for launch.
 * __Reduced Operational Burden:__ Sumer and his team were able to redirect their focus towards strategic business activities, including marketing and community engagement, rather than micromanaging development.
-* __Enhanced User Experience: The website’s user interface and functionality improvements significantly enhanced the overall user experience, making it easier for gamers to participate in tournaments and interact within the platform.
+* __Enhanced User Experience:__ The website’s user interface and functionality improvements significantly enhanced the overall user experience, making it easier for gamers to participate in tournaments and interact within the platform.
 * __Post Launch:__ The application has successfully hosted multiple tournaments across various gaming titles. The community has grown significantly, with a diverse range of players participating in tournaments and engaging with the platform. The leaderboard system has been particularly well-received, providing players with a clear path to improve their rankings.
 
 &nbsp;

@@ -20,9 +20,9 @@
             <h2 class="f700 text-black m-0 mb-4">
                 {{ .Params.title  }}
             </h2>
-
-            <img style="width: 100%; margin:0" src="{{ .Params.heroImage | absURL }}" alt="Case Study HeroSection Image">
-
+            {{ if ne .Params.heroImage "" }}
+                <img style="width: 100%; margin:0" src="{{ .Params.heroImage | absURL }}" alt="Case Study Hero Section Image">
+            {{ end }}
             <div class="overview bg-grey">
                 <h3 class="f700 text-black ">Project Overview</h3>
                 {{ .Params.overview  }}
