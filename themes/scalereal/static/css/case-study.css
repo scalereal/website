@@ -45,7 +45,8 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  max-width: 100%;object-fit: contain;
+  max-width: 100%;
+  object-fit: contain;
 }
 .case-study-page .overview {
   border-radius: 8px;
@@ -70,7 +71,7 @@
   margin-left: 40px;
 }
 .case-study-page .li-arrow-container li{
-    list-style: none;
+  list-style: none;
 }
 .case-study-page .li-arrow-container li::before {
   content: "➔";
@@ -97,7 +98,8 @@
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
-  margin: 50px 0 20px; padding: 0;
+  margin: 50px 0 20px;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +112,7 @@
   line-height: 32px;
 }
 .case-study-subtitle h2{
-    margin: 0;
+  margin: 0;
 }
 .case-study-page .img-carousel{
   margin-top: 50px;
