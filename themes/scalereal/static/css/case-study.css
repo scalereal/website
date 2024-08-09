@@ -43,7 +43,10 @@
 }
 .case-study-page img{
   width: 100%;
+  padding: 0;
   margin: 0;
+  max-width: 100%;
+  object-fit: contain;
 }
 .case-study-page .overview {
   border-radius: 8px;
@@ -51,7 +54,7 @@
   font-weight: 400;
   line-height: 32px;
   padding: 24px;
-  margin: 50px 0;
+  margin: 40px 0 60px;
 }
 .case-study-page h2 {
   margin: 50px 0 20px;
@@ -66,6 +69,14 @@
 .case-study-page li{
   list-style: inherit;
   margin-left: 40px;
+}
+.case-study-page .li-arrow-container li{
+  list-style: none;
+}
+.case-study-page .li-arrow-container li::before {
+  content: "➔";
+  margin-right: 8px;
+  color: #333;     
 }
 .case-study-page .grid-layout li {
   list-style: inside;
@@ -87,7 +98,8 @@
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
-  margin: 50px 0 20px; padding: 0;
+  margin: 50px 0 20px;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
@@ -100,7 +112,7 @@
   line-height: 32px;
 }
 .case-study-subtitle h2{
-    margin: 0;
+  margin: 0;
 }
 .case-study-page .img-carousel{
   margin-top: 50px;
