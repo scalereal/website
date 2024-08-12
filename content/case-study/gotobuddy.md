@@ -103,56 +103,87 @@ __Tool and Model Exploration:__ Exploring and integrating various tools and mode
 </h2>
 {{< /case-study/caseStudySubtitle >}}
 
- __Natural Language Processing (NLP) and AI Integration__
+__Natural Language Processing (NLP) and AI Integration__
 
-*Objective:* To ensure the AI characters can understand and interact with users naturally and accurately.
+Objective: To ensure the AI characters can understand and interact with users naturally and accurately.
 
-*Actions:*
-* Implemented state-of-the-art NLP models (e.g., fine-tuned versions of GPT-4).
-* Used top-notch third-party applications for text-to-speech and speech-to-text
+* __Actions:__
 
-*Outcomes:* High accuracy in understanding user inputs. Natural, engaging, and context-aware AI responses.
+{{< case-study/alphaContainer >}}
+<li>Implemented state-of-the-art NLP models (e.g., fine-tuned versions of GPT-4).</li>
+<li>Used top-notch third-party applications for text-to-speech and speech-to-text</li>
+{{< /case-study/alphaContainer >}}
 
- __User Experience (UX) Design__
+Outcomes: High accuracy in understanding user inputs. Natural, engaging, and context-aware AI responses.
 
-*Objective:* To create an intuitive, user-friendly interface for both the phone interaction system and the website.
+&nbsp;
 
-*Actions:*
-* Designed a seamless and responsive website for user profile management and subscription services.
-* Developed a clear and straightforward phone menu for selecting AI characters.
-* Incorporated user feedback to continually refine and enhance the design.
+__User Experience (UX) Design__
 
-*Outcomes:* Easy-to-navigate interfaces that enhance user satisfaction. Positive user engagement and retention.
+Objective: To create an intuitive, user-friendly interface for both the phone interaction system and the website.
 
-  __Data Security and Privacy__ 
+* __Actions:__
 
-*Objective:* To protect user data and ensure compliance with data protection regulations.
+{{< case-study/alphaContainer >}}
+    <li>Designed a seamless and responsive website for user profile management and subscription services.</li>
+    <li>Developed a clear and straightforward phone menu for selecting AI characters.</li>
+    <li>Incorporated user feedback to continually refine and enhance the design.</li>
+{{< /case-study/alphaContainer >}}
 
-*Actions:*
-* Implemented robust data encryption and security protocols.
-* Conducted regular security and compliance checks.
-* Developed secure systems for storing and managing personal information and call logs.
+Outcomes: Easy-to-navigate interfaces that enhance user satisfaction. Positive user engagement and retention.
 
-*Outcomes:* High level of data security and user trust. Compliance with relevant regulations 
+&nbsp;
+
+__Data Security and Privacy__ 
+
+Objective: To protect user data and ensure compliance with data protection regulations.
+
+* __Actions:__
+
+{{< case-study/alphaContainer >}}
+    <li>Implemented robust data encryption and security protocols.</li>
+    <li>Conducted regular security and compliance checks.</li>
+    <li>Developed secure systems for storing and managing personal information and call logs.</li>
+{{< /case-study/alphaContainer >}}
+
+Outcomes: High level of data security and user trust. Compliance with relevant regulations 
 
 &nbsp;
 
 By focusing on these three key areas, we ensured that the AI GoToBuddy project not only delivered advanced AI interactions but also provided a secure and user-friendly experience.
 
-## Call Handling and Real-Time Interaction Flow
+{{< case-study/caseStudySubtitle >}}
+<img alt="Call Handling" src="/images/case-study/icons/puzzle.svg">
+<h2>
+    <strong>
+        Call Handling and Real-Time Interaction Flow
+    </strong>
+</h2>
+{{< /case-study/caseStudySubtitle >}}
 
-1. __Initial Call Handling:__ When a user calls the AI phone number, Twilio manages the call and forwards the request to our Python backend server via a webhook.
-2. __User Details Check:__ The Python service processes the webhook event to verify the user's registration status. If registered, it proceeds; otherwise, a temporary user object is created. Respond to Twilio to establish a two-way communication channel using Twilio Streaming (connect verb).
-3. __Establishing Data Streaming:__ Once the streaming connection is established, the user's phone continuously sends data over a WebSocket connection to our Python service through Twilio Streaming.
-4. __Streaming Setup and Data Handling:__
-    * __Database Interaction:__ Fetches constant details like pause times from the database in microseconds to manage sentence completion.
-    * __Deepgram Integration:__ Configures parameters to handle Twilio data, which arrives in x-mu-law encoding format with 8k samples per second. Ensures streaming buffer sizes range between 20ms and 250ms of audio, compliant with Deepgram's requirements.
-5. __Live Data Collection:__ Python service collects live data from the user in mu-law encoding format at an 8k sample rate via WebSocket. Buffers data until it reaches 20ms, then sends it to Deepgram for speech-to-text conversion.
-6. __Speech-to-Text Conversion:__ Deepgram converts live audio data into text. Upon reaching final speech pause time, gathers sentences and forwards them to OpenAI LLM through Langchain.
-7. __Query Processing:__ Transcribed text (user query) along with a prompt fetched from the database is passed to the OpenAI LLM module through Langchain. OpenAI (GPT-4.o) analyzes the query to determine if a function call is necessary, fetching the latest information via Perplexity if required.
-8. __Generating and Formatting the Response:__ Retrieved information is formatted into a human-readable response by OpenAI. The entire AI-generated response is processed through OpenAI TTS (whisper) for conversion from text to speech.
-9. __Final Response Delivery:__ Output from OpenAI TTS is base64 encoded with a 24k sample rate and converted to 8k mu-law encoding for compatibility with Twilio. Formatted audio response is sent through Twilio streaming, allowing users to hear the response in real-time on their phone.
-10. __Repetition for Continuous Interaction:__ Steps 5 to 9 are repeated continuously during the call, ensuring each user query is processed, answered, and delivered promptly.
+* __Initial Call Handling:__ When a user calls the AI phone number, Twilio manages the call and forwards the request to our Python backend server via a webhook.
+* __User Details Check:__ The Python service processes the webhook event to verify the user's registration status. If registered, it proceeds; otherwise, a temporary user object is created. Respond to Twilio to establish a two-way communication channel using Twilio Streaming (connect verb).
+* __Establishing Data Streaming:__ Once the streaming connection is established, the user's phone continuously sends data over a WebSocket connection to our Python service through Twilio Streaming.
+
+* __Streaming Setup and Data Handling:__
+{{< case-study/alphaContainer >}}
+    <ul>
+        <li class="bold-marker"><strong>Database Interaction:</strong> Fetches constant details like pause times from the database in microseconds to manage sentence completion.</li>
+        <li class="bold-marker"><strong>Deepgram Integration:</strong> Configures parameters to handle Twilio data, which arrives in x-mu-law encoding format with 8k samples per second.</li>
+        <ul>
+            <li class='sub'>Ensures streaming buffer sizes range between 20ms and 250ms of audio, compliant with Deepgram's requirements.
+            </li>
+        </ul>
+    </ul>
+{{< /case-study/alphaContainer >}}
+* __Live Data Collection:__ Python service collects live data from the user in mu-law encoding format at an 8k sample rate via WebSocket. Buffers data until it reaches 20ms, then sends it to Deepgram for speech-to-text conversion.
+* __Speech-to-Text Conversion:__ Deepgram converts live audio data into text. Upon reaching final speech pause time, gathers sentences and forwards them to OpenAI LLM through Langchain.
+* __Query Processing:__ Transcribed text (user query) along with a prompt fetched from the database is passed to the OpenAI LLM module through Langchain. OpenAI (GPT-4.o) analyzes the query to determine if a function call is necessary, fetching the latest information via Perplexity if required.
+* __Generating and Formatting the Response:__ Retrieved information is formatted into a human-readable response by OpenAI. The entire AI-generated response is processed through OpenAI TTS (whisper) for conversion from text to speech.
+* __Final Response Delivery:__ Output from OpenAI TTS is base64 encoded with a 24k sample rate and converted to 8k mu-law encoding for compatibility with Twilio. Formatted audio response is sent through Twilio streaming, allowing users to hear the response in real-time on their phone.
+* __Repetition for Continuous Interaction:__ Steps 5 to 9 are repeated continuously during the call, ensuring each user query is processed, answered, and delivered promptly.
+
+&nbsp;
 
 These steps outline the detailed process flow for handling user interactions in real-time through the AI system, integrating voice handling, speech recognition, natural language processing, and audio response delivery seamlessly.
 
@@ -168,24 +199,19 @@ These steps outline the detailed process flow for handling user interactions in 
 {{< /case-study/caseStudySubtitle >}}
 
 Through our development process, we introduced several key features to enhance user engagement and operational efficiency:
-* __AI Greeting and Personal Context__
+* __AI Greeting and Personal Context__ The AI greets users with a personal touch by addressing them by name, leveraging Google social login for user registration. The greeting message includes a fun fact about the current date and concludes with a query to engage the user. The AI maintains a summary of previous conversations, ensuring seamless context switching throughout the interaction.
+* __Personas__ To enhance user engagement and interest, we introduced 6 distinct AI personas. Each persona provides responses characterized by its unique traits, ensuring varied and personalized interactions.
+* __Current Updates__ Our application is powered by OpenAI's GPT-4.0. Since GPT-4.0 does not provide the latest news or current events, we integrated Perplexity AI. By using specific keywords, our system determines whether to source information from OpenAI or Perplexity based on the user's query.
+* __Subscriptions__ We offer three types of subscriptions:
+{{< case-study/alphaContainer >}}
+<ul>
+    <li>Pre-trial: Users get 5 minutes of conversation with the AI without any registration.</li>
+    <li>Trial: Users must register on the website to receive 15 minutes of conversation time.</li>
+    <li>Paid Subscription: For extended interaction, users can subscribe to a paid plan for unlimited conversation time.</li>
+</ul>
+{{< /case-study/alphaContainer >}}
 
-The AI greets users with a personal touch by addressing them by name, leveraging Google social login for user registration. The greeting message includes a fun fact about the current date and concludes with a query to engage the user. The AI maintains a summary of previous conversations, ensuring seamless context switching throughout the interaction.
-* __Personas__
-
-To enhance user engagement and interest, we introduced 6 distinct AI personas. Each persona provides responses characterized by its unique traits, ensuring varied and personalized interactions.
-* __Current Updates__
-
-Our application is powered by OpenAI's GPT-4.0. Since GPT-4.0 does not provide the latest news or current events, we integrated Perplexity AI. By using specific keywords, our system determines whether to source information from OpenAI or Perplexity based on the user's query.
-* __Subscriptions__
-
-We offer three types of subscriptions:
-
-{{< case-study/liArrowContainer >}}
-    <li><b>Pre-trial:</b> Users get 5 minutes of conversation with the AI without any registration.</li>
-    <li><b>Trial:</b>  Users must register on the website to receive 15 minutes of conversation time.</li>
-    <li><b>Paid Subscription:</b> For extended interaction, users can subscribe to a paid plan for unlimited conversation time.</li>
-{{< /case-study/liArrowContainer >}}
+&nbsp;
 
 By refining these features, we ensure a personalized, engaging, and up-to-date experience for all users of the AI GoToBuddy system.
 
@@ -201,9 +227,14 @@ By refining these features, we ensure a personalized, engaging, and up-to-date e
 The intervention led to transformative results for GoToBuddy:
 
 * __Advanced Technology Integration:__
-    * Twilio Integration: Seamless implementation for handling calls, ensuring reliable communication channels.
-    * Deepgram Integration: Precision in speech recognition capabilities, enhancing interaction accuracy.
-    * OpenAI Models: Utilization of state-of-the-art natural language processing for dynamic and context-aware responses.
+{{< case-study/alphaContainer >}}
+<ul>
+    <li>Twilio Integration: Seamless implementation for handling calls, ensuring reliable communication channels.</li>
+    <li>Deepgram Integration: Precision in speech recognition capabilities, enhancing interaction accuracy.</li>
+    <li>OpenAI Models: Utilization of state-of-the-art natural language processing for dynamic and context-aware responses.</li>
+</ul>
+{{< /case-study/alphaContainer >}}
+
 * __User-Centric Design Approach:__ Tailored user experiences through personalized interactions with distinct AI personas. Real-time response capabilities ensure immediate and relevant feedback to user queries.
 * __Scalable Infrastructure:__ Implemented scalable infrastructure to accommodate growing user demands. Optimized data handling processes for efficient and effective operations.
 * __Innovation and Adaptability:__ Constant exploration and integration of new tools and technologies to refine system functionalities. Agile development methodologies ensure adaptability to evolving project requirements and user needs.
