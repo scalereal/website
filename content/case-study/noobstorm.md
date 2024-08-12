@@ -17,15 +17,16 @@ url: "/projects/case-study/noobstorm"
 <img src="/images/case-study/technologies/react.png" alt="React JS"/>
 <img src="/images/case-study/technologies/next.png" alt="Next JS"/>
 <img src="/images/case-study/technologies/supabase.png" alt="Supabase"/>
-<img src="/images/case-study/technologies/vercel.png" alt="Supabase"/>
+<img src="/images/case-study/technologies/vercel.png" alt="Vercel"/>
 
 {{< /case-study/technologies >}}
 
+&nbsp;
+
+---
+
 {{< case-study/caseStudySubtitle >}}
-
-
 <img alt="Challenges" src="/images/case-study/icons/challenge.svg">
-
 <h2>
     <strong>
         Understanding The Project Challenges
@@ -60,7 +61,8 @@ Our implementation focused on three key areas:
 2. __Strategic Development Plan:__ We created a detailed plan that outlined each phase of the development process, including timelines and resources required. This plan was designed to streamline efforts and eliminate the inefficiencies encountered with the freelance developers.
 3. __Technical Expertise and Leadership:__ By introducing a dedicated team of experienced developers and a project manager, we ensured that the project had the leadership and technical expertise required to meet the highest standards of quality and efficiency.
 
-{{< case-study/caseStudySubtitle LeftAlign="true" >}}
+{{< case-study/caseStudySubtitle >}}
+
 <img alt="Challenges" src="/images/case-study/icons/keyfeatures.svg">
 <h2>
     <strong>
@@ -94,7 +96,14 @@ The intervention led to transformative results for Noobstorm:
 
 &nbsp;
 
-## __Conclusion__
+{{< case-study/caseStudySubtitle >}}
+<img alt="Challenges" src="/images/case-study/icons/conclusion.svg">
+<h2>
+    <strong>
+        Conclusion
+    </strong>
+</h2>
+{{< /case-study/caseStudySubtitle >}}
 
 The collaboration between Noobstorm and our team turned a struggling project into a thriving online gaming tournament platform with all the top players in the country. By understanding the root cause of the challenges and implementing targeted solutions, Noobstorm was not only able to launch on time but also positioned itself as a go-to platform within the gaming community.
 
