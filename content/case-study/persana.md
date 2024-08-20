@@ -23,6 +23,33 @@ url: "/projects/case-study/persana"
 
 {{< /case-study/technologies >}}
 
+<!-- mobile view -->
+
+{{< case-study/imgCarousel >}}
+
+<div>
+<img src="/images/case-study/technologies/react.png" alt="React JS"/>
+<img src="/images/case-study/technologies/tailwind.png" alt="Tailwind CSS"/>
+</div>
+
+<div>
+<img src="/images/case-study/technologies/vite.png" alt="Vite"/>
+<img src="/images/case-study/technologies/nest.png" alt="Nest JS"/>
+</div>
+
+<div>
+
+<img src="/images/case-study/technologies/mongodb.png" alt="MongoDB"/>
+<img src="/images/case-study/technologies/redis.png" alt="Redis"/>
+</div>
+
+<div>
+<img src="/images/case-study/technologies/vue.png" alt="Vue JS"/>
+<img src="/images/case-study/technologies/framer.png" alt="Framer"/>
+</div>
+
+{{< /case-study/imgCarousel >}} 
+
 ## __Integrations with Different Platforms__
 
 {{< case-study/grid >}}
@@ -52,6 +79,14 @@ url: "/projects/case-study/persana"
 <li> Sendspark </li>
 
 {{< /case-study/grid >}}
+
+
+<!-- mobile view -->
+{{< case-study/integrations >}} 
+    <p> Apify, Apollo.io, Chat GPT, Claude, Contactout, Datagma, Google Search, Google Business, Google,
+     Google Shopping, Github, Hubspot, Icypeas, Instantly, La Growth Machine, Leadmagic, Outreach,
+     Predictleads, Prospeo, Salesforce, Salesoft, Smartlead, Sendspark </p>
+{{< /case-study/integrations >}}
 
 ---
 

@@ -22,6 +22,23 @@ url: "/projects/case-study/goToBuddy"
 
 {{< /case-study/technologies >}}
 
+
+{{< case-study/imgCarousel >}} 
+<div>
+    <img src="/images/case-study/technologies/django.png" alt="django"/>
+    <img src="/images/case-study/technologies/postgre.png" alt="postgres"/>
+</div>
+
+<div>
+    <img src="/images/case-study/technologies/aws.png" alt="aws"/>
+    <img src="/images/case-study/technologies/react.png" alt="React JS"/>
+</div>
+<div>
+<img src="/images/case-study/technologies/mantine.png" alt="mantineUI"/>
+</div>
+{{< /case-study/imgCarousel >}} 
+
+
 ## __Integrations with Different Platforms__
 
 {{< case-study/grid >}}
@@ -35,6 +52,11 @@ url: "/projects/case-study/goToBuddy"
 <li> Langchain </li>
 
 {{< /case-study/grid >}}
+
+<!-- mobile view -->
+{{< case-study/integrations >}}
+   <p>Twilio, Twilio Streaming, Deepgram, Perplexity, OpenAI (GPT-4), OpenAI TTS, Langchain </p>
+{{< /case-study/integrations >}} 
 
 ## __Architecture:__
 Describes the technical details of what happens when a user calls the AI phone number.

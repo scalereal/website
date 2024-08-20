@@ -10,6 +10,7 @@ domain: "Gaming"
 url: "/projects/case-study/noobstorm"
 
 ---
+
 ## __Technologies and Technical Specifications__
 
 {{< case-study/technologies >}}
@@ -20,6 +21,20 @@ url: "/projects/case-study/noobstorm"
 <img src="/images/case-study/technologies/vercel.png" alt="Vercel"/>
 
 {{< /case-study/technologies >}}
+
+
+{{< case-study/imgCarousel >}}
+<div>
+    <img src="/images/case-study/technologies/react.png" alt="React JS"/>
+    <img src="/images/case-study/technologies/next.png" alt="Next JS"/>
+</div>
+<div>
+    <img src="/images/case-study/technologies/supabase.png" alt="Supabase"/>
+    <img src="/images/case-study/technologies/vercel.png" alt="Vercel"/>
+</div>
+{{< /case-study/imgCarousel >}} 
+
+
 
 &nbsp;
 
