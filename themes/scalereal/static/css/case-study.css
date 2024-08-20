@@ -26,12 +26,15 @@
 .case-study-page .technologies{
   margin: 0;
   padding: 0;
-}
-.case-study-page .technologies {
   max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 .case-study-page .technologies img{
-  margin: 30px 25px 0 0;
+  margin: 30px 40px 0 0;
   max-width: 200px;
   width: auto;
   max-height: 50px;
@@ -64,19 +67,26 @@
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 10px;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 .case-study-page li{
   list-style: inherit;
   margin-left: 40px;
 }
-.case-study-page .li-arrow-container li{
-  list-style: none;
+.case-study-page .alpha-container li{
+  list-style: lower-alpha;
 }
-.case-study-page .li-arrow-container li::before {
-  content: "➔";
-  margin-right: 8px;
-  color: #333;     
+.case-study-page .alpha-container ul li.sub{
+  list-style: inherit;
+  margin-left: 80px;
+}
+.case-study-page .alpha-container ul li,
+.case-study-page .alpha-container li::marker{
+  font-weight: 400;
+}
+.case-study-page .alpha-container .bold-marker::marker{
+  font-weight: bold;
 }
 .case-study-page .grid-layout li {
   list-style: inside;
@@ -98,7 +108,7 @@
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
-  margin: 50px 0 20px;
+  margin: 50px 0 50px;
   padding: 0;
   justify-content: center;
   align-items: center;
@@ -115,21 +125,10 @@
   margin: 0;
 }
 .case-study-page .img-carousel{
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
-.case-study-page .img-carousel .owl-item{
-  align-items: center;
-  padding: 0 10px 0;
-}
-.case-study-page .img-carousel .owl-dots{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.case-study-page .img-carousel img{
-  width: 100%;
+.case-study-page .integrations-mobile{
+ display: none;
 }
 @media screen and (min-width:641px) and (max-width: 768px) {
   .case-study-page .grid-layout  {
@@ -146,18 +145,72 @@
     margin: 30px auto 0 0;
   }
 }
-@media screen and (max-width: 640px) {
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .case-study-page .grid-layout  {
-    grid-template-columns: repeat(1, 1fr);
-    padding-left: 20%;
+    grid-template-columns: repeat(2, 1fr);
   }
   .case-study-page .technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
   }
   .case-study-page .technologies img{
-    margin: 30px 0 0;
+    margin: 30px 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .case-study-page .technologies {
+    display: none;
+  }
+  .case-study-page .img-carousel{
+    display: block;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-study-page .img-carousel .owl-item{
+    align-items: center;
+  }
+  .case-study-page .img-carousel .owl-dots{
+    display: flex;
+    margin: 40px 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .case-study-page .img-carousel div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .case-study-page .img-carousel div img{
+    max-width: 180px ;
+    max-height: 40px;
+  }
+  .case-study-page .grid-layout{
+    display: none;
+  }
+  .case-study-page .img-carousel{
+    display: block;
+    width: auto;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-study-page .integrations-mobile{
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0;
+    width: 100%;
+    display: flex;
   }
 }

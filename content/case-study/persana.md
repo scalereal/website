@@ -23,6 +23,33 @@ url: "/projects/case-study/persana"
 
 {{< /case-study/technologies >}}
 
+<!-- mobile view -->
+
+{{< case-study/imgCarousel >}}
+
+<div>
+<img src="/images/case-study/technologies/react.png" alt="React JS"/>
+<img src="/images/case-study/technologies/tailwind.png" alt="Tailwind CSS"/>
+</div>
+
+<div>
+<img src="/images/case-study/technologies/vite.png" alt="Vite"/>
+<img src="/images/case-study/technologies/nest.png" alt="Nest JS"/>
+</div>
+
+<div>
+
+<img src="/images/case-study/technologies/mongodb.png" alt="MongoDB"/>
+<img src="/images/case-study/technologies/redis.png" alt="Redis"/>
+</div>
+
+<div>
+<img src="/images/case-study/technologies/vue.png" alt="Vue JS"/>
+<img src="/images/case-study/technologies/framer.png" alt="Framer"/>
+</div>
+
+{{< /case-study/imgCarousel >}} 
+
 ## __Integrations with Different Platforms__
 
 {{< case-study/grid >}}
@@ -52,6 +79,14 @@ url: "/projects/case-study/persana"
 <li> Sendspark </li>
 
 {{< /case-study/grid >}}
+
+
+<!-- mobile view -->
+{{< case-study/integrations >}} 
+    <p> Apify, Apollo.io, Chat GPT, Claude, Contactout, Datagma, Google Search, Google Business, Google,
+     Google Shopping, Github, Hubspot, Icypeas, Instantly, La Growth Machine, Leadmagic, Outreach,
+     Predictleads, Prospeo, Salesforce, Salesoft, Smartlead, Sendspark </p>
+{{< /case-study/integrations >}}
 
 ---
 
@@ -93,7 +128,8 @@ url: "/projects/case-study/persana"
 
 {{< /case-study/imgCarousel >}} -->
 
-{{< case-study/caseStudySubtitle LeftAlign="true" >}}
+{{< case-study/caseStudySubtitle >}}
+
 <img alt="Challenges" src="/images/case-study/icons/keyfeatures.svg">
 <h2>
     <strong>
@@ -203,8 +239,13 @@ The Persana Chrome extension is a powerful tool for LinkedIn prospecting, offeri
 
 Overall, ScaleReal’s interventions led to a robust, scalable, and maintainable application that not only met the client’s immediate needs but also positioned them well for future growth and success.
 
-&nbsp;
-
-## __Conclusion__
+{{< case-study/caseStudySubtitle >}}
+<img alt="Challenges" src="/images/case-study/icons/conclusion.svg">
+<h2>
+    <strong>
+        Conclusion
+    </strong>
+</h2>
+{{< /case-study/caseStudySubtitle >}}
 
 The collaboration between ScaleReal and Persana has been transformative across multiple fronts, showcasing ScaleReal's ability to enhance development efficiency, improve product quality, and ensure scalable, reliable applications. By integrating skilled developers, Persana benefited from streamlined project delivery and strategic focus. Technical leadership and adherence to best practices resulted in a stable, maintainable product that meets high standards. Addressing scalability issues improved application performance, enhancing user experience and satisfaction. Refactoring and code standardization led to fewer bugs and easier maintenance, reducing long-term costs. Streamlined collaboration through centralized repositories and enhanced communication tools boosted project management efficiency and security. Automated deployment processes enabled swift feature rollouts, maintaining Persana's competitive edge. Overall, this partnership exemplifies ScaleReal's commitment to driving innovation and delivering exceptional results in software development and client success.
