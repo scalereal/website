@@ -1,21 +1,28 @@
 .case-study-page {
   margin-bottom: 100px;
 }
+.case-study-page .main-title {
+  margin-top: 56px;
+  margin-bottom: 34px;
+}
 .case-study-page .back-link-section {
   display: flex;
+  margin: 0;
   align-items: center;
   height: fit-content;
-  padding:0;
-  margin: 0;
+  padding: 0;
 }
-.case-study-page .back-link-section .line{
+.case-study-page .back-link-section .back-link {
+  margin: 24px 0 0;
+}
+.case-study-page .back-link-section .line {
   transition: 0.5s;
 }
 .case-study-page .back-link-section:hover .line {
-    transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 .case-study-page .back-link-section:not(:hover) .line {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 .case-study-page .back-link-text {
   font-size: 20px;
@@ -23,17 +30,17 @@
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-.case-study-page .technologies{
+.case-study-page .technologies {
   margin: 0;
   padding: 0;
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(6,auto);
+  grid-template-columns: repeat(6, auto);
   flex-wrap: wrap;
   align-items: center;
 }
 
-.case-study-page .technologies img{
+.case-study-page .technologies img {
   margin: 30px 40px 0 0;
   max-width: 200px;
   width: auto;
@@ -44,7 +51,7 @@
   margin-right: 20px;
   width: auto;
 }
-.case-study-page img{
+.case-study-page img {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -65,37 +72,37 @@
 .case-study-page .grid-layout {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.case-study-page li{
+.case-study-page li {
   list-style: inherit;
   margin-left: 40px;
 }
-.case-study-page .alpha-container li{
+.case-study-page .alpha-container li {
   list-style: lower-alpha;
 }
-.case-study-page .alpha-container ul li.sub{
+.case-study-page .alpha-container ul li.sub {
   list-style: inherit;
   margin-left: 80px;
 }
 .case-study-page .alpha-container ul li,
-.case-study-page .alpha-container li::marker{
+.case-study-page .alpha-container li::marker {
   font-weight: 400;
 }
-.case-study-page .alpha-container .bold-marker::marker{
+.case-study-page .alpha-container .bold-marker::marker {
   font-weight: bold;
 }
 .case-study-page .grid-layout li {
   list-style: inside;
   margin: 0;
-} 
+}
 .case-study-page ol ol {
   list-style-type: lower-alpha;
 }
-.case-study-page li::marker{
+.case-study-page li::marker {
   font-weight: bold;
 }
 .case-study-page .column-layout {
@@ -103,35 +110,59 @@
   width: 100%;
 }
 .case-study-page hr {
-  border-top: 1px solid #CCCBCB;
+  border-top: 1px solid #cccbcb;
 }
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
   margin: 50px 0 50px;
   padding: 0;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
-.case-study-page .case-study-subtitle.align-left{
-  justify-content: left;
-} 
-.case-study-page p,
+
 .case-study-page li {
   font-size: 20px;
   line-height: 32px;
 }
-.case-study-subtitle h2{
+
+.case-study-page p,
+.case-study-page ul.grid-layout li {
+  font-size: 20px;
+  line-height: 32px;
   margin: 0;
 }
-.case-study-page .img-carousel{
+
+.case-study-page strong {
+  font-weight: 600;
+}
+
+.case-study-page li:first-child {
+  margin-top: 2.14rem;
+}
+
+.case-study-page li:not(:first-child) {
+  margin-top: 1.14rem;
+}
+
+.case-study-page li:last-child {
+  margin-bottom: 2.14rem;
+}
+
+.case-study-subtitle h2 {
+  margin: 0;
+}
+
+.case-study-page .img-carousel {
   display: none;
 }
-.case-study-page .integrations-mobile{
- display: none;
+
+.case-study-page .integrations-mobile {
+  display: none;
 }
-@media screen and (min-width:641px) and (max-width: 768px) {
-  .case-study-page .grid-layout  {
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .case-study-page .grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
   .case-study-page .technologies {
@@ -141,13 +172,13 @@
     justify-content: center;
     align-items: center;
   }
-  .case-study-page .technologies img{
+  .case-study-page .technologies img {
     margin: 30px auto 0 0;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .case-study-page .grid-layout  {
+  .case-study-page .grid-layout {
     grid-template-columns: repeat(2, 1fr);
   }
   .case-study-page .technologies {
@@ -156,10 +187,10 @@
     max-width: 100%;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
   }
-  .case-study-page .technologies img{
+  .case-study-page .technologies img {
     margin: 30px 20px 0 0;
   }
 }
@@ -168,7 +199,7 @@
   .case-study-page .technologies {
     display: none;
   }
-  .case-study-page .img-carousel{
+  .case-study-page .img-carousel {
     display: block;
     width: 100vw;
     flex-direction: column;
@@ -176,29 +207,29 @@
     justify-content: center;
     align-items: center;
   }
-  .case-study-page .img-carousel .owl-item{
+  .case-study-page .img-carousel .owl-item {
     align-items: center;
   }
-  .case-study-page .img-carousel .owl-dots{
+  .case-study-page .img-carousel .owl-dots {
     display: flex;
     margin: 40px 0;
     flex-direction: row;
     justify-content: center;
   }
-  .case-study-page .img-carousel div{
+  .case-study-page .img-carousel div {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .case-study-page .img-carousel div img{
-    max-width: 180px ;
+  .case-study-page .img-carousel div img {
+    max-width: 180px;
     max-height: 40px;
   }
-  .case-study-page .grid-layout{
+  .case-study-page .grid-layout {
     display: none;
   }
-  .case-study-page .img-carousel{
+  .case-study-page .img-carousel {
     display: block;
     width: auto;
     flex-direction: column;
@@ -206,7 +237,7 @@
     justify-content: center;
     align-items: center;
   }
-  .case-study-page .integrations-mobile{
+  .case-study-page .integrations-mobile {
     width: 100%;
     margin: 0 0 50px;
     padding: 0;

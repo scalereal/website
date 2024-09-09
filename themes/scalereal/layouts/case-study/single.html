@@ -7,9 +7,8 @@
     {{ partial "nav" . }}
     <main class="case-study-page">
         <div class="container">
-            
-            <div class="back-link-section mt-4 mb-4" >
-                <a class="back-link back-link-section" href="/projects" style="display: flex; align-items: center;">
+            <div class="back-link-section" >
+                <a class="back-link" href="/projects" style="display: flex; align-items: center;">
                     <span class="line mr-2">
                         <img src="{{ "images/blog/Back.svg" | absURL }}" alt="back arrow">
                     </span>
@@ -17,7 +16,7 @@
                 </a>
             </div> 
             
-            <h2 class="f700 text-black m-0 mb-4">
+            <h2 class="f700 text-black main-title">
                 {{ .Params.title  }}
             </h2>
             {{ if ne .Params.heroImage "" }}
