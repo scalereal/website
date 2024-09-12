@@ -160,6 +160,10 @@
   list-style-type: lower-alpha;
 }
 
+.case-study-page .actions-list ul li:nth-child(n + 2)::marker {
+  font-weight: 400;
+}
+
 .case-study-page .alpha-container .bold-marker::marker {
   font-weight: 600;
 }
