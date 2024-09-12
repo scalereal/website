@@ -10,7 +10,7 @@ url: "/projects/case-study/persana"
 
 ## __Technologies and Technical Specifications__
 
-{{< case-study/technologies >}}
+{{< case-study/technologies  needMargin="true">}}
 
 <img src="/images/case-study/technologies/react.png" alt="React JS"/>
 <img src="/images/case-study/technologies/tailwind.png" alt="Tailwind CSS"/>

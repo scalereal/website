@@ -1,5 +1,5 @@
 {{/*shorcode container for Technologies and Technical Specifications icons below
     project overview in case study*/}}
-<div class="technologies">
+<div class="technologies {{ if .Get "needMargin" }} technologies-margin {{ end }}">
     {{ .Inner }}
 </div>

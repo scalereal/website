@@ -4,6 +4,13 @@
 .case-study-page .main-title {
   margin-top: 56px;
   margin-bottom: 34px;
+  color: #242424;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
 }
 .case-study-page .back-link-section {
   display: flex;
@@ -41,12 +48,35 @@
 }
 
 .case-study-page .technologies img {
-  margin: 30px 40px 0 0;
+  margin: 0;
   max-width: 200px;
   width: auto;
   max-height: 50px;
   object-fit: contain;
 }
+.case-study-page .technologies.technologies-margin img {
+  margin: 0 40px 0 0;
+}
+.case-study-page .technologies.technologies-margin img:nth-child(7),
+.case-study-page .technologies.technologies-margin img:nth-child(8) {
+  margin: 30px 40px 0 0;
+}
+.case-study-page .case-study-subtitle {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 0 44px;
+  color: #212529;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0;
+  justify-content: left;
+  align-items: center;
+}
+
 .case-study-page .case-study-subtitle img {
   margin-right: 20px;
   width: auto;
@@ -66,8 +96,22 @@
   padding: 24px;
   margin: 40px 0 60px;
 }
+.case-study-page .overview h3 {
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
 .case-study-page h2 {
-  margin: 50px 0 20px;
+  margin: 80px 0 25px;
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
 }
 .case-study-page .grid-layout {
   width: 100%;
@@ -112,14 +156,6 @@
 .case-study-page hr {
   border-top: 1px solid #cccbcb;
 }
-.case-study-page .case-study-subtitle {
-  display: flex;
-  flex-direction: row;
-  margin: 50px 0 50px;
-  padding: 0;
-  justify-content: left;
-  align-items: center;
-}
 
 .case-study-page li {
   font-size: 20px;
@@ -134,9 +170,11 @@
 }
 
 .case-study-page strong {
+  font-weight: 700;
+}
+.case-study-page li strong {
   font-weight: 600;
 }
-
 .case-study-page li:first-child {
   margin-top: 2.14rem;
 }
