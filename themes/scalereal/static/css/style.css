@@ -2482,6 +2482,7 @@ lottie-player {
 }
 .article-content h2 {
   font-weight: 700;
+  font-size: 24px !important;
   margin-top: 2.2rem;
 }
 .article-content h3 {
