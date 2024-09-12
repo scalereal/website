@@ -10,7 +10,7 @@ url: "/projects/case-study/persana"
 
 ## __Technologies and Technical Specifications__
 
-{{< case-study/technologies >}}
+{{< case-study/technologies  needMargin="true">}}
 
 <img src="/images/case-study/technologies/react.png" alt="React JS"/>
 <img src="/images/case-study/technologies/tailwind.png" alt="Tailwind CSS"/>
@@ -140,9 +140,12 @@ url: "/projects/case-study/persana"
 
 
 ##### __Lead Generation Enrichment__
-The lead enrichment feature of Persana AI is designed to enhance the quality and depth of your lead data, making it easier for sales and marketing teams to engage with potential customers effectively. Here's how it works:
 
 &nbsp;
+
+The lead enrichment feature of Persana AI is designed to enhance the quality and depth of your lead data, making it easier for sales and marketing teams to engage with potential customers effectively. Here's how it works:
+
+
 
 *   __Dynamic Data Enrichment:__ Persana AI leverages data from over 75 sources, including LinkedIn, Salesforce, Apollo, ContactOut, and GitHub. This feature enriches your lead lists with valuable information such as verified emails, company details, tech stacks, recent news, and competitor insights. This comprehensive data enrichment ensures you have the most accurate and up-to-date information about your leads.
 
@@ -154,16 +157,18 @@ The lead enrichment feature of Persana AI is designed to enhance the quality and
 
 *   __Integration with CRM and Sales Tools:__ Persana AI integrates seamlessly with popular CRM systems like Salesforce and HubSpot, streamlining the data flow and enhancing the overall efficiency of sales processes. This integration ensures that enriched data is easily accessible and actionable within your existing workflow.
 
-&nbsp;
+
 
 Overall, Persana AI's lead enrichment feature is a powerful tool for boosting sales efficiency by providing enriched, real-time data, and facilitating personalized outreach efforts.
 
 &nbsp;
 
 ##### __AI-Generated Messaging__
-The AI-generated messaging feature of Persana AI allows businesses to create personalized outreach messages at scale, enhancing engagement with potential customers. Here's a detailed breakdown of how it works:
 
 &nbsp;
+
+The AI-generated messaging feature of Persana AI allows businesses to create personalized outreach messages at scale, enhancing engagement with potential customers. Here's a detailed breakdown of how it works:
+
 
 * __Personalized Outreach:__ Persana AI uses advanced algorithms to craft personalized emails and messages tailored to the individual recipient's profile and behavior. This personalization helps increase the likelihood of engaging the prospect effectively.
 * __Email Automation:__ The platform can automate the process of sending these personalized messages. By generating hundreds of tailored emails swiftly, Persana AI ensures that outreach is both efficient and scalable, saving significant time for sales teams and enabling them to focus on high-priority tasks.
@@ -171,7 +176,6 @@ The AI-generated messaging feature of Persana AI allows businesses to create per
 * __Customizable Tone:__ The AI-generated messages can be adjusted to match the desired tone and style of the business, ensuring that the communication feels authentic and aligns with the brand's voice.
 * __Integration with CRM:__ Persana AI integrates seamlessly with existing CRM systems, allowing for easy management of customer interactions and data synchronization. This integration helps maintain consistency across all customer touchpoints and streamlines the workflow for sales teams.
 
-&nbsp;
 
 Overall, the AI-generated messaging feature of Persana AI is designed to enhance the effectiveness of sales and marketing efforts by providing highly personalized, data-driven, and automated communication tools. This leads to improved engagement rates and ultimately drives better sales outcomes.
 
@@ -179,36 +183,35 @@ Overall, the AI-generated messaging feature of Persana AI is designed to enhance
 
 ##### __LinkedIn Prospecting via a Chrome Extension__
 
-&nbsp;
 
 1. __Comprehensive Profile Insights__
     1. __Detailed Information Retrieval:__ With the Persana Chrome extension, users can navigate to any LinkedIn profile and instantly access a wealth of information. This includes the individual's name, title, company name, professional highlights, and news about their company. Users also get insights into the company's funding status and the person's work email, along with its validity status.
     
     2. __Enhanced Prospecting:__ This feature allows users to gather critical information quickly, making it easier to assess potential leads and opportunities. The comprehensive data helps in personalizing outreach efforts, improving the chances of successful connections.
 
-&nbsp;
+
 
 2. __Direct Import to Persana Platform__
     1. __Efficient Search and Import:__ Users can search for people on LinkedIn and directly import their profiles into the Persana platform. This seamless integration eliminates the need for manual data entry, saving time and reducing the risk of errors.
     2. __Streamlined Workflow:__ By consolidating prospect information within Persana, users can manage and analyze their leads more effectively. This integration enhances productivity and ensures that all relevant data is readily accessible.
 
-&nbsp;
+
 
 3. __AI-Generated Comments__
     1. __Engaging with Posts:__ Users can generate AI-based comments on any LinkedIn post. This feature leverages artificial intelligence to create meaningful and relevant comments, helping users engage more effectively with their network.
     2. __Boosting Visibility:__ Thoughtful and pertinent comments can increase a user's visibility on LinkedIn, fostering stronger relationships and enhancing their professional presence on the platform.
 
-&nbsp;
+
 
 4. __Feed Post Reactors' Details__
     1. __Capturing Engagement Data:__ The extension allows users to grab the details of individuals who react to LinkedIn feed posts and store this information on the Persana platform. This feature provides insights into who is engaging with specific content, helping users identify potential leads and influencers.
     2. __Enhanced Targeting:__ By understanding who is reacting to posts, users can tailor their outreach strategies to target individuals who have shown interest in similar content, increasing the likelihood of successful connections.
 
-&nbsp;
+
 
 The Persana Chrome extension is a powerful tool for LinkedIn prospecting, offering users comprehensive profile insights, seamless data import, AI-driven engagement, and detailed analysis of post reactors. By integrating these features, the extension enhances the efficiency, accuracy, and effectiveness of professional networking and prospecting efforts, ultimately helping users achieve their business goals.
 
-&nbsp;
+
 
 {{< case-study/caseStudySubtitle >}}
 <img alt="Challenges" src="/images/case-study/icons/star.svg">
@@ -235,7 +238,7 @@ The Persana Chrome extension is a powerful tool for LinkedIn prospecting, offeri
 
 * __Optimized Performance and User Experience:__ By moving processing load to the back end and implementing a robust queue system, the application's performance was optimized. Users experienced a smoother, more responsive interface, leading to higher satisfaction and engagement.
 
-&nbsp;
+
 
 Overall, ScaleReal’s interventions led to a robust, scalable, and maintainable application that not only met the client’s immediate needs but also positioned them well for future growth and success.
 

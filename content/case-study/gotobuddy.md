@@ -129,12 +129,14 @@ __Natural Language Processing (NLP) and AI Integration__
 
 Objective: To ensure the AI characters can understand and interact with users naturally and accurately.
 
-* __Actions:__
 
-{{< case-study/alphaContainer >}}
+{{< case-study/actionsListContainer >}}
+<ul>
+<li>Actions:</li>
 <li>Implemented state-of-the-art NLP models (e.g., fine-tuned versions of GPT-4).</li>
 <li>Used top-notch third-party applications for text-to-speech and speech-to-text</li>
-{{< /case-study/alphaContainer >}}
+</ul>
+{{< /case-study/actionsListContainer >}}
 
 Outcomes: High accuracy in understanding user inputs. Natural, engaging, and context-aware AI responses.
 
@@ -144,13 +146,16 @@ __User Experience (UX) Design__
 
 Objective: To create an intuitive, user-friendly interface for both the phone interaction system and the website.
 
-* __Actions:__
+ 
 
-{{< case-study/alphaContainer >}}
+{{< case-study/actionsListContainer >}}
+<ul>
+<li>Actions:</li>
     <li>Designed a seamless and responsive website for user profile management and subscription services.</li>
     <li>Developed a clear and straightforward phone menu for selecting AI characters.</li>
     <li>Incorporated user feedback to continually refine and enhance the design.</li>
-{{< /case-study/alphaContainer >}}
+    </ul>
+{{< /case-study/actionsListContainer >}}
 
 Outcomes: Easy-to-navigate interfaces that enhance user satisfaction. Positive user engagement and retention.
 
@@ -159,14 +164,16 @@ Outcomes: Easy-to-navigate interfaces that enhance user satisfaction. Positive u
 __Data Security and Privacy__ 
 
 Objective: To protect user data and ensure compliance with data protection regulations.
+ 
 
-* __Actions:__
-
-{{< case-study/alphaContainer >}}
+{{< case-study/actionsListContainer >}}
+<ul>
+<li>Actions:</li>
     <li>Implemented robust data encryption and security protocols.</li>
     <li>Conducted regular security and compliance checks.</li>
     <li>Developed secure systems for storing and managing personal information and call logs.</li>
-{{< /case-study/alphaContainer >}}
+    </ul>
+{{< /case-study/actionsListContainer >}}
 
 Outcomes: High level of data security and user trust. Compliance with relevant regulations 
 
@@ -205,7 +212,6 @@ By focusing on these three key areas, we ensured that the AI GoToBuddy project n
 * __Final Response Delivery:__ Output from OpenAI TTS is base64 encoded with a 24k sample rate and converted to 8k mu-law encoding for compatibility with Twilio. Formatted audio response is sent through Twilio streaming, allowing users to hear the response in real-time on their phone.
 * __Repetition for Continuous Interaction:__ Steps 5 to 9 are repeated continuously during the call, ensuring each user query is processed, answered, and delivered promptly.
 
-&nbsp;
 
 These steps outline the detailed process flow for handling user interactions in real-time through the AI system, integrating voice handling, speech recognition, natural language processing, and audio response delivery seamlessly.
 
@@ -233,7 +239,6 @@ Through our development process, we introduced several key features to enhance u
 </ul>
 {{< /case-study/alphaContainer >}}
 
-&nbsp;
 
 By refining these features, we ensure a personalized, engaging, and up-to-date experience for all users of the AI GoToBuddy system.
 
@@ -274,6 +279,5 @@ The intervention led to transformative results for GoToBuddy:
 
 Scalereal's partnership with GoToBuddy has been transformative. Integrating Twilio for seamless calls, Deepgram for accurate speech recognition, and OpenAI's latest models has created a robust platform. Personalized interactions through AI personas and real-time responses have enhanced user engagement. Scalable infrastructure ensures readiness for growth, underscoring Scalereal's commitment to AI innovation and client success.
 
-&nbsp;
 
 This case study exemplifies Scalereal's dedication to pushing the boundaries of AI technology to deliver exceptional user experiences and drive meaningful business outcomes.
