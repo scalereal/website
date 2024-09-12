@@ -66,7 +66,6 @@
   flex-direction: row;
   margin: 80px 0 44px;
   color: #212529;
-  text-align: center;
   font-family: "Open Sans";
   font-size: 26px;
   font-style: normal;
@@ -122,22 +121,47 @@
   margin-bottom: 50px;
 }
 .case-study-page li {
+  margin-top: 0;
   list-style: inherit;
   margin-left: 40px;
 }
 .case-study-page .alpha-container li {
   list-style: lower-alpha;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .case-study-page .alpha-container ul li.sub {
   list-style: inherit;
+  margin-top: 0;
   margin-left: 80px;
 }
 .case-study-page .alpha-container ul li,
 .case-study-page .alpha-container li::marker {
   font-weight: 400;
+  margin-top: 0;
 }
+.case-study-page .alpha-container {
+  margin: 0;
+}
+.case-study-page .actions-list ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.case-study-page .actions-list ul li:first-child {
+  margin-left: 40px;
+  margin-top: 12px;
+  font-weight: 600;
+  list-style-type: disc;
+}
+
+.case-study-page .actions-list ul li:nth-child(n + 2) {
+  margin-left: 80px;
+  list-style-type: lower-alpha;
+}
+
 .case-study-page .alpha-container .bold-marker::marker {
-  font-weight: bold;
+  font-weight: 600;
 }
 .case-study-page .grid-layout li {
   list-style: inside;

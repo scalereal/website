@@ -34,9 +34,7 @@ url: "/projects/case-study/noobstorm"
 </div>
 {{< /case-study/imgCarousel >}} 
 
-
-
-&nbsp;
+ 
 
 ---
 
@@ -109,7 +107,6 @@ The intervention led to transformative results for Noobstorm:
 * __Enhanced User Experience:__ The website’s user interface and functionality improvements significantly enhanced the overall user experience, making it easier for gamers to participate in tournaments and interact within the platform.
 * __Post Launch:__ The application has successfully hosted multiple tournaments across various gaming titles. The community has grown significantly, with a diverse range of players participating in tournaments and engaging with the platform. The leaderboard system has been particularly well-received, providing players with a clear path to improve their rankings.
 
-&nbsp;
 
 {{< case-study/caseStudySubtitle >}}
 <img alt="Challenges" src="/images/case-study/icons/conclusion.svg">
@@ -120,8 +117,4 @@ The intervention led to transformative results for Noobstorm:
 </h2>
 {{< /case-study/caseStudySubtitle >}}
 
-The collaboration between Noobstorm and our team turned a struggling project into a thriving online gaming tournament platform with all the top players in the country. By understanding the root cause of the challenges and implementing targeted solutions, Noobstorm was not only able to launch on time but also positioned itself as a go-to platform within the gaming community.
-
-&nbsp;
-
-This case study exemplifies how strategic planning, technical expertise, and effective project management can resolve complex development issues and lead to successful outcomes.
+The collaboration between Noobstorm and our team turned a struggling project into a thriving online gaming tournament platform with all the top players in the country. By understanding the root cause of the challenges and implementing targeted solutions, Noobstorm was not only able to launch on time but also positioned itself as a go-to platform within the gaming community. This case study exemplifies how strategic planning, technical expertise, and effective project management can resolve complex development issues and lead to successful outcomes.
