@@ -154,13 +154,15 @@
   font-weight: 600;
   list-style-type: disc;
 }
-
-.case-study-page .actions-list ul li:nth-child(n + 2) {
+.case-study-page .actions-list ul ul.action-header li:first-child {
+  list-style-type: disc;
+}
+.case-study-page .actions-list ul li {
   margin-left: 80px;
   list-style-type: lower-alpha;
 }
 
-.case-study-page .actions-list ul li:nth-child(n + 2)::marker {
+.case-study-page .actions-list ul li::marker {
   font-weight: 400;
 }
 
