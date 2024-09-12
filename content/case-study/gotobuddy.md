@@ -132,7 +132,10 @@ Objective: To ensure the AI characters can understand and interact with users na
 
 {{< case-study/actionsListContainer >}}
 <ul>
+<ul class='action-header'>
 <li>Actions:</li>
+</ul>
+
 <li>Implemented state-of-the-art NLP models (e.g., fine-tuned versions of GPT-4).</li>
 <li>Used top-notch third-party applications for text-to-speech and speech-to-text</li>
 </ul>
@@ -150,8 +153,11 @@ Objective: To create an intuitive, user-friendly interface for both the phone in
 
 {{< case-study/actionsListContainer >}}
 <ul>
+<ul class='action-header'>
 <li>Actions:</li>
-    <li>Designed a seamless and responsive website for user profile management and subscription services.</li>
+</ul>
+
+ <li>Designed a seamless and responsive website for user profile management and subscription services.</li>
     <li>Developed a clear and straightforward phone menu for selecting AI characters.</li>
     <li>Incorporated user feedback to continually refine and enhance the design.</li>
     </ul>
@@ -168,7 +174,9 @@ Objective: To protect user data and ensure compliance with data protection regul
 
 {{< case-study/actionsListContainer >}}
 <ul>
+<ul class='action-header'>
 <li>Actions:</li>
+</ul>
     <li>Implemented robust data encryption and security protocols.</li>
     <li>Conducted regular security and compliance checks.</li>
     <li>Developed secure systems for storing and managing personal information and call logs.</li>
