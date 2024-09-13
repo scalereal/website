@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "nav" . }}
+    <main class="case-study-page">
+        <div class="container">
+            <div class="back-link-section" >
+                <a class="back-link" href="/projects" style="display: flex; align-items: center;">
+                    <span class="line mr-2">
+                        <img src="{{ "images/blog/Back.svg" | absURL }}" alt="back arrow">
+                    </span>
+                    <span class="back-link-text f700">Back</span>
+                </a>
+            </div> 
+            
+            <h2 class="f700 text-black main-title">
+                {{ .Params.title  }}
+            </h2>
+            {{ if ne .Params.heroImage "" }}
+                <img style="width: 100%; margin:0" src="{{ .Params.heroImage | absURL }}" alt="Case Study Hero Section Image">
+            {{ end }}
+            <div class="overview bg-grey">
+                <h3 class="f700 text-black ">Project Overview</h3>
+                {{ .Params.overview  }}
+                <h3 class="f700 text-black mt-4 ">Project Domain</h3>
+                {{ .Params.domain  }}
+            </div>
+            {{ .Content }}
+        </div>
+    </main>
+    {{ partial "footer.html" . }}
+ 
+</body>
+{{ partial "js" . }}
+</html>

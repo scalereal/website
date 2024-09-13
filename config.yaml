@@ -16,7 +16,9 @@ googleAnalytics: 'UA-141833521-1'
 enableRobotsTXT: true
 canonifyURLs: true
 
-permalinks: { post: '/blogs/:title/' }
+permalinks:
+    post: '/blogs/:title/'
+    case-studies: '/projects/case-study/:title'
 #Params
 params:
     navigation:

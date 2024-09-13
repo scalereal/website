@@ -113,35 +113,54 @@
     color: #4e4e4e; }
 
 .back-link-section {
-  margin-bottom: 40px;
-  margin-top: 2%;
-  text-align: end;
-  font-size: 14px; }
-.back-link {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
-  color: #222222; }
-  .back-link:hover {
+    margin-bottom: 56px !important;
+    margin-top: 24px;
+    text-align: start;
+    margin-left: calc(100% - 91.666667%);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 766px){
+    .back-link-section {
+        margin-left: 0;
+    }
+}
+
+    .back-link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
     color: #222222;
-    opacity: 0.6; }
-  .back-link .line {
+}
+.back-link:hover {
+    color: #222222;
+    opacity: 0.6;
+}
+.back-link .line {
+    transition: 0.5s;
     display: inline-block;
-    vertical-align: middle; }
-  .back-link .text {
+    vertical-align: middle;
+}
+.back-link .text {
     background: transparent;
     border: none;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    border-bottom: 1px solid #000;
+    text-decoration: underline;
+    text-underline-offset: 6px;
     margin-right: 10px;
     transition: all 500ms;
     margin-top: 20px;
-    transition: all 500ms;}
-    .back-link .text:hover{
-      margin-left: 8px;}
+    transition: all 500ms;
+}
+.back-link:hover .line {
+    transform: translateX(-10px);
+}
+.back-link-section:not(:hover) .line {
+    transform: translateX(0px);
+}
 .page-blog-details .writer-wrap {
   margin-bottom: 40px; }
 .page-blog-details .heading {

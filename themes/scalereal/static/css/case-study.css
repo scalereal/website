@@ -1,0 +1,321 @@
+.case-study-page {
+  margin-bottom: 100px;
+}
+.case-study-page .main-title {
+  margin-top: 56px;
+  margin-bottom: 34px;
+  color: #242424;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+@media (max-width: 991.98px) {
+  .case-study-page .main-title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.case-study-page .back-link-section {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+}
+.case-study-page .back-link-section .back-link {
+  margin: 24px 0 0;
+}
+.case-study-page .back-link-section .line {
+  transition: 0.5s;
+}
+.case-study-page .back-link-section:hover .line {
+  transform: translateX(-10px);
+}
+.case-study-page .back-link-section:not(:hover) .line {
+  transform: translateX(0);
+}
+.case-study-page .back-link-text {
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.case-study-page .technologies {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.case-study-page .technologies img {
+  margin: 0;
+  max-width: 200px;
+  width: auto;
+  max-height: 50px;
+  object-fit: contain;
+}
+.case-study-page .technologies.technologies-margin img {
+  margin: 0 40px 0 0;
+}
+.case-study-page .technologies.technologies-margin img:nth-child(7),
+.case-study-page .technologies.technologies-margin img:nth-child(8) {
+  margin: 30px 40px 0 0;
+}
+.case-study-page .case-study-subtitle {
+  display: flex;
+  flex-direction: row;
+  margin: 48px 0 24px;
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0;
+  justify-content: left;
+  align-items: center;
+}
+
+.case-study-page .case-study-subtitle img {
+  margin-right: 16px;
+  width: auto;
+}
+.case-study-page img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+.case-study-page .overview {
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 24px;
+  margin: 40px 0 60px;
+}
+.case-study-page .overview h3 {
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.case-study-page h2 {
+  margin: 80px 0 25px;
+  color: #212529;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.case-study-page .grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.case-study-page li {
+  margin-top: 0;
+  list-style: inherit;
+  margin-left: 40px;
+}
+.case-study-page .alpha-container li {
+  list-style: lower-alpha;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.case-study-page .alpha-container ul li.sub {
+  list-style: inherit;
+  margin-top: 0;
+  margin-left: 80px;
+}
+.case-study-page .alpha-container ul li,
+.case-study-page .alpha-container li::marker {
+  font-weight: 400;
+  margin-top: 0;
+}
+.case-study-page .alpha-container {
+  margin: 0;
+}
+.case-study-page .actions-list ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.case-study-page .actions-list ul li:first-child {
+  margin-left: 40px;
+  margin-top: 12px;
+  font-weight: 600;
+  list-style-type: disc;
+}
+.case-study-page .actions-list ul ul.action-header li:first-child {
+  list-style-type: disc;
+}
+.case-study-page .actions-list ul li {
+  margin-left: 80px;
+  list-style-type: lower-alpha;
+}
+
+.case-study-page .actions-list ul li::marker {
+  font-weight: 400;
+}
+
+.case-study-page .alpha-container .bold-marker::marker {
+  font-weight: 600;
+}
+.case-study-page .grid-layout li {
+  list-style: inside;
+  margin: 0;
+}
+.case-study-page ol ol {
+  list-style-type: lower-alpha;
+}
+.case-study-page li::marker {
+  font-weight: bold;
+}
+.case-study-page .column-layout {
+  display: block;
+  width: 100%;
+}
+.case-study-page hr {
+  border-top: 1px solid #cccbcb;
+}
+
+.case-study-page li {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.case-study-page p,
+.case-study-page ul.grid-layout li {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.case-study-page strong {
+  font-weight: 700;
+}
+.case-study-page li strong {
+  font-weight: 600;
+}
+.case-study-page li:first-child {
+  margin-top: 2.14rem;
+}
+
+.case-study-page li:not(:first-child) {
+  margin-top: 1.14rem;
+}
+
+.case-study-page li:last-child {
+  margin-bottom: 2.14rem;
+}
+
+.case-study-subtitle h2 {
+  margin: 0;
+}
+
+.case-study-page .img-carousel {
+  display: none;
+}
+
+.case-study-page .integrations-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .case-study-page .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case-study-page .technologies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-study-page .technologies img {
+    margin: 30px auto 0 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .case-study-page .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .case-study-page .technologies {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+  .case-study-page .technologies img {
+    margin: 30px 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .case-study-page .technologies {
+    display: none;
+  }
+  .case-study-page .img-carousel {
+    display: block;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-study-page .img-carousel .owl-item {
+    align-items: center;
+  }
+  .case-study-page .img-carousel .owl-dots {
+    display: flex;
+    margin: 40px 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .case-study-page .img-carousel div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .case-study-page .img-carousel div img {
+    max-width: 180px;
+    max-height: 40px;
+  }
+  .case-study-page .grid-layout {
+    display: none;
+  }
+  .case-study-page .img-carousel {
+    display: block;
+    width: auto;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-study-page .integrations-mobile {
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+}
