@@ -2483,7 +2483,8 @@ lottie-player {
 .article-content h2 {
   font-weight: 700;
   font-size: 24px !important;
-  margin-top: 2.2rem;
+  margin-top: 44px;
+  margin-bottom: 24px;
 }
 .article-content h3 {
   font-weight: 700;
@@ -3070,10 +3071,6 @@ lottie-player {
   .techstack-desktop {
     display: none !important;
   }
-}
-
-.container.blog-view {
-  max-width: 840px;
 }
 
 .article-row strong {
