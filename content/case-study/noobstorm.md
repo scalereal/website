@@ -18,7 +18,7 @@ url: "/projects/case-study/noobstorm"
 <img src="/images/case-study/technologies/react.png" alt="React JS"/>
 <img src="/images/case-study/technologies/next.png" alt="Next JS"/>
 <img src="/images/case-study/technologies/supabase.png" alt="Supabase"/>
-<img src="/images/case-study/technologies/vercel.png" alt="Vercel"/>
+<img src="/images/case-study/technologies/vercel.png" class="h30" alt="Vercel"/>
 
 {{< /case-study/technologies >}}
 
@@ -30,7 +30,7 @@ url: "/projects/case-study/noobstorm"
 </div>
 <div>
     <img src="/images/case-study/technologies/supabase.png" alt="Supabase"/>
-    <img src="/images/case-study/technologies/vercel.png" alt="Vercel"/>
+    <img src="/images/case-study/technologies/vercel.png" class="h30" alt="Vercel"/>
 </div>
 {{< /case-study/imgCarousel >}} 
 
