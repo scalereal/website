@@ -3,7 +3,7 @@ date: todo
 
 title: "GoToBuddy Case Study: AI Calling Application"
 
-heroImage: "/images/case-study/goToBuddy/heroImg.webp"
+heroImage: "/images/case-study/goToBuddy/heroImg.png"
 
 overview: "GoToBuddy is an innovative software development and AI project designed to revolutionize phone interactions by enabling users to have conversations with specialized AI characters. Users can dial a specific number and choose from six distinct AI personas, each an expert in their respective field. The project also includes a comprehensive website for managing user profiles and subscriptions, ensuring a seamless user experience."
 domain: "Artificial Intelligence (AI)"

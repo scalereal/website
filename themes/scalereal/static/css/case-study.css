@@ -63,6 +63,10 @@
 .case-study-page .technologies.technologies-margin img {
   margin: 0 40px 0 0;
 }
+.h30 {
+  max-width: 180px;
+  max-height: 30px !important;
+}
 .case-study-page .technologies.technologies-margin img:nth-child(7),
 .case-study-page .technologies.technologies-margin img:nth-child(8) {
   margin: 30px 40px 0 0;
@@ -70,7 +74,7 @@
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
-  margin: 48px 0 24px;
+  margin: 56px 0 24px;
   color: #212529;
   font-family: "Open Sans";
   font-size: 26px;
