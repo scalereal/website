@@ -88,6 +88,8 @@ url: "/projects/case-study/persana"
      Predictleads, Prospeo, Salesforce, Salesoft, Smartlead, Sendspark </p>
 {{< /case-study/integrations >}}
 
+&nbsp;
+
 ---
 
 {{< case-study/caseStudySubtitle >}}
