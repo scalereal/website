@@ -3529,7 +3529,7 @@ lottie-player {
   .client-success-stories-section .container .box .heading.box-content p {
     width: 294px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -3555,6 +3555,7 @@ lottie-player {
     .box-content
     .client-story-summary
     h3 {
+    font-size: 20px !important;
     margin-top: 12px;
     height: auto;
   }
