@@ -22,10 +22,35 @@
             </div>
         </section>
 
-        <section class="section-service-detail section-project-detail crbn-project-container">
+        <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/1-percent-club.webp" | absURL }}" alt="1% Club Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".section-project-detail">
+                        <h2 class="f700 text-black">1% Club</h2>
+                        <p class="text-grey">The ultimate community-based platform designed to empower and connect individuals with shared interests in 
+                            personal growth, finance, and networking. 1% Club app provides a seamless experience for users to engage, learn, and stay informed.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">React-Native, Typescript, Redux, Node js, Mongodb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-service-detail section-project-detail ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/Crbn-Trade.webp" | absURL }}" media="(max-width:592px)">
@@ -34,7 +59,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".crbn-project-container">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
                         <h2 class="f700 text-black">CRBN Trade</h2>
                         <p class="text-grey">CRBN Trade app simplifies carbon credit trading, enabling users to buy, sell, and retire credits with ease. 
                             Supported assets include Carbon Net Zero, Carbon Compliance, and Carbon Removal credits. It empowers individuals and businesses 
@@ -52,7 +77,7 @@
         <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:592px)">
@@ -61,7 +86,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".section-project-detail">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">GoToBuddy</h2>
                         <p class="text-grey">Gotobuddy.ai offers a revolutionary AI-driven communication platform that transforms user engagement
                             by providing meaningful, personalized conversations on topics like parenting, news, sports, & entertainment. By leveraging
@@ -82,7 +107,7 @@
         <section class="section-service-detail section-project-detail persana-project-container">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/Persana.webp" | absURL }}" media="(max-width:592px)">
@@ -91,7 +116,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".persana-project-container">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".persana-project-container">
                         <h2 class="f700 text-black">Persana AI</h2>
                         <p class="text-grey">Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads 
                             at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating 
@@ -111,7 +136,7 @@
         <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/Noobstorm_small.webp" | absURL }}" media="(max-width:592px)">
@@ -120,7 +145,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">Noobstorm</h2>
                         <p class="text-grey">Noobstorm is a platform for gamers in India to play different EA sports games, stay updated with the latest news of EA sports, track the progress on leaderboards and connect with players on social media. Noobstorm offers players to play tournaments and win and go up on the leaderboard.
@@ -130,34 +155,6 @@
                             <p class="text-grey">Next JS, React, Supabase, Vercel</p>
                         </div>
                             <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/noobstorm" | absURL }}">View Case Study</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-         <section class="section-service-detail section-project-detail tenfold-project-container">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/tenfold-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/tenfold.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/tenfold.webp" | absURL }}" alt="Ten Fold Education Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".tenfold-project-container">
-                        <h2 class="f700 text-black">Ten Fold Education</h2>
-                        <p class="text-grey">South Africa’s first Mobile based learning application for High
-                            School learners. It helps them excel in academics while engaging them in a fun and
-                            interactive way.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax, Java, Kotlin,
-                                Retrofit, Dagger, Swift, Objective C</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
                 </div>
             </div>
@@ -658,10 +655,38 @@
             </div>
         </section>
 
+         <section class="section-service-detail section-project-detail tenfold-project-container">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/tenfold-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/tenfold.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/tenfold.webp" | absURL }}" alt="Ten Fold Education Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".tenfold-project-container">
+                        <h2 class="f700 text-black">Ten Fold Education</h2>
+                        <p class="text-grey">South Africa’s first Mobile based learning application for High
+                            School learners. It helps them excel in academics while engaging them in a fun and
+                            interactive way.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax, Java, Kotlin,
+                                Retrofit, Dagger, Swift, Objective C</p>
+                        </div>
+                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:592px)">
@@ -670,7 +695,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">Restaurant Management System</h2>
                         <p class="text-grey">The web app is a restaurant management and table reservation system that simplifies operations. It allows users to book tables for various sessions, manage the floor plan in real time, and handle online, phone, and walk-in bookings. Administrators can also manage multiple locations with ease, optimizing space and enhancing customer experience.</p>
                         <div class="project-tech">
