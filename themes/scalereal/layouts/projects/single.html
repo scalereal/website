@@ -108,10 +108,41 @@
             </div>
         </section>
 
-         <section class="section-service-detail section-project-detail">
+           <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-right">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/BusTracking.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/BusTracking.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/BusTracking.webp" | absURL }}" alt="1% Club Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
+                        <h2 class="f700 text-black">Bus Tracking Application</h2>
+                        <p class="text-grey">A platform that offers comprehensive fleet management with real-time bus tracking, 
+                            enabling users to monitor live locations. Attached devices capture critical events like harsh braking, 
+                            geo-fence breaches, or detours and many more. Users can create journeys, define routes, and manage 
+                            drivers, buses, and devices seamlessly, ensuring safety and operational transparency. Additionally, 
+                            the application offers detailed reporting for all journeys and buses, enabling data-driven insights.
+                        </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">GoLang, Django, FastApi, Postgres, ReactJS, Docker, Redis streams, Redash, 
+                                Websockets with FastApi, Baremetal Server, Docker
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:592px)">
@@ -120,7 +151,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" >
                         <h2 class="f700 text-black">1% Club</h2>
                         <p class="text-grey">The ultimate community-based platform designed to empower and connect individuals with shared interests in 
                             personal growth, finance, and networking. 1% Club app provides a seamless experience for users to engage, learn, and stay informed.</p>
@@ -136,7 +167,7 @@
         <section class="section-service-detail section-project-detail ">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/Crbn-Trade.webp" | absURL }}" media="(max-width:592px)">
@@ -145,7 +176,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" >
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
                         <h2 class="f700 text-black">CRBN Trade</h2>
                         <p class="text-grey">CRBN Trade app simplifies carbon credit trading, enabling users to buy, sell, and retire credits with ease. 
                             Supported assets include Carbon Net Zero, Carbon Compliance, and Carbon Removal credits. It empowers individuals and businesses 
@@ -155,6 +186,31 @@
                             <p class="text-grey">NestJS , NodeJS, Nanoexpress, Firebase, CubeJS, TimeScaleDB, PostgreSQL, Expo React Native, Typescript, 
                                 React Native Paper, Styled Components, Zustand, ECS</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Nurturev-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Nurturev.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Nurturev.webp" | absURL }}" alt="Nurturev Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
+                        <h2 class="f700 text-black">Nurturev</h2>
+                        <p class="text-grey">Nurturev is an AI powered customer intelligence platform which analyses your communications with customers to give detailed information helping improve customer intent. Using Slack integration, it adds a bot to your workspace for AI analysis of data, sentiment, and customer engagement in channels.  </p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Python, AWS, Supabase, NextJS, MaterialUI, Typescript</p>
+                        </div>
+                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
                 </div>
             </div>
@@ -630,35 +686,10 @@
             </div>
         </section>
 
-        <section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Nurturev-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Nurturev.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Nurturev.webp" | absURL }}" alt="Nurturev Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Nurturev</h2>
-                        <p class="text-grey">Nurturev is an AI powered customer intelligence platform which analyses your communications with customers to give detailed information helping improve customer intent. Using Slack integration, it adds a bot to your workspace for AI analysis of data, sentiment, and customer engagement in channels.  </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, AWS, Supabase, NextJS, MaterialUI, Typescript</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>
-
          <section class="section-service-detail section-project-detail tenfold-project-container">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/tenfold-small.webp" | absURL }}" media="(max-width:592px)">
@@ -667,7 +698,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" data-aos-anchor=".tenfold-project-container">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".tenfold-project-container">
                         <h2 class="f700 text-black">Ten Fold Education</h2>
                         <p class="text-grey">South Africa’s first Mobile based learning application for High
                             School learners. It helps them excel in academics while engaging them in a fun and
@@ -686,7 +717,7 @@
         <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
+                    <div class="col-md-6 col-order" data-aos="fade-left">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:592px)">
@@ -695,7 +726,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">Restaurant Management System</h2>
                         <p class="text-grey">The web app is a restaurant management and table reservation system that simplifies operations. It allows users to book tables for various sessions, manage the floor plan in real time, and handle online, phone, and walk-in bookings. Administrators can also manage multiple locations with ease, optimizing space and enhancing customer experience.</p>
                         <div class="project-tech">
