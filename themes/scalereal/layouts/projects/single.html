@@ -777,6 +777,82 @@
     </div>
     {{ partial "footer" . }}
 
+    {{ "<!-- Projects -->" | safeHTML }}
+
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{ $.Scratch.Set "projects" true }}
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "nav" . }}
+    <div class="page-inner page-projects">
+        <section class="section-inner-banner">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <header class="heading content-center">
+                            <h1 class="f700 text-black">Handcrafted Projects</h1>
+                            <p class="text-grey">Explore some of our high quality, cost effective, reliable and
+                                easy-to-use applications that we built for our clients to solve their complex
+                                business problems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Sections with Lazy Loading -->
+        <section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-order project-item" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/GoToBuddy.png" | absURL }}" alt="GoToBuddy Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0 project-item" data-aos="fade-right">
+                        <h2 class="f700 text-black">GoToBuddy</h2>
+                        <p class="text-grey">Gotobuddy.ai offers a revolutionary AI-driven communication platform...</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">Django, PostgreSQL, vector DB, OpenAI, Docker...</p>
+                        </div>
+                        <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/goToBuddy" | absURL }}">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More project sections can be added here in the same structure -->
+
+    </div>
+
+    <!-- Lazy Loading Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll("[data-aos]");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.setAttribute("data-aos", entry.target.dataset.aos);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
 </body>
 {{ partial "js" . }}
 
