@@ -21,19 +21,23 @@
                 </div>
             </div>
         </section>
+        <div id="projects-container"></div>
 
-        <section class="section-service-detail section-project-detail">
+        <section class="section-cta bg-blue">
+            <p class="text-white">We'd love to help you scale.
+                <a class="btn-white f700" href="/contact">Let's
+                    talk</a>
+            </p>
+        </section>
+
+    </div>
+    {{ partial "footer" . }}
+
+    <script>
+        const items = [
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/GoToBuddy.png" | absURL }}" alt="GoToBuddy Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">GoToBuddy</h2>
                         <p class="text-grey">Gotobuddy.ai offers a revolutionary AI-driven communication platform that transforms user engagement
@@ -48,11 +52,19 @@
                         </div>
                             <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/goToBuddy" | absURL }}">View Case Study</a>
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/GoToBuddy.png" | absURL }}" alt="GoToBuddy Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail persana-project-container">
+        </section>`,
+            `<section class="section-service-detail section-project-detail persana-project-container">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -79,20 +91,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            ` <section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Noobstorm_small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Noobstorm.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Noobstorm.webp" | absURL }}" alt="MyVaccine Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">Noobstorm</h2>
@@ -104,11 +106,19 @@
                         </div>
                             <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/noobstorm" | absURL }}">View Case Study</a>
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Noobstorm_small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Noobstorm.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Noobstorm.webp" | absURL }}" alt="MyVaccine Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-           <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -137,20 +147,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-         <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/1-percent-club.webp" | absURL }}" alt="1% Club Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" >
                         <h2 class="f700 text-black">1% Club</h2>
                         <p class="text-grey">The ultimate community-based platform designed to empower and connect individuals with shared interests in 
@@ -160,11 +160,19 @@
                             <p class="text-grey">React-Native, Typescript, Redux, NestJS, NodeJS, CubeJS, Mongodb, ECS</p>
                         </div>
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/1-percent-club.webp" | absURL }}" alt="1% Club Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail ">
+        </section>`,
+            `<section class="section-service-detail section-project-detail ">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -189,20 +197,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-           <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Nurturev-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Nurturev.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Nurturev.webp" | absURL }}" alt="Nurturev Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">Nurturev</h2>
                         <p class="text-grey">Nurturev is an AI powered customer intelligence platform which analyses your communications with customers to give detailed information helping improve customer intent. Using Slack integration, it adds a bot to your workspace for AI analysis of data, sentiment, and customer engagement in channels.  </p>
@@ -212,15 +210,22 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Nurturev-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Nurturev.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Nurturev.webp" | absURL }}" alt="Nurturev Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        {{/*  benz-container class added to use this section element as an anchor for animation of text */}}
-        <section class="section-service-detail section-project-detail benz-container">
+        </section>`,
+            `<section class="section-service-detail section-project-detail benz-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
+                    <div class="col-md-6 col-order" data-aos="fade-right" data-aos-anchor=".benz-container">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/mercedes-benz-small.webp" | absURL }}" media="(max-width:592px)">
@@ -243,21 +248,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Galactica-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Galactica.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Galactica.webp" | absURL }}" alt="Galactica Application Screenshots">
-                            </picture>  
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">Galactica</h2>
                         <p class="text-grey">A platform that offers Cutting-Edge, Powerful AI Algorithms to generate
@@ -271,11 +265,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Galactica-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Galactica.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Galactica.webp" | absURL }}" alt="Galactica Application Screenshots">
+                            </picture>  
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail dbe-container">
+        </section>`,
+            `<section class="section-service-detail section-project-detail dbe-container">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -300,22 +302,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Medly-Pharmacy-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" alt="Medly Pharmacy Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-
                         <h2 class="f700 text-black">
                             Medly Pharmacy
                         </h2>
@@ -331,11 +322,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Medly-Pharmacy-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" alt="Medly Pharmacy Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail gbas-container">
+        </section>`,
+            `<section class="section-service-detail section-project-detail gbas-container">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -362,22 +361,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Lodgistics-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Lodgistics.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Lodgistics.webp" | absURL }}" alt="Lodgistics Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-
                         <h2 class="f700 text-black">Lodgistics</h2>
                         <p class="text-grey">Lodgistics is a hotel management application helping hotels manage their properties, staffs and guests in one place. The web and mobile application gives an
                             easy-to-use interface where a staff member can see staff records, guest details, hotel logs,
@@ -391,11 +379,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Lodgistics-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Lodgistics.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Lodgistics.webp" | absURL }}" alt="Lodgistics Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -420,20 +416,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" alt="GeoSpoc-GeoCoder Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">GeoSpoc - GeoCoder</h2>
                         <p class="text-grey">A highly performant offline geocoding engine to transform messy addresses
@@ -448,11 +434,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                     <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" alt="GeoSpoc-GeoCoder Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -478,20 +472,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Dealsafe-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Dealsafe.webp" | absURL }}" media="(max-width:768px)">
-                                <img class="large" src="{{ "images/projects/Dealsafe.webp" | absURL }}" alt="Dealsafe Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">Dealsafe</h2>
@@ -504,11 +488,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                     <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Dealsafe-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Dealsafe.webp" | absURL }}" media="(max-width:768px)">
+                                <img class="large" src="{{ "images/projects/Dealsafe.webp" | absURL }}" alt="Dealsafe Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="section-service-detail section-project-detail temp-taker-container">
+        </section>`,
+            ` <section class="section-service-detail section-project-detail temp-taker-container">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right" data-aos-anchor=".temp-taker-container" data-aos-offset="100">
@@ -536,20 +528,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/mindset-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/mindset.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/mindset.webp" | absURL }}" alt="Mindset Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">Mindset</h2>
@@ -563,11 +545,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/mindset-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/mindset.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/mindset.webp" | absURL }}" alt="Mindset Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+            `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -595,20 +585,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+        `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/SustainOnline-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/SustainOnline.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/SustainOnline.webp" | absURL }}" alt="SustainOnline Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">SustainOnline</h2>
@@ -622,11 +602,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/SustainOnline-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/SustainOnline.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/SustainOnline.webp" | absURL }}" alt="SustainOnline Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+        `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -652,20 +640,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+        `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/MyVaccine-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/MyVaccine.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/MyVaccine.webp" | absURL }}" alt="MyVaccine Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
 
                         <h2 class="f700 text-black">MyVaccine</h2>
@@ -682,11 +660,19 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/MyVaccine-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/MyVaccine.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/MyVaccine.webp" | absURL }}" alt="MyVaccine Application Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-         <section class="section-service-detail section-project-detail tenfold-project-container">
+        </section>`,
+        ` <section class="section-service-detail section-project-detail tenfold-project-container">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6 col-order" data-aos="fade-right">
@@ -712,20 +698,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-service-detail section-project-detail">
+        </section>`,
+        `<section class="section-service-detail section-project-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" alt="Restaurant Management System Screenshots">
-                            </picture>
-                        </div>
-                    </div>
                     <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
                         <h2 class="f700 text-black">Restaurant Management System</h2>
                         <p class="text-grey">The web app is a restaurant management and table reservation system that simplifies operations. It allows users to book tables for various sessions, manage the floor plan in real time, and handle online, phone, and walk-in bookings. Administrators can also manage multiple locations with ease, optimizing space and enhancing customer experience.</p>
@@ -735,19 +711,59 @@
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
+                    <div class="col-md-6 col-order" data-aos="fade-left">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" alt="Restaurant Management System Screenshots">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </section>`
+        ];
 
-        <section class="section-cta bg-blue">
-            <p class="text-white">We'd love to help you scale.
-                <a class="btn-white f700" href="/contact">Let's
-                    talk</a>
-            </p>
-        </section>
+        let currentIndex = 0;
+    let totalItems = items.length;
 
-    </div>
-    {{ partial "footer" . }}
+    function appendItems() {
+        const container = document.querySelector('#projects-container');
+        const newItems = [];
+
+        for (let i = currentIndex; i < currentIndex + 3 && i < totalItems; i++) {
+            const newItem = document.createElement('div');
+            newItem.innerHTML = items[i];
+            if (i % 2 === 0) {
+                newItem.classList.add('even-project');
+            }
+            newItems.push(newItem);
+        }
+
+        newItems.forEach(item => container.appendChild(item));
+
+        currentIndex += 3;
+
+        if (newItems.length > 1) {
+            const beforeLastItem = newItems[newItems.length - 2];
+            if (beforeLastItem) {
+                loadMoreObserver.observe(beforeLastItem);
+            }
+        }
+    }
+
+    const loadMoreObserver = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting && currentIndex < totalItems) {
+            appendItems();
+        }
+    }, {
+        rootMargin: '50px',
+    });
+
+    appendItems();
+    </script>
 
 </body>
 {{ partial "js" . }}
