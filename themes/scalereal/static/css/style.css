@@ -2428,7 +2428,7 @@ lottie-player {
   }
 }
 
-.section-project-detail.section-service-detail:nth-child(even) {
+.even-project {
   /* 0, 2, 4 */
   background-color: #f5f8fc;
 }
@@ -2447,13 +2447,13 @@ lottie-player {
   }
 }
 
-@media (min-width: 768px) {
-  .section-project-detail.section-service-detail:nth-child(even)
+@media (max-width: 768px) {
+  .even-project .section-project-detail.section-service-detail
     .col-order:first-child {
     order: 2;
   }
 
-  .section-project-detail.section-service-detail:nth-child(even)
+  .even-project .section-project-detail.section-service-detail
     .col-order:last-child {
     order: 1;
   }
