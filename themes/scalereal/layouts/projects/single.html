@@ -5,6 +5,29 @@
 {{ $.Scratch.Set "projects" true }}
 {{ partial "head.html" . }}
 
+<style>
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #0eccd8;
+    border-radius: 50%;
+    display: block;
+    margin: 8rem auto;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+</style>
+
 <body>
     {{ partial "nav" . }}
     <div class="page-inner page-projects">
@@ -22,6 +45,7 @@
             </div>
         </section>
         <div id="projects-container"></div>
+        <div id="loader" class="loader"></div>
 
         <section class="section-cta bg-blue">
             <p class="text-white">We'd love to help you scale.
@@ -140,7 +164,7 @@
                         </p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">GoLang, Django, FastApi, Postgres, ReactJS, Docker, Redis streams, Redash, 
+                            <p class="text-grey">GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, 
                                 Websockets with FastApi, Baremetal Server, Docker
                             </p>
                         </div>
@@ -234,14 +258,14 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".benz-container" data-aos-offset="250">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">Mercedes Benz</h2>
                         <p class="text-grey">Hybrid mobile application which helps dealers to take superior
                             pictures of used cars. It’s an easy to use and intuitive mobile app which allows
                             dealers to standardize the process of taking pictures.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Unity3D</p>
+                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Unity3D</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
 
@@ -249,29 +273,27 @@
                 </div>
             </div>
         </section>`,
-            `<section class="section-service-detail section-project-detail">
+        ` <section class="section-service-detail section-project-detail p2p-containter">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Galactica</h2>
-                        <p class="text-grey">A platform that offers Cutting-Edge, Powerful AI Algorithms to generate
-                            actionable insights From Satellite and UAV Data. The geospatial analytics helps to identify
-                            various objects like Plane, Large Vehicles, Military Vehicles, etc, from the Satellite
-                            images.</p>
+                <div class="row ">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0 p2p-content" data-aos="fade-right">
+                        <h2 class="f700 text-black">P2P (Procure-to-Pay)</h2>
+                        <p class="text-grey">P2P is a multi-tenancy-based procurement platform designed to streamline the Procure-to-Pay 
+                            lifecycle for businesses. This prototype is developed as a customer acquisition tool to showcase the potential 
+                            of digital transformation in procurement processes. The platform supports seamless integration and modularity 
+                            through a microservices architecture, enabling efficient and scalable operations.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">ReactJS, Redux, SCSS, Flask, Redis, Celery, Netlify, Docker, Webpack,
-                                NPM, Yarn</p>
+                            <p class="text-grey">React, Tamagui, Kotlin, Micronaut, PostgreSQL, RabbitMQ</p>
                         </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
                     <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
+                        <div class="img-wrap p2p-image">
                             <picture>
-                                <source srcset="{{ "images/projects/Galactica-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Galactica.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Galactica.webp" | absURL }}" alt="Galactica Application Screenshots">
-                            </picture>  
+                                <source srcset="{{ "images/projects/Kodo.png" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Kodo.png" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Kodo.png" | absURL }}" alt="P2P (Procure-to-Pay) Application Screenshots">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -289,14 +311,14 @@
                             </picture> 
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".dbe-container" data-aos-offset="250">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">DBE Cloud</h2>
                         <p class="text-grey">Integration of learning videos with CLOX device which helps store
                             all the data without servers for offline video streaming. CLOX can be used with
                             TV’s, Projectors, Mobile Devices and Desktop Computers.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
+                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Flask, HLS</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -317,7 +339,7 @@
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
                             <p class="text-grey">Kotlin, ReactJS, Redux, Saga, React Testing Library, Styled Components,
-                                NodeJS, Python, Elastic Beanstalk, Aurora Serverless (Postgress), Docker, AWS Lambda,
+                                NodeJS, Python, Elastic Beanstalk, Aurora Serverless (PostgreSQL), Docker, AWS Lambda,
                                 TravisCI, AWS CodeBuild, AWS CodePipeline, Terraform, Cypress, ROR, Swift </p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
@@ -346,7 +368,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".gbas-container" data-aos-offset="200">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">Gbas Gbos</h2>
                         <p class="text-grey">This is a Match 3 Fruit Crush Game that aims to not only entertain but also
                             educate people around the world about the beauties of the fruit types found only in African
@@ -374,7 +396,7 @@
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
                             <p class="text-grey">Ruby, Ruby on rails, ReactJS, JavaScript, Redux, Material UI, Redis,
-                                Sidekiq, Postgresql, HTML
+                                Sidekiq, PostgreSQL, HTML
                             </p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
@@ -466,7 +488,7 @@
                             various stages and levels of your child’s development. </p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey"> Python, Django, Postgres, ReactJS, AWS</p>
+                            <p class="text-grey"> Python, Django, PostgreSQL, ReactJS, AWS</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -484,7 +506,7 @@
                             for their secure and guaranteed payment transactions for the promised goods and services.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, REST and GraphQL API, ReactJS, AWS, Postgres, Docker, Flutter</p>
+                            <p class="text-grey">Python, Django, REST and GraphQL API, ReactJS, AWS, PostgreSQL, Docker, Flutter</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -503,7 +525,7 @@
             ` <section class="section-service-detail section-project-detail temp-taker-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right" data-aos-anchor=".temp-taker-container" data-aos-offset="100">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="{{ "images/projects/TempTaker-small.webp" | absURL }}" media="(max-width:592px)">
@@ -512,7 +534,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".temp-taker-container" data-aos-offset="100">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">TempTaker</h2>
                         <p class="text-grey">Kiosk TempTaker is a non-contact temperature screening device that can be
                             used in malls, schools, offices, etc. People can simply approach the device for a quick
@@ -522,7 +544,7 @@
                             date, and time. </p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres, ReactJS, Docker</p>
+                            <p class="text-grey">Python, Django, PostgreSQL, ReactJS, Docker</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -541,7 +563,7 @@
                             and track studying progress.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Flask, HLS</p>
+                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Flask, HLS</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -633,8 +655,8 @@
                             and autoscaling infrastructure to optimize the monthly AWS bills. </p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">ROR, Postgress, Sidekiq, Elastic Beanstalk, S3, Elastic Cache (Redis),
-                                AWS SNS, Aurora Serverless (Postgress)</p>
+                            <p class="text-grey">ROR, PostgreSQL, Sidekiq, Elastic Beanstalk, S3, Elastic Cache (Redis),
+                                AWS SNS, Aurora Serverless (PostgreSQL)</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
                     </div>
@@ -684,14 +706,14 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".tenfold-project-container">
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
                         <h2 class="f700 text-black">Ten Fold Education</h2>
                         <p class="text-grey">South Africa’s first Mobile based learning application for High
                             School learners. It helps them excel in academics while engaging them in a fun and
                             interactive way.</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, Postgres , Ansible, Js, Mathjax, Java, Kotlin,
+                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Mathjax, Java, Kotlin,
                                 Retrofit, Dagger, Swift, Objective C</p>
                         </div>
                             {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
@@ -722,47 +744,82 @@
                     </div>
                 </div>
             </div>
-        </section>`
+        </section>`,
+        `<section class="section-service-detail section-project-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-order" data-aos="fade-right">
+                        <div class="img-wrap">
+                            <picture>
+                                <source srcset="{{ "images/projects/Galactica-small.webp" | absURL }}" media="(max-width:592px)">
+                                <source srcset="{{ "images/projects/Galactica.webp" | absURL }}" media="(max-width:768px)">
+                                <img src="{{ "images/projects/Galactica.webp" | absURL }}" alt="Galactica Application Screenshots">
+                            </picture>  
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
+                        <h2 class="f700 text-black">Galactica</h2>
+                        <p class="text-grey">A platform that offers Cutting-Edge, Powerful AI Algorithms to generate
+                            actionable insights From Satellite and UAV Data. The geospatial analytics helps to identify
+                            various objects like Plane, Large Vehicles, Military Vehicles, etc, from the Satellite
+                            images.</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">ReactJS, Redux, SCSS, Flask, Redis, Celery, Netlify, Docker, Webpack,
+                                NPM, Yarn</p>
+                        </div>
+                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
+                    </div>
+                </div>
+            </div>
+        </section>`,
         ];
 
         let currentIndex = 0;
-    let totalItems = items.length;
+        let totalItems = items.length;
+        const loader = document.querySelector('#loader');
 
-    function appendItems() {
-        const container = document.querySelector('#projects-container');
-        const newItems = [];
+        function appendItems(count = 3) { 
+            const container = document.querySelector('#projects-container');
+            const newItems = [];
 
-        for (let i = currentIndex; i < currentIndex + 3 && i < totalItems; i++) {
-            const newItem = document.createElement('div');
-            newItem.innerHTML = items[i];
-            if (i % 2 === 0) {
-                newItem.classList.add('even-project');
+            for (let i = currentIndex; i < currentIndex + count && i < totalItems; i++) {
+                const newItem = document.createElement('div');
+                newItem.innerHTML = items[i];
+                if (i % 2 === 0) {
+                    newItem.classList.add('even-project');
+                }
+                newItems.push(newItem);
             }
-            newItems.push(newItem);
-        }
 
-        newItems.forEach(item => container.appendChild(item));
+            loader.style.display = 'block';
+            newItems.forEach(item => container.appendChild(item));
 
-        currentIndex += 3;
+            currentIndex += count;
 
-        if (newItems.length > 1) {
-            const beforeLastItem = newItems[newItems.length - 2];
-            if (beforeLastItem) {
-                loadMoreObserver.observe(beforeLastItem);
+            if (currentIndex >= totalItems) {
+                loader.style.display = 'none';
+                return;
+            }
+
+            loadMoreObserver.disconnect();
+
+            const lastItem = newItems[newItems.length - 1];
+            if (lastItem) {
+                setTimeout(() => loadMoreObserver.observe(lastItem), 50);
             }
         }
-    }
 
-    const loadMoreObserver = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting && currentIndex < totalItems) {
-            appendItems();
-        }
-    }, {
-        rootMargin: '50px',
-    });
+        const loadMoreObserver = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting && currentIndex < totalItems) {
+                appendItems(3);
+            }
+        }, {
+            rootMargin: '100px', 
+        });
 
-    appendItems();
+        appendItems(3);
     </script>
 
 </body>

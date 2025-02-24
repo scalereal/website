@@ -46,6 +46,10 @@ section {
   padding: 125px 0;
 }
 
+section.p2p-containter {
+  padding: 32px 0 !important;
+}
+
 .f12 {
   font-size: 12px;
   line-height: 20px;
@@ -2445,6 +2449,10 @@ lottie-player {
   .section-technology .tab-content .card {
     flex-basis: 100% !important;
   }
+
+  .p2p-content {
+    margin-top: -17px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2456,6 +2464,14 @@ lottie-player {
   .even-project .section-project-detail.section-service-detail
     .col-order:last-child {
     order: 1;
+  }
+
+  .p2p-content {
+    margin-top: -58px !important;
+  }
+
+  .p2p-image {
+    margin-top: -58px;
   }
 }
 
