@@ -74,11 +74,7 @@
 .case-study-page .case-study-subtitle {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  margin: 48px 0 24px;
-=======
   margin: 56px 0 24px;
->>>>>>> 0f87b888bcd938d7b7a21d1906d06570862a7750
   color: #212529;
   font-family: "Open Sans";
   font-size: 26px;
