@@ -34,7 +34,9 @@ url: "/projects/case-study/noobstorm"
 </div>
 {{< /case-study/imgCarousel >}} 
 
- 
+&nbsp;
+
+&nbsp;
 
 ---
 

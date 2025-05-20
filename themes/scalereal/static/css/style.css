@@ -46,6 +46,10 @@ section {
   padding: 125px 0;
 }
 
+section.p2p-containter {
+  padding: 32px 0 !important;
+}
+
 .f12 {
   font-size: 12px;
   line-height: 20px;
@@ -2428,7 +2432,7 @@ lottie-player {
   }
 }
 
-.section-project-detail.section-service-detail:nth-child(even) {
+.even-project {
   /* 0, 2, 4 */
   background-color: #f5f8fc;
 }
@@ -2445,17 +2449,29 @@ lottie-player {
   .section-technology .tab-content .card {
     flex-basis: 100% !important;
   }
+
+  .p2p-content {
+    margin-top: -17px !important;
+  }
 }
 
-@media (min-width: 768px) {
-  .section-project-detail.section-service-detail:nth-child(even)
+@media (max-width: 768px) {
+  .even-project .section-project-detail.section-service-detail
     .col-order:first-child {
     order: 2;
   }
 
-  .section-project-detail.section-service-detail:nth-child(even)
+  .even-project .section-project-detail.section-service-detail
     .col-order:last-child {
     order: 1;
+  }
+
+  .p2p-content {
+    margin-top: -58px !important;
+  }
+
+  .p2p-image {
+    margin-top: -58px;
   }
 }
 
@@ -3529,7 +3545,7 @@ lottie-player {
   .client-success-stories-section .container .box .heading.box-content p {
     width: 294px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -3555,6 +3571,7 @@ lottie-player {
     .box-content
     .client-story-summary
     h3 {
+    font-size: 20px !important;
     margin-top: 12px;
     height: auto;
   }
