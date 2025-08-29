@@ -13,7 +13,7 @@
     <link href="{{ "css/new-pages.css" | absURL }}" rel="stylesheet">
     <link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
     <link href="{{ "css/case-study.css" | absURL }}" rel="stylesheet">
-
+    
     {{/*  Animate.js  */}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- <link href="{{ "css/syntax.css" | absURL }}" rel="stylesheet"> -->
@@ -24,6 +24,7 @@
     <link rel="icon" href="{{ "images/favicon-16x16.png"| absURL }}" sizes="16x16" type="image/png">
     <link rel="icon" href="{{ "favicon.ico"| absURL }}"> -->
 
+    {{ with .Site.GetPage "section" "blogs" }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="ScaleReal Blog RSS" href="{{ .Permalink }}" />{{ end }}{{ end }}
 
     <!-- Fonts -->
     {{ partial "google-fonts" . }}
