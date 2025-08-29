@@ -3,10 +3,10 @@ languageCode: 'en-us'
 title: 'Scalereal'
 defaultContentLanguage: en
 languages:
-    en:
-        lang: en
-        languageName: English
-        weight: 1
+  en:
+    lang: en
+    languageName: English
+    weight: 1
 MetaDataFormat: 'yaml'
 
 theme: scalereal
@@ -17,29 +17,34 @@ enableRobotsTXT: true
 canonifyURLs: true
 
 permalinks:
-    post: '/blogs/:title/'
-    case-studies: '/projects/case-study/:title'
+  post: '/blogs/:title/'
+  case-studies: '/projects/case-study/:title'
 #Params
 params:
-    navigation:
-        - name: Home
-          url: /
-        - name: Services
-          url: /services
-        - name: Projects
-          url: /projects
-        - name: Company
-          url: /company
-        - name: Blogs
-          url: /blogs
-        - name: Careers
-          url: /careers
-        - name: Contact
-          url: /contact
-    fonts:
-        google: [['Open Sans', '300,400,600,700,800']]
-    tags: ['Web Application']
-    ogimage: https://scalereal.com/images/logo/blue_512X512.png
+  navigation:
+    - name: Home
+      url: /
+    - name: Services
+      url: /services
+    - name: Projects
+      url: /projects
+    - name: Company
+      url: /company
+    - name: Blogs
+      url: /blogs
+    - name: Careers
+      url: /careers
+    - name: Contact
+      url: /contact
+  fonts:
+    google: [['Open Sans', '300,400,600,700,800']]
+  tags: ['Web Application']
+  ogimage: https://scalereal.com/images/logo/blue_512X512.png
 
 author: ['Ashish Mohite', 'Deepak Kabbur', 'Atul Shashikumar']
 postType: true
+outputs:
+  home: [HTML]
+  section: [HTML]
+  taxonomy: [HTML]
+  term: [HTML]
