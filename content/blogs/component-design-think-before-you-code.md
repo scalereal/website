@@ -102,10 +102,10 @@ body: >-
   For example, a "New" label on some product cards:
 
 
-  `Card` `component `→ SRP: showing card information
+`Card` component → SRP: showing card information
 
 
-  `LabeledCard` `component `(Higher Order Component) → Takes any card component and adds a label to it
+`LabeledCard` component (Higher Order Component) → Takes any card component and adds a label to it
 
 
   This approach means you can reuse the basic \`Card\` anywhere, and the labeling logic is separate and reusable too.
