@@ -93,7 +93,7 @@ body: >-
 
 
 
-  ## Component Composition: Building with [Lego Blocks](https://www.google.com/search?q=what+is+lego+blocks&sca_esv=2dbf529d86e0c71d&sxsrf=AE3TifNhY7TJfyq9AQJ5yj475FQM44YVog%3A1750005958972&ei=xvhOaKGOO8mMvr0PwOqA8QM&ved=0ahUKEwihiaic8PONAxVJhq8BHUA1ID4Q4dUDCBA&uact=5&oq=what+is+lego+blocks&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3doYXQgaXMgbGVnbyBibG9ja3MyCxAAGIAEGJECGIoFMgYQABgIGB4yBhAAGAgYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogRIyw9QmQRYlg1wAXgBkAEAmAG3AaAB8QiqAQMwLji4AQPIAQD4AQGYAgagApoGwgIHECMYsAMYJ8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIHECMYsAIYJ8ICBxAAGIAEGA3CAgYQABgHGB6YAwCIBgGQBgqSBwMxLjWgB_k8sgcDMC41uAeTBsIHBTItNS4xyAcm&sclient=gws-wiz-serp&sei=3fhOaPuMEaeUvr0P1cyEyQ4)
+## Component Composition: Building with [Lego Blocks](https://en.wikipedia.org/wiki/Lego)
 
 
   Think of components like Lego blocks. Each piece serves a specific purpose, but when combined, they create something more complex and beautiful. This is **component composition** – building larger features by combining smaller, focused components.
