@@ -1,13 +1,17 @@
+---
 title: "Component Design: Think Before You Code"
+description: "Smart component design isn’t about over-engineering—it’s about saving time and reducing refactoring. By thinking before you code, you’ll write cleaner, modular, and more reusable components that make development faster and easier."
+categories:
+  - web
 date: 2025-09-05T11:34:00.000+05:30
-author: Prathamesh Gunde
 tags:
   - Frontend
-cover: https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4087459/cover_image/retina_1708x683/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-c9ad0b13aebad8c872bec7fa59b307f6.png
-draft: false
-body: >-
+author: Prathamesh Gunde
+image: https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4087459/cover_image/retina_1708x683/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-c9ad0b13aebad8c872bec7fa59b307f6.png
+url: "web/2025/09/05/component-design-think-before-you-code.html"
+---
+  
   ## The Problem: Coding Without Thinking
-
 
   Let’s imagine: You get a new feature request, open your code editor, and immediately start typing. Sound familiar? Most developers fall into this trap – we dive straight into coding without taking a moment to think about the structure and design of what we are building.
 
@@ -98,14 +102,12 @@ body: >-
 
   Think of components like Lego blocks. Each piece serves a specific purpose, but when combined, they create something more complex and beautiful. This is **component composition** – building larger features by combining smaller, focused components.
 
-
   For example, a "New" label on some product cards:
 
+`Card component` → SRP: showing card information
 
-`Card` component → SRP: showing card information
 
-
-`LabeledCard` component (Higher Order Component) → Takes any card component and adds a label to it
+`LabeledCard component` (Higher Order Component) → Takes any card component and adds a label to it
 
 
   This approach means you can reuse the basic \`Card\` anywhere, and the labeling logic is separate and reusable too.
