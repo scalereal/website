@@ -245,7 +245,7 @@ body: >-
   ### Code Splitting and Lazy Loading
 
 
-  Well-designed components enable better performance optimization. Take [MakeMyTrip's ](https://www.makemytrip.com/) website as an example – it has flights, hotels, homestays, trains, and buses sections. Instead of loading all components at once, they can:
+Well-designed components enable better performance optimization. Take [MakeMyTrip's](https://www.makemytrip.com/) website as an example – it has flights, hotels, homestays, trains, and buses sections. Instead of loading all components at once, they can:
 
 
   * Load only flight-related components when user is on flights tab
