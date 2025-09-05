@@ -82,13 +82,13 @@ body: >-
   **Example**: Instead of creating one massive `ProductCard` component that handles displaying product info, managing wishlist state, handling purchase logic, and showing promotional labels, break it down:
 
 
-  * `ProductCard` → Displays basic product information
+* `ProductCard` → Displays basic product information
 
-  * `WishlistButton`→ Handles wishlist functionality
+* `WishlistButton` → Handles wishlist functionality
 
-  * `PurchaseButton` → Manages purchase logic
+* `PurchaseButton` → Manages purchase logic
 
-  * `PromotionalLabel`→ Shows special offers or "New" labels
+* `PromotionalLabel` → Shows special offers or "New" labels
 
 
 
