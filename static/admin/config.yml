@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: scalereal/website
+  branch: dev
+  open_authoring: true
+
+publish_mode: editorial_workflow
+site_url: "https://scalereal.com"
+
+media_folder: "themes/scalereal/static/images/blog/banner"
+public_folder: "/images/blog/banner"
+
+collections:
+  - name: "blogs"
+    label: "Blog Posts"
+    folder: "content/blogs/all"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: true }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "URL", name: "url", widget: "string", required: true }
+      - { label: "Body", name: "body", widget: "markdown" }
