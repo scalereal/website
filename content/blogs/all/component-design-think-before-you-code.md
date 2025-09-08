@@ -1,14 +1,18 @@
 ---
 title: "Component Design: Think Before You Code"
-description: "Smart component design isn’t about over-engineering—it’s about saving time and reducing refactoring. By thinking before you code, you’ll write cleaner, modular, and more reusable components that make development faster and easier."
+description: Smart component design isn’t about over-engineering—it’s about
+  saving time and reducing refactoring. By thinking before you code, you’ll
+  write cleaner, modular, and more reusable components that make development
+  faster and easier.
 categories:
   - web
 date: 2025-09-05T11:34:00.000+05:30
 tags:
   - Frontend
+  - CleanCode
 author: Prathamesh Gunde
 image: https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4087459/cover_image/retina_1708x683/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-c9ad0b13aebad8c872bec7fa59b307f6.png
-url: "web/2025/09/05/component-design-think-before-you-code.html"
+url: web/2025/09/05/component-design-think-before-you-code.html
 ---
   
   ## The Problem: Coding Without Thinking
