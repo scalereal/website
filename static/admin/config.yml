@@ -15,6 +15,8 @@ collections:
     label: "Blog Posts"
     folder: "content/blogs/all"
     create: true
+    delete: false
+    publish: false
     slug: "{{slug}}"
     extension: "md"
     fields:
