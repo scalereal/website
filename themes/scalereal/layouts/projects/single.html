@@ -60,26 +60,20 @@
 
     <script>
         const projects = JSON.parse({{ getJSON "/content/projects/data.json" | jsonify }});
-        const items = projects.map((project, index) => `
-            <section class="${project.main_container_class} ${index % 2 === 0 ? 'even-project' : ''}">
+        const items = projects.map((project, index) => {
+            const isOdd = index % 2;
+            const rowClass = isOdd ?  'flex-row':'flex-row-reverse';
+            const textAos = isOdd ? 'fade-left' : 'fade-right';
+            const imageAos = isOdd ? 'fade-right' : 'fade-left';
+            const sectionClass = `${project.main_container_class} ${!isOdd ? 'even-project' : ''}`;
+            const textAosAnchor = !project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : '';
+            const imageAosAnchor = project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : '';
+            const caseStudyLink = project.case_study_url ? `<a class="btn-arrow btn-black f700" href="${project.case_study_url}">View Case Study</a>` : '';
+
+            return `<section class="${sectionClass}">
             <div class="container">
-                <div class="row" style="flex-direction:${index % 2 ? 'row-reverse' : 'row'};">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0"
-                        data-aos="${index % 2 ? 'fade-left' : 'fade-right'}"
-                        ${!project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : ''}>
-                        <h2 class="f700 text-black">${project.title}</h2>
-                        <p class="text-grey">${project.description}</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">${project.technologies}</p>
-                        </div>
-                        ${project.case_study_url
-                ? `<a class="btn-arrow btn-black f700" href="${project.case_study_url}">View Case Study</a>`
-                : ''}
-                    </div>
-                    <div class="col-md-6 col-order"
-                        data-aos="${index % 2 ? 'fade-right' : 'fade-left'}"
-                        ${project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : ''}>
+                <div class="row ${rowClass}">
+                    <div class="col-md-6 col-order" data-aos="${imageAos}" ${imageAosAnchor}>
                         <div class="img-wrap">
                             <picture>
                                 <source srcset="${project.images[0]}" media="(max-width:592px)">
@@ -88,10 +82,19 @@
                             </picture>
                         </div>
                     </div>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="${textAos}" ${textAosAnchor}>
+                        <h2 class="f700 text-black">${project.title}</h2>
+                        <p class="text-grey">${project.description}</p>
+                        <div class="project-tech">
+                            <p class="f700 text-grey">Technologies</p>
+                            <p class="text-grey">${project.technologies}</p>
+                        </div>
+                        ${caseStudyLink}
+                    </div>
                 </div>
             </div>
-            </section>
-        `);
+            </section>`;
+        });
 
         let currentIndex = 0;
         let totalItems = items.length;

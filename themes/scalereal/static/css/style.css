@@ -2456,16 +2456,6 @@ lottie-player {
 }
 
 @media (max-width: 768px) {
-  .even-project .section-project-detail.section-service-detail
-    .col-order:first-child {
-    order: 2;
-  }
-
-  .even-project .section-project-detail.section-service-detail
-    .col-order:last-child {
-    order: 1;
-  }
-
   .p2p-content {
     margin-top: -58px !important;
   }
