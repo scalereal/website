@@ -41,13 +41,13 @@
       "/images/projects/Noobstorm.webp",
       "/images/projects/Noobstorm.webp"
     ],
-    "alt": "MyVaccine Application Screenshots",
+    "alt": "Noobstorm Application Screenshots",
     "case_study_url": "/projects/case-study/noobstorm"
   },
   {
     "title": "Bus Tracking Application",
     "description": "A platform that offers comprehensive fleet management with real-time bus tracking, enabling users to monitor live locations. Attached devices capture critical events like harsh braking, geo-fence breaches, or detours and many more. Users can create journeys, define routes, and manage drivers, buses, and devices seamlessly, ensuring safety and operational transparency. Additionally, the application offers detailed reporting for all journeys and buses, enabling data-driven insights.",
-    "technologies": "GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, Websockets with FastApi, Baremetal Server, Docker",
+    "technologies": "GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, Websockets with FastApi, Baremetal Server",
     "main_container_class": "section-service-detail section-project-detail",
     "data_aos_anchor": null,
     "anchor_on_image": false,
@@ -56,7 +56,7 @@
       "/images/projects/BusTracking.png",
       "/images/projects/BusTracking.png"
     ],
-    "alt": "1% Club Application Screenshots",
+    "alt": "Bus Tracking Application Screenshots",
     "case_study_url": null
   },
   {
