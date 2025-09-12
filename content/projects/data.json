@@ -17,7 +17,7 @@
   {
     "title": "Persana AI",
     "description": "Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating personalized messages, and increasing response rates. Key features include lead enrichment, AI-generated messaging, LinkedIn prospecting via a Chrome extension, and automated workflows. Users can access pre-built lead lists, import their own, and utilize various enrichments to gain deeper insights into leads and companies.",
-    "technologies": "React, TailwindCSS, Vite , Nest, MongoDB, Redis, Vue.js, Framer",
+    "technologies": "React, TailwindCSS, Vite, Nest, MongoDB, Redis, Vue.js, Framer",
     "main_container_class": "section-service-detail section-project-detail persana-project-container",
     "data_aos_anchor": ".persana-project-container",
     "anchor_on_image": false,
@@ -47,7 +47,7 @@
   {
     "title": "Bus Tracking Application",
     "description": "A platform that offers comprehensive fleet management with real-time bus tracking, enabling users to monitor live locations. Attached devices capture critical events like harsh braking, geo-fence breaches, or detours and many more. Users can create journeys, define routes, and manage drivers, buses, and devices seamlessly, ensuring safety and operational transparency. Additionally, the application offers detailed reporting for all journeys and buses, enabling data-driven insights.",
-    "technologies": "GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, Websockets with FastApi, Baremetal Server",
+    "technologies": "GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, Websockets with FastApi, Baremetal Server, ",
     "main_container_class": "section-service-detail section-project-detail",
     "data_aos_anchor": null,
     "anchor_on_image": false,
@@ -123,7 +123,7 @@
     "title": "P2P (Procure-to-Pay)",
     "description": "P2P is a multi-tenancy-based procurement platform designed to streamline the Procure-to-Pay lifecycle for businesses. This platform is developed as a customer acquisition tool to showcase the potential of digital transformation in procurement processes. The platform supports seamless integration and modularity through a microservices architecture, enabling efficient and scalable operations.",
     "technologies": "React, Tamagui, Kotlin, Micronaut, PostgreSQL, RabbitMQ",
-    "main_container_class": "section-service-detail section-project-detail p2p-containter",
+    "main_container_class": "section-service-detail section-project-detail p2p-container",
     "data_aos_anchor": null,
     "anchor_on_image": false,
     "images": [

@@ -107,9 +107,7 @@
             for (let i = currentIndex; i < currentIndex + count && i < totalItems; i++) {
                 const newItem = document.createElement('div');
                 newItem.innerHTML = items[i];
-                if (i % 2 === 0) {
-                    newItem.classList.add('even-project');
-                }
+               
                 newItems.push(newItem);
             }
 
