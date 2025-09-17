@@ -1839,6 +1839,31 @@ lottie-player {
   font-weight: bold;
 }
 
+.section-contact .loader {
+  border: 2px solid #f3f3f3; /* Light gray */
+  border-top: 2px solid #000; /* Black */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.section-contact .d-none {
+  display: none !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Clients marquee */
 
 @keyframes scrollX {
@@ -3573,4 +3598,38 @@ lottie-player {
     .owl-dots {
     margin: 0px;
   }
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  max-width: 350px;
+  background: #1f2937; /* dark gray */
+  color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 12px 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#toast.success {
+  border-left: 5px solid #22c55e; /* green */
+}
+
+#toast.error {
+  border-left: 5px solid #ef4444; /* red */
 }
