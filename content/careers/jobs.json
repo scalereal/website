@@ -44,7 +44,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Python Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Python Engineer&ref=website"
   },
   {
     "title": "iOS Mobile Developer",
@@ -93,7 +93,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=iOS Mobile Developer&ref=website"
+    "applyUrl": "/apply/?profile=iOS Mobile Developer&ref=website"
   },
   {
     "title": "Android Mobile Developer",
@@ -142,7 +142,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Android Mobile Developer&ref=website"
+    "applyUrl": "/apply/?profile=Android Mobile Developer&ref=website"
   },
   {
     "title": "React JS Engineer",
@@ -179,7 +179,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=React JS Engineer&ref=website"
+    "applyUrl": "/apply/?profile=React JS Engineer&ref=website"
   },
   {
     "title": "InfraOps Engineer",
@@ -187,7 +187,7 @@
     "location": "Remote, India",
     "time": "Full time",
     "experience": "2 - 4 years of Experience",
-    "target": "infraOps-engineers",
+    "target": "infraops-engineers",
     "doing": [
       "Architect, deploy, and maintain AWS cloud infrastructure using best practices and IaC principles.",
       "Manage Linux-based server environments across multiple environments.",
@@ -228,7 +228,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=InfraOps%20Engineer&ref=website"
+    "applyUrl": "/apply/?profile=InfraOps%20Engineer&ref=website"
   },
   {
     "title": "Golang Engineer",
@@ -274,7 +274,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Golang Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Golang Engineer&ref=website"
   },
   {
     "title": "Quality Analyst",
@@ -317,7 +317,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Quality Analyst&ref=website"
+    "applyUrl": "/apply/?profile=Quality Analyst&ref=website"
   },
   {
     "title": "DevOps Engineer",
@@ -360,7 +360,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=DevOps Engineer&ref=website"
+    "applyUrl": "/apply/?profile=DevOps Engineer&ref=website"
   },
   {
     "title": "Sales Development Representative",
@@ -399,7 +399,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Sales Development Representatives&ref=website"
+    "applyUrl": "/apply/?profile=Sales Development Representatives&ref=website"
   },
   {
     "title": "ROR Engineer",
@@ -446,7 +446,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=ROR Engineer&ref=website"
+    "applyUrl": "/apply/?profile=ROR Engineer&ref=website"
   },
   {
     "title": "People Experience Intern",
@@ -492,7 +492,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=People Experience Intern&ref=website"
+    "applyUrl": "/apply/?profile=People Experience Intern&ref=website"
   },
   {
     "title": "Senior PHP Developer",
@@ -589,7 +589,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=React Native Engineer&ref=website"
+    "applyUrl": "/apply/?profile=React Native Engineer&ref=website"
   },
   {
     "title": "React JS Intern",
@@ -630,7 +630,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=React JS Intern&ref=website"
+    "applyUrl": "/apply/?profile=React JS Intern&ref=website"
   },
   {
     "title": "FullStack React JS Engineer",
@@ -678,7 +678,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=FullStack React JS Engineer&ref=website"
+    "applyUrl": "/apply/?profile=FullStack React JS Engineer&ref=website"
   },
   {
     "title": "Quality Analyst Intern",
@@ -721,7 +721,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=QA Intern&ref=website"
+    "applyUrl": "/apply/?profile=QA Intern&ref=website"
   },
   {
     "title": "Business Analyst",
@@ -772,7 +772,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Business Analyst&ref=website"
+    "applyUrl": "/apply/?profile=Business Analyst&ref=website"
   },
   {
     "title": "HR Executive",
@@ -818,7 +818,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=HR Executive&ref=website"
+    "applyUrl": "/apply/?profile=HR Executive&ref=website"
   },
   {
     "title": "Trainee Software Engineer",
@@ -855,7 +855,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Trainee Software Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Trainee Software Engineer&ref=website"
   },
   {
     "title": "Angular JS Engineer",
@@ -898,7 +898,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Angular JS Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Angular JS Engineer&ref=website"
   },
   {
     "title": "Kotlin Engineer",
@@ -935,7 +935,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Kotlin Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Kotlin Engineer&ref=website"
   },
   {
     "title": "Senior SEO Consultant",
@@ -985,7 +985,7 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Senior SEO Consultant&ref=website"
+    "applyUrl": "/apply/?profile=Senior SEO Consultant&ref=website"
   },
   {
     "title": "Wordpress Engineer",
@@ -1035,6 +1035,6 @@
       "Flexible timings as long as work gets done.",
       "Opportunity to contribute to open-source projects."
     ],
-    "applyUrl": "/apply?profile=Wordpress Engineer&ref=website"
+    "applyUrl": "/apply/?profile=Wordpress Engineer&ref=website"
   }
 ]

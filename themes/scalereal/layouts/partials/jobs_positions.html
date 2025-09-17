@@ -10,11 +10,11 @@
             {{range $data}}
             <li class="mb-3">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" id="heading-{{ .target }}">
                         <div class="scollapsed d-flex justify-content-between collapsed" data-toggle="collapse"
                             data-target="#{{ .target }}" aria-expanded="false" aria-controls="{{ .target }}">
                             <div>
-                                <h4>{{ .title }} <span class="badge  mb-1 {{ if eq .status "Open" }}badge-active{{else}}badge-inactive{{ end }}">{{ .status }}</span></h4>
+                                <h4>{{ .title }} <span class="badge  mb-1 {{ if eq .status "Open" }}badge-active{{else}}badge-inactive{{ end }}">{{ .status }}</span>
                                 </h4>
                                 <p class="mt-1">{{ .location }} | {{ .time }} | {{ .experience }}</p>
                             </div>
@@ -25,7 +25,7 @@
 
                         </div>
                     </div>
-                    <div id="{{ .target }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="{{ .target }}" class="collapse" aria-labelledby="heading-{{ .target }}" data-parent="#accordion">
                         <div class="card-body bg-grey">
                             <strong class="mb-2"> What you'll be doing: </strong>
                             <ul class="key-list text-grey">
@@ -54,7 +54,7 @@
                                 </li>
                                 {{ end }}
                             </ul>
-                            {{else}}
+                   
                             {{end}}
 
                             <strong class="mb-2">Job Perks:</strong>
