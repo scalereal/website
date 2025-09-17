@@ -2,7 +2,8 @@ backend:
   name: github
   repo: scalereal/website
   branch: dev
-  open_authoring: true
+  base_url: https://auth.scalereal.com
+  # open_authoring: true
 
 publish_mode: editorial_workflow
 site_url: "https://scalereal.com"
