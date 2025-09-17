@@ -95,9 +95,10 @@
                     ></textarea>
                     <span class="input-error" id="messageError"></span>
                   </div>
-                  <button type="submit" class="send-button">
-                    <span>Send</span>
-                    <i class="flaticon-arrow"></i>
+                  <button type="submit" class="send-button" id="sendButton">
+                    <span id="sendButtonText">Send</span>
+                    <i class="flaticon-arrow" id="sendButtonIcon"></i>
+                    <span class="loader d-none" id="sendButtonLoader"></span>
                   </button>
                 </form>
               </div>
@@ -179,6 +180,10 @@
       messageError.innerText = validations("message", message.value);
     });
 
+    const sendButton = document.getElementById("sendButton");
+    const sendButtonText = document.getElementById("sendButtonText");
+    const sendButtonIcon = document.getElementById("sendButtonIcon");
+    const sendButtonLoader = document.getElementById("sendButtonLoader");
     contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
@@ -196,6 +201,11 @@
         messageErrorText === ""
       ) {
         try {
+          sendButton.disabled = true;
+          sendButtonText.textContent = "Sending...";
+          sendButtonIcon.classList.add("d-none");
+          sendButtonLoader.classList.remove("d-none");
+
           const payload = {
             email: email.value,
             subject: subject.value,
@@ -220,6 +230,11 @@
         } catch (error) {
           console.error("Error sending to CRM:", error);
           showToast("Error: ❌ Something went wrong.", "error");
+        } finally {
+          sendButton.disabled = false;
+          sendButtonText.textContent = "Send";
+          sendButtonIcon.classList.remove("d-none");
+          sendButtonLoader.classList.add("d-none");
         }
       }
     });
