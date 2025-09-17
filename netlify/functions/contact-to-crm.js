@@ -6,15 +6,15 @@ export async function handler(event) {
   try {
     const { email, subject, requirement } = JSON.parse(event.body);
 
-    const CRM_API = "https://crm.scalereal.com/rest/contactUsFormSubmission";
-    const TOKEN = process.env.CRM_API_TOKEN; 
+    const CRM_API = "https://crm.scalereal.com/rest/contactUsFormSubmissions";
+    const TOKEN = process.env.CRM_API_TOKEN;
     const payload = { email, subject, requirement };
 
     const response = await fetch(CRM_API, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${TOKEN}`,
+        Authorization: `Bearer ${TOKEN}`,
       },
       body: JSON.stringify(payload),
     });
