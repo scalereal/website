@@ -1,0 +1,1040 @@
+[
+  {
+    "title": "Python Engineer",
+    "status": "Open",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "5 - 6 years of Experience",
+    "target": "python-engineers",
+    "doing": [
+      "Writing Clean, Readable, Testable and Reusable Code.",
+      "Design simple systems that are built for scale.",
+      "Break down complex problems in to small and simple problems.",
+      "Consider Software Development as a craft and keep improving everyday.",
+      "Working closely with other Developers, UX designers, Business and System Analysts.",
+      "Take part in all daily activities like Stand-ups, Iteration planning, Retrospectives."
+    ],
+    "lookingFor": [
+      "Expert in Python.",
+      "Good Knowledge of any of the available web frameworks like Django, Flask, Tornado...etc.",
+      "Understanding of the Concurrency and Parallelism limitations of Python and workarounds for them.",
+      "Good understanding of server-side templating languages.",
+      "Basic understanding of front-end technologies, such as React, TypeScript/JavaScript, HTML5, and CSS3",
+      "Knowledge of user authentication and authorization implementation.(Oauth, SAML, OpenId,..)",
+      "Familiarity with event-driven programming in Python.",
+      "Great understanding of any of the concepts like REST, gRPC, GraphQL.",
+      "Able to create database schemas that represent and support business processes.",
+      "Strong TDD, unit test and debugging skills.",
+      "Proficient understanding of Git and GitHub workflows.",
+      "Proficient in docker usage.",
+      "Basic Understanding of CI/CD workflows.",
+      "Cloud deployment basics (AWS/Azure/GCP)"
+    ],
+    "additionalSkills": [
+      "Golang, ROR, Kotlin, React, VueJS",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in real world.",
+      "We are always working on bleeding edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Python Engineer&ref=website"
+  },
+  {
+    "title": "iOS Mobile Developer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "6 - 8 years of Experience",
+    "target": "ios-mobile-developer",
+    "doing": [
+      "Writing clean, maintainable, and reusable code for iOS applications.",
+      "Designing scalable systems with performance and efficiency in mind.",
+      "Breaking down complex problems into manageable components and delivering simple solutions.",
+      "Continuously improving your iOS development skills and adopting the latest industry trends.",
+      "Collaborating with developers, UX designers, and business/system analysts to deliver the best user experience.",
+      "Participating in Agile practices like Stand-ups, Iteration Planning, and Retrospectives.",
+      "Writing unit and integration tests to ensure app stability and performance.",
+      "Ensuring apps are highly performant, including managing memory, battery usage, and smooth UI rendering.",
+      "Researching and integrating new technologies and tools to optimise the development pipeline."
+    ],
+    "lookingFor": [
+      "Proven experience in developing native iOS apps using Swift/Objective-C.",
+      "At least two apps published on the Apple App Store.",
+      "Expertise in iOS frameworks like UIKit, Core Data, Core Animation, and more.",
+      "Strong knowledge of networking and RESTful APIs.",
+      "Experience with data structures, algorithms, and problem-solving.",
+      "Expertise in debugging, identifying memory leaks, and solving performance bottlenecks.",
+      "Proficiency in multi-threading, offline storage solutions, and performance tuning.",
+      "Familiarity with cloud messaging, push notifications, and in-app purchases.",
+      "Knowledge of benchmarking and optimizing app performance.",
+      "Proficient with version control systems like Git/Bitbucket.",
+      "Experience with Apple’s Human Interface Guidelines and best UI/UX practices.",
+      "Knowledge of CI/CD pipelines and experience with build automation tools."
+    ],
+    "additionalSkills": [
+      "Experience with ARKit or Core ML is a plus.",
+      "Knowledge of low-level programming with C-based libraries is an advantage.",
+      "Knowledge on Flutter & React Native"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices..",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=iOS Mobile Developer&ref=website"
+  },
+  {
+    "title": "Android Mobile Developer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "6 - 8 years of Experience",
+    "target": "android-mobile-developer",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code.",
+      "Design simple systems that are built for scale.",
+      "Break down complex problems into small and simple problems.",
+      "Consider Software Development as a craft and keep improving every day.",
+      "Working closely with other Developers, UX designers, Business and System Analysts.",
+      "Take part in all daily activities like Stand-ups, Iteration planning, Retrospectives.",
+      "Write Unit Tests and Integration Tests to ensure correctness.",
+      "Ensure the apps are performant - no memory leaks, no frame drops, battery usage, etc.",
+      "Explore and evaluate new technologies, tools and SDKs as may be necessary to improve the entire development pipeline."
+    ],
+    "lookingFor": [
+      "Successful track record in development of native android apps.",
+      "Two or more apps published in Google Play Store.",
+      "Expert level skills in Android Programming, Rich UI Development, Debugging Skills.",
+      "Experience in Connecting devices wirelessly using Bluetooth and WIFI protocol.",
+      "Excellent command over Data Structures and Algorithms",
+      "Excellent problem solving, critical thinking and communication skills",
+      "Debugging skills, including identifying bugs, memory leaks, performance bottlenecks",
+      "Experience with offline storage, multi-threading, and performance tuning",
+      "Familiarity with cloud message APIs and push notifications",
+      "Knack for benchmarking and optimization",
+      "Extensive experience using Version Control systems like Git/Bitbucket and planning",
+      "Experience in IoT Wearable, NoSQL DBs, Android Graphics, Jetpack Compose",
+      "Basic Understanding of CI/CD workflows."
+    ],
+    "additionalSkills": [
+      "Knowledge of low-level C-based libraries is preferred",
+      "ARCore will be added value"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Android Mobile Developer&ref=website"
+  },
+  {
+    "title": "React JS Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 5 years of Experience",
+    "target": "react-js-engineers",
+    "doing": [
+      "Researching, designing, implementing and managing software application",
+      "Troubleshooting and maintaining existing software applications",
+      "Designing highly scalable, testable code",
+      "Working closely with other developers, UX designers, business and system analysts"
+    ],
+    "lookingFor": [
+      "Development experience with programming languages",
+      "Computer Science Basics (Database, Data Structure, Networking)",
+      "Understanding of application development cycle",
+      "Strong analytical thinking and problem-solving skills",
+      "Team player, self-motivated and creative thinking",
+      "Ability to learn new technologies quickly"
+    ],
+    "additionalSkills": [
+      "Python, ROR, Kotlin, Golang, VueJS",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=React JS Engineer&ref=website"
+  },
+  {
+    "title": "InfraOps Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 4 years of Experience",
+    "target": "infraOps-engineers",
+    "doing": [
+      "Architect, deploy, and maintain AWS cloud infrastructure using best practices and IaC principles.",
+      "Manage Linux-based server environments across multiple environments.",
+      "Configure and optimize network components including VPCs, subnets, security groups, and routing tables.",
+      "Implement and maintain reverse proxies such as Nginx and Caddy for load balancing and service routing.",
+      "Build and manage Docker containers and container orchestration solutions.",
+      "Create automation scripts to improve operational efficiency and reduce manual interventions.",
+      "Perform SRE tasks including monitoring cloud resources for performance, availability, and cost optimization.",
+      "Design and implement robust security measures across the infrastructure stack.",
+      "Troubleshoot complex infrastructure and network issues in production environments.",
+      "Enable developers to deploy seamlessly with CI/CD setups."
+    ],
+    "lookingFor": [
+      "Strong hands-on Linux administration experience with deep system-level understanding.",
+      "Advanced networking knowledge including TCP/IP, routing, load balancing, and troubleshooting.",
+      "Demonstrated experience configuring and maintaining Nginx or Caddy reverse proxies in production.",
+      "Solid Docker experience including container creation, optimization, and troubleshooting",
+      "Proficiency with AWS core services including EC2, VPC, S3, IAM, RDS, Serverless",
+      "Experience with infrastructure monitoring and alerting tools in cloud environments.",
+      "Shell scripting skills and familiarity with at least one programming language(TypeScript preferred).",
+      "Knowledge of security best practices for cloud and network infrastructure.",
+      "Strong problem-solving skills with attention to detail."
+    ],
+    "additionalSkills": [
+      "Experience with container orchestration platforms like Kubernetes or ECS",
+      "Knowledge of infrastructure as code tools such as Terraform or CDKTF",
+      "Familiarity with SRE practices and security compliance standards",
+      "Experience with configuration management tools like Ansible",
+      "AWS Cloud Certifications - AWS Certified Solutions Architect Associate or Professional"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=InfraOps%20Engineer&ref=website"
+  },
+  {
+    "title": "Golang Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "4 - 6 years of Experience",
+    "target": "golang-engineers",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code.",
+      "Design simple systems that are built for scale.",
+      "Break down complex problems into small and simple problems.",
+      "Consider Software Development as a craft and keep improving every day.",
+      "Working closely with other Developers, UX designers, Business and System Analysts.",
+      "Take part in all daily activities like Stand-ups, Iteration planning, Retrospectives."
+    ],
+    "lookingFor": [
+      "Expert in Golang.",
+      "Good Knowledge of any of the available web frameworks/libraries like gorilla-mux, gin, go-buffalo.",
+      "In-depth understanding of Golang's Concurrency and Parallelism support.",
+      "Basic understanding of front-end technologies, such as React, TypeScript/JavaScript, HTML5, and CSS3",
+      "Knowledge of user authentication and authorization implementation.(Oauth, SAML, OpenId,..)",
+      "Familiarity with event-driven programming in Golang.",
+      "Great understanding of any of the concepts like REST, gRPC, GraphQL.",
+      "Able to create database schemas that represent and support business processes.",
+      "Strong TDD, unit test, and debugging skills.",
+      "Proficient understanding of Git and GitHub workflows.",
+      "Proficient in docker usage.",
+      "Basic Understanding of CI/CD workflows.",
+      "Cloud deployment basics (AWS/Azure/GCP)"
+    ],
+    "additionalSkills": [
+      "Python, ROR, Kotlin, React, VueJS",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Golang Engineer&ref=website"
+  },
+  {
+    "title": "Quality Analyst",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "1 - 2 years of Experience",
+    "target": "quality-analyst",
+    "doing": [
+      "Review and analyze system specifications",
+      "Collaborate with QA Engineers to develop effective strategies and test plans",
+      "Execute test cases (manual or automated) and analyze results",
+      "Evaluate product code according to specifications",
+      "Create logs to document testing phases and defects",
+      "Report bugs and errors to development teams",
+      "Help troubleshoot issues",
+      "Conduct post-release/post-implementation testing",
+      "Work with cross-functional teams to ensure quality throughout the software development life-cycle"
+    ],
+    "lookingFor": [
+      "Excellent communication skills",
+      "Attention to detail",
+      "Analytical mind and problem-solving attitude",
+      "Interest in coding",
+      "Strong organizational skills",
+      "Computer Science background",
+      "QA certification is mandatory"
+    ],
+    "additionalSkills": [
+      "Basic knowledge about Automation",
+      "Basic knowledge about Performance Testing"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Quality Analyst&ref=website"
+  },
+  {
+    "title": "DevOps Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0.6 - 1.5 years of Experience",
+    "target": "devops-engineers",
+    "doing": [
+      "Automate, Manage and maintain Kubernetes clusters lifecycle",
+      "Develop tools for automated build, test, deployment and management of the platform",
+      "Maintain and Develop Docker images/containers for different technology stack",
+      "Setting up and managing Docker private repository and creating docker file to create custom Docker images",
+      "Ensure that the connectivity and network are always up and running ",
+      "Plan for capacity upgrading or downsizing as and when the need arises",
+      "Monitor system events to ensure health, maximum system availability and service quality",
+      "Produce clear documentation for delivered solutions",
+      "Experience with public Cloud providers, including Amazon Web Services architecture, tools, and Cloud methodologies"
+    ],
+    "lookingFor": [
+      "Experience with infrastructure automation tools like Ansible, Puppet, Chef",
+      "Good experience on Containerization using Docker Containerization, Kubernetes, AWS ECS, EKS, Azure Container Service, AKS",
+      "Hands on experience in designing Kubernetes cluster with high availability and high performance",
+      "Strong knowledge in public clouds like AWS or Azure",
+      "Having good knowledge in cloud deployment using Terraform or AWS CloudFormation or Azure Resource Manager",
+      "Good Exposure on automation using of the following AWS Code Pipeline, Azure DevOps, Jenkins",
+      "Experience in building CI/CD pipelines using GIT/Jenkins/Artifactory",
+      "Intense sense of ownership, initiative-taking, and a can-do attitude",
+      "Strong comprehension, analytical, and problem solving skills",
+      "Excellent verbal & written communication skills"
+    ],
+    "additionalSkills": ["Python, ROR, Kotlin, Golang", "ReactJS, VueJS"],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=DevOps Engineer&ref=website"
+  },
+  {
+    "title": "Sales Development Representative",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0 - 2 years of Experience",
+    "target": "sales-development-representative",
+    "doing": [
+      "Prospecting, generating, qualifying, following up on leads which leads to appointment setting.",
+      "Collaboratively work with the sales leadership to generate lead opportunities with prospective clients.",
+      "Initiates and participates in new business pitches with the sales team and own follow-through with the lead prospect.",
+      "Providing consistent, concise, accurate internal and external communications.",
+      "Working collaboratively in a team environment and independently.",
+      "Developing and maintaining strong relationships with prospects.",
+      "Maintain all relevant data in CRM."
+    ],
+    "lookingFor": [
+      "Hands-on experience on LinkedIn and website navigation.",
+      "The ability to understand the business and technical drivers behind the IT service’s acquisition and translate in contractual language",
+      "Should have knowledge/ experience in working in a target-driven environment.",
+      "Experience/ knowhow in working with global markets.",
+      "Excellent communication skills."
+    ],
+    "additionalSkills": [
+      "Basic knowledge of MS Excel.",
+      "Basic knowledge of collaboration tools."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Sales Development Representatives&ref=website"
+  },
+  {
+    "title": "ROR Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 4 years of Experience",
+    "target": "ROR-engineers",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code.",
+      "Design simple systems that are built for scale.",
+      "Break down complex problems into small and simple problems.",
+      "Consider Software Development as a craft and keep improving every day.",
+      "Working closely with other Developers, UX designers, Business and System Analysts.",
+      "Take part in all daily activities like Stand-ups, Iteration planning, Retrospectives."
+    ],
+    "lookingFor": [
+      "Expert in Ruby.",
+      "Good Knowledge of any of the available web frameworks like RoR, Sinatra, grape...",
+      "Understanding of the Concurrency and Parallelism limitations of Ruby and workarounds for them.",
+      "Good understanding of server-side templating languages.(ERB, haml, emmet...)",
+      "Basic understanding of front-end technologies, such as React, TypeScript/JavaScript, HTML5, and CSS3",
+      "Knowledge of user authentication and authorization implementation. (Oauth, SAML, OpenId,..)",
+      "Familiarity with event-driven programming in Ruby/RoR.",
+      "Great understanding of any of the concepts like REST, gRPC, GraphQL",
+      "Able to create database schemas that represent and support business processes.",
+      "Strong TDD, unit test, and debugging skills.",
+      "Proficient understanding of Git and GitHub workflows.",
+      "Proficient in docker usage.",
+      "Basic Understanding of CI/CD workflows.",
+      "Cloud deployment basics (AWS/Azure/GCP)"
+    ],
+    "additionalSkills": [
+      "Python, Golang, Kotlin, React, VueJS",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=ROR Engineer&ref=website"
+  },
+  {
+    "title": "People Experience Intern",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0.3 - 0.6 years of Experience",
+    "target": "people-experience-intern",
+    "doing": [
+      "Set objectives for the HR team and track progress.",
+      "Assist in talent acquisition and recruitment processes.",
+      "Support and suggest improvements to the entire recruitment process.",
+      "Conduct employee onboarding.",
+      "Provide support to employees in various HR-related topics such as leaves and compensation.",
+      "Monitor HR metrics (e.g. turnover rates and cost-per-hire).",
+      "Design and implement company policies that promote a healthy work environment.",
+      "Undertake tasks around performance management.",
+      "Organize quarterly and annual employee performance reviews.",
+      "Organize learning and development programs.",
+      "Maintain employee files and records in electronic and paper form.",
+      "Enhance job satisfaction by resolving issues promptly, applying for new perks and benefits and organizing team building activities.",
+      "Maintain HR procedures that comply with labor regulations."
+    ],
+    "lookingFor": [
+      "Proven work experience as an HR Executive or similar role.",
+      "Hands-on experience with HRM Software (including payroll systems and ATS).",
+      "Understanding of general human resources policies and procedures.",
+      "Good knowledge of employment/labor laws.",
+      "Outstanding knowledge of MS Office/Google Spreadsheet.",
+      "Excellent communication & people skills.",
+      "Aptitude in problem-solving.",
+      "Desire to work as a team with a results-driven approach.",
+      "Graduation/MBA specialized in HR."
+    ],
+    "additionalSkills": ["Digital Marketing.", "Content Writing."],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=People Experience Intern&ref=website"
+  },
+  {
+    "title": "Senior PHP Developer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "5 - 7 years of Experience",
+    "target": "senior-PHP-developer",
+    "doing": [
+      "Own end-to-end development of new features and enhancements on our CakePHP4-based B2B platform.",
+      "Lead and mentor a small team of developers as the technical expert, ensuring best practices and code quality.",
+      "Work directly with non-technical team members (product managers, operations, business leadership) to gather requirements, plan development cycles, and shape our technical roadmap.",
+      "Translate business needs into actionable technical tasks and maintain clear communication throughout the process.",
+      "Maintain and optimize our MariaDB database, ensuring performance and scalability as new product lines are introduced.",
+      "Deploy and troubleshoot our application on an Alma Linux-based cloud server environment, guiding any necessary infrastructure improvements.",
+      "Thrive in an agile, startup-like setting where requirements can evolve rapidly.",
+      "Deliver high-quality code on tight timelines while keeping maintainability and scalability in mind.",
+      "Contribute to CI/CD pipelines, automated testing, and deployment workflows.",
+      "Proactively identify and address security vulnerabilities; ensure the platform aligns with industry best practices for data protection and compliance.",
+      "Research and propose new technologies or approaches that can accelerate platform growth.",
+      "Continuously improve the development process, tools, and techniques."
+    ],
+    "lookingFor": [
+      "5+ Years of Professional Experience. At least 3 years working on a production-grade SaaS platform, with additional experience in a leadership or senior developer role.",
+      "Mastery of modern PHP (7.x/8.x). Demonstrable proficiency with CakePHP4 (or a similar PHP framework) and an ability to hit the ground running.",
+      "Deep understanding of schema design, index optimization, and writing performant queries.",
+      "Comfortable with large datasets and complex relational models.",
+      "Familiarity with cloud-based deployments, ideally on Alma Linux or other RHEL-based distros.",
+      "Experience with CI/CD pipelines, containerization (Docker, etc.), and monitoring/logging tools is a plus.",
+      "Basic understanding of OWASP guidelines and secure coding principles to protect sensitive data and user information.",
+      "Ability to collaborate with non-technical stakeholders, clearly explain complex technical concepts, and gather actionable requirements.",
+      "Willingness to lead discussions, drive decision-making, and foster a transparent environment.",
+      "Comfortable with a fast-paced environment, shifting priorities, and ambitious deadlines.",
+      "Self-starter who is passionate about building products that drive real business growth."
+    ],
+    "additionalSkills": [
+      "Front-End Experience: Familiarity with UI/UX principals.",
+      "Infrastructure as Code: Knowledge of tools like Ansible, Terraform, or Kubernetes.",
+      "Cybersecurity Certifications: Any formal training or certification showing commitment to data protection and secure development.",
+      "Past Leadership Roles: Experience hiring, managing, or mentoring developers in a startup or scaling environment."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world. MicroServices?? Serverless?? we got you covered.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply/?profile=Senior%20PHP%20Developer&ref=website"
+  },
+  {
+    "title": "React Native Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 4 years of Experience",
+    "target": "react-native-engineer",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code for mobile applications using React Native.",
+      "Collaborating closely with other Developers, UX designers, and Business and System Analysts.",
+      "Participating in daily activities like Stand-ups, Iteration planning, and Retrospectives.",
+      "Researching, designing, implementing, and managing mobile software applications.",
+      "Troubleshooting and maintaining existing mobile applications developed with React Native."
+    ],
+    "lookingFor": [
+      "Proven experience in developing mobile applications using React Native.",
+      "Solid understanding of JavaScript, HTML, and CSS.",
+      "Familiarity with React.js and its core principles.",
+      "Proficient in React Native development for building cross-platform mobile applications.",
+      "Understanding of mobile app deployment processes for both iOS and Android platforms.",
+      "Knowledge of state management libraries like Redux.",
+      "Experience with version control systems, such as Git.",
+      "Strong problem-solving skills and attention to detail.",
+      "Ability to work collaboratively in agile team environment.",
+      "Excellent communication and interpersonal skills."
+    ],
+    "additionalSkills": [
+      "Familiarity with native modules and bridging in React Native.",
+      "Experience with performance optimization techniques in React Native applications.",
+      "Knowledge of mobile application testing frameworks.",
+      "Knowledge and hands on experience with typescript.",
+      "Sound understanding of MVC, MVVM, JSON, and data binding."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices..",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=React Native Engineer&ref=website"
+  },
+  {
+    "title": "React JS Intern",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0 - 1 year of Experience",
+    "target": "react-js-intern",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code.",
+      "Working closely with other Developers, UX designers, and Business and System Analysts.",
+      "Take part in all daily activities like Stand-ups, Iteration planning, and Retrospectives.",
+      "Researching, designing, implementing, and managing software application.",
+      "Troubleshooting and maintaining existing software applications."
+    ],
+    "lookingFor": [
+      "Solid understanding of JavaScript, HTML, and CSS.",
+      "Familiarity with React.js and its core principles.",
+      "Basic understanding of front-end build tools, such as Webpack or Babel.",
+      "Strong problem-solving skills and attention to detail.",
+      "Ability to work collaboratively in a team environment.",
+      "Knowledge of state management libraries like Redux or Mobx.",
+      "Excellent communication and interpersonal skills."
+    ],
+    "additionalSkills": [
+      "Knowledge of state management libraries like Redux.",
+      "Experience with version control systems, such as Git.",
+      "Exposure to RESTful API integration.",
+      "Understanding of agile development methodologies."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices..",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=React JS Intern&ref=website"
+  },
+  {
+    "title": "FullStack React JS Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 5 years of Experience",
+    "target": "react-fullstack-engineers",
+    "doing": [
+      "Develop and maintain user-friendly web applications using React.js for the frontend and Node.js for the backend.",
+      "Design, implement, and maintain efficient, reusable, and reliable code.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Work closely with UI/UX designers to ensure the technical feasibility of designs.",
+      "Optimize applications for maximum performance and scalability.",
+      "Implement security and data protection measures.",
+      "Troubleshoot and debug technical issues as they arise.",
+      "Keep up-to-date with emerging technologies and industry trends."
+    ],
+    "lookingFor": [
+      "Bachelor's degree in Computer Science or related field.",
+      "Proven 3+ years of experience as a Fullstack React JS Engineer.",
+      "Proficiency in one or more Node.js frameworks such as Express.js, Koa.js, NestJS, or others.",
+      "Expertise in RDBMS, particularly PostgreSQL.",
+      "Experience with RESTful APIs and third-party libraries.",
+      "Knowledge of state management libraries like Redux or Mobx.",
+      "Familiarity with frontend build tools such as Webpack, Babel, etc.",
+      "Understanding of version control systems like Git.",
+      "Solid understanding of software development principles and design patterns.",
+      "Excellent problem-solving and communication skills.",
+      "Ability to work independently and as part of a team."
+    ],
+    "additionalSkills": [
+      "Experience with other JavaScript libraries and frameworks (e.g., Angular, Vue.js).",
+      "Knowledge of NoSQL databases.",
+      "Familiarity with cloud services (e.g., AWS, Azure, GCP).",
+      "Experience in Working with DevOps and CI/CD enabled environments."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices..",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=FullStack React JS Engineer&ref=website"
+  },
+  {
+    "title": "Quality Analyst Intern",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0 - 0.6 years of Experience",
+    "target": "quality-analyst-intern",
+    "doing": [
+      "Review and analyze system specifications",
+      "Collaborate with QA Engineers to develop effective strategies and test plans",
+      "Execute test cases (manual or automated) and analyze results",
+      "Evaluate product code according to specifications",
+      "Create logs to document testing phases and defects",
+      "Report bugs and errors to development teams",
+      "Help troubleshoot issues",
+      "Conduct post-release/post-implementation testing",
+      "Work with cross-functional teams to ensure quality throughout the software development life-cycle"
+    ],
+    "lookingFor": [
+      "Excellent communication skills",
+      "Attention to detail",
+      "Analytical mind and problem-solving attitude",
+      "Interest in coding",
+      "Strong organizational skills",
+      "Computer Science background",
+      "QA certification is mandatory"
+    ],
+    "additionalSkills": [
+      "Basic knowledge about Automation",
+      "Basic knowledge about Performance Testing"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=QA Intern&ref=website"
+  },
+  {
+    "title": "Business Analyst",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 5 years of Experience",
+    "target": "business-analyst",
+    "doing": [
+      "Interact with clients and team members to ideate and brainstorm on complex business problems to arrive at relevant solutions.",
+      "Outline business vision, objective, product roadmap and project release plan.",
+      "Understand and detail out the above functional requirements during the project delivery phase.",
+      "Helping small and large sized teams comprising of different roles from a software delivery perspective.",
+      "Using different tools and techniques to facilitate requirement gathering sessions.",
+      "Managing and leading the product backlog from an analysis perspective.",
+      "Coach and mentor team members.",
+      "Create and maintain issue logs, meeting minutes, meeting schedules, project summaries and updates.",
+      "Provide clients with Project Cost and Time Estimation.",
+      "Prepare Statement of Work (SOW) for clients."
+    ],
+    "lookingFor": [
+      "Relevant experience in Business Analysis for building custom software or new product ideas.",
+      "Experience working in an Agile environment.",
+      "Exceptional listening, written and verbal communication skills.",
+      "Open to travel and work on client locations.",
+      "Ability to work effectively & independently in a fast-paced environment with tight deadlines.",
+      "Open to work on any domain.",
+      "Ability to understand, challenge and collaborate on the technical solutions provided by the team.",
+      "Strong Analytical skills with ability to ask right questions, analyze data and draw conclusion by making appropriate assumptions.",
+      "Ability to present information professionally & concisely with supporting data.",
+      "Experience in tools like Jira, Clickup, Confluence, Basecamp, etc.",
+      "Ability to write Stories and manage Sprint Grooming, Sprint Planning, Retrospective, Daily Standup, Client Demo etc.",
+      "Experience in creating Flow Diagrams and Wireframes.",
+      "Experience working with Google Spreadsheets, Docs, Microsoft Excel, Word, etc."
+    ],
+    "additionalSkills": [
+      "Experience in SQL, Excel, other scripting languages.",
+      "Background in statistical modelling and experience with statistical tools such as R, Python, Spark, SAS or SPSS.",
+      "Experience with BI tools (Power BI, Tableau, Qlikview, Datastudio, etc)"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Business Analyst&ref=website"
+  },
+  {
+    "title": "HR Executive",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "3 - 5 years of Experience",
+    "target": "hr-executives",
+    "doing": [
+      "Set objectives for the HR team and track progress.",
+      "Assist in talent acquisition and recruitment processes.",
+      "Support and suggest improvements to the entire recruitment process.",
+      "Conduct employee onboarding.",
+      "Provide support to employees in various HR-related topics such as leaves and compensation.",
+      "Monitor HR metrics (e.g. turnover rates and cost-per-hire).",
+      "Design and implement company policies that promote a healthy work environment.",
+      "Undertake tasks around performance management.",
+      "Organize quarterly and annual employee performance reviews.",
+      "Organize learning and development programs.",
+      "Maintain employee files and records in electronic and paper form.",
+      "Enhance job satisfaction by resolving issues promptly, applying for new perks and benefits and organizing team building activities.",
+      "Maintain HR procedures that comply with labor regulations."
+    ],
+    "lookingFor": [
+      "Proven work experience as an HR Executive or similar role.",
+      "Hands-on experience with HRM Software (including payroll systems and ATS).",
+      "Understanding of general human resources policies and procedures.",
+      "Good knowledge of employment/labor laws.",
+      "Outstanding knowledge of MS Office/Google Spreadsheet.",
+      "Excellent communication & people skills.",
+      "Aptitude in problem-solving.",
+      "Desire to work as a team with a results-driven approach.",
+      "Graduation/MBA specialized in HR."
+    ],
+    "additionalSkills": ["Digital Marketing.", "Content Writing"],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=HR Executive&ref=website"
+  },
+  {
+    "title": "Trainee Software Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "0 - 1 year of Experience",
+    "target": "trainee-software-engineers",
+    "doing": [
+      "Writing Clean, Readable, Testable, and Reusable Code",
+      "Work on simple systems that are built for scale",
+      "Break down complex problems into small and simple problems",
+      "Consider Software Development as a craft and keep improving every day",
+      "Working closely with other Developers, UX designers, and Business and System Analysts",
+      "Take part in all daily activities like Stand-ups, Iteration planning, and Retrospectives",
+      "Researching, designing, implementing, and managing software application",
+      "Troubleshooting and maintaining existing software applications"
+    ],
+    "lookingFor": [
+      "Excellent coding skills (We prefer clean code over competitive coding)",
+      "A basic understanding of server-side templating languages",
+      "Basic TDD, unit test, and debugging skills",
+      "Good understanding of Git and GitHub workflows",
+      "A basic understanding of Cloud deployment (AWS/Azure/GCp)"
+    ],
+    "additionalSkills": [],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Trainee Software Engineer&ref=website"
+  },
+  {
+    "title": "Angular JS Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "3 - 5 years of Experience",
+    "target": "angular-js-engineers",
+    "doing": [
+      "Developing and implementing user-friendly web applications using the Angular framework(All releases).",
+      "Writing clean, maintainable, and efficient code following best practices.",
+      "Collaborating with UX/UI designers to create responsive and visually appealing user interfaces.",
+      "Integrating backend APIs and services with the frontend application.",
+      "Optimizing application performance and troubleshooting issues.",
+      "Participating in code reviews and providing constructive feedback.",
+      "Follow agile development practices and deliver products on time."
+    ],
+    "lookingFor": [
+      "3 - 5 years of experience as an Angular Developer or similar role.",
+      "Excellent understanding of HTML, CSS, JavaScript, and Typescript.",
+      "Familiarity with Git or other version control systems.",
+      "Knowledge of UI/UX design principles and responsive web design.",
+      "Knowledge of writing unit tests and integration tests for the UI",
+      "Understanding of web application rendering patterns like CSR, SSR, and SSG",
+      "Ability to work independently and collaboratively in a team environment.",
+      "Strong problem-solving skills and attention to detail.",
+      "Excellent communication and interpersonal skills."
+    ],
+    "additionalSkills": [
+      "React JS, Python, ROR, Kotlin, Golang",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Angular JS Engineer&ref=website"
+  },
+  {
+    "title": "Kotlin Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 5 years of Experience",
+    "target": "kotlin-engineers",
+    "doing": [
+      "Researching, designing, implementing and managing software application",
+      "Troubleshooting and maintaining existing software applications",
+      "Designing highly scalable, testable code",
+      "Working closely with other developers, UX designers, business and system analysts"
+    ],
+    "lookingFor": [
+      "Development experience with programming languages",
+      "Computer Science Basics (Database, Data Structure, Networking)",
+      "Understanding of application development cycle",
+      "Strong analytical thinking and problem-solving skills",
+      "Team player, self-motivated and creative thinking",
+      "Ability to learn new technologies quickly"
+    ],
+    "additionalSkills": [
+      "Python, ROR, Golang, React, VueJS",
+      "AWS, Ansible, Kubernetes, Docker"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Kotlin Engineer&ref=website"
+  },
+  {
+    "title": "Senior SEO Consultant",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "3 - 4 years of Experience",
+    "target": "senior-seo-consultant",
+    "doing": [
+      "Develop and implement comprehensive SEO strategies to achieve higher SERP rankings and drive targeted organic traffic.",
+      "Conduct competitor analysis to identify gaps and opportunities.",
+      "Perform detailed keyword research to identify valuable, high-traffic keywords.",
+      "Optimize website content, including landing pages, blogs, meta tags, and descriptions, for relevant keywords.",
+      "Work with content writers and developers to create high-quality, SEO-friendly content.",
+      "Ensure content aligns with user search intent and search engine algorithms.",
+      "Audit websites to identify technical SEO issues and recommend fixes.",
+      "Optimize website structure, URL hierarchy, internal linking, and site speed.",
+      "Ensure websites are mobile-friendly and follow core web vitals.",
+      "Optimize on-page elements like headers, images, alt tags, and structured data.",
+      "Execute link-building strategies and manage outreach for high-quality backlinks.",
+      "Use tools like Google Analytics, Google Search Console, Ahrefs, or SEMrush to track performance.",
+      "Monitor ranking fluctuations and provide regular reports on SEO progress, traffic, and ROI.",
+      "Keep up with the latest SEO trends, algorithm updates, and industry best practices.",
+      "Experiment with new strategies to stay ahead of competitors."
+    ],
+    "lookingFor": [
+      "Experience in optimizing websites for e-commerce, blogs, or service-based businesses.",
+      "Familiarity with local SEO and international SEO strategies",
+      "Strong understanding of technical SEO, website architecture, and tools like Google Analytics, Google Search Console, Ahrefs, SEMrush, Moz, Screaming Frog, etc.",
+      "3-4 years of proven experience in SEO, with a track record of improving SERP rankings and driving organic traffic.",
+      "Proficient in keyword research, content optimization, and understanding search intent.",
+      "Strong data analysis skills and ability to translate insights into actionable strategies.",
+      "Excellent verbal and written communication skills for collaboration with cross-functional teams.",
+      "Ability to identify and address SEO issues quickly and effectively."
+    ],
+    "additionalSkills": [
+      "Basic knowledge of HTML, CSS, and CMS platforms (e.g., WordPress).",
+      "Awareness of user experience and interface design to enhance website engagement and dwell time."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Senior SEO Consultant&ref=website"
+  },
+  {
+    "title": "Wordpress Engineer",
+    "status": "Closed",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "2 - 4 years of Experience",
+    "target": "wordpress-engineer",
+    "doing": [
+      "Developing, customising, and maintaining WordPress websites and themes.",
+      "Writing clean, efficient, and reusable code with a focus on performance and scalability.",
+      "Designing and implementing new features and functionalities based on project requirements.",
+      "Ensuring high-performance, availability, and managing all technical aspects of the CMS.",
+      "Collaborating with designers, developers, and business teams to ensure smooth project delivery.",
+      "Troubleshooting and resolving issues related to WordPress websites.",
+      "Building custom plugins and integrations with third-party services as needed.",
+      "Ensuring cross-browser compatibility, responsive design, and SEO best practices.",
+      "Conducting performance tests and ensuring fast page load times and optimised performance.",
+      "Keeping up to date with the latest WordPress developments, plugins, and industry trends."
+    ],
+    "lookingFor": [
+      "Proven experience in WordPress development, including custom themes and plugins.",
+      "Strong knowledge of front-end technologies such as HTML5, CSS3, JavaScript, and jQuery.",
+      "Familiarity with PHP, MySQL, and understanding of database management.",
+      "Experience with responsive and mobile-first design practices.",
+      "Proficiency in debugging tools like Chrome Developer Tools, Firebug, etc.",
+      "Understanding of website architecture, server management, and hosting environments.",
+      "Experience with version control systems like Git/Bitbucket.",
+      "Knowledge of SEO best practices and optimization techniques.",
+      "Ability to troubleshoot and resolve compatibility and performance issues.",
+      "Familiarity with page builders like Elementor, WPBakery, or Gutenberg."
+    ],
+    "additionalSkills": [
+      "Experience with WooCommerce development.",
+      "Familiarity with REST APIs and integrating third-party services.",
+      "Experience with website security best practices and optimization tools.",
+      "Understanding of CI/CD workflows for WordPress development.",
+      "Knowledge on React & AWS Cloud"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices..",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply?profile=Wordpress Engineer&ref=website"
+  }
+]

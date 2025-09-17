@@ -1,0 +1,79 @@
+<section class="section-open-position">
+
+    <div class="container">
+        <header class="heading">
+            <h2 class="f700 text-black ml-4">Job Positions</h2>
+        </header>
+
+        <ul id="accordion" class="careers-accordion">
+            {{ $data:= getJSON "/content/careers/jobs.json" }}
+            {{range $data}}
+            <li class="mb-3">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <div class="scollapsed d-flex justify-content-between collapsed" data-toggle="collapse"
+                            data-target="#{{ .target }}" aria-expanded="false" aria-controls="{{ .target }}">
+                            <div>
+                                <h4>{{ .title }} <span class="badge  mb-1 {{ if eq .status "Open" }}badge-active{{else}}badge-inactive{{ end }}">{{ .status }}</span></h4>
+                                </h4>
+                                <p class="mt-1">{{ .location }} | {{ .time }} | {{ .experience }}</p>
+                            </div>
+                            <div class="expand line-heigh-2-rem">
+                                <span class="flaticon-plus plus">+</span>
+                                <span class="flaticon-minus minus">-</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="{{ .target }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-grey">
+                            <strong class="mb-2"> What you'll be doing: </strong>
+                            <ul class="key-list text-grey">
+                                {{ range .doing }}
+                                <li class="d-flex">
+                                    {{ . }}
+                                </li>
+                                {{ end }}
+                            </ul>
+
+                            <strong class="mb-2"> What we are looking for: </strong>
+                            <ul class="key-list text-grey">
+                                {{ range .lookingFor }}
+                                <li class="d-flex">
+                                    {{ . }}
+                                </li>
+                                {{ end }}
+                            </ul>
+
+                            {{if .additionalSkills}}
+                            <strong class="mb-2"> Additional skills to be considered as a plus: </strong>
+                            <ul class="key-list text-grey">
+                                {{ range .additionalSkills }}
+                                <li class="d-flex">
+                                    {{ . }}
+                                </li>
+                                {{ end }}
+                            </ul>
+                            {{else}}
+                            {{end}}
+
+                            <strong class="mb-2">Job Perks:</strong>
+                            <ul class="key-list text-grey">
+                                {{ range .perks }}
+                                <li class="d-flex">
+                                    {{ . }}
+                                </li>
+                                {{ end }}
+                            </ul>
+                            <a class="send-resume" href="{{.applyUrl}}" title="Apply">
+                                <span>Apply</span>
+                                <i class="flaticon-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
