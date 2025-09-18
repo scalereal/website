@@ -224,6 +224,11 @@
           if (res.ok) {
             showToast("Message sent successfully!", "success");
             contactForm.reset();
+            await fetch(`/.netlify/functions/notify-email`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
           } else {
             showToast("Error: " + (data.error || res.statusText), "error");
           }
