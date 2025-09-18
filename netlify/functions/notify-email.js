@@ -4,6 +4,13 @@ export async function handler(event) {
   try {
     const data = JSON.parse(event.body);
 
+    console.log("EMAIL_USER:", process.env.EMAIL_USER);
+    console.log(
+      "EMAIL_PASS:",
+      process.env.EMAIL_PASS ? "****set****" : "MISSING"
+    );
+    console.log("EMAIL_RECEIVER:", process.env.EMAIL_RECEIVER);
+
     // Create transporter using Gmail (works with App Password)
     const transporter = nodemailer.createTransport({
       service: "gmail",
