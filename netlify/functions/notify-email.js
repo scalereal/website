@@ -33,9 +33,9 @@ export async function handler(event) {
 
     // Send email
     await transporter.sendMail({
-      from: `"Form Submission" <${process.env.EMAIL_USER}>`,
+      from: `"ScaleReal Contact Form" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_RECEIVER,
-      subject: data.subject || "New Form Submission",
+      subject: data.subject || "New ScaleReal Contact Form Submission",
       html: htmlBody,
     });
 
