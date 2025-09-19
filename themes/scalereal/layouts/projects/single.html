@@ -1,4 +1,4 @@
-{{ "<!-- Projects -->" | safeHTML }}
+<!-- Projects -->
 
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
@@ -6,26 +6,27 @@
 {{ partial "head.html" . }}
 
 <style>
-  .loader {
-    width: 48px;
-    height: 48px;
-    border: 5px dotted #0eccd8;
-    border-radius: 50%;
-    display: block;
-    margin: 8rem auto;
-    position: relative;
-    box-sizing: border-box;
-    animation: rotation 2s linear infinite;
+    .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px dotted #0eccd8;
+        border-radius: 50%;
+        display: block;
+        margin: 8rem auto;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation 2s linear infinite;
     }
 
     @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
 </style>
 
 <body>
@@ -58,754 +59,55 @@
     {{ partial "footer" . }}
 
     <script>
-        const items = [
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">GoToBuddy</h2>
-                        <p class="text-grey">Gotobuddy.ai offers a revolutionary AI-driven communication platform that transforms user engagement
-                            by providing meaningful, personalized conversations on topics like parenting, news, sports, & entertainment. By leveraging
-                            diverse AI personas, Gotobuddy.ai ensures users receive the support and information they need through simple phone calls, 
-                            making it an essential tool for advice, entertainment, and information.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Django, PostgreSQL, vector DB, Large language model(LLM) openAI, Perplexity, Langchain, Docker, AWS,
-                                ReactJS, MantineUI, Deepgram and OpenAI TTS
-                            </p>
-                        </div>
-                            <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/goToBuddy" | absURL }}">View Case Study</a>
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/GoToBuddy.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/GoToBuddy.png" | absURL }}" alt="GoToBuddy Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail persana-project-container">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Persana.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Persana.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Persana.webp" | absURL }}" alt="Persana AI Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" data-aos-anchor=".persana-project-container">
-                        <h2 class="f700 text-black">Persana AI</h2>
-                        <p class="text-grey">Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads 
-                            at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating 
-                            personalized messages, and increasing response rates. Key features include lead enrichment, AI-generated messaging, 
-                            LinkedIn prospecting via a Chrome extension, and automated workflows. Users can access pre-built lead lists, import their
-                            own, and utilize various enrichments to gain deeper insights into leads and companies.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">React, TailwindCSS, Vite , Nest, MongoDB, Redis, Vue.js, Framer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            ` <section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
+        const projects = JSON.parse({{ getJSON "/content/projects/data.json" | jsonify }});
+        const items = projects.map((project, index) => {
+            const isOdd = index % 2;
+            const rowClass = isOdd ?  'flex-row':'flex-row-reverse';
+            const textAos = isOdd ? 'fade-left' : 'fade-right';
+            const imageAos = isOdd ? 'fade-right' : 'fade-left';
+            const sectionClass = `${project.main_container_class} ${!isOdd ? 'even-project' : ''}`;
+            const textAosAnchor = !project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : '';
+            const imageAosAnchor = project.anchor_on_image && project.data_aos_anchor ? `data-aos-anchor="${project.data_aos_anchor}"` : '';
+            const caseStudyLink = project.case_study_url ? `<a class="btn-arrow btn-black f700" href="${project.case_study_url}">View Case Study</a>` : '';
 
-                        <h2 class="f700 text-black">Noobstorm</h2>
-                        <p class="text-grey">Noobstorm is a platform for gamers in India to play different EA sports games, stay updated with the latest news of EA sports, track the progress on leaderboards and connect with players on social media. Noobstorm offers players to play tournaments and win and go up on the leaderboard.
-                        </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Next JS, React, Supabase, Vercel</p>
-                        </div>
-                            <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/noobstorm" | absURL }}">View Case Study</a>
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
+            return `<section class="${sectionClass}">
+            <div class="container">
+                <div class="row ${rowClass}">
+                    <div class="col-md-6 col-order" data-aos="${imageAos}" ${imageAosAnchor}>
                         <div class="img-wrap">
                             <picture>
-                                <source srcset="{{ "images/projects/Noobstorm_small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Noobstorm.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Noobstorm.webp" | absURL }}" alt="MyVaccine Application Screenshots">
+                                <source srcset="${project.images[0]}" media="(max-width:592px)">
+                                <source srcset="${project.images[1]}" media="(max-width:768px)">
+                                <img src="${project.images[2]}" alt="${project.alt}">
                             </picture>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/BusTracking.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/BusTracking.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/BusTracking.png" | absURL }}" alt="1% Club Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
-                        <h2 class="f700 text-black">Bus Tracking Application</h2>
-                        <p class="text-grey">A platform that offers comprehensive fleet management with real-time bus tracking, 
-                            enabling users to monitor live locations. Attached devices capture critical events like harsh braking, 
-                            geo-fence breaches, or detours and many more. Users can create journeys, define routes, and manage 
-                            drivers, buses, and devices seamlessly, ensuring safety and operational transparency. Additionally, 
-                            the application offers detailed reporting for all journeys and buses, enabling data-driven insights.
-                        </p>
+                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="${textAos}" ${textAosAnchor}>
+                        <h2 class="f700 text-black">${project.title}</h2>
+                        <p class="text-grey">${project.description}</p>
                         <div class="project-tech">
                             <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, 
-                                Websockets with FastApi, Baremetal Server, Docker
-                            </p>
+                            <p class="text-grey">${project.technologies}</p>
                         </div>
+                        ${caseStudyLink}
                     </div>
                 </div>
             </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right" >
-                        <h2 class="f700 text-black">1% Club</h2>
-                        <p class="text-grey">The ultimate community-based platform designed to empower and connect individuals with shared interests in 
-                            personal growth, finance, and networking. 1% Club app provides a seamless experience for users to engage, learn, and stay informed.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">React-Native, Typescript, Redux, NestJS, NodeJS, CubeJS, Mongodb, ECS</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/1-percent-club.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/1-percent-club.webp" | absURL }}" alt="1% Club Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail ">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Crbn-Trade.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Crbn-Trade.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Crbn-Trade.webp" | absURL }}" alt="CRBN Trade Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left" >
-                        <h2 class="f700 text-black">CRBN Trade</h2>
-                        <p class="text-grey">CRBN Trade app simplifies carbon credit trading, enabling users to buy, sell, and retire credits with ease. 
-                            Supported assets include Carbon Net Zero, Carbon Compliance, and Carbon Removal credits. It empowers individuals and businesses 
-                            to participate in sustainable practices and contribute to a greener future.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">NestJS , NodeJS, Nanoexpress, Firebase, CubeJS, TimeScaleDB, PostgreSQL, Expo React Native, Typescript, 
-                                React Native Paper, Styled Components, Zustand, ECS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Nurturev</h2>
-                        <p class="text-grey">Nurturev is an AI powered customer intelligence platform which analyses your communications with customers to give detailed information helping improve customer intent. Using Slack integration, it adds a bot to your workspace for AI analysis of data, sentiment, and customer engagement in channels.  </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, AWS, Supabase, NextJS, MaterialUI, Typescript</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Nurturev-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Nurturev.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Nurturev.webp" | absURL }}" alt="Nurturev Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail benz-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right" data-aos-anchor=".benz-container">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/mercedes-benz-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/mercedes-benz.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/mercedes-benz.webp" | absURL }}" alt="Mercedes Benz Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Mercedes Benz</h2>
-                        <p class="text-grey">Hybrid mobile application which helps dealers to take superior
-                            pictures of used cars. It’s an easy to use and intuitive mobile app which allows
-                            dealers to standardize the process of taking pictures.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Unity3D</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        ` <section class="section-service-detail section-project-detail p2p-containter">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0 p2p-content" data-aos="fade-right">
-                        <h2 class="f700 text-black">P2P (Procure-to-Pay)</h2>
-                        <p class="text-grey">P2P is a multi-tenancy-based procurement platform designed to streamline the Procure-to-Pay 
-                            lifecycle for businesses. This platform is developed as a customer acquisition tool to showcase the potential 
-                            of digital transformation in procurement processes. The platform supports seamless integration and modularity 
-                            through a microservices architecture, enabling efficient and scalable operations.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">React, Tamagui, Kotlin, Micronaut, PostgreSQL, RabbitMQ</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap p2p-image">
-                            <picture>
-                                <source srcset="{{ "images/projects/Kodo.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Kodo.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Kodo.png" | absURL }}" alt="P2P (Procure-to-Pay) Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail dbe-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/DBE-cloud-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/DBE-cloud.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/DBE-cloud.webp" | absURL }}" alt="DBE cloud Application Screenshots">
-                            </picture> 
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">DBE Cloud</h2>
-                        <p class="text-grey">Integration of learning videos with CLOX device which helps store
-                            all the data without servers for offline video streaming. CLOX can be used with
-                            TV’s, Projectors, Mobile Devices and Desktop Computers.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Flask, HLS</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">
-                            Medly Pharmacy
-                        </h2>
-                        <p class="text-grey">With an experience of over 30 years in the US Healthcare Industry, Medly
-                            provides SaaS products that cater to the Healthcare domain and also provides a free same-day
-                            prescription delivery to their patients. The application uses encrypted internal systems to
-                            track orders, drug storage, and delivery in real-time.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Kotlin, ReactJS, Redux, Saga, React Testing Library, Styled Components,
-                                NodeJS, Python, Elastic Beanstalk, Aurora Serverless (PostgreSQL), Docker, AWS Lambda,
-                                TravisCI, AWS CodeBuild, AWS CodePipeline, Terraform, Cypress, ROR, Swift </p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Medly-Pharmacy-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Medly-Pharmacy.webp" | absURL }}" alt="Medly Pharmacy Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail gbas-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/IWMI-Mockup.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/IWMI-Mockup.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/IWMI-Mockup.png" | absURL }}" alt="IWMI Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">IWMI TRACE Tool</h2>
-                        <p class="text-grey">IWMI TRACE is a real-time web platform that delivers actionable insights into water resources using advanced analytics and interactive visualizations. It integrates data on surface water & groundwater to support sustainable water management. With an intuitive interface, TRACE equips stakeholders and decision-makers with powerful tools for evidence-based planning and resource optimization. </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django REST Framework, React.js, PostgreSQL, Google BigQuery, AWS, Google Earth Engine</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Lodgistics</h2>
-                        <p class="text-grey">Lodgistics is a hotel management application helping hotels manage their properties, staffs and guests in one place. The web and mobile application gives an
-                            easy-to-use interface where a staff member can see staff records, guest details, hotel logs,
-                            work orders and many other details.
-                        </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Ruby, Ruby on rails, ReactJS, JavaScript, Redux, Material UI, Redis,
-                                Sidekiq, PostgreSQL, HTML
-                            </p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Lodgistics-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Lodgistics.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Lodgistics.webp" | absURL }}" alt="Lodgistics Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Effipac-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Effipac.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Effipac.webp" | absURL }}" alt="Effipac Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-
-                        <h2 class="f700 text-black">EFFIPAC</h2>
-                        <p class="text-grey">EFFIPAC is a professional system that purchases, organizes, and delivers prescribed medicines. The application efficiently manages patient information, prescriptions, and batch calculations. Medications are meticulously sorted and packed in labeled pouches according to dosage and time slots, ensuring precision and minimizing errors. EFFIPAC offers a convenient and secure solution for personalized medicine packaging.
-                        </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">GeoSpoc - GeoCoder</h2>
-                        <p class="text-grey">A highly performant offline geocoding engine to transform messy addresses
-                            into sub-components like street names, locality names, pin codes etc. for hierarchical
-                            component matching and finding the Latitude - Longitude using GeoSpoc's extensively verified
-                            home-brewed database. This geocoding engine can process 20 million records per hour using
-                            batch mode and has submillisecond latency for REST APIs.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Golang, MemDB, License Manager, Customized Algorithms, Docker, JMeter
-                            </p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                     <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/GeoSpoc-GeoCoder.webp" | absURL }}" alt="GeoSpoc-GeoCoder Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Mindset-TV-App-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Mindset-TV-App.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Mindset-TV-App.webp" | absURL }}" alt="Hisense - Mindset TV App Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Hisense - Mindset TV App</h2>
-                        <p class="text-grey">A built-in learning application for Hisense TV which offers students of
-                            various grades to access 1000+ courses across 10+ areas/fields. The app has an exclusive
-                            list of educational activities and material that is designed by experts according to the
-                            various stages and levels of your child’s development. </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey"> Python, Django, PostgreSQL, ReactJS, AWS</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Dealsafe</h2>
-                        <p class="text-grey">India's first platform to build trust between transacting entities for a service. 
-                            An application that would facilitate trade and commerce between buyers and sellers by providing a safe platform 
-                            for their secure and guaranteed payment transactions for the promised goods and services.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, REST and GraphQL API, ReactJS, AWS, PostgreSQL, Docker, Flutter</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                     <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Dealsafe-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Dealsafe.webp" | absURL }}" media="(max-width:768px)">
-                                <img class="large" src="{{ "images/projects/Dealsafe.webp" | absURL }}" alt="Dealsafe Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            ` <section class="section-service-detail section-project-detail temp-taker-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/TempTaker-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/TempTaker.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/TempTaker.webp" | absURL }}" alt="TempTaker Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">TempTaker</h2>
-                        <p class="text-grey">Kiosk TempTaker is a non-contact temperature screening device that can be
-                            used in malls, schools, offices, etc. People can simply approach the device for a quick
-                            temperature reading and your estimated body temperature will be reported within two seconds.
-                            If an elevated temperature is detected then the Authorized person would be notified via text
-                            and email. Notifications contain images of a person with elevated temperature, location,
-                            date, and time. </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, PostgreSQL, ReactJS, Docker</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Mindset</h2>
-                        <p class="text-grey">An online learning application for tracking, reporting, and
-                            delivery of educational courses along with a CMS panel for admin to create and
-                            integrate course materials, align content and assessments, articulate learning goals
-                            and track studying progress.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Flask, HLS</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/mindset-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/mindset.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/mindset.webp" | absURL }}" alt="Mindset Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-            `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/smart-quest-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/smart-quest.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/smart-quest.webp" | absURL }}" alt="Smart Quest Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Smart Quest</h2>
-                        <p class="text-grey">SmartQuest reinforces training / learning with the help of
-                            micro-content like Quizzes, Reference Lists, Lessons, News Feed. It helps in staying
-                            up-to-date with the latest news & events in your company and sector. SmartQuest also
-                            facilitates First Line Managers to regularly rate their Sales reps on selling
-                            parameters on a consistent framework using Manager Feedback.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Vue.js, JavaScript, Webpack, Material Design, MongoDB, Ruby on
-                                Rails</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-
-                        <h2 class="f700 text-black">SustainOnline</h2>
-                        <p class="text-grey">An application having curated content for a smooth learning journey through
-                            hundreds of courses based on 30 years of experience and scientific research. This SaaS
-                            platform with SSO was migrated from Baremetal Servers to AWS cloud and also integrated with
-                            OpenEdx LMS.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">RoR, Ruby, ReactJS, AWS, OpenEdx, MongoDB</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/SustainOnline-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/SustainOnline.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/SustainOnline.webp" | absURL }}" alt="SustainOnline Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/HelpfulCrowd-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/HelpfulCrowd.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/HelpfulCrowd.webp" | absURL }}" alt="HelpfulCrowd Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">HelpfulCrowd</h2>
-                        <p class="text-grey">Heroku to AWS migration of a product review application that collects a ton
-                            of product reviews to leverage SEO and boost sales. Setting up CI/CD pipeline using CircleCI
-                            and autoscaling infrastructure to optimize the monthly AWS bills. </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">ROR, PostgreSQL, Sidekiq, Elastic Beanstalk, S3, Elastic Cache (Redis),
-                                AWS SNS, Aurora Serverless (PostgreSQL)</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-
-                        <h2 class="f700 text-black">MyVaccine</h2>
-                        <p class="text-grey">A mobile-based offline application that creates a Digital pass for the vaccination 
-                            record that can be used at various public places to grant access to its users. It not only scans user's 
-                            vaccination information but also provides a platform for them to record their side effects and sends 
-                            them reminders when their second vaccination is due. Along with these wide ranges of particularly 
-                            prominent and peculiar principal features, MyVaccine also stores the user's Vaccination information 
-                            securely on the user's phone.
-                        </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">React Native</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/MyVaccine-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/MyVaccine.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/MyVaccine.webp" | absURL }}" alt="MyVaccine Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        ` <section class="section-service-detail section-project-detail tenfold-project-container">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/tenfold-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/tenfold.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/tenfold.webp" | absURL }}" alt="Ten Fold Education Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Ten Fold Education</h2>
-                        <p class="text-grey">South Africa’s first Mobile based learning application for High
-                            School learners. It helps them excel in academics while engaging them in a fun and
-                            interactive way.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Python, Django, PostgreSQL , Ansible, Js, Mathjax, Java, Kotlin,
-                                Retrofit, Dagger, Swift, Objective C</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Restaurant Management System</h2>
-                        <p class="text-grey">The web app is a restaurant management and table reservation system that simplifies operations. It allows users to book tables for various sessions, manage the floor plan in real time, and handle online, phone, and walk-in bookings. Administrators can also manage multiple locations with ease, optimizing space and enhancing customer experience.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">React, React native, Tailwind css, Redux toolkit</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                    <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/RestaurantManagementSystem.webp" | absURL }}" alt="Restaurant Management System Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order" data-aos="fade-right">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Galactica-small.webp" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Galactica.webp" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Galactica.webp" | absURL }}" alt="Galactica Application Screenshots">
-                            </picture>  
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-left">
-                        <h2 class="f700 text-black">Galactica</h2>
-                        <p class="text-grey">A platform that offers Cutting-Edge, Powerful AI Algorithms to generate
-                            actionable insights From Satellite and UAV Data. The geospatial analytics helps to identify
-                            various objects like Plane, Large Vehicles, Military Vehicles, etc, from the Satellite
-                            images.</p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">ReactJS, Redux, SCSS, Flask, Redis, Celery, Netlify, Docker, Webpack,
-                                NPM, Yarn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        `<section class="section-service-detail section-project-detail gbas-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-order align-self-center mt-3 mt-md-0" data-aos="fade-right">
-                        <h2 class="f700 text-black">Gbas Gbos</h2>
-                        <p class="text-grey">This is a Match 3 Fruit Crush Game that aims to not only entertain but also
-                            educate people around the world about the beauties of the fruit types found only in African
-                            countries. The rich terrains, landmarks, and people of Africa are richly established in the
-                            game-play and GUI of this game app. Invite and challenge your friends in a private game room
-                            and the winner takes it all. </p>
-                        <div class="project-tech">
-                            <p class="f700 text-grey">Technologies</p>
-                            <p class="text-grey">Unity3d Game Engine, CakePHP, Terraform, AWS</p>
-                        </div>
-                            {{/*  <a class="btn-arrow btn-black f700" href="{{ "/projects/case-study/persana" | absURL }}">View Case Study</a>  */}}
-                    </div>
-                     <div class="col-md-6 col-order" data-aos="fade-left">
-                        <div class="img-wrap">
-                            <picture>
-                                <source srcset="{{ "images/projects/Gbas-Gbos-small.png" | absURL }}" media="(max-width:592px)">
-                                <source srcset="{{ "images/projects/Gbas-Gbos.png" | absURL }}" media="(max-width:768px)">
-                                <img src="{{ "images/projects/Gbas-Gbos.png" | absURL }}" alt="Gbas Gbos Application Screenshots">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>`,
-        ];
+            </section>`;
+        });
 
         let currentIndex = 0;
         let totalItems = items.length;
         const loader = document.querySelector('#loader');
 
-        function appendItems(count = 3) { 
+        function appendItems(count = 3) {
             const container = document.querySelector('#projects-container');
             const newItems = [];
 
             for (let i = currentIndex; i < currentIndex + count && i < totalItems; i++) {
                 const newItem = document.createElement('div');
                 newItem.innerHTML = items[i];
-                if (i % 2 === 0) {
-                    newItem.classList.add('even-project');
-                }
+               
                 newItems.push(newItem);
             }
 
@@ -833,7 +135,7 @@
                 appendItems(3);
             }
         }, {
-            rootMargin: '100px', 
+            rootMargin: '100px',
         });
 
         appendItems(3);

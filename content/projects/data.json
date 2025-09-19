@@ -1,0 +1,407 @@
+[
+  {
+    "title": "GoToBuddy",
+    "description": "Gotobuddy.ai offers a revolutionary AI-driven communication platform that transforms user engagement by providing meaningful, personalized conversations on topics like parenting, news, sports, & entertainment. By leveraging diverse AI personas, Gotobuddy.ai ensures users receive the support and information they need through simple phone calls, making it an essential tool for advice, entertainment, and information.",
+    "technologies": "Django, PostgreSQL, vector DB, Large language model(LLM) openAI, Perplexity, Langchain, Docker, AWS, ReactJS, MantineUI, Deepgram and OpenAI TTS",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/GoToBuddy.png",
+      "/images/projects/GoToBuddy.png",
+      "/images/projects/GoToBuddy.png"
+    ],
+    "alt": "GoToBuddy Application Screenshots",
+    "case_study_url": "/projects/case-study/goToBuddy"
+  },
+  {
+    "title": "Persana AI",
+    "description": "Persana is an AI-driven sales prospecting tool designed to find, enrich, and personalize outbound leads at scale. It helps users, such as sales teams and marketers, save time by building qualified lead lists, creating personalized messages, and increasing response rates. Key features include lead enrichment, AI-generated messaging, LinkedIn prospecting via a Chrome extension, and automated workflows. Users can access pre-built lead lists, import their own, and utilize various enrichments to gain deeper insights into leads and companies.",
+    "technologies": "React, TailwindCSS, Vite, Nest, MongoDB, Redis, Vue.js, Framer",
+    "main_container_class": "section-service-detail section-project-detail persana-project-container",
+    "data_aos_anchor": ".persana-project-container",
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Persana.webp",
+      "/images/projects/Persana.webp",
+      "/images/projects/Persana.webp"
+    ],
+    "alt": "Persana AI Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Noobstorm",
+    "description": "Noobstorm is a platform for gamers in India to play different EA sports games, stay updated with the latest news of EA sports, track the progress on leaderboards and connect with players on social media. Noobstorm offers players to play tournaments and win and go up on the leaderboard.",
+    "technologies": "Next JS, React, Supabase, Vercel",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Noobstorm_small.webp",
+      "/images/projects/Noobstorm.webp",
+      "/images/projects/Noobstorm.webp"
+    ],
+    "alt": "Noobstorm Application Screenshots",
+    "case_study_url": "/projects/case-study/noobstorm"
+  },
+  {
+    "title": "Bus Tracking Application",
+    "description": "A platform that offers comprehensive fleet management with real-time bus tracking, enabling users to monitor live locations. Attached devices capture critical events like harsh braking, geo-fence breaches, or detours and many more. Users can create journeys, define routes, and manage drivers, buses, and devices seamlessly, ensuring safety and operational transparency. Additionally, the application offers detailed reporting for all journeys and buses, enabling data-driven insights.",
+    "technologies": "GoLang, Django, FastApi, PostgreSQL, ReactJS, Docker, Redis streams, Redash, Websockets with FastApi, Baremetal Server, ",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/BusTracking.png",
+      "/images/projects/BusTracking.png",
+      "/images/projects/BusTracking.png"
+    ],
+    "alt": "Bus Tracking Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "1% Club",
+    "description": "The ultimate community-based platform designed to empower and connect individuals with shared interests in personal growth, finance, and networking. 1% Club app provides a seamless experience for users to engage, learn, and stay informed.",
+    "technologies": "React-Native, Typescript, Redux, NestJS, NodeJS, CubeJS, Mongodb, ECS",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/1-percent-club.webp",
+      "/images/projects/1-percent-club.webp",
+      "/images/projects/1-percent-club.webp"
+    ],
+    "alt": "1% Club Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "CRBN Trade",
+    "description": "CRBN Trade app simplifies carbon credit trading, enabling users to buy, sell, and retire credits with ease. Supported assets include Carbon Net Zero, Carbon Compliance, and Carbon Removal credits. It empowers individuals and businesses to participate in sustainable practices and contribute to a greener future.",
+    "technologies": "NestJS , NodeJS, Nanoexpress, Firebase, CubeJS, TimeScaleDB, PostgreSQL, Expo React Native, Typescript, React Native Paper, Styled Components, Zustand, ECS",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Crbn-Trade.webp",
+      "/images/projects/Crbn-Trade.webp",
+      "/images/projects/Crbn-Trade.webp"
+    ],
+    "alt": "CRBN Trade Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Nurturev",
+    "description": "Nurturev is an AI powered customer intelligence platform which analyses your communications with customers to give detailed information helping improve customer intent. Using Slack integration, it adds a bot to your workspace for AI analysis of data, sentiment, and customer engagement in channels.",
+    "technologies": "Python, AWS, Supabase, NextJS, MaterialUI, Typescript",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Nurturev-small.webp",
+      "/images/projects/Nurturev.webp",
+      "/images/projects/Nurturev.webp"
+    ],
+    "alt": "Nurturev Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Mercedes Benz",
+    "description": "Hybrid mobile application which helps dealers to take superior pictures of used cars. It’s an easy to use and intuitive mobile app which allows dealers to standardize the process of taking pictures.",
+    "technologies": "Python, Django, PostgreSQL , Ansible, Js, Unity3D",
+    "main_container_class": "section-service-detail section-project-detail benz-container",
+    "data_aos_anchor": ".benz-container",
+    "anchor_on_image": true,
+    "images": [
+      "/images/projects/mercedes-benz-small.webp",
+      "/images/projects/mercedes-benz.webp",
+      "/images/projects/mercedes-benz.webp"
+    ],
+    "alt": "Mercedes Benz Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "P2P (Procure-to-Pay)",
+    "description": "P2P is a multi-tenancy-based procurement platform designed to streamline the Procure-to-Pay lifecycle for businesses. This platform is developed as a customer acquisition tool to showcase the potential of digital transformation in procurement processes. The platform supports seamless integration and modularity through a microservices architecture, enabling efficient and scalable operations.",
+    "technologies": "React, Tamagui, Kotlin, Micronaut, PostgreSQL, RabbitMQ",
+    "main_container_class": "section-service-detail section-project-detail p2p-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Kodo.png",
+      "/images/projects/Kodo.png",
+      "/images/projects/Kodo.png"
+    ],
+    "alt": "P2P (Procure-to-Pay) Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "DBE Cloud",
+    "description": "Integration of learning videos with CLOX device which helps store all the data without servers for offline video streaming. CLOX can be used with TV’s, Projectors, Mobile Devices and Desktop Computers.",
+    "technologies": "Python, Django, PostgreSQL , Ansible, Js, Flask, HLS",
+    "main_container_class": "section-service-detail section-project-detail dbe-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/DBE-cloud-small.webp",
+      "/images/projects/DBE-cloud.webp",
+      "/images/projects/DBE-cloud.webp"
+    ],
+    "alt": "DBE cloud Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Medly Pharmacy",
+    "description": "With an experience of over 30 years in the US Healthcare Industry, Medly provides SaaS products that cater to the Healthcare domain and also provides a free same-day prescription delivery to their patients. The application uses encrypted internal systems to track orders, drug storage, and delivery in real-time.",
+    "technologies": "Kotlin, ReactJS, Redux, Saga, React Testing Library, Styled Components, NodeJS, Python, Elastic Beanstalk, Aurora Serverless (PostgreSQL), Docker, AWS Lambda, TravisCI, AWS CodeBuild, AWS CodePipeline, Terraform, Cypress, ROR, Swift",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Medly-Pharmacy-small.webp",
+      "/images/projects/Medly-Pharmacy.webp",
+      "/images/projects/Medly-Pharmacy.webp"
+    ],
+    "alt": "Medly Pharmacy Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "IWMI TRACE Tool",
+    "description": "IWMI TRACE is a real-time web platform that delivers actionable insights into water resources using advanced analytics and interactive visualizations. It integrates data on surface water & groundwater to support sustainable water management. With an intuitive interface, TRACE equips stakeholders and decision-makers with powerful tools for evidence-based planning and resource optimization.",
+    "technologies": "Python, Django REST Framework, React.js, PostgreSQL, Google BigQuery, AWS, Google Earth Engine",
+    "main_container_class": "section-service-detail section-project-detail gbas-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/IWMI-Mockup.png",
+      "/images/projects/IWMI-Mockup.png",
+      "/images/projects/IWMI-Mockup.png"
+    ],
+    "alt": "IWMI Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Lodgistics",
+    "description": "Lodgistics is a hotel management application helping hotels manage their properties, staffs and guests in one place. The web and mobile application gives an easy-to-use interface where a staff member can see staff records, guest details, hotel logs, work orders and many other details.",
+    "technologies": "Ruby, Ruby on rails, ReactJS, JavaScript, Redux, Material UI, Redis, Sidekiq, PostgreSQL, HTML",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Lodgistics-small.webp",
+      "/images/projects/Lodgistics.webp",
+      "/images/projects/Lodgistics.webp"
+    ],
+    "alt": "Lodgistics Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "EFFIPAC",
+    "description": "EFFIPAC is a professional system that purchases, organizes, and delivers prescribed medicines. The application efficiently manages patient information, prescriptions, and batch calculations. Medications are meticulously sorted and packed in labeled pouches according to dosage and time slots, ensuring precision and minimizing errors. EFFIPAC offers a convenient and secure solution for personalized medicine packaging.",
+    "technologies": "Python, Django, SQLite, HTML, CSS, JavaScript, jQuery, Bootstrap",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Effipac-small.webp",
+      "/images/projects/Effipac.webp",
+      "/images/projects/Effipac.webp"
+    ],
+    "alt": "Effipac Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "GeoSpoc - GeoCoder",
+    "description": "A highly performant offline geocoding engine to transform messy addresses into sub-components like street names, locality names, pin codes etc. for hierarchical component matching and finding the Latitude - Longitude using GeoSpoc's extensively verified home-brewed database. This geocoding engine can process 20 million records per hour using batch mode and has submillisecond latency for REST APIs.",
+    "technologies": "Golang, MemDB, License Manager, Customized Algorithms, Docker, JMeter",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/GeoSpoc-GeoCoder-small.webp",
+      "/images/projects/GeoSpoc-GeoCoder.webp",
+      "/images/projects/GeoSpoc-GeoCoder.webp"
+    ],
+    "alt": "GeoSpoc-GeoCoder Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Hisense - Mindset TV App",
+    "description": "A built-in learning application for Hisense TV which offers students of various grades to access 1000+ courses across 10+ areas/fields. The app has an exclusive list of educational activities and material that is designed by experts according to the various stages and levels of your child’s development.",
+    "technologies": "Python, Django, PostgreSQL, ReactJS, AWS",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Mindset-TV-App-small.webp",
+      "/images/projects/Mindset-TV-App.webp",
+      "/images/projects/Mindset-TV-App.webp"
+    ],
+    "alt": "Hisense - Mindset TV App Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Dealsafe",
+    "description": "India's first platform to build trust between transacting entities for a service. An application that would facilitate trade and commerce between buyers and sellers by providing a safe platform for their secure and guaranteed payment transactions for the promised goods and services.",
+    "technologies": "Python, Django, REST and GraphQL API, ReactJS, AWS, PostgreSQL, Docker, Flutter",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Dealsafe-small.webp",
+      "/images/projects/Dealsafe.webp",
+      "/images/projects/Dealsafe.webp"
+    ],
+    "alt": "Dealsafe Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "TempTaker",
+    "description": "Kiosk TempTaker is a non-contact temperature screening device that can be used in malls, schools, offices, etc. People can simply approach the device for a quick temperature reading and your estimated body temperature will be reported within two seconds. If an elevated temperature is detected then the Authorized person would be notified via text and email. Notifications contain images of a person with elevated temperature, location, date, and time.",
+    "technologies": "Python, Django, PostgreSQL, ReactJS, Docker",
+    "main_container_class": "section-service-detail section-project-detail temp-taker-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/TempTaker-small.webp",
+      "/images/projects/TempTaker.webp",
+      "/images/projects/TempTaker.webp"
+    ],
+    "alt": "TempTaker Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Mindset",
+    "description": "An online learning application for tracking, reporting, and delivery of educational courses along with a CMS panel for admin to create and integrate course materials, align content and assessments, articulate learning goals and track studying progress.",
+    "technologies": "Python, Django, PostgreSQL , Ansible, Js, Flask, HLS",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/mindset-small.webp",
+      "/images/projects/mindset.webp",
+      "/images/projects/mindset.webp"
+    ],
+    "alt": "Mindset Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Smart Quest",
+    "description": "SmartQuest reinforces training / learning with the help of micro-content like Quizzes, Reference Lists, Lessons, News Feed. It helps in staying up-to-date with the latest news & events in your company and sector. SmartQuest also facilitates First Line Managers to regularly rate their Sales reps on selling parameters on a consistent framework using Manager Feedback.",
+    "technologies": "Vue.js, JavaScript, Webpack, Material Design, MongoDB, Ruby on Rails",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/smart-quest-small.webp",
+      "/images/projects/smart-quest.webp",
+      "/images/projects/smart-quest.webp"
+    ],
+    "alt": "Smart Quest Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "SustainOnline",
+    "description": "An application having curated content for a smooth learning journey through hundreds of courses based on 30 years of experience and scientific research. This SaaS platform with SSO was migrated from Baremetal Servers to AWS cloud and also integrated with OpenEdx LMS.",
+    "technologies": "RoR, Ruby, ReactJS, AWS, OpenEdx, MongoDB",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/SustainOnline-small.webp",
+      "/images/projects/SustainOnline.webp",
+      "/images/projects/SustainOnline.webp"
+    ],
+    "alt": "SustainOnline Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "HelpfulCrowd",
+    "description": "Heroku to AWS migration of a product review application that collects a ton of product reviews to leverage SEO and boost sales. Setting up CI/CD pipeline using CircleCI and autoscaling infrastructure to optimize the monthly AWS bills.",
+    "technologies": "ROR, PostgreSQL, Sidekiq, Elastic Beanstalk, S3, Elastic Cache (Redis), AWS SNS, Aurora Serverless (PostgreSQL)",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/HelpfulCrowd-small.webp",
+      "/images/projects/HelpfulCrowd.webp",
+      "/images/projects/HelpfulCrowd.webp"
+    ],
+    "alt": "HelpfulCrowd Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "MyVaccine",
+    "description": "A mobile-based offline application that creates a Digital pass for the vaccination record that can be used at various public places to grant access to its users. It not only scans user's vaccination information but also provides a platform for them to record their side effects and sends them reminders when their second vaccination is due. Along with these wide ranges of particularly prominent and peculiar principal features, MyVaccine also stores the user's Vaccination information securely on the user's phone.",
+    "technologies": "React Native",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/MyVaccine-small.webp",
+      "/images/projects/MyVaccine.webp",
+      "/images/projects/MyVaccine.webp"
+    ],
+    "alt": "MyVaccine Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Ten Fold Education",
+    "description": "South Africa’s first Mobile based learning application for High School learners. It helps them excel in academics while engaging them in a fun and interactive way.",
+    "technologies": "Python, Django, PostgreSQL , Ansible, Js, Mathjax, Java, Kotlin, Retrofit, Dagger, Swift, Objective C",
+    "main_container_class": "section-service-detail section-project-detail tenfold-project-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/tenfold-small.webp",
+      "/images/projects/tenfold.webp",
+      "/images/projects/tenfold.webp"
+    ],
+    "alt": "Ten Fold Education Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Restaurant Management System",
+    "description": "The web app is a restaurant management and table reservation system that simplifies operations. It allows users to book tables for various sessions, manage the floor plan in real time, and handle online, phone, and walk-in bookings. Administrators can also manage multiple locations with ease, optimizing space and enhancing customer experience.",
+    "technologies": "React, React native, Tailwind css, Redux toolkit",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/RestaurantManagementSystem.webp",
+      "/images/projects/RestaurantManagementSystem.webp",
+      "/images/projects/RestaurantManagementSystem.webp"
+    ],
+    "alt": "Restaurant Management System Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Galactica",
+    "description": "A platform that offers Cutting-Edge, Powerful AI Algorithms to generate actionable insights From Satellite and UAV Data. The geospatial analytics helps to identify various objects like Plane, Large Vehicles, Military Vehicles, etc, from the Satellite images.",
+    "technologies": "ReactJS, Redux, SCSS, Flask, Redis, Celery, Netlify, Docker, Webpack, NPM, Yarn",
+    "main_container_class": "section-service-detail section-project-detail",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Galactica-small.webp",
+      "/images/projects/Galactica.webp",
+      "/images/projects/Galactica.webp"
+    ],
+    "alt": "Galactica Application Screenshots",
+    "case_study_url": null
+  },
+  {
+    "title": "Gbas Gbos",
+    "description": "This is a Match 3 Fruit Crush Game that aims to not only entertain but also educate people around the world about the beauties of the fruit types found only in African countries. The rich terrains, landmarks, and people of Africa are richly established in the game-play and GUI of this game app. Invite and challenge your friends in a private game room and the winner takes it all.",
+    "technologies": "Unity3d Game Engine, CakePHP, Terraform, AWS",
+    "main_container_class": "section-service-detail section-project-detail gbas-container",
+    "data_aos_anchor": null,
+    "anchor_on_image": false,
+    "images": [
+      "/images/projects/Gbas-Gbos-small.png",
+      "/images/projects/Gbas-Gbos.png",
+      "/images/projects/Gbas-Gbos.png"
+    ],
+    "alt": "Gbas Gbos Application Screenshots",
+    "case_study_url": null
+  }
+]
