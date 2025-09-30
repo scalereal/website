@@ -148,7 +148,7 @@ url: "web/2025/09/05/component-design-think-before-you-code.html"
   Many developers might structure it like this:
 
 
-  ```
+  ```html
 
   <Header>
     <MenuButton>
@@ -178,7 +178,7 @@ url: "web/2025/09/05/component-design-think-before-you-code.html"
   YouTube's approach (and what you should do):
 
 
-  ```
+  ```html
 
   <Header>
     <MenuButton>
