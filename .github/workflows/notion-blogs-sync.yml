@@ -31,7 +31,7 @@ jobs:
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
-        run: npx ts-node scripts/notion-to-website.ts
+        run: npx ts-node --esm scripts/notion-to-website.ts
 
       # --- 5️⃣ Check if there are new/updated blog files
       - name: Check for new/updated blog files
