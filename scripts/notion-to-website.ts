@@ -67,11 +67,6 @@ async function main() {
     },
   });
 
-  console.log(
-    `📄 Found ${response.results.length} pages ready to publish`,
-    response.results
-  );
-
   if (!response.results.length) {
     console.log("ℹ️ No pages found with Status = Ready to Publish.");
     return;
