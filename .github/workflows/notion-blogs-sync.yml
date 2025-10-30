@@ -1,0 +1,65 @@
+name: Notion → Hugo Daily Sync
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 🕔 Runs every day at 5 AM UTC (~10:30 AM IST)
+  workflow_dispatch: # 🧭 Allows manual trigger from GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --- 1️⃣ Checkout dev branch (so we PR against it)
+      - name: Checkout dev branch
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      # --- 2️⃣ Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # --- 3️⃣ Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # --- 4️⃣ Run your Notion sync script
+      - name: Run Notion → Website sync
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
+        run: node scripts/notion-to-hugo.js
+
+      # --- 5️⃣ Check if there are new/updated blog files
+      - name: Check for new/updated blog files
+        id: git-check
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "no_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      # --- Optional: expose the current date for the PR title
+      - name: Set sync date
+        id: set-date
+        run: echo "sync_date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      # --- 6️⃣ Create PR only if changes exist
+      - name: Create Pull Request
+        if: steps.git-check.outputs.no_changes == 'false'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto/blog-sync-${{ github.run_id }}
+          base: dev
+          title: "🪄 Auto Notion Blog Sync (${{ steps.set-date.outputs.sync_date }})"
+          body: |
+            This PR includes new or updated blog posts synced automatically from Notion.
+            - Synced at: ${{ steps.set-date.outputs.sync_date }} UTC
+            - Triggered by: Daily cron job
+          commit-message: "chore: auto-sync blogs from Notion"
