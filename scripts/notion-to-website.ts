@@ -40,6 +40,23 @@ function getPropertyValue(page: any, propertyName: string): any {
   }
 }
 
+// 🧩 Helper to update Notion page status
+async function updateNotionStatus(pageId, newStatus) {
+  try {
+    await notion.pages.update({
+      page_id: pageId,
+      properties: {
+        Status: {
+          status: { name: newStatus },
+        },
+      },
+    });
+    console.log(`🔄 Updated Notion status → ${newStatus} (${pageId})`);
+  } catch (err) {
+    console.error(`❌ Failed to update status for ${pageId}:`, err.message);
+  }
+}
+
 async function main() {
   console.log("🚀 Starting Notion → Website sync...");
 
@@ -111,6 +128,9 @@ async function main() {
     fs.writeFileSync(filePath, fileContent);
 
     console.log(`✅ Created/Updated: ${filePath}`);
+
+    // --- 🔁 Update Notion status to Published
+    await updateNotionStatus(id, "Published");
   }
 
   console.log("🎉 All ready-to-publish blogs synced successfully!");
