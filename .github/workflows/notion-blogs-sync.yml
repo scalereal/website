@@ -39,8 +39,7 @@ jobs:
       - name: Check for new/updated blog files
         id: git-check
         run: |
-          git add content/blogs/all || true
-          git restore --staged dist || true
+          git add content/blogs/all
 
           if git diff --cached --quiet; then
             echo "no_changes=true" >> $GITHUB_OUTPUT
