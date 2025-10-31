@@ -1,9 +1,9 @@
-import { Client } from "@notionhq/client";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { NotionToMarkdown } from "notion-to-md";
-import dotenv from "dotenv";
+const { Client } = require("@notionhq/client");
+const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
+const { NotionToMarkdown } = require("notion-to-md");
+const dotenv = require("dotenv");
 
 dotenv.config();
 

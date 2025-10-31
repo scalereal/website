@@ -26,15 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install ts-node
-        run: npm install -g ts-node typescript
-
-      # --- 4️⃣ Run your Notion sync script
+      # --- 4️⃣ Run Notion → Website sync
       - name: Run Notion → Website sync
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
-        run: node --loader ts-node/esm scripts/notion-to-website.ts
+        run: npx ts-node scripts/notion-to-website.ts
 
       # --- 5️⃣ Check if there are new/updated blog files
       - name: Check for new/updated blog files
@@ -47,12 +44,12 @@ jobs:
             echo "no_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      # --- Optional: expose the current date for the PR title
+      # --- 6️⃣ Expose the current date for the PR title
       - name: Set sync date
         id: set-date
         run: echo "sync_date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      # --- 6️⃣ Create PR only if changes exist
+      # --- 7️⃣ Create Pull Request only if changes exist
       - name: Create Pull Request
         if: steps.git-check.outputs.no_changes == 'false'
         uses: peter-evans/create-pull-request@v6
