@@ -10,23 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # --- 1️⃣ Checkout dev branch (so we PR against it)
+      # --- Checkout dev branch (so we PR against it)
       - name: Checkout dev branch
         uses: actions/checkout@v4
         with:
           ref: dev
 
-      # --- 2️⃣ Set up Node.js environment
+      # --- Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # --- 3️⃣ Install dependencies
+      # --- Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # --- 4️⃣ Run Notion → Website sync
+      # --- Run Notion → Website sync
       - name: Run Notion → Website sync
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
@@ -35,7 +35,11 @@ jobs:
           npx tsc scripts/notion-to-website.ts --outDir dist --esModuleInterop --skipLibCheck --moduleResolution node
           node dist/notion-to-website.js
 
-      # --- 5️⃣ Check if there are new/updated blog files
+      # --- Remove dist folder before staging
+      - name: Remove dist folder
+        run: rm -rf dist/
+
+      # --- Check if there are new/updated blog files
       - name: Check for new/updated blog files
         id: git-check
         run: |
@@ -47,12 +51,12 @@ jobs:
             echo "no_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      # --- 6️⃣ Expose the current date for the PR title
+      # --- Expose the current date for the PR title
       - name: Set sync date
         id: set-date
         run: echo "sync_date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      # --- 7️⃣ Create Pull Request only if changes exist
+      # --- Create Pull Request only if changes exist
       - name: Create Pull Request
         if: steps.git-check.outputs.no_changes == 'false'
         uses: peter-evans/create-pull-request@v6
