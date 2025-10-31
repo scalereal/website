@@ -4,7 +4,9 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/77be184b-f61f-4959-99d8-bae45b05a62b/deploy-status)](https://app.netlify.com/sites/scalereal/deploys)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sync": "tsc scripts/notion-to-website.ts --outDir dist",
+    "sync": "node dist/notion-to-website.js"
   },
   "repository": {
     "type": "git",
