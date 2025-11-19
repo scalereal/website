@@ -1,5 +1,50 @@
 [
   {
+    "title": "Lead Software Engineer",
+    "status": "Open",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "6 - 10 years of Experience",
+    "target": "lead-software-engineer",
+    "doing": [
+      "Lead architecture and system design across frontend, backend, DevOps, and infrastructure.",
+      "Bring clarity to teams and prevent miscommunication before it impacts delivery.",
+      "Work across frontend, backend, mobile, QA, and DevOps to keep everything aligned.",
+      "Understand and reason about how data travels over networks, through servers, and onto real hardware.",
+      "Guide decisions on APIs, data models, boundaries, performance, reliability, and deployments.",
+      "Review designs and code to ensure maintainability and stability in production.",
+      "Represent the CTO in technical discussions and client calls.",
+      "Mentor engineers and elevate engineering quality across teams."
+    ],
+    "lookingFor": [
+      "6–10+ years of hands-on engineering experience.",
+      "Strong polyglot skills - comfortable working across multiple languages & frameworks.",
+      "Experience building production systems from scratch, not only maintaining existing ones.",
+      "A track record of personal side projects, experiments, or complex systems built for your own needs.",
+      "Deep understanding of HTTP, networking, DNS, routing, proxies, and system behavior.",
+      "Experience with CI/CD pipelines, containers, cloud platforms, and observability.",
+      "Ability to reason about performance, scaling, caching, latency, and bottlenecks.",
+      "Strong system design skills — both big-picture architecture and low-level insights.",
+      "Clear communication and ability to keep multi-team engineering efforts aligned."
+    ],
+    "additionalSkills": [
+      "Exposure to distributed or event-driven systems.",
+      "Applied experience in designing internal tools, libraries, or platforms.",
+      "Ability to explain complex technical ideas to both engineers and clients."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in real world.",
+      "We are always working on bleeding edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply/?profile=Lead%20Software%20Engineer&ref=website"
+  },
+  {
     "title": "Lead Sales Development Representative",
     "status": "Open",
     "location": "Remote, India",
