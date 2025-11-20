@@ -115,13 +115,25 @@
         transition: all 0.3s;
       "
     >
-      <i class="fa fa-paper-plane"></i> Subscribe
+      <i class="fa fa-paper-plane" style="margin-right: 5px;"></i> Subscribe
     </button>
     <!-- Disclaimer -->
     <p style="margin-top: 1rem; font-size: 0.85rem; color: #777">
       <i class="fa fa-unlock-alt"></i> Unsubscribe anytime with a single click.
     </p>
   </form>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".listmonk-form");
+
+    form.addEventListener("submit", function () {
+      setTimeout(() => {
+        form.reset(); // clears all inputs
+      }, 300); // small delay to ensure submit happens
+    });
+  });
+</script>
+
 </div>
 <!-- Font Awesome CDN -->
 <link
