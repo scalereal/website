@@ -1,5 +1,98 @@
 [
   {
+    "title": "Lead Software Engineer",
+    "status": "Open",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "6 - 10 years of Experience",
+    "target": "lead-software-engineer",
+    "doing": [
+      "Lead architecture and system design across frontend, backend, DevOps, and infrastructure.",
+      "Bring clarity to teams and prevent miscommunication before it impacts delivery.",
+      "Work across frontend, backend, mobile, QA, and DevOps to keep everything aligned.",
+      "Understand and reason about how data travels over networks, through servers, and onto real hardware.",
+      "Guide decisions on APIs, data models, boundaries, performance, reliability, and deployments.",
+      "Review designs and code to ensure maintainability and stability in production.",
+      "Represent the CTO in technical discussions and client calls.",
+      "Mentor engineers and elevate engineering quality across teams."
+    ],
+    "lookingFor": [
+      "6–10+ years of hands-on engineering experience.",
+      "Strong polyglot skills - comfortable working across multiple languages & frameworks.",
+      "Experience building production systems from scratch, not only maintaining existing ones.",
+      "A track record of personal side projects, experiments, or complex systems built for your own needs.",
+      "Deep understanding of HTTP, networking, DNS, routing, proxies, and system behavior.",
+      "Experience with CI/CD pipelines, containers, cloud platforms, and observability.",
+      "Ability to reason about performance, scaling, caching, latency, and bottlenecks.",
+      "Strong system design skills — both big-picture architecture and low-level insights.",
+      "Clear communication and ability to keep multi-team engineering efforts aligned."
+    ],
+    "additionalSkills": [
+      "Exposure to distributed or event-driven systems.",
+      "Applied experience in designing internal tools, libraries, or platforms.",
+      "Ability to explain complex technical ideas to both engineers and clients."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in real world.",
+      "We are always working on bleeding edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply/?profile=Lead%20Software%20Engineer&ref=website"
+  },
+  {
+    "title": "Lead Sales Development Representative",
+    "status": "Open",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "6 - 8 years of Experience",
+    "target": "lead-sales-development-representative",
+    "doing": [
+      "Lead the outbound sales function — owning prospecting strategy, outreach execution, and pipeline generation across multiple international markets (US, UK, EU, Middle East).",
+      "Build and manage a high-quality lead funnel by identifying, researching, and engaging potential clients seeking software development, product engineering, or digital transformation services.",
+      "Develop customized outreach strategies (emails, calls, LinkedIn, events) aligned with each region’s buying behavior and cultural nuances.",
+      "Represent the company at conferences, networking events, meetups, and client meetings, driving face-to-face sales conversations and relationship building.",
+      "Conduct discovery and qualification calls with CXOs, Founders, and Product Leaders to understand business needs and position relevant technology solutions.",
+      "Collaborate closely with Account Executives and the leadership team to refine messaging, ICP (Ideal Customer Profile), and sales playbooks.",
+      "Mentor and coach junior SDRs, helping them improve outreach quality, objection handling, and qualification accuracy.",
+      "Track, analyze, and report sales metrics to continuously optimize lead generation, conversion, and ROI.",
+      "Stay ahead of market trends, competitor offerings, and client expectations in software development and emerging tech."
+    ],
+    "lookingFor": [
+      "6–8 years of total experience in B2B sales, lead generation, and outbound prospecting with at least 3+ years in a leadership or senior SDR role.",
+      "Proven experience selling custom software development or IT services across multiple international markets (US, UK, EU, and Middle East).",
+      "Strong background in conducting face-to-face sales through conferences, trade shows, client visits, and networking events.",
+      "Demonstrated ability to generate qualified opportunities consistently and contribute directly to revenue targets.",
+      "Excellent communication, negotiation, and storytelling skills — able to engage senior-level stakeholders confidently.",
+      "Strategic thinker with data-driven decision-making ability; experienced in using CRMs (HubSpot, Salesforce, or Pipedrive) and automation tools.",
+      "Comfortable in a fast-paced, founder-driven tech startup culture where initiative and accountability matter more than hierarchy."
+    ],
+    "additionalSkills": [
+      "Prior experience in enterprise or strategic sales (mid to high-value software deals).",
+      "Understanding of software development lifecycle (SDLC) and ability to translate technical solutions into business outcomes.",
+      "Exposure to AI tools, n8n, ML, Cloud, or SaaS product-based services sales.",
+      "Hands-on experience with sales enablement and outbound automation tools (Apollo, Lemlist, Outreach, Sales Navigator).",
+      "Experience in building and scaling SDR teams — training, process building, and performance tracking.",
+      "Ability to create region-specific outreach campaigns considering tone, cultural communication styles, and decision-making patterns.",
+      "A strong professional network in the tech or startup ecosystem would be a big plus."
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in real world.",
+      "We are always working on bleeding edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects."
+    ],
+    "applyUrl": "/apply/?profile=Lead%20Sales%20Development%20Representative&ref=website"
+  },
+  {
     "title": "Python Engineer",
     "status": "Open",
     "location": "Remote, India",
@@ -281,7 +374,7 @@
     "status": "Closed",
     "location": "Remote, India",
     "time": "Full time",
-    "experience": "1 - 2 years of Experience",
+    "experience": "2 - 4 years of Experience",
     "target": "quality-analyst",
     "doing": [
       "Review and analyze system specifications",
@@ -318,88 +411,6 @@
       "Opportunity to contribute to open-source projects."
     ],
     "applyUrl": "/apply/?profile=Quality Analyst&ref=website"
-  },
-  {
-    "title": "DevOps Engineer",
-    "status": "Closed",
-    "location": "Remote, India",
-    "time": "Full time",
-    "experience": "0.6 - 1.5 years of Experience",
-    "target": "devops-engineers",
-    "doing": [
-      "Automate, Manage and maintain Kubernetes clusters lifecycle",
-      "Develop tools for automated build, test, deployment and management of the platform",
-      "Maintain and Develop Docker images/containers for different technology stack",
-      "Setting up and managing Docker private repository and creating docker file to create custom Docker images",
-      "Ensure that the connectivity and network are always up and running ",
-      "Plan for capacity upgrading or downsizing as and when the need arises",
-      "Monitor system events to ensure health, maximum system availability and service quality",
-      "Produce clear documentation for delivered solutions",
-      "Experience with public Cloud providers, including Amazon Web Services architecture, tools, and Cloud methodologies"
-    ],
-    "lookingFor": [
-      "Experience with infrastructure automation tools like Ansible, Puppet, Chef",
-      "Good experience on Containerization using Docker Containerization, Kubernetes, AWS ECS, EKS, Azure Container Service, AKS",
-      "Hands on experience in designing Kubernetes cluster with high availability and high performance",
-      "Strong knowledge in public clouds like AWS or Azure",
-      "Having good knowledge in cloud deployment using Terraform or AWS CloudFormation or Azure Resource Manager",
-      "Good Exposure on automation using of the following AWS Code Pipeline, Azure DevOps, Jenkins",
-      "Experience in building CI/CD pipelines using GIT/Jenkins/Artifactory",
-      "Intense sense of ownership, initiative-taking, and a can-do attitude",
-      "Strong comprehension, analytical, and problem solving skills",
-      "Excellent verbal & written communication skills"
-    ],
-    "additionalSkills": ["Python, ROR, Kotlin, Golang", "ReactJS, VueJS"],
-    "perks": [
-      "Freedom to implement and follow industry best practices.",
-      "Get to work with the most down to earth and talented people.",
-      "Get to work on very interesting problems with impact in the real world.",
-      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
-      "Open and Inclusive Environment.",
-      "Remote first teams.",
-      "Flexible timings as long as work gets done.",
-      "Opportunity to contribute to open-source projects."
-    ],
-    "applyUrl": "/apply/?profile=DevOps Engineer&ref=website"
-  },
-  {
-    "title": "Sales Development Representative",
-    "status": "Closed",
-    "location": "Remote, India",
-    "time": "Full time",
-    "experience": "0 - 2 years of Experience",
-    "target": "sales-development-representative",
-    "doing": [
-      "Prospecting, generating, qualifying, following up on leads which leads to appointment setting.",
-      "Collaboratively work with the sales leadership to generate lead opportunities with prospective clients.",
-      "Initiates and participates in new business pitches with the sales team and own follow-through with the lead prospect.",
-      "Providing consistent, concise, accurate internal and external communications.",
-      "Working collaboratively in a team environment and independently.",
-      "Developing and maintaining strong relationships with prospects.",
-      "Maintain all relevant data in CRM."
-    ],
-    "lookingFor": [
-      "Hands-on experience on LinkedIn and website navigation.",
-      "The ability to understand the business and technical drivers behind the IT service’s acquisition and translate in contractual language",
-      "Should have knowledge/ experience in working in a target-driven environment.",
-      "Experience/ knowhow in working with global markets.",
-      "Excellent communication skills."
-    ],
-    "additionalSkills": [
-      "Basic knowledge of MS Excel.",
-      "Basic knowledge of collaboration tools."
-    ],
-    "perks": [
-      "Freedom to implement and follow industry best practices.",
-      "Get to work with the most down to earth and talented people.",
-      "Get to work on very interesting problems with impact in the real world.",
-      "We are always working on a bleeding-edge tech stack.",
-      "Open and Inclusive Environment.",
-      "Remote first teams.",
-      "Flexible timings as long as work gets done.",
-      "Opportunity to contribute to open-source projects."
-    ],
-    "applyUrl": "/apply/?profile=Sales Development Representatives&ref=website"
   },
   {
     "title": "ROR Engineer",
@@ -592,47 +603,6 @@
     "applyUrl": "/apply/?profile=React Native Engineer&ref=website"
   },
   {
-    "title": "React JS Intern",
-    "status": "Closed",
-    "location": "Remote, India",
-    "time": "Full time",
-    "experience": "0 - 1 year of Experience",
-    "target": "react-js-intern",
-    "doing": [
-      "Writing Clean, Readable, Testable, and Reusable Code.",
-      "Working closely with other Developers, UX designers, and Business and System Analysts.",
-      "Take part in all daily activities like Stand-ups, Iteration planning, and Retrospectives.",
-      "Researching, designing, implementing, and managing software application.",
-      "Troubleshooting and maintaining existing software applications."
-    ],
-    "lookingFor": [
-      "Solid understanding of JavaScript, HTML, and CSS.",
-      "Familiarity with React.js and its core principles.",
-      "Basic understanding of front-end build tools, such as Webpack or Babel.",
-      "Strong problem-solving skills and attention to detail.",
-      "Ability to work collaboratively in a team environment.",
-      "Knowledge of state management libraries like Redux or Mobx.",
-      "Excellent communication and interpersonal skills."
-    ],
-    "additionalSkills": [
-      "Knowledge of state management libraries like Redux.",
-      "Experience with version control systems, such as Git.",
-      "Exposure to RESTful API integration.",
-      "Understanding of agile development methodologies."
-    ],
-    "perks": [
-      "Freedom to implement and follow industry best practices..",
-      "Get to work with the most down to earth and talented people.",
-      "Get to work on very interesting problems with impact in the real world.",
-      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
-      "Open and Inclusive Environment.",
-      "Remote first teams.",
-      "Flexible timings as long as work gets done.",
-      "Opportunity to contribute to open-source projects."
-    ],
-    "applyUrl": "/apply/?profile=React JS Intern&ref=website"
-  },
-  {
     "title": "FullStack React JS Engineer",
     "status": "Closed",
     "location": "Remote, India",
@@ -679,49 +649,6 @@
       "Opportunity to contribute to open-source projects."
     ],
     "applyUrl": "/apply/?profile=FullStack React JS Engineer&ref=website"
-  },
-  {
-    "title": "Quality Analyst Intern",
-    "status": "Closed",
-    "location": "Remote, India",
-    "time": "Full time",
-    "experience": "0 - 0.6 years of Experience",
-    "target": "quality-analyst-intern",
-    "doing": [
-      "Review and analyze system specifications",
-      "Collaborate with QA Engineers to develop effective strategies and test plans",
-      "Execute test cases (manual or automated) and analyze results",
-      "Evaluate product code according to specifications",
-      "Create logs to document testing phases and defects",
-      "Report bugs and errors to development teams",
-      "Help troubleshoot issues",
-      "Conduct post-release/post-implementation testing",
-      "Work with cross-functional teams to ensure quality throughout the software development life-cycle"
-    ],
-    "lookingFor": [
-      "Excellent communication skills",
-      "Attention to detail",
-      "Analytical mind and problem-solving attitude",
-      "Interest in coding",
-      "Strong organizational skills",
-      "Computer Science background",
-      "QA certification is mandatory"
-    ],
-    "additionalSkills": [
-      "Basic knowledge about Automation",
-      "Basic knowledge about Performance Testing"
-    ],
-    "perks": [
-      "Freedom to implement and follow industry best practices.",
-      "Get to work with the most down to earth and talented people.",
-      "Get to work on very interesting problems with impact in the real world.",
-      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
-      "Open and Inclusive Environment.",
-      "Remote first teams.",
-      "Flexible timings as long as work gets done.",
-      "Opportunity to contribute to open-source projects."
-    ],
-    "applyUrl": "/apply/?profile=QA Intern&ref=website"
   },
   {
     "title": "Business Analyst",
@@ -819,43 +746,6 @@
       "Opportunity to contribute to open-source projects."
     ],
     "applyUrl": "/apply/?profile=HR Executive&ref=website"
-  },
-  {
-    "title": "Trainee Software Engineer",
-    "status": "Closed",
-    "location": "Remote, India",
-    "time": "Full time",
-    "experience": "0 - 1 year of Experience",
-    "target": "trainee-software-engineers",
-    "doing": [
-      "Writing Clean, Readable, Testable, and Reusable Code",
-      "Work on simple systems that are built for scale",
-      "Break down complex problems into small and simple problems",
-      "Consider Software Development as a craft and keep improving every day",
-      "Working closely with other Developers, UX designers, and Business and System Analysts",
-      "Take part in all daily activities like Stand-ups, Iteration planning, and Retrospectives",
-      "Researching, designing, implementing, and managing software application",
-      "Troubleshooting and maintaining existing software applications"
-    ],
-    "lookingFor": [
-      "Excellent coding skills (We prefer clean code over competitive coding)",
-      "A basic understanding of server-side templating languages",
-      "Basic TDD, unit test, and debugging skills",
-      "Good understanding of Git and GitHub workflows",
-      "A basic understanding of Cloud deployment (AWS/Azure/GCp)"
-    ],
-    "additionalSkills": [],
-    "perks": [
-      "Freedom to implement and follow industry best practices.",
-      "Get to work with the most down to earth and talented people.",
-      "Get to work on very interesting problems with impact in the real world.",
-      "We are always working on a bleeding-edge tech stack. MicroServices?? Serverless?? we got you covered.",
-      "Open and Inclusive Environment.",
-      "Remote first teams.",
-      "Flexible timings as long as work gets done.",
-      "Opportunity to contribute to open-source projects."
-    ],
-    "applyUrl": "/apply/?profile=Trainee Software Engineer&ref=website"
   },
   {
     "title": "Angular JS Engineer",
