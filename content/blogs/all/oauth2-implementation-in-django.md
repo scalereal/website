@@ -136,8 +136,6 @@ Now go to `urls.py` and configure some URL patterns for OAuth operations, fetc
 
 Let’s check it. After all, to get the OAuth Token, you must have an app registered.
 
-![](https://miro.medium.com/v2/da:true/39309aa989a0b10efa2291d777f51465d571981b6b92231e51a0846a592cb403)
-
 Before that, you have to log in as admin(super user, you just created). Go to `http://localhost:8000/admin/` and log in.
 
 To register for an app, you have to go to [`http://localhost:8000/o/applications/`](http://localhost:8000/o/applications/)
