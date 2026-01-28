@@ -108,7 +108,7 @@ Django is a popular web framework for developing web applications. It is well kn
 ❌**Disadvantages:-**
 
 1. **Increased Complexity**: By breaking down applications into smaller components, you add additional complexity to your system, as each component must be maintained and updated separately.
-1. **Requires More Resources**: Separating applications into smaller components require additional resources, such as memory and disk space, to store and manage each component.
+1. **Requires More Resources**: Separating applications into smaller components requires additional resources, such as memory and disk space, to store and manage each component.
 1. **Increased Development Time**: By separating applications into smaller components, you must spend more time creating, testing, and debugging each component, which can slow down the development process.
 
 That's it from my side folks 🧑‍💻. I hope this blog has been helpful in giving you a better understanding of the topic. Until next time, stay safe and keep learning!
