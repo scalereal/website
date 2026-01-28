@@ -25,7 +25,7 @@ At [ScaleReal](https://scalereal.com/) we work extensively on Python/Django Appl
 
 ScaleReal has developed its own directory structure for Django projects to ensure greater efficiency!
 
-In this article, we’ll learn the advantages to use his type of directory structure, what app segregation is, and its pros and cons. So, let’s dive in!
+In this article, we’ll learn the advantages to use this type of directory structure, what app segregation is, and its pros and cons. So, let’s dive in!
 
 ---
 
