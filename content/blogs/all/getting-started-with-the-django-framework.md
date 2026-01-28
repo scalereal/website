@@ -88,7 +88,7 @@ There are several advantages to creating different directory structures in Djang
 
 ### What is App Segregation
 
-![Source: [https://www.netprophetsglobal.com/blog/customer-delight-in-mobile-app-development/](https://www.netprophetsglobal.com/blog/customer-delight-in-mobile-app-development/)](/images/blog/img_1769578846357_5562.jpg)
+![A diagram representing app segregation](/images/blog/img_1769578846357_5562.jpg)
 
 Django is a popular web framework for developing web applications. It is well known for its ease of use and its ability to create highly scalable applications. One of the most powerful features of Django is its ability to segregate applications into different modules. This allows developers to easily separate applications, which helps maintain code quality and organization. App segregation is a technique used to separate applications into different modules. It allows developers to create multi-tenant applications. Multi-tenant applications are applications that can handle multiple users or customers simultaneously. Segmenting applications into different modules, it makes it easier to create multi-tenant applications. This is because different customer environments can be created and maintained in separate modules. App segregation is an important part of developing applications with Django, and it is a technique that should be used whenever possible.
 
