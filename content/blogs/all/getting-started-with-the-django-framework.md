@@ -37,7 +37,7 @@ In this article, we’ll learn the advantages to use this type of directory stru
 
 ---
 
-### **How does our directory structure look likes?**
+### **How does our directory structure look like?**
 
 This is what our directory structure looks like 😎
 
