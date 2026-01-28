@@ -115,4 +115,4 @@ That's it from my side folks 🧑‍💻. I hope this blog has been helpful in g
 
 ---
 
-At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
+At [Scalereal](https://scalereal.com/) we believe in Sharing and Open Source.
