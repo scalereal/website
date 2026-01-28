@@ -26,6 +26,7 @@ At [ScaleReal](https://scalereal.com/) we work extensively on Python/Django Appl
 Welcome to the dawn of a new era of **Django Setup 2024**! Get ready to embark on a journey of exploration and discovery as we uncover the secrets of the **Modern Django Setup**. Keep your eyes peeled for more exciting blog posts in this series, coming soon!
 
 In the last blog, we explored the advantages of using a custom directory structure, what app segregation is when to use it, and its pros and cons. If you haven’t read it, please 🙏 check the link below. 👇️
+[Getting Started with the Django Framework: Exploring Directory Structure and App Segregation](https://scalereal.com/getting-started-with-the-django-framework/)
 
 In this article, we'll learn about 12-Factor App Implementation. So, let's get started!
 
