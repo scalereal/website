@@ -101,7 +101,7 @@ Django is a popular web framework for developing web applications. It is well kn
 1. **Improved Security**: Segregating Django apps allows for better security by limiting the scope of damage that can occur if a security breach does occur. If a vulnerable app is compromised, any other apps that are segregated will not be affected.
 1. **Improved Performance**: Segregating Django apps can also improve performance by allowing developers to focus on the tasks of each app individually. This allows for more efficient development, as well as better resource optimization.
 1. **Improved Maintainability**: By segregating Django apps, developers can more easily maintain and update each app individually. This makes the development process more efficient, and reduces the complexity of the overall system.
-1. I**mproved Scalability**: By separating your applications into smaller, more manageable chunks, you can easily scale up or down certain parts of your system as needed. This is especially helpful for larger applications with multiple components.
+1. **Improved Scalability**: By separating your applications into smaller, more manageable chunks, you can easily scale up or down certain parts of your system as needed. This is especially helpful for larger applications with multiple components.
 1. **Reduces Code Duplication**: By separating your applications, you can reuse certain components in multiple applications, reducing code duplication and making your development process more efficient.
 1. **Increases Component Reuse**: By breaking down applications into smaller components, you can take advantage of existing frameworks and libraries to more quickly build new applications.
 
