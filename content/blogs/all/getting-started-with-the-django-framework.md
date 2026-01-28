@@ -30,7 +30,7 @@ In this article, we’ll learn the advantages to use this type of directory stru
 ---
 
 **Here’s a list of everything which will be covered in this article:**
-1. * How does our directory structure look likes?*
+1. * How does our directory structure look like?*
 2. *Advantages of using this type of directory *📂 * structure*
 3. *What is App Segregation?*
 4. *Advantages and Disadvantages of app segregation*
