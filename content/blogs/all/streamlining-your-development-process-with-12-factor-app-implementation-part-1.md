@@ -78,7 +78,7 @@ The Codebase factor is one of the core principles of the 12-factor app methodolo
 Advantages:
 
 1. **Easier to manage and maintain:** A single codebase makes it easier to keep track of changes and create new versions of the application, as well as roll back to a previous version when necessary.
-1. **Better Collaboration: **When multiple developers are working on the same codebase, it is easier for them to collaborate and identify any potential issues.
+1. **Better Collaboration:** When multiple developers are working on the same codebase, it is easier for them to collaborate and identify any potential issues.
 
 **Examples:**
 
@@ -113,7 +113,7 @@ The Configuration Factor of the 12-factor app is one of the most important princ
 
 1. **Easier to maintain:** Using environment variables for configuration information makes it easier to manage and maintain configuration files. This is especially useful for large projects where configuration information is spread across multiple files.
 1. **Easier to port:** Configuration information stored in environment variables can be easily ported from one environment to another. This makes it easier to move the application from one server to another without having to manually configure each server.
-1. **More secure: **Environment variables are more secure than other methods of storing configuration information since they are not exposed to the public.
+1. **More secure:** Environment variables are more secure than other methods of storing configuration information since they are not exposed to the public.
 
 **Examples:-**
 
@@ -248,9 +248,9 @@ Dev/prod parity is a factor in the 12-factor app that emphasizes the importance 
 
 **Advantages:-**
 
-1. **Increased reliability: **Having parity between development and production environments makes it easier to replicate and debug issues that may arise in production.
-1. **Faster deployment: **Keeping parity between environments ensures that the code that is tested and run locally is the same code that is deployed to production. This eliminates the need for additional testing and reduces the time it takes to deploy code to production.
-1. **Improved security: **Having parity between development and production environments helps ensure that the same security measures are in place in both environments. This helps to prevent security issues from occurring in production due to a lack of security in development.
+1. **Increased reliability:** Having parity between development and production environments makes it easier to replicate and debug issues that may arise in production.
+1. **Faster deployment:** Keeping parity between environments ensures that the code that is tested and run locally is the same code that is deployed to production. This eliminates the need for additional testing and reduces the time it takes to deploy code to production.
+1. **Improved security:** Having parity between development and production environments helps ensure that the same security measures are in place in both environments. This helps to prevent security issues from occurring in production due to a lack of security in development.
 
 **Examples:-**
 
@@ -267,8 +267,8 @@ The Log in 12-factor app is a type of standard for developing software as a serv
 **Advantages:-**
 
 1. **Increased visibility into application performance:** Logs can be used to identify and analyze performance issues, such as slow loading times or unexpected errors.
-1. **Enhanced debugging capabilities: **Logs can be used to quickly identify and troubleshoot bugs and other issues with the application.
-1. **Improved scalability: **Logging can help ensure that the application scales properly and can handle increased loads.
+1. **Enhanced debugging capabilities:** Logs can be used to quickly identify and troubleshoot bugs and other issues with the application.
+1. **Improved scalability:** Logging can help ensure that the application scales properly and can handle increased loads.
 
 Examples:-
 
