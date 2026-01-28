@@ -8,11 +8,11 @@ keywords:
   - 12 factor app
   - django best practices
   - cloud native django
-date: '2026-01-28'
+date: '2026-01-29'
 tags:
   - Backend
   - Python
-  - Django2023
+  - Django
 author: ScaleReal Team
 image: '/images/blog/img_1769575975754_1294.png'
 url: streamlining-your-development-process-with-12-factor-app-implementation-part-1
@@ -38,15 +38,11 @@ In this article, we'll learn about 12-Factor App Implementation. So, let's get s
 
 ### What is 12-Factor App implementation?
 
-In recent years, developers have started following the 12-factor app methodology to build modern applications that are scalable. The 12-factor app methodology consists of 12 principles that guide the development, deployment, and maintenance of applications. By following these principles, developers can create applications that are optimized to run in the cloud and are easy to maintain.12-Factor App implementation is a methodology for building software-as-a-service applications that are optimized for deployment and scale.
+In recent years, developers have started following the 12-factor app methodology to build modern applications that are scalable. The 12-factor app methodology consists of 12 principles that guide the development, deployment, and maintenance of applications. By following these principles, developers can create applications that are optimized to run in the cloud and are easy to maintain. 12-Factor App implementation is a methodology for building software-as-a-service applications that are optimized for deployment and scale.
 
-> This approach was developed by
+This approach was developed by **Adam Wiggins** of [Heroku](https://www.heroku.com/).
 
-**Adam Wiggins,**
-
-[Heroku](https://www.heroku.com/)
-
-**Here is the list of 12 Factors**:-
+**Here is the list of 12 Factors**:
 
 1. Codebase
 1. Dependencies
@@ -71,9 +67,7 @@ In recent years, developers have started following the 12-factor app methodology
 
 The Codebase factor is one of the core principles of the 12-factor app methodology. It states that there should be a single codebase shared by all developers and that all deployments should be built from the same codebase.
 
-[Mention that multiple apps sharing the same codebase is a violation of this principle] @Satvik Goyal 
-
-> It ensure that an application’s codebase is kept consistent and easy to maintain.
+> It ensures that an application’s codebase is kept consistent and easy to maintain.
 
 Advantages:
 
