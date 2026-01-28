@@ -8,7 +8,7 @@ keywords:
   - 12 factor app
   - django best practices
   - cloud native django
-date: '2026-01-29'
+date: '2026-01-28'
 tags:
   - Backend
   - Python
