@@ -8,7 +8,7 @@ keywords:
   - django project structure
   - scalable django architecture
   - django best practices
-date: '2026-01-28'
+date: '2026-01-27'
 tags:
   - Backend
   - Python
