@@ -12,7 +12,7 @@ date: '2026-01-29'
 tags:
   - Backend
   - Python
-  - Django2023
+  - Django
 author: ScaleReal Team
 image: '/images/blog/img_1769659897874_6122.png'
 url: streamlining-your-development-process-with-12-factor-app-implementation-part-2
