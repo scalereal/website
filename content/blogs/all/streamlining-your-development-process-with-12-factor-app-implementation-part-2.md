@@ -128,7 +128,7 @@ The Logs factor in the 12-factor app is a type of standard for developing softwa
 1. **Enhanced debugging capabilities: **Logs can be used to quickly identify and troubleshoot bugs and other issues with the application.
 1. **Improved scalability: **Logging can help ensure that the application scales properly and can handle increased loads.
 
-Examples:-
+**Examples**
 
 1. **Web server logs:** Web server logs provide detailed information about web requests, such as the IP address of the request, the URL requested, and the response code.
 1. **Application logs:** Application logs provide details about the internal workings of the application, such as function calls and errors.
