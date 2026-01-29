@@ -27,7 +27,7 @@ Welcome to the dawn of a new era of **Django Setup 2023**! Get ready to embark o
 
 In the last blog, we explored the advantages of using a custom directory structure, what is 12-factor app implementation, and a detailed explanation of the first six factors. If you haven’t read it, please 🙏 check the link below👇
 
-[https://scalereal.com/streamlining-your-development-process-with-12-factor-app-implementation-part-1/](https://scalereal.com/streamlining-your-development-process-with-12-factor-app-implementation-part-1/)
+[streamlining-your-development-process-with-12-factor-app-implementation-part-1](https://scalereal.com/streamlining-your-development-process-with-12-factor-app-implementation-part-1/)
 
 In this article, we'll understand the remaining six factors. So, let's get started!
 
