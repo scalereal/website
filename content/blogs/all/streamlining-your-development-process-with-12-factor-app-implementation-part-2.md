@@ -33,8 +33,6 @@ In this article, we'll understand the remaining six factors. So, let's get start
 
 ### Here’s a list of everything which will be covered in this article:
 
-1. *Detail Explanation of the remaining six factors.*
-
 ### *Detail Explanation of the remaining six factors.*
 
 ### 7. Port binding
