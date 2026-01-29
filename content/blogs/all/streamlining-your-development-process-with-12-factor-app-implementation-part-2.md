@@ -94,7 +94,7 @@ The Disposability factor in the 12-factor app is the ability of an application t
 
 **Examples:-**
 
-**Netflix, Amazon, and Dropbox **use containers and microservices to keep their services running and to quickly replace components when needed.
+**Netflix, Amazon, and Dropbox** use containers and microservices to keep their services running and to quickly replace components when needed.
 
 ### 10. Dev/prod parity
 
