@@ -120,7 +120,7 @@ Dev/prod parity is a factor in the 12-factor app that emphasizes the importance 
 
 ![](https://cdn-images-1.medium.com/max/800/1*PBy7lgPh1mfyy0nFoIQJ_g.png)
 
-The Log in 12-factor app is a type of standard for developing software as a service application. It helps developers create applications that are easy to maintain and scale. With the Logs in the 12-factor app, output from the application is captured and stored in a centralized location for easy access and analysis. This enables developers to quickly identify and troubleshoot issues, as well as gain insights into user behavior and performance.
+The Logs factor in the 12-factor app is a type of standard for developing software as a service application. It helps developers create applications that are easy to maintain and scale. With the Logs in the 12-factor app, output from the application is captured and stored in a centralized location for easy access and analysis. This enables developers to quickly identify and troubleshoot issues, as well as gain insights into user behavior and performance.
 
 **Advantages:-**
 
