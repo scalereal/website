@@ -23,7 +23,7 @@ Hello, Django Mavericks and PyNinjas I hope you are all doing well.
 
 At [ScaleReal](https://scalereal.com/) we work extensively on Python/Django Applications and have built a lot of highly scalable applications for various clients of ours.
 
-Welcome to the dawn of a new era of **Django Setup 2023**! Get ready to embark on a journey of exploration and discovery as we uncover the secrets of the **Modern Django Setup**. Keep your eyes peeled for more exciting blog posts in this series, coming soon!
+Welcome to the dawn of a new era of **Django Setup 2024**! Get ready to embark on a journey of exploration and discovery as we uncover the secrets of the **Modern Django Setup**. Keep your eyes peeled for more exciting blog posts in this series, coming soon!
 
 In the last blog, we explored the advantages of using a custom directory structure, what is 12-factor app implementation, and a detailed explanation of the first six factors. If you haven’t read it, please 🙏 check the link below👇
 
