@@ -102,9 +102,9 @@ Dev/prod parity is a factor in the 12-factor app that emphasizes the importance 
 
 **Advantages:-**
 
-1. **Increased reliability: **Having parity between development and production environments makes it easier to replicate and debug issues that may arise in production.
-1. **Faster deployment: **Keeping parity between environments ensures that the code that is tested and run locally is the same code that is deployed to production. This eliminates the need for additional testing and reduces the time it takes to deploy code to production.
-1. **Improved security: **Having parity between development and production environments helps ensure that the same security measures are in place in both environments. This helps to prevent security issues from occurring in production due to a lack of security in development.
+1. **Increased reliability:** Having parity between development and production environments makes it easier to replicate and debug issues that may arise in production.
+1. **Faster deployment:** Keeping parity between environments ensures that the code that is tested and run locally is the same code that is deployed to production. This eliminates the need for additional testing and reduces the time it takes to deploy code to production.
+1. **Improved security:** Having parity between development and production environments helps ensure that the same security measures are in place in both environments. This helps to prevent security issues from occurring in production due to a lack of security in development.
 
 **Examples:-**
 
@@ -123,8 +123,8 @@ The Logs factor in the 12-factor app is a type of standard for developing softwa
 **Advantages:-**
 
 1. **Increased visibility into application performance:** Logs can be used to identify and analyze performance issues, such as slow loading times or unexpected errors.
-1. **Enhanced debugging capabilities: **Logs can be used to quickly identify and troubleshoot bugs and other issues with the application.
-1. **Improved scalability: **Logging can help ensure that the application scales properly and can handle increased loads.
+1. **Enhanced debugging capabilities:** Logs can be used to quickly identify and troubleshoot bugs and other issues with the application.
+1. **Improved scalability:** Logging can help ensure that the application scales properly and can handle increased loads.
 
 **Examples**
 
@@ -148,8 +148,8 @@ The Admin Process is a component of the 12-factor app methodology which provides
 
 Examples:-
 
-1. **Heroku: **The Heroku platform uses the Admin Process to manage system updates and configuration changes.
-1. **Google: **Google Cloud Platform provides a set of command-line tools for managing administrative tasks.
+1. **Heroku:** The Heroku platform uses the Admin Process to manage system updates and configuration changes.
+1. **Google:** Google Cloud Platform provides a set of command-line tools for managing administrative tasks.
 1. **Amazon Web Services:** Amazon Web Services provides a set of automation tools for managing administrative tasks.
 
 That’s it from my side folks 🧑‍💻. I hope this blog has been helpful in giving you a better understanding of the topic. Until next time, stay safe and keep learning!
