@@ -152,7 +152,7 @@ Examples:-
 
 1. **Heroku: **The Heroku platform uses the Admin Process to manage system updates and configuration changes.
 1. **Google: **Google Cloud Platform provides a set of command-line tools for managing administrative tasks.
-1. **Amazon Web Service:** Amazon Web Services provides a set of automation tools for managing administrative tasks.
+1. **Amazon Web Services:** Amazon Web Services provides a set of automation tools for managing administrative tasks.
 
 That’s it from my side folks 🧑‍💻. I hope this blog has been helpful in giving you a better understanding of the topic. Until next time, stay safe and keep learning!
 
