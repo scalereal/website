@@ -47,7 +47,7 @@ In this article, we'll understand the remaining six factors. So, let's get start
 
 The port binding factor in the 12-factor app is the ability to bind applications to a port exposed to the external environment. This factor allows applications to be decoupled from any specific deployment environment, making them easier to scale and maintain. This port binding can be done directly when deploying the application, or through a proxy, such as a web server or an application server.
 
-**Advantages:-**
+**Advantages**
 
 1. **Flexibility:** Port binding makes it possible to deploy an application to different environments without having to change the application code. This means that the application can be deployed to different servers or cloud providers without having to change the code.
 1. **Scalability:** By making the port number configurable, it is easier to scale an application by adding more instances of the application.
