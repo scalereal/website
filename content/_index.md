@@ -1,4 +1,4 @@
 ---
 title: Welcome
-description: We Build Applications That Scale Beyond Reality
+description: AI-First Custom Software Development
 ---
