@@ -3828,3 +3828,236 @@ div.code-toolbar .toolbar-item:nth-child(2) {
     display: none;
   }
 }
+
+/* ======================================
+   CLIENT CHALLENGES 
+====================================== */
+
+.section-client-challenges {
+  background-color: #f5f8fc; /* reuse bg-grey */
+}
+
+.section-client-challenges .text-blue {
+  color: #0eccd8;
+}
+
+/* Card */
+
+.challenge-card {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  padding: 30px 25px;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.challenge-card:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 12px 24px;
+  border-color: rgba(14, 204, 216, 0.4);
+}
+
+/* Icon */
+
+.challenge-card i {
+  font-size: 36px;
+  color: #0eccd8;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* Text */
+
+.challenge-card h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.challenge-card p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+}
+
+/* ======================================
+   PRODUCT ENGINEERING – DARK THEME
+====================================== */
+
+.section-product-engineering-dark {
+  padding: 125px 0;
+  background:
+    radial-gradient(
+      1200px 600px at 20% 10%,
+      rgba(14, 204, 216, 0.18),
+      transparent
+    ),
+    linear-gradient(135deg, #050b16, #020617);
+  color: #ffffff;
+}
+
+/* Heading */
+
+.hero-title-sm {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-title-sm span {
+  background: #0eccd8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle-sm {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.85;
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+/* Cards */
+
+.engineering-card {
+  height: 100%;
+  padding: 35px 30px;
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+
+.engineering-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(14, 204, 216, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* Icon */
+
+.engineering-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #0eccd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.engineering-icon i {
+  font-size: 22px;
+  color: #020617;
+}
+
+/* Text */
+
+.engineering-card h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.engineering-card p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+/* List */
+
+.engineering-card ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.engineering-card ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.engineering-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0eccd8;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .hero-title-sm {
+    font-size: 38px;
+  }
+
+  .hero-subtitle-sm {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title-sm {
+    font-size: 30px;
+  }
+
+  .hero-subtitle-sm {
+    font-size: 16px;
+  }
+}
+
+/* ======================================
+   DARK SECTION TEXT FIX
+====================================== */
+
+.section-product-engineering-dark,
+.section-product-engineering-dark * {
+  color: #ffffff;
+}
+
+/* Subtitle / muted text */
+.section-product-engineering-dark p,
+.section-product-engineering-dark .hero-subtitle-sm {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Headings */
+.section-product-engineering-dark h1,
+.section-product-engineering-dark h2,
+.section-product-engineering-dark h3 {
+  color: #ffffff;
+}
+
+/* Lists */
+.section-product-engineering-dark ul li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Bullet dots */
+.section-product-engineering-dark ul li::before {
+  background: #0eccd8;
+}
+
+/* Ensure cards don’t inherit black */
+.section-product-engineering-dark .engineering-card {
+  color: #ffffff;
+}
