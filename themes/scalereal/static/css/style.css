@@ -4251,3 +4251,143 @@ div.code-toolbar .toolbar-item:nth-child(2) {
     width: 100%;
   }
 }
+
+/* ================================
+   FOOTER V3
+================================ */
+
+.footer-v3 {
+  background-color: #0b1220;
+  color: #94a3b8;
+  padding: 80px 0 40px;
+  font-family: "Open Sans", sans-serif;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.footer-v3-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-v3-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1.2fr 1.4fr;
+  gap: 80px;
+}
+
+/* Brand */
+
+.footer-v3-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0eccd8;
+  margin-bottom: 16px;
+}
+
+.footer-v3-desc {
+  font-size: 15px;
+  line-height: 24px;
+  color: #94a3b8;
+  margin-bottom: 22px;
+}
+
+.footer-v3-social {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-v3-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #111827;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Columns */
+
+.footer-v3-col h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer-v3-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-v3-col li {
+  margin-bottom: 12px;
+}
+
+.footer-v3-col a {
+  font-size: 14px;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer-v3-col span {
+  font-size: 14px;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer-v3-col a:hover {
+  color: #0eccd8;
+}
+
+/* Contact */
+
+.footer-v3-contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+/* Divider */
+
+.footer-v3-divider {
+  margin: 50px 0 25px;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+/* Bottom */
+
+.footer-v3-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .footer-v3-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .footer-v3-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-v3-grid {
+    grid-template-columns: 1fr;
+  }
+}
