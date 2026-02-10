@@ -3837,7 +3837,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   background-color: #f5f8fc; /* reuse bg-grey */
 }
 
-.section-client-challenges .text-blue {
+.text-blue {
   color: #0eccd8;
 }
 
@@ -4060,4 +4060,30 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 /* Ensure cards don’t inherit black */
 .section-product-engineering-dark .engineering-card {
   color: #ffffff;
+}
+
+/* Section chip (reusable) */
+.section-chip-light {
+  display: inline-block;
+  padding: 2px 20px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  background: #ffffff;
+  border: 1px solid #cccbcb;
+}
+
+.section-chip-dark {
+  display: inline-block;
+  padding: 2px 20px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
 }
