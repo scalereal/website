@@ -398,7 +398,7 @@ h3 {
 .navbar {
   background:
     radial-gradient(
-      1200px 600px at 20% 10%,
+      1200px 600px at 50% 30%,
       rgb(14, 204, 216, 0.25),
       transparent
     ),
@@ -3676,8 +3676,8 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .page-home .banner-home {
   background:
     radial-gradient(
-      1200px 600px at 20% 10%,
-      rgb(14, 204, 216, 0.25),
+      1200px 600px at 50% 35%,
+      rgba(14, 204, 216, 0.25),
       transparent
     ),
     linear-gradient(135deg, #050b16, #020617);
@@ -4026,7 +4026,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 /* ======================================
-   DARK SECTION TEXT FIX
+   DARK SECTION
 ====================================== */
 
 .section-product-engineering-dark,
@@ -4100,8 +4100,8 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 
   background:
     radial-gradient(
-      1200px 600px at 20% 10%,
-      rgb(14, 204, 216, 0.25),
+      1200px 600px at 50% 20%,
+      rgba(14, 204, 216, 0.25),
       transparent
     ),
     linear-gradient(135deg, #050b16, #020617);
