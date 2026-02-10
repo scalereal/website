@@ -3878,7 +3878,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .challenge-card p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   color: #666;
 }
@@ -3964,7 +3964,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 /* Text */
 
 .engineering-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 600;
   margin-bottom: 14px;
@@ -3988,7 +3988,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   position: relative;
   padding-left: 18px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.85;
 }
 
@@ -4283,7 +4283,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .footer-v3-desc {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #94a3b8;
   margin-bottom: 22px;
