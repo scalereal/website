@@ -4087,3 +4087,167 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(6px);
 }
+
+/* ======================================
+   GLOBAL FOOTPRINT
+====================================== */
+
+.global-footprint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+
+  background:
+    radial-gradient(
+      1200px 600px at 20% 10%,
+      rgb(14, 204, 216, 0.25),
+      transparent
+    ),
+    linear-gradient(135deg, #050b16, #020617);
+
+  color: #ffffff;
+}
+
+.global-footprint-container {
+  max-width: 880px;
+  width: 100%;
+}
+
+/* Chip */
+
+.global-footprint-chip-wrapper {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Chip itself */
+.global-footprint-chip {
+  display: inline-block;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(6px);
+}
+
+/* Title */
+
+.global-footprint-title {
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: #ffffff;
+}
+
+.global-footprint-title span {
+  color: #0eccd8;
+}
+
+/* Subtitle */
+
+.global-footprint-subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Country tags */
+
+.global-footprint-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 45px;
+}
+
+.global-footprint-tags span {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Buttons */
+
+.global-footprint-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.global-footprint-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.global-footprint-btn.primary {
+  background: #0eccd8;
+  color: #020617;
+}
+
+.global-footprint-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(14, 204, 216, 0.35);
+}
+
+.global-footprint-btn.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.global-footprint-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 991px) {
+  .global-footprint-title {
+    font-size: 42px;
+  }
+
+  .global-footprint-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .global-footprint-title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .global-footprint-actions {
+    flex-direction: column;
+  }
+
+  .global-footprint-btn {
+    width: 100%;
+  }
+}
