@@ -1,15 +1,13 @@
-{{ "<!-- Footer section -->" | safeHTML }}
-{{ partial "global-footprint.html" . }}
+{{ "<!-- Footer section -->" | safeHTML }} {{ partial "global-footprint.html" .
+}}
 
 <footer class="footer-v3">
   <div class="footer-v3-container">
-
     <!-- Top row -->
     <div class="footer-v3-grid">
-
       <!-- Brand -->
       <div class="footer-v3-brand">
-        <h3 class="footer-v3-logo">scalereal</h3>
+        <a class="navbar-brand footer-v3-logo" href="/"><img alt="scalereal" src="{{ "images/logo/scalereal-logo-blue.png" | absURL}}" /></a>
         <p class="footer-v3-desc">
           AI-First Custom Software Development.<br />
           We help startups and enterprises build<br />
@@ -17,8 +15,22 @@
         </p>
 
         <div class="footer-v3-social">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Twitter">𝕏</a>
+          <a
+            href="https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/about/"
+            target="_blank"
+            title="LinkedIn"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            >in</a
+          >
+          <a
+            href="https://twitter.com/ScaleReal"
+            target="_blank"
+            title="Twitter"
+            rel="noreferrer"
+            aria-label="Twitter"
+            >𝕏</a
+          >
         </div>
       </div>
 
@@ -60,7 +72,6 @@
           </li>
         </ul>
       </div>
-
     </div>
 
     <!-- Divider -->
@@ -71,7 +82,6 @@
       <span id="footer-copyright"></span>
       <span id="footer-years"></span>
     </div>
-
   </div>
 </footer>
 

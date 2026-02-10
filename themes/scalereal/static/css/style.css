@@ -4279,14 +4279,11 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 /* Brand */
 
 .footer-v3-logo {
-  font-size: 26px;
-  font-weight: 700;
-  color: #0eccd8;
   margin-bottom: 16px;
 }
 
 .footer-v3-desc {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   color: #94a3b8;
   margin-bottom: 22px;
@@ -4313,7 +4310,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 /* Columns */
 
 .footer-v3-col h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 18px;
