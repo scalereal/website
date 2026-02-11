@@ -1,18 +1,16 @@
-{{ "<!-- Footer section -->" | safeHTML }} 
-<footer class="footer-v3">
-  <div class="footer-v3-container">
-    <!-- Top row -->
-    <div class="footer-v3-grid">
-      <!-- Brand -->
-      <div class="footer-v3-brand">
-        <a class="navbar-brand footer-v3-logo" href="/"><img alt="scalereal" src="{{ "images/logo/scalereal-logo-white.svg" | absURL}}" /></a>
-        <p class="footer-v3-desc">
+{{ "<!-- Footer section -->" | safeHTML }}
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="navbar-brand footer-logo" href="/"><img alt="scalereal" src="{{ "images/logo/scalereal-logo-white.svg" | absURL}}" /></a>
+        <p class="footer-desc">
           AI-First Custom Software Development.<br />
           We help startups and enterprises build<br />
           scalable, AI-driven products faster.
         </p>
 
-        <div class="footer-v3-social">
+        <div class="footer-social">
           <a
             href="https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/about/"
             target="_blank"
@@ -33,17 +31,21 @@
       </div>
 
       <!-- Company -->
-      <div class="footer-v3-col">
+      <div class="footer-col">
         <h4>Company</h4>
         <ul>
+          <li><a href="#our-solutions">Our Solutions</a></li>
+          <li><a href="#our-services">Services</a></li>
+          <li><a href="#clients">Clients</a></li>
           <li><a href="/company">About Us</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <!-- <li><a href="/contact">Blogs</a></li>
+          <li><a href="/company">Benefits</a></li>
+          <li><a href="/company">Global Footprint</a></li> -->
         </ul>
       </div>
 
       <!-- Services -->
-      <div class="footer-v3-col">
+      <div class="footer-col">
         <h4>Services</h4>
         <ul>
           <li><a href="/services">Software Development</a></li>
@@ -53,19 +55,19 @@
       </div>
 
       <!-- Contact -->
-      <div class="footer-v3-col">
+      <div class="footer-col">
         <h4>Contact</h4>
-        <ul class="footer-v3-contact">
+        <ul class="footer-contact">
           <li>
-            <span>✉</span>
+            <i class="footer-icon fa-solid fa-envelope"></i>
             <a href="mailto:atul@scalereal.com">atul@scalereal.com</a>
           </li>
           <li>
-            <span>☎</span>
+           <i class="footer-icon fa-solid fa-phone"></i>
             <a href="tel:+919890546018">+91-9890546018</a>
           </li>
           <li>
-            <span>📍</span>
+         <i class="footer-icon fa-solid fa-earth-americas"></i>
             <span>Global Remote Team</span>
           </li>
         </ul>
@@ -73,10 +75,10 @@
     </div>
 
     <!-- Divider -->
-    <div class="footer-v3-divider"></div>
+    <div class="footer-divider"></div>
 
     <!-- Bottom row -->
-    <div class="footer-v3-bottom">
+    <div class="footer-bottom">
       <span id="footer-copyright"></span>
       <span id="footer-years"></span>
     </div>
