@@ -208,6 +208,10 @@ a.text-grey:hover {
   background-color: #f8f9fa;
 }
 
+.bg-primary-gradient {
+  background: var(--primary-gradient);
+}
+
 .bg-gradient {
   background: var(--background-gradient-hero);
 }
@@ -371,7 +375,7 @@ h3 {
 .feature-card h3 {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
   color: #444;
 }
@@ -413,13 +417,14 @@ h3 {
 -------------------------------------------------- */
 .section-chip-light {
   display: inline-block;
-  padding: 2px 20px;
+  padding: 6px 20px;
   margin-bottom: 16px;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 400;
   color: var(--primary-color);
   background: rgba(56, 189, 248, 0.12);
+  z-index: 5;
   /* border: 1px solid var(--primary-color); */
 }
 
@@ -462,9 +467,10 @@ h3 {
   font-size: 13px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #edf1f3;
-  /* border: 1px solid #627084; */
-  color: var(--text-grey);
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #555;
+  /* background: var(--primary-color); */
 }
 
 /* BUTOONS (PRIMARY & SECONDARY)
@@ -475,6 +481,7 @@ h3 {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  z-index: 10;
 }
 
 .sr-btn {
@@ -1127,9 +1134,12 @@ h3 {
 }
 
 .page-home .banner-home .banner-content h1 {
-  font-size: 46px;
+  font-size: 56px;
   line-height: 48px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 30px;
 }
 
 .page-home .banner-home .banner-content p {
@@ -1146,34 +1156,37 @@ h3 {
 }
 
 /* Section blog */
-.stat-icon {
-  width: 44px;
-  height: 44px;
-  margin: 0 auto 16px;
-  border-radius: 12px;
-  background: var(--primary-gradient);
+.blog-analytics {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 60px;
+  margin-bottom: 40px;
 }
 
-.stat-icon i {
-  font-size: 20px;
-  color: #fff;
+.analytics-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  width: 240px;
+  height: 100%;
+  transition: all 0.3s ease;
+  padding: 12px 0;
+}
+
+.analytics-card:hover {
+  border-color: rgba(14, 204, 216, 0.5); /* primary/50 */
 }
 
 .stat-number {
   font-size: 42px;
   font-weight: 700;
-  color: #444444;
-}
-
-.stat-number span:last-child {
-  font-size: 22px;
 }
 
 .stat-label {
-  margin-top: 6px;
   font-size: 16px;
   color: #9aa4b2;
 }
@@ -3789,9 +3802,9 @@ lottie-player {
   content: "";
   position: absolute;
   left: 50%;
-  width: 2px;
+  width: 1px;
   height: 70%;
-  background-color: #cccbcb;
+  background-color: #ccc;
 }
 .client-success-stories-section .container .box .heading.box-content {
   margin-top: 150px;
@@ -4018,14 +4031,6 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 /* REVAMP */
-
-/* Title */
-.hero-title {
-  font-size: 56px;
-  line-height: 1.15;
-  font-weight: 800;
-  margin-bottom: 30px;
-}
 
 /* Subtitle */
 .hero-subtitle {
