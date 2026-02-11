@@ -357,6 +357,24 @@ h3 {
   backdrop-filter: blur(6px);
 }
 
+/* CHIPS
+-------------------------------------------------- */
+
+.sr-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sr-tags span {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #edf1f3;
+  /* border: 1px solid #627084; */
+  color: #627084;
+}
+
 /* BUTOONS (PRIMARY & SECONDARY)
 -------------------------------------------------- */
 
@@ -976,25 +994,6 @@ h3 {
   margin-top: 6px;
   font-size: 16px;
   color: #9aa4b2;
-}
-
-/* Section global footprint */
-
-.global-footprint-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 45px;
-}
-
-.global-footprint-tags span {
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: transparent;
-  border: 1px solid #666;
-  color: #666;
 }
 
 /* Section service */
@@ -1696,9 +1695,6 @@ h3 {
 
 /* PAGE SERVICES
 -------------------------------------------------- */
-.section-inner-banner {
-  padding: 80px 0 35px;
-}
 
 .inner-cta {
   padding: 0;

@@ -8,8 +8,11 @@
     {{ partial "nav" . }}
     <div class="page-inner page-about">
       {{ template "company/banner.html" .}} 
+      {{ template "company/our-story.html" .}} 
       {{ template "company/our-culture.html" .}}
     </div>
+    {{ template "homepage/why-scalereal.html" .}}
+    {{ template "homepage/global-footprint.html" .}}
     {{ partial "footer" . }}
     <script>
       const blogElement = document.querySelector(".company-stats");
@@ -22,7 +25,7 @@
           const value = +counter.getAttribute("limit");
           const data = +counter.innerText;
           const time = value / speed;
-          const timeout = value === 10 ? 50 : value === 35 ? 10 : 220;
+          const timeout = value <= 10 ? 50 : value === 35 ? 10 : 220;
 
           if (data < value) {
             counter.innerText = Math.ceil(data + time);
