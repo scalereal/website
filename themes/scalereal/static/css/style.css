@@ -1205,6 +1205,17 @@ h3 {
 }
 
 @media (max-width: 992px) {
+  .stats-value {
+    font-size: 36px;
+  }
+
+  .stats-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -1212,6 +1223,10 @@ h3 {
 }
 
 @media (max-width: 576px) {
+  .stats-value {
+    font-size: 30px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -2151,6 +2166,37 @@ lottie-player {
 
 /* PAGE COMPANY */
 
+.about-banner {
+  min-height: calc(100vh - 400px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background:
+    radial-gradient(
+      800px 500px at 50% 40%,
+      hsl(184 88% 45% / 0.12),
+      transparent 70%
+    ),
+    radial-gradient(
+      600px 400px at 20% 20%,
+      hsl(184 88% 45% / 0.06),
+      transparent 70%
+    ),
+    radial-gradient(
+      600px 400px at 80% 80%,
+      hsl(184 70% 38% / 0.06),
+      transparent 70%
+    ),
+    hsl(0 0% 99%);
+  overflow: hidden;
+}
+
+.about-banner h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
 @keyframes imageScrollX {
   from {
     left: translateX(0);
@@ -2447,6 +2493,17 @@ lottie-player {
   section {
     padding: 90px 0;
   }
+
+  .section-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   .footer {
     padding: 100px 0 30px;
   }
@@ -2608,6 +2665,17 @@ lottie-player {
 @media (max-width: 767.98px) {
   section {
     padding: 55px 0 60px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    color: #666;
   }
 
   .navbar {
