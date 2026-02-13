@@ -26,12 +26,12 @@ params:
       url: /
     - name: Services
       url: /services
-    - name: AI Services
+    - name: AI Solutions
       url: /ai-services
     - name: Projects
       url: /projects
-    - name: Company
-      url: /company
+    - name: About
+      url: /about
     - name: Blogs
       url: /blogs
     - name: Careers

@@ -645,6 +645,9 @@ h3 {
   row-gap: 20px;
   column-gap: 60px;
   margin-bottom: 40px;
+}
+
+.full-width {
   width: 90vw;
 }
 
@@ -1225,7 +1228,7 @@ h3 {
 }
 /* HOME PAGE - TODO: REFACTOR AND OPTIMIZE
 -------------------------------------------------- */
-.page-home .banner-home {
+.banner-home {
   min-height: calc(100vh - 90px);
   position: relative;
   z-index: 1;
@@ -1266,7 +1269,7 @@ h3 {
   }
 }
 
-.page-home .banner-home .banner-content {
+.banner-home .banner-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1276,7 +1279,7 @@ h3 {
   margin: 0 auto;
 }
 
-.page-home .banner-home .banner-content h1 {
+.banner-home .banner-content h1 {
   font-size: 56px;
   line-height: 48px;
   /* margin-bottom: 50px; */
@@ -1285,7 +1288,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-.page-home .banner-home .banner-content p {
+.banner-home .banner-content p {
   margin-bottom: 50px;
   min-height: 60px;
   width: 80%;
@@ -1330,7 +1333,7 @@ h3 {
 }
 
 .stats-value {
-  font-size: 46px;
+  font-size: 56px;
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 8px 0;
@@ -2380,11 +2383,15 @@ lottie-player {
   position: relative;
 }
 
+.page-contact .form-group label {
+  margin-bottom: 4px;
+}
+
 .page-contact .form-control {
-  background: #fff;
-  border-color: var(--border);
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 20px 12px;
+  padding: 16px 12px;
 }
 
 .page-contact .form-control::placeholder {
@@ -2589,12 +2596,12 @@ lottie-player {
     line-height: 30px;
   }
 
-  .page-home .banner-home .banner-content h1 {
+  .banner-home .banner-content h1 {
     font-size: 34px;
     line-height: 42px;
   }
 
-  .page-home .banner-home .banner-content p {
+  .banner-home .banner-content p {
     margin-bottom: 40px;
     min-height: 100px;
     width: 100%;
@@ -2765,22 +2772,22 @@ lottie-player {
     display: none;
   }
 
-  .page-home .banner-home {
-    /* min-height: fit-content; */
+  .banner-home {
+    min-height: fit-content;
     padding: 80px 0;
   }
 
-  .page-home .banner-home .banner-content {
+  .banner-home .banner-content {
     width: 80%;
   }
 
-  .page-home .banner-home .banner-content h1,
+  .banner-home .banner-content h1,
   .heading h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  .page-home .banner-home .banner-content p {
+  .banner-home .banner-content p {
     margin-bottom: 40px;
     min-height: 110px;
     width: 100%;
@@ -3725,7 +3732,7 @@ lottie-player {
 }
 
 .section-our-teams-voice {
-  padding: 125px 0 0 0;
+  padding: 80px 0 80px 0;
 }
 
 @media (max-width: 767.98px) {
@@ -3825,7 +3832,11 @@ lottie-player {
 }
 
 .feedback-details {
-  padding: 20px 0px 20px 51px;
+  padding: 16px 0px 16px 36px;
+}
+
+.feedback-details p {
+  font-size: 14px;
 }
 
 .feedback-mobile {
@@ -3890,14 +3901,14 @@ lottie-player {
   background: url("../images/reviews/message1.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
-  left: -87px;
+  left: -870x;
   z-index: 1;
 }
 
 .side-image1 {
   position: absolute;
   top: 120px;
-  left: 54px;
+  left: 100px;
 }
 
 .side-image1 .side-review-text {
@@ -3920,7 +3931,7 @@ lottie-player {
 .side-image2 {
   position: absolute;
   top: 295px;
-  left: -27px;
+  left: 120px;
 }
 
 .side-image-container2 .side-review-text {
@@ -3950,7 +3961,7 @@ lottie-player {
 .side-image3 {
   position: absolute;
   top: -58px;
-  right: -100px;
+  right: -10px;
 }
 
 .side-image3 .side-review-text {
@@ -3973,8 +3984,8 @@ lottie-player {
 
 .side-image4 {
   position: absolute;
-  top: 381px;
-  right: -121px;
+  top: 380px;
+  right: -12px;
 }
 
 .side-image4 .side-review-text {
@@ -4508,9 +4519,10 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 
 /* Title */
 .section-contact-title {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 600;
   margin-bottom: 30px;
+  color: #444;
 }
 
 /* Contact Cards */
@@ -4520,8 +4532,8 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 10px 20px;
-  margin-bottom: 18px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
   transition: all 0.3s ease;
 }
 

@@ -1,16 +1,16 @@
-{{ "<!-- Company -->" | safeHTML }}
+{{ "<!-- About -->" | safeHTML }}
 
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  {{ $.Scratch.Set "company" true }} {{ partial "head" . }}
+  {{ $.Scratch.Set "about" true }} {{ partial "head" . }}
 
   <body>
     {{ partial "nav" . }}
     <div class="page-inner page-about">
-      {{ template "company/banner.html" .}} 
+      {{ template "about/banner.html" .}} 
       {{ template "homepage/stats.html" .}}
-      {{ template "company/our-story.html" .}} 
-      {{ template "company/our-culture.html" .}}
+      {{ template "about/our-story.html" .}} 
+      {{ template "about/our-culture.html" .}}
     </div>
     {{ template "homepage/why-scalereal.html" .}}
     {{ template "homepage/global-footprint.html" .}}
