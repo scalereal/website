@@ -4511,6 +4511,13 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   transition: all 0.3s ease;
 }
 
+.workflow-icon span {
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+}
+
 .workflow-icon i {
   font-size: 22px;
   color: #fff;
