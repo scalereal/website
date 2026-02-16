@@ -1,9 +1,6 @@
 <div
-class="bg-gradient"
-  style="
-    padding: 6rem 1rem;
-    border-bottom: 1px solid #e1e1e1;
-  "
+  class="bg-gradient"
+  style="padding: 6rem 1rem; border-bottom: 1px solid #e1e1e1"
 >
   <form
     method="post"
@@ -14,30 +11,22 @@ class="bg-gradient"
       max-width: 500px;
       margin: 0 auto;
       text-align: center;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif;
     "
   >
     <!-- Heading -->
-    <h3
-      style="
-        font-size: 1.75rem;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        color: #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-      "
-    >
-      <i class="fa fa-envelope-open-text" style="color: #333"></i> Join our
-      Newsletter
-    </h3>
-    <!-- Subtext -->
-    <p style="font-size: 1rem; color: #555; margin-bottom: 2rem">
-      Stay updated with the latest insights, blogs, and news from
-      <strong>ScaleReal</strong>.
-    </p>
+    <header class="heading content-center">
+      <div class="section-chip-light">
+        <div class="icon-newspaper"></div>
+        <span>Knowledge Hub</span>
+      </div>
+      <h2 class="section-title">
+        Join Our <span class="text-blue">Newsletter</span>
+      </h2>
+      <p class="section-subtitle section-info">
+        Stay updated with the latest insights, blogs, and news from ScaleReal.
+      </p>
+    </header>
     <input type="hidden" name="nonce" />
     <!-- Email Input with Icon -->
     <div style="position: relative; margin-bottom: 1rem">
@@ -115,25 +104,25 @@ class="bg-gradient"
         transition: all 0.3s;
       "
     >
-      <i class="fa fa-paper-plane" style="margin-right: 5px;"></i> Subscribe
+      <i class="fa fa-paper-plane" style="margin-right: 5px"></i> Subscribe
     </button>
     <!-- Disclaimer -->
     <p style="margin-top: 1rem; font-size: 0.85rem; color: #777">
-      <i class="fa fa-unlock-alt" style="margin-right: 5px;"></i> Unsubscribe anytime with a single click.
+      <i class="fa fa-unlock-alt" style="margin-right: 5px"></i> Unsubscribe
+      anytime with a single click.
     </p>
   </form>
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".listmonk-form");
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".listmonk-form");
 
-    form.addEventListener("submit", function () {
-      setTimeout(() => {
-        form.reset(); // clears all inputs
-      }, 300); // small delay to ensure submit happens
+      form.addEventListener("submit", function () {
+        setTimeout(() => {
+          form.reset(); // clears all inputs
+        }, 300); // small delay to ensure submit happens
+      });
     });
-  });
-</script>
-
+  </script>
 </div>
 <!-- Font Awesome CDN -->
 <link

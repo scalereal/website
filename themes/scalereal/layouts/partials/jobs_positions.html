@@ -1,9 +1,22 @@
 <section class="section-open-position">
 
     <div class="container">
-        <header class="heading">
-            <h2 class="f700 text-black ml-4">Job Positions</h2>
+       <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-users"></div>
+            <span>Roles</span>
+          </div>
+          <h2 class="section-title">
+            Job <span class="text-blue">Positions</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            Don't see a role that fits? Send us your resume anyway—we're always looking for exceptional talent.
+          </p>
         </header>
+      </div>
+    </div>
 
         <ul id="accordion" class="careers-accordion">
             {{ $data:= getJSON "/content/careers/jobs.json" }}
