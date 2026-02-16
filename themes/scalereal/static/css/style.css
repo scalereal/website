@@ -4318,6 +4318,23 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   gap: 40px;
 }
 
+.capabilities-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: var(--primary-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.capabilities-icon i {
+  font-size: 26px;
+  color: #fff;
+  display: inline-block;
+}
+
 /* Sidebar */
 .ai-capabilities-sidebar {
   width: 280px;
