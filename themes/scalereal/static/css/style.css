@@ -459,7 +459,9 @@ h3 {
 /* CHIPS
 -------------------------------------------------- */
 .section-chip-light {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 6px 20px;
   margin-bottom: 16px;
   border-radius: 999px;
@@ -468,19 +470,7 @@ h3 {
   color: var(--primary-color);
   background: rgba(56, 189, 248, 0.12);
   z-index: 5;
-}
-
-.section-chip-dark {
-  display: inline-block;
-  padding: 2px 20px;
-  margin-bottom: 16px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(6px);
+  width: fit-content;
 }
 
 .hero-badge {
@@ -4578,7 +4568,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 /* Icon */
-.icon-box {
+.icons-box {
   width: 40px;
   height: 40px;
   background: #e6f7f9;
