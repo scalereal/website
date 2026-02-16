@@ -896,6 +896,10 @@ h3 {
   width: 100%;
 }
 
+#navbarSupportedContent {
+  flex-grow: 0;
+}
+
 .navbar-expand-md .navbar-nav .nav-link {
   color: #444;
   margin-left: 40px;
@@ -960,7 +964,7 @@ h3 {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .hamburger-box {
@@ -981,7 +985,7 @@ h3 {
 .hamburger-inner::after {
   width: 26px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -1099,9 +1103,11 @@ h3 {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr 1.2fr 1.4fr;
-  gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 120px;
 }
 
 /* Brand */
@@ -3911,6 +3917,21 @@ lottie-player {
   left: 100px;
 }
 
+.side-review-text {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.feedback-name {
+  font-size: 14px;
+}
+
+.side-image1 .side-feedback-avatar {
+  position: relative;
+  top: 2px;
+  left: 100px;
+}
+
 .side-image1 .side-review-text {
   position: relative;
   padding-left: 20px;
@@ -3920,7 +3941,7 @@ lottie-player {
 .side-image-container2 {
   position: relative;
   width: 379px;
-  height: 300.5px;
+  height: 260.5px;
   background: url("../images/reviews/message2.png") center/contain no-repeat;
   display: flex;
   justify-content: center;
@@ -3937,7 +3958,7 @@ lottie-player {
 .side-image-container2 .side-review-text {
   position: absolute;
   padding-left: 20px;
-  padding-top: 67px;
+  padding-top: 60px;
   padding-right: 18px;
 }
 
@@ -3967,7 +3988,7 @@ lottie-player {
 .side-image3 .side-review-text {
   position: relative;
   padding-left: 30px;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .side-image-container4 {
@@ -3991,7 +4012,7 @@ lottie-player {
 .side-image4 .side-review-text {
   position: relative;
   padding-left: 25px;
-  padding-top: 28px;
+  padding-top: 35px;
 }
 
 .feedback-mobile .owl-carousel {
@@ -4367,7 +4388,6 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   font-size: 11px;
   border-radius: 20px;
   margin-right: 8px;
-  margin-bottom: 8px;
 }
 
 .ai-capabilities-card {
@@ -4541,6 +4561,13 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--primary-color);
+}
+
+.contact-us-wrapper {
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 /* Icon */

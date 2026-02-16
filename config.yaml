@@ -26,8 +26,6 @@ params:
       url: /
     - name: Services
       url: /services
-    - name: AI Solutions
-      url: /ai-services
     - name: Projects
       url: /projects
     - name: About
