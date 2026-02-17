@@ -22,7 +22,7 @@
       <!-- LEFT SIDEBAR -->
       <aside class="ai-capabilities-sidebar">
         <ul>
-          {{ $data := getJSON "/content/experties/services.json" }} {{ range
+          {{ $data := getJSON "/content/expertise/services.json" }} {{ range
           $index, $item := $data }}
           <li>
             <a href="#{{ .id }}" class="{{ if eq $index 0 }}active{{ end }}">
@@ -36,7 +36,7 @@
 
       <!-- RIGHT CONTENT -->
       <div class="ai-capabilities-content">
-        {{ $data := getJSON "/content/experties/services.json" }} {{ range
+        {{ $data := getJSON "/content/expertise/services.json" }} {{ range
         $index, $item := $data }}
         <div
           id="{{ .id }}"
