@@ -34,8 +34,6 @@ params:
       url: /blogs
     - name: Careers
       url: /careers
-    - name: Contact
-      url: /contact
   fonts:
     google: [['Open Sans', '300,400,600,700,800']]
   tags: ['Web Application']
