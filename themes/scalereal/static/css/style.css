@@ -4441,12 +4441,12 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .ai-capabilities-sidebar a.active {
-  background: var(--primary-gradient);
+  background: var(--primary-color);
   color: #ffffff;
 }
 
 .ai-capabilities-sidebar a.active:hover {
-  background: var(--primary-gradient);
+  background: var(--primary-color);
   color: #ffffff;
 }
 
@@ -4773,7 +4773,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .rating-score .score {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1;
 }
@@ -4782,7 +4782,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   font-size: 20px;
   font-weight: 400;
   color: #888;
-  margin-left: 2px;
+  /* margin-left: 2px; */
 }
 
 .rating-logo {
@@ -4980,7 +4980,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   gap: 16px;
   flex-wrap: wrap;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px !important;
 
   span {
     font-weight: 400 !important;
@@ -5072,7 +5072,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .careers-accordion .key-list li {
   position: relative;
   padding-left: 18px;
-  font-size: 14px;
+  font-size: 16px;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 5px;

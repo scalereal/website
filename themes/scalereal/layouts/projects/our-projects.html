@@ -32,13 +32,13 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     align-items: flex-start;
-    padding: 0 60px; /* consistent left/right breathing room */
+    padding: 0 100px; /* consistent left/right breathing room */
   }
 
   /* "Showing X projects" sits BELOW chips */
   .projects-count {
     margin-top: 16px;
-    padding: 0 60px;
+    padding: 0 100px;
     font-size: 0.88rem;
     color: #6b7280;
     font-weight: 500;
@@ -59,7 +59,7 @@
     border: 1.5px solid #d1d5db;
     background: #ffffff;
     color: #374151;
-    font-size: 0.82rem;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition:
@@ -288,7 +288,7 @@
 </div>
 
 <!-- Project cards injected here -->
-<div id="projects-container"></div>
+<div id="projects-container" class="bg-gradient"></div>
 <div id="loader" class="loader"></div>
 
 <script>
@@ -300,27 +300,22 @@
   const wantedFilters = [
     "All",
     "AI",
-    "Lifestyle",
+    // "Lifestyle",
     "SalesTech",
     "Analytics",
     "Gaming",
     "Community Platform",
     "Fleet Management",
-    "Logistics",
     "IoT",
     "FinTech",
     "EdTech",
-    "Carbon Credits",
     "Sustainability",
-    "RetailTech",
     "Computer Vision",
-    "Supply Chain",
     "Cloud Infrastructure",
     "Healthcare",
     "E-commerce",
     "GIS",
     "Hospitality",
-    "Hotel Management",
   ];
   projects.forEach((p) => (p.categories || []).forEach((c) => catSet.add(c)));
   const allCategories = [ALL_LABEL, ...Array.from(catSet).sort()].filter(
