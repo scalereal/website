@@ -1,0 +1,141 @@
+<section class="bg-neutral">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-layers"></div>
+            <span>Full-Stack Capabilities</span>
+          </div>
+          <h2 class="section-title">
+            Engineering <span class="text-blue">Excellence</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            Select a service to explore our capabilities, tech stack, and the
+            problems we solve.
+          </p>
+        </header>
+      </div>
+    </div>
+
+    <div class="ai-capabilities-layout">
+      <!-- LEFT SIDEBAR -->
+      <aside class="ai-capabilities-sidebar">
+        <ul>
+          {{ $data := getJSON "/content/experties/services.json" }} {{ range
+          $index, $item := $data }}
+          <li>
+            <a href="#{{ .id }}" class="{{ if eq $index 0 }}active{{ end }}">
+              <i class="{{ .icon }} mr-1"></i>
+              {{ .title }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </aside>
+
+      <!-- RIGHT CONTENT -->
+      <div class="ai-capabilities-content">
+        {{ $data := getJSON "/content/experties/services.json" }} {{ range
+        $index, $item := $data }}
+        <div
+          id="{{ .id }}"
+          class="ai-capabilities-card {{ if eq $index 0 }}visible{{ end }}"
+        >
+          <div class="ai-capabilities-card-header">
+            <div class="capabilities-icon">
+              <i class="{{ .icon }}"></i>
+            </div>
+            <div>
+              <h3>{{ .title }}</h3>
+
+              {{ range .chips }}
+              <div class="ai-capabilities-chip">{{ . }}</div>
+              {{ end }}
+            </div>
+          </div>
+
+          <p>{{ .description }}</p>
+
+          <div class="ai-capabilities-grid">
+            <div>
+              <h4>Key Capabilities</h4>
+              <div class="row">
+                <ul class="col-lg-6">
+                  {{ range first 3 .keyCapabilities }}
+                  <li><i class="icon-check mr-1 text-blue"></i> {{ . }}</li>
+                  {{ end }}
+                </ul>
+                <ul class="col-lg-6">
+                  {{ range after 3 .keyCapabilities }}
+                  <li><i class="icon-check mr-1 text-blue"></i> {{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h4>Technologies</h4>
+              <div class="sr-tags">
+                {{ range .technologies }}
+                <span>{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="ai-capabilities-divider"></div>
+            <div class="sr-btn-wrapper mr-auto">
+              <a href="/services" class="sr-btn secondary py-2">
+                Discuss Your Project <i class="icon-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebarLinks = document.querySelectorAll(
+      ".ai-capabilities-sidebar a",
+    );
+    const cards = document.querySelectorAll(".ai-capabilities-card");
+
+    function showCard(targetId) {
+      // Remove active from all links
+      sidebarLinks.forEach((link) => link.classList.remove("active"));
+
+      // Hide all cards
+      cards.forEach((card) => {
+        card.classList.remove("visible");
+      });
+
+      // Add active to clicked link
+      const activeLink = document.querySelector(
+        '.ai-capabilities-sidebar a[href="' + targetId + '"]',
+      );
+      if (activeLink) activeLink.classList.add("active");
+
+      // Show target card
+      const targetCard = document.querySelector(targetId);
+      if (targetCard) targetCard.classList.add("visible");
+    }
+
+    // Handle clicks
+    sidebarLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        showCard(targetId);
+      });
+    });
+
+    // Show first card by default
+    if (cards.length > 0) {
+      showCard("#backend");
+    }
+  });
+</script>

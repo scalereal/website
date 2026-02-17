@@ -1,0 +1,19 @@
+{{ "<!-- Services -->" | safeHTML }}
+
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ $.Scratch.Set "services" true }} {{ partial "head" . }}
+
+  <body>
+    <div class="page-home">
+      {{ partial "nav" . }}
+      <div class="page-inner page-services" id="fullpage">
+        {{ template "experties/banner.html" .}}
+        {{ template "experties/our-services.html" .}}
+        {{ template "ai-services/schedule-consultation.html" .}}
+      </div>
+      {{ partial "footer" . }}
+    </div>
+  </body>
+  {{ partial "js" . }}
+</html>

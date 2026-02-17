@@ -24,8 +24,8 @@ params:
   navigation:
     - name: Home
       url: /
-    - name: Services
-      url: /services
+    - name: Experties
+      url: /experties
     - name: Projects
       url: /projects
     - name: About
