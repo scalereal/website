@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="page-home">
+      {{ partial "nav" . }} 
+      {{ template "ai-services/banner.html" .}} 
+      {{ template "ai-services/ai-capabilities.html" .}}
+      {{ template "ai-services/why-scalereal-for-ai.html" .}}
+      {{ template "ai-services/ai-solutions.html" .}}
+      {{ template "ai-services/schedule-consultation.html" .}}
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+  {{ partial "js" . }}
+</html>

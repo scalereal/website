@@ -1,0 +1,502 @@
+<style>
+  /* ── Loader ── */
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted #0eccd8;
+    border-radius: 50%;
+    display: block;
+    margin: 5rem auto;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ── Filter Section ── */
+  .projects-filter-section {
+    padding: 40px 0 0;
+  }
+
+  /* Chips row — padded on both sides, wraps naturally */
+  .filter-chips-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+    padding: 0 100px; /* consistent left/right breathing room */
+  }
+
+  /* "Showing X projects" sits BELOW chips */
+  .projects-count {
+    margin-top: 16px;
+    padding: 0 100px;
+    font-size: 0.88rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  .projects-count strong {
+    color: #0eccd8;
+    font-weight: 700;
+  }
+
+  /* ── Individual chip ── */
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 1.05rem;
+    border-radius: 999px;
+    border: 1.5px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      color 0.2s,
+      background 0.2s,
+      box-shadow 0.2s;
+    white-space: nowrap;
+    line-height: 1.4;
+    user-select: none;
+  }
+
+  .filter-chip:hover {
+    border-color: #0eccd8;
+    color: #0eccd8;
+    background: rgba(14, 204, 216, 0.05);
+  }
+
+  .filter-chip.active {
+    background: #0eccd8;
+    border-color: #0eccd8;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(14, 204, 216, 0.35);
+  }
+
+  .filter-chip .chip-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding: 0 0.28rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.08);
+    line-height: 1;
+  }
+
+  .filter-chip.active .chip-count {
+    background: rgba(255, 255, 255, 0.28);
+    color: #fff;
+  }
+
+  /* ── No Results ── */
+  .no-results-msg {
+    display: none;
+    text-align: center;
+    padding: 5rem 1rem;
+    color: #6b7280;
+  }
+
+  .no-results-msg svg {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    display: block;
+    opacity: 0.35;
+  }
+
+  .no-results-msg h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.35rem;
+  }
+
+  /* ── Category chips on project card ── */
+  .project-category-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-category-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.22rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(14, 204, 216, 0.1);
+    color: #0aa8b3;
+    font-size: 0.72rem;
+    font-weight: 600;
+    border: 1px solid rgba(14, 204, 216, 0.28);
+    line-height: 1.4;
+  }
+
+  /* ── Tech Chips ── */
+  .project-tech {
+    margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-tech-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-grey);
+    margin-bottom: 12px;
+  }
+
+  .tech-chips-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .tech-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.28rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+    transition:
+      border-color 0.15s,
+      color 0.15s;
+  }
+
+  .tech-chip:hover {
+    border-color: #0eccd8;
+    color: #0eccd8;
+  }
+
+  /*
+   * ── Consistent gap between image col and text col ──
+   *
+   * Bootstrap's .row gives columns padding-left/right via its gutter.
+   * We override both columns to have equal internal padding so the
+   * visual gap between image and text is identical whether the image
+   * is on the left (flex-row) or right (flex-row-reverse).
+   */
+  .section-project-detail .project-row > [class*="col-"] {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  /* Align items vertically centered */
+  .section-project-detail .project-row {
+    align-items: center;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 991px) {
+    .section-project-detail .project-row > [class*="col-"] {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-project-detail .project-row > [class*="col-"] {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    /* Text col gets top margin on mobile when stacked */
+    .section-project-detail .project-row .col-text {
+      margin-top: 1.5rem;
+    }
+
+    .filter-chips-wrap {
+      padding: 0 1rem;
+    }
+
+    .projects-count {
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .filter-chip {
+      font-size: 0.76rem;
+      padding: 0.35rem 0.8rem;
+    }
+
+    .filter-chips-wrap {
+      padding: 0 0.75rem;
+      gap: 0.4rem;
+    }
+
+    .projects-count {
+      padding: 0 0.75rem;
+    }
+
+    .tech-chip {
+      font-size: 0.7rem;
+      padding: 0.22rem 0.6rem;
+    }
+  }
+</style>
+
+<!-- ── Filter UI ── -->
+<div class="projects-filter-section bg-white">
+  <div class="filter-chips-wrap" id="filter-chips">
+    <!-- injected by JS -->
+  </div>
+  <p class="projects-count">
+    Showing <strong id="visible-count">0</strong> projects
+  </p>
+</div>
+
+<!-- No results fallback -->
+<div id="no-results" class="no-results-msg">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+  <h3>No projects found</h3>
+  <p>Try selecting a different category.</p>
+</div>
+
+<!-- Project cards injected here -->
+<div id="projects-container" class="bg-gradient"></div>
+<div id="loader" class="loader"></div>
+
+<script>
+    const projects = JSON.parse({{ getJSON "/content/projects/data.json" | jsonify }});
+
+  /* ── Gather unique categories, sort A-Z, pin "All" first ── */
+  const ALL_LABEL = "All";
+  const catSet = new Set();
+  const wantedFilters = [
+    "All",
+    "AI",
+    // "Lifestyle",
+    "SalesTech",
+    "Analytics",
+    "Gaming",
+    "Community Platform",
+    "Fleet Management",
+    "IoT",
+    "FinTech",
+    "EdTech",
+    "Sustainability",
+    "Computer Vision",
+    "Cloud Infrastructure",
+    "Healthcare",
+    "E-commerce",
+    "GIS",
+    "Hospitality",
+  ];
+  projects.forEach((p) => (p.categories || []).forEach((c) => catSet.add(c)));
+  const allCategories = [ALL_LABEL, ...Array.from(catSet).sort()].filter(
+    (item) => wantedFilters.includes(item),
+  );
+
+  function countFor(cat) {
+    return cat === ALL_LABEL
+      ? projects.length
+      : projects.filter((p) => (p.categories || []).includes(cat)).length;
+  }
+
+  /* ── DOM refs ── */
+  const chipsEl = document.getElementById("filter-chips");
+  const loader = document.getElementById("loader");
+  const noResultsEl = document.getElementById("no-results");
+  const countEl = document.getElementById("visible-count");
+  const containerEl = document.getElementById("projects-container");
+
+  /* ── App state ── */
+  let activeFilter = ALL_LABEL;
+  let filteredItems = []; // array of HTML strings
+  let currentIndex = 0;
+
+  /* ── Render chips ── */
+  function renderChips() {
+    chipsEl.innerHTML = "";
+    allCategories.forEach((cat) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "filter-chip" + (cat === activeFilter ? " active" : "");
+      btn.setAttribute("aria-pressed", cat === activeFilter ? "true" : "false");
+      btn.innerHTML = `${cat}<span class="chip-count">${countFor(cat)}</span>`;
+      btn.addEventListener("click", () => {
+        if (activeFilter === cat) return; // no-op if already active
+        activeFilter = cat;
+        renderChips();
+        resetAndLoad();
+      });
+      chipsEl.appendChild(btn);
+    });
+  }
+
+  /* ── Build project card HTML ── */
+  function buildCard(project, index) {
+    const isOdd = index % 2 !== 0;
+    const rowDir = isOdd ? "flex-row" : "flex-row-reverse";
+    const textAos = isOdd ? "fade-left" : "fade-right";
+    const imageAos = isOdd ? "fade-right" : "fade-left";
+    const secClass = `${project.main_container_class}${!isOdd ? " even-project" : ""}`;
+
+    const textAnchor =
+      !project.anchor_on_image && project.data_aos_anchor
+        ? `data-aos-anchor="${project.data_aos_anchor}"`
+        : "";
+    const imgAnchor =
+      project.anchor_on_image && project.data_aos_anchor
+        ? `data-aos-anchor="${project.data_aos_anchor}"`
+        : "";
+
+    const caseStudyBtn = project.case_study_url
+      ? `<a class="sr-btn secondary py-2" href="${project.case_study_url}">View Case Study <i class="icon-arrow-right"></i></a>`
+      : "";
+
+    const catChips = (project.categories || [])
+      .map((c) => `<span class="project-category-chip">${c}</span>`)
+      .join("");
+    const catHTML = catChips
+      ? `<div class="project-category-chips">${catChips}</div>`
+      : "";
+
+    const techChips = project.technologies
+      .split(",")
+      .map((t) => t.trim())
+      .filter(Boolean)
+      .map((t) => `<span class="tech-chip">${t}</span>`)
+      .join("");
+
+    return `
+      <section class="${secClass}">
+        <div class="container">
+          <div class="row project-row ${rowDir}">
+
+            <div class="col-md-6 col-order col-image"
+                 data-aos="${imageAos}" ${imgAnchor}>
+              <div class="img-wrap">
+                <picture>
+                  <source srcset="${project.images[0]}" media="(max-width:592px)">
+                  <source srcset="${project.images[1]}" media="(max-width:768px)">
+                  <img src="${project.images[2]}" alt="${project.alt}" loading="lazy">
+                </picture>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-order col-text align-self-center"
+                 data-aos="${textAos}" ${textAnchor}>
+              ${catHTML}
+              <h2 class="f700 text-black">${project.title}</h2>
+              <p class="text-grey">${project.description}</p>
+              <div class="project-tech">
+                <p class="project-tech-label">TECH STACK</p>
+                <div class="sr-tags mt-2">${techChips}</div>
+              </div>
+              ${caseStudyBtn}
+            </div>
+
+          </div>
+        </div>
+      </section>`;
+  }
+
+  /* ── Get filtered project list ── */
+  function getFiltered() {
+    return activeFilter === ALL_LABEL
+      ? projects
+      : projects.filter((p) => (p.categories || []).includes(activeFilter));
+  }
+
+  /* ── Intersection observer for infinite scroll ── */
+  const scrollObserver = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting && currentIndex < filteredItems.length) {
+        appendBatch(3);
+      }
+    },
+    { rootMargin: "200px" },
+  );
+
+  /* ── Append next batch of cards ── */
+  function appendBatch(n = 3) {
+    const nodes = [];
+
+    for (
+      let i = currentIndex;
+      i < currentIndex + n && i < filteredItems.length;
+      i++
+    ) {
+      const div = document.createElement("div");
+      div.innerHTML = filteredItems[i];
+      nodes.push(div);
+    }
+
+    loader.style.display = "block";
+    nodes.forEach((node) => containerEl.appendChild(node));
+
+    if (window.AOS) window.AOS.refresh();
+
+    currentIndex += n;
+
+    if (currentIndex >= filteredItems.length) {
+      loader.style.display = "none";
+    } else {
+      scrollObserver.disconnect();
+      const last = nodes[nodes.length - 1];
+      if (last) setTimeout(() => scrollObserver.observe(last), 60);
+    }
+  }
+
+  /* ── Reset state and start fresh ── */
+  function resetAndLoad() {
+    scrollObserver.disconnect();
+    currentIndex = 0;
+    containerEl.innerHTML = "";
+
+    const filtered = getFiltered();
+    filteredItems = filtered.map((p, i) => buildCard(p, i));
+
+    /* ✅ Show TOTAL count immediately (not loaded count) */
+    countEl.textContent = filteredItems.length;
+
+    if (filteredItems.length === 0) {
+      noResultsEl.style.display = "block";
+      loader.style.display = "none";
+      return;
+    }
+
+    noResultsEl.style.display = "none";
+    appendBatch(3);
+  }
+
+  /* ── Initialise ── */
+  renderChips();
+  resetAndLoad();
+</script>

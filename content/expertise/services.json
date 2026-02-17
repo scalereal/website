@@ -1,0 +1,202 @@
+[
+  {
+    "id": "backend",
+    "icon": "icon-code",
+    "title": "Backend Engineering",
+    "description": "Robust, scalable backend systems built for performance. From APIs and microservices to database architecture and cloud infrastructure, we engineer the backbone of your digital products.",
+    "keyCapabilities": [
+      "RESTful & GraphQL API design",
+      "Microservices architecture",
+      "Database optimization & scaling",
+      "Message queues & event-driven systems",
+      "Authentication & authorization",
+      "Performance profiling & tuning"
+    ],
+    "technologies": [
+      "Python (Django, FastAPI)",
+      "Java/Kotlin (Spring Boot)",
+      "Node.js (NestJS)",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Go"
+    ],
+    "chips": [
+      "SaaS Platforms",
+      "FinTech Systems",
+      "E-commerce Backends",
+      "Real-time APIs"
+    ]
+  },
+  {
+    "id": "ai",
+    "icon": "icon-brain",
+    "title": "AI Development",
+    "description": "From proof-of-concept to production, we design, train, and deploy AI solutions. Conversational bots, OCR/document automation, predictive analytics, and vision systems with MLOps.",
+    "keyCapabilities": [
+      "Custom LLM fine-tuning & RAG",
+      "Voice AI & speech processing",
+      "OCR & document intelligence",
+      "Predictive analytics & ML models",
+      "MLOps & model deployment",
+      "Data pipelines & feature engineering"
+    ],
+    "technologies": [
+      "OpenAI",
+      "Anthropic",
+      "LangChain",
+      "PyTorch",
+      "TensorFlow",
+      "Retell AI",
+      "ElevenLabs"
+    ],
+    "chips": [
+      "Chatbots & Assistants",
+      "Document Automation",
+      "Voice Agents",
+      "Predictive Analytics"
+    ]
+  },
+  {
+    "id": "design",
+    "icon": "icon-palette",
+    "title": "UI/UX Design & Consulting",
+    "description": "Human-centered design combined with strategic product consulting, ensuring every product not only looks great but aligns with business goals and user needs from day one.",
+    "keyCapabilities": [
+      "User research & personas",
+      "Wireframing & prototyping",
+      "Design system creation",
+      "Accessibility audits (WCAG)",
+      "Interaction & motion design",
+      "Usability testing & iteration"
+    ],
+    "technologies": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Framer",
+      "Storybook",
+      "TailwindCSS"
+    ],
+    "chips": [
+      "Product Redesign",
+      "Design Systems",
+      "Mobile UX",
+      "Brand Identity"
+    ]
+  },
+  {
+    "id": "frontend",
+    "icon": "icon-server",
+    "title": "Frontend Engineering",
+    "description": "Modern, performant web applications built with the latest frameworks and best practices for exceptional user experiences.",
+    "keyCapabilities": [
+      "Component-driven architecture",
+      "Server-side rendering & SSG",
+      "State management patterns",
+      "Performance optimization",
+      "Micro-frontend architecture",
+      "Progressive web apps (PWA)"
+    ],
+    "technologies": [
+      "React",
+      "Next.js",
+      "Vue",
+      "TailwindCSS",
+      "shadcn/ui",
+      "Redux",
+      "Zustand"
+    ],
+    "chips": [
+      "SaaS Dashboards",
+      "E-commerce",
+      "Marketing Sites",
+      "Admin Panels"
+    ]
+  },
+  {
+    "id": "mobile",
+    "icon": "icon-smartphone",
+    "title": "Mobile Engineering",
+    "description": "Native and cross-platform mobile applications with seamless performance, offline capabilities, and native integrations.",
+    "keyCapabilities": [
+      "Cross-platform development",
+      "Offline-first architecture",
+      "Push notifications & deep linking",
+      "In-app purchases & subscriptions",
+      "Native module integration",
+      "App store optimization & publishing"
+    ],
+    "technologies": [
+      "React Native",
+      "Flutter",
+      "Kotlin",
+      "Swift",
+      "KMP",
+      "Expo"
+    ],
+    "chips": [
+      "Consumer Apps",
+      "Enterprise Mobile",
+      "IoT Companions",
+      "Health & Fitness"
+    ]
+  },
+  {
+    "id": "devops",
+    "icon": "icon-cloud",
+    "title": "DevOps & Cloud Engineering",
+    "description": "Robust infrastructure, automated pipelines, and cloud-native solutions for scalable, secure, and cost-optimized deployments.",
+    "keyCapabilities": [
+      "CI/CD pipeline automation",
+      "Container orchestration",
+      "Infrastructure as Code (IaC)",
+      "Monitoring & observability",
+      "Security hardening & compliance",
+      "Cost optimization & scaling"
+    ],
+    "technologies": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "chips": [
+      "Cloud Migration",
+      "Auto-scaling",
+      "Disaster Recovery",
+      "Multi-region Deploy"
+    ]
+  },
+  {
+    "id": "project-management",
+    "icon": "icon-clipboard-list",
+    "title": "Project Management",
+    "description": "End-to-end project management ensuring on-time, on-budget delivery. We bring structure, visibility, and accountability to every engagement with proven agile methodologies.",
+    "keyCapabilities": [
+      "Agile & Scrum ceremonies",
+      "Sprint planning & retrospectives",
+      "Risk assessment & mitigation",
+      "Stakeholder communication",
+      "Release & capacity planning",
+      "KPI tracking & reporting"
+    ],
+    "technologies": [
+      "Jira",
+      "Linear",
+      "Asana",
+      "Notion",
+      "Confluence",
+      "Slack"
+    ],
+    "chips": [
+      "Team Augmentation",
+      "Fixed-price Projects",
+      "Agile Coaching",
+      "Rescue Projects"
+    ]
+  }
+]
