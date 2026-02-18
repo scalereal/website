@@ -37,7 +37,7 @@
 
   /* "Showing X projects" sits BELOW chips */
   .projects-count {
-    margin-top: 16px;
+    padding: 16px 0;
     padding: 0 100px;
     font-size: 0.88rem;
     color: #6b7280;
@@ -259,7 +259,7 @@
 </style>
 
 <!-- ── Filter UI ── -->
-<div class="projects-filter-section bg-white">
+<div class="projects-filter-section bg-gradient">
   <div class="filter-chips-wrap" id="filter-chips">
     <!-- injected by JS -->
   </div>
@@ -365,7 +365,7 @@
     const rowDir = isOdd ? "flex-row" : "flex-row-reverse";
     const textAos = isOdd ? "fade-left" : "fade-right";
     const imageAos = isOdd ? "fade-right" : "fade-left";
-    const secClass = `${project.main_container_class}${!isOdd ? " even-project" : ""}`;
+    const secClass = `${project.main_container_class}${isOdd ? " even-project" : ""}`;
 
     const textAnchor =
       !project.anchor_on_image && project.data_aos_anchor
