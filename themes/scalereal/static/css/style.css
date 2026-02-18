@@ -354,7 +354,10 @@ h3 {
 }
 
 .owl-two.owl-carousel .owl-dots {
-  margin-left: 62px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /* CARDS
@@ -2055,8 +2058,7 @@ h3 {
 }
 
 .section-client .text-wrap {
-  padding: 0 50px;
-  margin-right: 50px;
+  padding: 0 0 0 50px;
   position: relative;
 }
 
