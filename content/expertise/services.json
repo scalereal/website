@@ -118,7 +118,7 @@
     "id": "mobile",
     "icon": "icon-smartphone",
     "title": "Mobile Engineering",
-    "description": "Native and cross-platform mobile applications with seamless performance, offline keyCapabilities, and native integrations.",
+    "description": "Native and cross-platform mobile applications with seamless performance, offline capabilities, and native integrations.",
     "keyCapabilities": [
       "Cross-platform development",
       "Offline-first architecture",
