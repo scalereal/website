@@ -1,3 +1,4 @@
+<!-- TODO: Code Refactor -->
 <style>
   /* ── Loader ── */
   .loader {
@@ -37,8 +38,7 @@
 
   /* "Showing X projects" sits BELOW chips */
   .projects-count {
-    margin-top: 16px;
-    padding: 0 100px;
+    padding: 16px 100px;
     font-size: 0.88rem;
     color: #6b7280;
     font-weight: 500;
@@ -145,6 +145,19 @@
     font-size: 0.72rem;
     font-weight: 600;
     border: 1px solid rgba(14, 204, 216, 0.28);
+    line-height: 1.4;
+  }
+
+  .project-category-chip-sec {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.22rem 0.7rem;
+    border-radius: 999px;
+    background: #edf1f3;
+    color: #444;
+    font-size: 0.72rem;
+    font-weight: 600;
+    border: 1px solid #edf1f3;
     line-height: 1.4;
   }
 
@@ -259,7 +272,7 @@
 </style>
 
 <!-- ── Filter UI ── -->
-<div class="projects-filter-section bg-white">
+<div class="projects-filter-section bg-gradient">
   <div class="filter-chips-wrap" id="filter-chips">
     <!-- injected by JS -->
   </div>
@@ -292,7 +305,7 @@
 <div id="loader" class="loader"></div>
 
 <script>
-    const projects = JSON.parse({{ getJSON "/content/projects/data.json" | jsonify }});
+  const projects = JSON.parse({{ getJSON "/content/projects/data.json" | jsonify }});
 
   /* ── Gather unique categories, sort A-Z, pin "All" first ── */
   const ALL_LABEL = "All";
@@ -365,7 +378,7 @@
     const rowDir = isOdd ? "flex-row" : "flex-row-reverse";
     const textAos = isOdd ? "fade-left" : "fade-right";
     const imageAos = isOdd ? "fade-right" : "fade-left";
-    const secClass = `${project.main_container_class}${!isOdd ? " even-project" : ""}`;
+    const secClass = `${project.main_container_class}${isOdd ? " even-project" : ""}`;
 
     const textAnchor =
       !project.anchor_on_image && project.data_aos_anchor
@@ -381,7 +394,11 @@
       : "";
 
     const catChips = (project.categories || [])
-      .map((c) => `<span class="project-category-chip">${c}</span>`)
+      .map((c) =>
+        wantedFilters.includes(c)
+          ? `<span class="project-category-chip">${c}</span>`
+          : `<span class="project-category-chip-sec">${c}</span>`,
+      )
       .join("");
     const catHTML = catChips
       ? `<div class="project-category-chips">${catChips}</div>`
