@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head" . }}
-
   <body>
     {{ partial "nav" . }} 
     {{ template "blogs/banner.html" . }}
@@ -10,7 +9,8 @@
       {{ template "blogs/all-blogs.html" . }} 
       {{partial "pagination" .}}
     </div>
-    {{ partial "newsletter.html" . }} {{ partial "footer" . }} {{ partial "js" .
-    }}
+    {{ partial "newsletter.html" . }} 
+    {{ partial "footer" . }} 
+    {{ partial "js" .}}
   </body>
 </html>

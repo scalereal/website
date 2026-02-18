@@ -3323,20 +3323,19 @@ lottie-player {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-  height: 60px;
-  line-height: 27px;
+  height: 50px;
+  line-height: 24px;
 }
 .page-blog-list .blog-title-text {
-  font-size: 30px;
-  margin-bottom: 12px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   word-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  height: 72px;
+  height: 60px;
 }
 .popular-reads-section .banner-img {
   width: 97%;
@@ -3369,7 +3368,7 @@ lottie-player {
   margin-bottom: 10px;
 }
 .popular-reads-section .sub-text {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .article-content ol {
