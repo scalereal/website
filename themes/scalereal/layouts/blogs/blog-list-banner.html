@@ -19,9 +19,9 @@
     </div> -->
 
     <section class="popular-reads-section">
-      {{ range where .Data.Pages ".Params.blog_place" "banner" }} {{
-      $authorFirstName := lower (index (split .Params.author " ") 0)}} {{
-      $authorLastName := lower (index (split .Params.author " ") 1)}}
+      {{ range where .Data.Pages ".Params.blog_place" "banner" }} 
+      {{ $authorFirstName := lower (index (split .Params.author " ") 0)}} 
+      {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
 
       <div class="row">
         <div class="col-lg-6 col-md-12">
@@ -67,9 +67,9 @@
 
     <section class="popular-list-section">
       <ul class="js-blog-carousel owl-carousel blog-carousel row">
-        {{ range where .Data.Pages ".Params.blog_place" "popular" }} {{
-        $authorFirstName := lower (index (split .Params.author " ") 0)}} {{
-        $authorLastName := lower (index (split .Params.author " ") 1)}}
+        {{ range where .Data.Pages ".Params.blog_place" "popular" }} 
+        {{ $authorFirstName := lower (index (split .Params.author " ") 0)}} 
+        {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
 
         <li>
           <a href="{{ .Permalink }}" aria-label="Blog Banner">
