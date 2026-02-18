@@ -1,6 +1,6 @@
-<section>
+<section style="padding-top: 100px;">
   <div class="container">
-    <div class="row justify-content-md-center">
+    <!-- <div class="row justify-content-md-center">
       <div class="col-md-8">
         <header class="heading content-center">
           <div class="section-chip-light">
@@ -16,7 +16,7 @@
           </p>
         </header>
       </div>
-    </div>
+    </div> -->
 
     <section class="popular-reads-section">
       {{ range where .Data.Pages ".Params.blog_place" "banner" }} {{
@@ -28,7 +28,7 @@
           <a href="{{ .Permalink }}" aria-label="Blog Banner">
             <div
               class="img-bg banner-img"
-              style="background-image: url({{.Params.image}});"
+              style="background-image: url({{.Params.image}}); border-radius: 8px;"
             ></div>
           </a>
         </div>
@@ -75,7 +75,7 @@
           <a href="{{ .Permalink }}" aria-label="Blog Banner">
             <div
               class="img-bg"
-              style="background-image: url({{.Params.image}})"
+              style="background-image: url({{.Params.image}}); border-radius: 8px;"
             ></div>
             <h3 class="f700 text-black blog-title-text">{{.Title}}</h3>
             <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>

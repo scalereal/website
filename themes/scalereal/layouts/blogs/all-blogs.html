@@ -1,57 +1,17 @@
-<section class="all-list-section">
-  <div class="container">
-    <h2 class="f700 text-black">All Stories</h2>
-  </div>
-  <div class="all-stories-wrap">
-    <div class="container">
-      <ul class="category-list d-flex">
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-        <li>
-          <div class="text">ROR</div>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="all-list-section">
 
   <div class="container">
     <ul class="row">
-      {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place"
-      "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }} {{ range
-      $paginator.Pages}} {{ $authorFirstName := lower (index (split
-      .Params.author " ") 0)}} {{ $authorLastName := lower (index (split
-      .Params.author " ") 1)}}
+      {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }} 
+      {{ range $paginator.Pages}} 
+      {{ $authorFirstName := lower (index (split .Params.author " ") 0)}} 
+      {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
 
       <li class="col-lg-4 col-md-6 all-blogs-section">
         <a href="{{ .Permalink }}">
           <div
             class="img-bg"
-            style="background-image: url({{.Params.image}})"
+            style="background-image: url({{.Params.image}}); border-radius: 8px;"
           ></div>
           <h3 class="f700 text-black blog-title-text">{{.Title}}</h3>
           <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
@@ -76,4 +36,4 @@
       {{end}}
     </ul>
   </div>
-</section>
+</div>
