@@ -14,11 +14,7 @@
   margin-bottom: 40px;
   font-weight: bold;
 }
-.page-blog-list section,
-.page-blog-details section {
-  padding: 0;
-  margin-bottom: 60px;
-}
+
 .page-blog-list li,
 .page-blog-details li {
   list-style-type: none;

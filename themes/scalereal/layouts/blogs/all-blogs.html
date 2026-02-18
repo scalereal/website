@@ -1,8 +1,24 @@
-<div class="all-list-section">
-<div class="container">
-    <h2 class="f700 text-black">All Stories</h2>
-  </div>
+<section class="all-list-section pb-0" id="all-blogs">
+
   <div class="container">
+     <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-building-2"></div>
+            <span>Popular Reads</span>
+          </div>
+          <h2 class="section-title">
+            All <span class="text-blue">Blogs</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            We bring domain expertise to deliver AI solutions tailored for your
+            industry's unique challenges.
+          </p>
+        </header>
+      </div>
+    </div>
+
     <ul class="row">
       {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }} 
       {{ range $paginator.Pages}} 
@@ -38,4 +54,4 @@
       {{end}}
     </ul>
   </div>
-</div>
+</section>
