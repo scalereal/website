@@ -1,0 +1,107 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-building-2"></div>
+            <span>Update This</span>
+          </div>
+          <h2 class="section-title">
+            Our <span class="text-blue">Blogs</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            We bring domain expertise to deliver AI solutions tailored for your
+            industry's unique challenges.
+          </p>
+        </header>
+      </div>
+    </div>
+
+    <section class="popular-reads-section">
+      {{ range where .Data.Pages ".Params.blog_place" "banner" }} {{
+      $authorFirstName := lower (index (split .Params.author " ") 0)}} {{
+      $authorLastName := lower (index (split .Params.author " ") 1)}}
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <a href="{{ .Permalink }}" aria-label="Blog Banner">
+            <div
+              class="img-bg banner-img"
+              style="background-image: url({{.Params.image}});"
+            ></div>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-order align-self-center">
+          <p class="f700 text-black popular-reads">POPULAR READS</p>
+
+          <a href="{{ .Permalink }}">
+            <h2 class="f700 text-black blog-title-text">{{.Title}}</h2>
+            <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
+          </a>
+
+          <div class="writer-wrap d-flex">
+            <div></div>
+            <div
+              class="writer-img mr-3"
+              style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"
+            ></div>
+            <div class="writer-name-wrap">
+              <h3 class="writer-name">{{.Params.author}}</h3>
+              <p class="time">
+                <time
+                  datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'
+                >
+                  {{(.Params.date).Format "January 2, 2006"}}
+                </time>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </section>
+
+    <section class="popular-reads-separator saprator"></section>
+
+    <section class="popular-list-section">
+      <ul class="js-blog-carousel owl-carousel blog-carousel row">
+        {{ range where .Data.Pages ".Params.blog_place" "popular" }} {{
+        $authorFirstName := lower (index (split .Params.author " ") 0)}} {{
+        $authorLastName := lower (index (split .Params.author " ") 1)}}
+
+        <li>
+          <a href="{{ .Permalink }}" aria-label="Blog Banner">
+            <div
+              class="img-bg"
+              style="background-image: url({{.Params.image}})"
+            ></div>
+            <h3 class="f700 text-black blog-title-text">{{.Title}}</h3>
+            <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
+          </a>
+
+          <div class="writer-wrap d-flex">
+            <div
+              class="writer-img mr-3"
+              style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"
+            ></div>
+            <div class="writer-name-wrap">
+              <h3 class="writer-name">{{.Params.author}}</h3>
+              <p class="time">
+                <time
+                  datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'
+                >
+                  {{(.Params.date).Format "January 2, 2006"}}
+                </time>
+              </p>
+            </div>
+          </div>
+        </li>
+        {{end}}
+      </ul>
+    </section>
+
+    <section class="saprator"></section>
+  </div>
+</section>
