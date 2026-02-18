@@ -1,34 +1,5 @@
 [
   {
-    "id": "backend",
-    "icon": "icon-code",
-    "title": "Backend Engineering",
-    "description": "Robust, scalable backend systems built for performance. From APIs and microservices to database architecture and cloud infrastructure, we engineer the backbone of your digital products.",
-    "keyCapabilities": [
-      "RESTful & GraphQL API design",
-      "Microservices architecture",
-      "Database optimization & scaling",
-      "Message queues & event-driven systems",
-      "Authentication & authorization",
-      "Performance profiling & tuning"
-    ],
-    "technologies": [
-      "Python (Django, FastAPI)",
-      "Java/Kotlin (Spring Boot)",
-      "Node.js (NestJS)",
-      "PostgreSQL",
-      "MongoDB",
-      "Redis",
-      "Go"
-    ],
-    "chips": [
-      "SaaS Platforms",
-      "FinTech Systems",
-      "E-commerce Backends",
-      "Real-time APIs"
-    ]
-  },
-  {
     "id": "ai",
     "icon": "icon-brain",
     "title": "AI Development",
@@ -52,38 +23,34 @@
     ],
     "chips": [
       "Chatbots & Assistants",
-      "Document Automation",
+      "Data Digitization",
       "Voice Agents",
       "Predictive Analytics"
     ]
   },
   {
-    "id": "design",
-    "icon": "icon-palette",
-    "title": "UI/UX Design & Consulting",
-    "description": "Human-centered design combined with strategic product consulting, ensuring every product not only looks great but aligns with business goals and user needs from day one.",
+    "id": "backend",
+    "icon": "icon-code",
+    "title": "Backend Engineering",
+    "description": "Robust, scalable backend systems built for performance. From APIs and microservices to database architecture and cloud infrastructure, we engineer the backbone of your digital products.",
     "keyCapabilities": [
-      "User research & personas",
-      "Wireframing & prototyping",
-      "Design system creation",
-      "Accessibility audits (WCAG)",
-      "Interaction & motion design",
-      "Usability testing & iteration"
+      "RESTful & GraphQL API design",
+      "Microservices architecture",
+      "Database optimization & scaling",
+      "Message queues & event-driven systems",
+      "Authentication & authorization",
+      "Performance profiling & tuning"
     ],
     "technologies": [
-      "Figma",
-      "Adobe XD",
-      "Sketch",
-      "Framer",
-      "Storybook",
-      "TailwindCSS"
+      "Python (Django, FastAPI)",
+      "Java/Kotlin (Spring Boot)",
+      "Node.js (NestJS)",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Go"
     ],
-    "chips": [
-      "Product Redesign",
-      "Design Systems",
-      "Mobile UX",
-      "Brand Identity"
-    ]
+    "chips": ["SaaS Platforms", "Real-time APIs", "Enterprise Apps", "Security"]
   },
   {
     "id": "frontend",
@@ -107,12 +74,7 @@
       "Redux",
       "Zustand"
     ],
-    "chips": [
-      "SaaS Dashboards",
-      "E-commerce",
-      "Marketing Sites",
-      "Admin Panels"
-    ]
+    "chips": ["SaaS Dashboards", "SEO", "Marketing Sites", "Performance"]
   },
   {
     "id": "mobile",
@@ -136,10 +98,10 @@
       "Expo"
     ],
     "chips": [
-      "Consumer Apps",
-      "Enterprise Mobile",
+      "Biometric Sensors",
+      "Wearables",
       "IoT Companions",
-      "Health & Fitness"
+      "Augmented & Virtual reality"
     ]
   },
   {
@@ -172,6 +134,34 @@
     ]
   },
   {
+    "id": "design",
+    "icon": "icon-palette",
+    "title": "UI/UX Design & Consulting",
+    "description": "Human-centered design combined with strategic product consulting, ensuring every product not only looks great but aligns with business goals and user needs from day one.",
+    "keyCapabilities": [
+      "User research & personas",
+      "Wireframing & prototyping",
+      "Design system creation",
+      "Accessibility audits (WCAG)",
+      "Interaction & motion design",
+      "Usability testing & iteration"
+    ],
+    "technologies": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Framer",
+      "Storybook",
+      "TailwindCSS"
+    ],
+    "chips": [
+      "Product Redesign",
+      "Design Systems",
+      "Responsive Designs",
+      "Brand Identity"
+    ]
+  },
+  {
     "id": "project-management",
     "icon": "icon-clipboard-list",
     "title": "Project Management",
@@ -193,10 +183,10 @@
       "Slack"
     ],
     "chips": [
-      "Team Augmentation",
-      "Fixed-price Projects",
-      "Agile Coaching",
-      "Rescue Projects"
+      "Requirement Gathering",
+      "Roadmap Creation",
+      "Backlog Grooming",
+      "Feature Prioritization"
     ]
   }
 ]

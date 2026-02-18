@@ -3333,9 +3333,9 @@ lottie-player {
   text-overflow: ellipsis;
   display: -webkit-box;
   word-wrap: break-word;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  height: 60px;
+  height: 30px;
 }
 .popular-reads-section .banner-img {
   width: 97%;

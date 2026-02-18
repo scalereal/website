@@ -1,5 +1,7 @@
 <div class="all-list-section">
-
+<div class="container">
+    <h2 class="f700 text-black">All Stories</h2>
+  </div>
   <div class="container">
     <ul class="row">
       {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }} 
