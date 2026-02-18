@@ -4431,7 +4431,10 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .ai-capabilities-sidebar a {
-  display: block;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
   padding: 8px 12px;
   border-radius: 6px;
   text-decoration: none;
