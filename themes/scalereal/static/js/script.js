@@ -1,31 +1,47 @@
 AOS.init();
 
-$(window).on("load", function () {
-  if (window.location.hash) {
-    const hash = window.location.hash.substring(1);
-    const targetSection = $(`#${hash}`);
-    const navbarHeight = $(".navbar").outerHeight();
+const EXTRA_ANCHOR_GAP = -50;
+const NO_PADDING_EXTRA_OFFSET = 100;
 
-    const isInMobileBroswer = () =>
-      window.matchMedia("(max-width: 768px)").matches;
-    if (targetSection.length) {
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            // scrolls to section such that its not hidden under the nav bar and is displayed properly
-            scrollTop: isInMobileBroswer()
-              ? targetSection.offset().top - navbarHeight
-              : targetSection.offset().top +
-                targetSection.outerHeight() -
-                $(window).height(),
-          },
-          50
-        );
-    }
+function getAnchorOffset() {
+  return ($(".navbar").outerHeight() || 0) + EXTRA_ANCHOR_GAP;
+}
+
+function setGlobalAnchorPadding() {
+  document.documentElement.style.scrollPaddingTop = `${getAnchorOffset()}px`;
+}
+
+function scrollToHashTarget(hash, duration = 120) {
+  const cleanHash = (hash || "").replace(/^#/, "");
+  if (!cleanHash) return;
+
+  const targetSection = document.getElementById(decodeURIComponent(cleanHash));
+  if (!targetSection) return;
+
+  const sectionPaddingTop =
+    parseInt($(targetSection).css("padding-top"), 10) || 0;
+  const extraOffset = sectionPaddingTop === 0 ? NO_PADDING_EXTRA_OFFSET : 0;
+
+  const targetTop =
+    $(targetSection).offset().top - getAnchorOffset() - extraOffset;
+  $("html, body")
+    .stop()
+    .animate({ scrollTop: Math.max(targetTop, 0) }, duration);
+}
+
+$(window).on("load", function () {
+  setGlobalAnchorPadding();
+
+  if (window.location.hash) {
+    scrollToHashTarget(window.location.hash, 120);
   }
 });
 
+$(window).on("resize", setGlobalAnchorPadding);
+
+$(window).on("hashchange", function () {
+  scrollToHashTarget(window.location.hash, 120);
+});
 $(document).ready(function () {
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
