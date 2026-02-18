@@ -4431,7 +4431,10 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .ai-capabilities-sidebar a {
-  display: block;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
   padding: 8px 12px;
   border-radius: 6px;
   text-decoration: none;
@@ -5029,7 +5032,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   background: transparent;
   border-color: transparent;
   color: var(--primary-color);
-  transform: rotate(90deg);
+  transform: rotate(-180deg);
   opacity: 1;
 }
 
@@ -5037,9 +5040,6 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.careers-accordion .expand .minus {
-  display: none;
 }
 
 /* Expanded body */
