@@ -1,0 +1,12 @@
+{{ "<!-- Culture -->" | safeHTML }}
+
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head" . }}
+
+  <body>
+    {{ partial "nav" . }}
+    {{ partial "footer" . }}
+  </body>
+  {{ partial "js" . }}
+</html>
