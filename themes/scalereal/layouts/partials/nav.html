@@ -1,5 +1,5 @@
 <a class="" aria-label="POST" href="/post"></a>
-<nav class="navbar navbar-fixed-top navbar-expand-md home-page" id="nav">
+<nav class="navbar navbar-fixed-top navbar-expand-lg home-page" id="nav">
   <div class="container navbar-content">
     <a class="navbar-brand" href="/">
         <img alt="scalereal" src="{{ "images/logo/scalereal-logo-blue.svg" | absURL}}" />
@@ -45,10 +45,16 @@
         {{ end }}
         {{end}}
       </ul>
+      <div class="sr-btn-wrapper nav-cta nav-cta-mobile">
+        <a href="/ai-services" class="sr-btn primary py-2">
+          <i class="icon-brain-circuit"></i>
+          AI Services</a>
+        <a href="/contact" class="sr-btn secondary py-2"><i class="icon-phone"></i>Contact Us</a>
+      </div>
     </div>
 
     <!-- TODO: Handle mobile view -->
-     <div class="sr-btn-wrapper">
+     <div class="sr-btn-wrapper nav-cta nav-cta-desktop">
 
        <a href="/ai-services" class="sr-btn primary py-2">
          <i class="icon-brain-circuit"></i>
@@ -85,7 +91,7 @@
 
   if (aboutNavLink && aboutNavItem) {
     aboutNavLink.addEventListener("click", function (e) {
-      if (window.matchMedia("(max-width: 767.98px)").matches) {
+      if (window.matchMedia("(max-width: 991.98px)").matches) {
         e.preventDefault();
         aboutNavItem.classList.toggle("is-open");
       }
