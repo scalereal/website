@@ -27,6 +27,22 @@
     padding: 40px 0 0;
   }
 
+  .projects-filter-header {
+    display: none;
+  }
+
+  .filter-toggle {
+    display: none;
+  }
+
+  .projects-filter-header .projects-count {
+    display: none;
+  }
+
+  .projects-count-desktop {
+    display: block;
+  }
+
   /* Chips row — padded on both sides, wraps naturally */
   .filter-chips-wrap {
     display: flex;
@@ -246,10 +262,11 @@
 
     .projects-count {
       padding: 0 1rem;
+      margin: 12px 0;
     }
   }
 
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     .filter-chip {
       font-size: 0.76rem;
       padding: 0.35rem 0.8rem;
@@ -260,24 +277,111 @@
       gap: 0.4rem;
     }
 
-    .projects-count {
-      padding: 0 0.75rem;
-    }
-
-    .tech-chip {
-      font-size: 0.7rem;
-      padding: 0.22rem 0.6rem;
-    }
+  .projects-count {
+    padding: 0 0.75rem;
   }
+
+  .tech-chip {
+    font-size: 0.7rem;
+    padding: 0.22rem 0.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projects-filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .projects-filter-header .projects-count {
+    display: block;
+  }
+
+  .projects-count-desktop {
+    display: none;
+  }
+
+  .filter-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: #fff;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .filter-toggle .filter-icon {
+    width: 14px;
+    height: 14px;
+    border: 2px solid currentColor;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .filter-toggle .filter-icon::before,
+  .filter-toggle .filter-icon::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 2px;
+    background: currentColor;
+  }
+
+  .filter-toggle .filter-icon::before {
+    top: 3px;
+  }
+
+  .filter-toggle .filter-icon::after {
+    bottom: 3px;
+  }
+
+  .filter-chips-wrap {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .filter-chips-wrap.is-open {
+    max-height: 320px;
+    margin-top: 12px;
+  }
+
+  .projects-count {
+    padding: 0;
+  }
+}
 </style>
 
 <!-- ── Filter UI ── -->
 <div class="projects-filter-section bg-gradient">
+  <div class="projects-filter-header">
+    <button
+      type="button"
+      class="filter-toggle"
+      id="filter-toggle"
+      aria-expanded="false"
+      aria-controls="filter-chips"
+    >
+      <span class="filter-icon" aria-hidden="true"></span>
+      Filters
+    </button>
+     <p class="projects-count">
+      Showing <strong class="visible-count">0</strong> projects
+    </p>
+  </div>
   <div class="filter-chips-wrap" id="filter-chips">
     <!-- injected by JS -->
   </div>
-  <p class="projects-count">
-    Showing <strong id="visible-count">0</strong> projects
+  <p class="projects-count projects-count-desktop">
+    Showing <strong class="visible-count">0</strong> projects
   </p>
 </div>
 
@@ -345,8 +449,9 @@
   const chipsEl = document.getElementById("filter-chips");
   const loader = document.getElementById("loader");
   const noResultsEl = document.getElementById("no-results");
-  const countEl = document.getElementById("visible-count");
+  const countEls = document.querySelectorAll(".visible-count");
   const containerEl = document.getElementById("projects-container");
+  const filterToggle = document.getElementById("filter-toggle");
 
   /* ── App state ── */
   let activeFilter = ALL_LABEL;
@@ -369,6 +474,13 @@
         resetAndLoad();
       });
       chipsEl.appendChild(btn);
+    });
+  }
+
+  if (filterToggle && chipsEl) {
+    filterToggle.addEventListener("click", () => {
+      const isOpen = chipsEl.classList.toggle("is-open");
+      filterToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }
 
@@ -501,7 +613,9 @@
     filteredItems = filtered.map((p, i) => buildCard(p, i));
 
     /* ✅ Show TOTAL count immediately (not loaded count) */
-    countEl.textContent = filteredItems.length;
+    countEls.forEach((el) => {
+      el.textContent = filteredItems.length;
+    });
 
     if (filteredItems.length === 0) {
       noResultsEl.style.display = "block";
