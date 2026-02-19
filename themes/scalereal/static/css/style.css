@@ -4677,6 +4677,9 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .capabilities-icon {
   width: 70px;
   height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  flex-shrink: 0;
   border-radius: 12px;
   background: var(--primary-gradient);
   display: flex;
@@ -4754,7 +4757,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   padding: 4px 12px;
   font-size: 11px;
   border-radius: 20px;
-  margin-right: 8px;
+  margin: 0 8px 8px 0;
 }
 
 .ai-capabilities-card {
@@ -4832,10 +4835,47 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 
   .ai-capabilities-sidebar {
     width: 100%;
+    display: none;
   }
 
   .ai-capabilities-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ai-capabilities-content.feature-card-carousal {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ai-capabilities-content.feature-card-carousal.owl-carousel {
+    display: block;
+  }
+
+  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-stage-outer {
+    padding-bottom: 6px;
+  }
+
+  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-item {
+    padding: 0 4px;
+  }
+
+  .ai-capabilities-card {
+    display: block;
+    opacity: 1;
+    transform: none;
+    margin-bottom: 0;
+  }
+
+  .ai-capabilities-card-header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
   }
 }
 

@@ -35,7 +35,7 @@
       </aside>
 
       <!-- RIGHT CONTENT -->
-      <div class="ai-capabilities-content">
+      <div class="ai-capabilities-content feature-card-carousal js-ai-capabilities-carousel">
         {{ $data := getJSON "/content/expertise/services.json" }} 
         {{ range $index, $item := $data }}
         <div
@@ -96,6 +96,12 @@
       ".ai-capabilities-sidebar a",
     );
     const cards = document.querySelectorAll(".ai-capabilities-card");
+    const isMobileOrTablet = window.matchMedia("(max-width: 991.98px)").matches;
+
+    if (isMobileOrTablet) {
+      cards.forEach((card) => card.classList.add("visible"));
+      return;
+    }
 
     function showCard(targetId) {
       // Remove active from all links

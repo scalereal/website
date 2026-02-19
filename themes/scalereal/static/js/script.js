@@ -177,6 +177,63 @@ $(document).ready(function () {
   initServicesCarousel();
   $(window).on("resize", initServicesCarousel);
 
+  function initAiCapabilitiesCarousel() {
+    var $carousel = $(".js-ai-capabilities-carousel");
+    if ($carousel.length === 0) return;
+
+    var isTabletOrMobile = window.matchMedia("(max-width: 991.98px)").matches;
+
+    if (isTabletOrMobile) {
+      if (!$carousel.hasClass("owl-carousel")) {
+        $carousel.addClass("owl-carousel");
+        $carousel.owlCarousel({
+          nav: false,
+          loop: true,
+          margin: 16,
+          dots: true,
+          slideBy: 1,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 600,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 1,
+            },
+          },
+        });
+
+        $carousel.on(
+          "mousedown.owlHold touchstart.owlHold pointerdown.owlHold",
+          ".ai-capabilities-card",
+          function () {
+            $carousel.trigger("stop.owl.autoplay");
+          },
+        );
+        $carousel.on(
+          "mouseup.owlHold mouseleave.owlHold touchend.owlHold pointerup.owlHold",
+          ".ai-capabilities-card",
+          function () {
+            $carousel.trigger("play.owl.autoplay");
+          },
+        );
+      }
+    } else if ($carousel.hasClass("owl-carousel")) {
+      $carousel.trigger("destroy.owl.carousel");
+      $carousel.off(".owlHold");
+      $carousel.removeClass("owl-carousel owl-loaded");
+      $carousel.find(".owl-stage-outer").children().unwrap();
+      $carousel.find(".owl-stage").children().unwrap();
+    }
+  }
+
+  initAiCapabilitiesCarousel();
+  $(window).on("resize", initAiCapabilitiesCarousel);
+
   // CURRENT
   var senderSubMain = $(".sender-sub-main").offset();
   var footerOffset = $("footer").offset().top;
