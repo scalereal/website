@@ -36,7 +36,7 @@
 
 
       <!-- RIGHT CONTENT -->
-    <div class="ai-capabilities-content">
+    <div class="ai-capabilities-content feature-card-carousal js-ai-capabilities-carousel">
       {{ $data := getJSON "/content/ai-services/capabilities.json" }}
       {{ range $index, $item := $data }}
       <div id="{{ .id }}" class="ai-capabilities-card {{ if eq $index 0 }}visible{{ end }}">

@@ -1,0 +1,49 @@
+<!-- Add events data in below format in data/announcements.json -->
+
+<!-- [
+  {
+    "icon": "icon-calendar",
+    "text": "Meet us at Web Summit 2026 in Lisbon — Book a meeting with our team!",
+    "link": "/events/web-summit-2026",
+    "link_text": "Learn More"
+  },
+  {
+    "icon": "icon-rocket",
+    "text": "Hosting an AI & Product Engineering Meetup in Pune — March 15, 2026",
+    "link": "/events/pune-meetup",
+    "link_text": "Register Now"
+  }
+] -->
+
+<!-- ********************************************************************************* -->
+
+{{ $announcements := site.Data.announcements }}
+
+{{ if $announcements }}
+<div class="announcement-wrapper">
+  {{ range $announcements }}
+  <div class="announcement-bar">
+    
+    <div class="announcement-left">
+      <i class="{{ .icon }} announcement-icon"></i>
+      <p class="announcement-text">
+        {{ .text }}
+      </p>
+    </div>
+
+    <div class="announcement-right">
+      <a href="{{ .link }}" class="announcement-link">
+        {{ .link_text }}
+        <i data-lucide="arrow-up-right" class="external-arrow"></i>
+      </a>
+
+      <button class="announcement-close"
+        onclick="this.closest('.announcement-bar').style.display='none'">
+        ✕
+      </button>
+    </div>
+
+  </div>
+  {{ end }}
+</div>
+{{ end }}
