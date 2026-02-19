@@ -3106,7 +3106,7 @@ lottie-player {
   .feature-card-carousal.owl-carousel .owl-dots {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 0px;
   }
 
   .feature-card-carousal.owl-carousel .owl-item {

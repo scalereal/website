@@ -139,6 +139,9 @@ $(document).ready(function () {
           dots: true,
           slideBy: 1,
           autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 600,
+          autoplayHoverPause: true,
           responsiveClass: true,
           responsive: {
             0: {
@@ -146,9 +149,25 @@ $(document).ready(function () {
             },
           },
         });
+
+        $carousel.on(
+          "mousedown.owlHold touchstart.owlHold pointerdown.owlHold",
+          ".feature-card",
+          function () {
+            $carousel.trigger("stop.owl.autoplay");
+          },
+        );
+        $carousel.on(
+          "mouseup.owlHold mouseleave.owlHold touchend.owlHold pointerup.owlHold",
+          ".feature-card",
+          function () {
+            $carousel.trigger("play.owl.autoplay");
+          },
+        );
       }
     } else if ($carousel.hasClass("owl-carousel")) {
       $carousel.trigger("destroy.owl.carousel");
+      $carousel.off(".owlHold");
       $carousel.removeClass("owl-carousel owl-loaded");
       $carousel.find(".owl-stage-outer").children().unwrap();
       $carousel.find(".owl-stage").children().unwrap();
