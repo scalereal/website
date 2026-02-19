@@ -3088,6 +3088,35 @@ lottie-player {
     color: var(--primary-color);
   }
 
+  .feature-card-carousal {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .feature-card-carousal.owl-carousel {
+    display: block;
+  }
+
+  .feature-card-carousal.owl-carousel .owl-stage-outer {
+    padding-bottom: 6px;
+  }
+
+  .feature-card-carousal.owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .feature-card-carousal.owl-carousel .owl-item {
+    padding: 0 4px;
+  }
+
+  .feature-card-carousal .col-lg-4,
+  .feature-card-carousal .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .banner-home {
     min-height: fit-content;
     padding: 80px 0;
@@ -3408,6 +3437,12 @@ lottie-player {
 
   .p2p-image {
     margin-top: -58px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #what-we-do .feature-card-carousal {
+    justify-content: center;
   }
 }
 
