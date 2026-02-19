@@ -1180,17 +1180,19 @@ h3 {
 
   .nav-cta-mobile {
     justify-content: center;
+    padding: 0 100px;
   }
 }
 
 @media (max-width: 767.98px) {
   .navbar-nav {
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
   }
 
   .nav-cta-mobile {
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 0 100px;
   }
 }
 
