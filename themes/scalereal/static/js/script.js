@@ -123,6 +123,41 @@ $(document).ready(function () {
     });
   }
 
+  function initServicesCarousel() {
+    var $carousel = $(".js-feature-card-carousal");
+    if ($carousel.length === 0) return;
+
+    var isMobile = window.matchMedia("(max-width: 767.98px)").matches;
+
+    if (isMobile) {
+      if (!$carousel.hasClass("owl-carousel")) {
+        $carousel.addClass("owl-carousel");
+        $carousel.owlCarousel({
+          nav: false,
+          loop: true,
+          margin: 16,
+          dots: true,
+          slideBy: 1,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+          },
+        });
+      }
+    } else if ($carousel.hasClass("owl-carousel")) {
+      $carousel.trigger("destroy.owl.carousel");
+      $carousel.removeClass("owl-carousel owl-loaded");
+      $carousel.find(".owl-stage-outer").children().unwrap();
+      $carousel.find(".owl-stage").children().unwrap();
+    }
+  }
+
+  initServicesCarousel();
+  $(window).on("resize", initServicesCarousel);
+
   // CURRENT
   var senderSubMain = $(".sender-sub-main").offset();
   var footerOffset = $("footer").offset().top;
