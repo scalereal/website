@@ -5400,3 +5400,95 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .careers-accordion .send-resume i {
   font-size: 12px;
 }
+
+/* ANNOUNCEMENTS */
+
+.announcement-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+  background: #f6fbff;
+}
+
+/* Bar */
+.announcement-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef5f9;
+  border: 1px solid #d9e6ee;
+  border-radius: 14px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+}
+
+/* Left */
+.announcement-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.announcement-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--primary-color);
+}
+
+.announcement-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Right */
+.announcement-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.announcement-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.announcement-link:hover {
+  text-decoration: underline;
+}
+
+.external-arrow {
+  width: 14px;
+  height: 14px;
+}
+
+.announcement-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #6f7f88;
+}
+
+.announcement-close:hover {
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .announcement-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .announcement-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
