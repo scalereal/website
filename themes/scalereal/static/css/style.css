@@ -354,7 +354,10 @@ h3 {
 }
 
 .owl-two.owl-carousel .owl-dots {
-  margin-left: 62px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /* CARDS
@@ -1347,6 +1350,10 @@ h3 {
   margin: 0 auto;
 }
 
+.banner-content .section-chip-light {
+  line-height: 30px;
+}
+
 .banner-home .banner-content h1 {
   font-size: 56px;
   line-height: 48px;
@@ -2055,8 +2062,7 @@ h3 {
 }
 
 .section-client .text-wrap {
-  padding: 0 50px;
-  margin-right: 50px;
+  padding: 0 0 0 50px;
   position: relative;
 }
 
@@ -3323,20 +3329,19 @@ lottie-player {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-  height: 60px;
-  line-height: 27px;
+  height: 50px;
+  line-height: 24px;
 }
 .page-blog-list .blog-title-text {
-  font-size: 30px;
-  margin-bottom: 12px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   word-wrap: break-word;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  height: 72px;
+  height: 30px;
 }
 .popular-reads-section .banner-img {
   width: 97%;
@@ -3369,7 +3374,7 @@ lottie-player {
   margin-bottom: 10px;
 }
 .popular-reads-section .sub-text {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .article-content ol {

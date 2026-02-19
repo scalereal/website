@@ -91,7 +91,7 @@ $(document).ready(function () {
   $(".js-blog-carousel").owlCarousel({
     nav: true,
     loop: false,
-    margin: 0,
+    margin: 20,
     dots: false,
     slideBy: 1,
     autoplay: true,
@@ -99,18 +99,18 @@ $(document).ready(function () {
     autoplaySpeed: 10000,
     autoplayHoverPause: true,
     responsiveClass: true,
-    items: 2,
+    // items: 2,
     responsive: {
       0: {
         items: 1,
         loop: true,
       },
       767: {
-        items: 1,
+        items: 2,
         loop: true,
       },
       991: {
-        items: 2,
+        items: 3,
         loop: true,
       },
     },

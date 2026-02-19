@@ -1,4 +1,4 @@
-{{ "<!-- About -->" | safeHTML }}
+{{ "<!-- Company -->" | safeHTML }}
 
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
@@ -7,13 +7,13 @@
   <body>
     {{ partial "nav" . }}
     <div class="page-inner page-about">
-      {{ template "about/banner.html" .}} 
+      {{ template "company/banner.html" .}} 
       {{ template "homepage/stats.html" .}}
-      {{ template "about/our-story.html" .}} 
-      {{ template "about/our-culture.html" .}}
+      {{ template "company/our-story.html" .}} 
+      {{ template "company/our-culture.html" .}}
     </div>
     {{ template "homepage/why-scalereal.html" .}}
-    {{ template "about/our-reviews.html" .}}
+    {{ template "company/our-reviews.html" .}}
     {{ template "homepage/global-footprint.html" .}}
     {{ partial "footer" . }}
     <script>

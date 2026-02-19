@@ -1,0 +1,56 @@
+<section class="all-list-section pb-0" id="all-blogs">
+
+  <div class="container">
+     <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-rss"></div>
+            <span>Insights</span>
+          </div>
+          <h2 class="section-title">
+            Browse the <span class="text-blue">Full Tech Journal</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            From initial concepts to global scale, explore every article we have written about engineering better, faster products.
+          </p>
+        </header>
+      </div>
+    </div>
+
+    <ul class="row">
+      {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }} 
+      {{ range $paginator.Pages}} 
+      {{ $authorFirstName := lower (index (split .Params.author " ") 0)}} 
+      {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
+
+      <li class="col-lg-4 col-md-6 all-blogs-section">
+        <a href="{{ .Permalink }}">
+          <div
+            class="img-bg"
+            style="background-image: url({{.Params.image}}); border-radius: 8px;"
+          ></div>
+          <h3 class="f700 text-black blog-title-text">{{.Title}}</h3>
+          <p class="text-grey sub-text blog-desc">{{.Params.description}}</p>
+        </a>
+        <div class="writer-wrap d-flex">
+          <div
+            class="writer-img mr-2"
+            style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"
+          ></div>
+          <div class="writer-name-wrap">
+            <h3 class="writer-name">{{.Params.author}}</h3>
+            <p class="time">
+              <time
+                datetime='{{ ($.Scratch.Get "dateType").Format "2006-01-02" }}'
+              >
+                {{(.Params.date).Format "January 2, 2006"}}
+              </time>
+            </p>
+          </div>
+        </div>
+      </li>
+      {{end}}
+    </ul>
+  </div>
+</section>
