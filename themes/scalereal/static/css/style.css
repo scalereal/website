@@ -1350,6 +1350,10 @@ h3 {
   margin: 0 auto;
 }
 
+.banner-content .section-chip-light {
+  line-height: 30px;
+}
+
 .banner-home .banner-content h1 {
   font-size: 56px;
   line-height: 48px;
