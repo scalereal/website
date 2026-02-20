@@ -6,6 +6,13 @@
 
   <body>
     {{ partial "nav" . }}
+    {{ template "culture/banner.html" .}}
+    {{ template "culture/core-values.html" .}}
+    {{ template "culture/perks.html" .}}
+    {{ template "culture/rituals.html" .}}
+    {{ template "culture/diversity.html" .}}
+    {{ template "culture/our-culture.html" .}}
+    {{ template "culture/join-us.html" .}}
     {{ partial "footer" . }}
   </body>
   {{ partial "js" . }}

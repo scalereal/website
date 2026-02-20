@@ -467,7 +467,7 @@ h3 {
 }
 
 .plain-card {
-  background: #fff;
+  background: transparent;
   height: 100%;
   transition: all 0.3s ease;
   display: flex;
@@ -979,6 +979,10 @@ h3 {
   display: inline-block;
   position: relative;
   padding: 0.2rem 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link {
+  margin-left: 0;
 }
 
 /* .navbar-expand-lg .navbar-nav .nav-link::after {
@@ -1635,6 +1639,52 @@ h3 {
   font-size: 16px;
   color: #fff;
   font-weight: 600;
+}
+
+/* Diversity stats (compact, no icons) */
+.diversity-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+
+.diversity-stat {
+  text-align: center;
+}
+
+.diversity-stat-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.diversity-stat-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-grey);
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .diversity-stats-grid {
+    gap: 16px 20px;
+  }
+
+  .diversity-stat-value {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .diversity-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diversity-stat-value {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 992px) {
