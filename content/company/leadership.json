@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Amey Kode",
+    "title": "Business Analyst - III",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/amey.jpeg"
+  },
+  {
+    "name": "Mamata Joshi",
+    "title": "Business Analyst - III",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/mamata.jpeg"
+  },
+  {
+    "name": "Harish Karthik",
+    "title": "Software Development Engineer - III",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/harish.jpeg"
+  },
+  {
+    "name": "Prathamesh Gunde",
+    "title": "Software Development Engineer - III",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/prathamesh.png"
+  },
+  {
+    "name": "Pranali Ahirrao",
+    "title": "Senior People Experience Associate",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/pranali.webp"
+  }
+]

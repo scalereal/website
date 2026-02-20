@@ -3955,7 +3955,7 @@ input[type="submit"].btn-block {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 140px;
+  margin-left: 154px;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -4063,6 +4063,10 @@ input[type="submit"].btn-block {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .navbar-collapse {
+    margin-left: 0px;
   }
 }
 @media (min-width: 992px) {
