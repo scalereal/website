@@ -4064,6 +4064,10 @@ input[type="submit"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .navbar-collapse {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
