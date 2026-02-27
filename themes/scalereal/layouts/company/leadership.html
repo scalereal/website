@@ -8,19 +8,25 @@
             <span>Leadership</span>
           </div>
           <h2 class="section-title">
-            The People <span class="text-blue">Behind ScaleReal</span>
+            People Who <span class="text-blue">Own the Outcome</span>
           </h2>
           <p class="section-subtitle section-info">
-            Update this
+            A group of leaders focused on thoughtful planning, disciplined
+            execution, and long-term stability across teams and projects.
           </p>
         </header>
       </div>
     </div>
 
     <div class="team-cards-grid">
-      {{ $leadership := getJSON "/content/company/leadership.json" }}
+      {{ $leadership := getJSON "/content/company/leadership.json" }} 
       {{ range $leadership }}
-      <div class="team-card js-team-card" role="button" tabindex="0" aria-label="Founder details">
+      <div
+        class="team-card js-team-card"
+        role="button"
+        tabindex="0"
+        aria-label="Founder details"
+      >
         <div class="team-card-inner">
           <div class="team-card-front">
             <img
@@ -34,9 +40,7 @@
             </div>
           </div>
           <div class="team-card-back">
-            <p class="team-card-quote">
-              "{{ .quote }}"
-            </p>
+            <p class="team-card-quote">"{{ .quote }}"</p>
             <a
               class="team-card-linkedin"
               href="{{ .linkedin }}"
