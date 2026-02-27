@@ -8,19 +8,25 @@
             <span>Founders</span>
           </div>
           <h2 class="section-title">
-           The Mind <span class="text-blue">Behind ScaleReal</span> 
+            Two Minds, <span class="text-blue">One Direction</span>
           </h2>
           <p class="section-subtitle section-info">
-            Update this
+            Built by founders who has lived through product chaos and chose to
+            create a company that values thinking clearly before building fast.
           </p>
         </header>
       </div>
     </div>
 
     <div class="team-cards-grid">
-      {{ $founders := getJSON "/content/company/founders.json" }}
+      {{ $founders := getJSON "/content/company/founders.json" }} 
       {{ range $founders }}
-      <div class="team-card js-team-card" role="button" tabindex="0" aria-label="Founder details">
+      <div
+        class="team-card js-team-card"
+        role="button"
+        tabindex="0"
+        aria-label="Founder details"
+      >
         <div class="team-card-inner">
           <div class="team-card-front">
             <img
@@ -34,9 +40,7 @@
             </div>
           </div>
           <div class="team-card-back">
-            <p class="team-card-quote">
-              "{{ .quote }}"
-            </p>
+            <p class="team-card-quote">"{{ .quote }}"</p>
             <a
               class="team-card-linkedin"
               href="{{ .linkedin }}"
