@@ -42,13 +42,14 @@
       "Performance profiling & tuning"
     ],
     "technologies": [
-      "Python (Django, FastAPI)",
-      "Java/Kotlin (Spring Boot)",
+      "Python",
+      "Java/Kotlin",
       "Node.js (NestJS)",
       "PostgreSQL",
       "MongoDB",
       "Redis",
-      "Go"
+      "Golang",
+      "Ruby on Rails"
     ],
     "chips": ["SaaS Platforms", "Real-time APIs", "Enterprise Apps", "Security"]
   },
@@ -69,6 +70,7 @@
       "React",
       "Next.js",
       "Vue",
+      "Typescript",
       "TailwindCSS",
       "shadcn/ui",
       "Redux",
