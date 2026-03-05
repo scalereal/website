@@ -234,6 +234,41 @@ $(document).ready(function () {
   initAiCapabilitiesCarousel();
   $(window).on("resize", initAiCapabilitiesCarousel);
 
+  function initMilestoneScrollReveal() {
+    const timeline = document.querySelector(".milestones-timeline");
+    if (!timeline) return;
+
+    const items = Array.from(timeline.querySelectorAll(".milestone-item"));
+    if (items.length === 0) return;
+
+    timeline.classList.add("is-animated");
+
+    items.forEach((item, index) => {
+      item.style.setProperty("--milestone-delay", `${index * 120}ms`);
+    });
+
+    if (!("IntersectionObserver" in window)) {
+      items.forEach((item) => item.classList.add("is-visible"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries, io) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.35, rootMargin: "0px 0px -5% 0px" },
+    );
+
+    items.forEach((item) => observer.observe(item));
+  }
+
+  initMilestoneScrollReveal();
+
   // CURRENT
   var senderSubMain = $(".sender-sub-main").offset();
   var footerOffset = $("footer").offset().top;
