@@ -1,0 +1,67 @@
+[
+  {
+    "icon": "icon-brain",
+    "title": "Built on Clear Thinking",
+    "description": "We prioritize structured problem-solving, strong architecture, and thoughtful decisions over rushed builds and reactive execution.",
+    "quote": "Senior engineers thrive here because ambiguity is reduced, not amplified.",
+    "subpointers": [
+      "Well-defined requirements before coding",
+      "Architecture discussions before implementation",
+      "Documentation that's useful, not ceremonial",
+      "Decisions backed by logic, not hierarchy",
+      "Technical spikes to de-risk unknowns early"
+    ]
+  },
+  {
+    "icon": "icon-shield",
+    "title": "Engineering Discipline Over Hero Culture",
+    "description": "We value clean systems, predictable delivery, and steady progress over late-night heroics or rushed technical shortcuts.",
+    "quote": "We build systems that scale, not quick fixes that break later.",
+    "subpointers": [
+      "Sustainable sprint cycles with realistic commitments",
+      "Code reviews that improve thinking, not just syntax",
+      "Automated testing & CI/CD as non-negotiable standards",
+      "No glorification of burnout or crunch culture",
+      "Tech debt is tracked and addressed, not ignored"
+    ]
+  },
+  {
+    "icon": "icon-layers",
+    "title": "Small Pods. Real Responsibility.",
+    "description": "Teams are intentionally small, focused, and cross-functional, so every engineer directly influences architecture and delivery.",
+    "quote": "You're not a resource. You're part of the system design.",
+    "subpointers": [
+      "Direct client exposure from day one",
+      "Real ownership of modules and deliverables",
+      "Faster decisions, fewer approval bottlenecks",
+      "Accountability across the full lifecycle",
+      "Context stays within the team, no knowledge silos"
+    ]
+  },
+  {
+    "icon": "icon-bot",
+    "title": "AI as an Engineering Multiplier",
+    "description": "We use AI tools to remove repetitive friction — accelerating delivery without compromising engineering depth or judgment.",
+    "quote": "AI supports engineering here, it doesn't replace craftsmanship.",
+    "subpointers": [
+      "AI-assisted code generation for boilerplate",
+      "Automated test creation and coverage analysis",
+      "Smarter debugging workflows with AI copilots",
+      "Faster prototyping and proof-of-concept cycles",
+      "Continuous evaluation of emerging AI dev tools"
+    ]
+  },
+  {
+    "icon": "icon-scale",
+    "title": "Low Ego. High Professionalism.",
+    "description": "We encourage direct feedback, calm discussions, and rational debate, especially when solving complex problems.",
+    "quote": "We optimize for long-term trust, not loud opinions.",
+    "subpointers": [
+      "Open technical disagreements are welcomed",
+      "No blame culture — only blameless retrospectives",
+      "Respect for experience at every level",
+      "Steady leadership during high-pressure moments",
+      "Psychological safety in every meeting and review"
+    ]
+  }
+]

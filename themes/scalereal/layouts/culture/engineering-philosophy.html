@@ -1,0 +1,57 @@
+<section id="benefits">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-cog"></div>
+            <span>Engineering Philosophy</span>
+          </div>
+          <h2 class="section-title">
+            How We <span class="text-blue">Think & Build</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            Our culture isn't just about values on a wall, it's embedded in how we engineer, decide, and deliver every day.
+          </p>
+        </header>
+      </div>
+    </div>
+
+    <div class="row eng-philosophy-grid">
+      {{ $data := getJSON "/content/culture/data.json" }}
+      {{ range $index, $item := $data }}
+      <div class="col-12 mb-4">
+        <div class="eng-philosophy-card">
+          <div class="eng-philosophy-left">
+            <div class="eng-philosophy-head">
+              <div class="eng-philosophy-number">
+                {{ printf "%02d" (add $index 1) }}
+              </div>
+              <div class="eng-philosophy-icon">
+                <i class="{{ .icon }}"></i>
+              </div>
+            </div>
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+
+          <div class="eng-philosophy-right">
+            <div class="eng-philosophy-label">WHAT THIS MEANS HERE</div>
+            <ul>
+              {{ range .subpointers }}
+              <li>
+                <span class="eng-philosophy-check">
+                  <i class="icon-check"></i>
+                </span>
+                {{ . }}
+              </li>
+              {{ end }}
+            </ul>
+            <div class="eng-philosophy-quote">{{ .quote }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
