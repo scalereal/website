@@ -15,12 +15,12 @@
   {
     "icon": "icon-shield",
     "title": "Engineering Discipline Over Hero Culture",
-    "description": "We value clean systems, predictable delivery, and steady progress over late-night heroics or rushed technical shortcuts.",
+    "description": "We value clean systems, predictable delivery, and steady progress over late-night heroics or technical shortcuts.",
     "quote": "We build systems that scale, not quick fixes that break later.",
     "subpointers": [
       "Sustainable sprint cycles with realistic commitments",
       "Code reviews that improve thinking, not just syntax",
-      "Automated testing & CI/CD as non-negotiable standards",
+      "Unit testing & CI/CD as non-negotiable standards",
       "No glorification of burnout or crunch culture",
       "Tech debt is tracked and addressed, not ignored"
     ]
@@ -29,7 +29,7 @@
     "icon": "icon-layers",
     "title": "Small Pods. Real Responsibility.",
     "description": "Teams are intentionally small, focused, and cross-functional, so every engineer directly influences architecture and delivery.",
-    "quote": "You're not a resource. You're part of the system design.",
+    "quote": "You're not just a resource. You're part of the entire system design.",
     "subpointers": [
       "Direct client exposure from day one",
       "Real ownership of modules and deliverables",
@@ -41,7 +41,7 @@
   {
     "icon": "icon-bot",
     "title": "AI as an Engineering Multiplier",
-    "description": "We use AI tools to remove repetitive friction — accelerating delivery without compromising engineering depth or judgment.",
+    "description": "We use AI tools to remove repetitive friction, accelerating delivery without compromising engineering depth or judgment.",
     "quote": "AI supports engineering here, it doesn't replace craftsmanship.",
     "subpointers": [
       "AI-assisted code generation for boilerplate",
@@ -53,12 +53,12 @@
   },
   {
     "icon": "icon-scale",
-    "title": "Low Ego. High Professionalism.",
-    "description": "We encourage direct feedback, calm discussions, and rational debate, especially when solving complex problems.",
+    "title": "Zero Ego. High Professionalism.",
+    "description": "We keep egos aside and focus on respectful conversations, good judgment, and shared progress.",
     "quote": "We optimize for long-term trust, not loud opinions.",
     "subpointers": [
       "Open technical disagreements are welcomed",
-      "No blame culture — only blameless retrospectives",
+      "No blame culture, only blameless retrospectives",
       "Respect for experience at every level",
       "Steady leadership during high-pressure moments",
       "Psychological safety in every meeting and review"

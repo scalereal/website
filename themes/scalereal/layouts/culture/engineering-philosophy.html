@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="row eng-philosophy-grid">
+    <div class="row eng-philosophy-grid feature-card-carousal js-feature-card-carousal">
       {{ $data := getJSON "/content/culture/data.json" }}
       {{ range $index, $item := $data }}
       <div class="col-12 mb-4">
@@ -36,7 +36,7 @@
           </div>
 
           <div class="eng-philosophy-right">
-            <div class="eng-philosophy-label">WHAT THIS MEANS HERE</div>
+            <div class="eng-philosophy-label">WHAT THIS MEANS</div>
             <ul>
               {{ range .subpointers }}
               <li>
