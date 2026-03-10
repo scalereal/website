@@ -116,10 +116,9 @@
               ></textarea>
               <span class="input-error" id="messageError"></span>
             </div>
-            <button type="submit" id="sendButton">
-              <a class="sr-btn primary text-white"
-                >Send Message <i class="icon-arrow-right"></i>
-              </a>
+            <button type="submit" id="sendButton" class="sr-btn primary text-white">
+              <span id="sendButtonText">Send Message</span>
+              <i id="sendButtonIcon" class="icon-arrow-right"></i>
             </button>
           </form>
         </div>
@@ -213,7 +212,7 @@
   const sendButton = document.getElementById("sendButton");
   const sendButtonText = document.getElementById("sendButtonText");
   const sendButtonIcon = document.getElementById("sendButtonIcon");
-  const sendButtonLoader = document.getElementById("sendButtonLoader");
+  // const sendButtonLoader = document.getElementById("sendButtonLoader");
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -237,32 +236,35 @@
         sendButton.disabled = true;
         sendButtonText.textContent = "Sending...";
         sendButtonIcon.classList.add("d-none");
-        sendButtonLoader.classList.remove("d-none");
+        // sendButtonLoader.classList.remove("d-none");
 
-        // TODO: add name into the payload and change subject to company name
+        // TODO: change subject to company name
         const payload = {
+          name: username.value,
           email: email.value,
-          subject: subject.value,
-          requirement: message.value,
+          company: subject.value,
+          details: message.value,
         };
 
-        const res = await fetch("/.netlify/functions/contact-to-crm", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        });
+        // const res = await fetch("/.netlify/functions/contact-to-crm", {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify(payload),
+        // });
+
+        const res =  await fetch(`/.netlify/functions/notify-email`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
 
         const data = await res.json();
         if (res.ok) {
           showToast("Message sent successfully!", "success");
           contactForm.reset();
-          await fetch(`/.netlify/functions/notify-email`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
+         
         } else {
           showToast("Error: " + (data.error || res.statusText), "error");
         }
@@ -271,9 +273,9 @@
         showToast("Error: ❌ Something went wrong.", "error");
       } finally {
         sendButton.disabled = false;
-        sendButtonText.textContent = "Send";
+        sendButtonText.textContent = "Send Message";
         sendButtonIcon.classList.remove("d-none");
-        sendButtonLoader.classList.add("d-none");
+        // sendButtonLoader.classList.add("d-none");
       }
     }
   });

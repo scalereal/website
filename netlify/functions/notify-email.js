@@ -31,12 +31,14 @@ export async function handler(event) {
     <h2>New form submission</h2>
     <p>Someone just submitted a form on <a href="https://scalereal.com" target="_blank">scalereal.com</a>. Here's what they had to say:</p>
     
+    <p><strong>Name:</strong> <span>${escapeHTML(data.name)}</span></p>
     <p><strong>Email:</strong> <a href="mailto:${escapeHTML(
-      data.email
+      data.email,
     )}">${escapeHTML(data.email)}</a></p>
-    <p><strong>Message:</strong></p>
+     <p><strong>Company Name:</strong> <span>${escapeHTML(data.company)}</span></p>
+    <p><strong>Project Details:</strong></p>
     <p style="white-space:pre-line; background:#f9f9f9; padding:10px; border:1px solid #ddd;">
-      ${escapeHTML(data.requirement)}
+      ${escapeHTML(data.details)}
     </p>
     
     <p style="font-size:12px; color:#888;">Submitted ${new Date().toLocaleString()}</p>
@@ -46,7 +48,7 @@ export async function handler(event) {
     await transporter.sendMail({
       from: `ScaleReal Contact Form <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_RECEIVER,
-      subject: data.subject || "New ScaleReal Contact Form Submission",
+      subject: "New ScaleReal Contact Form Submission",
       html: htmlBody,
     });
 
