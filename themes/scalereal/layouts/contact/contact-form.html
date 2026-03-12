@@ -173,8 +173,8 @@
       case "message":
         if (trimmedValue === "") {
           return "Please enter your details.";
-        } else if (trimmedValue.length <= 3) {
-          return "The length of message should be more than 3 characters.";
+        } else if (trimmedValue.length <= 100) {
+          return "The length of message should be more than 100 characters.";
         } else {
           return "";
         }
