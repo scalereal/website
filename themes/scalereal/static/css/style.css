@@ -898,6 +898,11 @@ h3 {
     width: 100%;
     text-align: center;
   }
+
+  .sr-btn.primary,
+  .sr-btn.secondary {
+    width: 75%;
+  }
 }
 
 /* DIVIDER
