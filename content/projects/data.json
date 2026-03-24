@@ -2,7 +2,7 @@
   {
     "title": "GoToBuddy",
     "description": "Gotobuddy.ai offers a revolutionary AI-driven communication platform that transforms user engagement by providing meaningful, personalized conversations on topics like parenting, news, sports, & entertainment. By leveraging diverse AI personas, Gotobuddy.ai ensures users receive the support and information they need through simple phone calls, making it an essential tool for advice, entertainment, and information.",
-    "technologies": "Django, PostgreSQL, vector DB, Large language model(LLM) openAI, Perplexity, Langchain, Docker, AWS, ReactJS, MantineUI, Deepgram and OpenAI TTS",
+    "technologies": "Django, PostgreSQL, vector DB, Large language model(LLM), openAI, Perplexity, Langchain, Docker, AWS, ReactJS, MantineUI, Deepgram, OpenAI TTS",
     "categories": ["AI", "Lifestyle"],
     "main_container_class": "section-service-detail section-project-detail",
     "data_aos_anchor": null,
