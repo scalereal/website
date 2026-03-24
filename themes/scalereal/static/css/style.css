@@ -895,13 +895,8 @@ h3 {
 
 @media (max-width: 767px) {
   .sr-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .sr-btn.primary,
-  .sr-btn.secondary {
     width: 75%;
+    text-align: center;
   }
 }
 
