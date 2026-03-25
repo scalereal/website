@@ -271,7 +271,7 @@ $(document).ready(function () {
     const isMobile = window.matchMedia("(max-width: 767px)").matches;
     const containers = targets
       ? Array.from(targets)
-      : Array.from(document.querySelectorAll(".sr-tags.sr-tags--auto-marquee")); // ✅ opt-in only
+      : Array.from(document.querySelectorAll(".sr-tags"));
 
     containers.forEach((container) => {
       if (!container.dataset.srTagsOriginal) {
@@ -287,54 +287,59 @@ $(document).ready(function () {
         return;
       }
 
-      if (container.dataset.srMarquee === "true") return;
+      if (container.dataset.srMarquee === "true") {
+        return;
+      }
 
       const buildMarquee = (attempt = 0) => {
         container.innerHTML = container.dataset.srTagsOriginal;
         const originalItems = Array.from(container.children);
-        if (originalItems.length <= 1) return;
-
-        const group = document.createElement("div");
-        group.className = "sr-tags-group";
-        originalItems.forEach((item) =>
-          group.appendChild(item.cloneNode(true)),
-        );
+        if (originalItems.length <= 1) {
+          return;
+        }
 
         const marquee = document.createElement("div");
         marquee.className = "sr-tags-marquee";
+
+        const group = document.createElement("div");
+        group.className = "sr-tags-group";
+        originalItems.forEach((item) => group.appendChild(item));
         marquee.appendChild(group);
-        container.innerHTML = "";
+
         container.appendChild(marquee);
         container.classList.add("sr-tags--marquee");
         container.dataset.srMarquee = "true";
 
-        requestAnimationFrame(() => {
-          const groupWidth = group.scrollWidth;
-
-          if (!groupWidth) {
-            if (attempt < 5) {
-              container.innerHTML = container.dataset.srTagsOriginal;
-              container.classList.remove("sr-tags--marquee");
-              delete container.dataset.srMarquee;
-              requestAnimationFrame(() => buildMarquee(attempt + 1));
-            }
-            return;
+        const groupWidth = group.scrollWidth;
+        if (!groupWidth) {
+          if (attempt < 3) {
+            requestAnimationFrame(() => buildMarquee(attempt + 1));
           }
+          return;
+        }
 
-          const containerWidth = container.clientWidth || groupWidth;
-          const baseItems = Array.from(group.children);
-          let guard = 0;
-          while (group.scrollWidth < containerWidth * 1.5 && guard < 20) {
-            baseItems.forEach((item) =>
-              group.appendChild(item.cloneNode(true)),
-            );
-            guard++;
-          }
+        const targetWidth = container.clientWidth || groupWidth;
+        let guard = 0;
+        while (group.scrollWidth < targetWidth && guard < 10) {
+          originalItems.forEach((item) =>
+            group.appendChild(item.cloneNode(true)),
+          );
+          guard += 1;
+        }
 
-          const clone = group.cloneNode(true);
-          clone.setAttribute("aria-hidden", "true");
-          marquee.appendChild(clone);
-        });
+        const clone = group.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        marquee.appendChild(clone);
+
+        const marqueeStyles = window.getComputedStyle(marquee);
+        const gapValue = parseFloat(
+          marqueeStyles.columnGap || marqueeStyles.gap || "0",
+        );
+
+        marquee.style.setProperty(
+          "--sr-tags-group-width",
+          `${group.scrollWidth + gapValue}px`,
+        );
       };
 
       buildMarquee();
@@ -344,17 +349,7 @@ $(document).ready(function () {
   let srTagsResizeTimer;
   function scheduleSrTagsMarquee() {
     clearTimeout(srTagsResizeTimer);
-    srTagsResizeTimer = setTimeout(() => {
-      document
-        .querySelectorAll(".sr-tags.sr-tags--auto-marquee[data-sr-marquee]")
-        .forEach((el) => {
-          // ✅ opt-in only
-          el.innerHTML = el.dataset.srTagsOriginal;
-          el.classList.remove("sr-tags--marquee");
-          delete el.dataset.srMarquee;
-        });
-      initSrTagsMarquee();
-    }, 150);
+    srTagsResizeTimer = setTimeout(initSrTagsMarquee, 150);
   }
 
   initSrTagsMarquee();
@@ -373,12 +368,9 @@ $(document).ready(function () {
       { threshold: 0.1, rootMargin: "0px 0px -10% 0px" },
     );
 
-    document
-      .querySelectorAll(".sr-tags.sr-tags--auto-marquee")
-      .forEach((container) => {
-        // ✅ opt-in only
-        srTagsObserver.observe(container);
-      });
+    document.querySelectorAll(".sr-tags").forEach((container) => {
+      srTagsObserver.observe(container);
+    });
   }
 
   if ("MutationObserver" in window) {
@@ -387,16 +379,19 @@ $(document).ready(function () {
       mutations.forEach((mutation) => {
         mutation.addedNodes.forEach((node) => {
           if (!(node instanceof HTMLElement)) return;
-          if (node.matches && node.matches(".sr-tags.sr-tags--auto-marquee"))
-            targets.push(node); // ✅ opt-in only
+          if (node.matches && node.matches(".sr-tags")) {
+            targets.push(node);
+          }
           if (node.querySelectorAll) {
-            node
-              .querySelectorAll(".sr-tags.sr-tags--auto-marquee")
-              .forEach((el) => targets.push(el)); // ✅ opt-in only
+            node.querySelectorAll(".sr-tags").forEach((el) => {
+              targets.push(el);
+            });
           }
         });
       });
-      if (targets.length) initSrTagsMarquee(targets);
+      if (targets.length) {
+        initSrTagsMarquee(targets);
+      }
     });
 
     srTagsMutationObserver.observe(document.body, {
