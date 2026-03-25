@@ -101,6 +101,10 @@
   .popular-list-section .blog-carousel.owl-carousel .owl-nav button {
     top: 16%;
   }
+
+  .popular-list-section .blog-carousel.owl-carousel .owl-nav {
+    display: none;
+  }
 }
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
   .popular-list-section .blog-carousel.owl-carousel .owl-nav button {
