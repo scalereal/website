@@ -847,7 +847,66 @@ h3 {
   background: #fff;
   border: 1px solid #ccc;
   color: #555;
-  /* background: var(--primary-color); */
+  white-space: nowrap;
+}
+
+.chip-marquee-ready {
+  display: block;
+}
+
+.chip-marquee-ready .chip-marquee-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip-marquee-ready .chip-marquee-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.chip-marquee-ready .chip-marquee-group[aria-hidden="true"] {
+  display: none;
+}
+
+@keyframes chipMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--chip-marquee-distance, -50%));
+  }
+}
+
+/* MOBILE MARQUEE ONLY */
+@media (max-width: 768px) {
+  .chip-marquee-ready {
+    overflow: hidden;
+  }
+
+  .chip-marquee-ready .chip-marquee-track {
+    width: max-content;
+    flex-wrap: nowrap;
+    gap: 0;
+    animation: chipMarquee var(--chip-marquee-duration, 18s) linear infinite;
+    will-change: transform;
+  }
+
+  .chip-marquee-ready .chip-marquee-group {
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    padding-right: 12px;
+  }
+
+  .chip-marquee-ready .chip-marquee-group[aria-hidden="true"] {
+    display: flex;
+  }
+
+  .chip-marquee-ready:hover .chip-marquee-track {
+    animation-play-state: paused;
+  }
 }
 
 /* BUTOONS (PRIMARY & SECONDARY)

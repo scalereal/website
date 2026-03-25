@@ -42,7 +42,61 @@ $(window).on("resize", setGlobalAnchorPadding);
 $(window).on("hashchange", function () {
   scrollToHashTarget(window.location.hash, 120);
 });
+
+function buildChipMarquee(root) {
+  if (!root || root.dataset.marqueeReady === "true") return;
+
+  var items = Array.from(root.children);
+  if (items.length === 0) return;
+
+  var track = document.createElement("div");
+  track.className = "chip-marquee-track";
+
+  var primaryGroup = document.createElement("div");
+  primaryGroup.className = "chip-marquee-group";
+
+  items.forEach(function (item) {
+    primaryGroup.appendChild(item);
+  });
+
+  var cloneGroup = primaryGroup.cloneNode(true);
+  cloneGroup.setAttribute("aria-hidden", "true");
+
+  track.appendChild(primaryGroup);
+  track.appendChild(cloneGroup);
+  root.appendChild(track);
+  root.classList.add("chip-marquee-ready");
+  root.dataset.marqueeReady = "true";
+}
+
+function updateChipMarquee(root) {
+  var primaryGroup = root.querySelector(".chip-marquee-group");
+  if (!primaryGroup) return;
+
+  var speed = parseFloat(root.dataset.marqueeSpeed || "70");
+  var width = Math.ceil(primaryGroup.getBoundingClientRect().width);
+  if (!width) return;
+
+  root.style.setProperty("--chip-marquee-distance", "-" + width + "px");
+  root.style.setProperty(
+    "--chip-marquee-duration",
+    Math.max(width / speed, 12) + "s",
+  );
+}
+
+function initChipMarquees() {
+  var marquees = document.querySelectorAll(".js-chip-marquee");
+  if (marquees.length === 0) return;
+
+  marquees.forEach(function (root) {
+    buildChipMarquee(root);
+    updateChipMarquee(root);
+  });
+}
+
 $(document).ready(function () {
+  initChipMarquees();
+
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
     nav: false,
@@ -176,6 +230,7 @@ $(document).ready(function () {
 
   initServicesCarousel();
   $(window).on("resize", initServicesCarousel);
+  $(window).on("load resize", initChipMarquees);
 
   function initAiCapabilitiesCarousel() {
     var $carousel = $(".js-ai-capabilities-carousel");
