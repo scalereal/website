@@ -424,7 +424,7 @@
   {
     "title": "Gbas Gbos",
     "description": "This is a Match 3 Fruit Crush Game that aims to not only entertain but also educate people around the world about the beauties of the fruit types found only in African countries. The rich terrains, landmarks, and people of Africa are richly established in the game-play and GUI of this game app. Invite and challenge your friends in a private game room and the winner takes it all.",
-    "technologies": "Unity3D, Game Engine, CakePHP, Terraform, AWS",
+    "technologies": "Unity3d Game Engine, CakePHP, Terraform, AWS",
     "categories": ["Gaming"],
     "main_container_class": "section-service-detail section-project-detail gbas-container",
     "data_aos_anchor": null,
