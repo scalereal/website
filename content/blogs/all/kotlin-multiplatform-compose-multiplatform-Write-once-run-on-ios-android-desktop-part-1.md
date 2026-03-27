@@ -1,7 +1,7 @@
 ---
-title: Kotlin Multiplatform + Compose: Write Once, Run on iOS, Android & Desktop (Part 1)
+title: "Kotlin Multiplatform + Compose: Write Once, Run on iOS, Android & Desktop (Part 1)"
 
-description: A modern approach to shipping consistent apps across platforms using Kotlin Multiplatform and Compose. Share business logic across iOS, Android, and Desktop.
+description: "A modern approach to shipping consistent apps across platforms using Kotlin Multiplatform and Compose. Share business logic across iOS, Android, and Desktop."
 
 categories:
   - mobile
