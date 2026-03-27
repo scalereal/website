@@ -1,21 +1,23 @@
 ---
-title: "Kotlin Multiplatform + Compose Multiplatform: Write Once, Run on iOS, Android & Desktop - Part 1"
-description: >-
-  A modern approach to shipping consistent apps across platforms. KMP allows you to write shared business logic once in Kotlin and use it across iOS, Android, and even backend systems.
+title: Kotlin Multiplatform + Compose: Write Once, Run on iOS, Android & Desktop (Part 1)
+
+description: A modern approach to shipping consistent apps across platforms using Kotlin Multiplatform and Compose. Share business logic across iOS, Android, and Desktop.
+
 categories:
   - mobile
-keywords:
-  - Kotlin Multiplatform for iOS Developers
-  - Kotlin Multiplatform Mobile (KMP)
-  - Compose Multiplatform
-date: '2026-01-13'
+
+date: 2026-01-13
+
 tags:
-  - Mobile
-  - App
+  - Kotlin Multiplatform
+  - Compose Multiplatform
+  - Cross Platform
+
 author: ScaleReal Team
-image: '/images/blog/img_1768300126307_5576.png'
-url: kotlin-multiplatform-compose-multiplatform-Write-once-run-on-ios-android-desktop-part-1
-draft: false
+
+image: /images/blog/img_1768300126307_5576.png
+
+url: mobile/2026/01/13/kotlin-multiplatform-compose-write-once-run-ios-android-desktop-part-1
 ---
 
 If you’ve been building mobile apps for years, you’ve likely felt the pain:
