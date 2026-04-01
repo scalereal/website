@@ -857,68 +857,6 @@ h3 {
   white-space: nowrap;
 }
 
-.chip-marquee-ready {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.chip-marquee-ready .chip-marquee-track {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.chip-marquee-ready .chip-marquee-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 5px;
-}
-
-.chip-marquee-ready .chip-marquee-group[aria-hidden="true"] {
-  display: none;
-}
-
-@keyframes chipMarquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(var(--chip-marquee-distance, -50%));
-  }
-}
-
-/* MOBILE MARQUEE ONLY */
-@media (max-width: 768px) {
-  .chip-marquee-ready {
-    overflow: hidden;
-  }
-
-  .chip-marquee-ready .chip-marquee-track {
-    width: max-content;
-    flex-wrap: nowrap;
-    gap: 0;
-    animation: chipMarquee var(--chip-marquee-duration, 18s) linear infinite;
-    will-change: transform;
-  }
-
-  .chip-marquee-ready .chip-marquee-group {
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    padding-right: 12px;
-  }
-
-  .chip-marquee-ready .chip-marquee-group[aria-hidden="true"] {
-    display: flex;
-  }
-
-  .chip-marquee-ready:hover .chip-marquee-track {
-    animation-play-state: paused;
-  }
-}
-
 /* BUTOONS (PRIMARY & SECONDARY)
 -------------------------------------------------- */
 
@@ -3520,7 +3458,7 @@ lottie-player {
   }
 
   .banner-home .banner-content {
-    width: 80%;
+    width: 90%;
   }
 
   .banner-home .banner-content h1,
@@ -3530,8 +3468,8 @@ lottie-player {
   }
 
   .banner-home .banner-content p {
-    margin-bottom: 40px;
-    min-height: 110px;
+    margin-bottom: 20px;
+    min-height: 90px;
     width: 100%;
   }
 
@@ -6208,5 +6146,50 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   .navbar-expand-lg .navbar-nav .nav-item-about .about-dropdown a.active {
     background: transparent;
     color: var(--primary-color);
+  }
+}
+
+.sr-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sr-tags span {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Mobile marquee */
+@media (max-width: 768px) {
+  .marquee-mobile {
+    overflow: hidden;
+    padding: 6px 0;
+  }
+
+  .marquee-mobile.swiper {
+    display: block;
+  }
+
+  .marquee-mobile .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition-timing-function: linear !important;
+  }
+
+  .marquee-mobile .swiper-slide {
+    width: auto !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner-home .marquee-mobile {
+    flex-shrink: 0;
+    width: 100%;
   }
 }

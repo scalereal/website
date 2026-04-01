@@ -43,59 +43,54 @@ $(window).on("hashchange", function () {
   scrollToHashTarget(window.location.hash, 120);
 });
 
-function buildChipMarquee(root) {
-  if (!root || root.dataset.marqueeReady === "true") return;
+function initMobileMarquee() {
+  if (window.innerWidth > 768) return;
 
-  var items = Array.from(root.children);
-  if (items.length === 0) return;
+  document.querySelectorAll(".marquee-mobile").forEach((el) => {
+    if (el.classList.contains("swiper-initialized")) return;
 
-  var track = document.createElement("div");
-  track.className = "chip-marquee-track";
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("swiper-wrapper");
 
-  var primaryGroup = document.createElement("div");
-  primaryGroup.className = "chip-marquee-group";
+    const items = Array.from(el.children);
+    const allItems = [...items, ...items];
 
-  items.forEach(function (item) {
-    primaryGroup.appendChild(item);
-  });
+    allItems.forEach((child) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide");
+      slide.appendChild(child.cloneNode(true));
+      wrapper.appendChild(slide);
+    });
 
-  var cloneGroup = primaryGroup.cloneNode(true);
-  cloneGroup.setAttribute("aria-hidden", "true");
+    el.innerHTML = "";
+    el.appendChild(wrapper);
+    el.classList.add("swiper");
 
-  track.appendChild(primaryGroup);
-  track.appendChild(cloneGroup);
-  root.appendChild(track);
-  root.classList.add("chip-marquee-ready");
-  root.dataset.marqueeReady = "true";
-}
+    new Swiper(el, {
+      slidesPerView: "auto",
+      spaceBetween: 16,
 
-function updateChipMarquee(root) {
-  var primaryGroup = root.querySelector(".chip-marquee-group");
-  if (!primaryGroup) return;
+      loop: true,
+      loopedSlides: allItems.length,
 
-  var speed = parseFloat(root.dataset.marqueeSpeed || "70");
-  var width = Math.ceil(primaryGroup.getBoundingClientRect().width);
-  if (!width) return;
+      speed: 2000,
+      allowTouchMove: false,
 
-  root.style.setProperty("--chip-marquee-distance", "-" + width + "px");
-  root.style.setProperty(
-    "--chip-marquee-duration",
-    Math.max(width / speed, 12) + "s",
-  );
-}
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
 
-function initChipMarquees() {
-  var marquees = document.querySelectorAll(".js-chip-marquee");
-  if (marquees.length === 0) return;
+      freeMode: true,
+      freeModeMomentum: false,
 
-  marquees.forEach(function (root) {
-    buildChipMarquee(root);
-    updateChipMarquee(root);
+      grabCursor: false,
+    });
   });
 }
 
 $(document).ready(function () {
-  initChipMarquees();
+  initMobileMarquee();
 
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
