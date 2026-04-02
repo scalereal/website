@@ -73,7 +73,7 @@ function initMobileMarquee() {
       loop: true,
       loopedSlides: allItems.length,
 
-      speed: 2000,
+      speed: 1000,
       allowTouchMove: false,
 
       autoplay: {
