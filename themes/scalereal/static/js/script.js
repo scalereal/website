@@ -53,7 +53,8 @@ function initMobileMarquee() {
     wrapper.classList.add("swiper-wrapper");
 
     const items = Array.from(el.children);
-    const allItems = [...items, ...items];
+    // Triple the items so there's always enough for a seamless loop
+    const allItems = [...items, ...items, ...items];
 
     allItems.forEach((child) => {
       const slide = document.createElement("div");
@@ -69,22 +70,19 @@ function initMobileMarquee() {
     new Swiper(el, {
       slidesPerView: "auto",
       spaceBetween: 16,
-
       loop: true,
-      loopedSlides: allItems.length,
-
-      speed: 1000,
+      speed: 3000, // High speed = long, smooth transition per cycle
       allowTouchMove: false,
-
+      grabCursor: false,
       autoplay: {
-        delay: 0,
+        delay: 0, // No pause between transitions
         disableOnInteraction: false,
       },
-
-      freeMode: true,
-      freeModeMomentum: false,
-
-      grabCursor: false,
+      freeMode: {
+        // ✅ Object syntax required for Swiper 8+
+        enabled: true,
+        momentum: false, // Prevents deceleration bounce
+      },
     });
   });
 }
