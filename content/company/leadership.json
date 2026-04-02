@@ -1,31 +1,17 @@
 [
   {
-    "name": "Amey Kode",
-    "title": "Delivery Manager",
-    "quote": "We build products that turn complex challenges into clear wins.",
-    "linkedin": "https://www.linkedin.com/in",
-    "image": "images/leadership/amey.png"
-  },
-  {
-    "name": "Mamata Joshi",
-    "title": "Delivery Manager",
-    "quote": "We build products that turn complex challenges into clear wins.",
-    "linkedin": "https://www.linkedin.com/in",
-    "image": "images/leadership/mamata.png"
-  },
-  {
-    "name": "Harish Karthik",
-    "title": "Engineering Manager",
-    "quote": "We build products that turn complex challenges into clear wins.",
-    "linkedin": "https://www.linkedin.com/in",
-    "image": "images/leadership/harish.png"
-  },
-  {
     "name": "Prathamesh Gunde",
     "title": "Engineering Manager",
-    "quote": "Focuses on building strong engineering systems and guiding teams through structured execution. Brings clarity to technical decisions, encourages best practices, and ensures that development stays efficient, reliable, and aligned with long-term product needs.",
+    "quote": "Leads architecture and technical direction across multiple projects, ensuring systems are scalable and maintainable. Focuses on building strong cross-cultural engineering teams and guiding them through structured execution that ensures development stays efficient, reliable, and aligned with long-term product needs.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/prathamesh.png"
+  },
+  {
+    "name": "Amey Kode",
+    "title": "Delivery Manager",
+    "quote": "Oversees end-to-end project delivery, ensuring timelines, quality, and communication remain consistent. Works closely with clients and internal teams to manage priorities, remove blockers, and maintain full visibility across every stage of the development lifecycle.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/amey.png"
   },
   {
     "name": "Pranali Ahirrao",
@@ -35,10 +21,24 @@
     "image": "images/leadership/pranali.png"
   },
   {
+    "name": "Mamata Joshi",
+    "title": "Delivery Manager",
+    "quote": "Ensures smooth coordination between teams, stakeholders, and deliverables across projects. Focuses on structured execution, proactive communication, and maintaining alignment between business goals and technical progress throughout the engagement.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/mamata.png"
+  },
+  {
     "name": "Mansi Khakhar",
-    "title": "Sales Manager",
-    "quote": "We build products that turn complex challenges into clear wins.",
+    "title": "Growth Manager",
+    "quote": "Leads ScaleReal’s revenue growth by aligning client needs with the right technology solutions. Focuses on building long-term relationships, structuring deals, and ensuring a smooth transition from sales to delivery, while maintaining clarity, trust, and consistency across every client engagement.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/mansi.png"
+  },
+  {
+    "name": "Harish Karthik",
+    "title": "Engineering Manager",
+    "quote": "Leads the company’s technology vision and ensures that we keep raising the bar of engineering excellence with emerging new technologies. Works closely with teams to solve complex challenges, improve engineering practices, and deliver high-quality solutions consistently.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/harish.png"
   }
 ]
