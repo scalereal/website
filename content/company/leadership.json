@@ -1,37 +1,44 @@
 [
   {
     "name": "Amey Kode",
-    "title": "Business Analyst - III",
+    "title": "Delivery Manager",
     "quote": "We build products that turn complex challenges into clear wins.",
     "linkedin": "https://www.linkedin.com/in",
-    "image": "images/leadership/amey.jpeg"
+    "image": "images/leadership/amey.png"
   },
   {
     "name": "Mamata Joshi",
-    "title": "Business Analyst - III",
+    "title": "Delivery Manager",
     "quote": "We build products that turn complex challenges into clear wins.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/mamata.png"
   },
   {
     "name": "Harish Karthik",
-    "title": "Software Development Engineer - III",
+    "title": "Engineering Manager",
     "quote": "We build products that turn complex challenges into clear wins.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/harish.png"
   },
   {
     "name": "Prathamesh Gunde",
-    "title": "Software Development Engineer - III",
-    "quote": "We build products that turn complex challenges into clear wins.",
+    "title": "Engineering Manager",
+    "quote": "Focuses on building strong engineering systems and guiding teams through structured execution. Brings clarity to technical decisions, encourages best practices, and ensures that development stays efficient, reliable, and aligned with long-term product needs.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/prathamesh.png"
   },
   {
     "name": "Pranali Ahirrao",
-    "title": "Senior People Experience Associate",
-    "quote": "We build products that turn complex challenges into clear wins.",
+    "title": "People & Culture Manager",
+    "quote": "Shapes ScaleReal’s people strategy by focusing on hiring, engagement, and team development. Works closely with leadership to build a strong, inclusive culture, streamline HR processes, and ensure the team grows with clarity, consistency, and a positive work environment.",
     "linkedin": "https://www.linkedin.com/in",
     "image": "images/leadership/pranali.png"
+  },
+  {
+    "name": "Mansi Khakhar",
+    "title": "Sales Manager",
+    "quote": "We build products that turn complex challenges into clear wins.",
+    "linkedin": "https://www.linkedin.com/in",
+    "image": "images/leadership/mansi.png"
   }
 ]
