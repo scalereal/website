@@ -25,7 +25,7 @@
         class="team-card js-team-card"
         role="button"
         tabindex="0"
-        aria-label="Founder details"
+        aria-label="Leadership details"
       >
         <div class="team-card-inner">
           <div class="team-card-front">
@@ -60,7 +60,10 @@
 
 <script>
   (function () {
-    const cards = document.querySelectorAll(".js-team-card");
+    const section = document.currentScript.previousElementSibling;
+    if (!section) return;
+
+    const cards = section.querySelectorAll(".js-team-card");
     if (!cards.length) return;
 
     const isMobile = () => window.matchMedia("(max-width: 767.98px)").matches;
