@@ -19,8 +19,8 @@
     </div>
 
     <div class="team-cards-grid">
-      {{ $leadership := getJSON "/content/company/leadership.json" }} {{ range
-      $leadership }}
+      {{ $leadership := getJSON "/content/company/leadership.json" }} 
+      {{ range $leadership }}
       <div
         class="team-card js-team-card"
         role="button"
