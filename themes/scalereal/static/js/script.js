@@ -71,7 +71,7 @@ function initMobileMarquee() {
       slidesPerView: "auto",
       spaceBetween: 16,
       loop: true,
-      speed: 3000, // High speed = long, smooth transition per cycle
+      speed: 4000, // High speed = long, smooth transition per cycle
       allowTouchMove: false,
       grabCursor: false,
       autoplay: {
