@@ -5443,6 +5443,10 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   color: #fbbc04;
 }
 
+.filled-orange {
+  color: #e62415;
+}
+
 .filled-primary {
   color: var(--primary-color);
 }
