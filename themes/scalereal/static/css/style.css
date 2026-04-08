@@ -485,7 +485,17 @@ h3 {
 
 .eng-philosophy-right {
   flex: 1 1 58%;
-  border-left: 1px solid var(--border);
+  position: relative;
+}
+
+.eng-philosophy-right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 1px;
+  background: var(--border);
 }
 
 .eng-philosophy-head {
@@ -590,7 +600,15 @@ h3 {
 
   .eng-philosophy-right {
     border-left: 0;
-    border-top: 1px solid var(--border);
+  }
+
+  .eng-philosophy-right::before {
+    top: 0;
+    bottom: auto;
+    left: 24px;
+    right: 24px;
+    width: auto;
+    height: 1px;
   }
 }
 
@@ -847,7 +865,7 @@ h3 {
 }
 
 .sr-tags span {
-  font-size: 13px;
+  font-size: 14px;
   padding: 6px 14px;
   border-radius: 999px;
   background: #fff;
@@ -930,7 +948,7 @@ h3 {
 
 @media (max-width: 767px) {
   .sr-btn {
-    width: 75%;
+    width: 70%;
     text-align: center;
   }
 }
@@ -1429,8 +1447,8 @@ h3 {
   }
 
   .navbar-nav {
-    background: #fff;
-    border-radius: 15px;
+    /* background: #fff;
+    border-radius: 15px; */
     margin-top: 20px;
     padding-top: 20px;
   }
@@ -3909,7 +3927,7 @@ lottie-player {
   display: flex;
   list-style: none;
   border-radius: 0.25rem;
-  margin: 20px 10px;
+  margin: 0 60px;
   padding: 0;
   justify-content: center;
   position: relative;
@@ -4053,10 +4071,10 @@ lottie-player {
   .all-list-section ul li:after {
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     width: 100%;
     margin-top: 40px;
-    background: #cccbcb;
+    background: var(--border);
   }
   .all-list-section ul li:last-child:after {
     width: 0%;
@@ -5116,7 +5134,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   padding: 4px 12px;
-  font-size: 11px;
+  font-size: 12px;
   border-radius: 20px;
   margin: 0 8px 8px 0;
 }
@@ -5203,33 +5221,14 @@ div.code-toolbar .toolbar-item:nth-child(2) {
     grid-template-columns: 1fr;
   }
 
-  .ai-capabilities-content.feature-card-carousal {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .ai-capabilities-content.feature-card-carousal.owl-carousel {
-    display: block;
-  }
-
-  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-stage-outer {
-    padding-bottom: 6px;
-  }
-
-  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .ai-capabilities-content.feature-card-carousal.owl-carousel .owl-item {
-    padding: 0 4px;
-  }
-
   .ai-capabilities-card {
     display: block;
     opacity: 1;
     transform: none;
+    margin-bottom: 16px;
+  }
+
+  .ai-capabilities-card:last-child {
     margin-bottom: 0;
   }
 
@@ -5526,7 +5525,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 
 @media (max-width: 767px) {
   .rating-card {
-    padding: 30px 20px;
+    padding: 0 20px;
   }
 
   .rating-stars {
