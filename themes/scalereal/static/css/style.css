@@ -3420,8 +3420,8 @@ lottie-player {
   }
 
   .navbar-nav {
-    background: #fff;
-    border-radius: 15px;
+    /* background: #fff;
+    border-radius: 15px; */
     margin-top: 20px;
     padding-top: 20px;
   }
@@ -5417,10 +5417,10 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   border-radius: 12px;
 }
 
-.rating-card:hover {
+/* .rating-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .rating-stars {
   display: flex;
