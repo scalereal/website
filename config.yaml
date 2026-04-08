@@ -24,18 +24,16 @@ params:
   navigation:
     - name: Home
       url: /
-    - name: Services
-      url: /services
+    - name: Expertise
+      url: /expertise
     - name: Projects
       url: /projects
-    - name: Company
+    - name: About
       url: /company
     - name: Blogs
       url: /blogs
     - name: Careers
       url: /careers
-    - name: Contact
-      url: /contact
   fonts:
     google: [['Open Sans', '300,400,600,700,800']]
   tags: ['Web Application']

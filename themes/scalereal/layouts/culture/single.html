@@ -1,0 +1,21 @@
+{{ "<!-- Culture -->" | safeHTML }}
+
+<!doctype html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head" . }}
+
+  <body>
+    {{ partial "nav" . }}
+    {{ template "culture/banner.html" .}}
+    {{ template "culture/core-values.html" .}}
+    {{ template "careers/why-scalereal.html" .}} 
+    {{ template "culture/rituals.html" .}}
+    {{ template "culture/engineering-philosophy.html" .}}
+    {{ template "culture/diversity.html" .}}
+    {{ template "culture/our-culture.html" .}}
+    {{ template "company/our-reviews.html" .}}
+    {{ template "culture/join-us.html" .}}
+    {{ partial "footer" . }}
+  </body>
+  {{ partial "js" . }}
+</html>

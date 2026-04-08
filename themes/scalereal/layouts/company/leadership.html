@@ -1,0 +1,93 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <header class="heading content-center">
+          <div class="section-chip-light">
+            <div class="icon-shield-user"></div>
+            <span>Leadership</span>
+          </div>
+          <h2 class="section-title">
+            People Who <span class="text-blue">Own the Outcome</span>
+          </h2>
+          <p class="section-subtitle section-info">
+            A group of leaders focused on thoughtful planning, disciplined
+            execution, and long-term stability across teams and projects.
+          </p>
+        </header>
+      </div>
+    </div>
+
+    <div class="team-cards-grid">
+      {{ $leadership := getJSON "/content/company/leadership.json" }} 
+      {{ range $leadership }}
+      <div
+        class="team-card js-team-card"
+        role="button"
+        tabindex="0"
+        aria-label="Leadership details"
+      >
+        <div class="team-card-inner">
+          <div class="team-card-front">
+            <img
+              class="team-card-photo"
+              src="{{ .image | absURL }}"
+              alt="{{ .name }}"
+            />
+            <div class="team-card-meta">
+              <div class="team-card-name">{{ .name }}</div>
+              <div class="team-card-title">{{ .title }}</div>
+            </div>
+          </div>
+          <div class="team-card-back">
+            <p class="team-card-quote mb-4">{{ .quote }}</p>
+            <div class="footer-social">
+              <a
+                href="{{ .linkedin }}"
+                target="_blank"
+                title="LinkedIn"
+                rel="noopener"
+                aria-label="Connect on LinkedIn"
+                >in</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const section = document.currentScript.previousElementSibling;
+    if (!section) return;
+
+    const cards = section.querySelectorAll(".js-team-card");
+    if (!cards.length) return;
+
+    const isMobile = () => window.matchMedia("(max-width: 767.98px)").matches;
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        if (!isMobile()) return;
+        card.classList.toggle("is-flipped");
+      });
+
+      card.addEventListener("keydown", (e) => {
+        if (!isMobile()) return;
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          card.classList.toggle("is-flipped");
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (!isMobile()) {
+        cards.forEach((card) => card.classList.remove("is-flipped"));
+      }
+    });
+  })();
+</script>

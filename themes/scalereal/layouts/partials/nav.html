@@ -1,23 +1,98 @@
 <a class="" aria-label="POST" href="/post"></a>
-<nav class="navbar navbar-fixed-top navbar-expand-md home-page" id="nav">
-    <div class="container navbar-content">
-        <a class="navbar-brand" href="/"><img alt="scalereal" src="{{ "images/logo/scalereal-logo-white.svg" | absURL}}"></a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler hamburger hamburger--spring" data-target="#navbarSupportedContent"
-            data-toggle="collapse" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+<nav class="navbar navbar-fixed-top navbar-expand-lg home-page" id="nav">
+  <div class="container navbar-content">
+    <a class="navbar-brand" href="/">
+        <img alt="scalereal" src="{{ "images/logo/scalereal-logo-blue.svg" | absURL}}" />
+    </a>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler hamburger hamburger--spring"
+      data-target="#navbarSupportedContent"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                {{range .Site.Params.navigation}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{.url}}"> {{.name}}</a>
-                </li>
-                {{end}}
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {{ $currentPath := replaceRE "/+$" "" .RelPermalink }}
+        {{range .Site.Params.navigation}}
+        {{ $name := lower .name }}
+        {{ if eq $name "about" }}
+        <li role="button" class="nav-item nav-item-about pointer" id="nav-item-about">
+          <a class="nav-link about-toggle" id="about-nav-link">
+            <span>About</span>
+            <span class="about-chevron ml-1" aria-hidden="true"></span>
+          </a>
+          <ul class="about-dropdown" aria-label="About submenu">
+            {{ $isCompany := or (eq $currentPath "/company") (hasPrefix $currentPath "/company/") }}
+            {{ $isCulture := or (eq $currentPath "/culture") (hasPrefix $currentPath "/culture/") }}
+            {{ $isCareers := or (eq $currentPath "/careers") (hasPrefix $currentPath "/careers/") }}
+            <li><a href="/company" class="{{ if $isCompany }}active{{ end }}">Company</a></li>
+            <li><a href="/culture" class="{{ if $isCulture }}active{{ end }}">Culture</a></li>
+            <li><a href="/careers" class="{{ if $isCareers }}active{{ end }}">Careers</a></li>
+          </ul>
+        </li>
+        {{ else if ne $name "careers" }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{.url}}"> {{.name}}</a>
+        </li>
+        {{ end }}
+        {{end}}
+      </ul>
+      <div class="sr-btn-wrapper nav-cta nav-cta-mobile">
+        <a href="/ai-services" class="sr-btn secondary  py-2">
+          <i class="icon-brain-circuit"></i>
+          AI Services</a>
+        <a href="/contact" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
+      </div>
     </div>
+
+     <div class="sr-btn-wrapper nav-cta nav-cta-desktop">
+       <a href="/ai-services" class="sr-btn secondary  py-2">
+         <i class="icon-brain-circuit"></i>
+         AI Services</a>
+         <a href="/contact" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
+     </div>
+  </div>
 </nav>
+
+<script>
+  const navbar = document.getElementById("nav");
+  const aboutNavItem = document.getElementById("nav-item-about");
+  const aboutNavLink = document.getElementById("about-nav-link");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+
+  (function () {
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+    const aboutPaths = ["/company", "/culture", "/careers"];
+    const isAboutRoute = aboutPaths.some(
+      (path) => currentPath === path || currentPath.startsWith(path + "/"),
+    );
+
+    if (isAboutRoute && aboutNavLink) {
+      aboutNavLink.classList.add("active");
+    }
+  })();
+
+  if (aboutNavLink && aboutNavItem) {
+    aboutNavLink.addEventListener("click", function (e) {
+      if (window.matchMedia("(max-width: 991.98px)").matches) {
+        e.preventDefault();
+        aboutNavItem.classList.toggle("is-open");
+      }
+    });
+  }
+</script>

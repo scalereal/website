@@ -1,0 +1,278 @@
+[
+  {
+    "id": "voice-agents",
+    "title": "AI Voice Calling Agents",
+    "icon": "icon-phone",
+    "description": "Intelligent voice agents that handle inbound and outbound calls with human-like conversations. Perfect for customer support, appointment scheduling, sales outreach, and lead qualification.",
+    "chips": [
+      "Customer Support",
+      "Appointment Booking",
+      "Lead Qualification",
+      "Survey Collection"
+    ],
+    "keyCapabilities": [
+      "24/7 automated call handling",
+      "Natural language understanding",
+      "Real-time sentiment analysis",
+      "CRM integration & call logging",
+      "Multi-language support",
+      "Call transfer to human agents"
+    ],
+    "technologies": [
+      "Retell AI",
+      "ElevenLabs",
+      "Twilio",
+      "Azure Speech",
+      "OpenAI GPT-4"
+    ]
+  },
+  {
+    "id": "ocr",
+    "title": "OCR & Document Intelligence",
+    "icon": "icon-file-search-corner",
+    "description": "Extract structured data from invoices, receipts, contracts, IDs, and any document type with high accuracy. Automate data entry and document processing workflows.",
+    "chips": [
+      "Invoice Processing",
+      "KYC Automation",
+      "Contract Analysis",
+      "Data Digitization"
+    ],
+    "keyCapabilities": [
+      "Invoice & receipt processing",
+      "ID verification & extraction",
+      "Handwriting recognition",
+      "Table & form extraction",
+      "Multi-format support (PDF, images)",
+      "Validation & error detection"
+    ],
+    "technologies": [
+      "Azure Document Intelligence",
+      "Google Vision AI",
+      "Tesseract",
+      "Custom ML Models"
+    ]
+  },
+  {
+    "id": "analytics",
+    "title": "AI Analytics & Summarization",
+    "icon": "icon-chart-column",
+    "description": "Transform raw data into actionable insights. Automatically summarize documents, generate reports, and uncover patterns with AI-powered analytics.",
+    "chips": [
+      "Invoice Processing",
+      "KYC Automation",
+      "Contract Analysis",
+      "Data Digitization"
+    ],
+    "keyCapabilities": [
+      "Document summarization",
+      "Meeting transcript analysis",
+      "Trend & pattern detection",
+      "Automated report generation",
+      "Competitor intelligence",
+      "Social media analytics"
+    ],
+    "technologies": [
+      "OpenAI",
+      "Anthropic Claude",
+      "LangChain",
+      "Custom Analytics Pipelines"
+    ]
+  },
+  {
+    "id": "chatbots",
+    "title": "Conversational AI & Chatbots",
+    "icon": "icon-message-square",
+    "description": "Build intelligent chatbots that understand context, handle complex queries, and provide personalized responses across all channels.",
+    "chips": [
+      "Customer Service",
+      "Sales Assistant",
+      "Internal Help Desk",
+      "E-commerce Support"
+    ],
+    "keyCapabilities": [
+      "Multi-turn conversations",
+      "Knowledge base integration",
+      "Omnichannel deployment",
+      "Personalization & memory",
+      "Escalation workflows",
+      "Analytics & optimization"
+    ],
+    "technologies": [
+      "GPT-4",
+      "Claude",
+      "Rasa",
+      "Dialogflow",
+      "Custom RAG Systems"
+    ]
+  },
+  {
+    "id": "rag",
+    "title": "RAG & Knowledge Systems",
+    "icon": "icon-database-zap",
+    "description": "Build custom AI assistants that leverage your proprietary data. Retrieval-Augmented Generation for accurate, contextual responses from your documents.",
+    "chips": [
+      "Enterprise Search",
+      "Documentation Assistant",
+      "Legal Research",
+      "Medical Knowledge Base"
+    ],
+    "keyCapabilities": [
+      "Custom knowledge bases",
+      "Semantic search",
+      "Citation & source tracking",
+      "Continuous learning",
+      "Access control & permissions",
+      "Multi-source aggregation"
+    ],
+    "technologies": [
+      "LangChain",
+      "LlamaIndex",
+      "Pinecone",
+      "Weaviate",
+      "Weaviate"
+    ]
+  },
+  {
+    "id": "vision",
+    "title": "Computer Vision & Image AI",
+    "icon": "icon-image",
+    "description": "Analyze images and videos for object detection, classification, quality inspection, and visual search capabilities.",
+    "chips": [
+      "Manufacturing QC",
+      "Retail Analytics",
+      "Security & Surveillance",
+      "Medical Imaging"
+    ],
+    "keyCapabilities": [
+      "Object detection & tracking",
+      "Image classification",
+      "Quality inspection",
+      "Visual search",
+      "Face recognition",
+      "Scene understanding"
+    ],
+    "technologies": ["YOLO", "TensorFlow", "PyTorch", "OpenCV", "Azure Vision"]
+  },
+  {
+    "id": "speech",
+    "title": "Speech-to-Text & Voice AI",
+    "icon": "icon-mic",
+    "description": "Accurate speech recognition, real-time transcription, and voice synthesis for applications requiring audio processing.",
+    "chips": [
+      "Meeting Transcription",
+      "Voice Assistants",
+      "Podcast Processing",
+      "Call Center Analytics"
+    ],
+    "keyCapabilities": [
+      "Real-time transcription",
+      "Speaker diarization",
+      "Custom vocabulary",
+      "Multi-language support",
+      "Voice synthesis (TTS)",
+      "Audio analytics"
+    ],
+    "technologies": [
+      "Whisper",
+      "ElevenLabs",
+      "Azure Speech",
+      "Deepgram",
+      "AssemblyAI"
+    ]
+  },
+  {
+    "id": "search",
+    "title": "AI-Powered Search",
+    "icon": "icon-search-code",
+    "description": "Semantic search that understands intent, not just keywords. Find relevant information across documents, databases, and knowledge bases.",
+    "chips": [
+      "Enterprise Search",
+      "E-commerce",
+      "Documentation",
+      "Research Platforms"
+    ],
+    "keyCapabilities": [
+      "Semantic understanding",
+      "Natural language queries",
+      "Faceted search",
+      "Personalized results",
+      "Multi-modal search",
+      "Real-time indexing"
+    ],
+    "technologies": [
+      "Elasticsearch",
+      "Algolia",
+      "Pinecone",
+      "OpenAI Embeddings",
+      "Cohere"
+    ]
+  },
+  {
+    "id": "automation",
+    "title": "AI Workflow Automation",
+    "icon": "icon-workflow",
+    "description": "Automate complex business processes with intelligent workflows that adapt and learn. Connect AI models to your existing tools.",
+    "chips": [
+      "Document Processing",
+      "Customer Onboarding",
+      "Content Moderation",
+      "Data Pipeline"
+    ],
+    "keyCapabilities": [
+      "Process automation",
+      "Intelligent routing",
+      "Decision automation",
+      "Tool integration",
+      "Error handling",
+      "Human-in-the-loop"
+    ],
+    "technologies": [
+      "n8n",
+      "Zapier AI",
+      "LangChain Agents",
+      "Custom Orchestration"
+    ]
+  },
+  {
+    "id": "agents",
+    "title": "Autonomous AI Agents",
+    "icon": "icon-bot",
+    "description": "Build AI agents that can reason, plan, and execute complex multi-step tasks autonomously with tool-using capabilities.",
+    "chips": [
+      "Research Assistant",
+      "Code Assistant",
+      "Data Analysis",
+      "Task Automation"
+    ],
+    "keyCapabilities": [
+      "Multi-step reasoning",
+      "Tool calling & APIs",
+      "Goal-oriented planning",
+      "Self-correction",
+      "Memory & context",
+      "Human oversight"
+    ],
+    "technologies": ["OpenAI Assistants", "AutoGPT", "CrewAI", "LangGraph"]
+  },
+  {
+    "id": "llm",
+    "title": "LLM Fine-Tuning & Training",
+    "icon": "icon-brain-circuit",
+    "description": "Customize language models on your domain-specific data for superior accuracy and performance on specialized tasks.",
+    "chips": [
+      "Industry-Specific AI",
+      "Compliance Models",
+      "Branded Assistants",
+      "Technical Support"
+    ],
+    "keyCapabilities": [
+      "Custom model training",
+      "Domain adaptation",
+      "Instruction tuning",
+      "RLHF implementation",
+      "Model evaluation",
+      "Deployment optimization"
+    ],
+    "technologies": ["OpenAI Fine-tuning", "Llama", "Mistral", "LoRA", "PEFT"]
+  }
+]

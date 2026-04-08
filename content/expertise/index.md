@@ -1,5 +1,5 @@
 ---
-title: Our Range of Services
+title: Our Range of Expertise
 description: We work as your technology partners to support your entire software development cycle by providing various services as an extension to your current team.
-type: services
+type: expertise
 ---

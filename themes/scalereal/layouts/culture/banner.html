@@ -1,0 +1,120 @@
+<div class="banner-home">
+  <div class="grid-overlay"></div>
+  <div class="glow glow-primary"></div>
+  <div class="glow glow-accent"></div>
+  <header class="banner-content text-center">
+    <div class="section-chip-light">
+      <div class="icon-heart"></div>
+      <span>Our Culture</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="hero-title text-black">
+      Where <span class="text-blue">Great People</span> Build Great Products
+    </h1>
+
+     <!-- Typewriter text -->
+      <p
+        class="typewrite hero-subtitle text-grey"
+        data-period="3000"
+        data-type='[
+          "Culture isn’t a perk, it’s our operating system. We’ve built an environment where talented people thrive, collaborate, and do their best work.",
+          "Integrity is the foundation of our relationships, both within our teams and with our clients."
+        ]'
+      >
+        <span class="wrap"></span>
+      </p>
+
+    <!-- CTA buttons -->
+    <div class="sr-btn-wrapper">
+      <a href="/careers" class="sr-btn primary">
+        Explore Open Positions <i class="icon-arrow-right"></i>
+      </a>
+      <a href="/ai-services" class="sr-btn secondary">Explore AI Services </a>
+    </div>
+
+     <div class="sr-divider"></div>
+    <span class="mb-4 op70 text-grey">Trusted by companies across</span>
+
+    <!-- Industry tags -->
+    <div class="sr-tags marquee-mobile justify-content-center">
+      <span>India</span>
+      <span>USA</span>
+      <span>UK</span>
+      <span>South Africa</span>
+      <span>Dubai</span>
+      <span>Finland</span>
+      <span>Nigeria</span>
+      <span>Mauritius</span>
+      <span>Sri Lanka</span>
+      <span>Indonesia</span>
+    </div>
+  </header>
+</div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
+    integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 3000;
+      this.txt = "";
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      const i = this.loopNum % this.toRotate.length;
+      const fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+      const that = this;
+      let delta = 100 - Math.random() * 100;
+
+      if (this.isDeleting) {
+        delta /= 20;
+      }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === "") {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      const elements = document.getElementsByClassName("typewrite");
+      for (let i = 0; i < elements.length; i++) {
+        let toRotate = elements[i].getAttribute("data-type");
+        let period = elements[i].getAttribute("data-period");
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      const css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };
+  </script>

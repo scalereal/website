@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Prathamesh Gunde",
+    "title": "Engineering Manager",
+    "quote": "Leads architecture and technical direction across multiple projects, ensuring systems are scalable and maintainable. Focuses on building strong cross-cultural engineering teams and guiding them through structured execution that ensures development stays efficient, reliable, and aligned with long-term product needs.",
+    "linkedin": "https://www.linkedin.com/in/prathamesh-gunde/",
+    "image": "images/leadership/prathamesh.png"
+  },
+  {
+    "name": "Amey Kode",
+    "title": "Delivery Manager",
+    "quote": "Oversees end-to-end project delivery, ensuring timelines, quality, and communication remain consistent. Works closely with clients and internal teams to manage priorities, remove blockers, and maintain full visibility across every stage of the development lifecycle.",
+    "linkedin": "https://www.linkedin.com/in/amey-kode/",
+    "image": "images/leadership/amey.png"
+  },
+  {
+    "name": "Pranali Ahirrao",
+    "title": "People & Culture Manager",
+    "quote": "Shapes ScaleReal’s people strategy by focusing on hiring, engagement, and team development. Works closely with leadership to build a strong, inclusive culture, streamline HR processes, and ensure the team grows with clarity, consistency, and a positive work environment.",
+    "linkedin": "https://www.linkedin.com/in/pranaliahirrao/",
+    "image": "images/leadership/pranali.png"
+  },
+  {
+    "name": "Mamata Joshi",
+    "title": "Delivery Manager",
+    "quote": "Ensures smooth coordination between teams, stakeholders, and deliverables across projects. Focuses on structured execution, proactive communication, and maintaining alignment between business goals and technical progress throughout the engagement.",
+    "linkedin": "https://www.linkedin.com/in/mamata-joshi/",
+    "image": "images/leadership/mamata.png"
+  },
+  {
+    "name": "Mansi Khakhar",
+    "title": "Growth Manager",
+    "quote": "Leads ScaleReal’s revenue growth by aligning client needs with the right technology solutions. Focuses on building long-term relationships, structuring deals, and ensuring a smooth transition from sales to delivery, while maintaining clarity, trust, and consistency across every client engagement.",
+    "linkedin": "https://www.linkedin.com/in/mansi-khakhar/",
+    "image": "images/leadership/mansi.png"
+  },
+  {
+    "name": "Harish Karthik",
+    "title": "Engineering Manager",
+    "quote": "Leads the company’s technology vision and ensures that we keep raising the bar of engineering excellence with emerging new technologies. Works closely with teams to solve complex challenges, improve engineering practices, and deliver high-quality solutions consistently.",
+    "linkedin": "https://www.linkedin.com/in/harish-karthik/",
+    "image": "images/leadership/harish.png"
+  }
+]

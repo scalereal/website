@@ -1,0 +1,51 @@
+{{ $blogsAll := where .Site.RegularPages "File.Dir" "==" "blogs/all/" }}
+<div class="banner-home">
+  <div class="grid-overlay"></div>
+  <div class="glow glow-primary"></div>
+  <div class="glow glow-accent"></div>
+  <header class="banner-content text-center">
+    <div class="section-chip-light">
+      <div class="icon-book-open-text"></div>
+      <span>Blogs</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="hero-title text-black">
+     <span class="text-blue">Your Guide</span>  to Custom Software Development 
+    </h1>
+
+    <p class="hero-subtitle text-grey">
+     A comprehensive look at our journey building intelligent software, featuring years of technical expertise and unique product insights.
+    </p>
+
+    <!-- CTA buttons -->
+    <div class="sr-btn-wrapper mb-5">
+      <a href="/contact" class="sr-btn primary">
+        Start Your Project <i class="icon-arrow-right"></i>
+      </a>
+      <a href="/expertise" class="sr-btn secondary"> Explore Services </a>
+    </div>
+
+     <div class="analytics full-width text-center">
+      <div class="analytics-card text-center h-auto">
+        <span class="text-blue analytics-number" limit="40">40k+</span>
+        <span class="text-grey analytics-label">Readers</span>
+      </div>
+
+      <div class="analytics-card h-auto">
+        <span class="text-blue analytics-number" limit="100">100k+</span>
+        <span class="text-grey analytics-label">Minutes Read</span>
+      </div>
+
+      <div class="analytics-card h-auto">
+        <span class="text-blue analytics-number" limit="150">150k+</span>
+        <span class="text-grey analytics-label">Views</span>
+      </div>
+
+      <div class="analytics-card h-auto">
+        <span class="text-blue analytics-number" limit="{{ len $blogsAll }}">{{ len $blogsAll }}</span>
+        <span class="text-grey analytics-label">Total Blogs</span>
+      </div>
+    </div>
+  </header>
+</div>
