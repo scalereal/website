@@ -3909,7 +3909,7 @@ lottie-player {
   display: flex;
   list-style: none;
   border-radius: 0.25rem;
-  margin: 20px 0;
+  margin: 20px 10px;
   padding: 0;
   justify-content: center;
   position: relative;
