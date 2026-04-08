@@ -19,11 +19,15 @@
       "Call transfer to human agents"
     ],
     "technologies": [
-      "Retell AI",
+      "Cartesia",
       "ElevenLabs",
+      "Deepgram",
+      "Sarvam AI",
       "Twilio",
+      "Plivo",
+      "Exotel",
       "Azure Speech",
-      "OpenAI GPT-4"
+      "OpenAI"
     ]
   },
   {
@@ -98,7 +102,7 @@
       "Analytics & optimization"
     ],
     "technologies": [
-      "GPT-4",
+      "OpenAI",
       "Claude",
       "Rasa",
       "Dialogflow",
@@ -124,13 +128,7 @@
       "Access control & permissions",
       "Multi-source aggregation"
     ],
-    "technologies": [
-      "LangChain",
-      "LlamaIndex",
-      "Pinecone",
-      "Weaviate",
-      "Weaviate"
-    ]
+    "technologies": ["LangChain", "LlamaIndex", "Pinecone", "Weaviate"]
   },
   {
     "id": "vision",
