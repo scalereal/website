@@ -883,6 +883,7 @@ h3 {
   .marquee-mobile {
     overflow: hidden;
     padding: 6px 0;
+    pointer-events: none;
   }
 
   .marquee-mobile.swiper {
@@ -899,6 +900,9 @@ h3 {
     width: auto !important;
     display: flex;
     align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 
   .banner-home .marquee-mobile {

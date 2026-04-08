@@ -73,6 +73,8 @@ function initMobileMarquee() {
       loop: true,
       speed: 4000, // High speed = long, smooth transition per cycle
       allowTouchMove: false,
+      simulateTouch: false,
+      touchRatio: 0,
       grabCursor: false,
       autoplay: {
         delay: 0, // No pause between transitions
