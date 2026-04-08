@@ -1,7 +1,7 @@
 [
   {
     "title": "Sales Development Representative",
-    "status": "Open",
+    "status": "Closed",
     "location": "Remote, India",
     "time": "Full time",
     "experience": "0 - 2 years of Experience",
@@ -85,7 +85,7 @@
   },
   {
     "title": "Lead Sales Development Representative",
-    "status": "Open",
+    "status": "Closed",
     "location": "Remote, India",
     "time": "Full time",
     "experience": "6 - 8 years of Experience",
@@ -179,7 +179,7 @@
     "applyUrl": "/apply/?profile=Python Engineer&ref=website"
   },
   {
-    "title": "iOS Mobile Developer",
+    "title": "iOS Mobile Engineer",
     "status": "Closed",
     "location": "Remote, India",
     "time": "Full time",
@@ -228,7 +228,7 @@
     "applyUrl": "/apply/?profile=iOS Mobile Developer&ref=website"
   },
   {
-    "title": "Android Mobile Developer",
+    "title": "Android Mobile Engineer",
     "status": "Closed",
     "location": "Remote, India",
     "time": "Full time",

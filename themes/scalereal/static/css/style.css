@@ -471,7 +471,7 @@ h3 {
   border-radius: 16px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(23, 54, 88, 0.08);
+  /* box-shadow: 0 20px 40px rgba(23, 54, 88, 0.08); */
 }
 
 .eng-philosophy-left,
@@ -866,7 +866,7 @@ h3 {
 
 .sr-tags span {
   font-size: 14px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 999px;
   background: #fff;
   border: 1px solid #ccc;
@@ -876,6 +876,10 @@ h3 {
 
 /* Mobile marquee */
 @media (max-width: 768px) {
+  .sr-tags span {
+    font-size: 12px;
+  }
+
   .marquee-mobile {
     overflow: hidden;
     padding: 6px 0;
@@ -2003,7 +2007,7 @@ h3 {
 
 @media (max-width: 992px) {
   .diversity-stats-grid {
-    gap: 16px 20px;
+    gap: 40px 20px;
   }
 
   .diversity-stat-value {
@@ -5425,7 +5429,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .rating-stars {
   display: flex;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   font-size: 32px;
 }
 
@@ -5464,7 +5468,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 }
 
 .rating-score {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .rating-score .score {
@@ -5531,7 +5535,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   .rating-stars {
     font-size: 24px;
     gap: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
   }
 
   .rating-score .score {
@@ -5543,7 +5547,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   }
 
   .rating-score {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .rating-logo {
@@ -5732,6 +5736,18 @@ div.code-toolbar .toolbar-item:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .careers-accordion .expand {
+    display: none;
+  }
+
+  .careers-accordion .card-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
 /* Expanded body */
@@ -5936,7 +5952,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 .milestone-dot {
   position: absolute;
   left: 50%;
-  top: 32px;
+  top: 42px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
