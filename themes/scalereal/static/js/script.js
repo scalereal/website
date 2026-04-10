@@ -47,44 +47,54 @@ function initMobileMarquee() {
   if (window.innerWidth > 768) return;
 
   document.querySelectorAll(".marquee-mobile").forEach((el) => {
-    if (el.classList.contains("swiper-initialized")) return;
-
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("swiper-wrapper");
+    if (el.dataset.marqueeInit) return;
+    el.dataset.marqueeInit = "true";
 
     const items = Array.from(el.children);
-    // Triple the items so there's always enough for a seamless loop
-    const allItems = [...items, ...items, ...items];
+    if (items.length === 0) return;
 
-    allItems.forEach((child) => {
-      const slide = document.createElement("div");
-      slide.classList.add("swiper-slide");
-      slide.appendChild(child.cloneNode(true));
-      wrapper.appendChild(slide);
+    const track = document.createElement("div");
+    track.classList.add("marquee-track");
+
+    const trackItems = [...items, ...items];
+
+    trackItems.forEach((child, index) => {
+      const clone = child.cloneNode(true);
+      if (index >= items.length) {
+        clone.setAttribute("aria-hidden", "true");
+      }
+      track.appendChild(clone);
     });
 
-    el.innerHTML = "";
-    el.appendChild(wrapper);
-    el.classList.add("swiper");
+    el.addEventListener("pointerdown", (e) => {
+      const isItemClick = e.target.closest(".marquee-track > *");
+      if (isItemClick) {
+        track.style.animationPlayState = "paused";
+      }
+    });
 
-    new Swiper(el, {
-      slidesPerView: "auto",
-      spaceBetween: 16,
-      loop: true,
-      speed: 4000, // High speed = long, smooth transition per cycle
-      allowTouchMove: false,
-      simulateTouch: false,
-      touchRatio: 0,
-      grabCursor: false,
-      autoplay: {
-        delay: 0, // No pause between transitions
-        disableOnInteraction: false,
-      },
-      freeMode: {
-        // ✅ Object syntax required for Swiper 8+
-        enabled: true,
-        momentum: false, // Prevents deceleration bounce
-      },
+    document.addEventListener("pointerdown", (e) => {
+      if (!el.contains(e.target)) {
+        track.style.animationPlayState = "running";
+      }
+    });
+
+    el.innerHTML = ""; // remove original children
+    el.appendChild(track); // add cloned and duplicated children
+    el.classList.add("marquee-active");
+
+    // Measure one set of items to set the animation distance
+    requestAnimationFrame(() => {
+      let totalWidth = 0;
+      const GAP = 12;
+      for (let i = 0; i < items.length; i++) {
+        totalWidth += track.children[i].offsetWidth + GAP;
+      }
+      track.style.setProperty("--marquee-distance", `-${totalWidth}px`);
+
+      const SPEED = 50;
+      const duration = totalWidth / SPEED;
+      track.style.animationDuration = `${duration}s`;
     });
   });
 }
