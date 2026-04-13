@@ -894,10 +894,11 @@ h3 {
     align-items: center;
     gap: 12px;
     width: max-content;
-    animation-name: marquee-scroll;
+    /* animation-name & animation-durationare set by JS after duration + distance are ready.
+       Setting it here causes iOS Safari to "complete" a 0s animation
+       before JS can set the duration, and it won't restart. */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    /* animation-duration is set inline by JS */
   }
 
   @keyframes marquee-scroll {

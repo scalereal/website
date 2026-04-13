@@ -56,45 +56,54 @@ function initMobileMarquee() {
     const track = document.createElement("div");
     track.classList.add("marquee-track");
 
-    const trackItems = [...items, ...items];
+    const trackItems = [...items, ...items, ...items];
 
     trackItems.forEach((child, index) => {
       const clone = child.cloneNode(true);
+
       if (index >= items.length) {
         clone.setAttribute("aria-hidden", "true");
       }
+
       track.appendChild(clone);
     });
 
-    el.addEventListener("pointerdown", (e) => {
-      const isItemClick = e.target.closest(".marquee-track > *");
-      if (isItemClick) {
-        track.style.animationPlayState = "paused";
-      }
-    });
-
-    document.addEventListener("pointerdown", (e) => {
-      if (!el.contains(e.target)) {
-        track.style.animationPlayState = "running";
-      }
-    });
-
-    el.innerHTML = ""; // remove original children
-    el.appendChild(track); // add cloned and duplicated children
+    el.innerHTML = "";
+    el.appendChild(track);
     el.classList.add("marquee-active");
 
-    // Measure one set of items to set the animation distance
-    requestAnimationFrame(() => {
-      let totalWidth = 0;
-      const GAP = 12;
-      for (let i = 0; i < items.length; i++) {
-        totalWidth += track.children[i].offsetWidth + GAP;
-      }
-      track.style.setProperty("--marquee-distance", `-${totalWidth}px`);
+    const SPEED = 30;
 
-      const SPEED = 50;
-      const duration = totalWidth / SPEED;
-      track.style.animationDuration = `${duration}s`;
+    const updateMarqueeMetrics = () => {
+      requestAnimationFrame(() => {
+        let totalWidth = 0;
+        const GAP = parseInt(getComputedStyle(track).gap) || 12;
+        const originalCount = items.length;
+        for (let i = 0; i < originalCount; i++) {
+          totalWidth += track.children[i].offsetWidth + GAP;
+        }
+
+        track.style.setProperty("--marquee-distance", `-${totalWidth}px`);
+
+        const duration = totalWidth / SPEED;
+        track.style.animationDuration = `${duration}s`;
+
+        // set the animation only after calculating duration to avoid iOS Safari skipping the animation
+        track.style.animationName = "marquee-scroll";
+      });
+    };
+
+    updateMarqueeMetrics();
+
+    // Recalculate on resize (debounced) and orientation change
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(updateMarqueeMetrics, 150);
+    });
+
+    window.addEventListener("orientationchange", () => {
+      setTimeout(updateMarqueeMetrics, 200);
     });
   });
 }
