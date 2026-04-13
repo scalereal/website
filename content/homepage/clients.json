@@ -1,0 +1,134 @@
+{
+  "group1": [
+    {
+      "src": "images/clients/mindset-logo.png",
+      "title": "Mindset"
+    },
+    {
+      "src": "images/clients/blue-creazione-logo.png",
+      "title": "Blue Creazione"
+    },
+    {
+      "src": "images/clients/mercedes-benz-logo.png",
+      "title": "Mercedes Benz"
+    },
+    {
+      "src": "images/clients/dbe-cloud-logo.png",
+      "title": "DBE Cloud"
+    },
+    {
+      "src": "images/clients/panda-wolf-logo.png",
+      "title": "Panda and Wolf"
+    },
+    {
+      "src": "images/clients/smartquest-logo.png",
+      "title": "Smart Quest"
+    },
+    {
+      "src": "images/clients/galactica.png",
+      "title": "Galactica AI"
+    },
+    {
+      "src": "images/clients/tenfold-logo.jpg",
+      "title": "Tenfold"
+    },
+    {
+      "src": "images/clients/geo-spoc.png",
+      "title": "GeoSpoc"
+    },
+    {
+      "src": "images/clients/helpful-crowd.png",
+      "title": "HelpfulCrowd"
+    },
+    {
+      "src": "images/clients/medly-logo.png",
+      "title": "Medly"
+    },
+    {
+      "src": "images/clients/One2N.svg",
+      "title": "One2N"
+    },
+    {
+      "src": "images/clients/nurturev.png",
+      "title": "Nurturev"
+    },
+    {
+      "src": "images/clients/noobstorm.svg",
+      "title": "NoobStorm"
+    },
+    {
+      "src": "images/clients/fravity-logo.png",
+      "title": "Fravity"
+    },
+    {
+      "src": "images/clients/crbnAI_logo.svg",
+      "title": "CRNB AI"
+    }
+  ],
+  "group2": [
+    {
+      "src": "images/clients/amberstudent.png",
+      "title": "amber"
+    },
+    {
+      "src": "images/clients/cytess_logo.svg",
+      "title": "cytess"
+    },
+    {
+      "src": "images/clients/oneirix_labs.png",
+      "title": "oneirixlabs"
+    },
+    {
+      "src": "images/clients/sumasoft_logo.png",
+      "title": "sumasoft"
+    },
+    {
+      "src": "images/clients/lodgistics_logo.png",
+      "title": "lodgistics"
+    },
+    {
+      "src": "images/clients/velotio_logo.svg",
+      "title": "velotio"
+    },
+    {
+      "src": "images/clients/effipac-logo.svg",
+      "title": "effipac"
+    },
+    {
+      "src": "images/clients/hi_labs_logo.svg",
+      "title": "hilabs"
+    },
+    {
+      "src": "images/clients/myso_tras.png",
+      "title": "mysotras"
+    },
+    {
+      "src": "images/clients/DealSafe_Logo.png",
+      "title": "Dealsafe"
+    },
+    {
+      "src": "images/clients/TempTaker_Logo.svg",
+      "title": "TempTaker"
+    },
+    {
+      "src": "images/clients/AerialThermalImaging.png",
+      "title": "AerialThermalImaging"
+    },
+    {
+      "src": "images/clients/Hisense-Logo.png",
+      "title": "Hisense-Logo"
+    },
+    {
+      "src": "images/clients/graysons.svg",
+      "title": "graysons-Logo"
+    },
+    {
+      "src": "images/clients/iwmi-logo.png",
+      "title": "IWMI"
+    },
+    {
+      "src": "images/clients/Persana-logo.svg",
+      "title": "Persana"
+    }
+  ]
+}
