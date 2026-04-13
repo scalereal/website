@@ -110,6 +110,7 @@ function initMobileMarquee() {
 
 $(document).ready(function () {
   initMobileMarquee();
+  initMilestoneScrollReveal();
 
   // Homepage Projects and Testimonial sliders
   $(".owl-one, .owl-two").owlCarousel({
@@ -278,8 +279,6 @@ $(document).ready(function () {
 
     items.forEach((item) => observer.observe(item));
   }
-
-  initMilestoneScrollReveal();
 
   // CURRENT
   var senderSubMain = $(".sender-sub-main").offset();
