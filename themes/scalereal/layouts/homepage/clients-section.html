@@ -24,11 +24,11 @@
       <div class="marquee">
         <div class="marquee-group">
           {{ range $data.group1 }}
-          <div class="image-group">
+          <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
               src="{{ .src }}"
-              alt=""
+              alt="{{ .title }} logo"
               title="{{ .title }}"
             />
           </div>
@@ -36,7 +36,7 @@
         </div>
         <div class="marquee-group">
           {{ range $data.group1 }}
-          <div class="image-group">
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
               src="{{ .src }}"
@@ -51,7 +51,7 @@
       <div class="marquee">
         <div class="marquee-group-2">
           {{ range $data.group2 }}
-          <div class="image-group">
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
               src="{{ .src }}"
@@ -63,7 +63,7 @@
         </div>
         <div class="marquee-group-2">
           {{ range $data.group2 }}
-          <div class="image-group">
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
               src="{{ .src }}"
