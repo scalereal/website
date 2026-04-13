@@ -3182,7 +3182,7 @@ lottie-player {
   display: grid;
   place-items: center;
   width: clamp(10rem, 1rem + 40vmin, 30rem);
-  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 12);
 }
 
 .about-client .client-image {
@@ -3190,7 +3190,6 @@ lottie-player {
   width: 100%;
   border-radius: 0.5rem;
   aspect-ratio: 16/9;
-  padding: 5px 20px;
   filter: grayscale(100%);
 }
 
