@@ -3146,11 +3146,13 @@ lottie-player {
 
 .about-client .marquee-container {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
 .about-client .marquee {
   display: flex;
-  width: 2500px;
   overflow: hidden;
   margin: auto;
   user-select: none;
@@ -3162,6 +3164,7 @@ lottie-player {
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
+  margin-top: 30px;
   width: 100%;
   animation: scrollX 40s linear infinite;
 }
@@ -3173,16 +3176,33 @@ lottie-player {
   justify-content: space-around;
   white-space: nowrap;
   width: 100%;
+  margin-bottom: 20px;
   animation: scrollX 40s linear infinite;
   animation-direction: reverse;
   animation-delay: -3s;
 }
 
 .about-client .image-group {
-  display: grid;
-  place-items: center;
-  width: clamp(10rem, 1rem + 40vmin, 30rem);
-  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+  display: flex;
+  min-width: 80px;
+  max-width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.about-client .image-group.small {
+  min-width: 40px;
+  max-width: 60px;
+}
+
+.about-client .image-group.medium {
+  min-width: 100px;
+  max-width: 120px;
+}
+
+.about-client .image-group.big {
+  min-width: 140px;
+  max-width: 180px;
 }
 
 .about-client .client-image {
@@ -3190,7 +3210,6 @@ lottie-player {
   width: 100%;
   border-radius: 0.5rem;
   aspect-ratio: 16/9;
-  padding: 5px 20px;
   filter: grayscale(100%);
 }
 
@@ -3797,12 +3816,16 @@ lottie-player {
     line-height: 36px;
   }
 
-  .about-client .image-group {
-    padding: 1rem;
+  .about-client .marquee-container {
+    row-gap: 20px;
+  }
+  .about-client .marquee-group,
+  .about-client .marquee-group-2 {
+    width: fit-content;
   }
 
-  .about-client .client-image {
-    padding: 0;
+  .about-client .image-group {
+    padding: 1rem;
   }
 }
 

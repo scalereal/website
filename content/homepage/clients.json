@@ -1,0 +1,166 @@
+{
+  "group1": [
+    {
+      "src": "images/clients/mindset-logo.png",
+      "title": "Mindset",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/blue-creazione-logo.png",
+      "title": "Blue Creazione",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/mercedes-benz-logo.png",
+      "title": "Mercedes Benz",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/dbe-cloud-logo.png",
+      "title": "DBE Cloud",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/panda-wolf-logo.png",
+      "title": "Panda and Wolf",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/smartquest-logo.png",
+      "title": "Smart Quest",
+      "extraClass": "big"
+    },
+    {
+      "src": "images/clients/galactica.png",
+      "title": "Galactica AI",
+      "extraClass": "big"
+    },
+    {
+      "src": "images/clients/tenfold-logo.jpg",
+      "title": "Tenfold",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/geo-spoc.png",
+      "title": "GeoSpoc",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/helpful-crowd.png",
+      "title": "HelpfulCrowd",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/medly-logo.png",
+      "title": "Medly",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/One2N.svg",
+      "title": "One2N",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/nurturev.png",
+      "title": "Nurturev",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/noobstorm.svg",
+      "title": "NoobStorm",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/fravity-logo.png",
+      "title": "Fravity",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/crbnAI_logo.svg",
+      "title": "CRNB AI",
+      "extraClass": "medium"
+    }
+  ],
+  "group2": [
+    {
+      "src": "images/clients/amberstudent.png",
+      "title": "amber",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/cytess_logo.svg",
+      "title": "cytess",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/oneirix_labs.png",
+      "title": "oneirixlabs",
+      "extraClass": "big"
+    },
+    {
+      "src": "images/clients/sumasoft_logo.png",
+      "title": "sumasoft",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/lodgistics_logo.png",
+      "title": "lodgistics",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/velotio_logo.svg",
+      "title": "velotio",
+      "extraClass": "small"
+    },
+    {
+      "src": "images/clients/effipac-logo.svg",
+      "title": "effipac",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/hi_labs_logo.svg",
+      "title": "hilabs",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/myso_tras.png",
+      "title": "mysotras",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/DealSafe_Logo.png",
+      "title": "Dealsafe",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/TempTaker_Logo.svg",
+      "title": "TempTaker",
+      "extraClass": "big"
+    },
+    {
+      "src": "images/clients/AerialThermalImaging.png",
+      "title": "AerialThermalImaging",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/Hisense-Logo.png",
+      "title": "Hisense",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/graysons.svg",
+      "title": "GraysonSky",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/iwmi-logo.png",
+      "title": "IWMI",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/Persana-logo.svg",
+      "title": "Persana",
+      "extraClass": "medium"
+    }
+  ]
+}

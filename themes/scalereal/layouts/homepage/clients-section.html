@@ -20,481 +20,58 @@
     </div>
 
     <div class="marquee-container">
+      {{ $data := getJSON "/content/homepage/clients.json" }}
       <div class="marquee">
         <div class="marquee-group">
-          <div class="image-group">
+          {{ range $data.group1 }}
+          <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
-              src="images/clients/mindset-logo.png"
-              alt=""
-              title="Mindset"
+              src="{{ .src }}"
+              alt="{{ .title }} logo"
+              title="{{ .title }}"
             />
           </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/blue-creazione-logo.png"
-              alt=""
-              title="Blue Creazione"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/mercedes-benz-logo.png"
-              alt=""
-              title="Mercedes Benz"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/dbe-cloud-logo.png"
-              alt=""
-              title="DBE Cloud"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/panda-wolf-logo.png"
-              alt=""
-              title="Panda and Wolf"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/smartquest-logo.png"
-              alt=""
-              title="Smart Quest"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/galactica.png"
-              alt=""
-              title="Galactica AI"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/tenfold-logo.jpg"
-              alt=""
-              title="Tenfold"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/geo-spoc.png"
-              alt=""
-              title="GeoSpoc"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/helpful-crowd.png"
-              alt=""
-              title="HelpfulCrowd"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/medly-logo.png"
-              alt=""
-              title="Medly"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/One2N.svg"
-              alt=""
-              title="One2N"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/nurturev.png"
-              alt=""
-              title="Nurturev"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/noobstorm.svg"
-              alt=""
-              title="NoobStorm"
-            />
-          </div>
+          {{ end }}
         </div>
-        <div class="marquee-group">
-          <div class="image-group">
+        <div class="marquee-group" aria-hidden="true">
+          {{ range $data.group1 }}
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
-              src="images/clients/mindset-logo.png"
+              src="{{ .src }}"
               alt=""
-              title="Mindset"
+              title="{{ .title }}"
             />
           </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/blue-creazione-logo.png"
-              alt=""
-              title="Blue Creazione"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/mercedes-benz-logo.png"
-              alt=""
-              title="Mercedes Benz"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/dbe-cloud-logo.png"
-              alt=""
-              title="DBE Cloud"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/panda-wolf-logo.png"
-              alt=""
-              title="Panda and Wolf"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/smartquest-logo.png"
-              alt=""
-              title="Smart Quest"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/galactica.png"
-              alt=""
-              title="Galactica AI"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/tenfold-logo.jpg"
-              alt=""
-              title="Tenfold"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/geo-spoc.png"
-              alt=""
-              title="GeoSpoc"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/helpful-crowd.png"
-              alt=""
-              title="HelpfulCrowd"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/medly-logo.png"
-              alt=""
-              title="Medly"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/One2N.svg"
-              alt=""
-              title="One2N"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/nurturev.png"
-              alt=""
-              title="Nurturev"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/noobstorm.svg"
-              alt=""
-              title="NoobStorm"
-            />
-          </div>
+          {{ end }}
         </div>
       </div>
 
       <div class="marquee">
         <div class="marquee-group-2">
-          <div class="image-group">
+          {{ range $data.group2 }}
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
-              src="images/clients/amberstudent.png"
-              alt=""
-              title="amber"
+              src="{{ .src }}"
+              alt="{{ .title }} logo"
+              title="{{ .title }}"
             />
           </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/cytess_logo.svg"
-              alt=""
-              title="cytess"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/oneirix_labs.png"
-              alt=""
-              title="oneirixlabs"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/sumasoft_logo.png"
-              alt=""
-              title="sumasoft"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/lodgistics_logo.png"
-              alt=""
-              title="lodgistics"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/velotio_logo.svg"
-              alt=""
-              title="velotio"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/effipac-logo.svg"
-              alt=""
-              title="effipac"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/hi_labs_logo.svg"
-              alt=""
-              title="hilabs"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/myso_tras.png"
-              alt=""
-              title="mysotras"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/DealSafe_Logo.png"
-              alt=""
-              title="Dealsafe"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/TempTaker_Logo.svg"
-              alt=""
-              title="TempTaker"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/AerialThermalImaging.png"
-              alt=""
-              title="AerialThermalImaging"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/Hisense-Logo.png"
-              alt=""
-              title="Hisense-Logo"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/graysons.svg"
-              alt=""
-              title="graysons-Logo"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/iwmi-logo.png"
-              alt=""
-              title="IWMI"
-            />
-          </div>
+          {{ end }}
         </div>
-        <div class="marquee-group-2">
-          <div class="image-group">
+        <div class="marquee-group-2" aria-hidden="true">
+          {{ range $data.group2 }}
+         <div class="image-group  {{ .extraClass }}">
             <img
               class="client-image"
-              src="images/clients/amberstudent.png"
+              src="{{ .src }}"
               alt=""
-              title="amber"
+              title="{{ .title }}"
             />
           </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/cytess_logo.svg"
-              alt=""
-              title="cytess"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/oneirix_labs.png"
-              alt=""
-              title="oneirixlabs"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/sumasoft_logo.png"
-              alt=""
-              title="sumasoft"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/lodgistics_logo.png"
-              alt=""
-              title="lodgistics"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/velotio_logo.svg"
-              alt=""
-              title="velotio"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/effipac-logo.svg"
-              alt=""
-              title="effipac"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/hi_labs_logo.svg"
-              alt=""
-              title="hilabs"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/myso_tras.png"
-              alt=""
-              title="mysotras"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/DealSafe_Logo.png"
-              alt=""
-              title="Dealsafe"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/TempTaker_Logo.svg"
-              alt=""
-              title="TempTaker"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/AerialThermalImaging.png"
-              alt=""
-              title="AerialThermalImaging"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/Hisense-Logo.png"
-              alt=""
-              title="Hisense-Logo"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/graysons.svg"
-              alt=""
-              title="graysons-Logo"
-            />
-          </div>
-          <div class="image-group">
-            <img
-              class="client-image"
-              src="images/clients/iwmi-logo.png"
-              alt=""
-              title="IWMI"
-            />
-          </div>
+          {{ end }}
         </div>
       </div>
     </div>
