@@ -883,26 +883,31 @@ h3 {
   .marquee-mobile {
     overflow: hidden;
     padding: 6px 0;
-    pointer-events: none;
   }
 
-  .marquee-mobile.swiper {
+  .marquee-mobile.marquee-active {
     display: block;
   }
 
-  .marquee-mobile .swiper-wrapper {
+  .marquee-track {
     display: flex;
     align-items: center;
-    transition-timing-function: linear !important;
+    gap: 12px;
+    width: max-content;
+    /* animation-name & animation-durationare set by JS after duration + distance are ready.
+       Setting it here causes iOS Safari to "complete" a 0s animation
+       before JS can set the duration, and it won't restart. */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
-  .marquee-mobile .swiper-slide {
-    width: auto !important;
-    display: flex;
-    align-items: center;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(var(--marquee-distance));
+    }
   }
 
   .banner-home .marquee-mobile {
