@@ -34,7 +34,7 @@
           </div>
           {{ end }}
         </div>
-        <div class="marquee-group">
+        <div class="marquee-group" aria-hidden="true">
           {{ range $data.group1 }}
          <div class="image-group  {{ .extraClass }}">
             <img
@@ -55,13 +55,13 @@
             <img
               class="client-image"
               src="{{ .src }}"
-              alt=""
+              alt="{{ .title }} logo"
               title="{{ .title }}"
             />
           </div>
           {{ end }}
         </div>
-        <div class="marquee-group-2">
+        <div class="marquee-group-2" aria-hidden="true">
           {{ range $data.group2 }}
          <div class="image-group  {{ .extraClass }}">
             <img

@@ -6179,16 +6179,7 @@ div.code-toolbar .toolbar-item:nth-child(2) {
 
 /* ── Mobile nav: centered block, consistent left-edge ── */
 @media (max-width: 991.98px) {
-  /* Remove Bootstrap's
-    auto
-    margin
-    so
-    our
-    block
-    centering
-    takes
-    over
-    */
+  /* Remove Bootstrap's auto margin so our block centering takes over */
   .navbar-nav.ml-auto {
     margin-left: 0 !important;
   }
