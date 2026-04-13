@@ -20,152 +20,23 @@
 
     <!-- Timeline of milestones -->
     <div class="milestones-timeline">
+      {{ $data := getJSON "/content/company/milestones.json" }}
+      {{ range $data }}
       <div class="milestone-item">
         <div class="milestone-dot"></div>
         <div class="milestone-card">
-          <div class="milestone-year">2018</div>
-          <h3 class="milestone-title">Philosophy Formed</h3>
+          <div class="milestone-year">{{ .year }}</div>
+          <h3 class="milestone-title">{{ .title }}</h3>
           <ul>
+            {{ range .texts }}
             <li class="milestone-text">
-              A vision to bridge ideas and execution through technology
+              {{ . }}
             </li>
-            <li class="milestone-text">
-              Ownership over outsourcing, remote first over
-              in-office work
-            </li>
+            {{ end }}
           </ul>
         </div>
       </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2019</div>
-          <h3 class="milestone-title">Incorporated</h3>
-          <ul>
-            <li class="milestone-text">
-              Officially registered as ScaleReal and onboarded first set of clients
-            </li>
-            <li class="milestone-text">
-              Delivered early MVPs and production systems with small teams
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2020</div>
-          <h3 class="milestone-title">Building from Within</h3>
-          <ul>
-            <li class="milestone-text">
-              Encouraged employee-led innovation and real product ownership
-            </li>
-            <li class="milestone-text">
-              Focused on building scalable internal systems and frameworks
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2021</div>
-          <h3 class="milestone-title">Navigating Through Pandemic</h3>
-          <ul>
-            <li class="milestone-text">
-              Helped clients adapt faster with remote-first delivery
-            </li>
-            <li class="milestone-text">
-              Strengthened engineering discipline and product consulting
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2022</div>
-          <h3 class="milestone-title">Scaling Capability & Confidence</h3>
-          <ul>
-            <li class="milestone-text">
-              Expanded into FinTech, EdTech, HealthTech, and Gaming
-            </li>
-            <li class="milestone-text">
-              Built a reputation for predictable delivery and transparency
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2023</div>
-          <h3 class="milestone-title">Products to Partnerships</h3>
-          <ul>
-            <li class="milestone-text">
-              Shifted focus from development to long-term
-              product partnerships
-            </li>
-            <li class="milestone-text">
-              Repeated clients became the norm, not the exception
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2024</div>
-          <h3 class="milestone-title">AI Becomes Core</h3>
-          <ul>
-            <li class="milestone-text">
-              Established a dedicated AI & ML teams to serve the growing demand
-            </li>
-            <li class="milestone-text">
-              Built multiple AI products for clients and internal purpose
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2025</div>
-          <h3 class="milestone-title">Expansion</h3>
-          <ul>
-            <li class="milestone-text">
-              Delivered 35 projects successfully across multiple
-              industries
-            </li>
-            <li class="milestone-text">
-              Helped forward-thinking clients across 10 countries
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <div class="milestone-dot"></div>
-        <div class="milestone-card">
-          <div class="milestone-year">2026</div>
-          <h3 class="milestone-title">Scaling What Works</h3>
-          <ul>
-            <li class="milestone-text">
-              Doubling down on AI-first product development
-            </li>
-            <li class="milestone-text">
-              Clear focus: fewer clients, deeper impact, stronger outcomes
-            </li>
-          </ul>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
