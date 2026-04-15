@@ -79,6 +79,16 @@
       "src": "images/clients/crbnAI_logo.svg",
       "title": "CRNB AI",
       "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/Avegen-logo.png",
+      "title": "Avegen",
+      "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/iSabiPlay-logo.png",
+      "title": "iSabiPlay",
+      "extraClass": "medium"
     }
   ],
   "group2": [
@@ -161,6 +171,16 @@
       "src": "images/clients/Persana-logo.svg",
       "title": "Persana",
       "extraClass": "medium"
+    },
+    {
+      "src": "images/clients/kodo-new-logo.svg",
+      "title": "Kodo",
+      "extraClass": ""
+    },
+    {
+      "src": "images/clients/one-percent-club.png",
+      "title": "One Percent Club",
+      "extraClass": "small"
     }
   ]
 }
