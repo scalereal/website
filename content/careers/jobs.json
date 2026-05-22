@@ -1,5 +1,57 @@
 [
   {
+    "title": "Senior C# Backend Engineer",
+    "status": "Open",
+    "location": "Remote, India",
+    "time": "Full time",
+    "experience": "4 - 8 years of Experience",
+    "target": "senior-csharp-backend-engineer",
+    "doing": [
+      "A real-time event-driven platform on Azure that ingests sensor and camera events from the field, makes decisions in milliseconds, and writes commands back out. Built as ASP.NET Core APIs and long-running workers on AKS, communicating via Kafka.",
+      "A partner-facing integration layer that talks to commercial parking, mobility, and operational partners over HTTP. Persists business state in PostgreSQL and MongoDB, uses Azure Service Bus for async workflows (reconciliation, webhook delivery), and is deployed to Azure App Service.",
+      "A billing and payments service that turns every parking session into a charge. Manages payment-provider integrations, handles authorization / capture / refund flows, reconciles provider webhooks against our session ledger, and produces invoices. Correctness and idempotency under retry are first-class concerns here.",
+      "C# / .NET, ASP.NET Core, background workers",
+      "Functional-style error handling with LanguageExt (railway-oriented programming exceptions are reserved for the truly exceptional)",
+      "Kafka (Confluent Cloud) with Schema Registry; some streaming SQL on top",
+      "PostgreSQL with Npgsql + DbUp migrations; MongoDB; Redis for caches and deduplication",
+      "Azure Service Bus, Azure Key Vault, Application Insights, OpenTelemetry",
+      "Azure: AKS + Helm (real-time services), Azure App Service (integration & billing services), Blob Storage",
+      "Terraform for managed cloud resources xUnit + NSubstitute + Shouldly + Bogus; Testcontainers for integration tests GitHub Actions CI/CD with environment gates"
+    ],
+    "lookingFor": [
+      "4+ years of production experience in an object-oriented language (C#, Java, Kotlin, or equivalent).",
+      "Strong C# / .NET is a bonus, but five years specifically in C# is not a hard requirement. We'll happily bring a strong Java/Kotlin engineer up to speed",
+      "Good understanding of domain-driven design and system design you can carve a problem into bounded contexts, model business invariants in types instead of comments, and design for change rather than for today’s feature",
+      "Familiarity with functional programming concepts (immutability, pure functions, option/result types). We use Language Ext heavily for railway-oriented error handling and will teach you the library, but you should already be comfortable with the mindset",
+      "Strong testing discipline, comfortable doing TDD when it pays off, writes meaningful unit and integration tests, and has judgement about what’s worth testing rather than chasing coverage numbers",
+      "Comfort with event-driven architecture (Kafka, Service Bus, or equivalent) — producer/consumer design, schema evolution, idempotency, retry and replay semantics",
+      "SQL fluency — you can read an execution plan and reason about indexes",
+      "Track record of building observability into services (structured logging, distributed traces) rather than bolting it on",
+      "Comfortable on Azure: at least one of AKS (probes, configmaps, Helm) or App Service (deployment slots, Key Vault references)",
+      "Infrastructure-as-code is your default — you’ve defined cloud resources in Terraform, Bicep, Pulumi, or similar, not clicked them together in a portal. We don’t care which tool; we care that you reach for code first",
+      "Reads and writes commit messages like they’re for humans"
+    ],
+    "additionalSkills": [
+      "Payment and billing experience — having shipped a system that integrates with a payment provider, handles webhooks idempotently, or reconciles ledgers against external statements",
+      "Functional-C# / F# background, or experience with LanguageExt / similar libraries",
+      "Any streaming SQL experience (KStreams, ksqlDB, Spark Structured Streaming, Flink)",
+      "Production-grade Terraform specifically — modules, remote state, CI-driven plan/apply, Azure OIDC for keyless deploys",
+      "Experience with multi-tenant SaaS data models, partner integrations, or industrial / IoT systems",
+      "Built things that have to behave correctly under real-world failure modes and have a story about what went wrong"
+    ],
+    "perks": [
+      "Freedom to implement and follow industry best practices.",
+      "Get to work with the most down to earth and talented people.",
+      "Get to work on very interesting problems with impact in the real world.",
+      "We are always working on a bleeding edge tech stack. MicroServices?? Serverless?? we got you covered.",
+      "Open and Inclusive Environment.",
+      "Remote first teams.",
+      "Flexible timings as long as work gets done.",
+      "Opportunity to contribute to open-source projects"
+    ],
+    "applyUrl": "/apply/?profile=Senior%20C%20Sharp%20Backend%20Engineer&ref=website"
+  },
+  {
     "title": "Lead Frontend Engineer",
     "status": "Open",
     "location": "Remote, India",
