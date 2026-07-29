@@ -288,6 +288,14 @@ h2,
   margin-bottom: 20px;
 }
 
+/* Blog post title promoted from h2 to h1 for SEO; keep the old h2 appearance */
+.page-blog-details h1.text-black-blog {
+  font-size: 36px;
+  line-height: 38px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
 h3 {
   font-size: 26px;
   line-height: 32px;

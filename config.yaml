@@ -25,15 +25,15 @@ params:
     - name: Home
       url: /
     - name: Expertise
-      url: /expertise
+      url: /expertise/
     - name: Projects
-      url: /projects
+      url: /projects/
     - name: About
-      url: /company
+      url: /company/
     - name: Blogs
-      url: /blogs
+      url: /blogs/
     - name: Careers
-      url: /careers
+      url: /careers/
   fonts:
     google: [['Open Sans', '300,400,600,700,800']]
   tags: ['Web Application']
