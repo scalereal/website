@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
+  {{ $paginator := .Paginate .Data.Pages }}
+
+  {{ .Scratch.Set "paginatorURL" $paginator.URL }}
+
   {{ partial "head" . }}
 
   <body id="page-top">

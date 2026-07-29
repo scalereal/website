@@ -14,8 +14,9 @@
 
         <!-- Display the categories associated with this post -->
         {{ range .Params.tags }}
+        {{ $term := $.Site.GetPage (printf "tags/%s" (. | urlize)) }}
         <li class="article-category-item">
-            <a href='{{ add "/tags/" . | urlize }}'>{{ . }}</a>
+            <a href='{{ with $term }}{{ .Permalink }}{{ else }}{{ (printf "tags/%s/" (. | urlize)) | absURL }}{{ end }}'>{{ . }}</a>
         </li>
         {{ end }}
         {{ end }}

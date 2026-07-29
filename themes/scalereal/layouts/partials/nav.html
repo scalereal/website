@@ -1,4 +1,3 @@
-<a class="" aria-label="POST" href="/post"></a>
 <nav class="navbar navbar-fixed-top navbar-expand-lg home-page" id="nav">
   <div class="container navbar-content">
     <a class="navbar-brand" href="/">
@@ -33,9 +32,9 @@
             {{ $isCompany := or (eq $currentPath "/company") (hasPrefix $currentPath "/company/") }}
             {{ $isCulture := or (eq $currentPath "/culture") (hasPrefix $currentPath "/culture/") }}
             {{ $isCareers := or (eq $currentPath "/careers") (hasPrefix $currentPath "/careers/") }}
-            <li><a href="/company" class="{{ if $isCompany }}active{{ end }}">Company</a></li>
-            <li><a href="/culture" class="{{ if $isCulture }}active{{ end }}">Culture</a></li>
-            <li><a href="/careers" class="{{ if $isCareers }}active{{ end }}">Careers</a></li>
+            <li><a href="/company/" class="{{ if $isCompany }}active{{ end }}">Company</a></li>
+            <li><a href="/culture/" class="{{ if $isCulture }}active{{ end }}">Culture</a></li>
+            <li><a href="/careers/" class="{{ if $isCareers }}active{{ end }}">Careers</a></li>
           </ul>
         </li>
         {{ else if ne $name "careers" }}
@@ -46,18 +45,18 @@
         {{end}}
       </ul>
       <div class="sr-btn-wrapper nav-cta nav-cta-mobile">
-        <a href="/ai-services" class="sr-btn secondary  py-2">
+        <a href="/ai-services/" class="sr-btn secondary  py-2">
           <i class="icon-brain-circuit"></i>
           AI Services</a>
-        <a href="/contact" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
+        <a href="/contact/" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
       </div>
     </div>
 
      <div class="sr-btn-wrapper nav-cta nav-cta-desktop">
-       <a href="/ai-services" class="sr-btn secondary  py-2">
+       <a href="/ai-services/" class="sr-btn secondary  py-2">
          <i class="icon-brain-circuit"></i>
          AI Services</a>
-         <a href="/contact" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
+         <a href="/contact/" class="sr-btn primary py-2"><i class="icon-phone"></i>Contact Us</a>
      </div>
   </div>
 </nav>

@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ $paginator := .Paginate (where (where .Data.Pages ".Params.blog_place" "!=" "popular") ".Params.blog_place" "!=" "banner") 9 }}
+  {{ .Scratch.Set "paginatorURL" $paginator.URL }}
   {{ partial "head" . }}
   <body>
     {{ partial "nav" . }} 

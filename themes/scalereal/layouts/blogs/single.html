@@ -2,6 +2,25 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 {{ $.Scratch.Set "post" true }}
 {{ partial "head.html" . }}
+{{ $img := cond (ne .Params.image nil) (.Params.image | absURL) (.Site.Params.ogimage | absURL) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "image": "{{ $img }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": { "@type": "Person", "name": "{{ with .Params.author }}{{ . }}{{ else }}ScaleReal Team{{ end }}" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": { "@type": "ImageObject", "url": "{{ "images/logo/sr-logo-blue-512X512.png" | absURL }}" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ .Permalink }}" }
+}
+</script>
 
 {{ $authorFirstName := lower (index (split .Params.author " ") 0)}}
 {{ $authorLastName := lower (index (split .Params.author " ") 1)}}
@@ -14,7 +33,7 @@
 
     <div class="container blog-view">
       <div class="back-link-section">
-        <a class="back-link" href="/blogs">
+        <a class="back-link" href="/blogs/">
           <span class="line">
             <img src="{{ "images/blog/Back.svg" | absURL }}" alt="">
           </span>
@@ -27,7 +46,7 @@
           </div>
           <div class="col-md-11">
 
-          <h2 class="f700 text-black-blog">{{ .Title }}</h2>
+          <h1 class="f700 text-black-blog">{{ .Title }}</h1>
 
           <div class="writer-wrap d-flex">
             <div class="writer-img mr-3" style="background-image: url('/images/bloggers/{{$authorFirstName}}_{{$authorLastName}}.webp')"></div>
@@ -43,7 +62,7 @@
 
           <div class="banner-section">
             <div class="img-bg" style="background-image: url({{.Params.image}})"> </div>
-            <p class="img-source">{{.Params.sourceTitle}} <a href={{.Params.link}} target="_blank">{{.Params.source}}</a></p>
+            <p class="img-source">{{.Params.sourceTitle}} {{ with .Params.link }}<a href="{{ . }}" target="_blank" rel="noreferrer noopener">{{ $.Params.source }}</a>{{ end }}</p>
           </div>
         </div>
       </div>

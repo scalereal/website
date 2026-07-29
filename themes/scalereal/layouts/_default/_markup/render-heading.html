@@ -1,0 +1,6 @@
+{{- /* Keep a single <h1> per page (the post title). Content that uses markdown
+       "# " for body sections would otherwise emit extra <h1>s, so demote level-1
+       content headings to <h2>. Levels 2-6 render exactly as Hugo's default. */ -}}
+{{- $level := .Level -}}
+{{- if eq $level 1 -}}{{- $level = 2 -}}{{- end -}}
+<h{{ $level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</h{{ $level }}>
