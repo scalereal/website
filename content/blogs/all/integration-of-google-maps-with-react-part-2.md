@@ -9,7 +9,7 @@ tags:
   - Geofence
   - React JS
   - Maps JavaScript API
-author: Prathamesh Gunde
+author: ScaleReal Team
 image: /images/blog/banner/integration-of-google-maps-with-react-part-2.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2023/04/05/integration-of-google-maps-with-react-part-2.html

@@ -7,7 +7,7 @@ categories:
   - Rails
 tags:
   - Rails
-author: Kunal Kumbhar
+author: ScaleReal Team
 image: /images/blog/banner/integrating-stripe-webhooks-with-rails.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/11/13/integrating-stripe-webhooks-with-rails.html

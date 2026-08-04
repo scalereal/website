@@ -8,7 +8,7 @@ tags:
   - Testing
   - QA
   - Template
-author: Atul Shashikumar
+author: ScaleReal Team
 image: /images/blog/banner/what-is-a-qa-sign-off.webp
 thumbnail: https://via.placeholder.com/150
 url: testing/2020/07/17/whats-is-qa-sign-off.html

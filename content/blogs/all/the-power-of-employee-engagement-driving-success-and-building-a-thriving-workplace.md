@@ -10,7 +10,7 @@ tags:
   - HR
   - Company Culture
   - Employee Rentention
-author: Twinkle Dahiya
+author: ScaleReal Team
 image: /images/blog/banner/the-power-of-employee-engagement-driving-success-and-building-a-thriving-workplace.webp
 thumbnail: https://via.placeholder.com/150
 url: HR/2023/10/18/the-power-of-employee-engagement-driving-success-and-building-a-thriving-workplace.html

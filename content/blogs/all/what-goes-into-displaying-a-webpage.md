@@ -9,7 +9,7 @@ tags:
   - Netwoking
   - browsers
   - Web Developement
-author: Abhishek Ghadge
+author: ScaleReal Team
 image: /images/blog/banner/what-goes-into-displaying-a-webpage.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2021/10/11/what-goes-into-displaying-a-webpage.html

@@ -9,7 +9,7 @@ tags:
   - JavaScript
   - Web Development
   - NextJS
-author: Prathamesh Gunde
+author: ScaleReal Team
 image: /images/blog/banner/how-nextjs-helps-to-improve-seo.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2022/04/12/how-nextjs-helps-to-improve-seo.html

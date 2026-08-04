@@ -9,7 +9,7 @@ tags:
   - AndroidDev
   - Kotlin
   - JetPack
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/let-your-delegates-auto-nullify-references.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2021/03/12/let-your-delegates-auto-nullify-references.html

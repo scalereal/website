@@ -10,7 +10,7 @@ tags:
   - Software Engineering
   - Object Oriented
   - Java
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/design-patterns-with-kotlin-part-2.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/08/17/design-patterns-with-kotlin-part-2.html

@@ -9,7 +9,7 @@ tags:
   - Python
   - Django
   - Project Setup
-author: Deepak Kabbur
+author: ScaleReal Team
 image: /images/blog/banner/django-setup-for-enterprise-applications.webp
 thumbnail: https://via.placeholder.com/150
 url: python/2020/09/10/python/django-setup-for-enterprise-applications.html

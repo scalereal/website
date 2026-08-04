@@ -10,7 +10,7 @@ tags:
   - Rails
   - Release
   - Programming
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/introducing-rbs-rubys-new-type-signature-language.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/08/04/introducing-rbs-rubys-new-type-signature-language.html

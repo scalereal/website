@@ -9,7 +9,7 @@ tags:
   - Django
   - Message Queue
   - Python
-author: Nishant Handge
+author: ScaleReal Team
 image: /images/blog/banner/understanding-celery-part-1-why-use-celery-and-what-is-celery.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2022/12/14/understanding-celery-part-1-why-use-celery-and-what-is-celery.html

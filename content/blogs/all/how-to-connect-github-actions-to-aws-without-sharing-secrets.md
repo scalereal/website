@@ -10,7 +10,7 @@ tags:
   - Ci Cd Pipeline
   - AWS lam
   - AWS
-author: Sachin Chougule
+author: ScaleReal Team
 image: /images/blog/banner/how-to-connect-github-actions-to-aws-without-sharing-secrets.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/05/22/how-to-connect-github-actions-to-aws-without-sharing-secrets.html

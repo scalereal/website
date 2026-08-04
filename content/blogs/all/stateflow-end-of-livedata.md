@@ -10,7 +10,7 @@ tags:
   - Coroutine
   - Reactive Programming
   - Android
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/stateflow-end-of-livedata.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/05/22/stateflow-end-of-livedata.html

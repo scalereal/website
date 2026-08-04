@@ -10,7 +10,7 @@ tags:
   - Service Worker
   - Workbox
   - Webpack
-author: Pradip Bhusnar
+author: ScaleReal Team
 image: /images/blog/banner/react-progressive-web-app.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2022/10/20/react-progressive-web-app.html

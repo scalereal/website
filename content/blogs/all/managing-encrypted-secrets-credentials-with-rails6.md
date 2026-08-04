@@ -7,7 +7,7 @@ categories:
   - Rails
 tags:
   - Rails
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/managing-encrypted-secrets-credentials-with-rails6.webp
 sourceTitle: Image Source - 
 source: Immediate Connect

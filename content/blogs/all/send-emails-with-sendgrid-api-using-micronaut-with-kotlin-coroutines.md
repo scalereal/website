@@ -9,7 +9,7 @@ tags:
   - Kotlin Coroutines 
   - Micronaut Framework
   - Sendgrid
-author: Ubed Ali
+author: ScaleReal Team
 image: /images/blog/banner/send-emails-with-sendgrid-api-using-micronaut-with-kotlin-coroutines.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/08/29/send-emails-with-sendgrid-api-using-micronaut-with-kotlin-coroutines.html

@@ -6,8 +6,8 @@ categories:
 date: 2025-09-05T11:34:00.000+05:30
 tags:
   - Frontend
-author: Prathamesh Gunde
-image: https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4087459/cover_image/retina_1708x683/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Newsletter-c9ad0b13aebad8c872bec7fa59b307f6.png
+author: ScaleReal Team
+image: /images/blog/banner/component-design-think-before-you-code.png
 url: "web/2025/09/05/component-design-think-before-you-code.html"
 ---
   

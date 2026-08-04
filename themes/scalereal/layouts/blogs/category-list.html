@@ -3,8 +3,9 @@
 
   <!-- Display the categories associated with this post -->
    {{ range .Params.categories }}
+    {{ $term := $.Site.GetPage (printf "categories/%s" (. | urlize)) }}
     <li class="article-category-item">
-      <a class="text-grey" href='{{ add "/categories/" . | urlize }}'>{{ humanize . }}</a>
+      <a class="text-grey" href='{{ with $term }}{{ .Permalink }}{{ else }}{{ (printf "categories/%s/" (. | urlize)) | absURL }}{{ end }}'>{{ humanize . }}</a>
     <!-- <a class="text-grey" href="javascript:void(0);">{{ . }}</a> -->
     </li>
     {{ end }}

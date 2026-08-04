@@ -8,7 +8,7 @@ tags:
   - ruby
   - okta
   - authentication
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/okta-devise-integration.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/05/28/okta-devise-ruby-on-rails.html

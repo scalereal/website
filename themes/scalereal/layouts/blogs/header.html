@@ -1,4 +1,4 @@
-<img src="{{.Params.thumbnail}}" style="width: 150px;">
+<img src="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ $.Site.Params.ogimage | absURL }}{{ end }}" style="width: 150px;" alt="{{ .Title }}" loading="lazy">
 <header class="heading">
   <!-- {{ .Render "feature-img" }} -->
   <a href="{{ .Permalink }}">
