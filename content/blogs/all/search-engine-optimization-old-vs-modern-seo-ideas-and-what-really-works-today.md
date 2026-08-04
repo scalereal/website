@@ -282,4 +282,4 @@ If your SEO strategy still relies on old practices, now is the time to evolve be
 
 **At **[Scalereal](https://scalereal.com/)** We believe in Sharing and Open Source.**
 
-**Thank You :) **🙏
+**Thank You :)** 🙏
