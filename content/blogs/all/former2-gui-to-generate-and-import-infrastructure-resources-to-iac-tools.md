@@ -8,7 +8,7 @@ tags:
   - Devops
   - Terraform
   - Infrastructure as code
-author: Rahil Khan
+author: ScaleReal Team
 image: /images/blog/banner/former2.webp
 thumbnail: https://via.placeholder.com/150
 url: devops/2023/04/11/former2-gui-to-generate-and-import-infrastructure-resources-to-iac-tools.html

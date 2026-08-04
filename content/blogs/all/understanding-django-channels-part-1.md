@@ -9,7 +9,7 @@ tags:
   - Geofence
   - React JS
   - Maps JavaScript API
-author: Meet Patel
+author: ScaleReal Team
 image: /images/blog/banner/understanding-django-channels-part-1.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2023/01/13/understanding-django-channels-part-1.html

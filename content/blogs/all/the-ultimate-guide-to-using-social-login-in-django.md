@@ -9,7 +9,7 @@ tags:
   - Google
   - Facebook
   - Django
-author: Akash Shrivastava
+author: ScaleReal Team
 image: /images/blog/banner/the-ultimate-guide-to-using-social-login-in-django.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2022/12/22/the-ultimate-guide-to-using-social-login-in-django.html

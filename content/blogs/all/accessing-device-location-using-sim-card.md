@@ -10,7 +10,7 @@ tags:
   - Location
   - Kotlin
   - Android Developement
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/accessing-device-location-using-sim-card.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/28/accessing-device-location-using-sim-card.html

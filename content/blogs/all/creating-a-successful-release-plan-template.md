@@ -10,7 +10,7 @@ tags:
   - Project Documentation
   - Agile
   - Release Plan Template
-author: Mamata Joshi
+author: ScaleReal Team
 image: /images/blog/banner/creating-a-successful-release-plan-template.webp
 thumbnail: https://via.placeholder.com/150
 url: project-management/2023/05/05/creating-a-successful-release-plan-template.html

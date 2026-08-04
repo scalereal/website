@@ -10,7 +10,7 @@ tags:
   - Android
   - Backend 
   - Pushnotificationsfirebase
-author: Akash Shrivastava
+author: ScaleReal Team
 image: /images/blog/banner/push-notifications-through-django.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/09/28/push-notifications-through-django.html

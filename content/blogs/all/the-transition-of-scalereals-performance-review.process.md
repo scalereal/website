@@ -10,7 +10,7 @@ tags:
   - HR
   - Feedback Culture
   - Employee Performance
-author: Atul Shashikumar
+author: ScaleReal Team
 image: /images/blog/banner/the-transition-of-scalereals-performance-review-process.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2023/08/16/the-transition-of-scalereals-performance-review-process.html

@@ -9,7 +9,7 @@ tags:
   - AndroidDev
   - Kotlin
   - JetPack
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/providing-assistedinject-supported-viewmodel-for-composable-using-hilt.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2021/06/29/providing-assistedinject-supported-viewmodel-for-composable-using-hilt.html

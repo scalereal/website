@@ -9,7 +9,7 @@ tags:
   - TDD
   - Programming
   - Practices
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/tdd.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2020/07/05/What-is-test-driven-development-tdd.html

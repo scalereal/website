@@ -9,7 +9,7 @@ tags:
   - Terraform Modules
   - Terraform Cloud
   - Terraform Provider
-author: Rahil Khan
+author: ScaleReal Team
 image: /images/blog/banner/exploring-terraform’s-new-feature-import-blocks-in-version-1.5.webp
 thumbnail: https://via.placeholder.com/150
 url: devops/2023/07/19/exploring-terraform’s-new-feature-import-blocks-in-version-1.5.html

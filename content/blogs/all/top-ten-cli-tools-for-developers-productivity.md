@@ -9,7 +9,7 @@ tags:
   - Productivity
   - Practices
   - Software Development
-author: Ashish Mohite
+author: ScaleReal Team
 image: /images/blog/banner/the-10-best-cli-tools-for-software-developer’s-productivity.webp
 thumbnail: https://via.placeholder.com/150
 url: devops/2020/05/15/10-cli-tools-for-developers-productivity.html

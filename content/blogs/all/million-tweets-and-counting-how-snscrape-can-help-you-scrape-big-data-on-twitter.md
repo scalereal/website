@@ -9,7 +9,7 @@ tags:
   - Twitter
   - Scraping
   - Snscrape
-author: Akash Shrivastava
+author: ScaleReal Team
 image: /images/blog/banner/million-tweets-and-counting-how-snscrape-can-help-you-scrape-big-data-on-twitter.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2023/04/04/million-tweets-and-counting-how-snscrape-can-help-you-scrape-big-data-on-twitter.html

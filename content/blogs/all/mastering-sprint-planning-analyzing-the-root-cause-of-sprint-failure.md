@@ -10,7 +10,7 @@ tags:
   - Sprint Failure
   - Sprint Retrospective
   - Software Development
-author: Atul Shashikumar
+author: ScaleReal Team
 image: /images/blog/banner/mastering-sprint-planning-analyzing-the-root-cause-of-sprint-failure.webp
 thumbnail: https://via.placeholder.com/150
 url: project-management/2024/02/12/mastering-sprint-planning-analyzing-the-root-cause-of-sprint-failure.html

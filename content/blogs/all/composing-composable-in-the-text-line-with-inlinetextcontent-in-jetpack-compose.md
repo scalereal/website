@@ -9,7 +9,7 @@ tags:
   - AndroidDev
   - Kotlin
   - JetPack
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/composing-composable-in-the-text-line-with-inlinetextcontent-in-jetpack-compose.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2021/07/30/composing-composable-in-the-text-line-with-inlinetextcontent-in-jetpack-compose.html

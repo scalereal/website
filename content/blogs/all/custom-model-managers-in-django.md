@@ -7,7 +7,7 @@ tags:
   - Django Modal
   - Custom Model Manager
   - Django
-author: Sagar Chopade
+author: ScaleReal Team
 image: /images/blog/banner/custom-model-managers-in-django.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/07/28/custom-model-managers-in-django.html

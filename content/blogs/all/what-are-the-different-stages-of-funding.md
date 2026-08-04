@@ -10,7 +10,7 @@ tags:
   - Investment
   - Growth
   - Startup Lessons
-author: Atul Shashikumar
+author: ScaleReal Team
 image: /images/blog/banner/what-are-the-different-stages-of-funding.webp
 thumbnail: https://via.placeholder.com/150
 url: startup/2023/10/20/what-are-the-different-stages-of-funding.html

@@ -7,7 +7,7 @@ categories:
   - Rails
 tags:
   - Rails
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/demystifying-database-indexes-in-postgres.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/10/18/demystifying-database-indexes-in-postgres.html

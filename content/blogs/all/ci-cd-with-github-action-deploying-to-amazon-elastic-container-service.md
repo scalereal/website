@@ -8,7 +8,7 @@ tags:
   - devops
   - aws
   - ecs
-author: Sachin Chougule
+author: ScaleReal Team
 image: /images/blog/banner/ci-cd-with-github-action-deploying-to-amazon-elastic-container-service.webp
 thumbnail: https://via.placeholder.com/150
 url: devops/2021/10/12/ci-cd-with-github-action-deploying-to-amazon-elastic-container-service.html

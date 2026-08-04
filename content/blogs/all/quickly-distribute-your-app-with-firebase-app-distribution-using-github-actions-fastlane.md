@@ -10,7 +10,7 @@ tags:
   - Firebase
   - App Distribution
   - Automate
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2020/10/21/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane

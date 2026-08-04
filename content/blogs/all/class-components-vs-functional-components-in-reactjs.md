@@ -9,7 +9,7 @@ tags:
   - JavaScript
   - Web Development
   - ReactJS
-author: Piyush Rajput
+author: ScaleReal Team
 image: /images/blog/banner/class-components-vs-functional-components-in-reactjs.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/03/03/class-components-vs-functional-components-in-reactjs.html

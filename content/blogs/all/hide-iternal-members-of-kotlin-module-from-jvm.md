@@ -9,7 +9,7 @@ tags:
   - AndroidDev
   - Kotlin
   - JetPack
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/hide-internal-members-of-kotlin-module-from-jvm.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2021/05/17/hide-internal-members-of-kotlin-module-from-jvm.html

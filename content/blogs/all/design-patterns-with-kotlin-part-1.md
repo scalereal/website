@@ -10,7 +10,7 @@ tags:
   - Software Development
   - Android
   - Java
-author: Sandesh Bodake
+author: ScaleReal Team
 image: /images/blog/banner/design-patterns-with-kotlin-part-1.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2022/05/22/design-patterns-with-kotlin-part-1.html

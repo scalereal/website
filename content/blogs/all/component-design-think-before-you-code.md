@@ -6,7 +6,7 @@ categories:
 date: 2025-09-05T11:34:00.000+05:30
 tags:
   - Frontend
-author: Prathamesh Gunde
+author: ScaleReal Team
 image: /images/blog/banner/component-design-think-before-you-code.png
 url: "web/2025/09/05/component-design-think-before-you-code.html"
 ---

@@ -8,7 +8,7 @@ tags:
   - web
   - Accessibility
   - Web Developement
-author: Abhishek Ghadge
+author: ScaleReal Team
 image: /images/blog/banner/getting-started-with-web-accessibility.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2022/02/16/getting-started-with-web-accessibility.html

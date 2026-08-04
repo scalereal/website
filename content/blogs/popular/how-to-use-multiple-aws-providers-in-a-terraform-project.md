@@ -9,7 +9,7 @@ tags:
   - AWS
   - DevOps
   - Software Development
-author: Ashish Mohite
+author: ScaleReal Team
 image: /images/blog/banner/how-to-use-multiple-aws-providers-in-a-terraform-project.webp
 thumbnail: https://via.placeholder.com/150
 url: devops/2020/05/15/how-to-use-multiple-aws-providers-in-a-terraform-project.html

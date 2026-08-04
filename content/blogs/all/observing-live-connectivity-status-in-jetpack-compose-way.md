@@ -9,7 +9,7 @@ tags:
   - AndroidDev
   - Kotlin
   - JetPack
-author: Shreyas Patil
+author: ScaleReal Team
 image: /images/blog/banner/observing-live-connectivity-status-in-jetpack-compose-way.webp
 thumbnail: https://via.placeholder.com/150
 url: android/2021/08/17/observing-live-connectivity-status-in-jetpack-compose-way.html

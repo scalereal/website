@@ -7,7 +7,7 @@ categories:
 tags:
   - backend
   - Django
-author: Akash Shrivastava
+author: ScaleReal Team
 image: /images/blog/banner/everything-you-need-to-know-about-middleware-in-django.webp
 thumbnail: https://via.placeholder.com/150
 url: backend/2021/07/15/everything-you-need-to-know-about-middleware-in-django.html

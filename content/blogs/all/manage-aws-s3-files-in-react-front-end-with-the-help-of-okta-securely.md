@@ -10,7 +10,7 @@ tags:
   - React JS
   - OpenID Connect
   - File Upload
-author: Pradip Bhusnar
+author: ScaleReal Team
 image: /images/blog/banner/manage-aws-s3-files-in-react-front-end-with-the-help-of-okta-securely.webp
 thumbnail: https://via.placeholder.com/150
 url: web/2022/10/20/manage-aws-s3-files-in-react-front-end-with-the-help-of-okta-securely.html
