@@ -280,6 +280,6 @@ While outdated tactics once delivered quick results, modern SEO focuses on long-
 
 If your SEO strategy still relies on old practices, now is the time to evolve because modern SEO isn’t just about ranking higher, it’s about creating real value in a competitive digital world.
 
-**At **[Scalereal](https://scalereal.com/)** We believe in Sharing and Open Source.**
+**At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.**
 
 **Thank You :)** 🙏
