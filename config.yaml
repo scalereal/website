@@ -11,6 +11,11 @@ MetaDataFormat: 'yaml'
 
 theme: scalereal
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 googleAnalytics: 'UA-141833521-1'
 #SEO
 enableRobotsTXT: true
