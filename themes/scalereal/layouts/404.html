@@ -3,18 +3,25 @@
 
     {{ partial "head" . }}
 
-    <body id="page-top" class="index">
-        <header class="hero small-header"></header>
+    <body id="page-top" class="page-404">
         {{ partial "nav" . }}
-        <div class="container">
-            <h1>Page not found</h1>
-            <h4>You can get back to <a href="/">home page</a> Try reading our blog posts</h4>
-            <ul>
-                {{ range first 10 (where .Site.Pages "Section" "=" "post") }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
+
+        <main class="not-found" aria-labelledby="not-found-title">
+            <div class="container">
+                <div class="not-found-card">
+                    <p class="not-found-code" aria-hidden="true">404</p>
+                    <p class="not-found-eyebrow">Looks like this page took a wrong turn</p>
+                    <h1 id="not-found-title">Page not found</h1>
+                    <p class="not-found-copy">
+                        The link may be outdated or the page may have moved. Let’s get you back to something useful.
+                    </p>
+                    <div class="sr-btn-wrapper not-found-actions">
+                        <a class="sr-btn primary" href="/"><i class="icon-home"></i> Back to home</a>
+                        <a class="sr-btn secondary" href="/blogs/"><i class="icon-book-open"></i> Read our insights</a>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         {{ partial "footer" . }}
         {{ partial "js" . }}
