@@ -3890,6 +3890,30 @@ lottie-player {
   line-height: 2rem;
   font-size: 20px;
 }
+.article-content table {
+  width: 100%;
+  min-width: 480px;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+.article-content th,
+.article-content td {
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #dee2e6;
+}
+.article-content th {
+  font-weight: 700;
+  background-color: #f8f9fa;
+}
+@media only screen and (max-width: 1024px) {
+  .article-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
 .article-content pre {
   background-color: #ececec;
   padding: 1rem;
