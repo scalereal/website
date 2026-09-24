@@ -1,4 +1,57 @@
+# OpenAI - ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI - foundation model training
+User-agent: GPTBot
+Disallow: /
+
+# Google - Gemini / certain Vertex AI uses
+# Does NOT block Google Search, Google AI Overviews, or Google AI Mode
+User-agent: Google-Extended
+Disallow: /
+
+# Google Search / AI Overviews / AI Mode
+User-agent: Googlebot
+Allow: /
+
+# Microsoft Bing / Copilot
+User-agent: bingbot
+Allow: /
+
+# Perplexity Search
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic - model development/training crawler
+User-agent: ClaudeBot
+Disallow: /
+
+# Anthropic - user-requested fetching
+User-agent: Claude-User
+Allow: /
+
+# Amazon search / Alexa
+User-agent: Amzn-SearchBot
+Allow: /
+
+# Amazon AI/model-development crawler
+User-agent: Amazonbot
+Disallow: /
+
+# Apple Search
+User-agent: Applebot
+Allow: /
+
+# Common Crawl
+# Leave allowed so your content remains available to the broader
+# open-web ecosystem.
+User-agent: CCBot
+Allow: /
+
+# Everything else
 User-agent: *
 Disallow:
 
+# Sitemap
 Sitemap: {{ "sitemap.xml" | absURL }}
