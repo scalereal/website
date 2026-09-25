@@ -49,24 +49,40 @@
 {{ end }}
 
 <!-- image tags -->
-{{ with .Params.image }}
-<meta itemprop="image" content="{{ .  | absLangURL }}" />
-<meta property="og:image" content="{{ . | absURL}}" />
-<meta name="twitter:image" content="{{ . | absURL }}" />
-<meta name="twitter:image:src" content="{{ . | absURL }}" />
-{{ else }}
-<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
-{{ end }}
+{{- /* Resolve a single image URL first, so we only ever emit tags for a URL
+       that actually resolves. Hardcoded 512x512 width/height for an image
+       that isn't actually 512x512, or a broken/missing path, is the most
+       common cause of Slack/Facebook/Twitter showing a broken-image badge
+       on the link preview. */ -}}
+{{- $page := . -}}
+{{- $ogImage := "" -}}
+{{- with $page.Params.image -}}
+  {{- $ogImage = . | absURL -}}
+{{- else -}}
+  {{- with $page.Site.Params.ogimage -}}
+    {{- $ogImage = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+{{- with $ogImage }}
+<meta itemprop="image" content="{{ . }}" />
+<meta property="og:image" content="{{ . }}" />
+<meta name="twitter:image" content="{{ . }}" />
+<meta name="twitter:image:src" content="{{ . }}" />
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="512">
-<meta property="og:image:height" content="512">
-
 <meta property="twitter:image:type" content="image/png">
-<meta property="twitter:image:width" content="512">
-<meta property="twitter:image:height" content="512">
+{{- /* Only emit width/height if you know the image's real dimensions
+       (set imageWidth / imageHeight in front matter). Omitting them lets
+       crawlers auto-detect, which is safer than a hardcoded 512x512
+       mismatch. */ -}}
+{{- with $page.Params.imageWidth }}
+<meta property="og:image:width" content="{{ . }}">
+<meta property="twitter:image:width" content="{{ . }}">
+{{ end -}}
+{{- with $page.Params.imageHeight }}
+<meta property="og:image:height" content="{{ . }}">
+<meta property="twitter:image:height" content="{{ . }}">
+{{ end -}}
+{{- end }}
 
 <!-- date tags -->
 <meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
