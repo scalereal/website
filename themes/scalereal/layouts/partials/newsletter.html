@@ -9,10 +9,13 @@
     class="listmonk-form"
     style="
       max-width: 500px;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
-      font-family: &quot;Helvetica Neue&quot;, Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      box-sizing: border-box;
     "
+    novalidate
   >
     <!-- Heading -->
     <header class="heading content-center">
@@ -28,57 +31,96 @@
       </p>
     </header>
     <input type="hidden" name="nonce" />
-    <!-- Email Input with Icon -->
-    <div style="position: relative; margin-bottom: 1rem">
-      <i
-        class="fa fa-envelope"
+
+    <!-- Email field group -->
+    <div class="field-group" style="margin-bottom: 1rem; text-align: left;">
+      <div style="position: relative;">
+        <i
+          class="fa fa-envelope"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #aaa;
+          "
+        ></i>
+        <input
+          type="email"
+          name="email"
+          id="subscriber-email"
+          required
+          maxlength="254"
+          placeholder="Your email address"
+          pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+          autocomplete="email"
+          style="
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+          "
+        />
+      </div>
+      <p
+        id="email-error"
         style="
-          position: absolute;
-          top: 50%;
-          left: 12px;
-          transform: translateY(-50%);
-          color: #aaa;
+          margin: 4px 0 0 2px;
+          color: #d33;
+          font-size: 0.8rem;
+          display: none;
         "
-      ></i>
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Your email address"
-        style="
-          width: 100%;
-          padding: 0.75rem 0.75rem 0.75rem 2.5rem;
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          font-size: 1rem;
-        "
-      />
+      >
+        Please enter a valid email address.
+      </p>
     </div>
-    <!-- Name Input with Icon (optional) -->
-    <div style="position: relative; margin-bottom: 1rem">
-      <i
-        class="fa fa-user"
+
+    <!-- Name field group -->
+    <div class="field-group" style="margin-bottom: 1rem; text-align: left;">
+      <div style="position: relative;">
+        <i
+          class="fa fa-user"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #aaa;
+          "
+        ></i>
+        <input
+          type="text"
+          name="name"
+          id="subscriber-name"
+          placeholder="Your name (optional)"
+          maxlength="60"
+          pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]+(?:[ '\-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$"
+          autocomplete="name"
+          style="
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+          "
+        />
+      </div>
+      <p
+        id="name-error"
         style="
-          position: absolute;
-          top: 50%;
-          left: 12px;
-          transform: translateY(-50%);
-          color: #aaa;
+          margin: 4px 0 0 2px;
+          color: #d33;
+          font-size: 0.8rem;
+          display: none;
         "
-      ></i>
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name (optional)"
-        style="
-          width: 100%;
-          padding: 0.75rem 0.75rem 0.75rem 2.5rem;
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          font-size: 1rem;
-        "
-      />
+      >
+        Name can only contain letters, spaces, hyphens, and apostrophes (max 60 characters).
+      </p>
     </div>
+
     <p style="display: none">
       <input
         id="c2fdc"
@@ -89,6 +131,7 @@
       />
       <label for="c2fdc">ScalerReal Newsletter</label>
     </p>
+
     <!-- CTA Button -->
     <button
       type="submit"
@@ -106,20 +149,69 @@
     >
       <i class="fa fa-paper-plane" style="margin-right: 5px"></i> Subscribe
     </button>
+
     <!-- Disclaimer -->
     <p style="margin-top: 1rem; font-size: 0.85rem; color: #777">
       <i class="fa fa-unlock-alt" style="margin-right: 5px"></i> Unsubscribe
       anytime with a single click.
     </p>
   </form>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.querySelector(".listmonk-form");
+      const emailInput = document.getElementById("subscriber-email");
+      const nameInput = document.getElementById("subscriber-name");
+      const emailError = document.getElementById("email-error");
+      const nameError = document.getElementById("name-error");
 
-      form.addEventListener("submit", function () {
+      const EMAIL_RE = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+      const NAME_RE = /^[A-Za-zÀ-ÖØ-öø-ÿ]+(?:[ '\-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
+      const NAME_MAX_LEN = 60;
+
+      function sanitize(value) {
+        return value.replace(/[\u0000-\u001F\u007F]/g, "").trim().replace(/\s+/g, " ");
+      }
+
+      function validateEmail() {
+        const value = sanitize(emailInput.value);
+        emailInput.value = value;
+        const valid = EMAIL_RE.test(value) && value.length <= 254;
+        emailError.style.display = valid ? "none" : "block";
+        emailInput.style.borderColor = valid ? "#ccc" : "#d33";
+        return valid;
+      }
+
+      function validateName() {
+        const value = sanitize(nameInput.value);
+        nameInput.value = value;
+        // Name is optional: empty is valid, but if present it must match NAME_RE and length limit
+        const valid =
+          value === "" || (NAME_RE.test(value) && value.length <= NAME_MAX_LEN);
+        nameError.style.display = valid ? "none" : "block";
+        nameInput.style.borderColor = valid ? "#ccc" : "#d33";
+        return valid;
+      }
+
+      emailInput.addEventListener("input", validateEmail);
+      nameInput.addEventListener("input", validateName);
+
+      form.addEventListener("submit", function (e) {
+        const emailValid = validateEmail();
+        const nameValid = validateName();
+
+        if (!emailValid || !nameValid) {
+          e.preventDefault();
+          return false;
+        }
+
         setTimeout(() => {
-          form.reset(); // clears all inputs
-        }, 300); // small delay to ensure submit happens
+          form.reset();
+          emailError.style.display = "none";
+          nameError.style.display = "none";
+          emailInput.style.borderColor = "#ccc";
+          nameInput.style.borderColor = "#ccc";
+        }, 300);
       });
     });
   </script>

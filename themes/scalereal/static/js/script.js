@@ -245,7 +245,19 @@ $(document).ready(function () {
 
   initServicesCarousel();
   $(window).on("resize", initServicesCarousel);
-  $(window).on("load resize", initChipMarquees);
+
+  // FIX: initChipMarquees was called here but never defined anywhere in this
+  // file (or any loaded script), which threw a ReferenceError synchronously
+  // while binding the event and could abort later init code in this block.
+  // Guarded so it fails safely instead of breaking the page; implement/import
+  // the real initChipMarquees and swap this guard out once it exists.
+  if (typeof initChipMarquees === "function") {
+    $(window).on("load resize", initChipMarquees);
+  } else {
+    console.warn(
+      "initChipMarquees is not defined — skipping bind. Add its implementation or the script that defines it.",
+    );
+  }
 
   function initMilestoneScrollReveal() {
     const timeline = document.querySelector(".milestones-timeline");

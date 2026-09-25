@@ -15,16 +15,6 @@
           </div>
         </div>
 
-        <!-- <div class="contact-card">
-          <div class="icons-box">
-            <i class="icon-phone"></i>
-          </div>
-          <div class="contact-content">
-            <span class="section-contact-label">Phone</span>
-            <p>+91-9890546018</p>
-          </div>
-        </div> -->
-
         <div class="contact-card">
           <div class="icons-box">
             <i class="icon-map-pin"></i>
@@ -51,15 +41,7 @@
             Schedule a 30-minute discovery call to discuss your project
             requirements.
           </p>
-          <a
-            href="javascript:void(0)"
-            class="sr-btn secondary"
-            data-cal-link="atul-shashikumar-dtgid6/scalereal-introduction-call"
-            data-cal-namespace="scalereal-introduction-call"
-            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-          >
-            Schedule a Call
-          </a>
+          <a href="javascript:void(0)" class="sr-btn secondary" data-cal-link="atul-shashikumar-dtgid6/scalereal-introduction-call" data-cal-namespace="scalereal-introduction-call" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Schedule a Call</a>
         </div>
       </div>
 
@@ -67,7 +49,7 @@
       <div class="col-lg-5">
         <h2 class="section-contact-title">Send Us a Message</h2>
         <div class="contact-form">
-          <form id="contactForm">
+          <form id="contactForm" novalidate>
             <div class="row">
               <div class="col-12 col-md-6 form-group">
                 <label for="username" class="text-light-grey">Your Name</label>
@@ -77,6 +59,8 @@
                   name="username"
                   class="form-control"
                   placeholder="John Doe"
+                  maxlength="60"
+                  autocomplete="name"
                 />
                 <span class="input-error" id="usernameError"></span>
               </div>
@@ -88,6 +72,8 @@
                   name="email"
                   class="form-control"
                   placeholder="john@company.com"
+                  maxlength="254"
+                  autocomplete="email"
                 />
                 <span class="input-error" id="emailError"></span>
               </div>
@@ -100,6 +86,8 @@
                 name="subject"
                 class="form-control"
                 placeholder="Your company"
+                maxlength="100"
+                autocomplete="organization"
               />
               <span class="input-error" id="subjectError"></span>
             </div>
@@ -113,6 +101,7 @@
                 id="message"
                 rows="5"
                 placeholder="Tell us about your project, requirements, timeline..."
+                maxlength="3000"
               ></textarea>
               <span class="input-error" id="messageError"></span>
             </div>
@@ -138,43 +127,77 @@
     }, 3000);
   }
 
-  function validations(name, value) {
-    const trimmedValue = value.trim();
+  // Strip control characters, trim, collapse internal whitespace.
+  function sanitize(value) {
+    return String(value)
+      .replace(/[\u0000-\u001F\u007F]/g, "")
+      .trim()
+      .replace(/\s+/g, " ");
+  }
+
+  // Applied to EVERY field: angle brackets are never legitimate input here,
+  // and are the primary vector for HTML/script injection into downstream
+  // emails, CRM records, or admin dashboards that might render this data.
+  const ANGLE_BRACKET_RE = /[<>]/;
+  const URL_RE = /(https?:\/\/|www\.)/i;
+
+  const NAME_RE = /^[A-Za-zÀ-ÖØ-öø-ÿ]+(?:[ '\-][A-Za-zÀ-ÖØ-öø-ÿ]+)*$/;
+  const EMAIL_RE =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const COMPANY_RE = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 .,'&\-]+$/;
+
+  function validations(name, rawValue) {
+    const value = sanitize(rawValue);
+
     switch (name) {
       case "username":
-        if (trimmedValue === "") {
+        if (value === "") {
           return "Please enter your name.";
+        } else if (value.length > 60) {
+          return "Please enter a valid name";
+        } else if (ANGLE_BRACKET_RE.test(value)) {
+          return "Please enter a valid name";
+        } else if (!NAME_RE.test(value)) {
+          return "Please enter a valid name";
         } else {
           return "";
         }
 
       case "email":
-        if (trimmedValue === "") {
+        if (value === "") {
           return "Please enter your email.";
-        } else if (
-          !trimmedValue.match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g,
-          )
-        ) {
+        } else if (value.length > 254) {
+          return "Please enter a valid email";
+        } else if (ANGLE_BRACKET_RE.test(value) || !EMAIL_RE.test(value)) {
           return "Please enter a valid email.";
         } else {
           return "";
         }
 
       case "subject":
-        if (trimmedValue === "") {
+        if (value === "") {
           return "Please enter your company name.";
-        } else if (trimmedValue.length <= 3) {
+        } else if (value.length <= 3) {
           return "The length of subject should be more than 3 characters.";
+        } else if (value.length > 100) {
+          return "Company name should be under 100 characters.";
+        } else if (ANGLE_BRACKET_RE.test(value) || URL_RE.test(value) || !COMPANY_RE.test(value)) {
+          return "Company name contains invalid characters or links.";
         } else {
           return "";
         }
 
       case "message":
-        if (trimmedValue === "") {
+        if (value === "") {
           return "Please enter your details.";
-        } else if (trimmedValue.length <= 100) {
+        } else if (value.length <= 100) {
           return "The length of message should be more than 100 characters.";
+        } else if (value.length > 3000) {
+          return "Message should be under 3000 characters.";
+        } else if (ANGLE_BRACKET_RE.test(value)) {
+          return "Please remove angle brackets ( < or > ) from your message.";
+        } else if (URL_RE.test(value)) {
+          return "Please don't include links in the project details.";
         } else {
           return "";
         }
@@ -213,14 +236,18 @@
   const sendButton = document.getElementById("sendButton");
   const sendButtonText = document.getElementById("sendButtonText");
   const sendButtonIcon = document.getElementById("sendButtonIcon");
-  // const sendButtonLoader = document.getElementById("sendButtonLoader");
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
-    const subjectValue = subject.value.trim();
-    const messageValue = message.value.trim();
+    const usernameValue = sanitize(username.value);
+    const emailValue = sanitize(email.value);
+    const subjectValue = sanitize(subject.value);
+    const messageValue = sanitize(message.value);
+
+    username.value = usernameValue;
+    email.value = emailValue;
+    subject.value = subjectValue;
+    message.value = messageValue;
 
     const usernameErrorText = validations("username", usernameValue);
     const emailErrorText = validations("email", emailValue);
@@ -242,9 +269,7 @@
         sendButton.disabled = true;
         sendButtonText.textContent = "Sending...";
         sendButtonIcon.classList.add("d-none");
-        // sendButtonLoader.classList.remove("d-none");
 
-        // TODO: change subject to company name
         const payload = {
           name: usernameValue,
           email: emailValue,
@@ -252,25 +277,16 @@
           details: messageValue,
         };
 
-        // const res = await fetch("/.netlify/functions/contact-to-crm", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify(payload),
-        // });
-
-        const res =  await fetch(`/.netlify/functions/notify-email`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
+        const res = await fetch(`/.netlify/functions/notify-email`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
 
         const data = await res.json();
         if (res.ok) {
           showToast("Message sent successfully!", "success");
           contactForm.reset();
-         
         } else {
           showToast("Error: " + (data.error || res.statusText), "error");
         }
@@ -281,7 +297,6 @@
         sendButton.disabled = false;
         sendButtonText.textContent = "Send Message";
         sendButtonIcon.classList.remove("d-none");
-        // sendButtonLoader.classList.add("d-none");
       }
     }
   });
