@@ -1,0 +1,66 @@
+# ScaleReal
+
+> ScaleReal is an AI-first custom software development company. It helps
+> startups and enterprises build scalable, AI-driven products faster.
+
+## What we do
+
+ScaleReal provides product engineering services: AI development, backend
+engineering, frontend engineering, mobile engineering, DevOps and cloud
+engineering, UI/UX design and consulting, and project management. The company
+is remote-first, founded in 2019, headquartered in Pune, India, and states
+7+ years in business, 10+ countries served, 35+ projects delivered, and
+3M+ end users reached.
+
+## Mission
+
+As stated on the company page: "Our mission is to help founders and product
+teams cut through noise and ship software that actually works. We focus on
+speed, clarity, and ownership, using strong engineering and practical AI to
+turn ideas into real, scalable products without wasted time or false
+promises."
+
+## Vision
+
+As stated on the company page: "Our vision is to build a company founders
+trust blindly, where ScaleReal is the team they call when execution matters
+most. We want to be known for honesty, reliability, and building products
+that scale in the real world, not just look good in decks."
+
+## Services
+
+- AI Development: LLMs and GenAI, chatbots, voice AI, computer vision,
+  OCR and document intelligence, predictive analytics, MLOps, data pipelines.
+- Backend Engineering: APIs, microservices, databases, event-driven systems.
+- Frontend Engineering: React, Next.js, Vue, TypeScript, TailwindCSS.
+- Mobile Engineering: React Native, Flutter, Kotlin, Swift, Expo.
+- DevOps and Cloud Engineering: CI/CD, cloud architecture.
+- UI/UX Design and Consulting: user research, design systems, prototyping.
+- Project Management: standups, sprint demos, weekly reports.
+
+## Who we work with
+
+Startups and enterprises. Stated industries: FinTech, HealthTech and
+Wellness, EdTech, Travel and Hospitality, Gaming, HRTech and Workforce,
+Artificial Intelligence, GIS, SalesTech, Hotel Management, Community
+Platforms. Stated client countries: India, USA, UK, South Africa, Dubai,
+Finland, Nigeria, Mauritius, Sri Lanka, Indonesia.
+
+## Contact
+
+- Contact page: https://scalereal.com/contact/
+- Email: info@scalereal.com
+- LinkedIn: https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/about/
+- X (Twitter): https://twitter.com/ScaleReal
+
+## Key pages
+
+- [Home](https://scalereal.com/): services overview and company introduction
+- [Company](https://scalereal.com/company/): story, mission, vision, leadership
+- [Expertise](https://scalereal.com/expertise/): full service details
+- [AI Services](https://scalereal.com/ai-services/): AI capabilities
+- [Projects](https://scalereal.com/projects/): case studies and past work
+- [Blogs](https://scalereal.com/blogs/): articles and insights
+- [Careers](https://scalereal.com/careers/): open positions
+- [Culture](https://scalereal.com/culture/): engineering culture
+- [Contact](https://scalereal.com/contact/): how to reach the team

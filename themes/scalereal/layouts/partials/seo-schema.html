@@ -10,11 +10,17 @@
 <meta name="google-site-verification" content="{{ .Site.Params.gsv }}" />
 <script type="application/ld+json">
     {
-        "@context": "http:\/\/schema.org",
+        "@context": "https:\/\/schema.org",
         "@type": "Organization",
         "url": "https:\/\/scalereal.com\/",
-        "name": "Scalereal",
+        "name": "ScaleReal",
+        "alternateName": "ScaleReal Technologies Pvt Ltd",
         "description": "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+        "foundingDate": "2019",
+        "founder": [
+            { "@type": "Person", "name": "Ashish Mohite" },
+            { "@type": "Person", "name": "Atul Shashikumar" }
+        ],
         "image": "{{ "images/logo/sr-logo-blue-512X512.png" | absURL }}",
         "contactPoint": {
             "@type": "ContactPoint",
@@ -25,14 +31,18 @@
             "@type": "WebPage",
             "@id": "{{ .Site.BaseURL }}"
         },
-        "logo": "{{ "images/logo/sr-logo-blue-512X512.png"| absURL }}"
+        "logo": "{{ "images/logo/sr-logo-blue-512X512.png"| absURL }}",
+        "sameAs": [
+            "https://www.linkedin.com/company/scalereal-technologies-pvt-ltd/",
+            "https://twitter.com/ScaleReal"
+        ]
 
     }
 
 </script>
 <script type='application/ld+json'>
     {
-        "@context": "http:\/\/schema.org",
+        "@context": "https:\/\/schema.org",
         "@id": "{{ .Site.BaseURL }}/blogs",
         "@type": "Blog",
         "sameAs": [],
