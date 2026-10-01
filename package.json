@@ -4,6 +4,7 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/77be184b-f61f-4959-99d8-bae45b05a62b/deploy-status)](https://app.netlify.com/sites/scalereal/deploys)",
   "main": "index.js",
   "scripts": {
+    "preview": "concurrently -k -n hugo,serve \"hugo --watch\" \"serve public -l 3000\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:sync": "tsc scripts/notion-to-website.ts --outDir dist",
     "sync": "node dist/notion-to-website.js"
@@ -27,5 +28,9 @@
     "notion-to-md": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "serve": "^14.2.6"
   }
 }

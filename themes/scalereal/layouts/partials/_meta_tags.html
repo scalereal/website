@@ -12,10 +12,14 @@
        so list templates stash the current pager URL in .Scratch before calling head. */ -}}
 {{- $canonical := .Permalink -}}
 {{- with .Scratch.Get "paginatorURL" }}{{ $canonical = . | absURL }}{{ end -}}
+{{- /* Single source of truth for description: front-matter `description`,
+       else auto summary, else site default. Keeps exactly one
+       meta[name=description] on the page. */ -}}
+{{- $desc := or .Description .Summary "AI-First Custom Software Development." -}}
 <title itemprop="name">{{ $pageTitle }}</title>
 <meta name="title" content="{{ $pageTitle }}" />
-<meta name="description" content="{{ .Description }}" />
-<meta itemprop="description" content="{{ .Description }}" />
+<meta name="description" content="{{ $desc }}" />
+<meta itemprop="description" content="{{ $desc }}" />
 <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
@@ -24,14 +28,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ $canonical }}" />
 <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ $desc }}" />
 
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="{{ $canonical }}" />
 <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:description" content="{{ .Description }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
 <meta name="twitter:site" content="@Scalereal">
 <meta name="twitter:creator" content="@Scalereal">
 
