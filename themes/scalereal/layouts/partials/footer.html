@@ -89,10 +89,15 @@
   (function () {
     const startYear = 2019;
     const currentYear = new Date().getFullYear();
-    const yearsInBusiness = currentYear - startYear;
+    const yearsInBusiness = currentYear - startYear + 3;
 
     const copyrightEl = document.getElementById("footer-copyright");
     const yearsEl = document.getElementById("footer-years");
+
+    document.querySelectorAll("[data-years-in-business]").forEach((el) => {
+      el.textContent = `${yearsInBusiness}+`;
+      if (el.hasAttribute("limit")) el.setAttribute("limit", yearsInBusiness);
+    });
 
     if (copyrightEl) {
       copyrightEl.textContent = `© ${currentYear} ScaleReal. All rights reserved.`;

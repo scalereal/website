@@ -9,7 +9,7 @@ ScaleReal provides product engineering services: AI development, backend
 engineering, frontend engineering, mobile engineering, DevOps and cloud
 engineering, UI/UX design and consulting, and project management. The company
 is remote-first, founded in 2019, headquartered in Pune, India, and states
-7+ years in business, 10+ countries served, 35+ projects delivered, and
+10+ years in business, 10+ countries served, 35+ projects delivered, and
 3M+ end users reached.
 
 ## Mission
