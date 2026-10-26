@@ -9,9 +9,7 @@ url: jev-model-that-doesnt-chat-it-decides
 draft: false
 ---
 
-A look at the new AI model built for software.
-
-Ask any AI Chat application (like ChatGPT) a simple question, and you’ll often get a paragraph back. That’s fine when you’re the one reading it.
+A look at the new AI model built for software. Ask any AI Chat application (like ChatGPT) a simple question, and you’ll often get a paragraph back. That’s fine when you’re the one reading it.
 
 But what if your code is the one asking?
 
@@ -31,10 +29,11 @@ It gives back one of those answers, with a probability for each option. That’s
 
 Think of it as ready-made classifier. Normally you’d need to train a classifier on your own data first. With Jev you just describe your categories in plain English.
 
-**Example:
-**A support ticket comes in. You have four teams: billing, technical, account, general.
-Ask Jev: *Which team should handle this?
-*Jev replies: 
+**Example**: A support ticket comes in. You have four teams: billing, technical, account, general.
+
+Ask Jev: *Which team should handle this?*
+
+Jev replies: 
 
 > billing:   0.88
 technical: 0.05
@@ -51,8 +50,7 @@ The code picks billing and moves on.
 
 He spent two years building Jev quietly and launched it on 15 September 2026.
 
-His big question: *If AI already chats better than most people, why hasn’t it automated more real work?
-*
+His big question: *If AI already chats better than most people, why hasn’t it automated more real work?*
 
 Fast brain, slow brain
 
@@ -84,7 +82,7 @@ Jev doesn’t write anything. It scores all the options at once, in a single ste
 
 This has two nice side effects:
 
-- **It can’t make things up. **It only picks from the list.
+- **It can’t make things up.** It only picks from the list.
 - **Output is basically free.** There’s no text to generate.
 
 The best part: Confidence
