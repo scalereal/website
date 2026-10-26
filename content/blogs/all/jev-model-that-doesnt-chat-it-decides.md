@@ -2,7 +2,7 @@
 title: Jev - Model that doesn’t chat, it decides!
 description: >-
   Jev is a decision-focused AI model designed to help software make fast, reliable, and cost-effective decisions. Instead of generating long text responses, it selects from predefined options and provides confidence scores, making it useful for tasks like ticket routing, data classification, and AI agent tool selection.
-date: '2026-10-24'
+date: '2026-10-26'
 author: ScaleReal Team
 image: '/images/blog/img_1792818051707_6034.png'
 url: jev-model-that-doesnt-chat-it-decides
