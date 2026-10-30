@@ -56,8 +56,6 @@ World
 [You can get the full code here](https://github.com/Kotlin/kotlinx.coroutines/blob/master/kotlinx-coroutines-core/jvm/test/guide/example-basic-01.kt)
 
 
-&nbsp;
-
 
 **Let’s dissect what this code does.**
 
@@ -125,8 +123,6 @@ Rules for calling suspending functions:
 SUSPENDING: Function A, while has started, could be suspended, and let Function B execute, then only resume later. The thread is not locked by Function A.
 
 
-&nbsp;
-
 
 To learn more about Coroutines do watch :
 
@@ -134,8 +130,6 @@ The best source to understand this is the talk “[Deep Dive into Coroutines](ht
 
 “[Asynchronous Programming with Kotlin](https://kotlinconf.com/workshops/)” workshop by Roman Elizarov at KotlinConf.
 
-
-&nbsp;
 
 ![](https://miro.medium.com/v2/resize:fit:828/format:webp/1*yxlVTfziO2LvKFzNsRX09w.png)
 
@@ -268,8 +262,6 @@ As we want to run all the functions asynchronously using Kotlin Coroutines, we�
 
 Here we can see both of our POST methods are working on different threads and not using or blocking the main thread.
 
-
-&nbsp;
 
 
 In this blog, we covered about kotlin coroutines and how to send email using SendGrid with Micronaut and kotlin coroutines . For complete source code check out our Github Repository [here](https://github.com/scalereal/sendgrid-kotlin-email-app/tree/main).

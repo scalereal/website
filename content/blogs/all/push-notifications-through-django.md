@@ -159,11 +159,9 @@ Once the server logic is in place, you can trigger push notifications at any des
 - FCM limits push notification payload size to 4096 bytes, so needs to stay within the size limits.
 - **Notification Throttling** — Can send up to 240 messages/minute and 5,000 messages/hour to a single device. Read more about it [here](https://firebase.google.com/docs/cloud-messaging/concept-options#throttling-and-scaling)
 
-&nbsp;
 
 That’s it from my side devs! 👨‍💻
 
-&nbsp;
 
 _Thanks for reading! If you enjoyed reading this article, please **click the 👏 button and share to help others find it!** Feel free to leave a comment 💬 below. You can connect with me [here](https://linktr.ee/Akash_Shrivastava)!_
 

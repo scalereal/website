@@ -143,12 +143,10 @@ Let us take a look at an example of a functional component in which we have crea
 I would like to conclude that there are pros and cons in both styles. I do not necessarily think one is better than the other. A functional programmer may find it easier to use functional components, while that applies the same to an object-oriented programmer may find it easier to use class components.
 
 I personally like using functional components they are written shorter and simpler, which makes it easier to read, write and test because they are just plain JS functions. Class components can be confusing with the usage of `this.`Using functional components we can easily avoid this kind of a mess and keep everything clean.
-&nbsp;
-&nbsp;
+
 
 ---
 
-### &nbsp;&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

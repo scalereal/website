@@ -65,6 +65,5 @@ An engaged workforce contributes to a positive and productive organizational cul
 
 Companies with engaged employees often experience better financial performance and profitability.
 
-&nbsp;
 
 Employee engagement is a multifaceted approach involving various methods and requirements. We have effectively implemented such activities which have led Scalereal to achieve positive outcomes that benefit both employees and the organization as a whole.

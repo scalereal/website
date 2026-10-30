@@ -130,8 +130,6 @@ Here we can see the workflow of Celery and Django when the user sign’s up on t
 
 _So far we have learned the need for Celery, Asynchronous processing, Message Queues, and what is Celery. In the next part, we will learn how to integrate Celery and Redis with Django and run tasks asynchronously._
 
-&nbsp;
-
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.

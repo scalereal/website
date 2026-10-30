@@ -91,8 +91,6 @@ The below workflow file shows how you will use the OIDC setup with GitHub.
 
 So here we are! 😍 We have successfully completed the setup here. 😎
 
-&nbsp;
-
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.

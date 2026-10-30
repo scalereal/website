@@ -17,7 +17,6 @@ url: android/2020/05/01/automate-publishing-android-library-to-bintray-using-git
 
 ### In this article, I’m going to demonstrate the use of GitHub Actions to publish open-source Android Library to Bintray when it is released.
 
-&nbsp;
 
 You might have developed a *cool* open-source android library🛠️. You have published it to Bintray/JCenter. Right? But you’re publishing it manually using Gradle CLI gradlew bintrayUpload command. After you made changes in your library, you always run Gradle command manually. Want to see how you can automate publishing it using ***GitHub Actions CI?*** Then you are at the right place. We will see how to publish your open-source *cool* android library to Bintray automatically when we create a new ***release*** in GitHub repository. So, let’s start 😃.
 

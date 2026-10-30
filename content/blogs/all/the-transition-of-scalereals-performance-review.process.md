@@ -19,8 +19,6 @@ url: android/2023/08/16/the-transition-of-scalereals-performance-review-process.
 
 As companies evolve and grow, so do their performance review processes. ScaleReal, a company that started with just 3 people and has now expanded to a team of 30 over the course of four years, has experienced firsthand the various phases of the performance review cycle.
 
-&nbsp;
-
 Let’s discuss the different stages of ScaleReal’s growth journey and the unique challenges associated with our performance review processes during each phase.
 
 ## 1st Year — The Formative Years

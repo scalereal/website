@@ -82,6 +82,5 @@ The different stages of funding for startups and businesses typically correspond
 
 * The acquired company’s investors and founders typically receive a payout in the form of cash, stock, or a combination of both.
 
-&nbsp;
 
 It’s important to note that not all startups go through all of these stages, and the exact sequence may vary based on the company’s industry, growth rate, and funding needs. Additionally, some startups may choose to bootstrap (self-fund) their growth and may never seek external funding.

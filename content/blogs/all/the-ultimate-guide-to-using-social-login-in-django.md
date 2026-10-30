@@ -149,13 +149,11 @@ For more information on how to configure python-social-auth with Facebook visit 
 
 There are a bunch of Social Login providers which are supported by this package. It includes the most popular ones such as Twitter, Github, LinkedIn, Instagram, etc. You can find a complete list of social backends supported by this package and how to configure them in the [official documentation](https://python-social-auth.readthedocs.io/en/latest/backends/#social-backends).
 
-&nbsp;
 
 _**Bonus**: You can find the boilerplate code for this article in this repo. It contains basic configurations to get started with Google and Facebook Social Login._
 
 That’s it from my side devs! 👨‍💻
 
-&nbsp;
 
 Thanks for reading! If you enjoyed reading this article, please click the 👏 button and share to help others find it! Feel free to leave a comment 💬 below. You can connect with me here!
 

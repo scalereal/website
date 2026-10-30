@@ -204,8 +204,6 @@ Conditionally render the InfoWindow component inside the Marker component as des
     Set the isOpen state to false to hide the InfoWindow component by clicking anywhere on the map
 
 
-&nbsp;
-
 
 So far, we have covered the integration of a google map with React application and the basic features of the Google Maps JavaScript API.
 
@@ -217,8 +215,6 @@ Check out the below links for the GitHub repo and working application.
 
 In the upcoming blog, we will explore some advanced features of Google Maps JavaScript API.
 
-
-&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

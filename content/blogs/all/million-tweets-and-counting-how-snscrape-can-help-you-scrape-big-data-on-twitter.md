@@ -222,8 +222,6 @@ tweets_df2 = pd.DataFrame(tweets_list2, columns=['Datetime', 'Tweet Id', 'Text',
 That’s it from my side devs! 👨‍💻 Thanks for reading!
 
 
-&nbsp;
-
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.

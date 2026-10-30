@@ -214,15 +214,12 @@ Want to see again beauty of Coroutines? Let’s say you have to do two things co
 ​
 Here you can see that two coroutines execute concurrently. `async` returns a Deferred i.e. a light-weight non-blocking future that represents a promise to provide a result later.
 ​
-&nbsp;
 
 Coroutine library contains other APIs like `Flow` for implementing a reactive approach, `Channel` for communication and many others. Coroutines are one of the HUGE 🔶 topics in Kotlin. The more you explore it, the more you’ll find it interesting 😍. See [this reference](https://kotlinlang.org/docs/reference/coroutines/basics.html) for more information.
 ​​
-&nbsp;
 
 Yeah! 😍. By including all these ingredients together, that’s how we cooked tasty code with Kotlin 😋. I hope you liked this article.
 ​
-&nbsp;
 
 If you liked this article, share it with everyone! 😄
 ​
@@ -230,6 +227,6 @@ Sharing is caring!
 ​
 Thank you! 😃
 ​
-​&nbsp;
+
 
 _Many thanks to [Shalom Halbert](https://twitter.com/shalomhalbert) and [Rishit Dagli](https://www.rishit.tech/) for helping me to make this better :)_

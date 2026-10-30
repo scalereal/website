@@ -46,8 +46,6 @@ Use the ubuntu latest image to install all necessary libraries and PostgreSQL as
 
 **services** can be used to create additional containers for a job or steps. In our case, we are using it to spin-off **postgres** and **redis** service.
 
-&nbsp;
-
 **Step 4**
 
 We can define a sequential task that we want to perform in the machine with **steps** statement.
@@ -86,8 +84,6 @@ If you missed something below 👇 is the full snippet for CI workflow.
 {{< gist sandeshbodake 9aa2a0340de93cebd153ac9c2b7a81cb >}}
 
 ---
-&nbsp;
-
 ## **CD(**Continuous delivery)****
 
 Now Let’s move to the **CD(continues delivery)** part, before moving further you must have an account on **AWS**

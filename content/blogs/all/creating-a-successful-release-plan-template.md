@@ -26,8 +26,6 @@ Creating a project release plan is important, as it provides a roadmap for the p
 Here is the list of major pointers which should be included in a Project Release Plan document.
 
 
-&nbsp;
-
 
 **1. INTRODUCTION**
 
@@ -79,8 +77,6 @@ Provide a brief summary of the entire release plan highlighting the key points a
 **12. REFERENCES/QUICK LINKS**
 
 You can attach any references or links to the useful channels, and sites in this section. This can be used as one place where all the links are available.
-
-&nbsp;
 
 
 Based on the above pointers, I have created a sample release plan for you which you can refer to. Depending on your project, you can change the below details.

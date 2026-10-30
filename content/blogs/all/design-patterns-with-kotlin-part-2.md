@@ -187,11 +187,7 @@ Check the below code snippet 👇
 
 - You might make the code more complicated by applying the pattern to a highly cohesive class.
 
-&nbsp;
-
 In this blog, we covered structural design patterns with their example in Kotlin. For more examples check out our Github Repository [here](https://github.com/scalereal/design-patterns). In the upcoming blogs, we’ll be exploring Behavioural Patterns.
-
-&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

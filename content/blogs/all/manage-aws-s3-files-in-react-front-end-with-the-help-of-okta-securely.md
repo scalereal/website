@@ -28,7 +28,6 @@ For one of our client projects at ScaleReal, We used Okta for authentication and
 2.  the frontend handle the upload without involving the backend.
 We chose the latter one.
 
-&nbsp;
 
 ## Prerequisites
 
@@ -38,7 +37,6 @@ To implement this we will need the following:
 
 * An AWS S3 bucket, If you don’t have an account you can get started with the trial account.
 
-&nbsp;
 
 ## Creating Web App in Okta
 
@@ -71,7 +69,6 @@ Please follow the below steps to create the web app in okta:
 
 ![](https://miro.medium.com/v2/resize:fit:828/format:webp/1*mtREqd3Nsb3hCWu0tJjmGQ.png)
 
-&nbsp;
 
 ## Integrating okta with React App
 
@@ -111,7 +108,6 @@ The okta react sdk provides the useOktaAuth hook which provides oktaAuth and aut
 {{< gist Bhusnar5044 97baa28db3d2801e1e80fcb4d36c915f >}}
 
 
-&nbsp;
 
 ## Integrating okta with AWS
 
@@ -148,7 +144,6 @@ You can expose the file metadata info that you passed with the file in the Expos
 > _Important: make sure you not down the ARN from role summary. Then bucket region, bucket name Those will be used as AWS_ROLE_ARN , AWS_REGION and AWS_S3_BUCKET_NAME ._
 
 
-&nbsp;
 
 ## Let's get started with the operations.
 
@@ -226,7 +221,6 @@ For the Head response, you will not get any response body. If you are checking t
 * If the object does not exist then it will return 404 (“no such key”)
 * If the user accessing the S3 object does not have permission then it will return 403 (“access denied”)
 
-&nbsp;
 
 ## Conclusion
 So far we have learned how to create an Open Id connect app in okta, integrate okta in Single Page Application using Client Id and okta organization URL(Auth issuer), integrate okta with AWS by creating new policies and roles, Integrate AWS with react application to upload/ list files from s3 bucket using okta credentials.
@@ -235,7 +229,6 @@ We have built an app that includes end-to-end integration. You can take a refere
 
 The source code for this tutorial is available here: https://github.com/scalereal/okta-aws-react-app
 
-&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

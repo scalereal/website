@@ -18,11 +18,7 @@ url: project-management/2024/02/12/mastering-sprint-planning-analyzing-the-root-
 
 We all know that Sprints are essential to agile software development since they help teams break down large projects into manageable chunks.
 
-&nbsp;
-
 Each sprint has a fixed duration, usually between 1— 4 weeks ⏳, and at the end of each sprint, the team holds a review to assess their progress and plan the next sprint.
-
-&nbsp;
 
 But before planning the next sprint it’s crucial to know if your previous sprint has failed or succeeded.
 
@@ -39,23 +35,18 @@ There could be many reasons why a sprint failed, but one of the most common reas
 
 What do I mean by that? 🤔
 
-&nbsp;
 
 Let me try to explain to you with an example.
 
-&nbsp;
 
 Assuming your software development team is following a 2 weeks sprint ⏳…
 
-&nbsp;
 
 Ideally, your team should have a development time of **80 hours ⏰ per sprint,** considering 10 working days and 8 working hours each day.
 
-&nbsp;
 
 With this assumption, most of the Project Managers or the Stakeholders pick up stories/tasks worth 80 hours of development (per sprint) and assign them to the development team, expecting them to finish their work by the end of the sprint. ❌
 
-&nbsp;
 
 So what’s wrong here? 🤦‍♂️
 
@@ -80,19 +71,15 @@ Based on the above-mentioned agile ceremonies and their respective time, and als
 
 As per the above calculation, a developer spends around **15 hours on agile ceremonies out of 80 hours of development.**
 
-&nbsp;
 
 Note — Not necessary that every company or project might have these above agile ceremonies, so you can consider the above timings based on the processes you follow.
 
-&nbsp;
 
 Assuming most of the developers can’t be 100% productive during those 8 hours of working (maybe because of various distractions, calls, meetings, etc) plus they might need a few hours for bug fixes, etc, **I think it’s safe to say that we can have only around 60 hours of productive development time in a 2 weeks sprint.**
 
-&nbsp;
 
 **So let’s ensure you set your next sprint expectations right to help your agile teams stay focused and deliver high-quality work quickly.**
 
-&nbsp;
 
 Some of the other commonly known reasons for a sprint failure 🤷‍♂️:
 

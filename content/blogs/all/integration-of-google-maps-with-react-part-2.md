@@ -156,8 +156,6 @@ Follow the below steps to customize map styles:
 > In this way, you can also get rid of the tag For development purposes only.
 
 
-&nbsp;
-
 In this blog, we have covered advanced features of Maps Javascript API with examples. For more details check out our GitHub repository [here](https://github.com/scalereal/google-maps-with-react).
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.

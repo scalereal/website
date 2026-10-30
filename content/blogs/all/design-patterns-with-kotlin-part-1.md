@@ -215,11 +215,7 @@ All implementations of the Singleton have these two steps in common:
 
 - It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.
 
-&nbsp;
-
 In this blog, we covered all creational design patterns with their example in kotlin. For more examples check out our Github Repository [here](https://github.com/scalereal/design-patterns). In the upcoming blogs, we’ll be exploring Structural and Behavioural Patterns.
-
-&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

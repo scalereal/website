@@ -193,19 +193,13 @@ As you can see, now the type of class is accessible inside the function, almost 
 
 ​
 Here, we have imported `java.util.Date` class as `JDate` and we can use it by using that name only in this file.
-​
-&nbsp;
-​
+​​
 Yeah! 😍 That’s how we cooked tasty code with Kotlin in this first part of this article and I hope you liked this article. In this article, we saw some basic important concepts of the Kotlin. In the next article, we’ll see some advanced one. Stay tuned for the next one 🚀.
 ​
 If you liked this article, share it with everyone! 😄
 ​
-&nbsp;
-
 Sharing is caring!
 ​
-&nbsp;
-
 Thank you! 😃
 
 

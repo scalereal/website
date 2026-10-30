@@ -20,7 +20,6 @@ How to create PWA apps with React for specific screens or routes or dynamic rout
 
 In this article, we are going to learn what is PWA, how to create a PWA app with react using CRA, how we can transform react app built on webpack/vite to PWA, then we’ll look into how we can create PWA for specific screens, routes, or dynamic routes.
 
-&nbsp;
 
 ## What is Progressive Web App (PWA)?
 
@@ -35,7 +34,6 @@ PWA offers benefits such as:
 * platform-specific; and,
 * installable.
 
-&nbsp;
 
 
 ## Create a React App with the Progressive Web App Template
@@ -157,7 +155,6 @@ When a user adds a web app to their home screen using Chrome or Firefox on Andro
 
 The [Web App Manifest guide](https://web.dev/add-manifest/) provides more context about what each field means, and how your customizations will affect your users’ experience.
 
-&nbsp;
 
 ## Transform React App Build On Webpack to PWA
 
@@ -269,7 +266,6 @@ or
 npx serve -s dist
 ```
 
-&nbsp;
 
 ## Customize PWA to work on only specific screens or Routes
 
@@ -350,7 +346,6 @@ If your application routes are dynamic, suppose your appending dynamic id into t
 
 With this in place, your app is now ready to run. Once more build your application and serve by using the serve -s build command. Now you can test the application, and go to that route for which we dynamically attached the manifest, once you redirect to that router you will see the download PWA icon will appear in the URL. By clicking on it you can download the application and test it out on a desktop or ios device.
 
-&nbsp;
 
 ## Transform React App Build On Vite to PWA
 
@@ -399,13 +394,11 @@ Please refer types.ts file for more information on vite-plugin-pwa configuration
 
 > _```vite-plugin-pwa``` plugin uses [workbox-build](https://developer.chrome.com/docs/workbox/reference/workbox-build/) node library to build the service worker, you can find more information in the [Service Worker Strategies And Behaviors](https://vite-pwa-org.netlify.app/guide/service-worker-strategies-and-behaviors.html) and [Workbox](https://vite-pwa-org.netlify.app/workbox/) sections._
 
-&nbsp;
 
 ## Conclusion
 
 So far we have learned about what is PWA, how we can setup PWA with react using CRA templates, customize the PWA by modifying manifest.json file, transforming react app build with webpack/vite to PWA, how to config webpack for generating service-worker, and customization of PWA to work on specific screens or routes.
 
-&nbsp;
 
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 

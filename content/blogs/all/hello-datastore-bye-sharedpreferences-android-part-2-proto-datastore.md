@@ -16,8 +16,6 @@ thumbnail: https://via.placeholder.com/150
 url: android/2020/09/03/hello-datastore-bye-sharedpreferences-android-part-2-proto-datastore.html
 ---
 
-&nbsp;
-
 Welcome Android Developers 👋. In [the previous article](https://blog.shreyaspatil.dev/hello-datastore-bye-sharedpreferences-android), we saw how to use Preference DataStore to store key-value pairs. But it is not type-safe, Right? We’ll be covering that part in this article 😃. If you missed the previous article then you can read it 👇
 
 [Hello DataStore, Bye SharedPreferences - Android - Part 1 - Preference DataStore](https://blog.shreyaspatil.dev/hello-datastore-bye-sharedpreferences-android)

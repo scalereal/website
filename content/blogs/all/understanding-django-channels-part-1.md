@@ -147,9 +147,6 @@ Channel provides routing class that allow you to combine and stack your consumer
 
 {{< gist mr-meetpatel 09a67cebaa5b2ef43b9bce0111c6d9fa >}}
 
-
-&nbsp;
-
 At [Scalereal](https://scalereal.com/) We believe in Sharing and Open Source.
 
 So, If you found this helpful please give some claps 👏 and share it with everyone.
